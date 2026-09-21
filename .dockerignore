@@ -6,3 +6,8 @@ README.md
 fly.toml
 Dockerfile
 .dockerignore
+
+# Design sources: kept in the repo, not shipped in the image or served publicly.
+assets/logo.png
+assets/tar_ball.png
+assets/tar_ball_white.png

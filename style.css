@@ -108,3 +108,12 @@ html.js .ch.on{opacity:1;transform:none;filter:blur(0)}
 html.js .typing::after{content:'';display:inline-block;width:.46em;height:.92em;margin-left:.1em;background:currentColor;vertical-align:-.12em;animation:caret .5s steps(1,end) infinite}
 @keyframes caret{0%,49%{opacity:1}50%,100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){html.js .ch{opacity:1;transform:none;filter:none}html.js .typing::after{display:none}}
+
+/* Wordmark lockup: the faceted ball sits left of TAR, sized and spaced from the
+   reference artwork. The ball is 1.221x the cap height of TAR with a gap of
+   0.199 cap heights, centred on the letterforms. Arial's cap height is .716em,
+   so those become .874em and .143em, and the lockup scales with the font size
+   at every breakpoint. */
+.wordmark{gap:0}
+.wordmark .mark{flex:none;align-self:center;height:.874em;width:auto;margin-right:.143em;filter:brightness(.94)}
+.wordmark span{margin-left:.3em}
