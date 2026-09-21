@@ -156,3 +156,36 @@ nav a:hover{color:var(--accent)}
 .contact-tar{filter:none}
 /* Black ball, full strength. */
 .wordmark .mark{filter:none}
+
+/* ---------------------------------------------------------------------------
+   Contact artwork and mobile fixes.
+   --------------------------------------------------------------------------- */
+/* The markup carries width/height attributes, which map to presentational
+   hints. CSS overrode the width but not the height, so the render was drawn at
+   its intrinsic 1254px tall inside a 253px box: a fivefold vertical stretch.
+   height:auto restores the square aspect. */
+.contact-tar{height:auto}
+
+/* Keep the artwork clear of the text at every width. On the phone it drops to
+   the bottom of the panel, below the block, rather than sitting behind it. */
+.contact-tar{width:38%;right:-6%;bottom:-6%}
+@media(max-width:1000px){.contact-tar{width:46%;right:-8%;bottom:-5%}}
+@media(max-width:600px){
+  .contact-tar{width:62%;right:-12%;bottom:-3%;opacity:.9}
+  .contact h2{font-size:11.5vw}
+  .contact-body>p{max-width:none}
+}
+
+/* Mobile pass. */
+/* The hero footer ran at 9px, below a readable size, and its divider existed to
+   separate two items. Only the counter remains, so the divider goes. */
+.down-line{display:none}
+@media(max-width:600px){
+  .hero-foot{font-size:11px}
+  footer .eyebrow{font-size:11px}
+  nav a{font-size:11px}
+}
+/* Comfortable touch targets without moving anything visually: the padding is
+   cancelled by an equal negative margin. */
+.contact-email a{display:inline-block;padding:10px 0;margin:-10px 0}
+.wordmark{padding:8px 0;margin:-8px 0}

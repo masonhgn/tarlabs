@@ -37,15 +37,25 @@
     el.setAttribute('aria-label', full);
     el.textContent = '';
     el.classList.add('in', 'typing');
-    const step = Math.min(20, 380 / full.length);
-    let n = 0;
-    (function tick() {
-      el.textContent = full.slice(0, ++n);
-      if (n < full.length) { setTimeout(tick, step); return; }
+    const per = Math.min(20, 380 / full.length);
+    const finish = () => {
+      el.textContent = full;
       el.classList.remove('typing');
       el.removeAttribute('aria-label');
       el.style.minWidth = '';
-    })();
+    };
+    // Driven by elapsed time rather than a chain of timers, so a dropped frame
+    // catches up instead of falling behind, and a hard stop guarantees the full
+    // text lands even if the tab is backgrounded mid-type.
+    const start = performance.now();
+    (function frame(now) {
+      const n = Math.max(1, Math.min(full.length, Math.round((now - start) / per)));
+      el.textContent = full.slice(0, n);
+      if (n < full.length) { requestAnimationFrame(frame); return; }
+      finish();
+    })(start);
+    setTimeout(() => { if (el.classList.contains('typing')) finish(); },
+               full.length * per + 2000);
   }
 
   // Wrap every glyph in its own span, keeping <br>, nested spans and spaces
