@@ -72,7 +72,7 @@ html.js .method-list.in:before{transform:none}
 .about-intro{--d:70ms}
 .method-item:nth-child(2){--d:90ms}
 .method-item:nth-child(3){--d:180ms}
-@media(prefers-reduced-motion:no-preference){html{scroll-snap-type:y proximity}.hero,.about,.contact{scroll-snap-align:start}}
+@media(prefers-reduced-motion:no-preference){.hero,.about,.contact{scroll-snap-align:start}}
 
 /* One screen per section. About and Contact each fill the viewport and centre
    their content, so the page reads as three deliberate panels rather than a
@@ -86,7 +86,13 @@ html.js .method-list.in:before{transform:none}
 @media(max-width:1000px){.contact>.wrap{width:calc(100% - 64px)}}
 @media(max-width:600px){:root{--footer-h:80px}.contact>.wrap{width:calc(100% - 40px)}.about,.contact{padding-top:56px;padding-bottom:56px}}
 footer{scroll-snap-align:end}
-@media(prefers-reduced-motion:no-preference) and (min-height:760px){html{scroll-snap-type:y proximity}}
+/* Snapping is enabled here and nowhere else. It needs a precise pointer and a
+   window big enough for a whole panel. On a touch device the address bar
+   resizes the viewport mid-scroll, which moves every snap point and yanks an
+   anchor jump back to the previous section, so phones and tablets get none. */
+@media(prefers-reduced-motion:no-preference) and (pointer:fine) and (min-width:1000px) and (min-height:760px){
+  html{scroll-snap-type:y proximity}
+}
 
 /* Short windows (laptops in split screen, phones in landscape): tighten the
    About panel so its content still fits one screen instead of spilling. */
