@@ -119,40 +119,40 @@ html.js .typing::after{content:'';display:inline-block;width:.46em;height:.92em;
 .wordmark span{margin-left:.3em}
 
 /* ---------------------------------------------------------------------------
-   Dark mint palette. Everything above is written against the original dark
-   scheme, so this block only restates the tokens and the colours that were
-   hardcoded. Swapping schemes means replacing this block and the header mark.
+   Blue off-white palette, built around keeping the black tar ball. The ball
+   measures 8.63:1 against this background, so it is the mark at full strength.
+   Everything above is written against a dark scheme, so this block restates
+   the tokens and the colours that were hardcoded.
    --------------------------------------------------------------------------- */
 :root{
-  color-scheme:dark;
-  --bg:#27413a;
-  --surface:#223a33;
-  --elevated:#2d4a42;
-  --text:#eef3f0;
-  --secondary:#aabbb4;
-  --accent:#8fc3ae;
-  --line:rgba(255,255,255,.12);
-  --tick:rgba(255,255,255,.28);
+  color-scheme:light;
+  --bg:#e6ebf2;
+  --surface:#dde4ed;
+  --elevated:#d3dbe6;
+  --text:#14181d;
+  --secondary:#525a66;
+  --accent:#3d6b93;
+  --line:rgba(20,30,45,.15);
+  --tick:rgba(20,30,45,.36);
 }
-::selection{background:rgba(143,195,174,.28);color:var(--text)}
-.eyebrow{color:#a9bdb5}
-.slash{color:#7d968c}
-.index{color:#9fb4ab}
-.muted-heading{color:#94a8a0}
+::selection{background:rgba(61,107,147,.22);color:var(--text)}
+.eyebrow{color:#565e6a}
+.slash{color:#7b8490}
+.index{color:#5c646f}
+.muted-heading{color:#7b8490}
 .soft{color:var(--secondary)}
-.hero-foot{color:#9fb4ab}
-.down-line{background:rgba(255,255,255,.18)}
+.hero-foot{color:#5c646f}
+.down-line{background:rgba(20,30,45,.22)}
 nav a:hover{color:var(--accent)}
-.hero:after{background:linear-gradient(90deg,#27413a 2%,transparent 65%)}
-@media(max-width:600px){.hero:after{background:linear-gradient(180deg,#27413a 10%,transparent 85%)}}
-.about .micro-head{color:#9fb4ab}
-.about .micro-head.dim{color:#96aca3}
+.hero:after{background:linear-gradient(90deg,#e6ebf2 2%,transparent 65%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,#e6ebf2 10%,transparent 85%)}}
+.about .micro-head{color:#5c646f}
+.about .micro-head.dim{color:#626a75}
 .m-num{color:var(--accent)}
-.method-item:hover .m-num{color:#bde3d3}
-.contact-body .contact-email{border-bottom-color:rgba(255,255,255,.42)}
-/* The tar renders are near-black, so on a dark ground they read as silhouettes
-   and want a touch of lift, the way they did on the original scheme. */
-.hero-art img{filter:brightness(.98)}
-.contact-tar{filter:brightness(.92)}
-/* Back to the white ball: the dark one measures 1.3:1 against this background. */
-.wordmark .mark{filter:brightness(.94)}
+.method-item:hover .m-num{color:#2b5375}
+.contact-body .contact-email{border-bottom-color:rgba(20,30,45,.4)}
+/* The tar renders are already dark, so on a light ground they carry themselves. */
+.hero-art img{filter:none}
+.contact-tar{filter:none}
+/* Black ball, full strength. */
+.wordmark .mark{filter:none}
