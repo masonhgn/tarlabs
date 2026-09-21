@@ -26,7 +26,7 @@
     const h = window.innerHeight;
     targets = targets.filter((el) => {
       const r = el.getBoundingClientRect();
-      const visible = r.top < h * 0.92 && r.bottom > 0;
+      const visible = r.top < h - 60 && r.bottom > 0;
       if (visible) el.classList.add('in');
       return !visible;
     });
