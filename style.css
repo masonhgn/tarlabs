@@ -119,40 +119,40 @@ html.js .typing::after{content:'';display:inline-block;width:.46em;height:.92em;
 .wordmark span{margin-left:.3em}
 
 /* ---------------------------------------------------------------------------
-   Light palette. Everything above is written against the dark scheme, so this
-   block redefines the tokens and the handful of colours that were hardcoded.
-   Revert by deleting this block and restoring the white header mark.
+   Dark mint palette. Everything above is written against the original dark
+   scheme, so this block only restates the tokens and the colours that were
+   hardcoded. Swapping schemes means replacing this block and the header mark.
    --------------------------------------------------------------------------- */
 :root{
-  color-scheme:light;
-  --bg:#e9e7e2;
-  --surface:#e2e0da;
-  --elevated:#d8d6d0;
-  --text:#1a1a18;
-  --secondary:#5b5b55;
-  --accent:#6b5c77;
-  --line:rgba(0,0,0,.14);
-  --tick:rgba(0,0,0,.34);
+  color-scheme:dark;
+  --bg:#27413a;
+  --surface:#223a33;
+  --elevated:#2d4a42;
+  --text:#eef3f0;
+  --secondary:#aabbb4;
+  --accent:#8fc3ae;
+  --line:rgba(255,255,255,.12);
+  --tick:rgba(255,255,255,.28);
 }
-::selection{background:rgba(107,92,119,.24);color:var(--text)}
-.eyebrow{color:#5c5c55}
-.slash{color:#82827a}
-.index{color:#63635c}
-.muted-heading{color:#7e7e77}
+::selection{background:rgba(143,195,174,.28);color:var(--text)}
+.eyebrow{color:#a9bdb5}
+.slash{color:#7d968c}
+.index{color:#9fb4ab}
+.muted-heading{color:#94a8a0}
 .soft{color:var(--secondary)}
-.hero-foot{color:#63635c}
-.down-line{background:rgba(0,0,0,.2)}
+.hero-foot{color:#9fb4ab}
+.down-line{background:rgba(255,255,255,.18)}
 nav a:hover{color:var(--accent)}
-.hero:after{background:linear-gradient(90deg,#e9e7e2 2%,transparent 65%)}
-@media(max-width:600px){.hero:after{background:linear-gradient(180deg,#e9e7e2 10%,transparent 85%)}}
-.about .micro-head{color:#63635c}
-.about .micro-head.dim{color:#666660}
+.hero:after{background:linear-gradient(90deg,#27413a 2%,transparent 65%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,#27413a 10%,transparent 85%)}}
+.about .micro-head{color:#9fb4ab}
+.about .micro-head.dim{color:#96aca3}
 .m-num{color:var(--accent)}
-.method-item:hover .m-num{color:#453a4f}
-.contact-body .contact-email{border-bottom-color:rgba(0,0,0,.38)}
-/* The artwork renders are dark to begin with, so they read as solid forms on a
-   light ground and no longer need lifting. */
-.hero-art img{filter:none}
-.contact-tar{filter:none}
-/* The header mark is the dark ball now, at full strength. */
-.wordmark .mark{filter:none}
+.method-item:hover .m-num{color:#bde3d3}
+.contact-body .contact-email{border-bottom-color:rgba(255,255,255,.42)}
+/* The tar renders are near-black, so on a dark ground they read as silhouettes
+   and want a touch of lift, the way they did on the original scheme. */
+.hero-art img{filter:brightness(.98)}
+.contact-tar{filter:brightness(.92)}
+/* Back to the white ball: the dark one measures 1.3:1 against this background. */
+.wordmark .mark{filter:brightness(.94)}
