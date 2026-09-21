@@ -34,7 +34,7 @@
 .wordmark span{font-size:13px}
 .hero{min-height:400px;max-height:none}
 .hero-content{padding:clamp(78px,12.5vh,130px) 0 clamp(56px,9.5vh,100px)}
-.hero h1{font-size:clamp(26px,min(4.4vw,7.4vh),68px);line-height:1.04;margin-top:clamp(14px,2.6vh,28px)}
+.hero h1{font-size:clamp(26px,min(4.4vw,7.4vh),68px);line-height:1.04;margin-top:0}
 .hero-copy{font-size:clamp(13px,1.45vh,15px);line-height:1.68;margin-top:clamp(14px,2.4vh,26px);max-width:400px}
 .hero-foot{bottom:clamp(14px,2.4vh,28px)}
 .section{padding-top:92px;padding-bottom:100px}
