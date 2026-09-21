@@ -98,3 +98,13 @@ footer{scroll-snap-align:end}
   .m-body p{margin-top:7px}
   .contact-body{margin-top:22px}
 }
+
+/* Techy entrance: monospace labels type in behind a block caret, display type
+   resolves character by character. The hero block no longer fades as a whole,
+   so the per-character work is what the eye actually sees. */
+html.js .hero-content{animation:none}
+html.js .ch{display:inline-block;opacity:0;transform:translateY(.16em);filter:blur(3px);transition:opacity .26s linear var(--d,0ms),transform .3s var(--ease) var(--d,0ms),filter .26s linear var(--d,0ms)}
+html.js .ch.on{opacity:1;transform:none;filter:blur(0)}
+html.js .typing::after{content:'';display:inline-block;width:.46em;height:.92em;margin-left:.1em;background:currentColor;vertical-align:-.12em;animation:caret .5s steps(1,end) infinite}
+@keyframes caret{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){html.js .ch{opacity:1;transform:none;filter:none}html.js .typing::after{display:none}}
