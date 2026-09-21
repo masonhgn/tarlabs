@@ -117,3 +117,42 @@ html.js .typing::after{content:'';display:inline-block;width:.46em;height:.92em;
 .wordmark{gap:0}
 .wordmark .mark{flex:none;align-self:center;height:.874em;width:auto;margin-right:.143em;filter:brightness(.94)}
 .wordmark span{margin-left:.3em}
+
+/* ---------------------------------------------------------------------------
+   Light palette. Everything above is written against the dark scheme, so this
+   block redefines the tokens and the handful of colours that were hardcoded.
+   Revert by deleting this block and restoring the white header mark.
+   --------------------------------------------------------------------------- */
+:root{
+  color-scheme:light;
+  --bg:#e9e7e2;
+  --surface:#e2e0da;
+  --elevated:#d8d6d0;
+  --text:#1a1a18;
+  --secondary:#5b5b55;
+  --accent:#6b5c77;
+  --line:rgba(0,0,0,.14);
+  --tick:rgba(0,0,0,.34);
+}
+::selection{background:rgba(107,92,119,.24);color:var(--text)}
+.eyebrow{color:#5c5c55}
+.slash{color:#82827a}
+.index{color:#63635c}
+.muted-heading{color:#7e7e77}
+.soft{color:var(--secondary)}
+.hero-foot{color:#63635c}
+.down-line{background:rgba(0,0,0,.2)}
+nav a:hover{color:var(--accent)}
+.hero:after{background:linear-gradient(90deg,#e9e7e2 2%,transparent 65%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,#e9e7e2 10%,transparent 85%)}}
+.about .micro-head{color:#63635c}
+.about .micro-head.dim{color:#666660}
+.m-num{color:var(--accent)}
+.method-item:hover .m-num{color:#453a4f}
+.contact-body .contact-email{border-bottom-color:rgba(0,0,0,.38)}
+/* The artwork renders are dark to begin with, so they read as solid forms on a
+   light ground and no longer need lifting. */
+.hero-art img{filter:none}
+.contact-tar{filter:none}
+/* The header mark is the dark ball now, at full strength. */
+.wordmark .mark{filter:none}
