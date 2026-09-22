@@ -1,0 +1,2057 @@
+Topic Number,Topic Title,Branch,Program,Close Date,Description,Flags
+ARM26BX06-NV012,"Agentic-AI, Schema-Driven Decision Management for Auditable Studies and Acquisition Decisions",ARMY,SBIR,"October 21, 2026","and Acquisition Decisions 
+ 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Applied Artificial Intelligence (AAI) 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Trusted AI and Autonomy; Information Systems 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Prove a decision-as-a-program capability that turns complex engineering/acquisition 
+questions into structured, auditable Decision Packages – faster, with higher confidence. 
+ 
+DESCRIPTION: This topic will prototype and demonstrate a schema-driven Decision Management (DM) 
+foundation plus a governed agentic AI layer that turns messy decision requests into auditable, signer-
+ready Decision Packages. The focus is proof by demonstration (not a full product build) to show the 
+approach works for point trade studies and long-horizon acquisition decision programs with traceability, 
+robustness, and human control. AI can process vast amounts of structured and unstructured data from 
+Digital Engineering (DE) ecosystems, including digital threads and digital twins, enabling comprehensive 
+analysis across the entire product lifecycle. Interoperability across models is achieved as AI integrates 
+data from various DE tools (e.g., SysML 2.0, UML, etc.) and provides a unified view of system models, 
+enabling cross-functional teams to collaborate effectively. 
+ 
+The first objective is to demonstrate a unified representation that supports both (a) single-episode trade 
+studies and (b) multi-episode ""decision programs"" with refresh cycles. This includes implementing 
+context engineering specifically for the ground vehicle domain through knowledge graphs and semantic 
+layers that capture domain-specific relationships, constraints, and requirements. 
+ 
+The second objective is to implement agentic capabilities that produce structured artifacts and 
+reproducible outputs, while maintaining human control and predictable behavior per established human-
+AI interaction guidance. AI will automate the validation of technical documents, models, and outputs, 
+ensuring compliance with standards and requirements throughout the decision-making process. 
+ 
+The third objective is to extend the schema so bias checks, risks, and assumptions are explicit, testable 
+objects – so decision readiness can be assessed before sign-off and refreshed responsibly when conditions 
+change. The system will leverage semantic understanding to maintain consistency across digital 
+engineering artifacts and enable traceable decision rationale. 
+ 
+PHASE I: 
+The Phase 1 Desired Outcomes are as follows: 
+• A decision schema that makes objectives, options, constraints, assumptions, risks, and bias 
+checks first-class objects. 
+• Agentic AI that: performs structured elicitation into the formal model, then generates decision 
+workflow plans, and executes reproducible evaluation runs with clear “what flips the decision” 
+logic. 
+• Two end-to-end demonstrations showing the approach scales from point-in-time trade studies to 
+long-horizon program decisions with refresh cycles as evidence and assumptions change. 
+ 
+PHASE II: 
+The DoW currently has multiple contractors developing AI/LLM tools for core warfighter purposes. 
+However, little effort has been expended towards an AIgentics decision intelligence capability that 
+ARMY - 29 
+ 
+supports accelerated commercial acquisition or longer lead traditional development. The DoW is agnostic 
+as to a developed AI commercial package that fulfills adding AIgentics to current AI/LLM for Decision 
+Intelligence for continuous acquisition. During Phase II it is expected that the successful contractor will 
+develop a combined AIgentics and AI/LLM decision intelligence workflow capability with two cases 
+provided from PAE Maneuver Ground and PAE Fires. This software platform needs to be modeled and 
+developed as a commercial open-source platform that both the DoW and commercial enterprises would 
+use for their Product Design & Development (PDD) and acquisition. The current COTS application, 
+DAOSoft, provides an open capability that employs an advanced structured decision/trade study 
+capability with a partially developed AI/LLM decision intelligence workflow. The Army is looking for 
+any and all ideas that can extend or replace current acquisition capabilities and is agnostic to all current 
+solutions. The successful Phase II prototype will be immediately useful, but it is also expected that the 
+contractor would potentially execute follow-on Phase III contracts for individual customer installation. 
+This would be similar to the current best practice deployment of large ERP systems from SAP and Oracle. 
+ 
+PHASE III DUAL USE APPLICATIONS: Potential commercial use cases include the vehicle design 
+process for the automotive industry. The workflow can be relatively similar to the vehicle design process 
+for the Army with some different considerations. 
+ 
+REFERENCES: 
+1. https://saemobilus.sae.org/papers/concept-execution-ai-agentic-decision-intelligence-framework-
+product-planning-concept-development-2025-01-0455 
+ 
+KEYWORDS: Agentic AI; Digital Engineering; Schema-driven Decision Management; Acquisition 
+Decisions; AI LLM",T0.4 Registration check
+ARM26TX06-NV003,"Agentic-AI, Schema-Driven Decision Management for Auditable Studies and Acquisition Decisions",ARMY,STTR,"October 21, 2026","and Acquisition Decisions 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Applied Artificial Intelligence (AAI) 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Trusted AI and Autonomy; Information Systems 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Prove a decision-as-a-program capability that turns complex engineering/acquisition 
+questions into structured, auditable Decision Packages – faster, with higher confidence. 
+ 
+DESCRIPTION: This topic will prototype and demonstrate a schema-driven Decision Management (DM) 
+foundation plus a governed agentic AI layer that turns messy decision requests into auditable, signer-
+ready Decision Packages. The focus is proof by demonstration (not a full product build) to show the 
+approach works for point trade studies and long-horizon acquisition decision programs with traceability, 
+robustness, and human control. AI can process vast amounts of structured and unstructured data from 
+Digital Engineering (DE) ecosystems, including digital threads and digital twins, enabling comprehensive 
+analysis across the entire product lifecycle. Interoperability across models is achieved as AI integrates 
+data from various DE tools (e.g., SysML 2.0, UML, etc.) and provides a unified view of system models, 
+enabling cross-functional teams to collaborate effectively. 
+ 
+The first objective is to demonstrate a unified representation that supports both (a) single-episode trade 
+studies and (b) multi-episode ""decision programs"" with refresh cycles. This includes implementing 
+context engineering specifically for the ground vehicle domain through knowledge graphs and semantic 
+layers that capture domain-specific relationships, constraints, and requirements. 
+ 
+The second objective is to implement agentic capabilities that produce structured artifacts and 
+reproducible outputs, while maintaining human control and predictable behavior per established human-
+AI interaction guidance. AI will automate the validation of technical documents, models, and outputs, 
+ensuring compliance with standards and requirements throughout the decision-making process. 
+ 
+The third objective is to extend the schema so bias checks, risks, and assumptions are explicit, testable 
+objects – so decision readiness can be assessed before sign-off and refreshed responsibly when conditions 
+change. The system will leverage semantic understanding to maintain consistency across digital 
+engineering artifacts and enable traceable decision rationale. 
+ 
+PHASE I: 
+The Phase 1 Desired Outcomes are as follows: 
+• A decision schema that makes objectives, options, constraints, assumptions, risks, and bias 
+checks first-class objects. 
+• Agentic AI that: performs structured elicitation into the formal model, then generates decision 
+workflow plans, and executes reproducible evaluation runs with clear “what flips the decision” 
+logic. 
+• Two end-to-end demonstrations showing the approach scales from point-in-time trade studies to 
+long-horizon program decisions with refresh cycles as evidence and assumptions change. 
+ 
+PHASE II: 
+The DoW currently has multiple contractors developing AI/LLM tools for core warfighter purposes. 
+However, little effort has been expended towards an AIgentics decision intelligence capability that 
+supports accelerated commercial acquisition or longer lead traditional development. The DoW is agnostic 
+ARMY - 28 
+ 
+as to a developed AI commercial package that fulfills adding AIgentics to current AI/LLM for Decision 
+Intelligence for continuous acquisition. During Phase II it is expected that the successful contractor will 
+develop a combined AIgentics and AI/LLM decision intelligence workflow capability with two cases 
+provided from PAE Maneuver Ground and PAE Fires. This software platform needs to be modeled and 
+developed as a commercial open-source platform that both the DoW and commercial enterprises would 
+use for their Product Design & Development (PDD) and acquisition. The current COTS application, 
+DAOSoft, provides an open capability that employs an advanced structured decision/trade study 
+capability with a partially developed AI/LLM decision intelligence workflow. The Army is looking for 
+any and all ideas that can extend or replace current acquisition capabilities and is agnostic to all current 
+solutions. The successful Phase II prototype will be immediately useful, but it is also expected that the 
+contractor would potentially execute follow-on Phase III contracts for individual customer installation. 
+This would be similar to the current best practice deployment of large ERP systems from SAP and Oracle. 
+ 
+PHASE III DUAL USE APPLICATIONS: Potential commercial use cases include the vehicle design 
+process for the automotive industry. The workflow can be relatively similar to the vehicle design process 
+for the Army with some different considerations. 
+ 
+REFERENCES: 
+1. https://saemobilus.sae.org/papers/concept-execution-ai-agentic-decision-intelligence-framework-
+product-planning-concept-development-2025-01-0455 
+ 
+KEYWORDS: Agentic AI; Digital Engineering; Schema-driven Decision Management; Acquisition 
+Decisions; AI LLM",STTR: Requires RI partner | T0.4 Registration check
+DAF26BX06-NV510,"AI/ML for Next Generation of Missile Detection, Warning, Tracking, and Reporting",USAF,SBIR,"October 21, 2026","and Reporting 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Space Technology 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+The technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 
+22 CFR Parts 120-130, which controls the export and import of defense-related material and services, 
+including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR 
+Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign 
+nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement 
+of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the 
+Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted 
+due to the technical data under US Export Control Laws. 
+OBJECTIVE: SpaceWERX, in partnership with Space Systems Command's Space Sensing System Delta 
+84 and the OPIR Tap Lab, are seeking innovative solutions supporting the next generation of missile 
+detection, warning, tracking, and reporting. The objective of this SBIR Phase I effort is to evaluate the 
+feasibility of applying innovative data processing techniques including the use of Artificial Intelligence 
+and Machine Learning (AI/ML) methodologies to address the evolving challenges in missile detection, 
+warning, tracking, and reporting. The primary goal of this research and development initiative is to 
+advance data fusion, sensor integration, and real-time processing methods that enhance the accuracy, 
+responsiveness, and reliability of satellite-based missile warning systems. This includes addressing the 
+data interoperability from multi-orbit (GEO, MEO, LEO) satellite constellations, optimizing on-orbit and 
+ground-based processing frameworks, and improving data quality from diverse sensing modalities from 
+legacy and future Overhead Persistent Infrared (OPIR) space architectures. Specifically, this effort will 
+focus on researching and developing state-of-the-art algorithms and processing techniques that support 
+rapid and precise multi-sensor fusion, robust target identification, and accurate real-time 3D tracking of 
+traditional, hypersonic, and maneuverable missile threats. By leveraging novel techniques in data 
+association, sensor fusion, and edge processing, the solution will aim to mitigate limitations presented by 
+diverse sensor resolutions, data cadences, and observational geometries. The project will also investigate 
+methods to increase computational efficiency for onboard satellite processing and consider robustness 
+against noise in highly dynamic operational environments. 
+DESCRIPTION: The purpose of this topic is to address a critical need within the U.S. Space Force’s 
+Missile Warning, Tracking, and Response mission by advancing the application of artificial intelligence 
+(AI) and machine learning (ML) technologies to improve multi-sensor fusion, missile tracking precision, 
+and real-time situational awareness within a multi-orbit satellite framework (GEO, MEO, and LEO). 
+Current technologies face challenges in fusing large volumes of disparate data across multiple sensing 
+modalities, tackling latency in data processing, and accurately tracking increasingly sophisticated threats 
+such as hypersonic and maneuverable missile systems. 
+ 
+DAF - 11 
+ 
+This effort seeks to develop and validate advanced data processing techniques including AI/ML solutions 
+for both ground-based and satellite-based multisensor fusion capable of real-time processing for advanced 
+OPIR Missile Detection, Warning, Tracking, and Reporting. These solutions will enable enhanced 
+detection, tracking, and reporting of advanced missile threats by leveraging novel algorithms for target 
+identification, data association, and real-time 3D tracking across multi-orbit platforms. Initial solutions 
+should target feasibility studies and technical proof-of-concept demonstrations with the goal to transition 
+the capability into the OPIR Tap Lab or similar testbed to build and test solutions in an operationally 
+relevant environment. The advancements made on this effort have the potential to significantly contribute 
+to the Space Force’s mission of persistent global surveillance, improved defensive decision-making, and 
+sustained space superiority. 
+PHASE I: Phase I will assess the feasibility of AI/ML-driven multi-sensor fusion techniques for real-time 
+advanced missile detection, warning, and tracking across multi-orbit satellite systems and data 
+architectures. The desired future state of this effort is a network-aware, autonomous constellation 
+(spanning multiple orbital regimes) where ground ""migrates"" with space via edge fusion that compresses 
+timelines for joint fight without loss of quality or confidence. 
+The goal of this Phase I effort is to onboard and coordinate emergent solutions into the OPIR TAP lab and 
+create a shared understanding of the problem set of the Missile Warning and Tracking (MWT) mission 
+area. Successful Phase I efforts from this topic will target capability testing within the OPIR Tap Lab with 
+the goal of advancing capability and de-risking follow-on capability development in subsequent phases. 
+Proposed solutions should include a feasibility study and algorithm prototypes or simulation results as 
+applicable as well as a clear path to integration and testing within the OPIR Tap Lab. 
+ Focused topic areas can include any part of the following: 
+- Edge Fusion & Autonomy: AI/ML solutions for on-orbit track fusion, autonomous constellation tasking, 
+and event-driven scheduling across proliferated MEO/LEO architectures in contested environments. 
+- Multi-Source Integration: Capabilities that fuse OPIR, EO, radar, SIGINT, and commercial sensor data 
+to improve detection, tracking, typing, and characterization — with scalable software architectures and 
+ML-driven sensor calibration. 
+- Observe, Orient, Decide, Act (OODA) Loop Collapse & Mission Assurance: Solutions that accelerate 
+the sensor-to-decision-maker kill chain with sufficient confidence and explainability to assure mission-
+critical decisions. These can include but are not limited to dynamic user control of automation (C2, 
+operator overload, scalable operations), orchestration, edge computing, AI trade-space exploration, and 
+authoritative knowledge access. 
+- New sources and methods for Missile Warning that are outside of the current MW operational paradigm 
+tactics, techniques, and procedures (TTPs). 
+Proposals should emphasize technical feasibility and clearly outline a Phase I research plan that can 
+include modeling, simulation, literature review, or trade studies. While a Phase II transition concept may 
+be outlined, Phase I deliverables are expected to focus on a feasibility study detailing USSF CONOPS 
+and technical viability, as well as analytical findings. 
+DAF - 12 
+ 
+ 
+Feasibility Study: A feasibility study is an assessment of the practicality of developing and implementing 
+a new technology within a given concept. The study aims to objectively and rationally uncover the 
+strengths and weaknesses of the new technology, the feasibility of successful development of the 
+technology, and the viability of the success of implementation of the technology in the proposed 
+CONOPS. The study should: 
+- Identify the benefits of the new technology within the CONOPS over existing solutions (or lack thereof) 
+- Identify the risks, uncertainties/unknowns, and issues of the proposed CONOPS with mitigation and 
+closure measures 
+- Identify the critical technology elements (CTEs) of the new technology 
+- Provide data to support the feasibility of technology development of each CTE to include: literature 
+research supporting technical viability or historical usage, trade studies identifying existing technologies, 
+current developments, and/or feasible development pathways, analysis demonstrating technical solutions, 
+and heritage usage of similar technology with identified differences in operations and/or environment for 
+proposed CONOPS. 
+The Concept of Operations (CONOPS) should clearly communicate how the technology is intended to 
+support a military mission within a defined system. The main purpose of the CONOPS is to facilitate a 
+common understanding of a future system to help develop operational and system-level requirements. 
+CONOPS should be written at the system level first and then expanded on how the technology functions 
+enable successful military operations. 
+PHASE II: Phase II aims to build off the work completed from the Phase I after successfully 
+demonstrating capability for operational use within the OPIR Tap Lab or similar environments that 
+demonstrate integrating advanced AI/ML for real-time multi-sensor fusion and missile tracking from 
+OPIR systems. Activities include system development, integration, and testing in operationally relevant 
+environments to verify performance metrics (e.g., accuracy, latency, resilience, coverage). Phase II will 
+mature the feasible concepts identified in Phase I into a deployable, testable prototype. Phase II will 
+include design refinement, system development, and operationally relevant testing focused on delivering a 
+measurable improvement in AI/ML techniques to detect and/or accurately fuse any source detecting these 
+threats, either on the ground in the traditional processing ground stations or on board via edge processing. 
+While successful Phase I efforts establish technical feasibility and transition the validated proof-of-
+concept into the OPIR Tap Lab or a similar testbed, the Phase II efforts will continue the development of 
+technologies coming out of the OPIR Tap Lab. By utilizing this operationally relevant environment, the 
+work progresses to system development, integration, and testing, which de-risks follow-on capability 
+development. The ultimate goal of this pathway is to mature the feasible concepts into a deployable, 
+testable working prototype that delivers a measurable improvement in techniques for multi-sensor fusion 
+and missile detection, warning, tracking and reporting. 
+PHASE III DUAL USE APPLICATIONS: Potential Phase III efforts will pursue transition of the 
+capability to operational use through non-SBIR/STTR funding streams, aiming for a Technology 
+DAF - 13 
+ 
+Readiness Level (TRL) of 6 or 7 and demonstrating functionality in relevant environments. A key 
+transition pipeline for this capability is the Space Modernization Initiative (SMI) program within Space 
+System Command's Space Sensing portfolio. Successful efforts in potential Phase III efforts will involve 
+full integration into OPIR operational data workflows and fielding the capability at scale to provide 
+recurring operational value and reduce warfighter risk by expanding OPIR sensing capabilities. 
+REFERENCES: 
+1. TRL Guide - https://www.gao.gov/assets/gao-20-48g.pdf. 
+2. OPIR Tap Lab - https://boulderlab.org/. 
+KEYWORDS: SpaceWERX, Space Platforms, Space Sensing, Overhead Persistent Infrared (OPIR), Data 
+Fusion, AI/ML, OODA, Mission Assurance",T0.3 ITAR | T0.4 Registration check
+DAF26BZ06-NV034,Low Noise & Low-SWaP High-Repetition Rate Mode-Locked Lasers for High-Speed Photonics,USAF,SBIR,"October 21, 2026","Lasers for High-Speed Photonics 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum and Battlefield Dominance (Q-BID) 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Integrated Sensing and Cyber, 
+Microelectronics, Advanced Materials 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+The technology within this topic is restricted under the International Traffic in Arms Regulation 
+(ITAR), 22 CFR Parts 120-130, which controls the export and import of defense-related material and 
+services, including export of sensitive technical data, or the Export Administration Regulation (EAR), 
+15 CFR Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of 
+foreign nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the 
+statement of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 
+3.5 of the Announcement. Offerors are advised foreign nationals proposed to perform on this topic 
+may be restricted due to the technical data under US Export Control Laws. 
+OBJECTIVE: Develop compact low-SWaP optically- or electrically-pumped mode-locked lasers in 
+the near-infrared (NIR) to short-wave infrared (SWIR) capable of operating at repetition rates 
+between 6 and 12 GHz. 
+DESCRIPTION: Mode-locked semiconductor lasers can support high repetition rates up to 100 GHz 
+due to the high gain and fast gain recovery unlike in fiber lasers or doped dielectric gain medium 
+lasers. While harmonic mode-locking or pulse interleaving can be used to increase the repetition rate 
+into the 4 to 10 GHz range each of these techniques lack a pure microwave signal. High repetition rate 
+semiconductor lasers can provide the low-noise microwave signal due to the fundamental mode-
+locking that can be achieved in the gigahertz range with a semiconductor saturable absorber mirror 
+(SESAM). This offers a compact, efficient, low-noise, high-speed option for connecting the optical 
+and microwave domain enabling integration with photonic integrated circuits (PICs) or COTs 
+components. Currently a commercially available stabilized low-noise laser in the 6 to 12 GHz range is 
+lacking. 
+A promising approach is a technique enabling a two-element cavity design for high-repetition rate 
+lasers has been demonstrated [1,2]. By including the semiconductor saturable absorber with a 
+dielectric output coupler the overall cavity length can be made shorter for high-repetition rates 
+without complex gain structures and without high curvature cavity optics. In the near-infrared (NIR) 
+this was demonstrated on a curved output coupler with a bonded quantum well saturable absorber 
+resulting in a hybrid SESAM [1] achieving pulse-widths of about 400 fs at repetition rates from 2.8 to 
+8 GHz. In the visible spectrum a similar technique was applied with a flat dielectric mirror, 
+constructing what was coined as a membrane saturable absorber mirror (MESAM) [2]. Due to the 
+output coupler and saturable absorber being independent the repetition rate remained low but still 
+achieved picosecond pulses. Integrating these elements via direct membrane bonding of the saturable 
+absorber allows higher repetition rates and has been demonstrated for high-power applications [3]. It 
+is envisioned that this approach, or other proposed solutions, can be extended throughout the NIR and 
+into the SWIR, particularly in the O-band and C-band for compatibility with PICs and COTs 
+components. 
+The developed lasers should be able to operate at a repetition rate between 6 and 12 GHz, achieve 50 
+mW or greater average power, with a pulse width of a picosecond or less. The laser can be optically- 
+or electrically-pumped but must have the repetition rate stabilized with custom or COTs electronics 
+while achieving low relative intensity noise (RIN) and long-term power stability. It is expected that 
+the overall SWaP of the laser itself and necessary electronics will be minimized with differentiating 
+DAF - 12 
+ 
+goals highlighted in Phase I, II, and III. No government materials, equipment, data, or facilities will 
+be provided. 
+PHASE I: Develop a proof-of-concept for the necessary components and conduct a feasibility study to 
+demonstrate for a breadboard 6 to 12 GHz mode-locked laser with picosecond or shorter pulse widths. 
+Component development is to include semiconductor gain medium, saturable absorber or other mode-
+locking element, and necessary fabrication steps for the components. Potential metrics include 
+average power, pulse energy, pulse width, long-term power stability, spectral bandwidth, repetition 
+rate tuning, and relative intensity noise (RIN). Supporting electronics can utilize benchtop solutions. 
+PHASE II: Conduct research to transition the validated Phase I design into prototypes for two fiber-
+coupled brassboards with full stabilization and low-noise low-SWaP implementation of the NIR to 
+SWIR mode-locked laser. Aside from an external DC power supply, all electronics should be modular 
+with the ability to integrate in Phase III. 
+PHASE III DUAL USE APPLICATIONS: Develop a fully packaged low-noise high-repetition rate 
+mode-locked laser operating in the NIR to SWIR spectral range suitable for system integration and 
+commercial sales. 
+REFERENCES: 
+1. Gibson, R., et al, “Hybrid SESAMs for high-repetition rate mode-locked VECSELs,” SPIE 
+Proc., VECSELs XII, Vol. 12404, p. 1240407, 2023 
+2. Ćutuk, A., Grossmann, M., Jetter, M. and Michler, P., “Membrane saturable absorber mirror 
+(MESAM) in a red-emitting VECSEL for the generation of stable ultrashort pulses,” Opt. 
+Exp., 31(4), pp.6796-6804, 2023 
+3. Diebold, A., et al, “Optimized SESAMs for kilowatt-level ultrafast lasers,” Opt. Exp., 24(10), 
+pp.10512-10526, 2016 
+KEYWORDS: CO₂ Mode-Locked Lasers, Frequency Combs, Semiconductor Lasers, Infrared, InP, 
+GaSb, MOCVD, MBE",T0.3 ITAR | T0.4 Registration check
+DAF26BZ06-NV035,Quantum Memory for Secure Communication,USAF,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum and Battlefield Information 
+Dominance (Q-BID) 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Integrated Sensing and Cyber, Integrated 
+Network System-of-Systems, Quantum Science, Emerging Threat Reduction, Sustainment & 
+Logistics 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+OBJECTIVE: The objective of this SBIR Phase I project is to develop and demonstrate advanced 
+quantum memory systems essential for enabling secure communication within quantum networks. 
+The primary goal is to enhance the storage and transmission capabilities of photonic qubits, ensuring 
+high coherence and minimal loss over extended distances. This will facilitate the creation of scalable 
+quantum repeater systems that significantly improve the efficiency and robustness of Quantum Key 
+Distribution (QKD). By focusing on the foundational aspects of quantum memory hardware, this 
+effort aims to address critical challenges in quantum communication, providing a reliable solution that 
+can be adapted and expanded upon in subsequent phases. The results from this phase will establish a 
+solid technical foundation, allowing for iterative improvement and seamless integration with existing 
+and future quantum entanglement sources and networks. 
+DESCRIPTION: The rapid advancement of quantum computing poses a significant challenge to 
+traditional encryption methods, potentially compromising the security of digital communications. 
+Quantum Key Distribution (QKD) provides a solution by utilizing quantum properties to generate 
+secure encryption keys. However, the current QKD systems are limited by signal loss over long 
+distances, preventing widespread implementation. This project seeks to address this limitation by 
+developing advanced quantum memory systems, or quantum repeaters, designed to extend the range 
+and fidelity of quantum signals. These repeaters will enable efficient Quantum Key Distribution over 
+long distances, thereby enhancing secure communications for the Air Force's digital infrastructure. 
+The primary goal of this project is to develop and demonstrate advanced quantum memory systems 
+capable of high coherence and minimal loss, essential for reliable communication within quantum 
+networks. At the project start, the technology is at a Technology Readiness Level (TRL) 2, focusing 
+on the application concept formulation. By the end of Phase II, the target is to reach TRL 5, 
+demonstrating the integrated system in a relevant environment. 
+The required efforts will commence with foundational research and development of quantum memory 
+hardware. In Phase I, the tasks will involve designing quantum memory materials, developing 
+quantum repeater prototypes, and validating their performance through controlled laboratory 
+experiments. Key activities will include: 
+● Designing and fabricating quantum memory materials aimed at reducing signal 
+decoherence and data loss. 
+● Developing prototypes capable of storing and transmitting photonic qubits. 
+● Conducting laboratory tests to validate the prototypes' performance against defined 
+metrics (e.g., coherence, loss, noise). 
+For Phase II, the focus will shift to refining these prototypes, integrating them into a scalable network, 
+and validating their operation in a relevant environment. The main activities will include: 
+● Enhancing quantum memory systems for increased coherence fidelity and extended 
+transmission distances. 
+DAF - 14 
+ 
+● Integrating prototypes with existing entanglement sources and quantum communication 
+networks. 
+● Testing the quantum memory systems in simulated and real-world environments to ensure 
+robustness and reliability. 
+● Evaluating performance through rigorous data collection and analysis to meet predefined 
+security and operational metrics. 
+Minimum deliverables for this project include detailed technical reports, functional quantum memory 
+prototypes, performance evaluation data, and an integration roadmap detailing steps for transition into 
+operational use. The advanced quantum repeater systems developed through this SBIR initiative will 
+significantly enhance the DoD's capabilities in secure communications, positioning the Air Force at 
+the forefront of quantum-secured information transfer. 
+PHASE I: Phase I will assess the feasibility of using quantum memory hardware to enhance Quantum 
+Key Distribution (QKD) by requiring proposals to detail the scientific approach, develop a conceptual 
+design for a functional quantum memory prototype showcasing its capabilities and potential 
+advantages in both lab and simulated environments. Demonstrate Technology Readiness Level 3 by 
+drafting a feasibility report and a detailed architecture plan for a Phase II prototype of a lab-based test 
+bench capable of end-to-end quantum information transport. 
+PHASE II: Phase II will focus on developing a prototype quantum repeater/memory system, 
+validating functionality in relevant environments, and achieving TRL 4-6. This involves building 
+scalable prototypes, integrating with entangled pair transmission equipment, and rigorous lab testing 
+to meet metrics such as coherence, loss, and security. Successful outcomes will demonstrate transition 
+readiness for development and deployment. 
+PHASE III DUAL USE APPLICATIONS: In Phase III, the quantum memory technology will achieve 
+TRL 7, transitioning into secure DoD communication networks and commercial QKD applications. 
+Expected efforts include finalizing integration, extensive testing, obtaining necessary certifications, 
+and establishing production capability. Potential Air Force customers include network and 
+cybersecurity divisions. This addresses critical needs for secure, long-range communication solutions. 
+REFERENCES: 
+1. H. J. Kimble, ""The quantum internet, ""Nature, vol. 453, no. 7198, pp. 1023-1030, 2008. 
+2. N. Gisin and R. Thew, ""Quantum communication, ""Nature Photonics, vol. 1, no. 3, pp. 
+165-171, 2007. 
+3. M. Afzelius, C. Simon, H. de Riedmatten, and N. Gisin, ""Multimode quantum memory 
+based on atomic frequency combs, ""Physical Review A, vol. 79, no. 5, p. 052329, 2009. 
+4. T. D. Ladd et al., ""Quantum computers, ""Nature, vol. 464, pp. 45-53, 2010. 
+5. F. Bussieres et al., ""Prospective applications of optical quantum memories, ""Journal of 
+Modern Optics, vol. 60, no. 18, pp. 1519-1537, 2013. 
+6. R. Van Meter, S. J. Devitt, and K. M. Itoh, ""Architecture-dependent execution time of 
+Shor's algorithm, ""Physical Review A, vol. 76, no. 6, p. 064301, 2007. 
+7. C. H. Bennett and G. Brassard, ""Quantum cryptography: Public key distribution and coin 
+tossing, ""Proceedings of IEEE International Conference on Computers, Systems and 
+Signal Processing, Bangalore, pp. 175-179, 1984. 
+8. E. Knill, R. Laflamme, and G. J. Milburn, ""A scheme for efficient quantum computation 
+with linear optics, ""Nature, vol. 409, pp. 46-52, 2001. 
+9. Journal of Research of the National Institute of Standards and Technology (2020), 
+""Optical Quantum Memory and its Applications in Quantum Communication Systems"". 
+https://doi.org/10.6028/jres.125.002 
+10. The Quantum Consortium. QED-C | The Quantum Economic Development Consortium 
+11. National Quantum Initiative. www.quantum.gov 
+DAF - 15 
+ 
+12. BB84 Protocol: Bennett, C. H., & Brassard, G. (1984). ""Quantum cryptography: Public 
+key distribution and coin tossing. ""Theoretical Computer Science, 560, 7-11. (This is the 
+original QKD protocol.) 
+13. V. Scarani, H. Bechmann-Pasquinucci, N. J. Cerf, M. Dušek, N. Lütkenhaus, & M. Peev, 
+""The security of practical quantum key distribution, ""Reviews of Modern Physics, vol. 81, 
+no. 3, pp. 1301, 2009. 
+14. S. Pirandola, S. L. Braunstein, R. Laurenza, C. Ottaviani, & G. Spedalieri, ""Quantum 
+cryptography, ""Nature Reviews Physics, vol. 2, no. 11, pp. 724-742, 2020. 
+15. M. Lucamarini, Z. L. Yuan, J. F. Dynes, & A. J. Shields, ""Overcoming the rate–distance 
+limit of quantum key distribution without quantum repeaters, ""Nature, vol. 557, no. 7705, 
+pp. 400-403, 2018. 
+ 
+KEYWORDS: Quantum Memory; Quantum Key Distribution; Secure Communication; Quantum 
+Networks; Photonic Qubits; Quantum Repeaters; Long-Range Communication; Cybersecurity; TRL 
+2-5; Quantum Science; AFWERX; Strategic Communications; Emerging Threats",T0.4 Registration check
+DAF26BZ06-NV036,Flightline Radio Network,USAF,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum and Battlefield Information 
+Dominance (Q-BID) 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Integrated Network System-of-Systems, 
+Sustainment & Logistics, FutureG 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+OBJECTIVE: The objective of this SBIR Phase I effort is to explore and develop innovative 
+technologies leveraging cellular network infrastructure, particularly focusing on Open Radio Access 
+Network (Open RAN) architectures, to enhance communication capabilities on the flight line at 
+Edwards AFB. The goal is to establish a secure, adaptable, and interoperable cellular network that 
+facilitates superior aircraft maintenance, logistics, and operational efficiency. Additionally, the effort 
+aims to support advanced test and evaluation activities, promoting a high-performance 
+communication environment that meets the stringent demands of a modern Air Force Base. This R&D 
+initiative will focus on feasibility studies, system design, and foundational prototyping, ensuring 
+flexibility for future adaptation and integration into subsequent phases based on Phase I outcomes and 
+insights. 
+DESCRIPTION: Flight line operations at Edwards Air Force Base (AFB) face increasing demands for 
+more efficient, secure, and real-time communication systems to enhance aircraft maintenance, 
+logistics, and operational performance. Current communication solutions are limited by outdated 
+infrastructure, lack of interoperability, and insufficient data transmission capabilities. There is a 
+distinct opportunity to leverage advanced cellular network technologies, particularly 5G and Open 
+Radio Access Network (Open RAN) architectures, to address these limitations and modernize the 
+flight line environment. 
+The objective of this SBIR Phase I project is to explore and develop innovative solutions utilizing 
+cellular network infrastructure designed specifically for flight line applications. The aim is to create a 
+secure, adaptable, and interoperable network that improves real-time communication, data sharing, 
+and operational efficiency at Edwards AFB. The project will focus on enhancing ground crew 
+coordination, enabling real-time aircraft health monitoring, and supporting predictive maintenance to 
+reduce aircraft downtime and enhance mission readiness. Augmented reality (AR) applications will be 
+integrated to provide maintenance personnel with real-time guidance, schematics, and remote support, 
+further optimizing maintenance tasks. 
+From a technical standpoint, the initiative will employ a 5G Open RAN architecture, offering 
+increased flexibility, interoperability, and security while minimizing vendor lock-in and lowering 
+costs. The modular design of this network will allow it to accommodate evolving test requirements 
+and future upgrades, ensuring a scalable and cost-effective solution. The network will integrate 
+seamlessly with Edwards AFB's existing infrastructure and employ efficient frequency allocation 
+through spectrum sharing mechanisms. 
+The anticipated Technology Readiness Level (TRL) at the start of this project is TRL 4, with a 
+targeted advancement to TRL 6-7 by the end of Phase II. This progression will be achieved through a 
+series of phased activities and deliverables: 
+● Phase I: Conduct feasibility studies and initial system design. This includes analyzing 
+current flight line communication requirements, exploring Open RAN components, and 
+developing foundational prototypes. Deliverables will include a comprehensive feasibility 
+report, initial design schematics, and a preliminary prototype proof-of-concept. 
+● Phase II: Develop and refine prototype based on Phase I insights. Implementation of 
+pilot deployments and rigorous testing to validate system performance and security. 
+DAF - 17 
+ 
+Deliverables will include a full-scale prototype, detailed test results, and an integration 
+plan for transitioning the technology to operational use at Edwards AFB. 
+The successful completion of this project is expected to significantly advance the DoD's technological 
+state by providing a robust, future-proof communication solution tailored to the unique demands of 
+flight line operations. This development aligns with modernization priorities such as Integrated 
+Network System-of-Systems and Sustainment & Logistics, ultimately contributing to the 
+operationally focused Advanced Battle Management System (ABMS). 
+PHASE I: Phase I will assess the feasibility of an Open RAN network for flight line use at Edwards 
+AFB. It will outline network architecture, components, deployment strategy, and address potential 
+interference with aircraft systems. Deliverables include security analysis, use cases, and integration 
+plans. Success includes achieving TRL 3-4, demonstrating proof-of-concept through a preliminary 
+prototype and feasibility report. 
+PHASE II: Phase II will develop and test a prototype Open RAN network at Edwards AFB. The 
+system will include base stations, network components, user equipment, and specialized sensors. 
+Testing will evaluate performance and ensure compatibility with aircraft systems, assessing coverage, 
+bandwidth, latency, security, and operational impact. The system must integrate with Edwards AFB’s 
+infrastructure and achieve TRL 6, demonstrating a functional prototype in an operational setting. 
+PHASE III DUAL USE APPLICATIONS: Phase III involves scaling the Open RAN cellular network 
+at Edwards AFB to enhance flight line operations, targeting TRL 7. Military applications include real-
+time maintenance data and improved logistics coordination. Commercial use spans complex logistics 
+in aerospace sectors. Transition efforts will engage the 412th MXG, AFMC, and commercial partners, 
+supported by Air Force Sustainment Center and AFLCMC funding. 
+REFERENCES: 
+1. 3rd Generation Partnership Project. 3GPP – The Mobile Broadband Standard 
+2. Range Commanders Council IRIG 106. 106 Telemetry Standards - Public RCC - TRMC 
+Website (Confluence) 
+3. O-RAN Alliance. O-RAN Use Cases and Deployment Scenarios. O-RAN ALLIANCE e.V 
+4. Next Generation Mobile Networks Alliance (NGMN). Open RAN White Paper. NGMN – We 
+make better connections 
+KEYWORDS: 5G, private cellular, flight line, aircraft maintenance, secure communications, 
+predictive maintenance, augmented reality, Edwards AFB, logistics",T0.3 ITAR | T0.4 Registration check
+DAF26TX06-NV514,Space Domain Operational Environment Assessment,USAF,STTR,"October 21, 2026","COMPONENT TECHNOLOGY PRIORITY AREA(S): Space Technology 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+The technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 
+22 CFR Parts 120-130, which controls the export and import of defense-related material and services, 
+including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR 
+Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign 
+nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement 
+of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with section 3.5 of the 
+Announcement. Offerors are advised foreign nationals proposed to perform on this topic may be restricted 
+due to the technical data under US Export Control Laws. 
+OBJECTIVE: The objective of this Phase I effort is to develop methods, including integration of 
+intelligence information, predictive analytics, anomaly detection, threat prediction and environmental 
+monitoring for timely space domain awareness, threat detection and operational environment assessment 
+to support multi-domain operations. Traditional sensing alone cannot track or characterize emergent non-
+standard threats and current research neglects space-centric operational environment monitoring. To 
+address these gaps, the U.S. Space Force (USSF) seeks novel sensing phenomenologies paired with real-
+time multi-INT data processing, predictive analytics, and anomaly detection concepts that demonstrate 
+how new sensing and processing techniques can present a comprehensive space operating picture. 
+DESCRIPTION: With the acknowledgement of space as a warfighting domain in 2019, the U.S. Space 
+Command was established as a geographic combatant command. No orbital regime is entirely safe from 
+intentional or unintentional threats. Adversary forces can track and target U.S. forces in all warfighting 
+domains. The past two decades have witnessed rapidly maturing space based and counterspace 
+capabilities of U.S. adversaries, as well as their attempts to interfere with U.S. military operations. U.S. 
+operational space activities perform a continuous cycle of situational awareness, planning, execution, and 
+assessment to support leadership’s decision-making process at all levels of command. 
+Space Domain Operational Environment Assessment is a prerequisite to achieving space superiority by: 
+(a) understanding the situation in space, and (b) gaining insight into space-related activities in other 
+domains. Even in peacetime, awareness and mission assessment in the space domain is difficult to 
+maintain due to the scope and distances involved. Achieving timely awareness and assessment of space 
+activities to support space superiority operations is a monumental, highly technical challenge that is only 
+growing. The past 20 years has seen the number of objects in orbit grow from approximately 10,000 to 
+over 50,000. As this number grows, so too does the need for timely space domain awareness and situation 
+assessment. 
+Given the complexity and challenges of operations in space, this topic seeks to develop a proof-of-
+concept to leverage multi-INT, multi-domain data, intelligence, and information sources to monitor and 
+assess space operations and their functionality in a timely manner in response to intentional and 
+unintentional threats and situations of interest. 
+DAF - 11 
+ 
+To accomplish this, the topic consists of two distinct Technical Areas (TAs). The first TA (TA1) focuses 
+on the collection, processing and analysis of all data types and phenomenologies for advanced Space 
+Domain Awareness and detection of non-standard threats. The second TA (TA2) focuses on analytics, 
+data fusion, machine learning, dynamic command and control for understanding adversary capabilities, 
+actions (offensive/defensive) and effects. 
+Technical Area 1 - Real-time Processing of Non-Traditional Phenomenologies for Non-Standard Threats 
+The space domain is becoming increasingly congested and contested as the population of satellites in the 
+space domain is both increasing and expanding. The emergence of non-standard threats in the space 
+domain poses a challenge for traditional phenomenologies, such as RADARs and electro-optical 
+telescopes. Today’s non-standard threats are increasingly difficult to detect, track and characterize. The 
+United States Space Force (USSF) must possess the capability to monitor the space domain for 
+nonstandard threats in order to protect national assets. This topic seeks to identify new sensing 
+phenomenologies and the processes necessary to detect, track, and characterize non-standard threats. 
+Additionally, the USSF needs to understand how these new phenomenologies complement and improve 
+information products generated by traditional phenomenologies. 
+Technical Area 2 - Real-Time Automated Data Fusion, Analysis & Exploitation 
+Joint space forces typically support multiple Combatant Commands, joint functions, and Operational 
+Environments simultaneously to create effects during all military operations (strategic, operational, and 
+tactical). Joint planners continually coordinate across internal and external equity holders to integrate 
+intelligence and information for commander guidance and decisions on the development and refinement 
+of space strategies, plans, and objectives. The timely assessment of space operations is critical for the 
+iterative joint planning process, especially in a contested environment, and must keep pace with evolving 
+conditions and considerations. This can be challenging in the space domain where operators often cannot 
+directly observe the effects of an operation and resulting adversary behavior. 
+Space operations assessment measures the progress toward accomplishing a task, creating an effect, 
+achieving an objective, or attaining an end state by comparing forecasted outcomes to actual events to 
+determine the overall effectiveness of force employment. As planners identify specific space tasks, they 
+also develop measures of performance and measures of effectiveness to assess each task and objective. 
+Space operations assessment informs the decision-making process concerning the best way to employ and 
+adapt limited resources in support of military operations. 
+PHASE I: TA1: Identify non-traditional phenomenologies that can be used to perform SDA collections. 
+Investigate the technical challenges to exploiting the data from non-traditional phenomenologies for real-
+time SDA. Identify a collection strategy. Identify the benefits of leveraging the non-traditional 
+phenomenology to complement and improve traditional phenomenologies. Define specific performance 
+metrics and demonstrate how the approach enhances the defined metrics for tracking and characterizing 
+targets. The offeror is expected to include a detailed plan outlining the development, testing, and 
+integration of the proposed solution, including specific timelines and milestones. GFE will not be 
+provided. 
+DAF - 12 
+ 
+TA2: Design a concept for a workable and scalable prototype to address the basic capabilities and 
+technical feasibility of the stated objective as well as data and information sources and the timeliness of 
+their solution. Identify non-traditional phenomenology and data sources. Define a set of metrics and 
+success criteria for a Phase 2 prototype. Include detailed findings in a Phase II plan in the final report. 
+GFE will not be provided. 
+PHASE II: TA1: Research and develop technical solutions to address the technical challenges of the non-
+traditional phenomenology identified in the Phase I effort. Develop and demonstrate a simulation 
+capability to generate simulated data for the non-traditional phenomenology. Perform SDA collections 
+with the nontraditional phenomenology and investigate the collected data. Develop a framework for 
+processing of the non-traditional phenomenology. Develop a methodology to perform data fusion of the 
+non-traditional phenomenology with traditional phenomenologies. Demonstrate an integrated prototype 
+system or incorporation of new phenomenologies into an existing system. Demonstrate the ability to 
+generate actionable information on relevant timelines through a simulation or deployment to a relevant 
+environment. GFE will not be provided. 
+TA2: Develop, implement and test the proposed Phase 1 solution as prototype software to assess space 
+operations using multi-INT multi-domain data and information in a timely manner in response events of 
+interests and unintentional threats and their effects on space missions. Show the feasibility of the 
+approach using modeling simulation and real-world data. GFE will not be provided. 
+For both Success criteria for Phase II include: 
+- Demonstrated software prototype capability. Demonstration will be measured against metrics and 
+CONOPs use case. 
+- Ability to integrate outputs into operational workflows with minimal burden on users. 
+- Achievable path to Phase III transition, including identification of customers, funding mechanisms, and 
+required approvals. 
+PHASE III DUAL USE APPLICATIONS: Further develop and deploy the prototype capabilities 
+developed under Phase II. Develop a strategy to transition prototype residual capabilities and incremental 
+proliferation based on operational USSF requirements. Mature prototype software into a commercial 
+product for commercial SDA. Identify government and commercial organizations for transition. Generate 
+the technical and training documentation required for third party integration. Provide services to the 
+government to maximize the utility of the alerts to operations. Provide services to the government to 
+update software prototype for different applications. This topic promotes dual-use opportunities to 
+provide health and operational status of commercial satellites and their services in relation to adversaries’ 
+actions. 
+REFERENCES: 
+1. Joint Chiefs of Staff, 2023. Joint Publication 3-14: Joint Space Operations. Washington, DC: Joint 
+Chiefs of Staff. 
+DAF - 13 
+ 
+2. Joint Chiefs of Staff, 2020. Joint Publication 5-0: Joint Planning. Washington, DC: Joint Chiefs of 
+Staff. 
+3. Joint Chiefs of Staff, 2021. Joint Publication 3-60: Joint Targetting. Washington, DC: Joint Chiefs of 
+Staff. 
+4. Galbreath, C.S., 2025. A Broader Look at Dynamic Space Operations: Creating Multi-Dimensional 
+Dilemmas for Adversaries. The Mitchell Institute for Aerospace Studies. 
+5. Reeves, J., 2025. Charting a Path to Space Superiority: The Cross-Domain Imperative. The Mitchell 
+Institute for Aerospace Studies. 
+6. United States Space Force, ""Spacepower,"" Space Capstone Publication, Headquarters United States 
+Space Force, June 2020. 
+7. J. O'Farrill, T. Mims, T. Janik and I. Fernandez, ""Multi-Phenomenology Characterization of Space 
+Objects Using Reinforcement Learning,"" in AMOS Conference, Wailea, HI, 2022. 
+8. E. Griggs, M. Schierholtz, I. Hussein, M. Bolden, K. Charles and H. Borowski, ""Probabilistic Initial 
+Orbit Determination and Object Tracking in Cislunar Space Using Passive Radio Frequency Sensors,"" in 
+AMOS Conference, Wailea, HI, 202. 
+KEYWORDS: Multi-phenomenology sensing, spacepower, deterrence, indications & warning, object 
+tracking, real-time data processing, novel sensor design, data dissemination, space domain, information 
+exploitation, space domain awareness, space operational environment assessment; space operational 
+environment 
+A
+-1
+Appendix A 
+TECHNICAL PROPOSAL TEMPLATE (VOLUME 2) 
+INS
+TRUCTIONS 
+These instructions and template apply to DoW SBIR/STTR Phase I topics and provide general guidelines 
+for completing the Phase I Technical Volume. Information provided in the Service/Component-specific 
+instructions for the topic of interest take precedence over any instructions listed below. 
+T
+he template (beginning on the following page) is the format model that may be used to prepare the Phase 
+I Technical Volume. Do not include the instructions provided on this page or any bracketed [ ] guidance 
+in the template. 
+Disclosure 
+Offerors that include in their proposals data which they do not want disclosed to the public for any 
+purpose, or used by the U.S. Government except for evaluation purposes, must:
+(1) Mark the first page of each Volume of the Submission with the following legend:
+""This proposal includes data that must not be disclosed outside the Government and must not be
+duplicated, used, or disclosed-in whole or in part-for any purpose other than to evaluate this
+proposal. If, however, a contract is awarded to this offeror as a result of-or in connection with-the
+submission of this data, the Government has the right to duplicate, use, or disclose the data to the
+extent provided in the resulting contract. This restriction does not limit the Government's right to use
+information contained in this data if it is obtained from another source without restriction. The data
+subject to this restriction are contained in pages [insert numbers or other identification of sheets]"";
+(2) Mark each sheet of data it wishes to restrict with the following legend:
+""Use or disclosure of data contained on this page is subject to the restriction on the first page of this
+volume.""
+F
+ormat 
+The Technical Volume shall meet the following requirements: 
+• Please refer to Service/Component-specific topic instructions for the page limit and how a
+technical volume is handled if the stated page count is exceeded. It is the proposing firm’s
+responsibility to verify that the Technical Volume does not exceed the page limit after upload to
+D
+SIP. Unless otherwise noted, all content in the Technical Volume will count toward the limit.
+• Single column format single-spaced typed lines.
+• Standard 8 ½” x 11” paper format.
+• Page margins one inch on all sides. A header and footer may be included in the one-inch margin.
+• The header on each page of the Technical Volume should contain your company name,
+t
+opic number, and DSIP-assigned proposal number.
+• No font smaller than 10-point. For headers, footers, imbedded tables, figures, images, or graphics
+t
+hat include text, a font size of smaller than 10-point is allowable, though proposers are cautioned
+t
+hat the text may be unreadable by evaluators.
+D
+o not lock or encrypt the uploaded file. Do not include or embed active graphics such as videos, 
+moving pictures, or other similar media in the document. 
+Del
+ete this instruction page and begin the Technical Volume starting with the following page.",STTR: Requires RI partner | T0.3 ITAR | T0.4 Registration check
+DAF26TZ06-NV007,Automated Combat Assessment at the Edge,USAF,STTR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Applied Artificial Intelligence (AAI) 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Trusted AI and Autonomy 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+OBJECTIVE: Develop a real time automated combat assessment at the edge system. 
+DESCRIPTION: Combat assessment (physical and functional) provides tactically relevant information 
+for re-strike and re-planning. The state of practice for traditional targeting involves generating after-action 
+reports including battle-damage assessment hours after mission execution relying on multiple imagery 
+collects (EO). This analysis is performed as a sequence of independent tasks that are outdated, time 
+consuming, and lack automation. This does not meet timeline requirements for prosecution of advanced 
+enemy threat systems as critical missions require battle damage assessment immediately post-strike, to 
+inform planning for re-strike and to drive potential changes to operations. 
+Despite advancements in technology, challenges still remain for speeding processes such as time-
+consuming and often incomplete nature of traditional damage assessment methods, limitations in remote 
+sensing technologies, hindering data collection especially in remote or difficult-to-access areas, the lack 
+of real time pre- and post-event satellite imagery for model training. This topic seeks the development of 
+a system for the automation of damage assessment following the below operational realities: 
+- Edge Processing Software. Software programs and data-sharing instructions designed to run directly on 
+physical field equipment such as sensors and unmanned aerial vehicles (UAVs). For multi-sensor, multi-
+modal data collection and processing, damage classification and assessment at the edge in (near) real 
+time, and information sharing protocols under low SWaP and contested environments constraints. 
+- AI/ML Software Model Development. AI/ML software designed to automatically classify military 
+damaged. For damage classification (physical and functional) that is aligned to the CJCSI 3162.02 for 
+DoD customers, confidence intervals aligned to the Intelligence Community Directive ICD 302, and 
+performance metrics for accuracy, computation time, and sensors density & location. 
+- Robust Testing and Evaluation. To ensure the operational effectiveness, suitability, and survivability of 
+the aforementioned technologies, testing and evaluation would be conducted in a phased approach. 
+Beginning with laboratory-based testing to verify basic functionality and performance, followed by 
+increasingly complex testing in simulated and field environments. The goal is to ensure that the 
+technologies developed for combat assessment are operationally effective, suitable, and can be 
+confidently deployed in operationally relevant environments. 
+PHASE I: Phase I will focus on the analysis and design of an automated combat assessment at the edge 
+system for re-strike (a particularly targeted asset) and re-attack recommendations with preliminary 
+laboratory model testing. Awardees must demonstrate an innovative approach to physical and functional 
+combat assessment, and novel or under-utilized data modalities. The final report must detail feasibility 
+study findings and a Phase II plan. 
+PHASE II: Develop, implement, test, evaluate, and demonstrate a distributed automated damage 
+assessment system at the edge that follows the criteria on the Description and Phase I sections of this 
+proposal. The final report must detail all criteria implementations and a Phase III plan. 
+DAF - 17 
+ 
+Phase II performance will focus on the development, integration, and operational evaluation of a 
+functional prototype software system for distributed, edge-based automated combat assessment. 
+Awardees will transition Phase I designs into working software models running on representative edge 
+hardware, culminating in a demonstration within a simulated or operationally relevant environment. 
+Required deliverables may include: 
+1. Functional prototype software and compiled AI/ML model weights. 
+2. Comprehensive system architecture and interface control documentation (ICD). 
+3. Phase II final report detailing test results, performance metrics, criteria implementations, and a 
+commercialization/transition plan for Phase III production and deployment. 
+PHASE III DUAL-USE APPLICATIONS: The awardee will identify and pursue commercial 
+applications, including urban surveillance, disaster and humanitarian response, and other use cases. 
+REFERENCES: 
+1. Analytic Standards, Intelligence Community Directive 203 Technical Amendment,” Office of the 
+Director of National Intelligence, 2023. [Online]. Available: 
+https://www.dni.gov/files/documents/ICD/ICD-203.pdf. [Accessed Aug. 19, 2025]. 
+2. “Methodology for Combat Assessment,” United States Joint Chiefs of Staff, 2021. [Online]. 
+Available: 
+https://www.jcs.mil/Portals/36/Documents/Library/Instructions/CJCSI%203162.02A.pdf. 
+[Accessed Aug. 19, 2025]. 
+3. BROAD AGENCY ANNOUNCEMENT (BAA) TITLE: Targeting Operations and Analytics 
+Development, BAA: FA8750-25-S-7002. [On Line]. Available: 
+https://sam.gov/opp/b7ad150efe1c4c8aaf574a7f6ca12276/view. [Accessed Aug. 19. 2025]. 
+KEYWORDS: Combat Assessment, Physical Damage, Functional Damage, Machine Learning, Edge 
+Processing, Testing, Evaluation",STTR: Requires RI partner | T0.3 ITAR | T0.4 Registration check
+DPA26BZ06-DV025,Noninvasive Detection and Localization of Occult Hemorrhage,DARPA,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Applied Artificial Intelligence 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Biotechnology 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Demonstrate a capability that noninvasively detects and localizes occult (internal) non-
+compressible hemorrhage outside of a hospital. 
+ 
+DESCRIPTION: TThe goal of this development effort is to produce a noninvasive or minimally invasive 
+capability that enables Role 1 medical personnel (specifically, a combat medic with no surgical or pre-
+operative imaging expertise) to rapidly detect, localize, and characterize the rate of life-threatening, 
+occult, or non-compressible torso hemorrhage (NCTH) that cannot be precisely identified through routine 
+clinical assessments available in the field. The proposed solution should integrate advanced sensing 
+technologies with artificial intelligence to provide accurate, real-time detection, anatomic localization, 
+and quantitative or semi-quantitative estimation of bleeding rate, distinguishing slow or self-limiting 
+hemorrhage from rapidly expanding, exsanguinating hemorrhage, and should function in austere and 
+contested environments. The capability should support serial or continuous monitoring such that changes 
+in hemorrhage rate can be tracked to provide updates to the medic in near-real time. Solutions should 
+provide intuitive, actionable visualization of both hemorrhage location and rate to support timely medical 
+decision-making, triage, and evacuation prioritization when definitive surgical care is delayed or denied. 
+ 
+PHASE I: Demonstrate the technical feasibility of a noninvasive or minimally invasive capability for 
+rapid detection, anatomical localization, and characterization of life-threatening occult or non-
+compressible hemorrhage. The performer shall develop a proof-of-concept sensing and artificial 
+intelligence framework capable of accurately identifying the anatomical source of bleeding and estimating 
+hemorrhage rate for a limited set of representative injury types. Scanning may be performed manually or 
+using an automated platform (e.g., robotic or assisted acquisition) and should provide clinically actionable 
+results within a timeframe compatible with Role 1 medical decision-making. 
+ 
+Proposals shall describe the envisioned concept of operations, including sensor placement or access 
+method (for minimally invasive approaches), data acquisition, user workflow, system-guided adjustments 
+to sensor positioning or data collection, data processing, reporting, and, where appropriate, serial or 
+continuous monitoring. Proposals shall describe the sensing technologies to be employed, their 
+anticipated technology maturity, the proposed AI algorithms and training strategy, available datasets, and 
+any additional data collection planned during Phase I. Representative testbeds may include retrospective 
+clinical datasets, computational models, physical phantoms, ex vivo preparations, or controlled preclinical 
+studies. 
+ 
+Phase I efforts should establish the technical capabilities and limitations of the proposed approach, 
+including the minimum and maximum resolvable hemorrhage rate, localization accuracy, anatomical 
+applicability (including challenging locations such as retroperitoneal hemorrhage or bleeding obscured by 
+bone or bowel), and expected robustness across representative operational conditions. Proposals shall 
+define quantitative performance metrics for hemorrhage detection, localization, bleeding-rate estimation, 
+response time, and operational robustness under austere conditions, including environmental stressors, 
+limited power availability, transportation, storage, and deployment. While field-ready systems are not 
+required, proposals utilizing components with demonstrated field suitability will be viewed favorably. 
+The Phase I effort should culminate in a proof-of-concept demonstration and a detailed technical 
+Version 3 
+DARPA - 19 
+ 
+development plan supporting maturation into an integrated prototype during Phase II. Phase I proposals 
+shall present tasking and relevant milestones for a 6-month base period. 
+ 
+PHASE II: Phase II will build upon the successful Phase I demonstration by developing, integrating, and 
+validating a portable prototype capable of real-time hemorrhage detection, anatomical localization, 
+bleeding-rate estimation, and longitudinal monitoring across a broader range of clinically relevant 
+battlefield injuries. Phase II should emphasize engineering maturation, system integration, and operational 
+validation rather than fundamental sensor development. The sensing hardware architecture established 
+during Phase I should remain substantially unchanged, with improvements focused on optimization, 
+robustness, algorithm refinement, and user-centered operation. 
+ 
+Performers shall expand system performance to encompass additional solid organs, vascular structures, 
+and clinically relevant hemorrhage scenarios while collecting additional datasets to improve algorithm 
+performance, robustness, and generalizability. The system shall support serial or continuous assessment 
+of hemorrhage progression, enabling near-real-time updates of bleeding location and rate. The integrated 
+prototype shall provide intuitive clinical decision support suitable for Role 1 medical personnel, including 
+actionable visualization of hemorrhage location, bleeding rate, confidence estimates, injury implications, 
+and recommendations supporting triage, treatment prioritization, and evacuation decisions. 
+ 
+Validation should be conducted using representative preclinical, cadaveric, clinical, or other operationally 
+relevant test environments, with performance evaluated under conditions representative of austere 
+military operations, including motion, environmental stress, limited logistical support, and 
+communications degradation where appropriate. Proposals shall define quantitative Phase II performance 
+metrics for detection accuracy, localization precision, bleeding-rate estimation, response time, 
+longitudinal tracking performance, robustness, usability, and operational suitability. Phase II should 
+conclude with delivery of an integrated prototype, validation results demonstrating operational feasibility, 
+and a transition strategy supporting military evaluation, regulatory planning, manufacturing, and 
+commercialization. 
+ 
+As with Phase I, proposals shall define envisioned Phase II metrics for success in the detection, 
+localization, and characterization of bleeding. Phase II proposals should enumerate the planned list of 
+injury targets planned for characterization. Phase II proposals shall present tasking and relevant 
+milestones for a 12-month base period, and separate tasking and milestones for a subsequent single 12-
+month option period. 
+Direct to Phase II (DP2) Requirements: 
+DP2 proposers must provide documentation demonstrating they have already achieved the feasibility 
+milestones expected at the conclusion of a Phase I effort. Specifically, proposals must demonstrate 
+existing evidence of: 
+• Proof-of-Concept: An established sensing and AI framework capable of accurately 
+identifying the anatomical source of occult/internal bleeding. 
+• Hemorrhage Rate Estimation: The ability to quantitatively or semi-quantitatively estimate 
+hemorrhage rates to distinguish slow bleeding from rapidly expanding hemorrhage across 
+various injury profiles. 
+• Performance Metrics: Tested parameters detailing the minimum/maximum resolvable 
+hemorrhage rates, localization accuracy, and anatomical applicability (including challenging 
+areas such as retroperitoneal hemorrhage). 
+• Operational Robustness: Preliminary data indicating the approach can withstand austere 
+conditions, including environmental stressors and limited power availability. 
+ 
+ 
+ 
+Version 3 
+DARPA - 20 
+ 
+PHASE III DUAL USE APPLICATIONS: Military Application (Battlefield): 
+The developed noninvasive hemorrhage detection system transitions directly to military operational 
+medicine, specifically empowering Role 1 combat medics. In austere and contested environments where 
+definitive surgical care or medical evacuation (MEDEVAC) is delayed or denied, this portable technology 
+provides critical clinical decision support. By continuously monitoring non-compressible torso 
+hemorrhage (NCTH) progression, medics can perform highly accurate triage, prioritize life-saving 
+interventions, and optimize evacuation scheduling for casualties with exsanguinating hemorrhage versus 
+those with self-limiting bleeding. 
+ 
+Civilian/Commercial Application (Remote Disaster Areas): 
+In the civilian sector, this technology holds significant dual-use potential for emergency medical services 
+(EMS), search-and-rescue teams, and disaster response units. During mass casualty incidents or natural 
+disasters (such as earthquakes or severe storms) where infrastructure is damaged and access to hospital 
+imaging is impossible, first responders can use this tool to rapidly detect occult internal bleeding at the 
+point of injury. It provides paramedics with real-time, actionable data to prioritize helicopter transport or 
+specialized trauma center routing for critically internally injured patients in remote or rural environments, 
+ultimately reducing preventable mortality outside of the hospital setting. 
+ 
+REFERENCES: 
+1. Eastridge BJ, Mabry RL, Seguin P, Cantrell J, Tops T, Uribe P, et al. Death on the battlefield 
+(2001–2011): Implications for the future of combat casualty care. Journal of Trauma and Acute 
+Care Surgery. 2012 Dec;73(6):S431–7. 
+2. Eastridge BJ, Hardin M, Cantrell J, Oetjen-Gerdes L, Zubko T, Mallak C, Wade CE, Simmons J, 
+Mace J, Mabry R, Bolenbaucher R, Blackbourne LH. Died of wounds on the battlefield: 
+causation and implications for improving combat casualty care. J Trauma. 2011 Jul;71(1 
+Suppl):S4-8. doi: 10.1097/TA.0b013e318221147b. PMID: 21795876. 
+18221147b. PMID: 21795876. 
+ 
+KEYWORDS: hemorrhage detection, clinical decision support, medical device, austere environment",T0.1 D2P2 also accepted (Phase I still open) | T0.3 ITAR | T0.4 Registration check
+DPA26BZ06-DV026,Influence Benchmarks for AI Systems,DARPA,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Applied Artificial Intelligence 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Human-Machine Interfaces 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Develop a testbed utilizing economic frameworks to benchmark AI biases in dynamic 
+environments. This tool will evaluate how agents adapt, collaborate, or deceive within a simulated 
+marketplace. Ultimately, these assessments will ensure safe and effective AI integration in high-stakes 
+decision-making. 
+ 
+DESCRIPTION: This topic seeks to develop a simulated market as a test environment to characterize the 
+latent behavioral preferences of AI systems.As warfighters increasingly engage with AI systems, 
+particularly agents that rely on large-language models (LLMs), concern has arisen that the systems may 
+encourage cognitive behavior in users that impart hidden biases, impair judgement, and ultimately 
+degrade warfighting capacity. For example, overreliance on AI-powered decision support tools may 
+induce users to accept erroneous suggestions or change from correct decisions to incorrect decisions 
+(Buçinca et al, 2021). LLM use may also induce novel cognitive biases (Alessa et al. 2025) and amplify 
+delusional beliefs (Dohnány et al. 2025). Compounding the threat, deceptive strategies frequently emerge 
+among interacting AI systems (Ying et al. 2026). Few tests of AI systems account for their adaption to 
+dynamic data, which obfuscates such adaptive strategies. To detect and combat these risks, the DoW 
+requires a universal approach to elicit, characterize, and compare the behavior of AI agents amid 
+changing contexts (Li et al. 2026). Such a testbed shall rely only on queries and outputs of the subject AI 
+system, rather than direct access to the model itself. Economic frameworks permit the measurement and 
+comparison of decisions. As the basis of extensive prior research, models of auctions, markets, and other 
+economic arenas provide a critical baseline of organic patterns of human behavior (e.g. Hausch 1986, 
+Martinez-Saito 2019). Emerging open-source tools, such as Magentic Marketplace (Bansal et al. 2026) 
+have shown promise in revealing behavioral variations in market-focused contexts. Furthermore, unlike 
+existing assessments of AI risk, economic frameworks do not rely on a priori definitions of “harmful” or 
+“helpful” traits (Vijayvargiya et al. 2026), and these testbeds allow for diverse social strategies such as 
+deception and collaboration. 
+ 
+PHASE I: The goal of Phase I is to develop and define the architecture of the test environment and 
+demonstrate a functional proof of concept for a simulated auction or market (heretofore “market”). The 
+test environment must be able to accommodate different models of auctions and markets to evaluate 
+agents on different measures of market efficiency. Proposers must also develop classifiers to detect biases 
+in AI agent behavior and outcomes in the market environment. This test environment should be a sandbox 
+in which multiple AI agents may operate. By Month 2, proposers should have defined the core mechanics 
+of the test environment, such as market structures, payout schemes, measures of market efficiency and 
+consumer utility, and a dynamic “news feed” that informs the behavior of AI agents within the market. 
+The “news feed” is meant to simulate public information relevant to the market. By Month 6, proposers 
+should establish a strategy for scaling issues and define how AI agents interact through their decision 
+space: a set of bids, each of which is defined by the time, asset, quantity, and price offered/requested on 
+the market. By Month 9, proposers must demonstrate a suite of “stock” AI agents for use within the test 
+environment. These AI agents shall only be used within the test environment sandbox and shall not be 
+used on other systems. By Month 12, proposers should have a proof-of-concept test environment for 
+assessing behavior preferences of AI systems amid dynamic data. In the proof-of-concept, the test 
+environment must be able to replicate bidding patterns and allocation efficiencies observed in markets and 
+demonstrate allocative efficiencies of >90%. The environment and associated data must be sufficient for 
+Version 3 
+DARPA - 22 
+ 
+comparison to models of human behavior in auctions or markets, as well as to compare agents to one 
+another. Phase I fixed payable milestones for this program should include: 
+• Month 2: Report on initial architecture and core mechanics of test environment and classifiers 
+of AI agent behavior 
+• Month 6: Report on scaling and AI agent interaction within the test environment 
+• Month 9: Month 9: Demonstration of a suite of stock AI agents, drawn from at least 10 
+different LLMs, operating within the test environment. 
+• Month 12: Demonstration of test environment and AI agent behavior within the marketplace, 
+with allocative efficiencies of >90% 
+ 
+PHASE II: Proposers submitting Direct to Phase II should be able to demonstrate an existing test 
+environment that meets the criteria outlined in Phase I. In Phase II, proposers should develop a range of 
+AI agents as stock reference models against which the performance of a test AI agent may be compared. 
+Proposers must define an error function that describes differences between AI agent decisions and 
+expected human results. The stock AI agents should help identify and bound agent behaviors of concern, 
+such as hidden biases. At least one AI agent should represent the human user of the test AI agent, to 
+explore how the test AI agent may drive human behaviors of concern such as encouraging delusions or 
+eroding military discipline. Proposers should define analytics to compare the behavior of the AI agents. 
+By Month 6, proposers should have a suite of such stock AI agents, representing both human and native 
+AI agent behavior. Agents should be able to interact with other agents in the test environment to develop 
+strategic bids in an attempt to influence the behavior of other market actors to maximize their expected 
+profit. By Month 12, proposers should demonstrate and measure how each AI agent responds to the 
+“news feed” and the observable behavior of other agents, which alters each agent’s expectation of future 
+asset values and behaviors of other agents. By Month 15, proposers should assess social interactions 
+among AI agents to model behaviors including, but not limited to, collaboration and deception. Proposers 
+must provide quantitative metrics on how social behaviors between AI agents alter market efficiency and 
+outcomes and generate testable hypotheses for how latent AI agent preferences affect social interactions, 
+dynamic responses to external stimuli, and ultimately market outcomes. By Month 18, proposers should 
+test their own hypotheses across a range of AI agents and quantify differences between human-like agents 
+and AI agents. By Month 21, proposers should demonstrate the test environment to DARPA, and deliver 
+software and data for testing by U.S. Government partners to ensure that the environment may be used to 
+reliably characterize the latent preferences of a test AI agent. By Month 24, the proposers should deliver a 
+final report describing the performance of the test environment and AI agents, and include a transition 
+plan. 
+ 
+Phase II fixed payable milestones should include: 
+• Month 2: A report on new capabilities that will be added to the test environment to enable 
+analysis of dynamic AI agent behavior and outcomes. Provide definitions of an error function to 
+compare AI agent decisions vs human decisions, as well as measures for comparing distributions 
+of human and AI agent market outcomes. 
+• Month 6: Demonstration of “human” stock AI agents that replicate human preferences and 
+behavior in the market, and a report on how a “human” stock AI agent simulates expected human 
+interaction in the market. Test Phase I classifier’s ability to distinguish “human” vs. AI agents in 
+the market environment, and propose improvements to classification algorithm or alternative test 
+statistics 
+• Month 12: Report on dynamic behavior of AI agents in response to news events and observed 
+actions of other agents within the test environment. Evaluate agent behavior using improved 
+classifiers. 
+• Month 15: Report on modeling social interactions between AI agents, including impact on 
+bidding behavior of AI agents 
+Version 3 
+DARPA - 23 
+ 
+• Month 18: Report on how latent AI preferences impact social interactions between AI agents, 
+dynamic responses, and market outcomes. 
+• Month 21: Final software delivery, both object and source code, for operation by DARPA or 
+other U.S. Government personnel for additional demonstrations, with suitable documentation in a 
+contractor proposed format 
+• Month 24: Final report, including quantitative metrics on AI agent behavior and fidelity of the 
+test environment. The report must also discuss advances in LLM models and AI agents that have 
+occurred during the period of performance and their potential impact on the evaluation of AI 
+models. 
+ 
+PHASE III DUAL USE APPLICATIONS: The potential risk of AI systems inducing harmful behaviors 
+is a major commercial concern due to the associated legal and reputational risk to their developers. AI 
+firms are actively seeking mechanisms to argue the limits of their systems’ biases and impacts on user 
+behavior, including measuring deviations from expected human norms of behavior, in response to 
+lawsuits. The impact on a firm’s stock value of establishing the scope of liability far exceeds the already-
+robust immediate financial consequences of these court cases, suggesting that the AI firms have strong 
+market demand for the capability to benchmark the influence of their systems. 
+ 
+REFERENCES: 
+1. Buçinca Z., Malaya M., Gajos, K. (2021). To Trust or to Think: Cognitive Forcing Functions Can 
+Reduce Overreliance on AI in AI-assisted Decision-making. Proceedings of the ACM on Human-
+computer Interaction 5, CSCW, 1-21. 
+2. Alessa A., Somane P., Lakshminarasimhan, A., Skirzynski J., McAuley J., Echterhoff J. (2025). 
+Quantifying Cognitive Bias Induction in LLM-Generated Content. Proceedings of the 14th 
+International Joint Conference on Natural Language Processing and the 4th Conference of the 
+Asia-Pacific Chapter of the Association for Computational Linguistics. 2890-2910. 
+3. Hausch DB. (1986). Multi-Object Auctions: Sequential vs. Simultaneous Sales. Management 
+Science 32(12):1599-1610. 
+4. Dohnány, S., Kurth-Nelson, Z., Spens, E., Luettgau, L., Reid, A., Gabriel, I., Arulkumaran, K., & 
+Nour, M. M. (2025). Technological folie à deux: Feedback loops between AI chatbots and mental 
+illness (arXiv:2507.19218) 
+5. Li E., Bellotti V., Sessions N., Kao R. (2026). Mastering Agentic Techniques: AI Agent 
+Evaluation. Accessed at: https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-
+agent-evaluation/ 
+6. Martinez-Saito M., Konovalov R, Piradov MA, Shestakova A, Gutkin B, Klucharey V. (2019). 
+Action in auctions: neural and computational mechanisms of bidding behaviour. European 
+Journal of Neuroscience. 50(8): 3327-3348. 
+7. Bansal, G., Hua, W., Huang, Z., Fourney, A., Swearngin, A., Epperson, W., Payne, T., Hofman, 
+J., Lucier, B., Singh, C., Mobius, M., Nambi, A., Yadav, A., Gao, K., Rothschild, D., Slivkins, 
+A., Goldstein, D., Mozannar, H., Immorlica, N., Murad, M., Vogel, M., Kambhampati, S., 
+Horvitz, E., Amershi, S. Magentic Marketplace: An Open-Source Environment for Studying 
+Agentic Markets. arXiv:2510.25779v1 [cs.AI]. 
+8. Vijayvargiya S., Bharat Soni A., Zhou X., Zhiruo Z., Wang Z.Z. (2026). OpenAgentSafety: A 
+Comprehensive Framework for Evaluating Real-World AI Agent Safety. arXiv:2507.06134v2 
+[cs.AI]. 
+ 
+KEYWORDS: AI, LLM, cognitive bias, economic model, market, information",T0.1 D2P2 also accepted (Phase I still open) | T0.3 ITAR | T0.4 Registration check
+OSW26BZ06-DV025,Compact Passive Radar,OSD,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum & Battlefield Information Dominance 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Integrating Sensing and Cyber 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+ 
+The technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 
+22 CFR Parts 120-130, which controls the export and import of defense-related material and services, 
+including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR 
+Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign 
+nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement 
+of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with the Announcement. 
+Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the 
+technical data under US Export Control Laws. 
+ 
+OBJECTIVE: Develop a low-cost, small form factor, attritable passive radar sensor capable of detecting 
+and tracking targets using external RF signals for tactical unmanned and expendable platforms. 
+ 
+DESCRIPTION: In contested A2/AD environments, active radar emissions act as beacons for adversary 
+Electronic Warfare. To ensure survivability, the DoW requires covert sensing utilizing ""illuminators of 
+opportunity."" This effort requires a 100% receive-only payload; the sensor shall not transmit any RF 
+energy. 
+ 
+Current passive systems are bulky, expensive, and primarily optimized for SIGINT/ESM rather than radar 
+functionality. They lack the tightly synchronized, multi-channel receivers necessary for direct reference 
+signal acquisition, spatial processing, and clutter cancellation. The DoW seeks a paradigm shift toward 
+low-cost, multi-channel ""attritable"" (expendable) sensors designed specifically for high-risk deployments. 
+ 
+This topic seeks the development of a Small Form Factor (SFF) passive X-Band radar featuring both 
+Synthetic Aperture Radar (SAR) imaging and Ground Moving Target Indicator (GMTI) capabilities. 
+Optimized for extreme Size, Weight, Power, and Cost (SWaP-C) constraints, the payload must be light 
+enough for integration onto Group 1 or 2 UAS, loitering munitions, or unattended ground sensors. 
+ 
+PHASE I: The objective of Phase I is to conduct a feasibility study to determine the scientific, technical, 
+and commercial merit of a small form factor, attritable passive radar architecture. Offerors are expected to 
+define a comprehensive system architecture, identifying critical low-cost receiver components, antenna 
+configurations suitable for SFF platforms, and highly efficient edge-processing hardware. The effort will 
+include developing proof-of-concept signal processing algorithms for reference signal isolation, clutter 
+cancellation, and target detection and/or tracking under constrained computational limits. The desired end 
+product is a robust simulation and a basic laboratory prototype that validates the feasibility of detecting 
+targets using signals of opportunity while strictly adhering to the SWaP-C metrics required for 
+expendable systems. 
+ 
+PHASE II: Phase II culminates in the delivery of a viable hardware prototype. Offerors are expected to 
+transition their Phase I concepts into a physical, highly miniaturized sensor prototype suitable for 
+integration onto a small UAS or expendable ground node. The minimum required deliverable is a 
+functional prototype that successfully demonstrates passive stationary and moving target detection, 
+tracking, and imaging in a realistic outdoor environment utilizing RF illumination (cooperative or non-
+OSW/R21 - 12 
+ 
+cooperative signals of opportunity) without emitting any RF energy from the passive sensor itself. The 
+performer must characterize system performance, demonstrate real-time edge processing that outputs 
+actionable products, and validate that the unit cost and SWaP footprint meet the criteria for a truly 
+attritable tactical asset. 
+ 
+PHASE III DUAL USE APPLICATIONS: In Phase III, the expendable passive radar sensor is expected 
+to transition into operational military platforms and commercial markets, supported by non-SBIR/STTR 
+funding. For DoW applications, the technology will be integrated into launched effects, loitering 
+munitions, and distributed unattended ground sensor networks. In the commercial sector, potential 
+applications include low-cost air traffic monitoring, counter-UAS (cUAS) surveillance for critical 
+infrastructure, and general airspace monitoring where adding active RF spectrum clutter is undesirable or 
+prohibited. 
+ 
+REFERENCES: 
+1. Melvin, W. L., & Scheer, J. A. (Eds.). (2014). Principles of Modern Radar: Radar Applications 
+(Volume 3). SciTech Publishing / IET. 
+2. Moo, P. W., & Ding, Z. (2015). Adaptive Radar Resource Management. Academic Press 
+(Elsevier). 
+ 
+KEYWORDS: Passive Radar, GMTI, SAR, Bistatics.",T0.3 ITAR | T0.4 Registration check
+OSW26BZ06-NV024,Engineered Microstructures for Enhanced IR Aperture Performance,OSD,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Scaled Hypersonics 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Hypersonics 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+The technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 
+22 CFR Parts 120-130, which controls the export and import of defense-related material and services, 
+including export of sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR 
+Parts 730-774, which controls dual use items. Offerors must disclose any proposed use of foreign 
+nationals (FNs), their country(ies) of origin, the type of visa or work permit possessed, and the statement 
+of work (SOW) tasks intended for accomplishment by the FN(s) in accordance with the Announcement. 
+Offerors are advised foreign nationals proposed to perform on this topic may be restricted due to the 
+technical data under US Export Control Laws. 
+ 
+OBJECTIVE: The objective of this topic is to spur research into industrially scalable production methods 
+for an IR-transparent composite ceramic exhibiting sub-100 nm microstructural features in all phases on 
+samples larger than 2"" x 4"" x 0.5"", porosity below 0.1%, microstructural and optical stability to 1200 
+degrees C, and a thermal expansion to thermal conductivity ratio (alpha/k) at or below 1.0 micrometers/W 
+at 1000 degrees C. 
+ 
+DESCRIPTION: The Navy has demonstrated within its laboratories that a composite ceramic exhibiting 
+IR transparency can be produced with distinct phases, microstructural feature sizes below 100 nm in all 
+phases, and porosity content below 0.1% on component parts as large as 0.4 inch in lateral dimension. 
+Phase identity, crystal structure, phase chemistry, microstructure feature size, and porosity content were 
+established via X-ray diffraction (XRD) and scanning electron microscopy (SEM) cross-sections with 
+energy dispersive spectroscopy (EDS) analysis. Retention of sub-100 nm feature sizes across all phases is 
+critical to achieving the desired mechanical and thermal properties of the composite; porosity above 0.1% 
+similarly degrades mechanical performance. All three specifications -- sub-100 nm microstructural 
+features in all phases, porosity below 0.1%, and Short-Wave to Mid-Wave Infrared (SWIR/MWIR) 
+transparency of at least 80% -- must be achieved at scale for the material to be suitable for transition. 
+Producing IR-transparent composite ceramics meeting these specifications at sample sizes relevant to 
+aperture applications is a significant technical challenge. Conventional ceramic processing routes that rely 
+on mechanical mixing or co-precipitation of constituent phases typically result in microstructural 
+coarsening during densification that precludes achieving sub-100 nm feature sizes in all phases. 
+Innovative powder synthesis and consolidation approaches capable of satisfying all microstructural, 
+porosity, and optical transparency requirements at sample sizes exceeding 2"" x 4"" x 0.5"" are sought. 
+Furthermore, the proposed processes should be industrially scalable in both capacity and final component 
+size, with a path towards producing components in the 3"" x 9"" range or larger. In addition to these 
+requirements, the composite ceramic must retain its microstructure and IR transparency after exposure to 
+temperatures up to 1200 degrees C for 10 minutes. Phase transformation or grain growth during high-
+temperature service would degrade both mechanical and optical performance. The composite must also 
+exhibit a low ratio of thermal expansion coefficient (alpha) to thermal conductivity (k). The threshold 
+requirement for alpha/k is 1.0 micrometers/W and the target is 0.5 micrometers/W at 1000C. 
+ 
+PHASE I: Phase I efforts should focus on research to establish the feasibility of a proposed material 
+system and processing approach. Proposals should outline a plan to investigate and demonstrate the 
+potential to produce the target IR-transparent composite ceramic with sub-100 nm microstructural 
+features in all phases and porosity below 0.1%. The research should address initial process tuning, explore 
+OSW/R21 - 9 
+ 
+pathways to scalability (demonstrating the approach can plausibly be extended to industrially relevant 
+sample sizes), and provide a scientific basis for meeting the optical and thermal property goals. The 
+applicant should also investigate the anticipated thermal stability of the proposed composition to 1200 
+degrees C and provide an estimate or measurement of the alpha/k ratio. For Direct to Phase II (D2P2) 
+proposals, the applicant is required to provide details and documentation demonstrating accomplishments 
+of a ""Phase I-type"" effort. 
+ 
+PHASE II: The Phase II effort should mature the proposed technology through focused research and 
+development aimed at scaling the process and optimizing the material. Key research objectives for this 
+phase include, but are not limited to: 
+ 
+1. Developing and refining a novel composition and process route with the goal of achieving sub-100 nm 
+microstructural features in all phases, porosity below 0.1%, and SWIR/MWIR transparency of at least 
+80% on samples exceeding 2"" x 4"" x 0.5"". 
+2. Investigating and verifying the retention of nanoscale microstructural features (critical to the target 
+mechanical and thermal properties) via SEM/EDS cross-section analysis. 
+3. Researching and demonstrating the industrial scalability of the process, including establishing a clear 
+path towards producing components in the 3"" x 9"" range or larger. 
+4. Validating microstructural and optical stability (including maintained SWIR/MWIR transparency and 
+retained sub-100 nm features without deleterious phase transformation) after exposure to 1200 degrees C. 
+5. Measuring key thermomechanical properties, specifically targeting an alpha/k ratio at or below the 1.0 
+micrometers/W threshold (with a target of 0.5 micrometers/W) at 1000 degrees C. 
+6. Performing and reporting initial mechanical property characterization, including hardness, flexural 
+strength, and fracture toughness testing at ambient temperature. 
+7. Providing representative samples to the Navy for independent characterization, alongside a final cost 
+estimate for continued scale-up and per-unit material cost. 
+ 
+PHASE III DUAL USE APPLICATIONS: The contractor will pursue commercialization of the materials 
+and processes developed during Phase II with ITAR/CUI-eligible organizations. IR-transparent composite 
+ceramics with refined nanostructure have broad potential for dual-use applications including electro-
+optical/infrared (EO/IR) sensor windows and domes for airborne and maritime platforms, hypersonic 
+vehicle apertures, and commercial thermal imaging systems. The technologies may be transitioned by 
+expanding mission capabilities across a broad range of government users including directed energy, 
+EO/IR sensing, and hypersonic systems programs. Direct procurement of IR-transparent composite 
+ceramic components in coordination with the government program manager may be part of a Phase III 
+program. 
+ 
+REFERENCES: 
+1. Chaim, R.; Levin, M.; Shlayer, A.; Estournes, C. Sintering and densification of nanocrystalline 
+ceramic oxide powders: a current understanding. Advances in Applied Ceramics, 2008, 107(3), 
+159-169. 
+2. Goldstein, A. Correlation between MgAl2O4-spinel structure, properties and scale-up product 
+performance in IR-windows and domes. Optical Materials, 2012, 35(3), 669-674. 
+3. Nordahl, C.S.; Hartnett, T.; Gattuso, T.; Gentilman, R. Optical and Mechanical Properties of 
+Nano-Composite Optical Ceramics. Raytheon Integrated Defense Systems, Portsmouth RI. DTIC 
+Accession No. ADA527006, 2009. 
+4. Katsui, H.; Goto, T. Coatings on ceramic powders by rotary chemical vapor deposition and 
+sintering of the coated powders. Journal of the Ceramic Society of Japan, 2018, 126, 413-420. 
+DOI: 10.2109/jcersj2.17279 
+ 
+OSW/R21 - 10 
+ 
+KEYWORDS: Composite ceramic; infrared transparent; nanoscale microstructure; ceramic scale-up; IR 
+window; nanocomposite; thermal stability; thermal shock resistance",T0.1 D2P2 also accepted (Phase I still open) | T0.3 ITAR | T0.4 Registration check
+OSW26BZ06-NV026,Defect Metrology and Charge Trapping Dynamics in Transfer-Doped Diamond Transistors,OSD,SBIR,"October 21, 2026","Diamond Transistors 
+ 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Microelectronics 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Microelectronics; Quantum Science 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+ 
+OBJECTIVE: Develop an innovative, non-destructive diamond semiconductor defect metrology 
+technique and laboratory-scale apparatus to identify, quantify, determine location in the device, and 
+energetically characterize charge traps that cause current collapse in surface-channel diamond transistors. 
+ 
+DESCRIPTION: Hydrogen-terminated (surface-channel) diamond transistors hold great promise for next-
+generation, high-frequency, high-power RF electronics and advanced communications due to diamond's 
+high breakdown field and superior thermal conductivity. However, wide-scale operational deployment is 
+constrained by ""current collapse"" and ""knee walkout"" - phenomena where transient charges trapped at 
+defect sites in the semiconductor prevent the transistor from operating at its full, high-frequency RF 
+power. Commercial device-characterization tools, built primarily for silicon or traditional compound 
+semiconductor materials, lack the specialized physics and sensitivity required to isolate and characterize 
+traps in ultra-wide bandgap (UWBG) diamond devices. These performance-limiting charge traps can 
+reside in multiple distinct, critical locations within the device stack, including the gate dielectric, the 
+dielectric-to-diamond interface, the diamond epitaxial layer, the epitaxial-to-substrate interface, and the 
+diamond bulk substrate. Understanding and mitigating these mechanisms requires a specialized metrology 
+capability. This topic seeks the development of a comprehensive measurement system and associated 
+methodology capable of extracting trap density, energy levels, physical location (specifically identifying 
+the layers or interfaces where the traps reside), and time constants characterizing these defects so that 
+design teams can efficiently work to address them. 
+ 
+Standard capacitance-voltage (CV) or simple transient electrical analyses do not provide sufficient 
+physical insight into trap dynamics. Specifically, a successful technique and system must be capable of 
+resolving multiple trap populations and correlating these distinct signatures with observed current 
+collapse behavior in diamond. Because hydrogen-terminated diamond relies on unique surface-channel p-
+type conduction, validation of these new techniques can not necessary rely on prior validation from 
+conventional n-type semiconductor materials (e.g., GaN, Ga2O3, AlN), as the fundamentally different 
+physical mechanisms and device architectures may not be acceptable surrogates for the diamond device 
+behavior. 
+ 
+To meet operational requirements, all primary experimental validations and core metrology capability 
+demonstrations under this effort must be performed specifically on Government-provided hydrogen-
+terminated diamond material and RF transistor devices. The Government will provide these verified 
+working devices and/or test articles as Government Furnished Property (GFP) during the execution phase 
+to anchor the research. The public literature contains examples of hydrogen-terminated diamond RF 
+transistors that exhibit comparable baseline characteristics [1, 2]. While the GFP will vary in specific 
+design, architecture, and properties from the literature, they can provide a baseline for concept 
+development. It is expected that preliminary or intermediate metrology demonstrations on other wide or 
+ultra-wide bandgap semiconductor devices may be used for initial development, the main and final 
+capability demonstrations must be validated directly on the specific diamond device architectures 
+provided. This effort will address a critical metrology gap, establishing a validated metrology standard 
+that accelerates the development of high-reliability diamond RF electronics. 
+ 
+OSW/R21 - 14 
+ 
+PHASE I: Conduct a 6-month study to establish the scientific and technical feasibility of the proposed 
+defect metrology technique. The performer shall describe the measurement process, provide sound 
+scientific arguments justifying the approach’s ability to meet the project objectives of trap identification 
+and measurement, and describe the hardware equipment requirement needed to perform the measurement. 
+Expected means to demonstrate feasibility include preliminary experimental demonstrations, a review of 
+relevant existing techniques used on other types of semiconductors, and supporting modeling or 
+simulations. 
+ 
+In alignment with the overall topic objective, while initial benchtop calibration may utilize other wide 
+bandgap materials, the core Phase I feasibility demonstration must be applied specifically to hydrogen-
+terminated diamond architectures. To facilitate this early validation, the Government will provide 
+representative diamond test structures as Government Furnished Property (GFP). 
+ 
+Phase I Deliverables: 
+i. A comprehensive feasibility study report detailing the proposed metrology process, scientific 
+justification, and measurement equipment used for the approach. 
+ii. Initial feasibility data (derived from preliminary experimental demonstrations, literature review of 
+relevant semiconductor techniques, or modeling) supporting the viability of the technique for 
+surface-channel p-type architectures. 
+iii. A detailed Phase II transition plan outlining the schedule, testing procedures, and integration 
+strategy for validating the prototype instrument on the provided diamond devices. 
+ 
+PHASE II: Develop, construct, and validate a fully functional prototype, laboratory-scale, trap metrology 
+instrument based on the Phase I design. The performer is expected to demonstrate the system’s ability to 
+successfully isolate and distinguish between different trap locations (e.g., gate-dielectric interface vs. bulk 
+epitaxial layer) and correlate these signatures with measured RF current collapse on hydrogen-terminated 
+diamond transistors, which will continue to be provided as GFP by the Government. The performer is 
+expected to continue refining the technique developed in Phase 1 incorporating those refinements into the 
+prototype. 
+ 
+The principal milestone of the Phase II effort is the validation of the developed hardware and 
+measurement methodology at the performer's facility. For this effort, ""validation"" is explicitly defined as 
+the successful identification, characterization, and physical location attribution of the specific charge traps 
+responsible for current collapse and similar detrimental effects in the provided diamond transistors. 
+Following this successful demonstration, the complete, operational prototype measurement system, 
+including all associated hardware, specialized instrumentation, and software, will be provided as a 
+deliverable to the Government. 
+ 
+Phase II Deliverables: 
+i. Prototype System Validation & Hardware Transfer: Successful demonstration of the developed 
+technique and hardware’s ability to identify, locate, and quantitatively characterize (specifically 
+provide numerical values for trap density, energy levels, time constants, etc.) the specific traps 
+responsible for current collapse and other detrimental effects in the GFP diamond devices, as well 
+as delivery of the fully operational prototype defect metrology test instrumentation to the 
+Government. 
+ii. Documentation & Training: A comprehensive Standard Operating Procedure (SOP) manual 
+containing step-by-step measurement instructions tailored specifically to the provided diamond 
+RF devices, accompanied by hands-on training for Government personnel. 
+iii. Final Report: A technical report detailing the identified trap signatures on the GFP devices, the 
+methodology used to correlate these measurements to observed RF performance loss, detailed 
+procedures by which the prototype tool can be used to reproduce the validation results on GFP 
+OSW/R21 - 15 
+ 
+devices, details of any identified limitations of the technique or system related to the desired 
+function, including any identified material or processing mitigation options related to those 
+limitations. 
+ 
+PHASE III DUAL USE APPLICATIONS: Military Application: The delivered measurement technique 
+will be used to analyze, optimize, and validate the reliability of high-power diamond transistors. US Army 
+DEVCOM is presently developing diamond transistor devices for the next generation of advanced 
+military sensing, high-frequency communications, and broad-spectrum electromagnetic platforms. 
+Successful outcomes of this research and development program will result in laboratory techniques and 
+supporting equipment necessary to continue development of this technology. It is expected that the 
+technology will become a standard metrology technique within DEVCOM electronic device laboratories 
+and among the Defense Industrial Base partners with semiconductor foundries presently being engaged in 
+this development. 
+ 
+Commercial Application: The performing small business can commercialize the diagnostic system design, 
+measurement software, and procedural methodology to support the emerging domestic commercial 
+diamond semiconductor industry. This highly specialized metrology capability will be valuable to 
+domestic and allied commercial foundries manufacturing advanced diamond electronics to improve 
+device reliability and manufacturing yield for commercial 5G/6G telecommunications, commercial 
+satellite communications (SatCom), commercial radar systems, and high-frequency communication 
+systems requiring advanced thermal management. Because this metrology system is designed to evaluate 
+high-power, semiconductor technologies, some of which fall under ITAR or CCL export-controls, all 
+commercialization, licensing, and replication services will need to comply with U.S. export control laws 
+(ITAR/EAR). While this may limit certain commercial markets, it also has the potential to establish 
+higher exclusivity within controlled markets. 
+ 
+REFERENCES: 
+1. C. Yu, C. Zhou, J. Guo, Z. He, M. Ma, H. Yu, X. Song, A. Bu, and Z. Feng, ""Hydrogen-
+terminated diamond MOSFETs on (0 0 1) single crystal diamond with state of the art high RF 
+power density,"" Functional Diamond, vol. 2, no. 1, pp. 64-70, 2022. 
+2. X. Yu, W. Hu, J. Zhou, et al., ""1.26 W/mm Output Power Density at 10 GHz for Si3N4 
+Passivated H-Terminated Diamond MOSFETs,"" IEEE Transactions on Electron Devices, vol. 68, 
+no. 10, pp. 5068-5072, Oct. 2021. 
+ 
+KEYWORDS: Diamond Transistors, Charge Trapping, Current Collapse, Semiconductor Metrology, 
+Ultra-Wide Bandgap (UWBG), RF Power Electronics, Defect Dynamics, Surface-Channel Devices, 
+Hydrogen-terminated Diamond.",T0.3 ITAR | T0.4 Registration check
+OSW26BZ06-NV028,5G Signature Tracking Mitigation via Cyber Deception,OSD,SBIR,"October 21, 2026","OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Contested Logistics Technologies (LOG) 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): FutureG; Emerging Threat Reduction; 
+Sustainment & Logistics 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 2 (Self) 
+ 
+OBJECTIVE: The objective of this effort is to develop an advanced digital signature management and 
+deception system that obfuscates cellular metadata (""digital exhaust"") to protect personnel, small units, 
+and critical facilities from adversarial surveillance, tracking, and pattern-of-life analysis on 3rd-party 
+commercial networks. 
+ 
+DESCRIPTION: As military and government personnel increasingly rely on commercial mobile 
+networks, the management of digital signatures has become a critical operational concern. Accessing 
+foreign mobile phone networks exposes individuals and organizations to surveillance and espionage 
+threats due to their ""digital exhaust"", the metadata required to operate on a cellular network (e.g., 
+credentials, location data, device IDs). Adversaries can leverage this data to track daily routines, identify 
+deviations indicating special events (e.g., VIP visits or mission preparation), and map sensitive facilities 
+based on cell phone concentration or periods of inactivity. 
+ 
+PHASE I: During Phase I, proposers are required to present a comprehensive concept design and 
+feasibility study for a digital exhaust deception system. Solutions should outline the proprietary software 
+required to conduct AI-enabled mission planning and operations. 
+ 
+Proposers must define specific, relevant, measurable, and quantifiable key performance metrics (KPMs) 
+for their proposed solutions. Suggested KPMs for the system include, but are not limited to: 
+KPM Category Key Performance Metric 
+(KPM) 
+Suggested Threshold 
+(Minimum Success) 
+Suggested Objective (Desired 
+Success) 
+Persona Capacity AI-powered personas broadcasted 
+simultaneously per decoy device. 
+2 personas 4+ personas 
+Operational Endurance Battery life for highly 
+mobile/pluggable decoy form 
+factors. 
+12 hours 24 - 36 hours 
+System Weight Weight of the personal decoy 
+device. 
+< 2 pounds ~1 pound 
+Obfuscation Realism Ability of AI-generated traffic to 
+mimic realistic patterns of life to 
+defeat automated network 
+analysis. 
+Defeats basic heuristic 
+analysis 
+Defeats advanced ML-based 
+behavioral tracking 
+Version 2 
+OSW/Future G - 8 
+ 
+Phase I will consist of a six-month Period of Performance (PoP) to develop the initial application 
+concepts, algorithms, and a comprehensive design document that outlines the software architecture for 
+future development and deployment. 
+ 
+Key activities include: 
+ Phase kickoff: 
+• Technical Interchange Meeting (TIM) 
+• Preliminary Design Review (PDR) 
+ 
+Before the end of Phase I, the performer must develop and present a detailed plan for addressing Phase II 
+prototype development, testing, and evaluation, aiming to advance the technology from its current state to 
+TRL 7. 
+ 
+Phase I Deliverables: 
+• Kickoff and TIM slides 
+• Monthly Status Reports (MSRs) 
+• Preliminary Design Document detailing AI-persona generation and ID-swapping mechanics 
+• Phase II Plan 
+• Final Phase I Report 
+ 
+PHASE II: A Phase II follow-on effort will focus on prototype production, testing, and evaluation to 
+reach a TRL 7 capability. The effort should result in the delivery of fully integrated mission management 
+software and hardened decoy box form factors (e.g., Wi-Fi router-sized team devices and puck-sized 
+personal devices). 
+ 
+Key milestones will include: 
+• Month 1: Monthly Status Reports (MSRs) 
+Month 1: Kickoff and TIM 
+• Month 6: Critical Design Review (CDR) 
+• Month 9: Prototype demonstration of single and multi-node networked operations 
+• Month 11: Final design review, field demonstration (e.g., 5G test network execution), and 
+assessment 
+• Month 12-18: Final Phase II Report 
+ 
+Prototype demonstrations will be performed at the proposer’s site or an approved DoW test range. 
+Performers should address scalability, including the ability to run multiple linked decoy boxes from a 
+single operations laptop. 
+ 
+PHASE III DUAL USE APPLICATIONS: The proposed digital signature management technology 
+presents significant dual-use potential. While fundamentally designed to protect military assets from 
+advanced signals intelligence (SIGINT), the core capability of obfuscating cellular metadata directly 
+translates to protecting high-value corporate assets, personnel, and intellectual property from commercial 
+espionage and tracking. 
+ 
+REFERENCES: 
+1. https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/852002p.pdf 
+ 
+KEYWORDS: Digital Signature Management, Digital Exhaust, Operating on untrusted networks",T0.3 ITAR | T0.4 Registration check
+OSW26TZ06-NV004,Telecom Band Geometric Amplifier,OSD,STTR,"October 21, 2026","COMPONENT TECHNOLOGY PRIORITY AREA(S): FutureG; Quantum Science 
+ 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum and Battlefield Information Dominance 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: The primary goal of this initiative is to design, build, and test a device that uses geometric 
+phase (also known as Berry phase) to amplify laser light in the telecom band (wavelength ~ 1,550 nm). 
+The device will use radio-frequency modulation of linear, lossy elements to produce optical amplification 
+that outperforms existing technologies in parameter regimes of interest to DOW 
+ 
+DESCRIPTION: Present-day devices for amplifying telecom laser light mostly produce gain by 
+incoherently pumping a medium (optically or electrically), or by coherently pumping a nonlinear medium 
+with a laser. Both approaches are technologically mature, and offer a range of performance tradeoffs. 
+In contrast, geometric amplification is a gain mechanism that has only been recently proposed, 
+and to date it has only been demonstrated in the acoustic domain [1]. However, the principle of geometric 
+amplification can be applied to any domain. It can be realized using coupled resonators consisting only of 
+linear, lossy components, so long as they can be modulated at a frequency comparable to the resonators’ 
+decay rate [1]. 
+In the telecom domain, this can be accomplished using a pair of fiber loops that include 
+electrically tunable phase shifters that can be modulated at ~ 1 MHz. The adiabatic evolution associated 
+with this relatively slow modulation (together with the components’ intrinsic loss) results in the 
+accumulation of a geometric (Berry) phase [2,3] whose complex part can be engineered to provide gain 
+[1,4,5]. 
+Geometric gain differs existing forms of amplification in several respects, including that it 
+achieves photon-number gain through rf modulation. This may offer practical advantages in terms of 
+reduced device complexity, size, and power consumption. 
+ 
+PHASE I: Produce a complete design for a prototype telecom-band geometric amplifier based entirely on 
+commercial off-the-shelf components. The design should be based on quantitative simulations that 
+incorporate the components’ specifications into the mathematical model of geometric amplification. 
+ 
+PHASE II: Optimize the geometric amplifier prototype of Phase I with respect to the following 
+performance metrics: gain, bandwidth, power consumption, added noise, and harmonic distortion. At 
+minimum, the device should exhibit > 10 dB gain with bandwidth > 100 kHz. 
+ 
+PHASE III DUAL USE APPLICATIONS: Collaborate with industrial and/or DOW lab partners to 
+incorporate the lessons learned from Phase II into a commercial on-chip geometric amplifier that is 
+superior to existing optical amplifier technologies in parameter regimes of importance to DOW. 
+ 
+REFERENCES: 
+1. J. R. Lane et al., Complex Berry phase and steady-state geometric amplification in non- 
+Hermitian systems. ArXiv:2503.23197 (2025). 
+2. M. V. Berry, Quantal phase factors accompanying adiabatic changes. Proceedings of the Royal 
+Society of London Series A 392, 45 (1984). 
+3. B. Simon, Holonomy, the Quantum Adiabatic Theorem, and Berry's Phase. Physical Review Letters 
+51, 2167 (1984). 
+4. J. C. Garrison and E. M. Wright, Complex geometrical phases for dissipative systems. 
+OSW/BR - 7 
+ 
+Physics Letters A 128, 177 (1988). 
+5. K. Y. Bliokh, The appearance of a geometric-type instability in dynamic systems with 
+adiabatically varying parameters. Journal of Physics A 32, 2551 (1991). 
+ 
+KEYWORDS: Telecom Laser, Optical Amplification, Geometric Amplifier, Berry Phase",STTR: Requires RI partner | T0.4 Registration check
+OSW26TZ06-NV005,Development of Ultrafast Nonvolatile Memory Based on Sliding Ferroelectricity in Moiré Polar Homostructures,OSD,STTR,"October 21, 2026","Ferroelectricity in Moiré Polar Homostructures 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Advanced Materials; Microelectronics; Quantum 
+Science 
+ 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum and Battlefield Information Dominance 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Develop ultrafast, high-endurance, nonvolatile memory technology based on sliding 
+ferroelectricity in polar moiré van der Waals homostructures. 
+ 
+DESCRIPTION: Twisted stacks of van der Waals (vdW) crystals can form moiré superlattices with polar 
+domains whose dipoles are antiferroelectrically aligned and controllable by applied electric fields [1]. 
+Sliding ferroelectricity arises from nm-scale interlayer sliding in vdW materials, coupling in-plane atomic 
+displacement to out-of-plane polarization switching [2]. This mechanism has been demonstrated in 
+bilayer hexagonal boron nitride and semiconducting transition metal dichalcogenides, where polarization 
+reversal can occur with minimal energy dissipation [3]. Recent Department of War investments through 
+the Multidisciplinary University Research Initiative (MURI) have demonstrated advances in twisted two-
+dimensional heterostructures into atomically thin twistronic memory cell prototypes with potential 
+advantages in speed, endurance, energy efficiency, and scalability [2, 3]. The advancement and prototype 
+development requires a combined multidisciplinary expertise in the design, fabrication, measurement, and 
+modeling of lattice dynamics in twisted moiré van der Waals structures, as well as charge transport and 
+optoelectronics in van der Waals materials. The technical approach should exploit the atomically thin 
+nature, low defect density, and strong in-plane bonding of vdW materials to develop sliding ferroelectric 
+nonvolatile memory devices designed to outperform current memory technologies in speed, endurance, 
+and scalability. Engineered nanoscale polar domains in moiré superlattices will serve as nonvolatile 
+memory cells based on local ferroelectricity. To demonstrate the electrical and optical readouts in the 
+designed nonvolatile memory devices, the proposal should leverage the scalability and controllability 
+features of well-established systems, such as Graphene field-effect transistors and transition-metal-
+dichalcogenide-based field-effect transistors. 
+PHASE I: Demonstrate the feasibility of optimal moiré superlattice design for fast and durable sliding 
+ferroelectric domain reversal, including domain wall pinning strategies and nanostructured polar moiré 
+superlattice fabrication. Evaluate and analyze electrical and optical readout schemes using graphene field-
+effect transistors or transition-metal-dichalcogenide-based devices integrated with moiré polar domain 
+structures. Perform quantitative analysis of the switching behavior, retention, readout fidelity, speed, 
+energy efficiency, and endurance indicators under optimal device operating conditions. The success of the 
+project will be evaluated using measurable performance indicators, including switching speed, switching 
+energy, endurance, retention, readout fidelity, device-to-device reproducibility, and scalability beyond 
+single-device demonstrations. During Phase I, these values will be quantified to establish appropriate 
+performance targets for Phases II and III and to enable benchmarking against existing nonvolatile 
+memory technologies. 
+ 
+PHASE II: Develop integrated sliding-ferroelectric memory-device prototypes and array-level 
+architectures for more practical use by focusing on systematic evaluation of memory operation 
+benchmarks including endurance, switching speed, and energy efficiency under realistic operating 
+conditions. Particular attention must be paid to address the atomic-scale configuration of the engineered 
+sliding ferroelectric state and the role of domain-wall pinning for controllability. Address scaling and 
+manufacturability beyond single-device demonstrations, aiming initial demonstration of the wafer-scale 
+OSW/BR - 9 
+ 
+patterning of local gates, partitioning of vdW structures into individual memory cells, and device 
+packaging of memory arrays. Finally, establish quantitative comparison against competing nonvolatile 
+memory technologies by evaluating switching energy, achievable integration density, and intrinsic fatigue 
+resistance for long-term device operation. 
+ 
+PHASE III DUAL USE APPLICATIONS: Develop a high-speed memory device with low-power device 
+operation, emphasizing energy-efficient memory for edge computing, high-density embedded memory, 
+and robust architectures for defense-relevant electronics. Identify use cases where atomically thin, rapid, 
+durable and low power switching will provide a demonstrable advantage over existing technology, and 
+will describe approaches to industrial adoption and system level integration. Relatively low-power and 
+moderate-speed operation offered by the developed technology can provide added value to the general 
+purpose edge-computing applications. As performance metrics are established during Phases I and II, 
+broader applications will be evaluated, including high-density embedded memory, neuromorphic and in-
+memory computing, reconfigurable logic, radiation-tolerant electronics, cryogenic control electronics, and 
+memory components integrated with two-dimensional semiconductor platforms. 
+ 
+REFERENCES: 
+1. K. Yasuda, X. Wang, K. Watanabe, T. Taniguchi, P. Jarillo-Herrero, Science 372, 1458–1462 (2021). 
+2. K. Ko, A. Yuk, R. Engelke, S. Carr, J. Kim, D. Park, H. Heo, H.-M. Kim, S.-G. Kim, H. Kim, T. 
+Taniguchi, K. Watanabe, H. Park, E. Kaxiras, S. M. Yang, P. Kim, and H. Yoo, Nature Materials 22, 
+992–998 (2023). 
+3. K. Yasuda, E. Zalys-Geller, X. Wang, D. Bennett, S. S. Cheema, K. Watanabe, T. Taniguchi, E. 
+Kaxiras, P. Jarillo-Herrero, and R. Ashoori, Science 385, 53–56 (2024). 
+ 
+KEYWORDS: Sliding ferroelectricity; moiré superlattice; van der Waals materials; nonvolatile memory; 
+twistronics; two-dimensional materials; ferroelectric domains; graphene field-effect transistor; transition 
+metal dichalcogenides; low-power memory; high-endurance memory; polar homostructures.",STTR: Requires RI partner | T0.4 Registration check
+OSW26TZ06-NV006,"Design Of Room Temperature Thz And Infrared Sensing Devices Using Non-Toxic, Supply-Chain Secure Material Platform",OSD,STTR,"October 21, 2026","Non-Toxic, Supply-Chain Secure Material Platform 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Integrated Sensing & Cyber, Advanced 
+Materials, and Microelectronics 
+ 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Quantum and Battlefield Information Dominance 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Design a chip-scale oxychalcogenide film (non-toxic, supply-chain-secure material 
+platform)-based room temperature THz and infrared sensors. 
+ 
+DESCRIPTION: Infrared sensing sits at an inflection point. The industry-standard HgCdTe (MCT) 
+requires bulky cryogenic cooling and is built on toxic, supply-chain-fragile elements, while uncooled 
+microbolometers, are limited to millisecond response times. This leaves unaddressed the regime of fast, 
+uncooled, low-SWaP-C (Size, Weight, Power, and Cost) detection from the long-wave infrared (LWIR) 
+through the THz, which hypersonic threat warning, proliferated drone platforms, and contested-spectrum 
+operations now demand. Recently, new mechanisms have emerged that can fill this important technical 
+gap. Oxychalcogenide films containing heavy elements have characteristic responses in the THz range [1-
+3] and can enable ms-scale detection responses in the THz and far-infrared spectral regions, e.g., hot-
+electron rectification/photothermoelectrics, thermally decoupled from the lattice of heavy elements [4-6]. 
+Notably, these phenomena do not require cryogenic cooling like the MCT system because the signal is 
+not based on an inter-band transition, and its response is orders of magnitude faster than that of room-
+temperature bolometers because it is driven by hot electrons decoupled from the lattice. Moreover, these 
+materials, such as Bi2O2Se and InBiSe3, are composed of non-toxic, earth-abundant elements, and are 
+supply-chain-secure material platforms. 
+ 
+Department of War’s investments through the Multidisciplinary University Research Initiative (MURI) 
+have already enabled the development of high-mobility chalcogenide films and their characterization via 
+optical and THz spectroscopy [1–3]. Building on this, oxychalcogenide films can serve as room-
+temperature detectors offering uncooled, chip-scale access to the jam-free THz and far-infrared bands — 
+a regime current sensor technologies cannot reach without cryogenic cooling — and will directly advance 
+Quantum and Battlefield Information Dominance. Moreover, the hot-electron mechanism is fast, which 
+allows detection of ms transients such as laser pulses and hypersonic signatures that slow uncooled 
+microbolometers wash out. 
+ 
+PHASE I: Synthesis of oxychalcogenide thin film materials with strong spin-orbit coupling that can 
+detect THz and LWIR signals at room temperature, and demonstration of direct absorption in the Long-
+wavelength infrared (LWIR) and antenna-coupled rectification at THz frequencies, benchmarked by 
+responsivity (~0.5 A/W), noise-equivalent power (~0.1 pW/ √Hz), and response speed (ms) at room 
+temperature, is expected. These results should anchor an electromagnetic and thermal design of an 
+integrated dual-band THz/LWIR pixel. 
+ 
+PHASE II: Fabricate and validate the dual-band pixels, while adding quarter-wave cavity enhancement to 
+the LWIR channel and demonstrating simultaneous, low-crosstalk two-band readout. Refine multilayer 
+architectures and investigate the feasibility of even higher-mobility layers and quantum wells. Scale to a 
+small-format array (~8x8) for as high as kilohertz-rate dual-band imaging of test scenes. Deliver a SWaP-
+C and manufacturability assessment benchmarked against cooled MCT and microbolometer incumbents. 
+ 
+OSW/BR - 11 
+ 
+PHASE III DUAL USE APPLICATIONS: Terahertz (THz) and Infrared (IR) sensing devices operating 
+at room temperature (uncooled) represent a critical dual-use technology. By eliminating the need for 
+bulky, power-intensive cryogenic cooling systems, these sensors enable highly portable, lightweight, and 
+low-cost systems. Features that underline a dual usage role for the developed sensing devices include: 
+1. A fast uncooled oxychalcogenide focal plane enables short-range THz/infrared inspection of 
+packages, vehicles, and surfaces — penetrating clothing, packaging, and dielectric coatings to 
+reveal concealed weapons or contraband while keeping the operator at a safe standoff distance. 
+2. The same long-wavelength response allows the sensor to see through smoke, dust, and brownout 
+obscurants and makes a drone-borne payload effective in degraded visual environments where 
+electro-optical and shortwave-IR imagers fail. 
+ 
+REFERENCES: 
+1. Romero III, Ralph, et al. ""Planckian scattering and parallel conduction channels in an iron chalcogenide 
+superconductor."" Nature Physics (2026): 1-5. 
+2. Mekonen, Sirak M., et al. ""Coupled metamaterial–phonon terahertz range polaritons in a topological 
+insulator."" ACS Photonics 11.6 (2024): 2242-2246. 
+3. Tagay, Zhenisbek, et al. ""Electrodynamics of the quantum anomalous Hall state in a magnetically 
+doped topological insulator."" Physical Review B 110.24 (2024): L241106. 
+4. Chen, et al..”Broadband Bi2O2Se photodetectors from infrared to terahertz.” Advanced Functional 
+Materials, 31.14 (2021): 2009554. 
+5. Chen, Hang, et al. ""Broadband InBiSe3 alloy photoelectric detector from visible to terahertz."" Aip 
+Advances 14.3 (2024): 035324. 
+6. Ding, Xiang, et al. "" Bi2O2Se: A rising star for semiconductor devices."" Matter 5.12 (2022): 4274-4314. 
+ 
+KEYWORDS: Room temperature THz detection, low SWAP-C, supply chain fragility, high speed 
+electronics; Thz infrared sensing; Long-wavelength infrared; Oxychalcogenide films; THz spectroscopy",STTR: Requires RI partner | T0.4 Registration check
+OSW26TZ06-NV007,"Scalable Processing of Large Area, Oriented 2-Dimensional Polymer Films",OSD,STTR,"October 21, 2026","Films 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Advanced Materials 
+ 
+OUSW (R&E) CRITICAL TECHNOLOGY AREA(S): Contested Logistics Technologies 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Develop a reliable, cost-effective method to produce large area films of mechanically 
+robust 2-dimensional polymers where the individual sheets are highly orientated perpendicular to film 
+plane for membrane applications. 
+ 
+DESCRIPTION: 2-dimensional polymers (2DPs) such as covalent organic frameworks (COFs) are an 
+emerging class of materials which have displayed significant potential in applications ranging from 
+catalysis, energy storage, dielectrics, nanofiltration, gas storage, and mechanically robust engineering 
+materials. They are synthesized from geometrically pre-defined building blocks and can accommodate a 
+wide variety of pore shapes, sizes, and functionality. Most methods used to produce 2DPs result in an 
+insoluble microporous powder that cannot be processed into a functional form factor which limits their 
+relevance in commercial or military applications. Despite these challenges, a variety of creative 
+approaches have been explored to process 2DPs into films, composites, or gels. Top-down methods such 
+as exfoliation or solution casting or bottom-up methods that form films directly from cast monomer 
+solutions have been used to varying levels of success to access films and membranes. Interfacial 
+polymerization has also been used to form films at the interface of two immiscible solvents. Despite this 
+progress, many of the available techniques suffer from limitations that preclude further elaboration into 
+industrially relevant processing techniques or lead to formation of films of poor quality. Exfoliation 
+based approaches are low-yielding and solution casting techniques often involve appending solubilizing 
+groups to the pore wall which can block access to the pore itself. Methods that cast directly from 
+monomer solution can be scaled up in a roll-to-roll process but often result in films that are mechanically 
+weak as it is difficult to control the size and orientation of the individual 2DP sheets and they often lack 
+sufficient intermolecular interactions. More work is needed to understand the underlying kinetics and 
+thermodynamics of the film forming processes as it relates to monomer selection, layer alignment, 
+domain size, and formation of defects. New engineering approaches are also needed to further control 
+film formation, thickness, functionality, and orientation during deposition and post-processing. Special 
+focus should be given to controlling and minimizing defects that could mitigate material performance: 
+point and stacking defects within 2D polymer crystals, stacking defects in between crystallites, pinholes, 
+and residual solvent / reactant contaminations within the films, crystallite size distributions to name a few. 
+ 
+The objective of this topic is to develop a scalable, cost-effective method to produce large area 2DP 
+ensemble films with superb control over structural evolution. Designed processes must consider monomer 
+composition, long range structural order in lateral and parallel planes, interlayer interactions and flaw 
+tolerance. The process should be amenable to roll-to-roll processing or a related method to produce 
+continuous films. 
+ 
+PHASE I: Develop a continuous process to produce 2DP ensemble films from predefined monomer 
+building blocks. The process should achieve a rate of 100 feet per minute of a film that is at least 1 foot 
+wide and 1-50 microns thick. Using computational modeling and/or experimental studies, identify role of 
+defects and flaws and quantify needed levels of domain size, layer alignments, and intermolecular 
+interactions to achieve mechanically robust films. Using insights gained from understanding the 
+underlying film forming mechanism, develop a framework to be implemented in Phase II to achieve 
+required structural ordering. 
+OSW/BR - 13 
+ 
+ 
+PHASE II: Further develop processing approach from Phase I to increase deposition rate by 2-5X while 
+expanding range of film width and of thickness while achieving domain sizes and orientations needed to 
+form robust films. The method should be amenable to post-processing including annealing, tensioning, or 
+post-polymerization modification to further increase ordering and alignment. Proxy measurement 
+techniques may be developed to rapidly assess ordering and alignment. 
+ 
+PHASE III DUAL USE APPLICATIONS: Phase III efforts will further optimize the processing method 
+and scale production to manufacturing-relevant levels and rates to achieve films with large, highly aligned 
+domains with minimal defects. A variety of dual-use applications would benefit from an efficient 
+production pipeline for 2DP films including nanofiltration membranes, battery separators, gas 
+impermeable films, and critical mineral recovery. 
+ 
+REFERENCES: 
+1. D. W. Burke, C. Sun, I. Castano, N. C. Flanders, A. M. Evans, E. Vitaku, D. C. McLeod, R. H. 
+Lambeth, L. X. Chen, N. C. Gianneschi, W. R. Dichtel, Angew. Chem.2020, 132, 5203. 
+https://onlinelibrary.wiley.com/doi/full/10.1002/ange.201913975 
+2. Morgan G. Barnes, David C. McLeod, and Robert H. Lambeth. ACS Applied Polymer Materials. 
+2022 4 (3), 2017-2021. https://pubs.acs.org/doi/full/10.1021/acsapm.1c01828 
+3. M. C. Senarathna, H. Li, S. D. Perera, J. Torres-Correas, S. D. Diwakara, S. R. Boardman, N. M. 
+Al-Kharji, Y. Liu, R. A. Smaldone, Angew. Chem. Int. Ed.2023, 62, e202312617. 
+https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202312617 
+ 
+KEYWORDS: 2-dimensional polymers, covalent organic frameworks, polymer processing, 
+crystallization, roll-to-roll",STTR: Requires RI partner | T0.3 ITAR | T0.4 Registration check
+OSW26TZ06-NV008,Bio-inspired Underwater Teams,OSD,STTR,"October 21, 2026","COMPONENT TECHNOLOGY PRIORITY AREA(S): Trusted AI and Autonomy 
+CRITICAL TECHNOLOGY AREA(S): Contested Logistics Technologies 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+OBJECTIVE: Utilize the fundamental understanding of hydrodynamic benefits from underwater vehicles 
+swimming in proximity to each other to develop and demonstrate a design for an underwater vehicle team 
+optimized for range, endurance, speed and quietness. The design should be based on rigorous analysis and 
+leverage results from recent computational and experimental fluid dynamics investigations that have 
+shown signifcant gains in efficiency resulting from group swimming. The design should also leverage 
+new vehicle design spaces that result from the platform being unmanned and are available that might 
+include novel propulsors (for example, fins, tails or other bio-inspired mechanisms) that utilize unsteady 
+propulsion, body shape and body deformation. This STTR will provide increased capabilities for UUV 
+teams based on the technology push from the fundamental understanding we now have of how 
+hydrodynamic benefits of underwater swimming in groups. 
+DESCRIPTION: Bio-inspired underwater vehicles have nearly matched the speeds and efficiencies of 
+real fish. Now, these platforms are on the cusp of operating as multiagent teams, which would further 
+improve efficiency and unlock novel mission utility. Recent work has shown how the hydrodynamic 
+benefits of schooling can be translated into groups of underwater vehicles. In this STTR, the use of 
+physical models and 3D simulations of sufficient fidelity are expected to enable exploration and 
+understanding of the effects of controlled variation of key parameters such as geometric positioning with 
+respect to other wakes and body deformation in developing protype underwater teams. Recent progress in 
+this area, combined with the wide availability of 3D physical and computational methods, presents a 
+significant, new opportunity for the application of fundamental knowledge to exploit the hydrodynamic 
+benefits that result from schooling fish. This STTR Topic will pursue the design and demonstration of 
+innovative, bio-inspired UUV teams with capabilities well beyond the state of the art for range, 
+endurance, speed and quietness. 
+The overall design objective and targeted capabilities apply to a group of untethered UUVs, each between 
+1-5 meters in length, and capable of operating in salt water to depths of 50 ft, to support Phase II and 
+Phase III testing. Conventional designs and propulsors (such as propellers and jets) are not in scope for 
+this topic. The design will be evaluated according to measurable performance criteria: 
+– Speed: minimum 4 meters/sec, with an objective of 6 meters/sec or higher; Cost of Transport (COT): 
+proposed project should optimize the COT and demonstrate clear improvement over the state-of-the-art, 
+for the chosen vehicle length and speed; Quietness: underwater acoustic energy generated by the vehicles, 
+should be minimized by design; Power: the design shall not rely on energy harvesting from the 
+environment but can incorporate methods of energy recovery from mechanical motion itself. It shall 
+utilize state-of-the-art energy storage (R&D into energy storage is outside the scope of this topic); Power 
+Transmission: the design shall use state-of-the-art means of transferring power to the propulsor. 
+Successful proposals will explain how the proposed means of power transmission will contribute to 
+meeting the performance objectives; Sensing and control: approaches to sensing and dynamic control that 
+optimize hydrodynamic interactions and flow physics are in-scope for this Topic. The successful proposal 
+will explain how these will contribute to meeting the performance objectives; Path Planning: use off-the-
+shelf components to provide sufficient capability for the platforms to perform the demonstrations during 
+Phase II and Phase III, including straight line tracks and simple maneuvers sufficient to demonstrate 
+speed, range, endurance and acoustics. R&D into path planning is outside the scope of this topic; Vehicle 
+cost: estimated cost of scaled manufacturing is a factor in the proposal evaluations and can be used to 
+OSW/BR - 15 
+ 
+guide material and design selection. The successful proposal will identify supply chain risks and a 
+mitigation plan. 
+PHASE I: The small business shall demonstrate the feasibility of the concept in meeting Navy needs for a 
+team of UUVs capable of meeting the desired performance objectives, via model-scale experiments, 
+computation, previous results and data, or fabrication of components (if feasible) for any difficult-to 
+manufacture component. This body of evidence shall support the high-risk aspects of the design. The 
+Phase I should convincingly show that the design is sufficiently robust to undergo the testing described in 
+Phases II and III. 
+PHASE II: The small business shall fabricate a prototype team of UUVs, according to the requirements 
+stated in this Topic, and evaluate the design via in-water tests conducted at a facility arranged by the 
+small business. These tests shall target the STTR performance objectives listed above, via untethered 
+operations. At a minimum, the prototype testing shall consist of (1) basic operability testing, (2) speed 
+trials, (3) range/endurance trials, and (4) acoustic testing. The small business may propose other tests as 
+needed to demonstrate the benefits of their design. It shall also perform analyses to establish reliability, 
+identify areas for further improvement, and analyze manufacturing scalability to transition the design to 
+the Navy. 
+PHASE III DUAL USE APPLICATIONS: The small business shall apply the knowledge gained in Phase 
+II to build an advanced prototype UUV team. The small business shall test the advanced prototype 
+according to the Phase II test goals. The small business shall support Government testing of the advanced 
+prototype. 
+REFERENCES: 
+1. Han, T., Seyedmirzaei Sarraf, S., Mivehchi, A., & Moored, K. W. (2025) Tailoring formations of 
+self-organizing hydrofoil schools towards high-efficiency. Journal of Fluid Mechanics. 1012, A26. 
+doi:10.1017/jfm.2025.10239. 
+2. J Guo, GV Lauder, R Thandiackal, H Dong, Computational analysis of fish-foil pairing and wake 
+energy extraction in low-speed flow, Bioinspiration & Biomimetics 20(5), 056011, 2025. 
+3. Menzer, A., Pan, Y., Lauder, G.V., Dong, H, “Fish schools in a vertical diamond formation: Effect of 
+vertical spacing on hydrodynamic interactions,” Physical Review Fluids 10 (4), 2025. 
+4. Guo, J. , Dong, H, “A computational Study of In-Phase and Anti-Phase Interactions of Fish in a 
+Phalanx School,” Journal of Fluids Engineering 147 (7), 2025. 
+5. Huang, Z., Wang, J., Dong, H., ""Vortex Dynamics in Wake-Body and Wake-Fin Interactions of 
+Tuna- Like Staggered Swimming,"" Bioinspiration and Biomimetics 20 (4), 2025. 
+KEYWORDS: Biological propulsion; unmanned underwater vehicle teams; biologically-inspired design",STTR: Requires RI partner | T0.4 Registration check
+OSW26TZ06-NV009,Expeditionary Solar Refinery for Direct Synthesis of Methanol Feedstock from Water and Air,OSD,STTR,"October 21, 2026","Feedstock from Water and Air 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Advanced Materials, Renewable Energy 
+Generation and Storage, Sustainment & Logistics 
+ 
+CRITICAL TECHNOLOGY AREA(S): Contested Logistics Technologies 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Generate a minimally viable component system with solar, water, and carbon dioxide 
+inputs which generates >66% methanol/water fuel at a rate of 0.5L/hr with a total system weight <90 lb. 
+ 
+DESCRIPTION: Modern warfare tactics have demonstrated the need to shift toward small, specialized, 
+dismounted tactical units which can operate free from the supply line. Systems enabling Soldier power 
+sustainment are essential to facilitate zero-resupply operations amid increasing energy requirements on 
+the battlefield. To accomplish this demand, we need investments to capitalize on energy sources that can 
+be replenished in austere environments, whether to directly power devices or charge batteries. Further, 
+this energy source needs to impart minimal cognitive load on the warfighters, acting passively until put 
+into use. Finally, it should be invisible to modern UAS-mounted sensors (e.g., IR detection). A 
+technology that enables continuous methanol fuel cell usage from just sunlight, water, and atmospheric 
+gases can accomplish these goals for uninterrupted power in contested logistics environments. 
+The motivation for this topic has arisen from recent research that showed efficient utilization of locally 
+available carbon resources and the selective synthesis of liquid fuels under austere conditions [5,6]. In one 
+study, a solar-driven artificial photosynthesis platform was demonstrated that directly converts carbon 
+dioxide and water into methanol, enabling onsite fuel generation without the high temperatures, pressures, 
+and complex infrastructure required by conventional syngas-based processes. In a complementary effort, 
+a pathway was developed for converting stranded natural gas and methane emissions into transportable 
+liquid fuel using only sunlight and water, overcoming long-standing challenges associated with methane 
+activation and overoxidation. Together, these advances establish scalable photocatalytic technologies for 
+producing methanol from diverse carbon feedstocks, providing a foundation for expeditionary fuel 
+manufacturing with reduced logistics burdens and enhanced energy resilience for distributed military 
+operations. 
+Based on these advances, the proposed system will leverage solar (concentrated or ambient) energetic 
+inputs along with water (potable or otherwise) and carbon dioxide (ambient or concentrated) as the only 
+chemical inputs to generate methanol fuel capable of meeting the daily power requirements of up to 4 
+Soldiers. This approach will produce ≥66% methanol-in-water that is immediately available for use with 
+direct/reformed fuel cell systems including the Honey-Badger 20/50W PEM Power Generator. The 
+system will be operable in remote, austere locations without a direct Soldier interface, while placed on the 
+ground, or while secured to a light tactical off-road vehicle (e.g., Flyer 60). Operation with direct access 
+to fresh water, ambient CO2, and clear weather conditions should generate at least 0.5 L of methanol per 
+hour, with increased efficiency if concentrated CO2 sources are available. The total system weight should 
+not exceed 90 lb (equivalent to a typical T6 battery), nor the dimensions exceed 0.5 m3. Heat emissions 
+from the system should be minimal such that the system remains near ambient to IR cameras. 
+The system will be designed with a 0.5 L (16.9 oz) input cartridge containing potable water (equivalent to 
+a standard plastic water bottle volume) which will be converted into a 66% methanol/33% water fuel 
+stream. Ideally, the system can also be directly powered by alternative sources (e.g., military standard 
+generators, wind, etc.). Achieving the desired production rate while remaining lightweight and utilizing 
+onboard vehicle power will require an innovative approach. 
+OSW/BR - 17 
+ 
+ 
+PHASE I: Create feasibility concepts for a methanol generation system with solar, water, and carbon 
+dioxide inputs which generates >66% methanol/water fuel at a rate of 0.5L/hr and a total system weight 
+<90 lb. Feasibility will be established by light harvesting toward methanol synthesis (catalytic or 
+otherwise) and kinetics/turnover/selectivity evaluation, and analytical modeling to include engineering 
+diagrams, heat/mass balance calculations, and computer-aided design models of possible prototype 
+architectures. The final product is a Phase II development plan with performance goals and key technical 
+milestones that address technical risk reduction. 
+ 
+PHASE II: Produce a prototype minimally viable product system for evaluation and assessment in 
+accordance with the criteria established in this Topic. Demonstration and delivery to a DoW transition 
+partner (e.g., DEVCOM C5ISR, DEVCOM Soldier Center, DEVCOM GVSC, etc.) is required to 
+establish compatibility with DoW systems and direct future product iterations. 
+The results of the evaluation will be leveraged to generate refinement plans for the prototype to better 
+meet DoW requirements and determine product effectiveness in an operationally relevant environment. 
+The final products of Phase II include the prototype described above, evaluation with a DoW partner and 
+a Phase III development plan. The technology should reach TRL 6 at the conclusion of this phase. 
+PHASE III DUAL USE APPLICATIONS: The end-state of this research effort will be the introduction of 
+an innovative strategy and prototype for producing methanol fuel in-field for use with DoW methanol fuel 
+cell platforms. Because use of available materials represents an essential logistics benefit, the system will 
+be designed to produce fuel from a standard 16.8 oz plastic water bottle, carbon dioxide, and direct or 
+indirect solar energy. Such a system will permit Soldier power sustainment for mounted or dismounted 
+teams, facilitating zero-resupply operations. 
+ 
+A single unit should be able to meet the daily power requirements of 4 dismounted soldiers. Multiple 
+units should be able to link up and provide auxiliary power to a FOB. As we expand toward fuel cells for 
+UAS and UGV, the fuel produced by the projected device will directly be able to transition to provide 
+power for those technologies. In some military and commercial cases where methanol fuel cells are 
+prevalent, the projected devices will be able to easily and cheaply replace solar panels and batteries. 
+ 
+Further, a simple, scalable method for methanol production can be directly plugged- into commercial use 
+cases, such as industrial feedstock for other reactions (e.g., formaldehyde, hydrocarbons, olefins) for a 
+wide array of applications (e.g., polymers). In such cases, the methanol produced by technologies driven 
+during this STTR will enable on-site synthesis near factories and at lower temperatures (>200 °C) and 
+energy costs than the current state-of-the-art. 
+ 
+REFERENCES: 
+1. Deryn Chu et al, Direct Methanol Fuel Cell Systems for Future Force Warriors: From 
+Experimental and Simulations for Water And Methanol Crossover And Recycling To High 
+Performance Fuel Cell Systems, DTIC Technical 
+Report https://apps.dtic.mil/sti/pdfs/ADA504222.pdf 
+2. Navarro-Jaén, S., Virginie, M., Bonin, J. et al. Highlights and challenges in the selective 
+reduction of carbon dioxide to methanol. Nat Rev Chem 5, 564–579 
+(2021). https://doi.org/10.1038/s41570-021-00289-y 
+3. Ibram Ganesh, Conversion of carbon dioxide into methanol – a potential liquid fuel: Fundamental 
+challenges and opportunities (a review), Renewable and Sustainable Energy Reviews, 31, 221-
+257, 2014, https://doi.org/10.1016/j.rser.2013.11.045 
+OSW/BR - 18 
+ 
+4. Cristiani, Jonathan et al, Test and Evaluation of the Smart Fuel Cell C20-MP Direct Methanol 
+Hybrid Fuel Cell System as a Soldier Power Source, DTIC Technical 
+Report https://apps.dtic.mil/sti/pdfs/ADA440442.pdf 
+5. Songtao Tang, et al., Dual-state stepwise methane-to-methanol conversion by water droplets with 
+excellent yield and selectivity, PNAS, 123, 1, e2511126123, 2025, 
+https://www.pnas.org/doi/10.1073/pnas.2511126123 
+6. Peng Zhou, et al., Water-promoted selective photocatalytic methane oxidation for methanol 
+production, Chem. Sci., 2024,15, 1505-1510, 
+https://pubs.rsc.org/en/content/articlelanding/2024/sc/d3sc02567e 
+ 
+KEYWORDS: Photocatalysis, Water-Splitting, Hydrogen, Nanomaterial, Semiconductor, Fuel, Portable",STTR: Requires RI partner | T0.3 ITAR | T0.4 Registration check
+OSW26TZ06-NV010,Architected Energy Dissipation Structures With Tunable Rigid-Flexible Behaviors,OSD,STTR,"October 21, 2026","Behaviors 
+ 
+COMPONENT TECHNOLOGY PRIORITY AREA(S): Advanced Materials 
+ 
+CRITICAL TECHNOLOGY AREA(S): Contested Logistics Technologies 
+ 
+PROJECTED CMMC LEVEL REQUIREMENT: Level 1 
+ 
+OBJECTIVE: Develop and demonstrate architected energy dissipation structures with rigid responsiveness 
+at large tensile, compressive, and shear strains, but capable of conformability to surfaces of complex 
+topographies and other fluid-like behaviors in response to small strains. 
+ 
+DESCRIPTION: The DoW requires lightweight protection materials for a variety of applications, including 
+personal protection, vehicle safety, and shielding sensitive electronics. Most protection structures are either 
+a) rigid materials – e.g. metals, ceramics, composites - designed to carry significant mechanical loads and/or 
+blunt kinetic threats, or b) flexible materials – e.g. elastomers, foam structures, structures based on 
+polymeric fibers – intended to compress and/or stretch, are conformable, and eff ective at reducing peak 
+accelerations [1]. However, most protection solutions cannot provide both rigid material response and 
+conformability which limits applications for the Warfighter. 
+ 
+Recently, a new family of energy dissipating structures known as “polycatenated architected materials” 
+have been introduced that may display both solid- and fluid-like behaviors [2]. These structures, essentially 
+“3D chainmail” and realized through additive manufacturing, derive their mechanical behaviors not through 
+intrinsic material properties, but rather through geometric arrangement of internal solid elements, e.g. rings 
+or cage-like particles interconnected into 3D networks (note that these materials consist entirely of solid 
+linkages, collectively displaying “fluid-like” behaviors in response to small deformations). In response to 
+severe loading, rigid elements may align and develop complex force chains that exhibit high strength and 
+offer significant protection mechanisms not possible through conventional flexible options [2,3]. However, 
+elements may also reorganize, slide, and/or rotate, which offers novel design mechanisms for dissipating 
+energy, and new ways to enable comfort for applications related to personal protection. 
+ 
+The goal of this topic is to create architected structures with tunable mechanical energy dissipating 
+behaviors that can vary spatially throughout the material. Teams will investigate element and linkage 
+materials, geometries, and nearest neighbor spacings to design architected structures that perform optimally 
+for various static and dynamic loading conditions, e.g. via tensile, compression, impact, and rheology 
+characterization. Teams will then design, process, characterize, and simulate energy dissipating behaviors 
+of materials in multiple geometrical configurations, e.g. through comparisons to legacy impact attenuating 
+materials like foams that are used for impact protection (knee pads, elbow pads, helmet pads). Teams will 
+be expected to work alongside Army scientists and engineers to guide the design, manufacturing, and testing 
+of materials. If successful, this effort would enable new materials design tools for the DoW to create 
+customized protection structures for the expeditionary Soldier. 
+ 
+PHASE I: Design architected structures with individual linked grains in the following approximate 
+rectangular configuration, 82 mm x 87 mm x 19.5 mm (thickness). The given geometry approximates a 
+commonly tested helmet pad configuration and will allow teams to mak e comparisons to known 
+technologies. Architected sheets shall display conformability to various geometries to include features 
+with radii of curvature ranging from approximately 0.5- 3.0 cm. The through-thickness compression 
+response of the material should seek to maximize energy absorption efficiency as described in Equation 1 
+of reference [4]. Simultaneously, the material should minimize shear stiffness in the thickness direction. 
+Teams will use advanced processing techniques, e.g. additive manufacturing approaches, to fabricate a 
+OSW/BR - 20 
+ 
+minimum of 10 test specimens. Teams will perform computer simulations and initial experimental 
+mechanical characterization to estimate in -plane and out -of-plane loads required to initiate solid -to-fluid 
+transitions in the architected materials. Teams will perform impact tests across the range of 1-50 J and use 
+legacy foam pads as a comparison. 
+ 
+PHASE II: Design and demonstrate architected structures with variable energy dissipating properties with 
+respect to spatial position. Teams may consider multi -material and/or variable grain/linkage architectures 
+to achieve the tunable behaviors. Process a minimum of 20 specimens in the geometrical configurations 
+provided for Phase I and develop test techniques to assess the response of the structures whose energy 
+dissipation behaviors vary spatially. Simulate the mechanical behaviors of the architected structures in 
+response to compressive, tensile, shear, and impact loads. Determine loads required to initiate flexible-
+rigid transitions at various spatial positions within the structure. Work with Army Research Laboratory 
+(ARL) scientists to design, manuf acture, and deliver test specimens for advanced dynamic mechanical 
+testing at ARL. Develop commercial and outreach plans to market the technology for civilian and defense 
+markets; in addition, teams shall develop plans to scale manufacturing. 
+ 
+PHASE III DUAL USE APPLICATIONS: The discovery of polycatenated mechanical metamaterials has 
+introduced a new family of structures that may display both solid- and fluid-like behaviors. The additional 
+degrees of freedom associated with granular elements linked to nearest neighbors may en able a variety of 
+new civilian and defense technologies, e.g. Soldier/Vehicle protection, sports equipment, law enforcement, 
+and lightweight concepts for dissipating vibrational energy. Phase III efforts shall include outreach efforts 
+based on market research to leverage opportunities in both civilian and defense markets. Implement plans 
+to rapidly modify designs for specific customer needs. In addition, teams shall implement plans to scale 
+manufacturing. 
+ 
+REFERENCES: 
+1. Staniszeski, J., et al. , “Improved Low -Velocity Impact Performance of the Advanced Combat 
+Helmet (ACH) at 17 ft/s through Optimization of Pad Material Response,” ARL-TR-8808 (SEP 
+2019). 
+2. Zhou, W., et al., “3D polycatenated architected materials,” Science 387: 6731, pp. 269-277 (2025). 
+3. Liu, T., et al., “3D self-locking granular metamaterial,” Science 12(15) (2026). 
+4. Clough E, et al., “Elastomeric Microlattice Impact Attenuators,” Matter 1, 1519-1531 (2019). 
+ 
+KEYWORDS: Conformable structures, Lightweight armor, Soldier protection, Metamaterial, Architected 
+Material, Additive Manufacturing",STTR: Requires RI partner | T0.4 Registration check

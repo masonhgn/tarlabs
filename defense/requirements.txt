@@ -1,0 +1,5 @@
+# Dependencies for the scripts in scripts/. build_release6_csv.py is stdlib-only.
+beautifulsoup4
+lxml
+pandas
+reportlab

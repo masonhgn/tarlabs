@@ -1,8 +1,4 @@
-.git
-.github
-.gitignore
 .DS_Store
-README.md
 fly.toml
 Dockerfile
 .dockerignore

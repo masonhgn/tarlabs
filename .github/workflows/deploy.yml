@@ -3,6 +3,10 @@ name: Deploy to Fly
 on:
   push:
     branches: [main]
+    # The site lives in tarlabs.co/; nothing else in the monorepo affects the image.
+    paths:
+      - 'tarlabs.co/**'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 # Never let two deploys race; the newest push wins.
@@ -23,6 +27,7 @@ jobs:
 
       - name: Deploy
         run: flyctl deploy --remote-only
+        working-directory: tarlabs.co
         env:
           # flyctl reads FLY_API_TOKEN; the repository secret is named FLY_DEPLOY_TOKEN.
           FLY_API_TOKEN: ${{ secrets.FLY_DEPLOY_TOKEN }}

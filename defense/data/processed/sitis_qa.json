@@ -1,0 +1,1376 @@
+[
+  {
+    "topic_number": "ARM26BX03-DP007",
+    "title": "xTech|Kinetic Reach Competition",
+    "component": "ARMY",
+    "program": "2",
+    "release": "3",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "2",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 1",
+    "qa": [
+      {
+        "question": "At white-paper stage, are the heavy-payload movement thresholds (e.g., 22,000+ lb, 250+ km) evaluated at the integrated-system level, such that maturity evidence may reference the host platform's demonstrated performance?",
+        "answer": "220VAC for commercial European power if a system needs to connect to an external grid."
+      },
+      {
+        "question": "For Capability 1, is an offeror whose core contribution is the autonomy/software layer integrated onto a COTS or partner heavy-payload platform eligible to compete as a single applicant, or does this need to be structured and marked as an \"integrated solution\" on the registration page?",
+        "answer": "If a company has something that can add autonomy, task intelligence, and GOAT-net integration onto an existing POR vehicle, we’d like to evaluate that and can work the coordination to have the right GFE present at the evaluation event in November. However, I think it’s a fair assessment that the evaluation criteria will prefer integrated solutions to bolt-on ones. Subject to the limits of our follow-on OTA, if a Vendor’s autonomy solution is better than another Vendor’s, but Vendor B has a better payload-movement capability, we’d want to make conditional offers subject to Vendor A and Vendor B partnering to pair their offerings prior to additional testing."
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "ARM26BX03-NP006",
+    "title": "xTech|Inversion Competition",
+    "component": "ARMY",
+    "program": "34",
+    "release": "3",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "34",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 1",
+    "qa": [
+      {
+        "question": "Can Reactor 2 operate independently using an externally supplied ethylene stream, or is the integrated two-reactor configuration required for practical operation?",
+        "answer": "Yes, Reactor 2 can operate independently using an externally supplied ethylene stream."
+      },
+      {
+        "question": "Although methanol is listed among the potential oxygenated feedstocks in the patent, all experimental examples appear to be based on aqueous ethanol. Has the reactor architecture been experimentally evaluated using methanol feedstocks, or is methanol compatibility currently only conceptual?",
+        "answer": "No, we did not try the methanol. We were focusing on ethanol study."
+      },
+      {
+        "question": "What Technology Readiness Level (TRL) range is the Army targeting for participating solutions?",
+        "answer": "This competition is TRL agnostic."
+      },
+      {
+        "question": "Is using a selected IP set as a module within a broader, company-owned product an acceptable approach, or does the proposal need to treat the IP set as a standalone product?",
+        "answer": "A company could choose to develop an ARL invention/patent as either a ‘module’ to add to or complement their own products/IP or a stand-alone product. Either way, companies will need to lay out/describe how they intend to use/commercialize the licensed government IP if and when they submit a formal patent license application."
+      },
+      {
+        "question": "For IP set 8, how should applicants address the operational sustainment model, including lifecycle cost, readiness impact, maintenance forecasting, deployment economics, and audit-ready accountability?",
+        "answer": "Applicants should describe how the proposed solution supports long-term operation in field environments, including calibration stability, sensor reliability, installation and replacement requirements, and expected maintenance intervals. White papers should also address deployment and lifecycle costs, impact on operational readiness through reduced installation complexity or downtime, and approaches for data integrity, traceability, and auditability of power monitoring records. Quantitative estimates are encouraged where available."
+      },
+      {
+        "question": "For the Phase I Army SBIR, does the proof of concept need to focus only on the IP set itself, or can it include integrating the IP set into the applicant's host platform as the demonstration?",
+        "answer": "Either approach is feasible. The company should do what makes the most sense for them."
+      },
+      {
+        "question": "What intellectual property rights will participating companies retain, and what rights does the Army expect?",
+        "answer": "This depends on the company's intent and is best addressed through the patent license application process. Interested parties should reach out to the appropriate tech transfer office to discuss this further."
+      },
+      {
+        "question": "Can a small business acquire the patent license outside of the xTech Inversion program?",
+        "answer": "Yes, you can apply for a license outside of this program. You should get in touch with the tech transfer office of the responsible Army laboratory."
+      },
+      {
+        "question": "How should applicants handle IP rights when combining Army-owned IP with their own developed software, data models, or algorithms?",
+        "answer": "A licensing process would need to be followed. This will be covered in more detail during the finalist accelerator, but it involves submitting a patent license application."
+      },
+      {
+        "question": "For IP set 12, what about proposing an open architecture that can adapt to applications and specs that will be defined in the future?",
+        "answer": "Open architecture approaches are fine and often desirable, but only if they remain grounded in real converter physics and commercialization pathways. They should still define controllable boundaries—like topology choice, regulation method, and expected performance ranges—so we can assess feasibility and transition potential, not just conceptual flexibility."
+      },
+      {
+        "question": "IP set 12, what is the physical form factor of the converter circuit?",
+        "answer": "It was demonstrated on a rigid PCB, but other substrates are possible. The active part of the converter is very small, about 0.34 square inches (roughly the size of a dime)."
+      },
+      {
+        "question": "IP set 12, what is the minimum input voltage the converter has been validated to step up from, and what is the output voltage range?",
+        "answer": "The converter can self-start at less than 20 millivolts and provide an output of up to 2.5 volts. It has demonstrated a step-up from 35 millivolts input to a 2.5-volt output with over 400 microwatts of power at 58% efficiency. The desired output is typically regulated at 1.8 to 3.3 volts."
+      },
+      {
+        "question": "IP set 12, has this converter been tested in combination with IP Set 11 (Dual Coil Inductive Energy Generator)?",
+        "answer": "No, they were developed separately and have not been tested together."
+      },
+      {
+        "question": "For IP set 12, how should the white paper address that the topics are very light on technical specs?",
+        "answer": "The white papers should explicitly treat missing technical specs as part of the problem definition. Participants are expected to make reasonable engineering assumptions for low-voltage step-up converters and clearly state them—especially input range, power levels, efficiency targets, and intended application domains. The quality signal is how well they define and justify a viable commercialization envelope, not whether they guess an exact spec correctly."
+      },
+      {
+        "question": "Has the harvester been tested in any continuous low-G oscillation environment — vibration table, pendulum, or wrist-worn prototype — as opposed to single-event setback testing?",
+        "answer": "Setback generators designed for fusing, need to keep an explosive round and it’s connected circuitry de-energized until it sees gun-launch. The shear disc tightly confines the magnetic and it is help in the upper position until the gun-launch event shears the disk, allowing the magnet to displace. Small reserve batteries can deliver around 100 mW of power and the M203 flight duration is around 30 sec. When setback generators approach this amount of energy interesting new applications are realized. The maximum magnet velocity is around 10 m/s, thus a setback generator for an M203 maximum energy produced approaches 350 mJ of kinetic energy."
+      },
+      {
+        "question": "What materials comprise the cylindrical enclosure, magnet, and coils — specifically whether any ferromagnetic materials are present that would interact with a brass or aluminum housing?",
+        "answer": "Cartech SS430F, Neodymium D42B-N52, coil was plastic, no brass or aluminum."
+      },
+      {
+        "question": "IP set 12, the topic is light on technical specs. How should the white paper address this? Should we define the specs ourselves?",
+        "answer": "The patent was written broadly. The technology was originally developed for wearable thermoelectric generators on skin. White papers should treat missing specs as part of the problem, state justified engineering assumptions, and define clear performance and physical boundaries so feasibility can be assessed. Open architecture approaches are acceptable."
+      },
+      {
+        "question": "For IP set 11, what is the output voltage and current profile of the generator?",
+        "answer": "For the specified requirements, it charged a 120-microfarad capacitor to 13.7 volts. The power curve mimicked the gun-launch acceleration profile, and the coil winding resistance was approximately 0.7 ohms."
+      },
+      {
+        "question": "For IP set 11, what was the measured power output in laboratory testing?",
+        "answer": "For the M203 platform, the generator produced 9 millijoules of energy, charging a 120-microfarad capacitor to 13.7 volts. For the higher velocity Mark 19 platform, it is estimated that 30 to 60 millijoules could be generated."
+      },
+      {
+        "question": "For IP set 11, what were the original design G-force parameters, and has any variant been tested at a lower acceleration threshold (e.g., 8-50G range)?",
+        "answer": "The M203 and the Mk19 setback acceleration profiles were tested. Two different shear disc designs were used for the respective gun-launch accelerations. Nothing lower than 11,000 g’s with a 1.25 ms pulse duration has been tested. The magnet, in the non-displaced position, is tightly held in the upper magnetic loop where the magnetic flux is confined. So 50 g’s might not be enough static acceleration to break the pull force of around 4 lbs. This equates to roughly 1200 g’s."
+      },
+      {
+        "question": "For IP set 4, Would the Army view predictive maintenance, cost/readiness analysis, and sustainment reporting as valuable commercialization extensions of the sensor technology?",
+        "answer": "As a research lab, the Chemical Biological Center (CBC) would not perform these analyses at the R&D level. This would typically occur later when a technology transitions to a Program of Record. However, a patent licensing partner may choose to conduct this type of analysis as part of their business development."
+      },
+      {
+        "question": "Can the Army provide samples of the zirconium material or fibers during the Phase I feasibility effort?",
+        "answer": "If a sufficient sample amount exists, providing it under a commercial evaluation license could be discussed and possibly included in the license terms. Another option is a CRADA, which might require cost reimbursement, to fabricate the material."
+      },
+      {
+        "question": "Will awardees have access to the underlying fabrication methods and technical data associated with the zirconium hydroxide technology?",
+        "answer": "A commercial evaluation license would cover data directly related to the patent. Discussing separate, underlying fabrication methods and data could be possible under a Cooperative Research and Development Agreement (CRADA), provided there is sufficient benefit to the Army."
+      },
+      {
+        "question": "Can the zirconium hydroxide material be used as a coating on a chemical sensor for detection, rather than being incorporated into textiles?",
+        "answer": "Using it as a sensor coating can certainly be considered and discussed. It has not been a topic the Army has pursued in depth, but a commercial evaluation license would allow for a more detailed discussion."
+      },
+      {
+        "question": "For software-focused small businesses, is the Army open to proposals that commercialize one of the Army IP sets by building a complementary software, analytics, governance, sustainment, or commercialization layer around the IP, rather than manufacturing the physical device or material itself?",
+        "answer": "This is your opportunity to showcase your solution. If your solution is focused on one of the IP sets within the RFI, then we encourage you to submit a proposal for consideration. We’re looking forward to seeing a range of creative and impactful solutions and discovering how your expertise can contribute to advancing Army initiatives."
+      },
+      {
+        "question": "Does the xTech Inversion competition allow for combining IP sets in one proposal?",
+        "answer": "No, only one IP set should be submitted for each proposal, as outlined in the RFI."
+      },
+      {
+        "question": "What is the preferred way to disclose the pending proposal to the Program Office, as Section II directs?",
+        "answer": "Email the disclosure to the xTech mailbox."
+      },
+      {
+        "question": "Does the Army prefer white papers that focus on direct Army transition first, commercial market adoption first, or a dual-use path?",
+        "answer": "Please refer to the evaluation criteria listed on the xTech|Inversion Valid Eval signup page for guidance on this."
+      },
+      {
+        "question": "What characteristics distinguish the most successful xTech submissions in previous competitions?",
+        "answer": "Proposals should provide structured, detailed explanations of their proposed solutions while incorporating supporting data, relevant research, and evidence of prior testing or proven performance to establish technical credibility. Additionally, Clearly and directly address the specified evaluation criteria, enabling reviewers to efficiently verify how the proposed solution meets each dimension."
+      },
+      {
+        "question": "What level of sponsorship or transition support is provided to winning technologies to bridge the gap after a successful demonstration?",
+        "answer": "The program offers an accelerator for finalists, with additional programming for winners. Furthermore, individuals selected for an SBIR award will be paired with a technical point of contact (who may be the subject matter expert or inventor) for the duration of the contract."
+      },
+      {
+        "question": "Does the Army anticipate opportunities for dual-use commercial technologies that can be adapted for military applications?",
+        "answer": "The xTech Program is always looking for dual-use technologies. For this competition, proposals should focus on developing one of the internal Army IP sets listed in the Request for Information (RFI) and its dual-use potential."
+      },
+      {
+        "question": "Is there a pathway for xTech participation into Army Programs of Record, Other Transaction Authority (OTA) contracts, or operational pilot programs?",
+        "answer": "The transition pathway depends on the specific xTech competition. For this competition, winners will be eligible to submit a Phase I SBIR proposal worth up to $300,000."
+      },
+      {
+        "question": "Are prototype demonstrations expected in laboratory environments, operational environments, or field exercises?",
+        "answer": "Demonstrations are not part of this specific competition. They may, however, be part of follow-on activities for companies that are awarded a Small Business Innovation Research (SBIR) contract. The context for any demonstration would be determined at that time."
+      },
+      {
+        "question": "In inversion, is the attempt to reverse operational assumptions, counter adversary system architectures, or restructure decision and data representation layers?",
+        "answer": "Reversing operational assumptions: Yes, this competition is a strategic shift. Instead of the traditional \"pull\" for custom designs from industry, the Army is \"pushing\" its existing intellectual property (IP) out to industry for them to develop commercialization plans. Countering adversary systems: This is considered a secondary benefit. The primary goal is to increase technology transition from Army labs and build relationships with non-traditional partners. Restructuring data layers: This is also a secondary benefit to the overall goal of shifting from a \"pull\" to a \"push\" model for technology transfer."
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "ARM26BX04-DV010",
+    "title": "Ground-Based Affordable Mass (G-BAM)",
+    "component": "ARMY",
+    "program": "",
+    "release": "4",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "ARM26BX05-NP011",
+    "title": "xTech|Search 10 Competition",
+    "component": "ARMY",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "ARM26BX06-NV012",
+    "title": "Agentic-AI, Schema-Driven Decision Management for Auditable Studies and Acquisition Decisions",
+    "component": "ARMY",
+    "program": "6",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "6",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 1",
+    "qa": [
+      {
+        "question": "DAOSoft / architecture independence The Phase II description references DAOSoft as an existing COTS application while also stating that the Government is agnostic to current solutions. Is integration with, extension of, or compatibility with DAOSoft required or preferred, or may offerors propose an independent decision-management architecture that satisfies the topic objectives and provides open/interoperable interfaces? Phase I demonstration data/cases For the two Phase I end-to-end demonstrations, may offerors use representative, synthetic, publicly available, or contractor-generated engineering/acquisition data and decision scenarios, or does the Government expect the demonstrations to use Government-provided PAE Maneuver Ground / PAE Fires data or specific acquisition cases Phase I demonstration scope Should the two required Phase I demonstrations specifically represent one point-in-time trade study and one long-horizon decision program with refresh cycles, or may offerors propose alternative demonstrations that collectively demonstrate both capabilities?",
+        "answer": "DAOSoft is not a requirement! However, integration with DAOSoft or any decision workflow platform offerors choose will need to have connectivity, API(s), interfaces, etc. defined. Completing an Agentics decision capability with no workable interface created in Phase II would be an incomplete solution. The government encourages your innovation and places no restrictions on your software design nor integrated software solution We’re expecting PAE guidance on this point. For Phase I, offeror generic documents are sufficient Either choice is intriguing! The government supports a fresh innovative approach and is open to each offerors demonstration proposal."
+      },
+      {
+        "question": "Must the two Phase I demonstrations use Army-supplied data, or may they use publicly released Government documents?",
+        "answer": "We’re expecting PAE guidance on this point. For Phase I, offeror generic documents are sufficient"
+      },
+      {
+        "question": "The topic states the Phase II platform should be developed as a commercial open-source platform. Is open-source licensing a Phase II requirement, or one acceptable transition model among others, and how does the Government see that expectation interacting with SBIR data rights on the Phase I deliverable?",
+        "answer": "COTS is better, specific wording than open-source. Offerors will own their own code, and the government places no restrictions on an offeror chosen distribution model. Our hope is to avoid developing government code that does not have a commercial support and upgrade structure. That was the primary reason we chose the open-source wording … to avoid government code maintenance and upgrading. Remember, that the standard SBIR contract will require the offeror to provide an initial single copy for its use"
+      },
+      {
+        "question": "May both required demonstrations (the point-in-time trade study and the multi-episode decision program) use offeror-constructed scenarios, or is a specific PAE Maneuver Ground or PAE Fires use case expected to be coordinated during the period of performance?",
+        "answer": "We’re expecting PAE guidance on this point. For Phase I, offeror synthetic modeling is sufficient if PAE or PM data is not forthcoming"
+      },
+      {
+        "question": "Is any Government-furnished documentation on DAOSoft's current structured decision and trade-study capability available to offerors, or should Phase I proposals treat DAOSoft as a named point of reference without further Government-provided detail?",
+        "answer": "DAOSoft is currently available through them directly at: https://www.daosoft.ai/. DEVCOM - GVSC has a working copy on its engineering DREN network. The current SBIR has a completely new focus, particularly towards Agentics AI. All offerors have complete freedom to base their workflow on their own chosen platform, integrate with DAOSoft, or replace DAOSoft. We are looking at Agentics AI supporting increasingly rapid product decisions (both direct procurement and traditional development) as 100% new effort."
+      },
+      {
+        "question": "Reference data. Will Phase I offerors have access to representative, unclassified, non-proprietary trade-study or decision-program data from PAE Maneuver Ground or PAE Fires, or should the two required end-to-end demonstrations be built on offeror-constructed synthetic or analogous scenarios?",
+        "answer": "We’re expecting PAE guidance on this point. For Phase I, offeror synthetic modeling is sufficient if PAE or PM data is not forthcoming"
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BX05-DV509",
+    "title": "Power the space: high-voltage radiation hardened power switches for space power and propulsion",
+    "component": "USAF",
+    "program": "4",
+    "release": "5",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "4",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "Is this topic directed toward the development of radiation hard high-power switching devices (such as MOSFET and GaNFETS) or is it broader to include high power, high voltage, rad hard converters?",
+        "answer": "This topic intents to develop high-voltage rad-hard power switch discrete devices. Full converter circuits are not within the requirements of this topic."
+      },
+      {
+        "question": "For the required documentation of a completed “Phase I-type” feasibility effort, is a fabricated or radiation-tested device required at proposal submission? Alternatively, may feasibility be demonstrated through advanced calibrated TCAD, documented compatibility with a commercially viable foundry process, preliminary electrical evidence, and credible fabrication, packaging, and radiation-test plans?",
+        "answer": "Quoted from the topic: “This feasibility may be demonstrated by providing evidence that the applicant’s device can be fabricated using commercially-viable semiconductor foundry processes, providing a preliminary assessment of space-rated packaging solutions capable of handling both the high voltage and thermal extraction requirements in a vacuum, and/or clear evidence of a combination of advanced TCAD simulations, preliminary bench testing, or other practical demonstrations.” In essence, the proposer will want to provide strong evidences of feasibilities including the manufacturability, the space environment compatibilities, and the technical merits in achieving the requirements."
+      },
+      {
+        "question": "The Phase II description states that devices are expected to operate at a biased voltage greater than 600 V during radiation testing, preferably up to 1 kV. Does successful demonstration of SEB immunity at any specified V{DS} above 600 V satisfy the minimum requirement, with operation nearer 1 kV treated as a preference, or must the device demonstrate immunity across a defined voltage range or specifically at 1 kV?",
+        "answer": "The minimum requirement is passing the radiation test requirements in the topic at Vds ≥ 600 V. Radiation immunity up to 1 kV is preferable."
+      },
+      {
+        "question": "Hi: Is this project for Si or SiC (Silicon carbide). Cactus have a process for SiC 650-750V (Planar or trench) MOSFETs with standard with SEB. We can improve SEM as per spec, But wanted to confirm if this is SiC indeed? or you are looking to improve SEB for Silicon (Si) MOSFETs?",
+        "answer": "We are open to all innovations/technologies that can address the requirements in the topic, not limited to any specific material systems nor device topologies."
+      }
+    ],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DAF26BX06-DP027",
+    "title": "OPEN - Proliferated Low-Altitude Detection for C-sUAS",
+    "component": "USAF",
+    "program": "6",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "6",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "The topic projects CMMC Level 2 (Self). Our development uses large language model (LLM) coding assistants, which must run in a government-authorized cloud environment. Will DAF provide a government-furnished environment (GFE) cloud slot to run permitted LLMs at no cost to the contractor, or should offerors budget for this in the Phase II cost proposal?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "1. Cost ceiling. Does the $100,000 full-rate production ceiling apply per sensor node or to the complete system that provides 10 kilometers of boundary coverage? Does the ceiling include installation, power infrastructure, and software licensing, or hardware only? 2. Target signatures. What radar cross section (RCS) should proposers assume for the smallest Group 1 unmanned aircraft system (UAS) target, and at what frequency band? Is a government-furnished target set or RCS model available? 3. Performance metrics. Are there threshold values for probability of detection, false-alarm rate, track accuracy, and track latency? 4. Identification scope. Does \"identify\" mean drone versus not-a-drone only, or classification by type (multi-rotor, fixed-wing, helicopter), or recognition of specific models? 5. Spectrum constraints. Are there frequency-allocation or spectrum-authorization constraints for active radio-frequency (RF) sensors permanently installed on an Air Force base?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "1. Feasibility evidence. Does a validated simulation-only prototype satisfy the Phase I-type feasibility requirement, or must the applicant have physical sensor hardware that has detected a live or surrogate small UAS? 2. Medusa interface. What interface documentation or software development kit exists for Medusa command-and-control (C2) integration? Can offerors access it before award?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "1) Regarding the requirement: \"The nodes must integrate to create at least 10km of combined linear boundary coverage\": is this requirement for a straight line, or can it be met with a curve or perimeter? 2) The system must detect/track Group 1 through 3 UAS. Group 1 UAS span a large range of size/weight/signatures. Is there a lower limit to the size of Group 1 of interest (e.g. >250g)? 3) For demonstration of the equivalent of Phase I: arranging demonstrations against actual \"RF-Dark\" UAS is challenging. Is it acceptable to demonstrate against non-RF-dark UAS and show that no UAS emissions were exploited? 4) What technical environmental specifications are required to be met? These requirements will drive final production cost estimates. 5) Are any cyber-security requirements beyond CMMC level 2 envisioned?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "Could you comment on: Besides stational installation, could the sensors be installed on Unmanned ground or aerial vehicles? Does the sUAS detection cover all environmental conditions: fog, rain, day and night?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "For DAF26BX06-DP027: 1. Is the D2P2 feasibility requirement satisfied by an existing prototype demonstrating detection and tracking of a non-RF-emitting Group 1–3 UAS at low altitude, with basic track and sensor-node-location output in a non-operational relevant environment, while the 100 m/node range, altitude coverage, 10 km boundary, heading, remote control, API and C2 requirements are Phase II objectives? 2. For the feasibility requirement, what constitutes a “basic track”? Is single-node range and radial-velocity history sufficient, or must the existing prototype also provide bearing? 3. Does the requirement that the “final system” cost less than $100,000 at full-rate production apply to the complete multi-node system providing the required boundary coverage, or to each sensing node?",
+        "answer": "Response Pending"
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BX06-DV026",
+    "title": "Ground and Air Launched Drone Swarms Create a Self-Protecting Perimeter Using Autonomous AI",
+    "component": "USAF",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BX06-DV511",
+    "title": "Low SWaP-C Tactical Awareness Payload for Proliferated, Agile Satellites (TAPPAS) for Space Domain Awareness",
+    "component": "USAF",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BX06-DV512",
+    "title": "Cyberspace Warfare for Space",
+    "component": "USAF",
+    "program": "14",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "14",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "For Focus Area #5, does the Government envision the Phase II solution as supporting a defined set of Space Force data formats/interfaces, or would an extensible, source agnostic transformation layer be responsive if it can onboard new formats through governed parsers and semantic profiles? If Government-specific interfaces cannot be provided before award, would the Government view a Phase-I equivalent demonstration using heterogeneous representative formats, with measured normalization performance, explicit unknown/ambiguous-field handling, source-level provenance/locators, and downstream query-ability, as an appropriate technical foundation, with mission-specific adapters and interfaces integrated during Phase II?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "There are several commercially available solutions that address Focus Area #7: AI-Driven Digital Supply Chain Illumination and Risk Management. Could you share the rationale for pursuing this requirement through the SBIR program? We would welcome a discussion about whether there is an opportunity to address the requirement through an alternative acquisition path?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "This question was submitted on 09/04/2026 and could not be addressed in the initial response because of character limit constraints. 5. What evidence will the Government consider sufficient to demonstrate completion of a Phase I-type feasibility effort for this focus area? Specifically, is there a preferred minimum number or diversity of source formats, benchmark duration, normalization-accuracy measure, end-user validation activity, or integration demonstration?",
+        "answer": "Offerors should follow the applicable D2P2 solicitation instructions for demonstrating completion of a Phase I-equivalent feasibility effort. The Government has not established a preferred minimum number or diversity of source formats, benchmark duration, normalization-accuracy measure, end-user validation activity, or integration demonstration beyond the published solicitation requirements. Relevant evidence may include documented technical feasibility; test results using representative data formats; measured parsing and normalization performance; identification and mitigation of principal technical risks; operational-use-case mapping; stakeholder feedback, where available; and an actionable integration and test plan aligned with the selected focus area. Offerors should provide sufficient traceable evidence to demonstrate readiness to proceed directly into Phase II development."
+      },
+      {
+        "question": "We have validated solutions in more than one focus area. How would SBIR submissions covering more than one focus area be evaluated?",
+        "answer": "Evaluations are conducted fairly and independently based on standard program criteria. If you have validated solutions spanning more than one focus area, it is recommended to clearly communicate this cross-cutting information within your proposal submission package to ensure reviewing officials understand the full scope and impact of your technology."
+      },
+      {
+        "question": "We have a solution for Focus Area #3 that has been validated with the Army (aviation) but not a USAF or USSF stakeholder. Is validation with other services considered equally valid? Or is greater weight given to those solutions validated with a USAF or USSF stakeholder?",
+        "answer": "No preferential treatment will be given to a potential solution based on the service branch that validated it. The key factor is that the potential solution was validated."
+      },
+      {
+        "question": "During the Velocity: Cyberspace Warfare for Space Industry Engagement Day on July 14, 2026, a couple of panelist indicated that CUI data from a previous AFRL hackathon event could be made available to interested parties for developing solutions aligned to the published focus areas. Could the Government confirm whether this dataset will be released for use by offerors, and if so, provide an anticipated timeline and distribution method?",
+        "answer": "The Government does not anticipate releasing the referenced CUI dataset during the solicitation or proposal-development period. The comment made during the panel was intended to indicate that relevant data may be made available to selected performer(s) following award, subject to applicable security, access, handling, and distribution requirements. Specific timing and transfer mechanisms will be coordinated with the selected performer(s)."
+      },
+      {
+        "question": "For the D2P2 Phase I-equivalent feasibility requirement, the topic states that product-mission fit must be validated with a potential USAF/USSF stakeholder and that an immediately actionable plan should be defined with the DAF customer and end-user. What technical evidence is expected to demonstrate this product-mission validation? Specifically, does validation require prior evaluation or demonstration of the proposed technology with an identified USAF/USSF stakeholder, or can it be demonstrated through documented technical feasibility, operational-use-case mapping, integration planning, and test evidence aligned to the selected focus area?",
+        "answer": "Offerors should follow the applicable D2P2 solicitation instructions regarding the Phase I-equivalent feasibility requirement. From the mission customer’s perspective, prior evaluation or demonstration with an identified USAF/USSF stakeholder is not required to establish product-mission fit. Validation may be demonstrated through documented technical feasibility, operational-use-case mapping, integration planning, relevant test evidence, and an actionable plan aligned with the selected focus area and intended end-user environment. The sufficiency of the submitted evidence will be determined through the applicable SBIR evaluation process."
+      },
+      {
+        "question": "Questions regarding DAF26BX06-DV512, Focus Area #5: Adaptive Data Parsers and Transformation Engine Has the Government selected or preferred a canonical data model, ontology, or standardized output schema for normalized Defensive Cyber Warfare data, or should offerors propose and justify their own common data model? If a preferred model exists, will its required fields, metadata, and interface specifications be furnished to awardees? Will the Government provide representative unclassified, sanitized, or synthetic datasets, interface-control documents, schemas, or a DCW integration test harness during Phase II? If operational samples cannot be provided, may offerors use traceable synthetic data mapped to published standards to demonstrate technical feasibility? How will the Government evaluate whether a parser or transformation engine is “adaptive” or “universal”? Would onboarding a new format through declarative configuration, schema mapping, or an isolated plug-in—without modifying the core engine—satisfy the intent, or is automated format inference expected? Are there desired quantitative performance thresholds for Focus Area #5, including sustained and burst event throughput, concurrent data-source count, maximum payload size, transformation latency, acceptable rejection rates, and zero-loss or backpressure requirements? What evidence will the Government consider sufficient to demonstrate completion of a Phase I-type feasibility effort for this focus area? Specifically, is there a preferred minimum number or diversity of source formats, benchmark duration, normalization-accuracy measure, end-user validation activity, or integration demonstration?",
+        "answer": "The Government has not prescribed a single vendor-specific canonical data model or ontology for this topic. Offerors should propose and justify an extensible, interoperable common data model that preserves original source data, context, and metadata and supports normalization, correlation, search, analytics, and detection. The proposed approach should support reliable mapping to commonly used cybersecurity data models and the Government’s selected data and analytics platform without unnecessary vendor lock-in. Applicable field mappings, interface specifications, and Government-controlled integration requirements will be provided to selected performer(s), as appropriate. Relevant Government datasets and available integration artifacts may be furnished to selected performer(s) during Phase II, subject to availability and applicable security, access, handling, and distribution requirements. The Government does not guarantee that operational samples or a Government-provided integration test harness will be available. Where representative Government data cannot be provided, offerors may use traceable synthetic or sanitized data mapped to relevant published standards and representative DCW use cases to demonstrate technical feasibility. Specific data, interfaces, schemas, test criteria, and integration mechanisms will be coordinated with selected performer(s), as applicable. The Government will assess “adaptive” or “universal” based on the solution’s demonstrated ability to onboard diverse, previously unsupported, or changing data formats while minimizing specialized manual analysis, custom development, and modifications to the core engine. Relevant considerations include onboarding time, required human effort, parsing accuracy, resilience to format changes, validation capabilities, and extensibility across protocol and data types. Declarative configuration, schema mapping, or isolated plug-ins may satisfy the intent when the approach materially accelerates onboarding and avoids modification of the core engine. Fully autonomous format inference is not necessarily required; however, offerors should describe and demonstrate how automation, including AI/ML where appropriate, assists with format characterization, parser or transformation generation, validation, and adaptation to previously unseen or evolving data. The Government has not established uniform quantitative thresholds for all Focus Area #5 use cases. Current operational environments may receive aggregated network traffic at rates up to approximately 40 Gbps; however, the throughput presented to a parser or transformation engine will depend on its architectural placement, source types, and whether it processes raw traffic, extracted data, or derived events. Offerors should provide measured sustained and burst performance, supported source concurrency and payload limits, transformation latency, rejection and error-handling behavior, backpressure and buffering mechanisms, data-loss characteristics, and associated compute requirements. Proposed solutions should demonstrate horizontal scalability and the ability to accommodate growth beyond the initial operational baseline. Specific performance objectives and representative test conditions will be coordinated with selected performer(s) during Phase II. The maximum character limit for this response has been reached. Question #5 will be resubmitted and answered on the platform separately."
+      },
+      {
+        "question": "The SpaceWERX Challenge website indicates this is the topic to apply to if a business wants to apply to the On-Orbit Space Logistics Challenge (https://afwerxchallenge.com/on-orbit). This does not seem to match the information contained within this topic pre-release. Can you please clarify?",
+        "answer": "The On-Orbit Space Logistics Challenge is Topic #: DAF26BX06-DV513. This challenge website should be updated in the coming days."
+      },
+      {
+        "question": "For Focus Area 3, may a proposed solution address the authorization and execution-control portion of autonomous cyber response as a complementary capability integrated with existing monitoring and detection systems, or is the Government seeking a solution that independently provides the full Focus Area 3 monitoring, detection, and autonomous-response capability?",
+        "answer": "The Government is interested in capabilities supporting the full on-orbit monitoring, detection, decision, authorization, and autonomous-response lifecycle. However, proposed solutions are not required to independently provide every element of that lifecycle. Complementary or modular capabilities addressing authorization, decision logic, execution control, or other portions of the architecture may be considered when they provide a clear operational benefit and can integrate with existing or emerging monitoring and detection systems. Offerors should clearly define the scope of their solution, required interfaces and dependencies, integration approach, SWaP requirements, and measures for safe, reliable, and constrained autonomous operation. Selected capabilities may be evaluated and integrated alongside other solutions within the Government’s Space Vehicle Defense laboratory environment."
+      },
+      {
+        "question": "Will the Government provide access to a representative forward-site network or DIL test environment for the Phase II demonstration, or should proposers plan to furnish their own?",
+        "answer": "The Government cannot guarantee access to a representative forward-site network or Government-furnished DIL test environment for Phase II demonstrations. Offerors should plan to furnish a representative test environment capable of demonstrating operation under isolated, disconnected, intermittent, or bandwidth-constrained conditions. Solutions that require access to CUI or Government-furnished data should identify an appropriate authorized environment, such as an IL5-capable environment, and clearly state any Government-furnished information, connectivity, or infrastructure dependencies. The Government is pursuing suitable integration and test capabilities and may coordinate access with selected performer(s), if available."
+      },
+      {
+        "question": "Is Focus Area 8 seeking an inline detection-and-enforcement appliance that protects a forward network segment, a laptop-based analysis toolkit, or both? Are proposals that address Focus Areas 8 and 6 together evaluated as one integrated solution or scored separately?",
+        "answer": "Focus Area 8 is primarily seeking a portable defensive cyber operations and hunt capability, rather than an inline detection-and-enforcement appliance. The capability should enable Cyber Force Elements to rapidly discover, characterize, and visualize a mission-system network; assess its security posture; identify hardening opportunities; and detect or investigate potential adversary activity. Proposed solutions must be capable of operating in isolated or disconnected environments without reliance on continuous internet or external cloud connectivity. Offerors may propose different form factors, including portable appliance-based or operator-computing solutions, provided they support rapid deployment and non-disruptive operation across diverse Space Force ground-system environments. Offerors proposing an integrated solution spanning Focus Areas 6 and 8 should clearly identify how the solution addresses the objectives and deliverables of each focus area. Evaluation and scoring will be conducted in accordance with the solicitation’s applicable submission and evaluation criteria."
+      },
+      {
+        "question": "The D2P2 feasibility requirement asks proposers to have validated product-mission fit with a USAF or USSF stakeholder. For a small business with fielded commercial and non-DAF government deployments but no prior DAF contract, what forms of evidence will satisfy this requirement (for example, documented engagement with a USSF unit, a demonstration to a joint cyber command, or a letter of interest)? Will the Government facilitate a stakeholder introduction during Phase II if fit is otherwise demonstrated?",
+        "answer": "There's some flexibility with this requirement. The SBC needs to logically prove that their technology is feasible given the dollar and time constraints for this contract award. If they are able to do that in the proposal submission package, then it satisfies this feasibility requirement."
+      },
+      {
+        "question": "For Focus Area 8 (Portable Edge Cyber Defense Kit), can the Government identify the intended end-user organization or mission type (for example, a specific Delta, forward tracking stations, or expeditionary ground operations) so proposers can align the feasibility documentation and Phase II demonstration to that user?",
+        "answer": "The intended end users are U.S. Space Force Cyber Force Elements (CFEs), trained and equipped through their supporting Cyberspace Operations Squadron (CYS). CFEs conduct defensive cyberspace operations in support of Space Force mission systems and may be employed across a range of ground-system environments. The Government is not limiting this focus area to a specific Delta, installation, or mission system. Proposers should align their feasibility documentation and proposed Phase II demonstration to a portable, adaptable capability that can support CFE operations across diverse Space Force mission systems and operating locations. Specific demonstration users, sites, and mission scenarios will be coordinated with selected performer, as applicable."
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BX06-DV513",
+    "title": "Autonomous On Orbit Logistics and Sustainment Architecture",
+    "component": "USAF",
+    "program": "17",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "17",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "Is the expectation that there will be multiple awards for this topic?",
+        "answer": "Funding decisions are based on available budget and the technical merit of received proposals. With that being said, the general target in terms of number of awards for this topic will be around 20."
+      },
+      {
+        "question": "The topic Objective states that Phase I equivalent work \"includes feasibility studies, stakeholder engagement, technical validation, and early integration planning.\" The Phase I Equivalent Work Requirements section then enumerates six required elements: Stakeholder Engagement, Feasibility Study, Integration Pathway, Regulatory Considerations, Commercial Dual Use Potential, and Phase II Prototype Plan. \"Technical validation\" does not appear among the six enumerated elements. Is technical validation intended to be addressed within the Feasibility Study element, or does the Government expect it documented and evaluated as a separate element?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "As this topic covers the entire space logistics lifecyle, will proposals for end-of-service be considered as part of the lifecycle? Specifically, can we submit proposals for deorbiting satellites, spacecraft, and launch vehicles? Integrated deorbit capability is being phased in as requirement for new orbital assets, ensuring safe removal from orbit of decommissioned satellites, booster vehicles, and other potentially hazardous space debris. Deorbit is necessary to open orbital slots for new space assets and reduce the chance of orbital collisions creating dangerous space debris fields that could damage or destroy US and allied space assets, as well as endanger astronauts.",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "Is there a website for this Challenge topic?",
+        "answer": "Yes and the URL is: https://afwerxchallenge.com/on-orbit ."
+      },
+      {
+        "question": "Are we limited to one proposal, or can we submit two?",
+        "answer": "DSIP will NOT restrict multiple submissions from an SBC for this solicitation."
+      },
+      {
+        "question": "PHASE-I-EQUIVALENT VALIDATION EVIDENCE For software-centric technologies, what evidence does the Government consider sufficient to demonstrate the required prior technical validation—production use, operational demonstrations, prototype demonstrations, test results, system integrations, software metrics, representative mission scenarios, or other documented evidence of technical feasibility?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "TRANSITION / INTEGRATION TARGET For proposals using the Systems-of-Systems framework and focusing on Logistics Health Monitoring or Network Mechanics, is there a preferred Space Force program office, PAE, operational organization, test environment, or logistics architecture that offerors should treat as the intended Phase II integration and Phase III transition target?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "INTEROPERABILITY / STANDARDS Are there specific Space Force, DoD, commercial-space, CCSDS, servicing, logistics, data-exchange, digital-engineering, or command-and-control standards/interfaces that the Government expects software-centric Systems-of-Systems solutions to support during Phase II?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "AUTONOMY AND HUMAN AUTHORITY The topic emphasizes autonomous logistics operations and decision-making. For software-centric solutions, what decisions or actions does the Government expect to be performed autonomously during Phase II, and which decisions should remain subject to human authorization? Is human-on-the-loop or human-in-the-loop orchestration acceptable where operational authority or mission risk requires human approval?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "GOVERNMENT-FURNISHED / REPRESENTATIVE DATA Will the Government provide representative mission scenarios, logistics data, spacecraft/depot models, interfaces, operational constraints, or other Government-furnished information for Phase II prototype integration and evaluation? If not, may offerors use public, commercial, synthetic, or contractor-developed representative data and digital models?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "NETWORK MECHANICS SCOPE For the Network Mechanics focus area, does the Government consider orchestration of information, logistics relationships, routing, asset availability, ownership/authority, interoperability, and cross-system decision support to be within scope, or is Network Mechanics intended primarily to address physical docking interfaces, orbital mechanics, rendezvous/proximity operations, and spacecraft-to-spacecraft interaction?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "LOGISTICS HEALTH MONITORING SCOPE For the Logistics Health Monitoring focus area, may the proposed capability monitor and reason over the health and readiness of the broader logistics enterprise—including vehicles, depots, cargo, servicing assets, dependencies, maintenance history, supply status, mission availability, and operational risk—or is the Government primarily seeking component- or spacecraft-level sensor health monitoring?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "MULTI-ORBIT REQUIREMENT Does Phase II need to demonstrate operation across LEO, MEO, GEO, and cislunar regimes, or may an offeror demonstrate the architecture in one or more representative orbital regimes while showing through modeling, interfaces, and architecture analysis how the capability extends to the others?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "PHASE II DEMONSTRATION ENVIRONMENT May the required Phase II prototype and operationally relevant demonstration be performed using a high-fidelity digital, simulation, modeling, hardware-in-the-loop, or representative ground-based environment, or is an actual on-orbit demonstration expected during the 12-month Phase II period?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "SOFTWARE / ARCHITECTURE-ONLY SOLUTIONS May a software-centric architecture addressing enterprise logistics coordination, Logistics Health Monitoring, Network Mechanics, or autonomous decision support satisfy DV513 without proposing development of spacecraft hardware, propellant-transfer hardware, robotic servicing equipment, or another physical on-orbit subsystem?",
+        "answer": "Response Pending"
+      },
+      {
+        "question": "SPACE FORCE STAKEHOLDER ENGAGEMENT REQUIREMENT The Phase-I-equivalent requirements call for documented stakeholder engagement and a clear Space Force customer. What level of prior engagement is required to satisfy this criterion? Must the offeror demonstrate direct engagement with the specific sponsoring organization or intended transition customer for DV513, or may documented engagement with other Department of the Air Force or U.S. Space Force organizations concerning the underlying technology and mission need satisfy the requirement?",
+        "answer": "Documented engagement with other Department of the Air Force or U.S. Space Force organizations concerning the underlying technology and mission need would satisfy this requirement."
+      },
+      {
+        "question": "PHASE-I-EQUIVALENT MATURITY — MISSION-SPECIFICITY For Direct-to-Phase-II eligibility, must the completed Phase-I-equivalent work have specifically demonstrated the proposed capability in an on-orbit logistics or Space Force sustainment application, or may an offeror establish equivalency through a mature, previously developed commercial/government architecture whose core capabilities—such as multi-node logistics coordination, system health monitoring, dependency management, decision support, provenance, and autonomous workflow—have already been demonstrated, with orbital-logistics adaptation and integration occurring during Phase II?",
+        "answer": "Response Pending"
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BX06-NV510",
+    "title": "AI/ML for Next Generation of Missile Detection, Warning, Tracking, and Reporting",
+    "component": "USAF",
+    "program": "3",
+    "release": "6",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "3",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "I'm looking at the OODA Loop Collapse / Mission Assurance area, specifically the “AI trade-space exploration” item, and the note that Phase I can be modeling, simulation, or trade studies. My approach would be a Phase I feasibility study using a deterministic simulation that screens the multi-orbit OPIR sensing trade space — which constellation, revisit, latency, and fusion-architecture parameters actually drive warn-to-decision time under a saturation raid. The point is to find where AI/ML fusion would have real leverage before Phase II, not to propose a new detection or fusion algorithm in Phase I. Is that responsive to this topic? And would the Tap Lab want something like that delivered as a standalone offline analysis tool, or plugged into an existing testbed workflow?",
+        "answer": "Yes, a feasibility study would be appropriate for this topic. As stated, the delivery for Phase I can be a model, simulation or trade study. Phase I deliverables may progress to tools and/or applications that might run in the TAP Lab or inform requirements for a program of record. The government will not make that decision on future use of the delivered product until the end of Phase I."
+      },
+      {
+        "question": "The topic emphasizes development of AI/ML detection, tracking, and fusion algorithms, but also lists \"edge fusion\" and \"edge computing\" under the Edge Fusion & Autonomy and OODA Loop Collapse focus areas. We are considering a Phase I effort focused on the in-space edge compute architecture that hosts and executes such algorithms on-orbit. This would be the processing infrastructure that enables in-space fusion and autonomous constellation operations, rather than new detection or tracking algorithms themselves. Would this type of effort be considered responsive to the topic? If so, is there any guidance on how an architecture-focused effort should demonstrate a path to integration and testing in the OPIR Tap Lab?",
+        "answer": "Yes, in-space edge compute architecture(s) would be considered for this solicitation. Demonstration of integration pathways and testing for this type of solicitation is at the discretion of the vendor and should follow standard architecture development documentation like DoDAF 2.0 or other architecture description document methodologies."
+      },
+      {
+        "question": "Would a Phase I approach focused on mission-aware orchestration and AI-assisted trade-space decision management—rather than development of a new detection or tracking algorithm—be responsive to the OODA Loop Collapse & Mission Assurance focus area, particularly where the research evaluates dynamic allocation of sensing, fusion, and processing across ground and edge resources?",
+        "answer": "Yes, this would be an appropriate submission topic for this solicitation."
+      }
+    ],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BZ05-DV030",
+    "title": "High Temp Semiconductor Transistors for Hot DoW Environments and Electronic Warfare",
+    "component": "USAF",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DAF26BZ05-DV031",
+    "title": "F-16 Agnostic Rapid Weapons Integration",
+    "component": "USAF",
+    "program": "9",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "9",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "The Government has indicated that mission plan requirements for a weapon are provided by the OSE to the weapon. Is that weapon mission data expected to be loaded onto the OSE prior to flight, received in flight via existing data sources such as Starlink or Link 16, generated by the aircrew, or some combination?",
+        "answer": "The weapons mission data will be generated by the aircrew and loaded onto the OSE prior to flight. Over the air updates are a future capability of OSE."
+      },
+      {
+        "question": "The Description references a requirement for hardware solutions allowing a larger capacity of weapons to be carried per sortie. Is increased carriage capacity within the scope of this effort, or is it a separate requirement referenced for context?",
+        "answer": "The requirement is simply identifying that hardware solutions should not be cumbersome in size at the detriment of limiting size capacity of potential weapons."
+      },
+      {
+        "question": "The topic states the solution will be developed on the existing Open Systems Enclave. Is the current OSE-to-aircraft interface expected to carry weapons and stores command and status data, or is extension of that interface within the scope of this effort?",
+        "answer": "Extension of that interface is within scope, with both existing core OFP 1553 and ethernet from the OSE envisioned being used. Example of this would be new MP requirements for weapon x is provided by OSE to the weapon while the legacy employment stores commands are sent via 1553."
+      },
+      {
+        "question": "The topic emphasizes the architecture, integration, validation, performance evidence, and artifacts required for rapid approval. Would the Government consider a team in which an aircraft/OSE integrator owns platform integration and airworthiness while a specialized subcontractor supplies requirements-to-test traceability, configuration/interface lineage, replayable validation evidence, and approval-artifact generation? Are those evidence and integration-assurance functions considered responsive technical scope or merely ancillary support?",
+        "answer": "Yes, SPO will continue to own airworthiness and cyber approvals, intent is artifact generation as part of an integration partnership to achieve desired end state."
+      },
+      {
+        "question": "If another provider is selected for OSE, are the agnostic weapons solutions required to be interoperable with the OSE solution from the separate vendor solution? If this is the case, which vendor is responsible for efforts related to integration of both solutions?",
+        "answer": "OSE already exists on the aircraft, and interoperability with both the aircraft and OSE is the desired end state."
+      },
+      {
+        "question": "Who will be the responsible government entity for all airworthiness and certification tasks? Will aircraft OEM involvement be required?",
+        "answer": "F-16 SPO will continue to own airworthiness and cyber processes for approvals, intent is artifact generation as part of an integration partnership to achieve desired end state."
+      },
+      {
+        "question": "Does the government have any SIL or Lab infrastructure to support this effort?",
+        "answer": "Yes, both SIL and lab environments are available"
+      },
+      {
+        "question": "Will the government be responsible for platform design and integration or is that within the scope of the supplier? If the government is responsible for this effort, is the expectation that the supplier provide liaison engineering etc in support of this effort?",
+        "answer": "Intent is partnership between vendor and Gov to create a solution and artifacts required for said solutions approvals."
+      },
+      {
+        "question": "Is this team interested in software solutions that significantly streamline the transport of military data ?",
+        "answer": "Interest is in any solution late allows for rapid integration across multiple MDS and Weapons, F-16 is the initial one selected for demo."
+      }
+    ],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DAF26BZ05-DV032",
+    "title": "F-35 Agnostic Rapid Weapons Integration",
+    "component": "USAF",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DAF26BZ05-DV033",
+    "title": "Dynamic Open Systems Enclave",
+    "component": "USAF",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DAF26BZ05-NV026",
+    "title": "Automated Lethality",
+    "component": "USAF",
+    "program": "5",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "5",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "HOLD"
+  },
+  {
+    "topic_number": "DAF26BZ05-NV027",
+    "title": "Integrating Neural Architectures for Brain-Inspired AI with Low SWAP",
+    "component": "USAF",
+    "program": "9",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "9",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DAF26BZ05-NV028",
+    "title": "Ultra-Sensitive Quantum Telemetry Receiver",
+    "component": "USAF",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "HOLD"
+  },
+  {
+    "topic_number": "DAF26BZ05-NV029",
+    "title": "Cost-Effective Composite Joints with Tailorable Performance and Geometry",
+    "component": "USAF",
+    "program": "11",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "11",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DAF26BZ06-DV037",
+    "title": "Low-Cost Multi-Function Ku-Band RF System for Prompt Strike Weapons",
+    "component": "USAF",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BZ06-NV034",
+    "title": "Low Noise & Low-SWaP High-Repetition Rate Mode-Locked Lasers for High-Speed Photonics",
+    "component": "USAF",
+    "program": "2",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "2",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BZ06-NV035",
+    "title": "Quantum Memory for Secure Communication",
+    "component": "USAF",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DAF26BZ06-NV036",
+    "title": "Flightline Radio Network",
+    "component": "USAF",
+    "program": "1",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "1",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DME26BZ05-NV001",
+    "title": "Additive Manufacturing for Flexible Electronics",
+    "component": "DMEA",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BX05-NP003",
+    "title": "NAVSEA Open Topic for Model-Based Systems Engineering (MBSE) Acceleration via Artificial Intelligence or Machine Learning Data Ingestion",
+    "component": "NAVY",
+    "program": "35",
+    "release": "5",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "35",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BX05-NP004",
+    "title": "NAVWAR Open Topic for Unified Assured Positioning, Navigation, and Timing Operational Awareness and Decision Support",
+    "component": "NAVY",
+    "program": "24",
+    "release": "5",
+    "baa": "DoW SBIR 2026 CSO",
+    "question_count": "24",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DON26BZ05-DV081",
+    "title": "DIRECT TO PHASE II: Intelligent Data Analysis of Post-Mission Reporting Artifacts & Data",
+    "component": "NAVY",
+    "program": "36",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "36",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-DV082",
+    "title": "DIRECT TO PHASE II: Cross-domain Interface for Trusted Access & Data Exchange Logic",
+    "component": "NAVY",
+    "program": "14",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "14",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-DV083",
+    "title": "DIRECT TO PHASE II: Solution to Reduce Towing Based Mishaps During Flightline Operations",
+    "component": "NAVY",
+    "program": "1",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "1",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-DV084",
+    "title": "DIRECT TO PHASE II: Innovative Flexible Fuel Cell Design",
+    "component": "NAVY",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-DV085",
+    "title": "DIRECT TO PHASE II: Persistent Non-Destructive Inspection System for Airfield Readiness and Foreign Object Debris Mitigation",
+    "component": "NAVY",
+    "program": "3",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "3",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-DV086",
+    "title": "DIRECT TO PHASE II: Development of Customized Aerospace Lightweight, High Power, High Frequency Bandwidth, Nanocrystalline EMI Filters",
+    "component": "NAVY",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-DV087",
+    "title": "DIRECT TO PHASE II: Edge-Deployed Explainable Digital-Twin Condition Based Maintenance CBM+ Platforms for Carrier-Based Systems",
+    "component": "NAVY",
+    "program": "4",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "4",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DON26BZ05-NV068",
+    "title": "Intelligent Tools for Naval Aircrew Performance and Readiness",
+    "component": "NAVY",
+    "program": "12",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "12",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DON26BZ05-NV069",
+    "title": "Wearable Real-Time Command-and-Control Interface for Enhanced Naval Situational Awareness",
+    "component": "NAVY",
+    "program": "6",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "6",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV070",
+    "title": "Multi-Frequency Coverage Unit with Broad Band Interference and Designed Canceller",
+    "component": "NAVY",
+    "program": "1",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "1",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV071",
+    "title": "Dynamically Generated, Articulated 3-Dimensional Training Content",
+    "component": "NAVY",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DON26BZ05-NV072",
+    "title": "Digitally Enhanced Weapon System Technical Data",
+    "component": "NAVY",
+    "program": "11",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "11",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV073",
+    "title": "Portable Digital Metrology System for Measurement of Defects on Optically Transparent Canopies and Windscreens",
+    "component": "NAVY",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DON26BZ05-NV074",
+    "title": "Automated Post-Mission De-Brief and Re-Planning for Autonomous Combat Platform (ACP) Missions",
+    "component": "NAVY",
+    "program": "16",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "16",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV075",
+    "title": "High Performance Electrolytic Coating Touch-Up Repairs for Aluminum",
+    "component": "NAVY",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV076",
+    "title": "Open, Layered, Yielding Modular Platform for Unified Systems",
+    "component": "NAVY",
+    "program": "8",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "8",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV077",
+    "title": "Multi-Core Parallel Processing for Sensor Fusion Architecture",
+    "component": "NAVY",
+    "program": "9",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "9",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [
+      {
+        "question": "Can this topic support chip development?",
+        "answer": "The topic did not consider the support of chip development. Any solution for the hardware parallel processing for data fusion is acceptable."
+      },
+      {
+        "question": "For Phase I M&S, are **synthetic multi-sensor track/report streams** acceptable for AESA/DAS/EOTS adapters, or does NAVAIR prefer a specific message model / ICD stub set?",
+        "answer": "There are no specific message model/adapters."
+      },
+      {
+        "question": "1. The topic requires the contractor to be able to acquire and maintain a secret-level facility clearance. Is a current facility clearance expected of the offeror at award, or is an uncleared small business with a credible sponsorship path a viable offeror on this topic? 2. Phase I is architecture, modeling and simulation, and a mapping of fusion sub-tasks to physical cores. How is demonstrated tactical-aircraft processing experience weighed against the quality of the architecture definition and the simulation work itself? 3. Is there a serial baseline implementation or benchmark a proposal should compare against, or is establishing the baseline part of Phase I? 4. The topic names spatial alignment, temporal correlation and attribute fusion as sub-tasks. Is that decomposition prescriptive, or an example? 5. Track integrity is the stated hard requirement. What would count as proof that no fused track data is lost, in a Phase I simulation rather than on hardware?",
+        "answer": "A Secret-level Facility Clearance (FCL) is not required at Phase I award. Uncleared small businesses with a credible sponsorship path are viable offerors. FCL sponsorship and processing will be initiated during Phase I if required for Phase II transition. Proposals are evaluated holistically based on the stated Phase I criteria. While tactical-aircraft processing experience demonstrates feasibility and domain maturity, strong technical merits—specifically the rigor of the proposed architecture definition, modeling, and simulation approach—remain the primary basis for Phase I technical evaluation. Establishing the serial baseline and relevant performance benchmarks is part of the Phase I scope of work. No government-furnished baseline implementation is mandated prior to award. The listed sub-tasks (spatial alignment, temporal correlation, and attribute fusion) are illustrative examples, not a prescriptive decomposition. Offerors may propose alternative or extended sub-task architectures suited to their technical approach. In Phase I simulation, proof of track integrity can be demonstrated via deterministic tracking metrics, including: zero unhandled track drops/stalls under peak synthetic load, formal packet/message delivery accounting across simulated cores, data latency and throughput bounds, and association accuracy."
+      },
+      {
+        "question": "Is there a minimum number of data sources to be supported for phase I?",
+        "answer": "Recommendation of 2-3 sensors."
+      },
+      {
+        "question": "Has the Government begun this work or this new?",
+        "answer": "No, the government has not begun work on this topic."
+      },
+      {
+        "question": "Are there acceptable latency standards?",
+        "answer": "No set minimum latency standard."
+      },
+      {
+        "question": "When whole-task and sub-task sensor-fusion functions execute concurrently across multiple processing resources, does the Government require deterministic fused track-state results, or is asynchronous track-state reconciliation acceptable provided no fused track data or correlation accuracy is lost?",
+        "answer": "Asynchronous reconciliation is acceptable, provided little to no fused track data/correlation is lost."
+      },
+      {
+        "question": "1. Phase I test scenario May the performer use a representative synthetic sensor-fusion scenario for Phase I, or does the Government prefer a specific scenario or workload? 2. Required fusion functions Are target correlation and position fusion sufficient for the Phase I demonstration, or does the Government expect additional fusion functions? 3. Serial baseline May the performer use a representative single-threaded serial baseline with the same fusion logic as the proposed parallel architecture, or does the Government prefer a different baseline? 4. Phase I success criteria May Phase I success be measured by comparing the parallel architecture with the serial baseline for latency, throughput, track loss, and correlation accuracy, or does the Government have specific targets for these measures? 5. Phase I processing hardware May Phase I feasibility testing be performed on a desktop computer, with the results used to select and map the design to a Phase II System-on-Chip, or does the Government expect Phase I testing on representative embedded hardware? 6. Phase II processor May the performer select an off-the-shelf CPU or CPU/GPU System-on-Chip for Phase II based on Phase I results and the required performance and size, weight, and power limits, or does the Government prefer a specific processor or platform? 7. Phase II test support May Phase II testing begin with representative simulated or recorded sensor streams and commercially available interface hardware, or does the Government expect specific sensor data, interfaces, or test resources to be used?",
+        "answer": "The performer can develop a representative sensor fusion scenario, provided it models a multimodal scenario (ex. Radar + EO/IR), able to track multiple targets. Yes, target position and data association/correlation is sufficient. Phase I is proof of concept Yes, performers can use a representative single-threaded baseline with the same fusion logic. Yes, success metric of Phase I will be measured by the latency, throughput, track loss, and correlation accuracy between the single-threaded baseline and the parallel-processing solution Yes, performers can model the SoC on a desktop computer. Yes, performers can select off-the-shelf CPU/GPU/FPGA, etc. Currently looking at options for hardware-in-the-loop simulation testing."
+      },
+      {
+        "question": "For Phase I feasibility, is any representative or synthetic CCA mission data expected to be available to performers, or should we plan to build our own synthetic mission dataset for demonstration?",
+        "answer": "This would be on the submitting firm. See above answer as well in terms of number of data sources reccommended."
+      }
+    ],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ05-NV078",
+    "title": "Tech Data Interactive Electronic Technical Manuals Convertor",
+    "component": "NAVY",
+    "program": "37",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "37",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DON26BZ05-NV080",
+    "title": "Submarine Cabinet Sound Dampening Alternative",
+    "component": "NAVY",
+    "program": "3",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "3",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DON26BZ06-DV088",
+    "title": "DIRECT TO PHASE II: Minimally Invasive Remote Blood Collection Device for Free-Ranging Cetaceans",
+    "component": "NAVY",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ05-DV018",
+    "title": "Hoboken - SBIR XL",
+    "component": "DARPA",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DPA26BZ05-DV019",
+    "title": "Semantically-Aware ISR",
+    "component": "DARPA",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "DPA26BZ05-DV020",
+    "title": "Universal Cell Culture Platform for Rapid Establishment of Species-Agnostic Cell Lines and Autonomous Culture Operations",
+    "component": "DARPA",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DPA26BZ05-DV021",
+    "title": "Open Architecture Platform for Underwater Vehicles for Rapid Adaptation, Collaborative Sensing, Navigation, and Autonomy",
+    "component": "DARPA",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "DPA26BZ05-DV022",
+    "title": "Commercialization of Ultra-High Payload-to-Weight UAS Subsystems",
+    "component": "DARPA",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV023",
+    "title": "Novel Radio Frequency Sensing Technologies",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV024",
+    "title": "New World Screwworm Networked Detection, Identification, and Surveillance System",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV025",
+    "title": "Noninvasive Detection and Localization of Occult Hemorrhage",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV026",
+    "title": "Influence Benchmarks for AI Systems",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV027",
+    "title": "Casualty Operations & Resource Prediction Software (CORPS)",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV028",
+    "title": "TRIAGE-X: Autonomous Casualty Triage and Treatment in Chemically Contaminated Mass Casualty Events",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DPA26BZ06-DV029",
+    "title": "ICU-in-a-Box: Autonomous Extracorporeal Multiple-Organ Support Therapies",
+    "component": "DARPA",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "DTR26BZ05-NP001",
+    "title": "Novel Technologies for CWMD and Related Threats",
+    "component": "DTRA",
+    "program": "8",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "8",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-DV014",
+    "title": "In-Situ Metrology for Mesa-Wall Integrity in Large Format Small-Pixel Infrared Detector Array Fabrication",
+    "component": "OSD",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "OSW26BZ05-DV018",
+    "title": "Artificial Intelligence / Machine Learning (AI/ML)-Based Radar Data Compression",
+    "component": "OSD",
+    "program": "21",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "21",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-DV019",
+    "title": "Collaborative Distributed Swarm Radar",
+    "component": "OSD",
+    "program": "39",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "39",
+    "detail_text": "PROJECTED CMMC LEVEL REQUIREMENT Level 2 (Self)",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-DV020",
+    "title": "Joint Radar & Communication Waveforms",
+    "component": "OSD",
+    "program": "6",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "6",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-DV022",
+    "title": "Signal Classification and Anomaly Detection in Contested Spectral Environments",
+    "component": "OSD",
+    "program": "20",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "20",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ05-DV023",
+    "title": "Quantum Sensor Gravity Data Production & Analysis for Maritime Floor Mapping",
+    "component": "OSD",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-NV016",
+    "title": "Desktop Instrument for Measuring Boresight Error as a Function of Incident Angle",
+    "component": "OSD",
+    "program": "7",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "7",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-NV017",
+    "title": "Sensing Algorithms for Bandwidth Efficient Edge Radars (SABER)",
+    "component": "OSD",
+    "program": "12",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "12",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "PURSUE"
+  },
+  {
+    "topic_number": "OSW26BZ05-NV021",
+    "title": "Co-packaging Digital Readout Integrated Circuits and Photonics for Advanced Infrared Imaging",
+    "component": "OSD",
+    "program": "",
+    "release": "5",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "KILL"
+  },
+  {
+    "topic_number": "OSW26BZ06-DV025",
+    "title": "Compact Passive Radar",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-DV027",
+    "title": "Monolithic Graphene–CMOS Broadband (UV-LWIR) Focal Plane Arrays for target detection in low-light conditions",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-DV031",
+    "title": "Smart Venues and Stadiums",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-DV032",
+    "title": "Smart Manufacturing",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-DV033",
+    "title": "Agentic AI Based Cognitive Radar for GEOINT Mission",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-DV034",
+    "title": "Vision Language Model (VLM) for Synthetic Aperture Radar (SAR) target search and classification from Sensor Independent Complex Data (SICD)",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-NV024",
+    "title": "Engineered Microstructures for Enhanced IR Aperture Performance",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-NV026",
+    "title": "Defect Metrology and Charge Trapping Dynamics in Transfer-Doped Diamond Transistors",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "OSW26BZ06-NV028",
+    "title": "5G Signature Tracking Mitigation via Cyber Deception",
+    "component": "OSD",
+    "program": "",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  },
+  {
+    "topic_number": "SOC26BZ06-DV006",
+    "title": "Resilient Integrated Photonic Transport In Denied Environments (RIPTIDE)",
+    "component": "SOCOM",
+    "program": "1",
+    "release": "6",
+    "baa": "DoW SBIR 2026 BAA",
+    "question_count": "1",
+    "detail_text": "",
+    "qa": [],
+    "triage_verdict": "NOT IN SURVIVORS"
+  }
+]
