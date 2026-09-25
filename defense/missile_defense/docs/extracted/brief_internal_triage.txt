@@ -1,0 +1,88 @@
+=== page 1 ===
+DAF26BX06-NV510 - AI/ML for Next Generation of Missile
+Detection, Warning, Tracking, and Reporting
+USAF / SpaceWERX with SSC Space Sensing Delta 84 and the OPIR Tap Lab | SBIR | Release 6 CSO | Opens
+Sep 23, 2026 (TPOC direct contact ends) | DSIP Q&A closes Oct 7, 12:00 ET | Proposals due Oct 21, 12:00 ET
+Recommendation: PURSUE (feasibility-study track). The TPOC confirmed in Q&A that a
+simulation-driven trade study with no new detection algorithm is responsive. Small award, short period,
+ITAR staffing constraint. Confidence MEDIUM-HIGH.
+Phase I award
+$150,000, 3 months (SpaceWERX CSO)
+Proposal format
+Technical volume limit 30 pages (per the DAF CSO index table)
+Compliance
+ITAR/EAR clause: foreign nationals must be disclosed and may be restricted.
+CMMC Level 2 (Self).
+Phase II
+Development and testing inside the OPIR Tap Lab or similar testbed; transition path
+is SSC's Space Modernization Initiative
+Deliverable
+Feasibility study + CONOPS + analytical findings; algorithm prototypes or simulation
+results 'as applicable'
+What they want
+ [TOPIC TEXT] "Proposals should emphasize technical feasibility and clearly outline a Phase I research
+plan that can include modeling, simulation, literature review, or trade studies... Phase I deliverables are
+expected to focus on a feasibility study detailing USSF CONOPS and technical viability, as well as
+analytical findings."
+Four focus areas, any part of which is acceptable: edge fusion and autonomy (on-orbit track fusion, constellation
+tasking); multi-source integration (OPIR + EO + radar + SIGINT + commercial); OODA-loop collapse and
+mission assurance (orchestration, edge computing, 'AI trade-space exploration', explainability); and new
+sources/methods outside current TTPs.
+The feasibility study must identify benefits over existing solutions, risks with mitigations, critical technology
+elements, and evidence for each CTE (literature, trade studies, analysis, heritage).
+What the Q&A changed
+  [Q&A] A "deterministic simulation that screens the multi-orbit OPIR sensing trade space... to find where AI/ML
+fusion would have real leverage before Phase II" - "Yes, a feasibility study would be appropriate for this
+topic."
+ [Q&A] An in-space edge-compute architecture effort (hosting, not inventing, the algorithms) is responsive;
+document it with DoDAF 2.0-style architecture products.
+ [Q&A] "Mission-aware orchestration and AI-assisted trade-space decision management" is "an appropriate
+submission" for the OODA focus area.
+ [Q&A] Future use of the Phase I product (offline tool vs. Tap Lab plug-in) is decided at the end of Phase I.
+How we would build it
+  Constellation and sensing simulator: propagate synthetic GEO/MEO/LEO constellations (public
+two-line-element style orbits), model sensor fields of view, revisit and data cadence, and link latency.
+ Threat set: synthetic boost/glide trajectories for ballistic and maneuvering profiles from open-literature
+kinematics - no real threat data.
+
+=== page 2 ===
+ Fusion placement experiments: compare ground-centralized vs. on-orbit/edge fusion for warn-to-decision
+latency, track continuity through handovers, and robustness to dropped links; identify where AI/ML data
+association adds value versus classical filters.
+ Explainability/confidence: propagate confidence through the pipeline so the CONOPS can state what an
+operator sees and when automation hands off.
+ Deliverables: the feasibility study (benefits, risks, CTEs with evidence), a system-level CONOPS, and the
+simulation as a reusable analysis tool with a stated path into the OPIR Tap Lab.
+Resources we would use
+  Public orbit propagation tooling (SGP4-class libraries, open astrodynamics packages) and public catalog data
+for constellation geometry.
+ Open literature on OPIR missile-warning architectures (Next-Gen OPIR, HBTSS-class concepts as publicly
+described) and multi-sensor tracking (JPDA/MHT, learned data association).
+ OPIR Tap Lab public material (boulderlab.org) for integration expectations.
+ GAO TRL guide (cited in the topic) for the maturity language reviewers expect.
+ No hardware. Compute is modest.
+Bottlenecks and risks
+  ITAR staffing: any non-US-person contributor must be disclosed and may be excluded from technical data.
+ Three months, $150k: scope must be a crisp trade study, not a platform; over-promising algorithms is the
+classic failure here.
+ Domain vocabulary: missile-warning CONOPS reviewers expect fluency (revisit, dwell, handover, typing). A
+space-sensing advisor would materially improve the CONOPS section.
+ Incumbency: established OPIR ground-processing primes are around this program; the Tap Lab exists
+precisely to onboard non-traditionals, which helps, but Phase II integration will require working inside their
+environment.
+ Transition dependence: value realization depends on being invited into the Tap Lab; Phase I is a foot in the
+door.
+Decision factors
+  Fit to team: simulation + data pipelines + ML - direct; astrodynamics is learnable at the fidelity a trade study
+needs.
+ Dual use: [INFERRED] multi-orbit sensor tasking and fusion resemble commercial EO-constellation
+scheduling and space traffic management; the topic itself names none.
+ Strategic value: opens the SpaceWERX/SSC relationship at low cost; the 3-month award is small but fast.
+ Decisive pre-proposal experiment: build a two-constellation revisit/latency simulator against a synthetic
+launch and show one chart where fusion placement changes warn-to-decision time - that chart belongs in the
+proposal.
+Before Oct 7 (Q&A): ask whether unclassified OPIR-like sample data or Tap Lab sandbox access is available
+in Phase I, and what architecture artifacts the Tap Lab expects at handoff.
+Tags: [TOPIC TEXT] = quoted from the solicitation; [Q&A] = government answer on DSIP; [INFERRED] = our judgment, not
+verified by search. Generated 2026-09-20 from release6_triage.md / triage_results.md / sitis_qa.md.
+

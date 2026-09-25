@@ -1,0 +1,2229 @@
+=== page 1 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Science and Global Security, 12:1–67, 2004
+Copyright C© Taylor & Francis Inc.
+ISSN: 0892-9882 print
+DOI: 10.1080/08929880490464649
+Airborne Boost-Phase Ballistic
+Missile Defense
+Dean A. Wilkening
+Boost-phase ballistic missile defense is alluring because rocket boosters are easy to
+detect and track, they are relatively vulnerable due to the large axial loads on a missile
+under powered ﬂight, the entire payload (single or multiple warheads and midcourse
+penetration aids) may be destroyed in a single shot, and countermeasures to defeat boost-
+phase defense are more difﬁcult to devise than for midcourse ballistic missile defenses.
+Moreover, if intercepted several seconds before booster burnout, the debris will land
+well short of the target area, although collateral damage to other territory is a serious
+concern.
+On the other hand, boost-phase ballistic missile defense is technically challenging
+because the intercept timelines are very short (1–3 minutes for theater-range ballis-
+tic missiles and 3–5 minutes for intercontinental range missiles) and missile boosters
+are accelerating targets, thus complicating the design of homing kinetic-kill vehicles
+(KKVs). This article examines the technical feasibility and nominal capability of one
+type of boost-phase defense, namely, airborne boost-phase intercept (ABI). Airborne
+laser systems are not examined here.1 This article concludes that ABI should be techni-
+cally achievable within the next decade and that airborne platforms offer some unique
+advantages, especially for theater ballistic missile defense, that warrant their serious
+consideration in future U.S. missile defense architectures.
+The advantages of boost-phase ballistic missile defense animated President
+Reagan’s Strategic Defense Initiative. However, unlike boost-phase defense
+against Russian ICBMs, boost-phase defense against emerging ballistic-missile
+states does not necessarily require space-based weapons due to their small
+Received 11 June 2003; accepted 17 December 2003.
+Address correspondence to Dean A. Wilkening, Encina Hall, Stanford University, Stan-
+ford, CA 94305. E-mail: wilkening@stanford.edu
+Dean A. Wilkening, Center for International Security and Cooperation, Stanford Uni-
+versity, Stanford, CA.
+1
+=== page 2 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+2 Wilkening
+geographic size. Ground, naval, and airborne platforms carrying boost-phase
+interceptor missiles with intercept ranges on the order of 400 to 700 km can
+get close enough to get an effective shot. This is important because, while ter-
+restrial boost-phase systems may be effective against ICBMs launched from
+small states such as North Korea, they would not be effective against ICBMs
+launched from large countries such as Russia and China, or against submarine-
+launched ballistic missiles (SLBMs) launched from the open oceans, for the
+simple reason that they cannot get close enough to all possible Russian or
+Chinese launch locations to pose a realistic threat. Consequently they would
+not provoke the kind of negative response from Russia or China that one
+would expect with space-based boost-phase defenses. In fact, terrestrial boost-
+phase defenses pose little threat to the strategic forces of any of the ﬁve ma-
+jor nuclear powers, thus creating possibilities for collaboration between these
+states.
+Boost-phase intercept systems require a sensor architecture for rapid tar-
+get detection and tracking, KKVs designed to intercept accelerating ballistic
+missile targets, interceptor missiles to launch these KKVs at high speeds,
+and launch platforms to carry the interceptors. Direct collision between the
+KKV and ballistic missile body destroys the booster, thus rapidly terminating
+its thrust and possibly destroying the warhead(s) as the booster collapses —
+although the latter cannot be proved. Consequently, from a defense conserva-
+tive perspective, one should assume that the payload could be viable. To ensure
+that the ballistic missile debris, possibly including a live warhead, cannot reach
+defended territory, intercepts must occur before the payload has sufﬁcient speed
+to reach this territory typically several seconds to several tens of seconds before
+booster burnout, depending on the target missile’s trajectory.
+Soon after a ballistic missile is launched, the sensor architecture detects the
+event and begins to track the target to obtain aﬁring solution for the interceptor
+missile. Rapid launch detection and tracking maximizes the interceptor ﬂight
+time and, hence, the intercept range. Initially, the interceptor and its KKV
+are guided using in-ﬂight target updates from external sensors. As soon as the
+KKV reaches an altitude at which its multi-spectral seeker can begin to operate
+(above approximately 80 km), it should be able to track the target missile ’s
+bright plume. When the KKV approaches to within approximately 100 km of
+its target (about 10 seconds prior to intercept), the KKV sensors should be
+able to discriminate the missile hard body from the rocket exhaust plume. An
+onboard laser imaging, detection and ranging (LIDAR) system would help with
+the plume-missile hard body track handoff as well as provide accurate range
+information to improve KKV guidance allowing the aimpoint on the target to
+be located with an accuracy of approximately 50 cm.2
+=== page 3 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 3
+The desired speed and mass of the KKV determines the size of the intercep-
+tor missile and, hence, the feasible launch platforms (satellites, aircraft, ships,
+or ground-based launchers). ABI speeds around 5 km/sec are desirable for both
+theater and national missile defense. Slower speeds produce short intercept
+ranges, thus increasing the number of ABI platforms required to cover a par-
+ticular country and, hence, the system cost. Two-stage missiles with speeds
+between 5–6 km/sec and masses below 1,500 kg can be designed with current
+technology. Larger airborne missiles could be designed, but they would not ﬁt
+easily aboard existing heavy bombers or other large aircraft, much less ﬁghter
+aircraft or unmanned aerial vehicles (UAVs).
+The analysis of boost-phase intercept systems is complex because of the in-
+terdependence of different elements in the system, thus requiring design itera-
+tions. This analysis strives to be conservative with respect to ABI performance
+estimates, yet includes systems that are not in existence today but could be
+deployed within a decade if they signiﬁcantly impact the effectiveness of boost-
+phase missile defense, for example, a notional space-based infrared sensor sim-
+ilar to the Space-Based Infra-Red System-High Earth Orbit (SBIRS-High) and
+powerful airborne X-band radars. The elements of an airborne boost-phase in-
+tercept system are examined in detail in this analysis, along with the nomi-
+nal ABI capability against theater-range and intercontinental-range ballistic
+missiles. Ballistic missile target characteristics are clearly important for deter-
+mining ABI effectiveness. Appendix A provides technical details for the ballistic
+missile targets examined in this study.
+SENSOR ARCHITECTURE
+Boost-phase intercept requires prompt launch detection and rapid, accurate
+tracking to launch and guide the interceptor in ﬂight until the KKV can home
+autonomously on the target. While initial detection and tracking can come from
+infrared or radar sensors, combining both creates a more robust architecture
+because it helps eliminate false alarms and makes simple booster decoys more
+difﬁcult to build because they must mimic radar and optical signatures. Figure 1
+illustrates these sensor options. Although detailed sensor architecture designs
+are quite complicated, their basic limitations, especially with respect to rapid
+launch detection and tracking, can be understood by examining the physics of
+each sensor type.
+Infrared Detection and Tracking
+Passive infrared systems can detect missile plumes with reasonable accuracy
+from a distance of thousands of kilometers and, hence, can detect ballistic
+=== page 4 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+4 Wilkening
+Figure 1: Schematic sensor architecture.
+missile launches globally from high-earth or geosynchronous orbits. Space-
+based and airborne infrared sensors may both be attractive, the former because
+of their global coverage and the latter because of their high accuracy.3 However,
+passive infrared sensors require triangulation from multiple sensors to obtain
+an accurate track because range information is not available.4
+Infrared detection and tracking ranges depend on the infrared signal emit-
+ted by the target or the reﬂectance of the target for LIDAR systems, the diameter
+of the optics, and the minimal detectable signal of the focal plane array, which
+is a function of the noise in the sensor and signal clutter returns from other ob-
+jects (e.g., clouds) in the sensor’s ﬁeld of view. Sensor noise is determined by the
+detector dark current (which is a sensitive function of its temperature) and by
+blackbody radiation from any warm surfaces in the optical path. It is measured
+in terms of a Noise Equivalent Intensity (NEI). The precision with which an
+infrared sensor can determine the missile booster position is determined by the
+diffraction limit of the optics or the pixel dimensions of the focal plane array,
+whichever is larger, unless one invokes sub-pixel resolution techniques.
+The infrared signal from a rocket plume is a complex function of the altitude
+of the booster, the engine thrust, and the type of propellant. The infrared sig-
+nature is produced by optical transitions from exited states of the combustion
+products— principally water, carbon dioxide, and carbon monoxide. In addition,
+liquid-propellant boosters produce soot due to the fuel-rich mixtures used to
+optimize their speci ﬁc impulse. When heated, soot adds blackbody radiation
+=== page 5 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 5
+to the plume’s signature. Similarly, solid-propellant boosters often have metal
+oxides (e.g., aluminum oxide) added to improve their speci ﬁc impulse. These
+solid particles are ejected from the nozzle upon combustion and, like soot, add
+blackbody radiation to the plume.
+As a missile rises in the atmosphere, unburned fuel and combustion prod-
+ucts like carbon monoxide and molecular hydrogen continue to burn when
+mixed with atmospheric oxygen — referred to as “afterburning.” The infrared
+intensity from large intercontinental ballistic missile plumes is approximately
+1–10 MW/sr-µm at their peak intensity, that is, when the missile is at altitudes
+below 40 km. When the missile ’s forward speed is close to the exhaust veloc-
+ity of the combustion products, mixing with atmospheric oxygen occurs more
+slowly and, hence, the “afterburning” signature drops signiﬁcantly, leading to
+a “trough”region in the plume intensity. The“trough”region is typically two to
+three orders of magnitude less intense than the “afterburning” region and oc-
+curs when the missile is at an altitude of approximately 40 km to 60 km. As the
+missile continues to accelerate, the relative speed of the exhaust plume and the
+surrounding air again becomes appreciable and the plume signature increases
+due to more effective mixing and, hence, combustion of the exhaust products.
+At high altitudes, the oxygen concentration in the atmosphere becomes too low
+to support signiﬁcant afterburning and the plume intensity drops again. At al-
+titudes above 100 km the plume expands to such an extent that it often exceeds
+the ﬁeld of view of a single sensor pixel, causing a further drop in apparent
+signal intensity. Staging events also reduce the observed signal because of the
+smaller thrust for second and third stage rocket motors. Eventually, the plume
+signature drops to that of the “intrinsic core,”which is the infrared signal one
+observes directly behind the nozzle from heated exhaust products expanding
+into the vacuum of outer space. The “intrinsic core” is two to three orders of
+magnitude less intense than the peak “afterburning” signature. Typical in-
+frared intensities for the intrinsic core for ICBM-class engines are on the order
+of several hundred to several thousand Watts per steradian per micron.5
+Infrared ballistic missile early-warning satellites such as the Defense Sup-
+port Program (DSP) and its future replacement, SBIRS-High, are candidates for
+missile detection and tracking. The Space-Based Infra-Red System-Low Earth
+Orbit (SBIRS-Low) is not expected to play a signi ﬁcant role in boost-phase
+defense because its multi-spectral optical system, particularly its long-wave
+infrared sensor, is designed to accurately track objects against the cold back-
+ground of outer space and, hence, cannot observe missiles until relatively late
+in their boost phase. Moreover, due to signiﬁcant cost overruns, it is not clear
+when SBIRS-Low will be deployed, if ever.
+DSP operates in the 2.7µm water absorption band and has a pixel footprint
+of approximately 1 km × 1 km on the surface of the earth. This infrared band
+=== page 6 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+6 Wilkening
+was selected because this wavelength is strongly attenuated in the atmosphere,
+thereby greatly reducing the background signal from spurious infrared sources
+and clutter returns on or near the surface of the earth. In this band, scattered
+light from high-altitude clouds is the dominant source of clutter. However, the
+infrequent DSP revisit rate (approximately 10 sec) introduces detection delays
+and, therefore, makes this sensor unattractive for booster tracking.
+Detecting the launch of a large rocket using space-based infrared sensors
+is relatively easy for high-thrust ICBM and theater-range ballistic missileﬁrst
+stages. For example, a 300 km-range Scud B missile has the same thrust and,
+hence, the same intrinsic core intensity as a Minuteman III third-stage rocket
+motor, that is, about 200 W/sr in the 2.6 –2.8 µm band. Such a plume would
+produce a signal-to-noise ratio of 1 at geosynchronous orbit for a sensor with
+30 cm diameter optics and a NEI of 1 × 10−14 W/cm2, that is, a signal that is
+detectable but requires modest integration times to achieve reasonable detec-
+tion probabilities.6 However, the signal from a Scud B or Scud C missile as
+it passes through the afterburning region is hundreds to thousands of times
+brighter than the intrinsic core and, hence, can be detected by space-based in-
+frared sensors at geosynchronous altitudes, as in fact occurred with DSP during
+Operation Desert Storm.
+This analysis assumes that a sensor like SBIR-High will be deployed
+to support boost-phase ballistic missile defense. The capability of a notional
+space-based infrared system like SBIRS-High has been examined in a recent
+American Physical Society (APS) study.7 This detector consists of a 30 cm tele-
+scope with a HgCdTe focal plane array that stares at 1/24 of the Earth’s surface
+every 33 msec, thus scanning the entire surface in less than one second unless
+it focuses intentionally on a narrow region of high interest. The APS study as-
+sumed that this sensor operated in one of the infrared atmospheric windows
+(e.g., 2.0–2.5 µm or 3.5–5 µm) as opposed to an infrared absorption band like
+DSP, thereby allowing the sensor to see down to the Earth’s surface under clear
+conditions, witha1k m × 1 km pixel footprint at the Earth’s surface.
+Under these circumstances, the latest time at which a notional space-based
+infrared sensor can detect missile boosters is determined by the presence of op-
+tically thick clouds. The APS study concluded that large ballistic missile plumes
+could be detected with high con ﬁdence by a space-based infrared sensor oper-
+ating in one of the atmospheric windows once the missile reaches an altitude
+of approximately 7 km.8 This sets an upper limit on the time delay from mis-
+sile launch to ﬁrst detection. Table 1 shows the time it takes for the missiles
+examined in this study to reach an altitude of 7 km along lofted trajectories.
+Lofted trajectories have been chosen because, although they can be detected
+a few seconds earlier, they require more time to develop an accurate track
+=== page 7 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Table 1: SBIR/radar ballistic missile detection and tracking times.
+Time to Time to track Total launch delay Total interceptor
+detecta (sec) (sec) (sec) flight time (sec)Boost Burnout
+time altitude SBIR Airborne SBIR Airborne SBIR Airborne TBBOb SBIR Airborne
+Missile (sec) (km) (1 km) radar (1 km) radar (1 km) radar (sec) (1 km) radar
+North Korean launches
+Scud B 61 23–31 33 14c 10 5 43 19 8 10 34
+Scud C 85 26–60 37 21c 13 5 50 26 9 26 50
+No Dong 95 42–88 35 21c 13 5 48 26 10 37 59
+Taepo Dong 1 165 110–170 43 27c 13 5 56 32 13 96 120
+Taepo Dong 2 193 180–240 39 27c 13 5 52 32 15 126 146
+290 sec ICBM 290 185–445 52 44c 13 5 65 49 20 205 221
+240 sec ICBM 240 135–440 39 30c 9 5 48 35 17 175 188
+180 sec ICBM 180 75–370 32 24c 5 5 37 29 14 129 137
+Iranian launches
+Shahab 3 95 65–75 34 21c 11 5 45 26 10 40 59
+Shahab 4 165 125–170 43 32 14 5 57 37 13 95 115
+Shahab 5 199 180–280 40 45 13 5 53 50 15 131 134
+290 sec ICBM 290 185–395 52 60 14 5 66 65 20 204 205
+240 sec ICBM 240 145–395 39 45 9 5 48 50 17 175 173
+180 sec ICBM 180 85–325 32 37 5 5 37 42 14 129 124
+aDetermined by when the missile reaches 7 km altitude for space-based infrared sensors and when the missile passes into the radar
+fan (0.42◦ grazing angle) and has a Doppler shift above 150 km/hr for the airborne radar.bIntercepts are assumed to occur at a time before burn out (TBBO) equal to 5 percent of the missile’sboost time plus 5 seconds.cAssuming the airborne radar is within 400 km of the launch site.
+7
+=== page 8 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+8 Wilkening
+using space-based infrared sensors and because ABIs have shorter intercept
+ranges against them due to the need to climb to higher intercept altitudes.
+Therefore, when these factors are included, lofted trajectories represent worst-
+case trajectories for boost-phase intercept.
+After detection, it takes some time for space-based infrared sensors to track
+targets with sufﬁcient accuracy before an ABI can be launched. Initial target
+tracking is done while the missile passes through the “afterburning” region.
+The time it takes to develop an accurate track depends on the resolution of the
+sensor, its frame rate, and the trajectory of the ballistic missile as viewed by the
+space-based infrared sensor. In particular, the target heading must be known
+with sufﬁcient accuracy to know that the missile is on a threatening azimuth
+and so the KKV can remove residual errors in the predicted intercept point.
+In general, the more fuel a KKV carries, the larger the heading errors it can
+accommodate. However, adding fuel to compensate for large heading errors is
+not an attractive approach because of the increased KKV weight.
+Different criteria can be postulated for target tracking. This analysis
+assumes that the target must appear threatening, that is, heading toward
+territory to be defended, and that the target heading must be known well
+enough so as not to impact seriously the KKV divert fuel requirement. To
+appear threatening, it is assumed the target missile must travel a minimum of
+two pixels (2–3 km from the original point of detection for a 1 km × 1 km pixel
+footprint) to determine the approximate target heading before ABI launch,
+that is, the target heading must be determined to within approximately ±15
+degrees.9 This time is longer for lofted trajectories because the horizontal
+component of the missile’s velocity is lower.
+In addition, this analysis assumes that the ABI launch would be further
+delayed if the track heading is not known well enough so that after the ABI
+booster burns out (i.e., 20 sec after ABI launch), the KKV has to expend more
+than 10 percent (i.e., 0.2 km/sec) of its divert budget to compensate for residual
+heading errors.10 This leaves the majority of the KKV fuel to compensate for
+target maneuvers during its boost phase, which drives the KKV divert budget.
+The lateral divert required to correct for initial heading errors can be provided
+by the ABI rocket motor during its boost phase using in- ﬂight target updates
+at little expense in ABI speed. 11 For the missile trajectories examined in this
+study, the 2-pixel requirement always dominated, that is, delaying the ABI
+launch until the target had traveled two pixels down range always resulted in
+less than 0.2 km/sec of KKV divert to correct for residual heading errors after
+the 20-second ABI boost phase ends.
+The time delays shown in Table 1 are based on lofted North Korean and
+Iranian missile trajectories because they exhibit the longest track delays. 12
+Depressed and minimum energy trajectories have longer target detection
+=== page 9 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 9
+delays because it takes longer to reach an altitude of 7 km along these trajec-
+tories, however, their tracking delays are shorter because the horizontal com-
+ponent of velocity is higher, which compensates for the detection delay thereby
+allowing the ABI to be launched several seconds sooner.
+In some cases the time to track is shorter than ﬁve seconds. This analysis
+assumes that ﬁve seconds is a lower bound on the time to track for any sensor
+because several seconds will be needed for command and control decisions by
+local commanders (insufﬁcient time exists to request launch authorization from
+higher authorities) and for communication delays between the sensor platform
+and the ABI launch platform.
+The Scud B and the 180-second solid-propellant ICBM are the two target
+missiles with the most stressing timelines of the missiles examined in this
+study. A space-based infrared sensor with 1 km pixel dimensions should sufﬁce
+to produce tracking times close to the minimum value for a 180-second burn
+time ICBM (see Table 1). However, faster tracking times for the Scud B missile
+would require higher resolution sensors. Sensor resolution would have to be
+reduced to approximately 0.5 km pixel footprints to ensure that most of the
+missiles examined in this study could be tracked within less than 5 seconds
+by a space-based infrared sensor. Whether the increased cost, narrowerﬁeld of
+view, and longer scan times associated with such a sensor are acceptable can
+be determined only by conducting an overall system tradeoff study, which is
+beyond the scope of this analysis.
+Note that booster typing would be very difﬁcult soon after launch detection
+because staging events will not have occurred yet and the target’s acceleration
+proﬁle cannot be determined with sufﬁcient accuracy from crude track data to
+determine the missile type, despite the fact that solid-propellant ICBMs have
+shorter tracking times than liquid-propellant missiles. Even with accurate
+acceleration proﬁles, as might be provided by radar or LIDAR, booster typing
+is challenging because medium-range ballistic missiles (MRBMs) and ICBMs
+can have similar acceleration pro ﬁles early in their boost phase, as indicated
+in Figures A4 and A5. Optical signatures might be exploited, but they may not
+be sufﬁciently distinct to discriminate booster types. Optical signatures might
+provide some information on whether the missile burns liquid or solid fuel — a
+factor that determines the approximate burn time — but this information
+too may be unreliable at the time of ABI launch. Consequently, one would
+be committing an ABI against a target with a bright plume without much
+knowledge of whether the target is a liquid- or solid-propellant, medium-range
+or intercontinental-range ballistic missile.
+The ﬁnal burnout points for theater-range and intercontinental-range bal-
+listic missiles can vary by several hundred kilometers. Therefore, if one doesn’t
+know the booster type, several ABIs may have to be launched to guard against
+=== page 10 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+10 Wilkening
+mistaking a theater-range missile for an ICBM and vice versa. In addition, bal-
+listic missile boosters can maneuver in ﬂight, for example, involving lofted or
+depressed trajectory maneuvers, plane changes, general energy management
+maneuvers (used by solid-propellant ballistic missiles to adjust their range), or
+intentional booster maneuvers to avoid intercept. Such maneuver can change
+the predicted intercept point by several hundred kilometers for ICBM targets
+even if the missile type is known and, hence, drive the KKV divert requirement
+because they must be compensated for entirely by the kill vehicle after the ABI
+booster burns out.13 If missile boosters do not maneuver but rather ﬂy along
+predictable trajectories, with sensor noise as the dominant source of trajectory
+error, then the predicted intercept point can be estimated to within a few kilo-
+meters or perhaps tens of kilometers, for most ballistic missiles shortly after
+the target is detected.14
+The total ABI launch delay and the time remaining for ABI ﬂight is also
+shown in Table 1. The total launch delay is simply the sum of the detection
+and tracking time delays. The ABI ﬂight time is equal to the target missile
+boost time, minus the launch delay, minus the time before booster burnout
+that intercept should be achieved. Ballistic missile boost times can vary by up
+to 5 percent from their nominal values due to pressure and thermal effects
+that alter the fuel ﬂow rate for liquid-propellant motors and the burn rate
+for solid-propellant grains. Thus, to be con ﬁdent that an ABI can intercept
+its target before the rocket motor burns out, the intercept time before burn
+out (TBBO) should be at least 5 percent of the target ’s nominal boost time.
+In addition, to ensure that the debris lands well short of the intended target,
+ballistic missiles should be intercepted about 5 seconds prior to their nominal
+burn time. This causes the debris to land at a range about 15%–25% less than
+the missile’s intended range (see Figure A6). If North Korean or Iranian ICBMs
+are intercepted 5 seconds before burnout, the debris would land in northern
+Canada (see Figures A7 and A8), well away from populated areas in Canada
+and the United States (except for North Korean trajectories that pass over
+Alaska).
+Radar Detection and Tracking
+Radar provides all-weather tracking and very accurate range measurements.
+Airborne radar, in particular, can provide early ballistic missile detection, if
+the radar is approximately 400 km or less from the missile launch site because,
+at this range, an airborne radar ﬂying at 12 km (40,000 ft) altitude has line
+of sight to the ground. Targets beyond this range must climb high enough to
+be seen over the radar horizon. Land and sea-based radar are less attractive,
+=== page 11 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 11
+unless they are located very close to the launch site, because target missiles
+take too much time to rise above the radar horizon to provide timely detection.
+For example, it takes between 70 –110 seconds for targets to become visible
+to surface-based radar at a range of 600 km, depending on the missile type,
+the missile’s trajectory and the radar grazing angle. However, surface radar
+can provide in-ﬂight target update information to guide the KKV in ﬂight. If
+effective radar jammers are deployed that eliminate radar range information,
+then the defense would have to deploy two or more radars to track targets using
+only angle measurements.
+Radar can either use space-based infrared detection to cue the radar, thus
+avoiding a large search solid angle, or they can operate in stand-alone mode
+where the radar conducts a wide-area search along a section of the horizon to
+obtain initial detection. Clearly, if a radar is cued from a space-based infrared
+sensor, radar detection would occur after infrared detection. Since ﬂight time
+is of the essence for boost-phase intercept, this analysis examines the potential
+for airborne radar to provide earlier detection times, thereby reducing the ABI
+launch delay and increasing the ABI ﬂight time. Hence, the radars examined
+here are designed to operate in wide-area surveillance mode.
+Airborne radar use range gates and Doppler processing to sort clutter re-
+turns from vehicle traf ﬁc and Doppler shifted returns from the earth ’s sur-
+face. This analysis assumes that a target’s radial (Doppler) speed must exceed
+150 km/hr before detection can occur. As a consequence, targets go undetected
+until their Doppler speed exceeds this value and target tracks are dropped when
+the target trajectory is nearly perpendicular to the radar line of sight. Target
+missiles launched at ranges closer than the radar horizon can be detected as
+soon as their Doppler signal exceeds 150 km/hr. However, accurate tracking
+typically cannot occur until the target is about half the radar elevation beam
+width above the horizon, as discussed below.
+The airborne radar detection times listed in Table 1 have been computed by
+considering a range of launch locations throughout North Korea and Iran for
+different missile types, then selecting the worst-case time delay associated with
+the radar that is in the most favorable location for observing the target. This
+usually was an airborne radar near the DMZ for North Korean launches and
+varied for launches from Iran. In general, depressed trajectories have detection
+times several seconds longer than those listed in Table 1, depending on the exact
+launch proﬁle for the ﬁrst stage rocket motor (which may not be much different
+for depressed and lofted trajectories). However, lofted trajectories create worst-
+case intercept geometries because the higher intercept altitude decreases the
+ABI intercept range. Hence, the airborne radar detection times shown in Table 1
+are for lofted trajectories.
+=== page 12 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+12 Wilkening
+The maximum radar detection range (Rmax), for a radar operating in surveil-
+lance mode, is given by the radar range equation,
+R4
+max = Pave Aeσε i (n)
+4πkTn(S/N)1 Ls
+ts
+/Omega1,
+where Pave is the average radiated power, Ae is the effective antenna aperture,
+σ is the target radar cross section, εi (n) is the efﬁciency with which the radar
+integrates n pulses, k is the Boltzmann constant (1.38 × 10−23 J/deg), Tn is the
+radar antenna noise temperature, (S/N)1 is the signal-to-noise ratio required to
+detect the target with a speciﬁed probability and false alarm rate with one pulse,
+Ls includes various loss factors associated with the radar and the propagation
+path, and ts is the time required to scan a solid angle/Omega1.15 Thus, in surveillance
+mode, radar capability is determined largely by the power-aperture product
+and the time required to scan one steradian in solid angle. The solid angle
+is determined by the azimuth to be scanned — assumed to be 90 degrees in
+this analysis— and the height of the scanned sector— assumed to be one beam
+height. The scan time per steradian is determined by n/( fp /Omega10), where n is the
+number of pulses integrated for detection in surveillance mode, fp is the radar
+pulse repetition frequency and /Omega10 is the solid angle of the radar main-lobe
+beam.
+Liquid- and solid-propellant ICBMs are assumed to have a minimum radar
+cross section (i.e., nose-on) at 10 GHz of approximately 0.5 m 2 and 0.1 m 2,
+respectively.16 However, within a few tens of seconds after launch most missiles
+are 20–40 degrees from vertical and, hence, their radar cross sections will be
+larger. In addition, the aft radar cross section is larger than the nose-on cross
+section. Hence, if the missileﬂies away from the radar, as is the case with North
+Korean ICBM launches viewed by an airborne radar south of the DMZ, it will
+have a larger radar cross section. This analysis assumes a minimum radar cross
+section of 0.5 m2 for initial launch detection. The radar cross section for tracking
+is lower, especially after staging events, and is assumed to be 0.1 m 2 and 0.5
+m2 for solid and liquid propellant ICBMs, respectively. To obtain reasonable
+tracking ranges, assumed here to be at least 650 km, additional radar pulses
+must be integrated.
+Table 2 gives the parameters for several notional radars examined in
+this study. The ground-based radar (GBR) is similar in design to the THAAD
+Ground-Based Radar but with a power-aperture product about twice as large
+to obtain sufﬁcient detection ranges and fast scan times. The sea-based radar
+(SBR) is similar to the Aegis SPY-1B radar with an increase in power-aperture
+product of about 70 percent. Finally, the notional airborne X-band radar (not
+=== page 13 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 13
+Table 2: Radar parameters and estimated performance a.
+Ground-based Sea-based Airborne
+X-band radar S-band radar X-band radar
+Parameter
+Operating frequency (GHz) 9.5 3.3 10
+Pulse repetition frequencyb (Hz) 45 17 30
+Total average power (kW) 120 100 120
+Antenna height (m) 2.0 3.85 2.0
+Antenna width (m) 4.6 3.65 4.0
+Physical aperture (m2) 9.2 14.1 8.0
+Effective aperture (m2) 6.0 12.0 5.2
+Power-aperture product (kWm2) 720 1,200 624
+Receiving gain (with weighting) 75,400 18,200 72,600
+Weighted azimuth beam 0.44 1.60 0.48
+width (deg)
+Weighted elevation beam 1.01 1.52 0.96
+width (deg)
+Azimuth scan sector (deg) 90 90 90
+Search solid angle (sr) 0.0278 0.0415 0.0264
+Beam solid angle (sr) 1.36E-04 7.38E-04 1.41E-04
+Noise temperature ( ◦K) 500 500 650
+System and atmospheric 19.5 18.4 19.2
+losses (dB)
+Performancec
+Time to transit elev. beam d (sec) 8.8 13.2 16.8
+Surveillance scan time (sec) 4.5 6.6 6.2
+Pulses integrated for surveillance 1 2 1
+Surveillance range: 0.5 m 2 585 730 590
+target (km)
+Track integration time (sec) 0.33 0.53 0.50
+Pulses integrated for tracking 15 9 15
+Tracking range: σ = 0.1/0.5 650/970 650/970 655/980
+m2 (km)
+aMany of these radar parameters come from the APS study, Boost-Phase Intercept Systems
+for National Missile Defense , July 2003, Sections 10.2.3–10.2.5.bThe estimated pulse repetition frequency assumes that only a few pulses are integrated
+in surveillance mode. In any case, the pulse repetition frequency cannot exceed 100 Hz to
+avoid range ambiguities for a maximum detection range of 1,500 km.
+cThe detection probability is assumed to be 0.90 with a false alarm probability of 10 −6,r e -
+quiring a single-pulse signal-to-noise level of 20.8 dB. The cumulative detection probability is
+0.99 for two scans.dThe maximum elevation rate for missile targets crossing the GBR, SBR, and ABR elevation
+beams is 2 mrad/sec, 2 mrad/sec and 1 mrad/sec, respectively.
+to be confused with the Airborne Warning And Control System, or AWACS,
+S-band radar used for air defense) is designed with suf ﬁcient power-aperture
+product to have long detection ranges and fast scan times. This airborne
+radar (ABR) is a conformal array and essentially has the performance of an
+airborne THAAD-like radar. X-band was chosen over S-band despite the in-
+creased difﬁculty in achieving high transmit power and greater atmospheric
+=== page 14 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+14 Wilkening
+attenuation, because the beam can scan closer to the horizon, thus detecting
+targets earlier.
+The radars in Table 2 are designed to be powerful enough to scan 90 degrees
+in azimuth in half the time it takes a target booster to transit the radar elevation
+beam width, which for the missiles examined in this analysis is between 9 and
+17 seconds.17 Short scan times also minimize the scan delay for initial target
+detection, which arises because the radar may be scanning another part of
+its surveillance volume when the target ﬁrst appears above the horizon. This
+delay is, on average, half the surveillance scan time. The radar power-aperture
+product is adjusted to obtain a probability of detection of 0.9 on each pass,
+resulting in a cumulative detection probability of 0.99. This requires a single-
+pulse signal-to-noise ratio of 20.8 dB for a false alarm rate of 10−6. The tracking
+range for each radar is designed to be approximately 650 km and 1,000 km
+against 0.1 m2 and 0.5 m2 targets, respectively, with a track integration time
+between one-third and one-half of a second.
+Radar track accuracy depends on the radar frequency, the dimensions of the
+antenna, the radar signal-to-noise level, the degree to which the target radar
+cross section ﬂuctuates, and propagation effects, especially when viewing tar-
+gets close to the horizon. As a rule of thumb, angular track accuracies on the
+order of one-tenth of the diffraction-limited beam width ( θb) can be achieved.
+Multipath effects are the dominant source of error for low-angle tracking (i.e.,
+for targets within 1.5 θb of the horizon). These errors can be reduced by us-
+ing narrow beam widths (i.e., high radar frequencies and tall antennas) and
+by sophisticated signal processing (e.g., high range resolution, frequency di-
+versity, and off-axis tracking techniques). In general, low elevation angle track
+errors on the order of 0.1 θb can be obtained without too much effort for targets
+located at grazing angles at least 0.3 θb to 0.5θb above the horizon.18 This anal-
+ysis assumes that the minimum grazing angle for accurate tracking is 0.5 θb.
+Therefore, the X-band radars in Table 2 can track targets with an angular ac-
+curacy of approximately 0.1 degrees, which translates into a position error of
+approximately 1 km at a range of 600 km.
+The range resolution, on the other hand, for modern tracking radar can be
+on the order of a few meters, or less. Consequently, in a jamming-free environ-
+ment, track accuracies on the order of tens of meters or better can be obtained
+in the horizontal plane if multiple radars track the target. Vertical accuracies
+would remain on the order of 1 km until the target climbs fairly high above the
+horizon. If effective radar jamming is assumed on the part of the opponent, the
+accuracy drops to approximately 1 km in all three dimensions. Therefore, in a
+jamming-free environment, the radars in Table 2 could develop a track accu-
+rate enough to launch an airborne interceptor within ﬁve seconds after initial
+=== page 15 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 15
+radar detection, including several seconds for command, control and commu-
+nication time delays, because the target heading error can be determined to
+within ±2 degrees in two seconds. Two seconds is chosen because it is assumed
+that three out of four radar hits are required to establish a track. In a jamming
+environment the radar tracking delay would be comparable to that fora1k m
+pixel space-based infrared sensor. Such rapid tracking may seem optimistic,
+however, it should be achievable if one designs the surveillance architecture
+with rapid target detection and tracking in mind. Note that this leaves very
+little time for human intervention in the ABI launch process — essentially a
+simple “go-no go”decision on the part of a tactical commander. This may seem
+risky, however, it is of less concern than one might think for a defensive system
+brought to a high state of alert in the midst of a crisis, as argued below.
+Figure 2 illustrates various boost-phase trajectories associated with
+medium and long-range missiles launched from North Korea. The ICBM launch
+Figure 2: Sensor coverage.
+=== page 16 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+16 Wilkening
+fans correspond to a 240-second liquid-propellant ICBM heading toward tar-
+gets spread across the United States from the east to the west coasts (including
+Alaska), with one outlying trajectory on the right-hand side heading toward
+Hawaii. Each dot represents the ground track of the booster at 10-second in-
+tervals. A 290-second liquid-propellant ICBM would have slightly longer boost-
+phase tracks and a 180-second solid-propellant ICBM would have shorter boost-
+phase tracks. The shorter boost-phase tracks (in gray) in Figure 2 represent
+Scud B, Scud C, No Dong and Taepo Dong missiles. The circles indicate the
+range from a radar location approximately 80 km south of the DMZ and an-
+other 120 km off the coast of North Korea in the Sea of Japan. As one can
+see, tracking ranges of 650 km are suf ﬁcient to support boost-phase intercept
+against North Korea because the KKV homes autonomously during the last 100
+km of its ﬂight (recall that the intercept occurs approximately 10 –20 seconds
+before booster burnout, as indicated in Table 1).
+Figure 3 illustrates the time it takes ground, naval, and airborne radars to
+detect ICBMs launched from the western-most launch location in North Korea
+(the worst-case) heading toward Chicago. The ground-based radar is assumed
+to be located near Vladivostok and the naval radar is collocated with the air-
+borne radar in the Sea of Japan. An airborne S-band radar (ABR-S) with similar
+detection range and surveillance characteristics to the airborne X-band radar
+Figure 3: Radar detection times for North Korean ICBMs.
+=== page 17 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 17
+(ABR-X) in Table 2 is also shown to make the point that X-band radar can
+provide earlier detection times due to its lower grazing angle. Solid-propellant
+ICBMs are detected earlier than slower liquid-propellant ICBMs, as one might
+expect, because they enter the radar surveillance fan earlier and have higher
+Doppler speeds. The airborne radars near the DMZ clearly have the shortest de-
+tection times.19 An airborne radar over the Sea of Japan has the same favorable
+viewing geometry but, for a trajectory heading toward Chicago, is limited by
+the Doppler notch because the trajectory is nearly perpendicular to the radar’s
+line of sight early in the missile’s ﬂight.
+Figure 4 illustrates a similar radar surveillance picture for Iran. Three or
+more radars must be present continuously to provide adequate coverage of hy-
+pothetical Iranian ICBM launches, especially if the radar has only a 90-degree
+azimuth search capability (the azimuth limitation is not illustrated in the ﬁg-
+ure). Medium-range ballistic missiles, as illustrated by the short boost-phase
+tracks (in gray) in Figure 4, require airborne radar ﬂying along the Iraq-Iran
+border for adequate launch detection— clearly a difﬁcult proposition. Although
+Figure 4: Radar coverage of Iran.
+=== page 18 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+18 Wilkening
+airborne radar appears to provide adequate coverage of Iran, this state is large
+enough that the radar detection ranges are beyond the horizon and, hence,
+slower (by about 15 seconds for ICBMs, as shown in Table 1) compared to sim-
+ilar radar detection times from North Korea. In fact, they are a bit longer than
+space-based infrared detection and tracking times. Consequently, space-based
+infrared systems provide the best sensor architecture for Iran. Airborne radar
+is an important adjunct to space-based detection and tracking over Iran, es-
+pecially for theater-range missiles launched from sites around the periphery
+where the viewing geometry is more favorable, assuming airborne radars have
+access to adjacent airspace.
+To summarize, space-based infrared sensors probably are the preferred sen-
+sors for boost-phase detection and tracking, particularly for large countries such
+as Iran. Sensors with 1 km footprints on the Earth’s surface should be sufﬁcient
+for boost-phase detection and tracking, although 0.5 km footprints might be at-
+tractive under some circumstances. Consequently, a sensor like SBIRS-High,
+assuming it has characteristics similar to the notional space-based infrared sen-
+sor examined here, should have high priority in any future boost-phase missile
+defense architecture. Airborne X-band radar can achieve more rapid detection
+and tracking in favorable geographies, thus leading to greater ABI intercept
+ranges against small states like North Korea. In addition, as a second detection
+phenomenology, it can reduce false alarms and make boost-phase decoys more
+difﬁcult to construct when compared to a detection and tracking architecture
+that depends solely on space-based infrared sensors. However, airborne radars
+have limited endurance— approximately 8–12 hours on station, depending on
+the scenario— thus requiring three to four aircraft to keep one airborne 24 hours
+a day during a crisis. As a result, airborne radar is unattractive for continuous
+peacetime surveillance. Ground-based and sea-based radar can produce accu-
+rate target track data for in-ﬂight target updates to the ABI, but the curvature
+of the earth limits their ability to detect targets soon after launch unless they
+are very close to the launch location.
+KINETIC KILL VEHICLE DESIGN
+Kinetic kill vehicles for boost-phase missile defense involve greater technical
+challenges than KKVs for midcourse ballistic missile defense, such as the one
+currently undergoing ﬂight tests as part of a thin US national missile defense
+system, because boost-phase KKVs must home on accelerating targets. This
+places greater demands on the homing guidance system, the amount of fuel
+required for homing, and the required peak KKV acceleration. In addition,
+the KKV initially must home on the rocket plume, then switch to home on
+=== page 19 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 19
+the missile body during the end game. For engagement geometries where the
+KKV sensors view the missile body through the plume, this can be challenge.
+However, multispectral sensors and illumination of the missile body with an
+onboard LIDAR should meet this challenge.
+Homing on the payload section of the target missile would be required if one
+is concerned about live warheads landing on another country ’s territory. KKV
+lethality against boosters should be high because accelerating missiles undergo
+large axial loads that cannot be carried if the missile structure is weakened by
+a projectile passing through the missile body and, perhaps, not even if the
+KKV passes through the payload section of the missile. Consequently, KKV
+impact will lead to the rapid collapse of the missile structure, resulting in a
+rapid reduction of the axial thrust, although some residual thrust may exist
+in random directions. If the payload section is intact, it will continue to ﬂyo n
+a ballistic trajectory, albeit at signi ﬁcantly reduced range. Various “lethality
+enhancement”techniques have been suggested to increase the chance that the
+payload and the booster will be destroyed in a single shot, but their effectiveness
+is not assessed here. Sufﬁce it to say that boost-phase intercept still is effective,
+although politically less attractive, if it destroys the booster even if the warhead
+survives.
+Boost-phase KKVs should be designed to be as light as possible because this
+proportionally reduces the mass of the interceptor missile, for a given intercep-
+tor speed. Airborne interceptors, in particular, should be as light as possible
+due to limited aircraft payloads, especially for ﬁghters and unmanned aerial
+vehicles (UAVs). The upshot of this section is that boost-phase KKVs weighing
+50–90 kg and having 2.0 km/sec divert capability are technically feasible using
+current technology. Advances in lightweight propellant tanks, divert rocket mo-
+tors and sensor suits may allow 25 kg KKVs with 2.0 km/sec of divert capability
+to be built, although this would be challenging within the next decade. Claims
+that boost-phase KKVs can be built with a mass as low as 10 kg are quite
+optimistic, although such lightweight KKVs do not violate the laws of physics.
+Exoatmospheric and endoatmospheric KKV designs are quite different be-
+cause the aerodynamic drag and lift forces on KKVs operating below 40 km in-
+tercept altitude substantially affect their performance. Endoatmospheric KKVs
+require a shroud to reduce aerodynamic drag and a window to protect the in-
+frared sensors from overheating. At ABI speeds above 4 km/sec, low altitude
+(25–30 km) intercepts become dif ﬁcult due to aerodynamic window heating —
+heating levels reach 1,000 MW/m2 at this speed and altitude, thereby requiring
+special window designs or active window cooling.20 For this reason, Scud B in-
+tercepts, which occur at these altitudes, are challenging, in addition to their
+short boost time. However, endoatmospheric KKVs have an advantage in that
+=== page 20 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+20 Wilkening
+Table 3: Boost-phase kinetic kill vehicle designs.
+Baseline Advanced Baseline Advanced
+Property exo-KKV exo-KKV endo-KKV endo-KKV
+Mass breakdown
+Seeker mass (kg) 7.0 4.9 3.6 2.5
+Avionics mass (kg) 9.5 6.7 9.3 6.5
+Engine mass (kg) 11.4 5.8 10.3 5.5
+Tank mass (kg) 10.9 3.8 4.5 1.8
+Structural mass (kg) 3.5 2.5 9.5 5.6
+Propellant mass (kg) 44.2 24.7 16.5 9.8
+Total KKV mass (kg) 86.5 48.3 53.5 31.7
+Other properties
+Total divert (km/sec) 2.0 2.0 1.0 1.0
+Final KKV accel. (g) 15 15 15 15
+Divert thrust (kN) 6.2 3.5 5.5 3.2
+Divert isp (sec) 285 285 280 280
+Propellant fraction 0.51 0.51 0.31 0.31
+they can maneuver with aerodynamic lift forces, thus requiring less fuel for
+divert maneuvers. Exoatmospheric KKVs, on the other hand, do not have to
+contend with atmospheric drag. But, in general, they have higher closing veloc-
+ities with their targets and larger fuel loads because they maneuver entirely
+by divert propulsion.
+To arrive at a plausible estimate for the mass of a boost-phase KKV, this
+analysis estimates the mass of different subsystems based on analogies with
+other systems. Table 3 illustrates the mass breakdown for the key subsystems:
+seeker, avionics, divert engines, propellant tanks, structural mass, and pro-
+pellant. The exoatmospheric KKVs in this table have been designed to have
+a total divert capability of 2.0 km/sec and a ﬁnal acceleration of 15 g in the
+homing end game. The seeker and avionics masses are based on analogy with
+the Clementine experiment, which used a KKV-like sensor to map the surface
+of the moon.21 The structural mass for exoatmospheric KKVs is assumed to be
+3.5 kg, although lighter designs may be devised through clever use of the tanks
+for structural support.
+The divert rocket engine mass is based upon the mass of four Rocketdyne
+LEAP KKV divert engines scaled to different thrust levels by the trust-to-
+mass scaling ratio for satellite divert engines (a similar class of divert engines).
+Figure 5 shows the least-squares ﬁt to satellite divert and attitude control en-
+gines along with three data points for the weight-to-thrust ratio of existing
+KKV divert engines.22 Note that the satellite divert engines are heavier than
+the KKV divert engines because they are designed to survive in space for many
+years, undergo repeatedﬁrings, and potentially burn for a total of several hours
+=== page 21 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 21
+Figure 5: KKV divert engine scaling.
+whereas KKV divert engines can be hermetically sealed until they are used once
+and they only burn for a total of a few minutes. Using the scaling relationship
+for satellite divert and attitude control engines and ﬁtting it to four times the
+weight-to-thrust ratio of the heaviest Rocketdyne LEAP KKV engine with a
+thrust of 1668N (i.e., a cruciform arrangement of KKV engines), one obtains
+the following scaling relationship for the total KKV engine mass:
+We = 0.0136T + 27,
+where We is the weight of all four rocket engines (including the attitude control
+thrusters which are a small part of the total mass) in Newtons andT is the di-
+vert thrust of one engine in Newtons. This scaling relationship is appropriate for
+pressure fed, bipropellant divert engines, which in this analysis is assumed to
+burn mono-methyl hydrazine and N2O4. This equation provides a conservative
+estimate for the KKV engine mass. Fitting the curve to the Kaiser-Marquardt
+LEAP engine (with a thrust of 165N) would provide a more optimistic esti-
+mate (the constant term would be 4N instead of 27N), andﬁtting to the lighter
+485N Rocketdyne LEAP engine would provide an even more optimistic scaling
+relationship.
+=== page 22 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+22 Wilkening
+Figure 6: Propellant tank scaling relationship.
+Propellant tank mass is calculated by scaling the tank dry mass to volume
+ratio for currently available composite propellant tanks, assuming the tanks
+operate at 2,500 psi, and that they are out ﬁtted with a diaphragm to reduce
+propellant sloshing and to control the center of mass of the KKV as propellant is
+consumed. Diaphragms add approximately 40 percent to the tank dry mass.23
+High pressures are assumed because this increases the thrust for pressure fed
+liquid-propellant engines. Figure 6 illustrates a least-square ﬁt (dashed line)
+to the mass-to-volume ratio for existing composite pressure tanks without di-
+aphragms (the circles) rated at 2500 psi operating pressure. 24,25 Adding the
+mass of diaphragms, determined from existing lower pressure titanium pro-
+pellant tanks commonly used on satellites, to the mass of composite pressure
+tanks, one arrives at an estimate for the mass of composite propellant tanks as
+shown in Figure 6 (solid line).26 For comparison, an existing Ardeinc propellant
+tank with a piston, as opposed to a lighter diaphragm, is also shown in the
+ﬁgure.27 The resulting scaling relationship for 2500 psi composite propellant
+tanks with diaphragms is
+Mt = Vt (0.245 − 0.0454 log10 Vt ),
+where Mt is the tank dry mass in kilograms andVt is the tank volume in liters.
+The propellant mass and, hence, volume are derived from the total KKV divert
+requirement discussed next.
+=== page 23 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 23
+An advanced technology version of an exoatmospheric boost-phase KKV is
+also shown in Table 3. It represents the mass that probably can be achieved
+within the next decade due to technical advances. This variant assumes a
+30 percent weight reduction for the avionics and seeker masses due to advances
+in lightweight batteries, guidance computers, focal plane arrays, and optics. In
+addition, lightweight pump-fed engines are assumed with a corresponding drop
+in tank mass due to their lower operating pressure.28 The weight of pump-fed
+bipropellant engines is assumed to be
+We = 0.0136T + 10,
+where We is the weight of four divert engines, including attitude control engines,
+in Newtons and T is the divert thrust of one engine in Newtons. The propellant
+tank dry mass is given by
+Mt = Vt (0.128 − 0.0357 log10 Vt ),
+where Mt is the tank dry mass in kilograms and Vt is the tank volume in
+liters for Titanium tanks (Aluminum would be lighter) rated at 250 psi op-
+erating pressure including diaphragms. The structural mass also has been re-
+duced by 30 percent for the advanced KKV design. Other researchers have
+proposed lighter kill vehicles; in particular, Lawrence Livermore National Lab-
+oratory has designed a lighter advanced technology kill vehicle with better
+performance— a total divert capability of 2.5 km/sec — with a total mass esti-
+mated at 30 kg.29
+The baseline endoatmospheric KKV used in this analysis is assumed to
+have a total divert capability of 1.0 km/sec because it uses aerodynamic lift for
+much of its maneuvering. Consequently, it requires less propellant. The ﬁnal
+end game KKV acceleration still is assumed to be 15 g. The avionics mass is
+assumed to be nearly the same as the exoatmospheric KKV (the battery is
+a bit lighter), and the sensor suite is lighter due to the lack of a long-wave
+infrared sensor (which is ineffective for low-altitude intercepts due to window
+heating) and its associated cryogenic unit. However, the structural mass is
+considerably heavier due to the need for a shroud to reduce drag and to protect
+the KKV within the atmosphere. The shroud mass is assumed to scale as the
+square-root of the total KKV mass because this approximates how the strength
+of structural support elements vary with the force they must withstand. The
+structural masses for the endoatmospheric KKVs given in Table 3 are consistent
+with those of other, more detailed, studies.30 The engine speciﬁc impulse (Isp) is
+a bit lower than for exoatmospheric KKVs to reﬂect endoatmospheric operation,
+=== page 24 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+24 Wilkening
+with no thrust enhancement assumed due to the interaction between the rocket
+exhaust and the air stream ﬂowing past the KKV. This enhancement can be
+as large as 30 percent. 31 The advanced endoatmospheric KKV is assumed to
+have 30 percent lower avionics and seeker masses, pump-fed divert thrusters,
+a lighter tank mass, and a reduced structural mass.
+The KKV divert capability required to home on a target can be determined
+from the appropriate guidance law for homing guidance systems. The propellant
+mass required to achieve this divert can be calculated from the rocket equation.
+The divert required to compensate for a given miss distance can be calculated
+using proportional navigation guidance laws and the divert required to home on
+a target undergoing constant acceleration can be calculated using augmented
+proportional navigation laws.32 However, neither proportional, nor augmented
+proportional, navigation is optimal for boost-phase intercept because booster
+acceleration is not constant.
+More importantly, ballistic missiles can maneuver during their boost phase,
+thus introducing errors in the predicted intercept point that are quite large —
+on the order of several hundred kilometers between the predicted intercept
+point at the time of ABI launch and at the time of intercept for ICBM tar-
+gets. As noted before, boost-phase maneuvers can occur whenever missiles are
+launched against targets whose range is less than the missile’s maximum range.
+The excess propellant can be used to loft or depress the missile ’s trajectory,
+to carry out plane changes, or, in the case of some solid-propellant missiles,
+to implement general energy management maneuvers to reduce the missile ’s
+range.
+Acceleration matching has been suggested as a better guidance law for
+boost-phase intercept in the recent APS Study and researchers at Lawrence
+Livermore National Laboratory have suggested a guidance law that optimizes
+both the time to go before intercept (i.e., the axial acceleration of the KKV) and
+the lateral divert requirement (i.e., the perpendicular acceleration) for boost-
+phase engagements.33 The results of the APS analysis suggest that exoatmo-
+spheric KKVs will require 2.0 –2.5 km/sec total divert capability to home on
+maneuvering ICBMs, including the effects of sensor noise, guidance time de-
+lays and different closing speeds between the KKV and its target.34
+Figure 7 shows the results of a simple calculation that con ﬁrms the APS
+result. Here the total divert is calculated assuming the KKV matches the per-
+pendicular component of the target’s actual acceleration relative to what would
+be expected if the target did not maneuver during the boost phase. The engage-
+ment geometry is assumed to be one that maximizes the normal component
+of acceleration as viewed by the KKV (i.e., a worst-case). The divert require-
+ments in Figure 7 represent averages between cases where the perpendicular
+=== page 25 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 25
+Figure 7: Divert requirements for different boost-phase intercepts.
+component of the target acceleration arises from lofting or depressing the tra-
+jectory, where either the second or third stage (the stage is given in parenthe-
+ses) is used to loft or depress the trajectory. The divert required to compensate
+for sensor noise (approximately 150 m/sec), end game homing (approximately
+120 m/sec), and initial heading errors (at most 200 m/sec) are also included in
+the graphs shown in Figure 7.35
+Figure 7 indicates that the required divert varies for different ICBMs
+launched against different cities in the United States. Note that missiles aimed
+at Anchorage, Alaska (the darker bars), from North Korea have more excess
+propellant than missiles aimed at Seattle (the lighter bars) and, hence, require
+greater KKV divert capability to intercept.36 Similarly, if one assumes emerging
+states can build missiles as large as the Chinese DF-5 ICBM, or that the defense
+should be designed to be effective against large Russian or Chinese ICBMs, and
+that such missiles carry only one light warhead, thereby freeing up consider-
+able fuel for maneuvers, then KKVs will require signi ﬁcantly greater divert
+capability (3.0–3.5 km/sec) for successful intercept. Finally, Iranian ICBMs re-
+quire less divert to intercept than North Korean ICBMs, for identical missiles,
+=== page 26 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+26 Wilkening
+because they have less excess fuel for maneuvering (i.e., Iran is farther from
+U.S. territory and Iranian ICBM trajectories bene ﬁt less from the earth ’s
+rotation).
+Therefore, one potential countermeasure to boost-phase intercept is to
+launch large liquid-propellant ICBMs toward targets at short range with small
+payloads, thereby maximizing the maneuver capability of the ICBM booster.
+The obvious counter-countermeasure is to build larger KKVs with more divert
+capability. However, these KKVs may be too heavy, depending on progress to-
+ward lightweight KKV designs, for airborne interceptors, thereby effectively
+ruling out an ABI option. Another possible countermeasure would be to launch
+ballistic missiles only on trajectories that require high KKV divert to intercept,
+thereby maximizing the chance that the KKV will run out of fuel. This is pos-
+sible if the attacker knows the interceptor launch location, which would be the
+case for ﬁxed ground-based launchers but not for airborne or naval launch plat-
+forms. Clearly, KKVs must either be designed with sufﬁcient divert capability
+or their launch location must be unknown to the offense to render this tactic
+impotent.
+Figure 8 illustrates the total KKV mass as a function of the total divert
+required for intercept. Exoatmospheric KKVs are illustrated in the left-hand
+graph and endoatmospheric KKVs in the right-hand graph. Clearly, the divert
+requirement has a strong impact on total KKV mass because not only is more
+propellant required, but the propellant tanks are larger, the divert engine thrust
+and, hence, mass is larger to achieve the same 15 g endgame acceleration, and
+the structural mass increases, all of which adds to the KKV dry mass.
+In summary, exoatmospheric KKVs with a mass of approximately 90 kg and
+a total divert velocity of 2.0 km/sec should be technically feasible and should
+have the capability to intercept most emerging ICBM and intermediate-range
+ballistic missile (IRBM) threats. Similarly, endoatmospheric KKVs with a total
+divert velocity of 1.0 km/sec can probably be built with a mass of approxi-
+mately 55 kg. Clearly, there is a premium on making the dry mass of the KKV
+as light as possible. More advanced KKV designs should be technically feasible
+within the next decade that can reduce this mass by 40 –50 percent. Finally,
+to illustrate a more optimistic assessment, the Lawrence Livermore National
+Laboratory design goal for its exoatmospheric Advanced Technology Kill Ve-
+hicle for boost-phase intercept is shown in the left-hand graph in Figure 8 — a
+design goal supported by considerable design experience even if a KKV with
+these characteristics has yet to be ﬂight tested. Note that among the technical
+challenges will be the design of small, high-thrust divert engines because the
+required thrusts in Figure 8 are higher than that which has been achieved to
+date (see Figure 5).
+=== page 27 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 27
+Figure 8: Exo- and endo-KKV mass versus divert requirement.
+AIRBORNE INTERCEPTORS
+The ABI concept is based on a high-speed air-launched rocket with a KKV
+as its payload. ABI concepts originally were proposed in the early 1990s for
+theater missile defense, withﬁghter aircraft for launch platforms. Bombers and
+unmanned aerial vehicles (UAVs) have also been proposed, depending on ABI
+size and mass. In the early 1990s, the Raptor/Talon UAV-based ABI concept was
+designed for theater and national missile defense, with the emphasis shifting
+toward the larger Global Hawk UAV by the mid-1990s. The larger payload
+(1,000 kg), higher operating ceiling (60,000 ft) and longer endurance (24 hours)
+=== page 28 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+28 Wilkening
+of the Global Hawk made it an attractive launch platform for lightweight ABIs.
+Finally, a joint US –Israeli UAV-based ABI concept was pursued for theater
+missile defense in the mid-1990s, using the small Moab interceptor carried
+aboard an Israeli UAV. However, this program was cancelled in 1999. There is
+no active ABI program at the current time.
+To achieve reasonable intercept ranges, ABIs should have ﬂyout speeds of
+approximately 4–6 km/sec. These speeds require two-stage missiles. At speeds
+below 3 km/sec single-stage missiles are appropriate. The largest missiles that
+can be carried conveniently on rotary launchers or external pylons on exist-
+ing U.S. heavy bombers would weigh approximately 1,500 kg. 37 For deploy-
+ment on ﬁghter aircraft, ABI masses should be less than about 1,000 kg. UAV
+deployment would require ABIs with masses of a few hundred kilograms each.
+Clearly, the lighter the ABI, the more that can be carried aboard any given
+launch platform.
+Table 4 illustrates several optimally-staged ABI designs used in this
+analysis, with different ABI and KKV combinations. Any missile design in-
+volves complex tradeoffs between missile propulsion, structural design, and
+aerodynamic performance. Moreover, airborne missiles must be designed for
+Table 4: Airborne interceptor designs.
+Baseline Advanced Baseline Advanced
+Property exo-KKV exo-KKV endo-KKV endo-KKV
+Total ABI mass (kg) 1,500 1,500 1,000 1,000
+Ideal velocity (km/sec) 5.4 6.1 5.4 6.0
+ABI length (m) 5.5 5.6 4.4 4.4
+Maximum acceleration (g) 56 67 56 66
+Total burn time (sec) 20 20 20 20
+Payload
+KKV mass (kg) 86.5 48.3 53.5 31.7
+Shroud mass (kg) 8.1 9.2 8.1 9.0
+Second Stage
+Stage mass (kg) 232 197 154 134
+Propellant mass fraction 0.81 0.81 0.81 0.81
+Isp (sec) 280 280 280 280
+Stage /Delta1V (km/sec) 2.35 2.7 2.4 2.7
+Thrust (kN) 52 44 34 30
+Stage burn time (sec) 10 10 10 10
+First Stage
+Stage mass (kg) 1173 1245 785 825
+Propellant mass fraction 0.85 0.85 0.85 0.85
+Isp (sec) 280 280 280 280
+Stage /Delta1V (km/sec) 3.0 3.4 3.0 3.3
+Thrust (kN) 274 291 183 193
+Stage burn time (sec) 10 10 10 10
+=== page 29 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 29
+extreme environments, in particular, thermal cycling, low temperature oper-
+ation, and possibly high accelerations due to aircraft maneuvering. On the
+other hand, airborne missiles can be designed to accelerate faster than mis-
+siles launched from the surface of the earth due to the reduced drag force at
+high altitudes.38 The ABIs listed in Table 4 have been modeled after existing
+air-to-air missile and ABI designs.39 The ABIs with exoatmospheric KKVs have
+been designed to ﬁt on heavy bombers, while the ABIs with endoatmospheric
+KKVs have been designed for deployment on ﬁghter aircraft. The ABI shroud
+mass is calculated by scaling from a known missile shroud mass according to
+the square root of the maximum dynamic pressure the ABI experiences during
+ﬂyout. The ABI propellant mass fractions are lower than one ﬁnds for typical
+ballistic missiles because more structural mass is required to handle the high
+axial accelerations during the interceptor’s boost phase and the added mass of
+external ﬁns for aerodynamic maneuver. The rocket motor speciﬁc impulse (Isp)
+is representative of modern solid-propellant rocket motors and the burn time
+has been selected to be short (20 seconds) to improve the intercept range for
+short ﬂight times, although this increases the atmospheric drag at low altitudes.
+The actual ﬂyout speeds for these missiles are approximately 0.5 –1.0 km/sec
+less than the ideal velocity due to atmospheric drag and gravity, depending on
+the exact ﬂight trajectory.
+Lighter ABIs than the ones given in Table 4 can be designed with the same
+speed if the KKV mass is reduced, as illustrated in the left-hand graph in
+Figure 9 for a 5.4 km/sec ideal velocity. For example, a KKV would have to
+weigh approximately 30 kg for a 5.4 km/sec ABI to weigh 500 kg, that is, a
+mass that allows several to be carried on a high-altitude UAV and about 8 to
+12 to be carried on a single ﬁghter aircraft. Similarly, if the KKV mass is held
+constant, smaller ABIs give rise to lower ideal velocities, as illustrated in the
+right-hand graph in Figure 9 for 87 kg and 48 kg KKVs. For example, these
+KKVs would have 3.5 km/sec and 4.5 km/sec ideal ﬂyout speeds, respectively,
+if the ABI mass is reduced to 500 kg. The 250 kg ABI masses in the right-hand
+graph in Figure 9 represent single-stage missiles.
+ABI INTERCEPT RANGES
+The maximum ABI intercept range depends on the ABI speed and time; the
+latter of which depends on the target boost time, the time delay between bal-
+listic missile and ABI launch, and the time before booster burnout required
+to ensure that the target debris falls well short of its intended target even for
+missiles whose burn times vary by 5 percent from their nominal burn times.
+=== page 30 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+30 Wilkening
+Figure 9: Capability of lighter ABIs.
+A two-stage ABI based on current rocket-motor technology should be able to
+achieve speeds of approximately 4.5–5.0 km/sec (ideal velocities between 5.0 –
+6.0 km/sec) with an 87 kg KKV as its payload, as discussed above. Boost times
+for theater-range ballistic missiles are typically between 60 and 150 seconds, de-
+pending on their range and design, whereas solid-propellant ICBM burn times
+are approximately 180 seconds, and liquid-propellant ICBM burn times are ap-
+proximately 240–300 seconds, as shown in Table A1. The time delay between
+ballistic missile and ABI launch varies between approximately 20 seconds and
+75 seconds depending on the sensor architecture and the target missile, as
+shown in Table 1.
+=== page 31 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 31
+Figure 10: ABI hypersonic vehicle proﬁle.
+The intercept ranges for the ABIs in Table 4 are estimated by simulating
+ABI ﬂight using the COMET code, modi ﬁed to include atmospheric lift. This
+code takes into account the forces produced by the rocket propulsion system,
+gravity, inertial forces due to the earth’s rotation, and the aerodynamic forces
+of lift and drag as the interceptor ﬂies through the atmosphere. 40 Figure 10
+illustrates a representative shape for the hypersonic ABIs listed in Table 4 (8
+degree nose wit ha2c m rounded tip). The life and drag coef ﬁcients for the
+vehicle shown in Figure 10 are illustrated in Figure 11, as a function of ABI
+speed and angle of attack. These coef ﬁcients were calculated using the Aero-
+Prediction Code AP02.41 The lift and drag coefﬁcients for the ABI second stage
+and the KKV are not shown, though they differ somewhat from those shown in
+Figure 10.
+Figure 12 illustrates aﬂight fan for an exoatmospheric KKV launched from
+a 1,500 kg ABI, assuming the ABI follows a gravity turn after burnout. Such
+plots can be used to determine the approximate ABI intercept range by locating
+the ABI isotime contour that passes through the proper intercept altitude for a
+given target missile. However, in this analysis the ABI intercept range is deter-
+mined using an optimal ABIﬂight proﬁle where the ABI initially climbs higher
+in the atmosphere to minimize drag, then turns over toﬂy more horizontally to
+the intercept point. These optimal trajectories can increase the ABI intercept
+range by as much as 10 percent compared to those derived using Figure 12,
+though often the improvement is less than a few percent.
+Table 5 gives the calculated intercept ranges using optimal ABI trajecto-
+ries against a range of different North Korean and Iranian ballistic missile-
+trajectory combinations for the time delays associated with the space-based in-
+frared sensors and airborne X-band radar given in Table 1. The ICBMs launched
+from North Korea are assumed to originate from the northwest corner of the
+country and those launched from Iran are assumed to come from the center
+of the country (near Yadz), thus providing worst-case intercept geometries for
+both countries (see Figures 2 and 4). All ballistic missile trajectories are lofted
+because this produces the shortest ABI intercept range, except for Scud B and
+=== page 32 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+32 Wilkening
+Figure 11: ABI lift and drag coefﬁcients.
+Scud C missiles, which are assumed to ﬂy minimum energy trajectories. No
+Scud B or Scud C launches occur from Iran because these missiles do not have
+the range to threaten territory of interest to the United States. The Shahab 3,
+which is assumed to be identical to the No Dong, is the shortest-range Iranian
+missile examined in this study. The Shahab 4 is assumed to be identical to the
+Taepo Dong 1 and the Shahab 5 is a bit larger than the Taepo Dong 2 (see Table
+A1) to give it a range to strike most European capitals.
+=== page 33 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 33
+Figure 12: 1,500 kg ABI ﬂyout fan.
+Against North Korea, an airborne radar located approximately 100 km
+south of the DMZ usually detects the missile launches ﬁrst. This location ben-
+eﬁts from higher Doppler signatures because North Korean ICBMs ﬂya w a y
+from the radar and MRBMs launched toward South Koreaﬂy toward the radar.
+Airborne radars over the Caspian Sea or the Persian Gulf are the ﬁrst to de-
+tect Iranian ICBM launches originating from central Iran. Iranian MRBMs
+launched from western Iran are ﬁrst detected by whichever airborne X-band
+radar happens to be closest to the launch site. The average ground speed for
+North Korean ABI intercepts is approximately 4.2 km/sec and 4.8 km/sec for
+the baseline and advanced KKV designs, respectively, regardless of whether
+the intercepts are endoatmospheric or exoatmospheric, and the average ground
+speed for Iranian ABI intercepts is approximately 4.1 km/sec and 4.7 km/sec
+for the baseline and advanced KKV designs, respectively. Using these values,
+the reader can derive approximate intercept ranges for different ﬂight times.
+Finally, launching ABIs from 60,000 ft instead of 40,000 ft reduces the atmo-
+spheric drag, thereby increasing the ABI range by approximately 10 percent
+compared to the values given in Table 5.
+Several trends are apparent in Table 5. First, intercept ranges supported
+by space-based infrared detection and tracking sensors are about the same for
+=== page 34 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+34 Wilkening
+Table 5: ABI intercept ranges against North Korean and Iranian ballistic missiles.
+Intercept range (km)
+1.0 km SBIRS Airborne X-band radar
+ABI-target combinations North Korea Iran North Korea Iran
+1500 kg ABI— 87 kg Exo KKV
+290-sec ICBM-Boston 820 785 890 790
+290-sec ICBM-Seattle 775 800 845 805
+290-sec ICBM-Anchorage 745 775 820 780
+240-sec ICBM-Boston 700 660 760 650
+240-sec ICBM-Seattle 645 675 710 670
+240-sec ICBM-Anchorage 605 640 670 630
+180-sec ICBM-Boston 490 470 525 445
+180-sec ICBM-Seattle 455 485 495 460
+180-sec ICBM-Anchorage 425 460 470 435
+Taepo Dong 1/Shahab 4 375 370 485 460
+Taepo Dong 2/Shahab 5 490 495 580 510
+1500 kg ABI— 48 kg Advanced Exo KKV
+290-sec ICBM-Boston 935 905 1015 910
+290-sec ICBM-Seattle 900 920 980 925
+290-sec ICBM-Anchorage 880 900 960 905
+240-sec ICBM-Boston 800 765 865 755
+240-sec ICBM-Seattle 775 780 825 770
+240-sec ICBM-Anchorage 730 750 795 740
+180-sec ICBM-Boston 565 550 605 525
+180-sec ICBM-Seattle 540 560 585 535
+180-sec ICBM-Anchorage 515 545 565 515
+Taepo Dong 1/Shahab 4 425 420 545 520
+Taepo Dong 2/Shahab 5 560 575 660 590
+1000 kg ABI— 54 kg Endo KKV
+Scud B 0 — 105 —
+Scud C 70 — 175 —
+No Dong/Shahab 3 110 130 215 215
+1000 kg ABI— 32 kg Advanced Endo KKV
+Scud B 0 — 110 —
+Scud C 80 — 185 —
+No Dong/Shahab 3 125 145 235 235
+North Korea and Iran, as one would expect. Second, the airborne X-band radar
+adds appreciably to ABI intercept ranges over North Korea since it can detect
+missiles soon after launch because the launch sites are within line of site of the
+radar, even when the radar is orbiting in protected airspace over South Korea or
+the Sea of Japan; whereas an airborne radar covering Iran would require access
+to neighboring airspace in Turkey, Turkmenistan, Afghanistan, and the Persian
+Gulf and, even then, has longer detection times because the target missile
+must climb above the radar horizon at a range of approximately 600 km for
+ICBMs launched from the center of Iran. In fact, a space-based infrared sensor
+with a 1 km pixel footprint yields longer ABI intercept ranges against Iranian
+=== page 35 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 35
+ICBMs than an airborne X-band radar. Therefore, space-based infrared sensors
+provide the best detection and tracking option for large countries like Iran with
+limited access to neighboring airspace. However, if airborne X-band radar can
+get close enough, longer intercept ranges can be obtained. Airborne radar has
+its greatest impact on boost-phase theater missile defense, as illustrated in
+Figure 13. Here, Scud B intercepts become feasible if the ABI platform ﬂies
+over North Korean airspace and No Dong intercepts are possible from outside
+North Korean airspace.
+Third, North Korean ICBM intercepts have approximately 10 percent
+shorter range against west coast trajectories compared to east coast trajectories
+because west coast trajectories have more excess fuel and, hence, higher lofted
+trajectories, thereby decreasing the ABI intercept range due to the fact that
+the ABI must climb higher in altitude (up to 400 km instead of 200 –250 km)
+to intercept the missile. There is less variation in the ABI intercept range for
+different east and west coast Iranian ICBM trajectories because these targets
+are closer to the maximum range of the Iranian ICBM used in this analysis.
+Finally, intercepts against Iranian ICBMs heading for Seattle and Anchorage
+occur at longer ranges than the same missile-target pairing from North Korea
+because Iranian lofted trajectories burn out at lower altitudes and, hence, give
+rise to longer ABI intercept ranges, all other things being equal.
+Figure 13: ABI intercept ranges for North Korean MRBMs.
+=== page 36 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+36 Wilkening
+ABI coverage is better illustrated using maps showing the worst-case ABI
+intercept ranges relative to the ground traces for different ballistic missile tar-
+gets. For example, Figure 14 illustrates the intercept range against North Ko-
+rean Scud B and Scud C missiles for a 1,000 kg ABI carrying the baseline
+endoatmospheric KKV and receiving launch detection and tracking informa-
+tion from an airborne X-band radar. The circles in the ﬁgure illustrate the
+ABI intercept range for an ABI platform located at the center of each circle.
+That is, any Scud B or Scud C missile that burns out within the respective
+circles is vulnerable to intercept by an ABI launched from the center of each
+circle.42 The strings of dots in the ﬁgure represent the ground traces, shown
+every 10 seconds, for Scud B and Scud C boost phases. From Figure 14 one can
+surmise that it would take about three ABI orbits over or near North Korean
+airspace to cover all possible Scud B launches and about the same number to
+cover all possible Scud C launches (because they can originate from a larger
+Figure 14: ABI intercepts against Scud B and Scud C missiles.
+=== page 37 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 37
+area due to their longer range). Fewer ABI launch locations would be required if
+potential ballistic missile launch locations can be identi ﬁed using intelligence
+information. Note that an airborne X-band radar is essential to obtain such
+favorable coverage. Without the rapid target detection and tracking provided
+by such a radar, Scud B coverage disappears and Scud C coverage is reduced
+markedly (see Figure 13).
+Figure 15 illustrates the hypothetical intercept range for 1,000 kg ABIs
+against No Dong missiles and 1,500 kg ABIs against Taepo Dong 1 missiles
+launched toward Japan, assuming space-based infrared detection and tracking
+w i t ha1k m pixel footprint. The longer ground traces are the Taepo Dong 1
+boost phases. The thin outer circles in Figure 15 represent the No Dong inter-
+cept range using an airborne X-band radar. Consequently, No Dong launches
+can be intercepted using only two, or perhaps three, ABI launch locations out-
+side North Korean airspace, but only if an airborne X-band radar is part of
+the sensor architecture. A single ABI site is all that is required to defend
+Japan and Okinawa from intermediate-range Taepo Dong 1 missiles, even with
+Figure 15: ABI intercepts against no Dong and Taepo Dong 1 missiles.
+=== page 38 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+38 Wilkening
+space-based infrared detection and tracking. Moreover, the latter ABI site could
+be far away from North Korean airspace over international waters in the Sea of
+Japan. Clearly, Taepo Dong 2 launches could also be intercepted from a single
+ABI launch location outside North Korean airspace.
+Figures 16 and 17 illustrate similar plots for the intercept range associ-
+ated with a 1,500 kg baseline exoatmospheric ABI launched from a location
+over the Sea of Japan approximately 100 –150 km off the North Korean coast
+against hypothetical North Korean ICBMs with boost times of 240 and 180 sec-
+onds, respectively, assuming that space-based infrared sensors with 1 km pixel
+footprints detect and track the target. The ground traces for ICBMs launched
+towards the US east coast, west coast, and Hawaii (the lone eastward trajec-
+tory) are shown in theﬁgures for two North Korean launch locations, providing
+an indication of the spread in azimuth for ICBM launches. The intercept ranges
+Figure 16: ABI intercepts against 240-sec liquid-propellant North Korean ICBMs.
+=== page 39 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 39
+Figure 17: ABI intercepts against 180-sec solid-propellant North Korean ICBMs.
+in Table 5 correspond to ICBM launches from the northwestern location. Obvi-
+ously, North Korean ICBMs launched from the east coast of North Korea would
+be easier to intercept.
+The two outer thin circles in Figure 17 correspond to improved ABI
+performance— the middle ring corresponds to an advanced exoatmospheric
+KKV using space-based infrared detection and tracking with 1 km pixel foot-
+prints and the outer ring corresponds to an advanced exoatmospheric KKV
+using airborne X-band radar for detection and tracking. Consequently, the
+1,500 kg baseline exoatmospheric ABI using space-based infrared detection
+and tracking with 1 km pixel footprints should be able to intercept 240-
+second ICBMs, but not 180-second solid-propellant ICBMs. Clearly, ICBMs
+with burn times longer than 240 seconds also can be intercepted (e.g., the 290-
+second ICBM given in Table A1) because the added ABI ﬂight time more than
+compensates for the longer range the ICBM can ﬂy during its boost-phase.
+=== page 40 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+40 Wilkening
+The use of an airborne X-band radar improves the ABI intercept range and,
+when combined with a 48 kg advanced KKV, provides a capability to just
+intercept solid-propellant ICBMs, thereby providing a possible defensive re-
+sponse to this responsive offensive threat. Clearly solid-propellant ICBMs
+with burn times shorter than 180 seconds would be dif ﬁcult to intercept un-
+less the ABI has higher speed or ﬂies closer to, if not over, North Korean
+airspace.
+Figures 18 through 20 illustrate comparable ABI coverage against Iranian
+MRBMs and ICBMs. The ABI launch locations are approximately 100–120 km
+outside Iranian airspace. The range arcs for ABI intercepts are drawn assuming
+a space-based infrared sensor with 1 km pixel footprints for target detection
+and tracking. Higher resolution space-based infrared sensors would improve
+these intercept ranges somewhat. Airborne radar could also help, but only for
+missiles launched close to the periphery of Iran, that is, within approximately
+400 km of the radar location.
+Figure 18: ABI intercepts against Iranian Shahab-3, -4 and -5 MRBMs.
+=== page 41 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 41
+Figure 19: ABI intercepts against 240-sec liquid-propellant Iranian ICBMs.
+The inner and outer circles in Figure 18 around the ABI launch locations
+over Turkey, the Caspian Sea and the Persian Gulf correspond to intercept
+ranges against Shahab 4 and Shahab 5 intermediate-range ballistic missiles,
+respectively, for a 1,500 kg ABI carrying a baseline exoatmospheric KKV and
+using space-based infrared sensors with 1 km pixel footprints. Consequently,
+the Shahab 5 can be intercepted from ABI launch locations outside Iranian
+airspace. However, the Shahab 4 could be difﬁcult to intercept depending on its
+launch location. Shorter-range missiles like the Shahab 3 would be very difﬁcult
+to intercept, even with a lightweight advanced endoatmospheric KKV design
+and an airborne X-band radar, as shown by the thin outer ring around the ABI
+launch location along the Iraq-Iran border in Figure 18, unless the ABI platform
+ﬂies over Iranian territory. The inner circle at this location corresponds to the
+ABI intercept range with a 1,000 kg ABI carrying the baseline endoatmospheric
+KKV and using space-based infrared sensors with 1 km pixel footprints.
+The ABI intercept ranges in Figures 19 and 20 are drawn for ICBMs
+launched from central Iran, which represents a worst-case detection geometry
+=== page 42 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+42 Wilkening
+Figure 20: ABI intercepts against 180-sec solid-propellant Iranian ICBMs.
+although not necessarily the longest-range intercept geometry. In this case, a
+1,500 kg ABI with the baseline exoatmospheric KKV using space-based infrared
+sensors with 1 km pixel footprints should be able to intercept 240-second (and
+290-second) liquid-propellant ICBMs from launch locations outside Iranian
+airspace, as one can see from Figure 19. However, three or more launch lo-
+cations would be required if Iran spread its hypothetical ICBM force across its
+territory or if U.S. intelligence is unable to localize all possible ICBM launch
+locations. ABI intercept of a 180-second solid-propellant ICBM is not possible
+unless more rapid target detection and tracking is available, even with the
+48 kg advanced exoatmospheric KKV (the thin outer circles in Figure 20). ABI
+launch platforms would have to move closer to Iranian airspace, or possibly
+ﬂy over Iranian airspace, to have high conﬁdence that solid-propellant ICBMs
+could be intercepted.
+In summary, typical intercept ranges for medium-range, intermediate-
+range, solid-propellant ICBMs, and liquid-propellant ICBMs are between 0 –
+200 km, 400–650 km, 430–600 km, and 600–1,000 km, respectively. For large
+=== page 43 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 43
+states such as Iran, space-based infrared detection and tracking is the best
+sensor option. However, for small states such as North Korea airborne X-band
+radar can add signi ﬁcantly to the ABI ﬂight time, thus enabling intercepts
+that would otherwise be infeasible without ﬂying over North Korean airspace.
+Finally, the baseline KKV designs illustrated in Table 3 provide satisfactory
+intercept capability under most circumstances, but stressing threats such as
+short burn time MRBMs (Scud B) and solid-propellant ICBMs require lighter
+KKVs similar in mass to the advanced KKVs illustrated in Table 3.
+ABI Force Size
+The required size of the ABI arsenal is determined by the number of ABI mis-
+siles that must be launched at each booster target to obtain a high intercept
+probability, multiplied by the estimated number of missiles in the opponent ’s
+arsenal. To this one must add the number of missiles that are airborne at any
+given time in areas from which no missiles are launched, that is, absentee ABIs,
+and the number of missiles needed for operational test and evaluation, and
+spares. The approximate number of ABI launch platforms for an effective force
+is determined by multiplying the number of ABIs that must be launched at each
+target by the maximum number of ballistic missiles that can be launched from
+a single ABI defended area in the time it takes to replace ABI launch platforms
+that have exhausted their interceptors (i.e., several hours), multiplied by the
+number of ABI defended areas required to cover all possible launch locations
+in the country of concern, divided by the carrying capacity of each ABI launch
+platform, and, ﬁnally, multiplied by the ratio of the number of ABI launch plat-
+forms required to support one in the air 24 hours a day, 7 days a week. Note
+that concentrating mobile MRBM launchers for large salvo attacks makes them
+more vulnerable to air attack and, hence, is not necessarily a preferred offensive
+tactic. Moreover, if their movement is detected in time, ABI launch platforms
+can be concentrated against them. ICBM launch sites are likely to be ﬁxed, at
+least for ﬁrst generation ICBMs.
+To illustrate this arithmetic, assume four ABIs must be launched at each
+booster target to achieve a high probability of kill and that the maximum salvo
+launch capability is 20 MRBMs or 10 ICBMs. In this case, approximately 40 –
+80 ABI, possibly with a mixture of endoatmospheric and exoatmospheric KKVs,
+would have to be airborne in each ABI defended area to ensure that no salvo
+launch from any area could saturate the defense. Depending on the geography
+and whether the missile threats are principally from medium, intermediate,
+or intercontinental-range ballistic missiles, anywhere from one to three ABI
+defended areas would be required to adequately cover the territory of interest.
+=== page 44 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+44 Wilkening
+Three defended footprints, for example, would require approximately 120–240
+ABIs airborne at all times.
+The number of ABI launch platforms required to support this presence is de-
+termined by the carrying capacity of each platform and its airborne endurance.
+If we assume that bombers or other large aircraft can carry twenty 1,500 kg
+or 1,000 kg ABI, ﬁghter aircraft can carry four 1,000 kg ABI, and a large long-
+endurance UAV like the Global Hawk can carry one 1,000 kg ABI, then up to
+12 bomber-sized aircraft, 60 ﬁghter aircraft, or 240 UAVs airborne, or some
+mix of these, would have to be airborne at all times in the three defended areas.
+The airborne endurance for bomber-sized aircraft,ﬁghters and long-endurance
+UAVs like the Global Hawk is approximately 12, 8, and 24 hours, respectively.
+If one assumes one additional launch platform on the ground for a spare in
+case of maintenance problems, then three bombers, four ﬁghters, or two UAVs
+would be required to support one airborne 24 hours a day for extended peri-
+ods of time. Therefore, the total inventory of launch platforms to keep 240 ABI
+airborne at all times would be roughly 36 heavy bombers or similar large air-
+craft, 240 ﬁghter aircraft, 480 UAVs, or some mix of these platforms. A mix
+is preferable to take advantage of the different payload capacities, endurance,
+and vulnerability of each platform. In any case, this is a large force! Clearly,
+lightweight ABI are desirable to increase the carrying capacity of each launch
+platform, thereby minimizing the cost for procuring and operating the launch
+platform force.
+The number of ABI missiles required for an opposing arsenal of 100 missiles
+is 400 (assuming four ABI are launched at each target), plus 160 that are
+airborne in two of the three ABI defended areas where missile launches might
+not occur and perhaps 20 percent more for spares. Thus, the total ABI inventory
+in this example would be about 700 ABI missiles for a threat of 100 ballistic
+missiles and a geography that requires three zones to adequately cover all
+possible launch locations. Clearly, one must tailor this arithmetic to different
+circumstances.
+Estimates for the overall acquisition cost for such a force are necessarily
+rough because the cost for the different elements is not well known. Neverthe-
+less, the overall acquisition cost will be driven by the launch platform cost and
+the cost of the airborne radar, if it is part of the sensor architecture. The in-
+dividual ABI missiles are relatively inexpensive (estimated here to cost about
+$3 million each based on analogy with Air-Launched and Sea-Launched Cruise
+Missiles, which cost about $2 million and $1 million each, respectively). There-
+fore, an inventory of 700 ABI would cost approximately $2.0 billion. If we as-
+sume new launch platforms are purchased, that is, they cannot be obtained
+from another part of the Air Force or Navy, then heavy bombers of the B-1B
+=== page 45 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 45
+type, ﬁghters similar to the F-15E, and UAVs similar to the Global Hawk would
+cost approximately $300 million, $20 –$30 million, and $16 –$20 million each,
+respectively.43 The cost to ﬁll three orbits 24 hours a day for 20-missile salvo
+launch threats is approximately $11 billion, $5–7 billion, and $8–10 billion for
+the bomber,ﬁghter and UAV forces, respectively. If two airborne radar orbits are
+maintained 24 hours a day, this would require an inventory of approximately
+eight aircraft. Assuming these radar are similar in cost to the E-3 AWACS
+(approximately $400 million each), this would add another $3.2 billion to the
+acquisition cost.
+Therefore, the total acquisition cost for an airborne boost-phase ballistic
+missile defense system, not including space-based sensors, would be roughly
+$10 to $16 billion for 700 ABI missiles and enough launch platforms to cover
+three defended areas 24 hours a day with enough ABIs to handle salvo launch
+threats of up to 20 missiles and enough airborne X-band radar to maintain two
+radar orbits 24 hours a day near a country of concern. This does not include
+operating costs or research and development costs. If bomber orﬁghter aircraft
+could be drawn from other parts of the Air Force or Navy, this would reduce the
+acquisition cost considerably. These numbers are very approximate. More re-
+ﬁned estimates are needed if ABI systems are considered in future U.S. ballistic
+missile defense plans.
+BOOST-PHASE COUNTERMEASURES
+Relatively few countermeasures exist against boost-phase ballistic missile de-
+fenses. Clearly lightweight decoys and other penetration aids that challenge
+midcourse ballistic missile defense systems do not interfere with boost-phase
+defense. The two obvious countermeasures are missiles with short boost times
+and missiles that can maneuver during their boost phase. Both of these counter-
+measures have been taken into account in this analysis. Solid-propellant mis-
+siles, for example, the 180-second ICBM examined in this analysis, stress boost-
+phase intercepts. However, ABIs still have substantial capability if light-weight
+advanced KKVs can be designed. If fast burn solid-propellant ICBMs are de-
+ployed of the sort hypothesized during the US Strategic Defense Initiative in
+the mid-1980s with boost times as short as 100 seconds, then boost-phase in-
+tercept capability would be severely compromised unless ABI launch platforms
+ﬂy over the opponent’s territory.
+Ballistic missiles launched against targets at less than their maximum
+range have excess fuel that can be used for boost-phase maneuvers. These are
+not rapid maneuvers — which probably would be ineffective for avoiding the
+=== page 46 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+46 Wilkening
+more agile boost-phase KKV — but relatively slow maneuvers that move the
+predicted intercept point as several hundred kilometers from the original pre-
+dicted intercept point determined at the time the ABI booster burns out. This
+error must be removed by the KKV. The kill vehicle used in this analysis has
+the ability to change its velocity by 2.0 km/sec, an amount sufﬁcient to compen-
+sate for most ﬁrst generation booster maneuvers. If greater booster maneuvers
+are deemed feasible, more KKV divert capability will be required. Therefore,
+this countermeasure can be managed in a straightforward manner.
+Beyond these two countermeasures, one can imagineﬂares, sounding rock-
+ets with similar acceleration proﬁles to larger ballistic missiles, salvo launches,
+and boosters designed to fractionate during their last stage so the defense is
+presented with multiple targets during the intercept end game. Most of these
+countermeasures would not be effective. Flares can be distinguished by their
+low emitted infrared power and their“color.”Sounding rockets can be designed
+to accelerate like larger missiles; however, their infrared signature is smaller
+than that from large rocket motors, especially during ﬁrst stage ﬂight. This
+countermeasure might delay an ABI launch until the infrared signature could
+be determined, thus eliminating the bene ﬁts of early launch detection asso-
+ciated with airborne radar. However, it would not fundamentally defeat the
+system. Salvo launches could saturate the detection and tracking architecture
+or deplete the supply of available ABIs within range of the salvo launch. Again,
+this is easily countered byﬁelding more sensors and interceptors, at some cost.
+Since interceptors can be launched in rapid succession, even from the same
+launch platform, it is difﬁcult to imagine that salvo launches of as many as 10
+to 20 missiles could defeat a well designed ABI deployment. Finally, missiles
+with fractionated last stages are probably beyond the capability of emerging
+missile states and clearly would have to be tested before they are deployed.
+Boost-phase proponents have suggested interceptors with fractionated KKVs
+as a defensive counter-countermeasure, but such devices would be technically
+challenging to build.44 Hence, this countermeasure and its defensive response
+seem fanciful at the current time.
+ABI OPERATIONAL AND POLITICAL CONSTRAINTS
+Several operational limitations make the ABI concept less than ideal for missile
+defense, although none are so constraining as to eliminate this boost-phase
+defense option. First, for national missile defense against large, inland states
+like Iran, access to neighboring airspace is required (e.g., in the case of Iran,
+Turkish, Turkmenistan, and Afghanistan airspace, as well as the airspace over
+the Caspian Sea and the Persian Gulf ). This presents problems if neighboring
+=== page 47 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 47
+states fail to cooperate. ABI systems could defend against North Korean ICBM
+threats— the easy case for boost-phase missile defense— from international air
+space over the Sea of Japan. Similarly, airborne X-band radar could be located
+in international airspace in the case of North Korea but larger states like Iran
+would require access to neighboring airspace. Space-based infrared sensors
+clearly are preferable in this regard.
+Second, access to the opponent ’s airspace may be required for short burn-
+time ICBMs (i.e., burn times less than 180 seconds) and short-range MRBMs.
+Stationing ABI launch platforms over an opponent ’s territory violates its
+sovereignty and constitutes an act of war because these platforms are armed
+aircraft. If ABI launch platforms are located outside the opponent ’s airspace,
+with plans to penetrate their airspace soon after hostilities commence, then
+short-burn missiles launched at the start of a war would get a free ride through
+the defense, thus creating pressure on both sides to preempt. However, ABI
+launch platforms can enter enemy airspace within minutes after a conﬂict be-
+gins, thereby providing a useful defense in scenarios where, for example, ballis-
+tic missiles aremed with weapons of mass destruction are held in reserve to be
+launched only when the survival of the regime is threatened. Still, short-burn
+missiles could exert considerable political leverage before a war starts if the
+defense cannot defend against the ﬁrst few missiles launched.
+Third, ABI platforms in and around an opponent ’s airspace may not sur-
+vive enemy air defenses. This poses a dif ﬁcult challenge if ABI platforms are
+required to loiter over hostile territory, although it may also be a problem if
+the launch platform orbits over neighboring airspace. Standoff ranges of 100 –
+150 km would keep the launch platform out of range of enemy surface-to-air mis-
+siles; however, air defenses (F-15C/D and AWACS aircraft) would be required
+to protect the ABI launch platforms from enemy ﬁghters that enter neighbor-
+ing airspace. This increases the operational cost of deploying ABI systems.
+Using high-altitude UAVs ﬂying above 60,000 feet reduces their vulnerability;
+however, it does not make them immune to advanced ﬁghters with advanced
+air-to-air missiles. Stealth technology would help reduce this vulnerability
+signiﬁcantly, but this substantially increases launch platform cost. After a war
+starts, the air defenses of small states can be suppressed, making ABI platform
+survival less of an issue. Again, scenarios where an opponent actually launches,
+as opposed to threatens to launch, ballistic missiles armed with nuclear, bio-
+logical, or chemical weapons often occur late in a war. In these scenarios, am-
+ple time should exist to establish air superiority over the opponent ’s territory.
+Conventionally-armed ballistic missiles, on the other hand, may be launched
+early in a conﬂict, as was the case in the 1991 Gulf War with Iraq, with their
+concomitant political costs.
+=== page 48 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+48 Wilkening
+Fourth, keeping aircraft airborne for months on end would be costly,
+although it can be, and has been, done for periods extending from several
+months to over a year. This is not a trivial air operation. However, it is no
+more complex than the air operations the United States routinely plans for
+theater air defense. Therefore, ABI systems could be available for weeks, if not
+months, on end, 24-hours a day, 7 days a week. However, such a defense could
+not be maintained for years on end due to the operational costs. Consequently,
+airborne boost-phase ballistic missile defense is a crisis or wartime defense
+and would not be effective against accidental or unauthorized missile launches
+unless they occurred in the midst of a crisis or war.
+Fifth, the short reaction time required to make any boost-phase defense, in-
+cluding airborne boost-phase defense, effective implies that there is little time
+for high-level decisions regarding the release of boost-phase interceptors. At
+ﬁrst glance, this appears to be a serious concern. However, one should bear in
+mind that ABI release authority is very different from nuclear weapon release
+authority. No explosive weapons are involved. Boost-phase interceptorsﬁred at
+ﬁctitious targets would burn up in the atmosphere, posing little threat to hu-
+mans on the ground. Moreover, boost-phase defense is very different from other
+situations where military and civilian operations intermingle. False warning
+of a missile launch is not likely. There are very few civilian rocket launches
+that mimic a ballistic missile launch; unlike air defenses, for example, where
+identifying friend from foe and combatant from noncombatant aircraft is a seri-
+ous issue, or ground attack where distinguishing hostile from friendly vehicles
+contributes to tragic friendly- ﬁre incidents and collateral damage to noncom-
+batants in every war. Space-launch vehicles might be confused with missile
+launches, but they are almost always launched from designated launch sites
+with days of advance notice in peacetime. In the event they are not, as was
+the case with the August 31, 1998 North Korean satellite launch attempt,
+such rockets may be shot down in a crisis or war. Therefore, predelegating
+intercept launch authority to ﬁeld commanders, which is required to make
+any boost-phase defense effective, entails acceptable risks, unlike the case of
+predelegating launch authority to ﬁeld commanders for nuclear weapon use.
+Finally, forward deployment of ABI systems could appear to an opponent
+to be escalatory. This dilemma arises with the forward deployment of almost
+any military system. There is no particular reason why deploying boost-phase
+missile defenses would be more destabilizing than deploying other air, naval, or
+ground forces forward in a crisis. Any military action of this sort entails the risk
+of escalation, as well as the potential to de-escalate a crisis. The usual sense
+in which ballistic missile defense is thought to be destabilizing occurs when
+a preemptive attack can degrade the opponent ’s ballistic missile force to the
+=== page 49 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 49
+point where the defense can handle the “ragged” retaliatory strike. Emerging
+missile states certainly would worry about preemptive attacks against their bal-
+listic missiles by U.S. conventional, and perhaps nuclear, forces. The presence
+of boost-phase defenses may signal the impending attack. However, regional
+opponents have little to gain by launching nuclear, biological, or chemical bal-
+listic missiles out of fear of loosing this capability when boost-phase defenses
+are forward deployed because to do so would be an act of suicide at a point early
+in an evolving crisis when the leadership may still hope to avoid war.
+DOES AIRBORNE BOOST-PHASE MISSILE DEFENSE THREATEN RUSSIA
+OR CHINA?
+If ABI systems are effective against theater- and intercontinental-range bal-
+listic missiles launched from emerging ballistic missile states, they might also
+be effective against Russian and Chinese ICBMs and SLBMs, thus provoking
+political, if not military, responses from these two major nuclear powers. In
+fact, ABI systems do not pose a realistic threat to either Russian or Chinese
+strategic ballistic missiles.
+Figure 21 illustrates the ABI coverage of potential Russian ICBM and
+SLBM, and Chinese ICBM launch locations. The ground-traces for ICBM and
+SLBM boosters launched from representative locations toward targets on the
+U.S. east and west coasts also are illustrated. The ABI intercept ranges are
+based on ABI launch delays using a space-based infrared detection and tracking
+sensor with 1 km pixel footprints (airborne radar cannot operate close enough
+to all possible Russian or Chinese launch locations). The intercept range for
+a 1,500 kg ABI armed with a 48 kg advanced exoatmospheric KKV against
+Russian SS-25 solid-propellant ICBMs (which are being replaced by the shorter
+burn time SS-27) is estimated to be at most 600 km (see Table 5); the intercept
+range against Russian liquid-fuel SLBMs such as the SS-N-23 (with a boost
+time of 250 seconds) is estimated at less than approximately 830 km (the fu-
+ture Russian SS-NX-28 SLBM may contain solid propellant and, hence, have
+a shorter burn time); and the ABI intercept range against the Chinese DF-5
+liquid-fuel ICBM is estimated to be at most 800 km (although the future Chi-
+nese DF-31 solid-propellant ICBM has a shorter boost time). These intercept
+ranges are illustrated in Figure 21 for ABI launch locations close to potential
+Russian and Chinese launch locations.
+As one can see, it takes about ﬁve ABI orbits to cover Russia ’s ballistic-
+missile submarine bastions near its territory. If, in the future, Russia’s SLBM
+force is located entirely with the Northern Fleet, this ﬁgure drops to around
+=== page 50 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+50 Wilkening
+Figure 21: ABI capability against Russian and Chinese strategic missiles.
+two or three ABI orbits. Despite a preference for basing submarines in bastions,
+Russian missile-carrying submarines can deploy into the open ocean, with per-
+haps some greater risk from U.S. antisubmarine warfare. In this case, approx-
+imately 20 ABI orbits would be required to cover all possible SLBM launch
+locations in the North Atlantic, and 30 would be required for all possible
+launch locations in the North Paci ﬁc— unless the United States can localize
+Russian submarines by tracking them in the open ocean. 45 If Russia deploys
+single-warhead ICBMs in former SS-18 and SS-19 silos, and mobile SS-27
+ICBMs at up to 10 garrisons used in the past for mobile SS-25 ICBMs, at least
+seven additional ABI orbits would be needed to cover all possible ICBM launch
+locations. The smaller shaded circles (with a radius of 150 km) in Figure 21
+represent the approximate area into which mobile ICBMs could deploy within
+10 hours after leaving their garrison. Larger deployment areas may be possible,
+but logistical constraints eventually limit their size. Clearly, as mobile ICBM
+deployment areas grow in size, more ABI orbits would be required.
+=== page 51 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 51
+Therefore, the United States would have to keep ABI launch platforms
+aloft continuously in at least 10 areas to cover likely Russian ICBM and SLBM
+launch locations, and potentially three to four times this number if Russia sends
+its missile-carrying submarines into the open ocean. This would be a daunting
+task! Aircraft and UAVs may not have enough fuel to reach these locations
+from distant allied air ﬁelds. More importantly, ABI launch platforms, sensor
+aircraft, and airborne tanker support would be vulnerable to Russian air de-
+fenses. While it is plausible to think of suppressing the air defenses of a weak
+state, suppressing Russia ’s strategic air defense system is an entirely differ-
+ent matter, even with the current degraded state of Russia ’s air defenses. In
+addition, the airﬁelds from which ABI operations originate would be vulnera-
+ble to Russian attack because they are few in number and relatively easy to
+identify. Emerging ballistic-missile states would have dif ﬁculty carrying out
+such attacks. Finally, Russian salvo launches could be quite large and would
+make any residual airborne boost-phase system quite ineffective. Hence, an
+ABI boost-phase ballistic missile defense system would pose very little threat
+to Russia’s ICBMs and SLBMs for operational reasons and not because an ABI
+could not intercept a Russian strategic missile if it is within range.
+Airborne boost-phase systems may pose more of a threat to Chinese strate-
+gic missiles because China has fewer ICBM launch sites, the boost time for the
+Chinese DF-5 ICBM is relatively long, and China has few, if any, operational
+SLBMs that can threaten the United States (not to mention their vulnerability
+to U.S. anti-submarine warfare). However, ABI platforms still would have to
+penetrate deep into Chinese airspace to cover all possible ICBM launch loca-
+tions, thereby exposing themselves to increasingly sophisticated Chinese air
+defenses. The distances from ABI bases to reasonable orbit points are large,
+making the airborne operation difﬁcult to sustain. Chinese attacks against ABI
+airﬁelds also are a possibility. Finally, China is in the process of modernizing its
+strategic arsenal with solid-propellant mobile DF-31 ICBMs. Thus, the number
+of ABI sites required to cover all possible Chinese ICBM launch sites will grow
+substantially in the next decade. Therefore, the threat posed by an ABI system
+to China’s strategic missiles is not very great. However, ABI systems might
+pose a threat to Chinese theater-range missiles aimed at Taiwan from across
+the Taiwan Strait — although China could still threaten Taiwan with longer-
+range missiles launched from deeper inside the mainland. Consequently, while
+ABI systems pose little threat to China ’s future strategic arsenal, the deploy-
+ment of ABI systems could complicate Sino-U.S. relations.
+Finally, it is interesting to note that a Russian ABI system would not
+threaten U.S., French, British or Chinese strategic forces, for the same rea-
+sons cited above. Therefore, the British and French concern during the Cold
+=== page 52 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+52 Wilkening
+War— that U.S. missile defenses would spur the deployment of Russian de-
+fenses which undermine their strategic deterrent— is without substance in the
+case of ABI boost-phase defenses because France and Great Britain rely on
+SLBMs for their strategic deterrent and Russia simply cannot mount or sus-
+tain the airborne operation required to put these assets at risk. This creates
+the interesting possibility that the United States, Russia, and interested NATO
+countries could collaborate on the development, and possible deployment, of
+ABI defenses without giving rise to suspicions about each other ’s strategic
+intent.
+COMPARISON WITH THE APS BOOST-PHASE MISSILE DEFENSE STUDY
+This analysis is largely consistent with the recently published American Phys-
+ical Society report on boost-phase ballistic missile defense. Both studies agree
+that timely detection and tracking is critical to boost-phase missile defense and
+that space-based infrared sensors will play a key role. This study highlights
+the importance of airborne X-band radar for rapid launch detection and track-
+ing, especially for favorable geographies like North Korea. The APS Study did
+not consider airborne X-band radar. Both studies agree that boost-phase KKVs
+with total divert velocities of at least 2.0 km/sec are required for effective boost-
+phase intercept against ICBMs and that masses in the range of 50 –100 kg
+for such KKVs should be technically feasible in the next decade. They also
+agree that boost-phase intercept from terrestrial launch platforms, airborne
+platforms in particular, is technically feasible against relatively slow burning
+liquid-propellant ICBMs.
+However, the conclusions differ with respect to solid-propellant ICBMs. The
+APS study ﬁnds that:
+Boost-phase defense of the entire United States against solid-propellant
+ICBMs, which have shorter burn times than liquid-propellant ICBMs, is un-
+likely to be practical when all the factors are considered, no matter where or
+how interceptors are based. Even with optimistic assumptions, a terrestrial-based
+system would require very large interceptors with extremely high speeds and
+accelerations to defeat a solid-propellant ICBM launched from even a small coun-
+try such as North Korea.46
+Contrary to this conclusion, the current study ﬁnds that solid-propellant
+ICBMs are not beyond the reach of airborne interceptors. Clearly, short burn
+missiles create stressful timelines for boost-phase defense. Solid-propellant
+ICBMs, in particular, are dif ﬁcult targets. However, there is no “knee in the
+curve” beyond which airborne boost-phase intercept is no longer feasible. To
+=== page 53 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 53
+some extent this different conclusion can be traced to different input assump-
+tions in the two analyses.
+On the physics, both studies agree. However, the APS study uses more
+conservative input assumptions. For example, the APS Study bases the burn
+time for solid-propellant ICBMs on U.S. solid-propellant SLBMs, which have
+slightly shorter (170-second) nominal burn times compared to the U.S. and
+Russia solid-propellant ICBMs used in this study with 180-second nominal
+burn times. The APS study also assumes that it takes approximately 45 sec-
+onds to detect and track solid-propellant ICBMs after launch. This study has
+determined that solid-propellant ICBMs can be detected and tracked within
+29 seconds after launch in the case of North Korea using an airborne X-band
+radar and within 37 seconds after launch using space-based infrared sensors
+with a 1 km pixel footprint. The shorter detection and tracking time associated
+with space-based infrared sensors comes about because this study assumes that
+initial target heading errors can be removed during the interceptor’s 20-second
+boost phase prior to KKV release, thus allowing the ABI to be launched a few
+seconds earlier. Airborne missiles can also accelerate faster and, hence, have
+higher average ﬂight speeds relative to surface-based interceptors (upon which
+the APS study focused) because the drag force is lower at high altitudes. The net
+result is that the ABIs examined in this study have approximately 25 seconds
+more ﬂight time against solid-propellant ICBMs launched from North Korea
+than comparable intercepts in the APS study.47 This translates into intercept
+ranges that are approximately 100 km greater than the APS intercept ranges.
+One should also keep in mind that this study invoked higher-speed ABIs using
+light-weight advanced KKVs before concluding that 180-second solid-propellant
+ICBMs could be intercepted.
+Even with the more optimistic assumptions used in this study, solid-
+propellant ICBMs and short-range MRBMs are very difﬁcult targets and their
+successful intercept will require sensor architectures that are designed to push
+the detection and tracking time as low as possible and interceptors with the
+highest possible speed (determined here to be around 6.0 km/sec ideal ve-
+locity) through the use of light-weight KKVs and large (1,500 kg) airborne
+missiles. While 50 kg KKVs stretch what is currently possible, solid-propellant
+ICBMs stretch what is currently possible in terms of offensive threats. Neither
+may be far fetched 10 years from now.
+Finally, it is important to note that airborne interceptors have the dis-
+tinct advantage that they can always be moved closer to the suspected launch
+site if the ABI intercept range is marginal, albeit with the requirement to
+gain access to neighboring airspace or to ﬂy near, if not over, the opponent ’s
+airspace, with increased concern for launch platform survival. If the threat is
+=== page 54 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+54 Wilkening
+serious enough, these risks may be acceptable. For example, in the case of North
+Korea, solid-propellant ICBMs could be intercepted if the ABI launch platform
+orbited over Chinese airspace and, perhaps, if orbited over Russian airspace
+north of Vladivostok. Ground-based interceptors do not have this option and
+naval interceptors are limited to navigable waters. Moreover, in some scenar-
+ios an opponent ’s air defenses may be seriously degraded by the time ICBM
+launches actually occur. If airborne platform survival is of paramount con-
+cern, one can employ low-observable launch platforms, at increased cost. Still,
+the issue is not one of ABI technical capability against short burn time boost-
+ers but rather whether the defense is worth the cost. Even if one assumes
+airborne platforms are stationed far enough outside enemy airspace to be
+reasonably safe from air defense threats, ABIs still can intercept most solid-
+propellant ICBM trajectories using 1,500 kg ABIs and 50 kg KKVs with ac-
+tual ﬂight speeds of approximately 5.5 km/sec (6.0 km/sec ideal velocities).
+Such interceptors are not very large and, while their speed is high, reason-
+able missile designs based on current technology should be able to achieve this
+performance.
+Finally, one should note that the most important considerations that affect
+individual preferences for boost-phase ballistic missile defense often are not
+technical, but rather have to do with operational concerns, different threat as-
+sessments, and cost. These concerns are largely outside the scope of this study.
+Therefore, one should not be surprised if different analysts, even technical ana-
+lysts, come to different conclusions regarding the wisdom of pursuing one type
+of missile defense over another.
+CONCLUSION
+Boost-phase interceptors light enough to be launched from aircraft appear to
+be technically feasible for both theater and national missile defense. Within the
+next decade, endoatmospheric KKVs with the capability to home on maneuver-
+ing boosters (i.e., with 1.0 km/sec of divert) probably can be built with a mass
+between 30–55 kg and exoatmospheric KKVs with 2.0 km/sec of divert proba-
+bly can be built with a mass between 50 –90 kg. Early ballistic missile launch
+detection and tracking is crucial for an effective boost-phase defense. Space-
+based infrared sensors and airborne X-band radar both appear to offer timely
+detection, resulting in ABI intercept ranges against IRBMs, solid-propellant
+ICBMs, and liquid-propellant ICBMs between 400 –650 km, 430–600 km, and
+600–1,000 km, respectively. An effective boost-phase defense against MRBMs
+requires airborne X-band radar for early launch detection and tracking. In this
+case, ABI intercept ranges on the order of 100–230 km may be achieved against
+=== page 55 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 55
+MRBMs with boost times below 100 seconds. In general, airborne interceptors
+are the only form of terrestrial boost-phase defense that can be effective against
+very short burn time ICBMs and MRBMs because, if necessary, they canﬂy over
+an opponent’s territory.
+In addition, while ABI systems offer the prospect of an effective defense
+against emerging ballistic-missile threats, including threats such as chemical
+or biological submunitions, they pose very little threat to the strategic nuclear
+forces of the ﬁve major nuclear powers. Thus, ABI systems will appear threat-
+ening to emerging missile states, yet not destabilizing to the major nuclear
+powers— states with which the United States has many interests in common.
+To the extent one takes the rhetoric of sharing U.S. ballistic missile defense
+technology with other countries seriously, ABI systems may be the most trans-
+ferable type of ballistic missile defense because they cannot be used directly
+against the United States. The technology upon which ABI systems are based
+may be sensitive, but operational ABI systems cannot threaten U.S. strategic
+forces. For all of these reasons, the United States should pay more attention to
+this boost-phase defense option than currently is the case.
+The principal drawbacks associated with ABI systems are that they
+offer no protection against accidental or unauthorized Russian or Chinese
+missile launches, or for that matter accidental or unauthorized launches from
+emerging missiles states unless they occurred in the midst of a crisis or war
+when ABI systems would be on station. Moreover, they are expensive to operate
+and they are inherently less robust to those offensive countermeasures that
+increase the weight of the KKV— for example, large ICBMs with lots of excess
+maneuver capability that require heavy KKVs with divert velocities above
+3.0 km/sec and, hence, heavy interceptor missiles — because of the maximum
+weight limits for air-launched missiles. Again, ABI launch platforms can move
+closer to potential missile launch sites to compensate for the slower speeds
+associated with heavier KKVs if necessary. However, none of these limitations
+is so severe as to eliminate the ABI option from consideration as a viable
+component of a future U.S. missile defense architecture. In fact, compared to
+the limitations inherent in all boost-phase missile defense concepts, airborne
+intercept remains one of the most attractive options.
+This analysis has concerned itself principally with the technical feasibil-
+ity and operational effectiveness of airborne boost-phase intercept. The larger
+questions of the priority that any form of ballistic missile defense should re-
+ceive relative to other important U.S. security concerns (e.g., countering ter-
+rorism, U.S. conventional force modernization, etc.) and the cost-effectiveness
+of ABI compared to other forms of ballistic missile defense are not addressed
+here.
+=== page 56 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+56 Wilkening
+NOTES AND REFERENCES
+1. A prototype airborne laser carried aboard a 747 aircraft is currently under develop-
+ment, with deployment expected some time between 2007 and 2010. For a technical anal-
+ysis of its capabilities see the report of the American Physical Society (APS) Study Group
+entitled Boost-Phase Intercept Systems for National Missile Defense: Scientiﬁc and Tech-
+nical Issues, July 2003⟨http://www.aps.org/public affairs/popa/reports/nmd03.html⟩; (29
+March 2004); and Geoffry Forden, “Airborne Laser: Shooting Down What ’s Going Up,”
+Center for International Security And Cooperation, Stanford University, September
+1997. Space-based lasers have been under consideration for many years, however, they
+will not be technically feasible until 2015–2020, at the earliest.
+2. See, APS Study, Boost-Phase Intercept Systems for National Missile Defense , July
+2003, Section 10.3.
+3. Airborne infrared sensors operating in the short or medium-wave infrared band
+have an angular resolution on the order of 10 −5 radians for 30 cm optics and, hence,
+will have track resolutions on the order of six meters from ranges of 600 km. Such track
+accuracies would allow rapid target azimuth determination and might facilitate booster
+typing.
+4. Space-based LIDAR systems, and airborne LIDAR systems if they canﬂy at altitudes
+above 60,000 feet and get within 600 km of their targets, may play an interesting role in
+boost-phase missile tracking. However, such sensors were not examined in this study.
+5. For a detailed treatment of these issues see Frederick S. Simmons, Rocket Exhaust
+Plume Phenomenology, The Aerospace Corporation Press, El Segundo, CA, 2000.
+6. An NEI of 10 −14 W/cm2 represents a conservative noise ﬁgure in the 2.7 µm band
+for a 30 cm aperture telescope.
+7. APS Study, Boost-Phase Intercept Systems for National Missile Defense, July 2003,
+Section 10.1.
+8. Ibid. Sections 10.1.2 and 10.1.3.
+9. If one assumes subpixel resolution for the space-based infrared sensor, which should
+be possible if the image spot is comparable to the pixel dimension on the focal plane
+array, then the approximate target heading can be determined more rapidly than has
+been assumed here. After initial detection, the sensor can collect tens of frames of data
+on the moving target by staring at the detected spot in less than one second.
+10. Heading errors, for the purpose of this analysis, are determined in a simple-minded
+manner by taking half of the pixel footprint dimension ( ±0.5 km for a 1 km × 1k m
+footprint) and dividing it by the downrange distance the target missileﬂies. More accu-
+rate calculations would take the lateral position, velocity, and acceleration uncertainties
+produced by the tracking ﬁlter as a function of time after initial detection to determine
+when the ABI could be launched.
+11. This /Delta1V requirement is calculated based on the lateral distance error produced by
+a heading error, which is determined by the downrange distance the missile ﬂies as a
+function of time and the sensor resolution. Assuming proportional navigation during
+this portion of the ABI ﬂight and normal intercept trajectories, the divert requirement
+is given by where
+/Delta1V = θ · R · vt
+vi
+· N
+(N − 1)t ,
+=== page 57 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 57
+where θ(t) is the heading error as a function of time (i.e., the resolution of the sensor
+divided by the downrange distance the missile travels as a function of time after ini-
+tial detection), R is the nominal intercept range (approximately 600–800 km for ICBM
+targets), vt is the average target speed (approximately half the ballistic missile burnout
+speed), vi is the interceptor speed (approximately 5 km/sec for ABIs), N is the navigation
+ratio for proportional navigation (assumed here to be 4), and t is the time to intercept
+which depends on the boost-phase duration of the target ballistic missile.
+12. The tracking time depends on the exact range of the trajectory compared to the
+missile’s maximum range because this determines how much propellant is available for
+lofting the missile. Table 1 is based on conservative lofted trajectories. However, worse
+trajectories could be constructed if a long-range missile such as the Taepo Dong 2 is used
+to attack a target at very short range. In this case, the initial missile trajectory could
+be nearly vertical and the tracking delays would be longer than those given in Table 1.
+Of course, the reentry vehicle would have to be designed to handle the higher reentry
+speeds associated with these lofted trajectories.
+13. Designing ABI boosters with a sustainer motor that continues to provide thrust
+after the main booster burns out would help reduce the KKV divert requirement at the
+expense of interceptor speed. A system tradeoff study would be required to determine
+whether this is bene ﬁcial. This analysis assumes that the KKV must carry suf ﬁcient
+fuel to correct for maneuvering targets on its own.
+14. For an analysis of theater-range ballistic missile targets that predicts several kilo-
+meter predicted intercept point errors, see R.C. Lacoe, D.C. Johannsen, K.L. Zondervan,
+and Col. T. Fitzgerald, “Sensor Fusion Applications In The Airborne Interceptor (ABI)
+Program,”presented at the 8th National Symposium on Sensor Fusion, 1995.
+15. See Merrill I. Skolnik, Introduction to Radar Systems, 3rd ed., New York: McGraw
+Hill, 2001, pp. 89–90.
+16. See Boost-Phase Intercept Systems for National Missile Defense, op. cit., Section
+10.2.2.
+17. The time required to pass through the elevation beam width depends on the radar
+elevation beam width, the missile’s vertical speed, and the range from the radar to the
+target. Faster missiles (e.g., solid-propellant ICBMs and some MRBMs) have greater
+vertical velocities and reach an altitude where they appear above the radar horizon
+earlier than liquid-propellant ICBMs. MRBMs can have high elevation rates because
+frequently they are detected at shorter ranges (e.g., 250 –400 km) than ICBMs (i.e.,
+400–700 km). The notional 180-second solid-propellant, 240-second liquid-propellant,
+and 290-second liquid-propellant ICBMs examined in this analysis have elevation rates
+of approximately 1.0 mrad/sec, 0.75 mrad/sec, and 0.60 mrad/sec, respectively, for an
+airborne radar at a detection range of 400 km. Scud B, Scud C, and No Dong MRBMs
+launched from North Korea have elevation rates when viewed by an ABR south of the
+DMZ between approximately 0.5 to 1.0 mrad/sec for detection ranges varying from 230
+to 330 km.
+18. See David K. Barton, Modern Radar System Analysis, Artech House, 1988, pp. 523–
+530.
+19. Airborne X-band radar actually can detect solid-propellant ICBMs at ranges less
+than the horizon (i.e., less than 400 km) within as little as 12–15 seconds after launch,
+much faster than space-based infrared detection, because the radar has line of site to
+the target and it takes only a short time for the target to exceed the radar ’s Doppler
+=== page 58 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+58 Wilkening
+notch. This favorable geometry occurs for North Korean launches but would not oc-
+cur for larger countries where the airborne radar cannot get as close to the missile
+launch site. However, even with such early launch detection, accurate tracking can-
+not begin until the target missile has climbed about half a beam width above the
+horizon. As is turns out, this longer track delay, when added to the shorter detec-
+tion delay for solid propellant ICBMs yields the same total launch delay given in
+Table 1.
+20. See David R. Vaughan, Jeffrey A. Isaacson, and Joel S. Kvitky, Airborne Intercept:
+Boost and Ascent-Phase Options And Issues , RAND Corporation, MR-772-AF, 1996,
+pp. 16–17.
+21. Clementine sensor suite data can be found at ⟨http://www.cmf.nrl.navy.mil/
+clementine/sci.clem.html⟩ (29 March 2004) and ⟨http://www-phys.llnl.gov/clementine/
+sensors/sensors.html⟩(29 March 2004).
+22. K. Bryant, C. Knight, and R. Hurtz, “Planetary Lander Vehicles Utilizing LEAP
+Technology,”AIAA 94-2748, 30th AIAA/ASME/SAE/ASEE Joint Propulsion Conference,
+June 27–29, 1994.
+23. Tank ullage is assumed to be 15 percent and propellant expulsion ef ﬁciency is as-
+sume to be 97 percent.
+24. The data for composite pressure tanks came from Structural Composite Industries
+⟨http://www.scicomposites.com/⟩(29 March 2004).
+25. Note that a simple theoretical argument based on hoop stress for cylindrical tanks at
+constant pressure would predict that the mass-to-volume ratio would remain constant
+as a function of tank volume. This is not quite accurate because small tanks cannot be
+designed with arbitrarily thin walls and, hence, they tend to have higher mass-to-volume
+ratios, as illustrated in Figure 6.
+26. The data for titanium pressure and propellant tanks is from Pressure Systems In-
+corporated ⟨http://www.psi-pci.com/Data Sheets1 main.htm⟩(29 March 2004).
+27. This tank is scaled up from the 2000 psi S12962 propellant tank found on
+⟨http://www.ardeinc.com/liquid.html⟩(29 March 2004).
+28. For developments and applications of small pump-fed divert rocket engines see:
+John C. Whitehead, Bipropellant Propulsion with Reciprocating Pumps, Lawrence Liv-
+ermore National Laboratory, UCRL-JC-114530, June 16, 1993; John C. Whitehead,
+Mars Ascent Propulsion Options for Small Sample Return Vehicles , Lawrence Liver-
+more National Laboratory, UCRL-JC-127445, May 12, 1997; and J.C. Whitehead, Hy-
+drogen Peroxide Gas Generator Cycle with a Reciprocating Pump, paper AIAA 2002-3702
+presented at the 38th AIAA/ASME/SAE/ASEE Joint Propulsion Conference, July 7–10,
+2002.
+29. L.C. Ng, E. Breitfeller, and A.G. Ledebuhr, An Optimal t- /Delta1V Guidance Law for
+Intercepting a Boosting Target , Lawrence Livermore National Laboratory, UCRL-JC-
+148995, June 30, 2002, p. 3.
+30. See Steve Brown, et al.,Interceptor Concepts for the U.S. UAV Program, presented at
+the 5th Annual AIAA/BMDO Technology Readiness Conference, Eglin AFB, September
+16–20, 1996.
+31. See S. H. Chen, Control Forces Produced By Lateral Jet Injection, Aerospace Corpo-
+ration, Aerospace Technical Memorandum No. 92(2031-01)-1, January 1992.
+=== page 59 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 59
+32. See, for example, Paul Zarchan, Tactical and Strategic Missile Guidance , Volume
+176, Progress In Astronautics and Aeronautics, American Institute of Astronautics and
+Aeronautics, 1997, pp. 291–316.
+33. See Boost-Phase Intercept Systems for National Missile Defense , op. cit., Sections
+12.2.4; and L.C. Ng, E. Breitfeller, and A.G. Ledebuhr,An Optimal t-/Delta1V Guidance Law
+for Intercepting a Boosting Target , Lawrence Livermore National Laboratory, UCRL-
+JC-148995, June 30, 2002.
+34. See Boost-Phase Intercept Systems for National Missile Defense, op. cit., Section 12.3.
+35. Boost-Phase Intercept Systems for National Missile Defense, op. cit., Sections 12.3.2
+and 12.4.
+36. No clear advantage occurs for second versus third stage maneuvering in Figure 7
+because lower KKV acceleration is required over a longer time to correct for second stage
+maneuvers compared to higher acceleration over shorter periods for diverts that come
+later in the booster’s ﬂight.
+37. The SRAM-A, Air-Launched Cruise Missile, and Advanced Cruise Missile have
+masses of 1,012 kg, 1,458 kg, and 1,250 kg, respectively. See Duncan Lennox, Jane’s
+Strategic Weapon Systems, Issue 32, Jane’s Information Group, UK, 2000. Fighter air-
+craft carry about two to ﬁve 2,000 lb bombs. See Jane’s All The World’s Aircraft, Jane’s
+Information Group, UK, 1993, pp. 408, 410.
+38. These ABI designs have axial accelerations of approximately 50 g. The highest accel-
+eration ground-based interceptor ever developed by the United States was the nuclear-
+tipped Sprint missile defense interceptor with a nominal axial acceleration of about 100 g
+⟨see http://www.designation-systems.net/dusrm/app4/sprint.html ⟩ (29 March 2004).
+This missile required ablative coatings to handle the atmospheric heating. The ABIs
+shown in Table 4 have much lower atmospheric heating because they are launched at
+high altitudes and, hence, require only a simple shroud to protect the KKV during
+ﬂight.
+39. See Kevin Bell, David Johannsen, and Kevin Zondervan (Aerospace Corporation),
+Major Samuel Walker (Air Force Space and Missile Systems Center), Paul Fry, Robert
+Hintz and Patrick Yates (Naval Air Warfare Center, China Lake), “An Airborne Inter-
+ceptor for Boost Phase and Early Midcourse Theater Missile Defense,”paper presented
+at the 1994 BMDO Intercept Technology Conference, 1994.
+40. See Douglas Moody, COMET: Calculation of Missile Earth Trajectories , 2nd Ed.,
+RAND Corporation, R-3240-1-DARPA/BMDO/RC, February 1997.
+41. This is the 2002 release of a semitheoretical, semiempirical aerodynamic prediction
+code designed by Dr. Frank G. Moore, API Incorporated, King George, VA.
+42. The intercept zone is a circle because ABIs lose relatively little range even if they
+execute a 180-degree turn shortly after launch to head toward their intercept point. Note
+that the zone on the ground from which missile launches can be intercepted is a more
+complicated shape and depends on the spread in azimuth for the missile launches from
+a particular launch site.
+43. For the B1B bomber cost see ⟨http://www.af.mil/news/factsheets/B 1B Lancer.html⟩
+(29 March 2004); for the F-15, F-16, and F-18 ﬁghter costs see ⟨http://www.af.mil/news/
+factsheets/ F 15 Eagle.html⟩(29 March 2004), ⟨http://www.af.mil/news/factsheets/F 16
+Fighting Falcon.html⟩ (29 March 2004), and ⟨http://www.chinfo.navy.mil/navpalib/
+factﬁle/aircraft/air-fa18html⟩ (29 March 2004); and for the Global Hawk UAV
+=== page 60 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+60 Wilkening
+cost see ⟨http://www.fas.org/irp/program/collect/docs/man-ipc-global hawk-010322.htm⟩
+(June 2003).
+44. One example of a fractionated kill vehicle design is given in A.G. Ledebuhr, et al.,
+Genius Sand: A Miniature Kill Vehicle Technology to Support Boost-phase Intercepts and
+Midcourse Engagements, Lawrence Livermore National Laboratory, UCRL-JC-148992,
+June 30, 2002.
+45. Anti-submarine warfare sensors may localize submarines to some extent. However,
+the United States would still face the daunting challenge of maintaining airborne plat-
+forms above possible SLBM launch locations far from ABI support bases for long periods
+of time.
+46. Boost-Phase Intercept Systems for National Missile Defense, op. cit., p. xxv–xxvi.
+47. The present study also made several assumptions that reduce the ABI intercept
+range relative to the APS results, namely, assuming lofted ICBM trajectories and re-
+quiring that the intercept occur far enough in advance of the nominal boost time to
+account for 5 percent ﬂuctuations in the missile’s burn time.
+48. Lofting or depressing the trajectory is assumed to occur with the missile ’s second
+stage. Minimum energy trajectories use premature thrust termination so the payload
+has sufﬁcient speed just to reach the target.
+49. When a booster is intercepted its thrust should drop to zero quickly due to the
+booster’s collapse. The resulting forces will scatter missile debris in a roughly elliptical
+zone as opposed to a single point on the Earth’s surface. The size of this elliptical impact
+zone will depend on the velocity imparted to the various fragments during the impact.
+Some of this debris will burn up upon reentry into the earth’s atmosphere. However, the
+remainder may scatter over a wide area with large pieces, including possibly the intact
+payload, landing close to the ranges indicated in Figures A7 and A8.
+APPENDIX A
+BALLISTIC MISSILE CHARACTERISTICS
+This Appendix describes the ballistic missile characteristics that are impor-
+tant for analyzing boost-phase ballistic missile defense effectiveness. Table A1
+lists the characteristics of a variety of notional medium, intermediate, and
+intercontinental-range ballistic missiles that could pose a threat to U.S. forces
+overseas or the U.S. homeland. These estimates are based on open sources for
+missiles that actually exist (i.e., Scud B, Scud C, No Dong, and Taepo Dong 1 mis-
+siles). The Taepo Dong 2, Shahab 5, and the three ICBMs are notional designs
+that span a range of possible future intermediate- and intercontinental-range
+ballistic missile threats. The 2-stage liquid-propellant ICBM is designed to have
+a burn time of approximately 300 seconds— comparable to that of ﬁrst genera-
+tion U.S. and Soviet liquid-propellant ICBMs. With a launch weight of 110,000
+kg, this missile has a nominal range of 11,500 km with a payload of 400 kg.
+=== page 61 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Table A1: Ballistic missile characteristics.
+No Taepo Taepo 290-sec 240-sec 180-sec
+Scud B Scud C Dong Dong 1 Dong 2 Shahab 5 ICBM ICBM ICBM
+Nominal range (km) 300 610 1,340 1,920 3,680 4,750 10,700 10,700 14,500
+Payload (kg) 985 700 1,000 1,000 1,000 500 400 300 800
+Launch mass (kg) 5,900 7,200 20,000 25,400 69,000 70,500 110,000 69,000 45,800
+Boost time (sec) 61 85 95 165 193 199 290 240 180
+Max burnout speed 1.6 2.3 3.4 3.7 5.0 5.4 7.1 7.1 7.5
+(km/sec)
+1st Stage
+Stage mass (kg) 4,915 6,500 19,000 19,000 50,000 52,000 95,000 50,000 29,000
+Prop. fraction 0.72 0.77 0.85 0.85 0.82 0.83 0.87 0.82 0.89
+CS area (m2) 0.61 0.61 1.13 1.13 4.52 4.52 3.14 4.52 2.0
+Nozzle area (m2) 0.15 0.15 0.28 0.28 1.13 1.13 1.54 1.13 1.3
+Vac. thrust (kN) 145 153 429 429 1,315 1,315 1,655 1,315 1,225
+Vac. isp (sec) 257 267 257 257 263 263 293 263 291
+Burn time (sec) 61 85 95 95 80 85 143 80 60
+2nd Stage
+Stage mass (kg) — — — 5,400 18,000 18,000 15,000 18,000 12,000
+Prop. fraction — — — 0.74 0.83 0.84 0.83 0.83 0.87
+CS area (m2) — — — 0.61 1.39 1.39 1.77 1.39 1.77
+Nozzle area (m2) — — — 0.15 0.35 0.35 0.44 0.35 0.87
+Vac. thrust (kN) — — — 145 350 350 240 350 495
+Vac. isp (sec) — — — 257 270 270 290 270 290
+Burn time (sec) — — — 70 113 114 147 113 60
+3rd Stage
+Stage mass (kg) — — — — — — — 700 4,000
+Prop. fraction — — — — — — — 0.80 0.84
+CS area (m2) — — — — — — — 0.61 1.54
+Nozzle area (m2) — — — — — — — 0.15 0.75
+Vac thrust (kN) — — — — — — — 30 160
+Vac. isp (sec) — — — — — — — 250 290
+Burn time (sec) — — — — — — — 47 60
+61
+=== page 62 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+62 Wilkening
+Smaller missiles could achieve the same range with smaller payloads. However,
+modern liquid-propellant ICBMs (e.g., the Chinese DF-5) have boost times on
+the order of 230–250 seconds. To represent a missile of this class, Table A1 in-
+cludes a 240-second ICBM, based in this case on the Taepo Dong 2 IRBM with a
+solid-propellant third stage to give it a range of approximately 11,500 km with
+a 300 kg payload— the assumed minimum payload for a small ﬁrst generation
+nuclear (ﬁssion) weapon. Finally, the 180-second solid-propellant ICBM is mod-
+eled after the Russia SS-25 ICBM. The payload has been reduced from that of
+the SS-25 to give the missile sufﬁcient range to strike the entire United States
+from launch locations in North Korea or Iran. This solid-propellant ICBM is in-
+cluded to reﬂect the impact of an obvious countermeasure to boost-phase missile
+defense, namely, shortening the boost time with faster burning solid-propellant
+rocket motors. How soon emerging missile states might acquire solid-propellant
+ICBMs is not clear, though it depends no doubt on the extent to which foreign
+assistance is forthcoming from more advanced missile states. For the purpose
+of this study, it has been assumed that emerging missile states cannot develop
+“fast-burn” solid-propellant ICBMs within the next decade or two with boost
+times on the order of 100 –130 seconds, which were hypothesized as a Soviet
+responsive threat to U.S. space-based ballistic missile defenses in the mid-1980.
+Figure A1 shows a range-altitude plot for the Scud B, Scud C, and No Dong
+boost phases. The Scud B burns out in 61 seconds at an altitude of about 27 km.
+The Scud C modeled in this analysis has a range of 615 km with a payload
+of 700 kg, a burn time of 85 seconds, and a burnout altitude of approximately
+50 km. The No Dong burns out in 95 seconds at an altitude of approximately
+70 km. Figure A2 illustrates intermediate-range, two-stage, Taepo Dong 1 and
+Taepo Dong 2 boost phases with nominal burn times of 165 and 193 seconds, and
+burnout altitudes of approximately 150 and 210 km, respectively, along with
+the three stage, 240-second ICBM with a burnout altitude of approximately
+190 km for a maximum-range trajectory.
+Figure A3 illustrates the variation in ICBM burnout altitudes that occur for
+lofted, minimum energy, and depressed trajectories against cities at different
+range from a North Korean launch location for the 240-second ICBM.48 As one
+can see, burnout altitude variations are greater against targets at short ranges
+and for eastward trajectories (due to the larger component of the Earth’s rota-
+tional speed) because more propellant exists for lofting or depressing the tra-
+jectory. For example, North Korean launches against Anchorage, Alaska have
+the largest variation, while launches against Boston show the least. Note that
+the variation in burnout altitudes for ICBMs can be as large as 350 km.
+Figure A4 illustrates the acceleration pro ﬁles for several medium and
+intermediate-range ballistic missiles. The No Dong has the highest peak
+=== page 63 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 63
+Figure A1: Scud B, Scud C, and no Dong boost phases.
+Figure A2: Taepo Dong 1, Taepo Dong 2, and ICBM boost phases.
+=== page 64 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+64 Wilkening
+Figure A3: 240-sec ICBM burnout points for different trajectories.
+Figure A4: Acceleration proﬁles for medium-range ballistic missiles.
+=== page 65 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 65
+Figure A5: Acceleration proﬁles for ICBMs.
+Figure A6: Missile range degradation vs. premature thrust termination.
+=== page 66 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+66 Wilkening
+acceleration among those modeled in this analysis, reaching nearly 11 g at
+its maximum. Typical accelerations several seconds before booster burnout are
+between 5 g and 6 g. Figure A5 illustrates the acceleration proﬁle for the three
+ICBMs modeled in this analysis. While peak ICBM accelerations may reach
+10 g, typical accelerations several seconds before burnout are in the range 6–8g .
+The high acceleration at the end of the boost phase imparts considerable ve-
+locity to the payload and, hence, contributes substantially to a missile’s range,
+especially for intercontinental-range missiles due to the earth’s curvature. Con-
+versely, if a missile’s thrust is terminated prematurely by several seconds, its
+range is degraded substantially. Figure A6 illustrates this range degradation
+as a function of the premature thrust termination in seconds. Terminating a
+ballistic missile’s thrust prematurely by 5 seconds typically decreases its range
+by 15 to 30 percent.
+Figures A7 and A8 illustrate the range shortfall for ICBM trajectories
+launched from North Korea and Iran, respectively, towards the United States.
+Intercepting North Korean or Iranian ICBMs two to four seconds before
+booster burnout causes the payload to fall north of the U.S.-Canadian border.49
+Figure A7: North Korean ICBM trajectories toward the United States.
+=== page 67 ===
+TJ1121-05 SGS.cls June 4, 2004 15:35
+Airborne Boost-Phase Ballistic Missile Defense 67
+Figure A8: Iranian ICBM trajectories toward the United States.
+Intercepting North Korean or Iranian ICBMs approximately 10 seconds be-
+fore burnout ensures that the payload will fall short of North America, except
+for North Korean trajectories that pass over Alaska. Intercepts that occur 10 to
+30 seconds before burnout would cause the payload to fall relatively harmlessly
+into the Artic or North Atlantic Oceans, except for North Korean trajectories
+that pass over Alaska and Iranian trajectories that pass over Greenland. North
+Korean ICBMs intercepted more than 30 seconds before burnout would cause
+the debris to fall in Siberia. Similarly, Iranian ICBMs intercepted 25 –30 sec-
+onds before burnout would cause the payload and debris to land in northern
+Russia or Europe. Given uncertainties in the exact ICBM burnout time (due to
+uncertainties in the exact launch time, physical variations in a missile ’s burn
+rate, and trajectory variations) that cannot be eliminated prior to launching a
+boost-phase interceptor, it will be very dif ﬁcult if not impossible to intercept
+the target booster within the narrow time window that guarantees that debris
+will not fall on friendly territory.

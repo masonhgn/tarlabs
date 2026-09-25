@@ -1,0 +1,1326 @@
+=== page 1 ===
+Science & Global Security, 23:191–219, 2015
+Copyright C© Taylor & Francis Group, LLC
+ISSN: 0892-9882 print / 1547-7800 online
+DOI: 10.1080/08929882.2015.1087242
+Hypersonic Boost-Glide
+Weapons
+James M. Acton
+Nuclear Policy Program, Carnegie Endowment for International Peace, Washington,
+DC, USA
+The United States, Russia and China are developing hypersonic boost-glide vehicles.
+A simple model of their trajectory is developed by assuming that the vehicle does
+not oscillate during the transition to equilibrium gliding. This model is used to ana-
+lyze U .S. Department of Defense data on test ﬂights for the Hypersonic Technology
+Vehicle-2. This glider’s lift-to-drag ratio—a key performance parameter—is estimated
+to be 2.6. The model is also used to calculate the tactical warning time that a boost-
+glide attack would afford an adversary . Other aspects of boost-glide weapons’ military
+effectiveness are explored. Approximate calculations suggest that, compared to exist-
+ing non-nuclear weapons, boost-glide weapons could penetrate more deeply but would
+be less effective at destroying silos. The distance at which a boost-glide weapon armed
+with a particle dispersion warhead could destroy a mobile missile is also calculated; it
+is expected to be signiﬁcantly larger than for an explosive warhead.
+INTRODUCTION
+Eighty years after they were ﬁrst conceived, hypersonic boost-glide weapons
+are approaching realization. The idea of using a rocket to launch a re-entry ve-
+hicle (RV) capable of gliding for extended distances at hypersonic speeds (faster
+than ﬁve times the speed of sound) dates to the 1930s, when it was proposed
+by the Austrian aeronautical engineer Eugen S ¨anger .1 Developments in rock-
+etry following World War II spurred the United States to explore the concept
+in the late 1950s and early 1960s, culminating in a brief—but extremely well-
+funded—project to develop the Dyna-Soar , a manned intercontinental glider .
+Subsequently , in the 1970s and 1980s, the United States revived the concept
+Received 19 September 2014; accepted 5 March 2015.
+Address correspondence to James M. Acton, Nuclear Policy Program, Carnegie Endow-
+ment for International Peace, 1779 Massachusetts Avenue, NW , Washington, DC 20036-
+2103, USA. E-mail: jacton@ceip.org
+Color versions of one or more of the ﬁgures in the article can be found online at
+www .tandfonline.com/gsgs.
+191
+=== page 2 ===
+192 Acton
+with research into rather less ambitious maneuvering re-entry vehicles capa-
+ble of gliding for hundreds, rather than thousands, of kilometers. 2
+The current American attempt to develop boost-glide weapons dates to
+2003 when the administration of George W . Bush initiated a program that
+became known as Conventional Prompt Global Strike (CPGS) to develop fast,
+long-range, non-nuclear weapons.3 The United States has since tested two glid-
+ers: the Hypersonic Technology Vehicle-2 (HTV -2) and the Advanced Hyper-
+sonic Weapon (AHW).
+The HTV -2, which had a planned range of 17,000 km, was tested in April
+2010 and August 2011. Both tests were terminated prematurely and this pro-
+gram has now been effectively canceled. Instead, current U .S. efforts are fo-
+cused on the AHW . According to a 2008 study by the National Research Coun-
+cil of the U .S. National Academies, the AHW would have a range of about
+8,000 km and might, therefore, be more accurately described as a non-global
+Conventional Prompt Global Strike weapon. 4 The AHW was tested success-
+fully in November 2011. A second test, in August 2014, failed because of a
+booster problem.5
+Recently , it has become clear that the United States is not the only state
+with an interest in boost-glide weaponry . In January 2014, Beijing tested a
+boost-glide system for the ﬁrst time. 6 A second test, in August 2014 over a
+planned range of 1,750 km, appears to have ended in failure following a booster
+problem.7 There is some evidence that, unlike the United States, China’s goal
+is the delivery of nuclear weapons—although the overall scale and scope of the
+Chinese program remain extremely murky .8
+Senior Russian ofﬁcials have openly indicated an interest in developing an
+equivalent to Conventional Prompt Global Strike, though none has said un-
+ambiguously that Russia is currently doing so. 9 Meanwhile, Pavel Podvig, a
+well-respected observer of Russian strategic forces, has presented extensive
+evidence that Russia is currently engaged in a program to ﬂight test a hy-
+personic maneuverable re-entry vehicle. 10 This work, which has been on-going
+for more than a decade, was probably initiated for the purpose of developing
+a nuclear-armed re-entry vehicle capable of penetrating expanded U .S. ballis-
+tic missile defenses; whether it is now being applied to the development of a
+conventionally armed boost-glide system is unclear .
+While no particular boost-glide weapon concept is guaranteed to make it
+to deployment, the general trend is clear: there is resurgence of interest in this
+technology and, consequently , a signiﬁcant probability of deployments in the
+next decade or two.
+To assist in understanding the implications of this trend, this article
+seeks (i) to develop a simple mathematical framework for modeling boost-
+glide weapons; (ii) to infer the characteristics of cutting-edge systems; and (iii)
+to start exploring their military effectiveness. The ﬁrst section (Boost-Glide
+Physics Redux) presents a minimal model for boost-glide weapons, that is, the
+=== page 3 ===
+Hypersonic Boost-Glide Weapons 193
+simplest possible mathematical model that captures their essential behavior .
+This model is then used to analyze the HTV -2 ﬂight tests. The HTV -2 was stud-
+ied extensively in this article, even though it has effectively been canceled, be-
+cause it is the only glider about which a signiﬁcant quantity of technical data
+has been disclosed. Moreover , it appears to represent the absolute cutting-edge
+of research and is therefore an indicator of what kind of “high-end” capabilities
+might eventually be developed. Analysis of the HTV -2 also highlights some of
+the technical challenges associated with boost-glide weapons in general. The
+ﬁnal sections of this article, available in an online supplement, build upon the
+insights gained in the analysis of the HTV -2 to estimate how much warning
+time the target state of a boost-glide attack might receive and to explore the
+the ability of boost-glide weapons to destroy both hard and deeply buried tar-
+gets and dispersed mobile missiles.
+BOOST-GLIDE PHYSICS REDUX
+Overview
+A glider traveling through the atmosphere experiences a lift force, L,a n d
+a drag force, D. As this drag force depletes a glider’s internal energy , which
+has both a kinetic and gravitational potential component, the glider loses both
+speed and altitude. The distance over which it can stay aloft depends on L/D,
+that is, the glider’s lift-to-drag ratio. Typical L/D values depend on gliding
+speed, v, which can be conveniently expressed in terms of the Mach number ,
+M, deﬁned as the ratio of a vehicle’s speed to the speed of sound. 11
+Subsonic aircraft, for which M < 1, generally have lift-to-drag ratios of be-
+tween 14 and 17. 12 At typical cruising altitudes, they have enough internal
+energy , a majority of which is gravitational potential energy , to glide for a few
+hundred kilometers at most. By contrast, when v2 ≫ 2gh, where g is the ac-
+celeration due to gravity and h is altitude, the internal energy of a glider is
+dominated by its kinetic component and is much larger than for a subsonic
+glider , enabling it to glide much further . As derived in Appendix A (available
+in an online supplement), in this regime, which typically occurs when M /greaterorsimilar5
+(depending on altitude), the range of a glider , lglide, is given by
+lglide = re
+2
+L
+D ln
+( 1
+1 − (vi/ve)2
+)
+, (1)
+where vi is the glider’s initial speed, ve = √gre is the speed of a satellite in low
+Earth orbit, and re is the radius of the Earth.
+The effect on range of increasing a glider’s kinetic energy is, however , par-
+tially offset by a reduction in its lift-to-drag ratio. Speciﬁcally , a widely used
+relationship connecting the lift-to-drag ratio of an optimally designed glider ,
+=== page 4 ===
+194 Acton
+L/Dmax, to speed is 13
+L/Dmax = 4 + 12
+M . (2)
+This relationship is valid throughout the supersonic regime, when
+1 ≤ M < 5, and the hypersonic regime, when M ≥ 5. It is empirically deter-
+mined and is not a fundamental law; gliders with a lift-to-drag ratio somewhat
+higher than L/Dmax have been validated in experiments and by computer mod-
+eling. Nonetheless, this relationship does help scale the problem and indicates
+that, at very high speeds, a glider is unlikely to have a lift-to-drag ratio much
+above 4.
+Because the lift-to-drag ratios of hypersonic gliders are relatively mod-
+est, they must be boosted to very high initial speeds—a substantial fraction
+of ve—to stay aloft for thousands of kilometers. Such extremely high speeds
+create a range of complex engineering challenges. 14 The hypersonic aerody-
+namic regime is inherently complex and not nearly as well understood as the
+subsonic or supersonic regimes. Vast amounts of heat must be dissipated in a
+way that does not damage the glider’s aeroshell. In addition, high deceleration
+and plasma formation can interfere with the reception of GPS signals, which
+are used by U .S. boost-glide prototypes and would almost certainly be used by
+any deployed boost-glide weapon, thus complicating accurate navigation (al-
+though plasma formation is much more of a problem with terminally guided
+ballistic missiles than gliders). 15 Contemporary efforts to develop boost-glide
+weapons appear largely focused on solving these challenges.
+A standard exo-atmospheric gliding trajectory , used by the HTV -2 for ex-
+ample, is shown in Figure 1. The glider is boosted by a large rocket launched
+in a depressed trajectory . In ﬂight tests, the United States has used modiﬁed
+retired intercontinental ballistic missiles and sea-launched ballistic missiles.
+Between the end of the boost phase, at time t1, and the start of re-entry , at
+time t2, the glider separates from the launch vehicle. At time t3, shortly after
+re-entry , the glider executes a “pull-up” to transition into stable “equilibrium”
+gliding, in which the glider maintains almost level ﬂight and which begins at
+time t4.
+Alternatively , it is possible to launch the glider on such a highly depressed
+trajectory that it never leaves the atmosphere. This strategy appears to have
+been adopted for the AHW , which the National Research Council describes as
+“endoatmospheric.”16 In theory , if an endo-atmospheric booster is able to attain
+horizontal ﬂight at exactly the right altitude it could inject an RV straight into
+equilibrium gliding without the need for a pull-up. It does not appear , however ,
+as though the AHW test ﬂight involved this kind of direct injection. 17 So, in
+practice, the HTV -2 and AHW trajectories are probably quite similar after the
+start of the pull-up.
+=== page 5 ===
+Hypersonic Boost-Glide Weapons 195
+Figure 1: Schematic diagram of the different phases of an exo-atmospheric boost-glide
+weapon’s trajectory . The labels,tn, indicate the time at which each phase ends. For clarity ,
+radial distances are exaggerated relative to tangential distances, making it appear as
+though the booster’s trajectory is lofted, whereas it is actually depressed.
+In any case, the key to modeling the exo-atmospheric trajectory correctly is
+to understand how the glider avoids bouncing off the atmosphere on re-entry .
+After all, because atmospheric density increases rapidly with decreasing al-
+titude, the lift force experienced by an RV approaching the atmosphere at a
+shallow angle can increase sufﬁciently rapidly to send it back out into space. 18
+In this case, the RV skips along the atmosphere in a so-called phugoid tra-
+jectory . The theory of skip gliders has been studied extensively . However , it
+appears that they are not currently being pursued within the CPGS program.
+It is likely that the U .S. Department of Defense has decided to focus on equilib-
+rium gliding because it reduces the maximum heating rate and the maximum
+mechanical stress on an RV .19
+One possible way of preventing a glider from skipping off the atmosphere
+during re-entry is for it to rotate in such a way that it generates minimal
+lift. Indeed, a schematic diagram of the HTV -2 ﬂight plan released by DARPA
+clearly shows the glider re-entering the atmosphere with its ﬂat lower sur-
+face roughly perpendicular to its direction of travel, i.e., in a low-lift, high-drag
+conﬁguration that would tend to prevent skipping. 20 The same diagram shows
+that the HTV -2 then rotates so that its axis and velocity vector are aligned—a
+low-drag, high-lift conﬁguration suitable for gliding.
+If this rotation were to happen rapidly then the glider would not tran-
+sition smoothly into equilibrium gliding but would follow a rapidly oscillat-
+ing trajectory .21 Such oscillations would, as in the case of a skip glider , result
+from the rapidly increasing density of the atmosphere inducing a lift force that
+caused the glider to overshoot its equilibrium position. Although these oscil-
+lations would eventually decay , it seems likely that the designers of a practi-
+cal boost-glide vehicle would want them to be as highly damped as possible
+=== page 6 ===
+196 Acton
+(after all, if they have designed the vehicle for equilibrium gliding rather than
+skip gliding, then it is to avoid precisely this kind of transient behavior). In-
+deed, the DARPA schematic shows the glider bouncing just once during the
+pull-up. One potential way to dampen oscillations is to rotate the glider slowly
+so that the lift force increases gradually .
+The remainder of this section develops a minimal model of this trajectory .
+In keeping with this approach, the trajectory is assumed to contain no oscilla-
+tions during the pull-up. The result is a relatively simple model that is (largely)
+analytically tractable and hence easy to scrutinize. Ultimately , of course, it
+cannot compete for accuracy with more complex models that must be solved
+numerically . However , it is hoped that, by elucidating the basic design consid-
+erations of the HTV -2, this article will aid efforts by other non-governmental
+researchers to develop a more complex and accurate model.
+Mathematical Formalism
+The trajectory of an RV of mass m can, in two-dimensions, be characterized
+by its speed, v, and path angle, θ, at any point. As shown in Figure 2, θ is the
+angle between an RV’s velocity vector and the local horizontal. By deﬁnition,
+θ> 0 when the velocity vector is below the horizontal (i.e., the RV is travel-
+ing downwards). In addition to gravity , the RV experiences two forces due to
+interactions with the atmosphere: a drag force D = CDAρv2/2, which acts in
+the opposite direction to its velocity , and lift force L = CLAρv2/2, which acts
+perpendicular to its velocity , where CD and CL are the coefﬁcients of drag and
+lift, A is the cross-sectional frontal area of the RV , and ρ is the density of the
+atmosphere. CD, CL,a n d A all depend on the glider’s angle of attack, that is,
+the angle between its long axis and the velocity vector .
+In developing a simple mathematical model, the glider is treated as a
+point-like particle (which involves assuming inter alia that its center of mass
+and center of pressure are the same) with a ballistic coefﬁcient of β = m/CDA
+and a lift-to-drag ratio of L/D. Both these quantities are allowed to vary along
+the trajectory as the angle of attack changes. Assuming that the Earth is a
+perfectly spherical, non-rotating body , the relevant equations of motion are 22
+− dv
+dt =− g sin θ + ρ
+2β v2 (3)
+v
+cos θ
+dθ
+dt = g − v2
+r − ρ
+2βcos θ
+L
+D v2, (4)
+where t is time and r is the distance of the RV from the center of the Earth. Be-
+cause any changes in r are very small compared to re = 6,400 km, it is standard
+practice to treat r = re and g = 9.8m s−2 as constants.
+=== page 7 ===
+Hypersonic Boost-Glide Weapons 197
+Figure 2: Schematic diagram illustrating the forces acting on a re-entry vehicle traveling
+through the atmosphere. Note that the angle θ , between the vehicle’s velocity vector and
+the local horizontal, is positive when the vehicle is traveling downwards. Other quantities are
+deﬁned in the main text. (Not drawn to scale.)
+The downrange distance traveled by the RV , x, and its altitude above the
+Earth’s surface,h, are also of interest. The former is related to v and θ by
+dx
+dt = v cosθ, (5)
+whereas the latter is given by
+dh
+dt =− v sinθ. (6)
+In order to solve these equations, it is necessary to model the variation
+of atmospheric density with altitude. The relationship between density and
+altitude can conveniently be expressed as
+ρ = ρ0 e−h/H, (7)
+where ρ0 = 1.23 kg m−3 is atmospheric density at sea level and H,w h i c hi s
+a function of h, is the so-called scale height of the atmosphere. In order to
+make analytic progress, however , it is necessary to take H as a constant
+(which is physically equivalent to assuming the atmosphere is isothermal).
+For 30 km < h < 100 km, the relevant altitude range for boost-glide vehicles,
+ρ0 = 1.46 kg m−3 and H = 6,970 m yield the best ﬁt with data from the 1976
+U .S. standard atmosphere.23 Using this assumption, it is possible to develop
+an approximate analytic solution to Eq. (3) and Eq. (4) by breaking the trajec-
+tory down into a series of phases, as shown in Figure 1. The variables t, θ, v, x,
+and h at the end of phase n are given by tn, θn, vn, xn,a n d hn respectively . The
+phases are as follows:
+=== page 8 ===
+198 Acton
+Phase 1: Boost phase.
+The rocket is launched at t0 = 0, x0 = 0, h0 = 0, θ0 =− 90◦ and v0 = 0. Burn-
+out occurs at the end of this phase.
+Phase 2: Exo-atmospheric phase.
+In this phase, atmospheric forces on the RV are neglected. The trajectory
+in this phase is ballistic unless the RV is equipped with thrusters that it can
+use to re-enter the atmosphere sooner than it would otherwise have done.
+Phase 3: Direct re-entry.
+When the RV reaches an altitude h2, atmospheric forces can no longer be
+neglected and the RV starts to decelerate rapidly . It is assumed that, during
+this phase, the RV is at a large angle of attack, i.e., its ﬂat lower surface is ex-
+posed to the atmosphere, resulting in a large drag force and minimal lift. Dur-
+ing this phase, the ballistic coefﬁcient is assumed to be a constant, βS (where
+the subscript is meant to imply that β is “small”) and the lift-to-drag ratio is
+taken as zero. Numerical simulations of this kind of “direct re-entry” indicate
+that for θ2 > 5◦, it is a good approximation to treat θ as a constant. 24 If it is
+further assumed that gravity can be neglected relative to drag then standard
+analytic solutions exist. These solutions are summarized in Table 1 and their
+derivation is presented brieﬂy in Appendix A.
+Phase 4: Pull-up.
+In this phase, it is assumed that the RV gradually rotates into its high-
+lift, low-drag orientation, causing θ to decrease. For modeling purposes, it is
+assumed that there are no oscillations during the pull-up. Approximate solu-
+tions are derived in the following section and are also included in Table 1.
+Phase 5. Equilibrium gliding.
+Once θ ≈ 0, equilibrium gliding is established. In this phase the ballistic
+coefﬁcient is denoted by βL (where the subscript is meant to suggest that β is
+“large”) and the lift-to-drag ratio is L/D.B o t hL/D and βL are assumed to be
+constant during gliding. At the end of this phase, when the glider is a distance
+x5 downrange and close to the target, it uses its thrusters to exit the glide and
+impact on the target. Under the assumptions that θ ≪ 1 rad, d θ/dt ≈ 0, and
+g sinθ ≪ dv/dt, standard analytic solutions, which are summarized in Table 1
+and derived in Appendix A, can be obtained.
+Pull-up Phase
+At time, t3, the RV starts to execute a pull-up to enable the transition from
+direct re-entry , when θ = θ2, to equilibrium gliding, when θ ≃ 0. The pull-up
+=== page 9 ===
+Table 1: Equations describing the trajectory of a hypersonic glider during each of its three phases of endo-atmospheric ﬂight.
+Quantities not deﬁned in the table have already been deﬁned in the main text.
+Phase 2: Phase 3: Phase 4:
+Direct re-entry Pull-up Equilibrium gliding
+v and h v = v2 eδ exp
+(
+− Hρ0
+2βS sinθ2
+e−h/H
+)
+h3 − h = R L
+D
+[
+θ2
+( v3 − v
+v3
+)
+− 1
+2
+L
+D
+(
+1 + R
+re
+− gR
+v2
+3
+) ( v3 − v
+v3
+)2]
+h = H ln
+( ρ0re
+2βL
+L
+D
+v2
+v2
+e − v2
+)
+θ and vθ = θ2 θ2 − θ = L
+D
+(
+1 + R
+re
+− gR
+v2
+3
+)
+v3 − v
+v3
+sin θ = 2
+[
+re
+H
+L
+D
+( v
+ve
+)2]−1
+t and v or h t − t2 = h2 − h
+v2eδ sinθ2
++ H
+v2eδ sinθ2
+∞∑
+n=1
+δn
+n· n!
+(
+e−n(h−h2 )/H − 1
+)
+v = v3
+(
+1 − D
+L
+v3 (t − t3)
+R
+) v
+ve
+=
+exp
+[
+−2 D
+L
+g
+ve (t − t4)
+]
+− /Gamma14
+exp
+[
+−2 D
+L
+g
+ve (t − t4)
+]
++ /Gamma14
+x and t or h h2 − h = (x − x2) tan θ2 x − x3 = v3
+[
+(t − t3) − D
+L
+v3 (t − t3)2
+2R
+]
+x − x4 =− ve (t − t4) +
+re
+L
+D ln
+⎛
+⎝ 1 + /Gamma14
+exp
+[
+−2 D
+L
+g
+ve (t − t4)
+]
++ /Gamma14
+⎞
+⎠
+Deﬁnitions δ = Hρ0
+2βS sinθ2
+e−h2/H R = 2βL
+ρ (h4)
+D
+L /Gamma14 = 1 − v4/ve
+1 + v4/ve
+199
+=== page 10 ===
+200 Acton
+is the phase of motion that is least susceptible to an analytic treatment and,
+in contrast to the cases of equilibrium gliding and direct re-entry , relatively
+little attention has been paid to it in the open literature. Nonetheless, if the
+goal is to analyze empirical data, it is necessary to model the pull-up. Fortu-
+nately , because the pull-up represents only a relatively small fraction of the
+total trajectory and the speed change during the pull-up is relatively small,
+even a fairly crude model is likely to be adequate for current purposes. (That
+said, there is little question that analysis of the pull-up would beneﬁt from a
+numerical treatment).
+Mathematically , the oscillations that generally accompany the transition
+to equilibrium gliding are induced by the third term of the right-side of Eq.
+(4). Here it is assumed that, in order to dampen them, the glider is gradually
+rotated during the pull-up. If this rotation, which increases the ballistic coefﬁ-
+cient from βS to βL, can be timed so that the ratio ρ/β remains constant then
+the decrease in drag precisely cancels out the rapid increase in density . Be-
+cause the estimate for βL obtained in the next section is more reliable than the
+estimate for βS, ρ/β is set to ρ (h4) /βL in constructing the mathematical model
+of the pull-up. Nonetheless, the assumption that ρ/β is constant obviously im-
+plies that
+ρ (h3)
+βS
+= ρ (h4)
+βL
+. (8)
+Even if ρ/β remains constant, oscillations may still occur because the rota-
+tion also causes the glider’s lift-to-drag ratio to increase. In the absence of de-
+tailed information about the design of a glider , it is not possible to determine
+how this ratio varies during the pull-up. Moreover , if the lift-to-drag ratio is
+not a constant, the equations of motion become analytically intractable. Con-
+sequently , in keeping with the goal of obtaining a non-oscillatory trajectory ,
+the lift-to-drag ratio is simply taken as the constant L/D during the pull-up.
+If it is further assumed that θ ≪ 1 rad , throughout the pull-up and that the
+gravitational force is small compared to drag then Eq. (3) and Eq. (4) become
+dv
+dt =− ρ (h4)
+2βL
+v2 (9)
+and
+vdθ
+dt = g − v2
+re
+− ρ (h4)
+2βL
+L
+D v2. (10)
+Special case: High-speed solution
+In ﬁnding approximate solutions to these equations, it is instructive, in
+the ﬁrst instance, to consider the scenario where the pull-up takes place at
+speeds comparable to ve. In this case, the ﬁrst two terms on the right-hand
+=== page 11 ===
+Hypersonic Boost-Glide Weapons 201
+side of Eq. (10) cancel out. Then dividing Eq. (9) by Eq. (10) and noting that
+θ3 = θ2 (because the path angle is assumed to remain constant during the
+direct re-entry phase), it is straightforward to show that
+v = v3e− D
+L (θ2−θ). (11)
+Because the underlying equations of motion, Eq. (9) and Eq. (10), are only
+valid when both θ2 and θ are small, then θ2 − θ must also be small. In this case,
+Eq. (11) is equivalent to
+v
+v3
+= 1 − D
+L (θ2 − θ) . (12)
+Equation (11) was derived in the National Research Council study on
+CPGS by assuming that the glider’s trajectory during the pull-up is a circu-
+lar arc. 25 The framework presented here allows this assumption to be simply
+proved (as well as revealing that it is only valid when the pull-up takes place
+at speeds close to ve). Speciﬁcally , it is now convenient to deﬁne a new length-
+scale, R, such that
+R = 2βL
+ρ (h4)
+D
+L . (13)
+Using this deﬁnition, Eq. (10) can be re-expressed as
+dθ
+dt =− v
+R. (14)
+Noting that d θ/dt < 0, this result shows that the pull-up at high speeds is in-
+deed the arc of a circle with radius R.
+The dependence of θ on t can be found by combining Eq. (12) and Eq. (14)
+and again invoking the small angle approximation to yield
+θ = θ2 − v3 (t− t3)
+R . (15)
+Within the same approximation scheme, it also follows from Eq. (9) that
+v = v3
+(
+1 − D
+L
+v3 (t− t3)
+R
+)
+. (16)
+This result and Eq. (5) enable the downrange distance traveled during the
+pull-up to be shown to be
+x − x3 = v3
+[
+(t− t3) − D
+L
+v3 (t− t3)2
+2R
+]
+. (17)
+Finally , because the trajectory of the RV at high speeds is a circular arc, its
+change in altitude is given by h3 − h = R (cos θ − cos θ2). Using the small angle
+=== page 12 ===
+202 Acton
+approximation and Eq. (12), this expression becomes
+h3 − h = R L
+D
+[
+θ2
+( v3 − v
+v3
+)
+− 1
+2
+L
+D
+( v3 − v
+v3
+)2]
+. (18)
+General solution.
+If v ⁄∼ ve during the pull-up, Eq. (12), Eq. (15) and Eq. (18) cease to be
+valid, although Eq. (16) and Eq. (17) do remain valid at any speed. It is pos-
+sible, however , to obtain a more general analytic solution that is valid at any
+speed. Speciﬁcally , the dependence of θ on v can be found by dividing Eq. (9) by
+Eq. (10) to yield a differential equation with the solution
+θ2 − θ = L
+D
+[
+gR
+2
+(
+1
+v2
+3
+− 1
+v2
+)
++
+( R
+re
++ 1
+)
+ln
+(v3
+v
+)]
+. (19)
+Because this result is only valid when θ2 − θ is small, then the fractional
+change in speed during the pull-up must also be small. In this case, linearizing
+(19) in the small parameter (v3 − v) /v3 gives
+θ2 − θ = L
+D
+(
+1 + R
+re
+− gR
+v2
+3
+)
+v3 − v
+v3
+. (20)
+A useful check on the algebra is to note that in the high speed limit, when
+v ∼ ve throughout the pull-up, Eq. (6) becomes identical to Eq. (12).
+The change in altitude during the pull-up can be found by substituting Eq.
+(20) into Eq. (6), employing the small angle approximation, integrating and
+linearizing to give
+h3 − h = R L
+D
+[
+θ2
+( v3 − v
+v3
+)
+− 1
+2
+L
+D
+(
+1 + R
+re
+− gR
+v2
+3
+) ( v3 − v
+v3
+)2]
+. (21)
+Once again, the fact that, in the high speed limit, this result becomes equiva-
+lent to Eq. (18) provides conﬁdence in the derivation.
+MODELING THE HTV-2 TEST FLIGHTS
+The HTV -2 ﬂight test program provides an opportunity to apply this model.
+Speciﬁcally , there is enough quantitative data to estimate certain properties of
+the glider including, most importantly , its lift-to-drag ratio. Moreover , because
+not all of the available data needs to be used in estimating the model’s param-
+eters, its ﬁdelity can be tested by comparing its output to the remaining data
+points.
+When the HTV -2 test program was initiated, ﬂights along two differ-
+ent trajectories, called “A” and “B”, were planned. 26 Each route started from
+=== page 13 ===
+Hypersonic Boost-Glide Weapons 203
+Vandenberg Air Force Base in California and the planned impact point was
+7,800 km away in the Paciﬁc Ocean near Illeginni Island, which is part
+of Kwajalein Atoll in the Republic of the Marshall Islands and lies ap-
+proximately south-west of the launch site. The A route was a more-or-less
+straight line between these locations. The B route, which was intended to
+test the glider’s midcourse maneuverability , was to involve the glider ﬁrst
+heading almost due west before turning to approach the target from the
+north.
+The ﬁrst test ﬂight, which took place on 22 April 2010 along the A route,
+was terminated prematurely after the vehicle began to rotate uncontrollably .
+As a result, the A route was also used for the second ﬂight test on 11 August
+2011. Again, this test was terminated early after the glider’s aeroshell was
+damaged by heating. 27 No more HTV -2 ﬂight tests have taken place since then
+so the B route has never been attempted.
+Quantitative information about the test ﬂights is available from ﬁve
+sources:
+• The Environmental Assessment for Hypersonic Technology Vehicle 2 Flight
+Tests, which was prepared by the Space and Missile Systems Center and
+published in 2009, gives a range of altitudes at which the HTV -2 was to
+start its glide ( h4) and, more importantly , a single altitude at which it was
+to leave a gliding trajectory to approach the target ( h5).28
+• A presentation given by a DARPA employee at the National Institute of
+Aerospace on 17 June 2009 contains a detailed map of both the A and B
+trajectories on which various parameters are marked, including the total
+endo-atmospheric ﬂight time ( t5 − t2), and the speed ( v2) and path angle
+(θ2) of the glider at the “pierce point” (the point at which the RV re-enters
+the atmosphere). 29 The map also states the transverse distance that was
+to have been ﬂown during the B ﬂight. The relevant picture is reproduced
+here in Figure 3.
+• In April 2010, the website of Aviation Week published a second map, similar
+to that shown in Figure 3, which was reportedly included in a presentation
+given by a senior DARPA ofﬁcial in December 2009. 30 On this map, arrows
+along the A and B trajectories indicate the time after launch at which the
+RV re-enters the atmosphere ( t2) and begins to glide ( t4). The locations of
+the arrows also allow the distances traveled between re-entry and the end
+of the pull-up ( x4 − x2), and between re-entry and the end of the glide phase
+(x5 − x2) to be estimated—although such estimates have large associated
+errors because the positions of the arrows appear to be approximate.
+• According to the DARPA website, “139 seconds of Mach 22 to Mach 17 aero-
+dynamic data” was collected during the 2010 test. 31 This statement implies
+=== page 14 ===
+204 Acton
+Figure 3: Map from a presentation given by a DARP A employee in June 2009 showing the
+ﬂight paths for the planned HTV-2 test ﬂights, along with some data about those ﬂights. Note
+that γ and −V, as used in the ﬁgure, appear to be equivalent to θ and v respectively , as
+used in this article.
+that at time ti = t2 + 139 s, the vehicle’s speed,vi, was 17 vs (hi), where vs (h)
+is the speed of sound at altitude h,a n dhi was the vehicle’s altitude att = ti.
+• Notiﬁcations to Mariners , provided ahead of each of the tests, provide co-
+ordinates for the drop zones of each of the booster rocket’s stages. 32 As
+described further in the companion article by David Wright (in this is-
+sue), these data are consistent with atmospheric re-entry taking place at
+h2 = 100 km, which is a common deﬁnition of the altitude of the pierce
+point. That said, the uncertainty in h2 must be regarded as signiﬁcant.
+A Flight
+All the available data about the A ﬂight is summarized in Table 2. By
+ﬁtting the model set out in Table 1 to this data, the lift-to-drag ratio and other
+characteristics of the HTV -2 can be estimated.
+The details of the ﬁtting process, which involves solving a set of ordi-
+nary , non-linear , simultaneous equations, are described further in Appendix B
+=== page 15 ===
+Hypersonic Boost-Glide Weapons 205
+Table 2: Summary of known information about the A ﬂight test. The ﬁgures in
+parentheses are subject to signiﬁcant uncertainties and are not used in ﬁtting the
+model to the data.
+n tn (s) θn (deg) hn (km) vn (ms−1) xn − x2 (km)
+2 435 5.03 100 6,010 0
+3 5.03
+4 620 (45.7–76.2) (1,200)
+5 1,798 30.5 5,900
+additional information: v(574 s) = 17vs (h(574 s))
+(available in an online supplement). Because of the number of unknowns, two
+of the data in Table 2 do not need to be used in ﬁtting the model. Because only
+a wide range is available for h4, this quantity is not used. Likewise, x4 − x2 is
+not used since the fractional uncertainty associated with this quantity is par-
+ticularly large. To enhance numerical stability , the four parameters, L/D, βS,
+βL,a n d R, are treated as independent in the ﬁtting process (the implications
+of this assumption are discussed further below).
+Selected results of the ﬁtting process—estimates for L/D, βS, βL,a n d
+R—are shown in Table 3. The ﬁtting process also yields estimates for t3, h3,
+v3, hi, h4, v4, θ4,a n d v5. From these results, the equations in Table 1 can be
+used to calculate the glider’s speed, altitude, path angle and downrange dis-
+tance at any time. Using this procedure, the model’s predictions for the speed
+and altitude of the glider as a function of downrange distance are shown in
+Figure 4.
+A number of the model’s predictions are consistent with information not
+used in the ﬁtting process, helping to build conﬁdence in its ﬁdelity . Specif-
+ically , the model’s predictions for h4 and x4 − x2, which are also shown in
+Table 3, compare well to the values shown in parentheses in Table 2. In addi-
+tion, the estimate of βL = 13,000 kg m−2 seems reasonable on physical grounds
+as it is very similar to estimates for the ballistic coefﬁcient of modern ICBM
+RVs.33
+Table 3: Estimated parameters for the A test ﬂight, obtained by ﬁtting the model to
+the data in Table 2.
+L /D 2.6
+βS 7.0k gm−2
+βL 13,000 kg m−2
+R 4.9 × 103 km
+x4 − x2 1,100 km
+h4 47 km
+=== page 16 ===
+206 Acton
+Figure 4: Plots of calculated speed, v (top ﬁgure, in ms −1), and altitude, h (bottom ﬁgure, in
+km), against downrange distance from atmospheric re-entry , x − x2 (in km, measured along
+the trajectory) for the two HTV-2 test ﬂights. The circular markers indicate increments of 100
+seconds after re-entry . The dashed lines show the start of the pull-up and the dotted lines
+show the start of equilibrium gliding.
+Another important test of the ﬁdelity of the results is to ascertain how
+much they change as h2, which has a bigger uncertainty than any of the other
+input parameters, is varied. Reassuringly , increasing or decreasing h2 mod-
+estly does not lead to signiﬁcant changes. For example, increasing h2 from
+100 km to 110 km causes L/D to increase from 2.6 to 2.7. The one exception
+to this trend is βS, which increases by a factor of 3 with the same variation in
+h2. Meanwhile, decreasing h2 below 97 km causes βS to change sign (which is
+obviously unphysical). The uncertainty in βS is hardly surprising. The direct
+re-entry phase in the A ﬂight is estimated to be very short—just 12 seconds.
+As a result, changes in βS should affect the trajectory much less than changes
+in, say ,βL or L/D. The estimate for βS is, therefore, signiﬁcantly less reliable
+than the other values given in Table 3.
+Moreover , the estimate forβS is an order-of-magnitude smaller than might
+be expected on physical grounds. In the direct re-entry phase, when the HTV -2
+=== page 17 ===
+Hypersonic Boost-Glide Weapons 207
+is at a large angle of attack, it presents its relatively ﬂat lower surface to the
+oncoming air . If this surface is modeled as a ﬂat sheet of area AS at an angle
+φ to the glider’s velocity vector then, using a Newtonian approximation, the
+HTV -2’s ballistic coefﬁcient can be estimated as34
+βS = m
+2ASsin3φ
+. (22)
+If the HTV -2’s lower surface is modeled as an isosceles triangle of height 5 m
+and width 2 m (so the glider can comfortably enough ﬁt into the fairing of the
+Minotaur IV Lite launch vehicle 35)t h e nAS = 5m 2. This value, along with the
+estimate that m = 1,000 kg as discussed in the companion article by Wright,
+implies that βS > 100 kg m−2, a factor of 10 or so bigger than the model’s pre-
+diction. This failure is probably associated with the simpliﬁcation of assuming
+that there is no oscillatory behavior during the pull-up. If the model permitted
+such behavior , it seems likely that more of the glider’s speed would be lost dur-
+ing the pull-up, resulting is less deceleration during the direct re-entry phase
+and hence a larger value of βS.
+Finally , as noted above, the ﬁtting process treats L/D, βS, βL,a n d R as
+independent. In fact, according to the model, these four parameters are not
+independent but should be related by Eq. (8) and Eq. (13). Seeing how closely
+the results shown in Table 3 adhere to these relationships is another important
+test. Speciﬁcally , using the values of L/D and βL shown in this table, Eq. (8)
+predicts that βS should be 17 kg m −2, whereas Eq. (13) predicts that R should
+be 5.9 × 103 km. This latter value lies within about 20% of the value shown in
+Table 3, which is respectable given the crudeness of the model. The fractional
+error associated with βS is larger , which is not surprising in light of the earlier
+ﬁnding that the estimates of βS produced by this method are not reliable.
+Overall, the available evidence suggests that the model provides a physi-
+cally reasonable description of the HTV -2’s trajectory , except during early endo-
+atmospheric ﬂight, with the consequence that its estimate for βS should not be
+considered reliable.
+B Flight
+Unlike the A ﬂight, the B ﬂight was intended to involve the glider travel-
+ing a signiﬁcant cross-range distance of about 2 ,300 km.36 A glider like HTV -
+2 can move in a transverse direction by banking, that is, rotating about its
+axis by an angle ψ. Banking in this way creates a force of magnitude L sinψ
+perpendicular to the glider’s velocity and causes its trajectory to curve, as
+shown in Figure 5. Simultaneously , it reduces the lift force on the glider from L
+to L cosψ. In fact, within the approximation scheme in which they are valid, the
+gliding equations shown in Table 1 remain unchanged when the glider banks,
+except for the replacement of L with L cosψ.37
+=== page 18 ===
+208 Acton
+Figure 5: Motion of and forces acting on a glider banking at an angle ψ to the vertical. The
+main ﬁgure shows the view from above. The inset shows a cross section. Other quantities are
+deﬁned in the text.
+Under the assumption that Earth’s curvature in the transverse direction
+can be neglected (that is, the radius of curvature of the glider’s trajectory is
+much smaller than the radius of the Earth), then a new set of coordinates,
+(X, Y), can be deﬁned, where the X-axis lies parallel to the glider’s velocity at
+the start of the glide phase, as is also shown Figure 5. The glider’s position in
+the X-Y plane at time t is then given by
+X (t) =
+∫ t
+t4
+dt′vb
+(
+t′)
+cos
+[
+ω
+(
+t′)]
+, and (23)
+Y (t) =
+∫ t
+t4
+dt′vb
+(
+t′)
+sin
+[
+ω
+(
+t′)]
+, (24)
+where ω (t) is the angle between the glider’s velocity the X-axis, and the speed
+of the glider while banking, vb (t), is given by
+vb (t) = ve
+exp
+[
+−2 D
+Lcosψ
+g
+ve (t− t4)
+]
+− /Gamma14
+exp
+[
+−2 D
+Lcosψ
+g
+ve (t− t4)
+]
++ /Gamma14
+. (25)
+As derived in Appendix A, ω (t) can be shown to be 38
+ω (t) =− L
+D sinψ ln
+[vb (t)
+v4
+]
+. (26)
+These results can be used to analyze the B ﬂight and, most importantly , pre-
+dict the cross-range distance that was to be traversed. This result can then be
+compared to the ﬁgure given by DARPA.
+Table 4 shows all the available data about the B ﬂight. Once again, h4 and
+x4 − x2 are not used in ﬁtting the model’s parameters to this data. In modeling
+this ﬂight, it is assumed that the RV does not bank during the pull-up but that,
+=== page 19 ===
+Hypersonic Boost-Glide Weapons 209
+Table 4: Summary of known data about the B ﬂight test. The ﬁgures in parentheses
+are subject to signiﬁcant uncertainties and are not used in ﬁtting the model to the
+data.
+n tn (s) θn (deg) hn (km) vn (ms−1) xn − x2 (km)
+2 376 3 100 7,170 0
+33
+4 606 (45.7–76.2) (1,900)
+5 1,785 30.5 7,200
+as soon as gliding starts, it rotates quickly . It is further assumed that L/D and
+βL for the B ﬂight are the same as for the A ﬂight.
+Using these assumptions, a procedure similar to the one employed to ﬁt
+the model to the A ﬂight can then be used to extract ψ, βS,a n d R as well
+as v (x) and h (x) for the B trajectory—as shown in Table 5 and Figure 4. It
+should be noted that the assumption that θ is constant during direct re-entry
+is questionable for the B ﬂight because θ2 < 5◦. However , given that the direct
+re-entry phase represents only a relatively small part of the whole trajectory ,
+the consequences of this assumption breaking down should not be too severe.
+From Table 5 it can be seen that, once again, the estimated values for h4
+and x4 − x2 are consistent with the available data. The values of βS obtained for
+the A and B ﬂights are also essentially the same, given the signiﬁcant uncer-
+tainty in both estimates. 39 The ﬁnal check, as before, is to compare the value of
+R predicted by Eq. (13) to the one found by the ﬁtting process. Here the agree-
+ment turns out to be even better than for the A ﬂight. Speciﬁcally , Eq. (13) pre-
+dicts that R should be 7 .5 × 103 km, which is in remarkably good agreement
+with the value shown in Table 5.
+This ﬁtting process also estimates the banking angle, ψ,t ob e3 6◦.W i t ht h i s
+information, the shape of the RV’s trajectory in the X-Y plane during the glide
+phase can be evaluated numerically from Eq. (23) and Eq. (24) and is plotted in
+Figure 6. As can be seen from this ﬁgure, the model predicts that, at the end of
+its ﬂight at time t5, the glider should have traveled 2 ,000 km in the Y -direction.
+Table 5: Estimated parameters for the B test ﬂight, obtained by ﬁtting the model to
+the data in Table 4.
+ψ 36◦
+βS 10 kg m−2
+R 8.0 × 103 km
+x4 − x2 1,400 km
+h4 49 km
+=== page 20 ===
+210 Acton
+Figure 6: Plot of the calculated trajectory of the B ﬂight in the X-Y plane during the glide
+phase. The cross shows the planned end of the ﬂight. The dashed line shows the
+continuation of the trajectory beyond this point. The circular markers indicate increments of
+100s. The X- and Y-directions are deﬁned, respectively , to be parallel and perpendicular to
+the glider’s velocity at the start of the glide. Note that the X and Y axes, which are both
+marked in km, are not drawn to the same scale.
+Pleasingly , this estimate is within 15% of the stated value of 2 ,300 km and
+provides more evidence that estimates of L/D and βL are reliable.
+More qualitatively , the shape of the trajectory shown in Figure 6 is similar
+to the published trajectory shown in Figure 3. The former does not, however ,
+“bend back” on itself at the very end as the latter does—although the model can
+produce this behavior . For example, if the trajectory of the B ﬂight is calculated
+beyond the planned end time at t5, shown by the dashed line in Figure 6, then
+the glider would reverse course.
+DISCUSSION
+The most important conclusion to be drawn from this analysis is that the HTV -
+2 has an estimated lift-to-drag ratio of 2.6. This number is similar to the value
+L/D = 2.2 used in the 2008 National Research Council study for sample cal-
+culations involving a generic hypersonic glider . 40 It appears, therefore, that
+the HTV -2 has a lift-to-drag ratio substantially below the theoretical maxi-
+mum predicted by Eq. (2). The reason is probably that heat management—not
+aerodynamics—is the limiting factor in determining L/D.
+This conclusion may , at ﬁrst sight, be slightly unexpected. After all, intu-
+itively , one might reason that heat management would become less challenging
+as L/D increases. Indeed, it follows from Eq. (S.23), in online Appendix A, that
+the total rate of heat production by a gliding RV is
+mg v
+L/D
+(
+1 − v2
+v2e
+)
+, (27)
+=== page 21 ===
+Hypersonic Boost-Glide Weapons 211
+which is inversely proportional to L/D, thus supporting the intuitive conclu-
+sion that as drag goes up, heat production also goes up.
+However , for thermal protection, what matters is not the total rate of heat
+production but the rate of heat absorption by the glider (as opposed to ab-
+sorption by the surrounding air). A key insight into atmospheric re-entry , ﬁrst
+understood in the 1950s, is that heat is absorbed more efﬁciently by an RV
+with a pointed front end or sharp leading edges. 41 However , thin wings with
+sharp leading edges are exactly what is needed to increase L/D. It seems likely ,
+therefore, that hypersonic gliders would tend to absorb heat more efﬁciently as
+their lift-to-drag ratio increases. The design of the HTV -2, with L/D ≈ 2.6, ap-
+pears to represent a compromise between long ranges (which are aided by a
+high L/D) and a low rate of heat absorption (which requires a low L/D).
+Even so, thermal protection remained a problem for the HTV -2. The 2011
+test was ended prematurely as a direct result of damage to the glider’s
+aeroshell caused by heating. Thermal protection challenges may also have
+contributed indirectly to the failure of the 2010 ﬂight test. Speciﬁcally , re-
+ducing a glider’s lift-to-drag ratio to simplify thermal protection requires it
+to be launched at a higher speed in order not to compromise range. Higher
+speeds, however , exacerbate the difﬁculty of control. Indeed, a review into the
+2010 ﬂight test concluded that “the most probable cause of the HTV -2 ﬂight
+anomaly was higher-than-predicted yaw , which coupled into roll thus exceed-
+ing the available control capability at the time of the anomaly .”42 Control would
+presumably have been easier at lower speeds.
+Even higher speeds than were planned for the B test would have been
+needed for the HTV -2 to meet its range goal of 17 ,000 km. Glide range can be
+estimated from Eq. (1). It is important to note that this result represents an
+upper bound for two reasons. First, it assumes that the glider remains aloft
+until its speed drops to zero. Second, it assumes that the glider travels in a
+straight line; in practice, maneuvering incurs a range penalty .
+The HTV -2 was due to start gliding in the B test at a speed of about
+6,100 ms−1. Had it simply traveled in a straight line, Eq. (1) predicts that
+it could have glided for a maximum distance of 7 ,500 km, implying a to-
+tal range of 11 ,700 km. To increase the range to 17 ,000 km, it follows from
+Eq. (1) that gliding would need to commence at a speed of 6 ,900 ms−1. In prac-
+tice, even higher speeds would be required to accommodate cross-range maneu-
+vering and to ensure that the weapon was traveling at a militarily useful speed
+when it reached the target. However , equilibrium gliding was not successfully
+achieved in the A test when the aim was to start gliding at “only” 5 ,500 ms−1.
+It is clear , therefore, that the HTV -2 program was facing signiﬁcant challenges
+at the time of its effective cancellation in 2012.
+Importantly , lofting the trajectory of the booster to lengthen the exo-
+atmospheric portion of the HTV -2’s trajectory appears to be ineffective at
+increasing range. Speciﬁcally , if the the booster is launched on a minimum
+=== page 22 ===
+212 Acton
+energy ballistic trajectory , the glider must pull-up through a much larger an-
+gle and loses so much speed while doing so that its glide phase is dramati-
+cally shortened. Because of the highly non-linear relationship between glide
+range and speed, encapsulated in Eq. (1), this effect can more than offset any
+lengthening of the ballistic portion of the trajectory . For example, in the B
+ﬂight, the glider was due to start the pull-up at 6 ,440 ms−1. If it were injected
+into the atmosphere at this speed from a minimum energy ballistic trajectory
+it would have a path angle of about 30 ◦ and, according to Eq. (20), would be
+slowed to only 2,900 ms−1 during the pull-up.43 So, although the weapon would
+now cover about 6 ,700 km before re-entry , it could only travel a maximum of
+1,200 km while gliding—shortening the weapon’s total range far below what
+was planned for the B test. Moreover , lengthening the glider’s exo-atmopsheric
+ﬂight at the expense of gliding range would undermine the Department of De-
+fense’s argument that gliders would be easily distinguishable from ballistic
+missiles.
+Given that the AHW is now the leading CPGS candidate technology , it
+would obviously be useful to be able to estimate its lift-to-drag ratio. Unfor-
+tunately , there is not enough information to do so. The only public statement
+on the range of the AHW—8 ,000 km—appears in the 2008 National Research
+Council report. 44 Because the AHW has a shorter range than the HTV -2, one
+might intuitively expect that it also has a lower lift-to-drag ratio. However ,
+this argument is not necessarily correct. The AHW is launched by a less pow-
+erful booster than the HTV -2 and so probably travels at signiﬁcantly slower
+speeds.45 If so, it is possible their lift-to-drag ratios are similar .
+The analysis of the HTV -2 test ﬂights also raises questions about the sur-
+vivability of boost-glide weapons. One key argument for developing them is
+that their speed can defeat advanced air and missile defenses, which are ex-
+pected to become increasingly widespread over the next few decades. And, to
+be sure, defending large areas against boost-glide weapons would present very
+signiﬁcant challenges (not least because they travel at much lower altitudes
+than ballistic missiles so would have to be much closer to any given radar to be
+detectable). There is, however , reason to wonder whether boost-glide weapons
+could reliably penetrate the sophisticated point defenses that advanced states
+could use to try to defend exactly the high-value targets that CPGS weapons
+might threaten.46
+A boost-glide weapon may re-enter the atmosphere at extremely high
+speeds but it slows as it approaches the target. In both the A and B test
+ﬂights, it appears that the HTV -2 would have been traveling at between
+2,000 ms−1 and 2 ,500 ms−1 at the end of its ﬂight. These speeds are charac-
+teristic of ballistic missiles with ranges of around 500 km. Even today , such
+missiles are potentially vulnerable to advanced point defenses and their sur-
+vivability is likely to be further undermined in the future. To make matters
+worse, because boost-glide weapons remain in the atmosphere for most of their
+=== page 23 ===
+Hypersonic Boost-Glide Weapons 213
+trajectory , they cannot be protected by countermeasures such as decoys or
+chaff.
+To be sure, the issue is far from cut and dry . If boost-glide weapons are
+capable of faster speeds than planned for the HTV -2 test ﬂights, they would be
+more survivable. Ultimately , however , the survivability of boost-glide weapons
+might well depend on whether they are capable of executing sufﬁciently rapid
+terminal maneuvering to evade interceptors. The United States demonstrated
+this capability in the 1970s with the Mk-500 “Evader” RV . However , that sys-
+tem was designed to deliver nuclear warheads, which present much less de-
+manding accuracy requirements than non-nuclear ones. Indeed, one potential
+challenge for boost-glide weapons is that the high accelerations required for
+evasive maneuvering—measured in tens of g—could complicate the reception
+of GPS signals, potentially undermining accuracy .47
+Another important issue is whether missile defense interceptors could use
+the large heat signature of a boost-glide weapon for homing. In particular , one
+question that deserves further study is whether the U .S. Terminal High Al-
+titude Area Defense (THAAD) system, which uses infra-red homing, could be
+modiﬁed to intercept boost-glide weapons. This question arises because glid-
+ers produce much more heat than the ballistic missile RVs that THAAD is in-
+tended to counter . However , gliders must be intercepted at lower altitudes than
+those at which THAAD intercepts typically occur . As a result, heating from
+atmospheric friction could reduce the efﬁciency of THAAD’s infra-red seeker .
+Quantitative analysis is needed to determine whether it could still prove effec-
+tive.48
+MILITARY EFFECTIVENESS OF BOOST-GLIDE WEAPONS
+A discussion of aspects of the military effectiveness of boost-glide weapons is
+available in an online supplement.
+CONCLUSION
+From a purely technical perspective, boost-glide weapons would offer cer-
+tain unique attributes to military planners. Their speed is unmatched by any
+other kinetic weapon, except for ballistic missiles. And, compared to ballistic
+missiles, boost-glide weapons have potentially longer ranges, can generally
+transport a heavier payload over a given range, are capable of midcourse ma-
+neuvering, and ﬂy at lower altitudes. Understanding whether these attributes
+would be likely to provide a signiﬁcant military advantage and, ultimately ,
+whether the beneﬁts of boost-glide weapons would outweigh their costs and
+risks raises a complex series of technical and policy questions. 49
+=== page 24 ===
+214 Acton
+This article, some of which appears in an online supplement, explores some
+of the technical issues, including the ability of boost-glide weapons to defeat
+defenses, to deny an adversary tactical warning of an attack, and to destroy
+mobile targets and hard and deeply buried ones. Given all the uncertainties,
+there are no simple “yes or no” answers to important questions about boost-
+glide weapons’ military capabilities. In fact, this article’s most important con-
+tribution may be the new questions that are raised by its ﬁndings and, just as
+importantly , its limitations. At least seven such questions stand out:
+• First, what are the characteristics—the lift-to-drag ratio, in particular—of
+hypersonic gliders other than the HTV -2? Weapon prototypes that are cur-
+rently being ﬂight tested, including the U .S. Advanced Hypersonic Weapon,
+the Chinese WU-14 and probable Russian programs, are of obvious
+interest.
+• Second, what limit does thermal protection place on the performance of
+hypersonic gliders? Difﬁculties associated with heat management appear
+to have been fatal to the HTV -2 program. This failure highlights the im-
+portance of understanding quantitatively how the challenge of heat man-
+agement is affected by a glider’s speed and lift-to-drag ratio. This, in turn,
+would help understand what ranges gliders might be able to travel, how far
+they might be able to maneuver cross-range, and how prompt they could
+be.
+• Third, would a more sophisticated mathematical model of the boost-glide
+trajectory—of the pull-up, in particular—provide a qualitatively new un-
+derstanding of the physics of boost-glide vehicles? The model set out in
+this article is a minimal one, simple enough to enable an analytic treat-
+ment. While a more complex and realistic model would presumably lead to
+some quantitative changes in the results presented here, it would be inter-
+esting to know whether it would lead to a qualitatively different picture.
+• Fourth, would advanced terminal missile defenses be effective at defeat-
+ing boost-glide weapons? Although this article identiﬁes a series of reasons
+why intercepting gliders may be easier than intercepting ballistic missiles,
+no deﬁnitive conclusion can be reached because it is unclear whether a
+glider could execute sufﬁciently rapid terminal maneuvering to evade in-
+terceptors. This question deserves more analysis. Likewise, the challenges
+of modifying an interceptor missile armed with an infra-red seeker to in-
+tercept a glider relatively low in the atmosphere, where heating can be a
+signiﬁcant problem for the infra-red sensor , also deserve further consider-
+ation.
+• Fifth, would boost-glide weapons be vulnerable to countermeasures besides
+missile defenses? The most obvious example of such a countermeasure is
+=== page 25 ===
+Hypersonic Boost-Glide Weapons 215
+GPS jamming. Understanding—at a quantitative level—the limitations on
+weapon accuracy imposed by high-powered GPS jammers and the extent
+to which they could be mitigated has important policy implications.
+• Sixth, what are the costs and beneﬁts of developing early warning sensors
+designed to detect the heat signal of incoming gliders. In theory , airborne
+and/or space-based infra-red detectors could be used for this purpose, but
+more work is needed to understand the trade-offs relative to other detection
+systems. One particularly interesting question is whether the heat signal
+of a glider is sufﬁciently strong to be detected by existing infra-red detec-
+tion satellites, which are in geostationary orbit, or whether new satellites
+orbiting at a lower altitude would be required.
+• Seventh, and ﬁnally , are there militarily important targets that boost-glide
+weapons are uniquely capable of holding at risk? Although weapon effects
+are discussed in this article, some of the assumptions employed (partic-
+ularly in the discussion of silo vulnerability) are quite crude and might
+beneﬁt from being reﬁned. Moreover , to ask whether boost-glide weapons
+are uniquely capable of threatening some targets is to demand a detailed
+comparison with other weapon systems and their capabilities.
+ACKNOWLEDGMENT
+I am indebted to Tom Ehrhard, Richard Garwin, members of Princeton Uni-
+versity’s Science and Global Security Program and, above all, David Wright for
+useful conversations and valuable comments on earlier drafts. Of course, the
+contents of this article remain my own responsibility .
+FUNDING
+This work was primarily funded by the John D. and Catherine T . MacArthur
+Foundation, with supplementary support from the William and Flora Hewlett
+Foundation and the Carnegie Corporation of New Y ork.
+SUPPLEMENTAL MATERIAL
+Supplemental data for this article can be accessed on the publisher’s website.
+NOTES AND REFERENCES
+1. Robert Godwin, introduction to Dyna-Soar: Hypersonic Strategic Weapons System ,
+ed. Godwin (Burlington, ON: Apogee Books, 2003), 7. S ¨anger subsequently devel-
+oped the concept theoretically with his wife, the engineer Irene Bredt, under spon-
+sorship of the German Government. See E. S ¨anger and I. Bredt, AR o c k e tD r i v e
+=== page 26 ===
+216 Acton
+for Long Range Bombers [ ¨Uber einen Raketenantrieb f ¨ur Fernbomber], trans. M.
+Hamermesh, CGD-32 (Technical Information Branch, Navy Department,[1952]),
+www .astronautix.com/data/saenger .pdf.
+2. For a summary of these efforts see James M. Acton, Silver Bullet? Ask-
+ing the Right Questions About Conventional Prompt Global Strike (Wash-
+ington, DC: Carnegie Endowment for International Peace, 2013), 37–8,
+http://carnegieendowment.org/ﬁles/cpgs.pdf.
+3. For the history of the CPGS program see Amy F . Woolf, Conventional Prompt
+Global Strike and Long-Range Ballistic Missiles: Background and Issues , CRS Re-
+port for Congress, R41464 (Congressional Research Service, May 5, 2014). The lat-
+est version of this report is available from www .fas.org/sgp/crs/nuke/R41464.pdf.
+4. Committee on Conventional Prompt Global Strike Capability , Naval Studies
+Board, and Division on Engineering and Physical Sciences, the National Research
+Council of the National Academies, U .S. Conventional Prompt Global Strike: Is-
+sues for 2008 and Beyond (Washington, DC: National Academies Press, 2008), 115,
+www .nap.edu/catalog.php?recordid=12061.
+5. David Alexander and Andrea Shalal, “Experimental U .S. Hypersonic Weapon
+Destroyed Seconds After Launch,” Reuters, August 25, 2014, http://www .reuters.
+com/article/2014/08/25/us-usa-military-hypersonic-idUSKBN0GP1ED20140825.
+6. “China Conﬁrms Hypersonic Missile Carrier Test,” Reuters, January 15, 2014,
+www .reuters.com/article/2014/01/15/us-china-missile-idUSBREA0E0Z020140115.
+7. James Acton, Catherine Dill, and Jeffrey Lewis, “Crashing Glider , Hidden
+Hotspring: Analyzing China’s August 7, 2014 Hypersonic Glider Test,” Arms
+Control Wonk (blog), September 3, 2014, http://lewis.armscontrolwonk.com/
+archive/7443/crashing-glider-hidden-hotspring.
+8. Ibid. For more general discussions of Chinese efforts see Acton, Silver Bul-
+let?, 100–3; Mark A. Stokes, “China’s Quest for Joint Aerospace Power: Con-
+cepts and Future Aspirations” in The Chinese Air Force: Evolving Con-
+cepts, Roles, and Capabilities , eds. Richard P . Hallion, Roger Cliff, and
+Phillip C. Saunders (Washington, DC: National Defense University Press
+for the Center for the Study of Chinese Military Affairs, Institute for Na-
+tional Strategic Studies, 2012), 50–5, www .ndu.edu/press/lib/pdf/books/chinese-
+air-force.pdf; Lora Saalman, “Prompt Global Strike: China and the Spear ,”
+Asia Paciﬁc Center for Security Studies, April 2014, http://www .apcss.org/wp-
+content/uploads/2014/04/APCSS Saalman PGS China Apr2014.pdf.
+9. See, for example, Anatoly Antonov , “Russia Forced to Develop Global
+Prompt Strike Weapons,” Security Index 19, (2013): 7; “Russia to Develop
+Precision Conventional ICBM Option” RIA Novosti, December , 14 2012,
+http://en.rian.ru/military news/20121214/178154441.html.
+10. Pavel Podvig, “Russian Hypersonic Vehicle—More Dots Added to
+Project 4202,” Russian Strategic Nuclear Forces (blog), August 26, 2014,
+http://russianforces.org/blog/2014/08/russian hypersonic vehicle - m.shtml and
+links therein. See also Acton, Silver Bullet?, 106–7.
+11. The speed of sound is a function of altitude and varies non-monotonically from
+340 ms−1 at sea-level to 275 ms−1 at an altitude of 85 km. At higher altitudes, when
+the wavelength of sound becomes comparable to the mean free path of atmospheric
+gases, speed of sound ceases to be a valid concept.
+12. John D. Anderson, Jr ., Introduction to Flight , 4th ed. (Boston, MA: McGraw-Hill,
+2000), 703.
+13. Ibid., 703–4.
+=== page 27 ===
+Hypersonic Boost-Glide Weapons 217
+14. Acton, Silver Bullet?, 59–61.
+15. Defense Science Board, Time Critical Conventional Strike From Strate-
+gic Standoff (Washington, DC: Ofﬁce of the Under Secretary of De-
+fense for Acquisition, Technology , and Logistics, March 2009), 26–8,
+www .acq.osd.mil/dsb/reports/ADA498403.pdf; Committee on Conventional Prompt
+Global Strike Capability ,U .S. Conventional Prompt Global Strike, 52–3 and 121–3.
+16. Committee on Conventional Prompt Global Strike Capability , U .S. Conventional
+Prompt Global Strike , 115.
+17. Debra G. Wymer , “Advanced Hypersonic Weapon Flight Test Overview to
+the Space & Missile Defense Conference,” U .S. Army Space and Missile
+Defense Command/Army Forces Strategic Command, August 14, 2012, 5,
+http://www .smdc.army .mil/TechCenter/2013/PowerPoint/FINALAHWBrieftoSMDC
+onference081312.pptx.
+18. For a quantitative discussion see Frank J. Regan and Satya M. Anandakrishnan,
+Dynamics of Atmospheric Re-Entry (Washington, DC: American Institute of Aero-
+nautics and Astronautics, 1993), 190–2.
+19. Alfred J. Eggers, Jr ., H. Julian Allen, and Stanford E. Neice, A Comparative
+Analysis of the Performance of Long-Range Hypervelocity Vehicles , Report 1382
+(Washington, DC: National Advisory Committee for Aeronautics, [1958]), 12-3,
+http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19930092363 1993092363.pdf
+20. DARPA, “Falcon HTV -2,” www .darpa.mil/Our Work/TTO/Programs/Falcon HTV -
+2.aspx (now available from http://web.archive.org/web/20120205015141/http://www .
+darpa.mil/Our Work/TTO/Programs/Falcon HTV -2.aspx).
+21. Dean R. Chapman, An Approximate Analytical Method for Studying Entry
+into Planetary Atmospheres , Technical Note 4276 (Washington, DC: National
+Advisory Committee for Aeronautics, May 1958), 24, http://naca.central.
+cranﬁeld.ac.uk/reports/1958/naca-tn-4276.pdf. For a more intuitive presentation,
+see Carl Gazley , Jr ., “Atmospheric Entry” in Handbook of Astronautical Engineer-
+ing, ed. Heinz Hermann Koelle (New Y ork, NY: McGraw-Hill Book Company , 1961),
+10-18.
+22. Regan and Anandakrishnan, Dynamics of Atmospheric Re-Entry , 180–3.
+23. National Oceanic and Atmospheric Administration, National Aeronautics and
+Space Administration, and United States Air Force, U .S. Standard Atmosphere,
+1976, NOAA-S/T 76-1562 (Washington, DC: U .S. Government Printing
+Ofﬁce, October 1976), www .dtic.mil/cgi-bin/GetTRDoc?Location=U2&doc=GetTR-
+Doc.pdf&AD=ADA035728. See also, Regan and Anandakrishnan, Dynamics of
+Atmospheric Re-Entry, 37–8.
+24. Gazley , “Atmospheric Entry ,” 10-10.
+25. Committee on Conventional Prompt Global Strike Capability , U .S. Conventional
+Prompt Global Strike , 208.
+26. Acquisition Civil/Environmental Engineering, Space and Missile Systems Center ,
+Environmental Assessment for Hypersonic Technology Vehicle 2 Flight Tests , April
+2009, 16, www .dtic.mil/dtic/tr/fulltext/u2/a544343.pdf.
+27. For a more detailed discussion of the test program and its challenges see Acton,
+Silver Bullet?, 40–8 and 59–61.
+28. Acquisition Civil/Environmental Engineering, Space and Missile Systems Center ,
+Environmental Assessment for Hypersonic Technology Vehicle 2 Flight Tests , 15.
+29. Jess Sponable, “Reusable Space Systems: 21st Century Technology Challlenges
+[Sic],” DARPA, June 17, 2009, 20. No longer available online.
+=== page 28 ===
+218 Acton
+30. Graham Warwick, “DARPA’s HTV -2 Didn’t Phone Home,” Ares (blog), Aviation
+Week, April 24, 2010 (now available from http://archive.today/LPwT).
+31. “Falcon HTV -2,” DARPA.
+32. National Geospatial-Intelligence Agency and U .S. Department of Defense,
+Notice to Mariners , no. 18, May 1, 2010, III-1.10, http://msi.nga.mil/MSISite
+Content/StaticFiles/NAV PUBS/UNTM/201018/NtM 18-2010.pdf.
+33. John R. Harvey and Stefan Michalowski, “Nuclear Weapons Safety: The Case of
+Trident,” Science & Global Security 4, (1994): 51; Lisbeth Gronlund and David C.
+Wright, “Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control
+Possibilities,” Science & Global Security 3, (1992): 113. Note these sources use a
+slightly different deﬁnition for β from the one adopted here ( mg/CD A as opposed to
+m/CD A).
+34. Anderson, Introduction to Flight , 696.
+35. Acquisition Civil/Environmental Engineering, Space and Missile Systems Center ,
+Environmental Assessment for Hypersonic Technology Vehicle 2 Flight Tests ,9 .
+36. Sponable, “Reusable Space Systems,” 20.
+37. S. Y . Chen, The Longitudinal and Lateral Range of Hypersonic Glide
+Vehicles with Constant Bank Angle , Memorandum RM-4630-PR (Santa
+Monica, CA: RAND Corporation, January 1966), 10–1, www .dtic.mil/cgi-
+bin/GetTRDoc?Location=U2&doc=GetTRDoc.pdf&AD=AD0629124.
+38. Ibid.
+39. In fact, βS does not need to be identical for the two ﬂights because the glider may
+have been due to re-enter the atmosphere in the B ﬂight in a slightly different
+orientation from the A ﬂight. Nonetheless, it is reassuring that the two estimates
+are similar , even if they are almost certainly signiﬁcantly smaller than the true
+value.
+40. Committee on Conventional Prompt Global Strike Capability , U .S. Conventional
+Prompt Global Strike , 206.
+41. H. Julian Allen and A. J. Eggers, Jr ., A Study of the Motion and Aerodynamic
+Heating of Ballistic Missiles Entering the Earth’s Atmosphere at High
+Supersonic Speeds , Report 1381 (Washington, DC: National Advisory Committee
+for Aeronautics, 1958), http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/199300
+91020 1993091020.pdf.
+42. DARPA, “DARPA Concludes Review of Falcon HTV -2 Flight Anomaly ,”
+Press Release, November 16, 2010, www .darpa.mil/WorkArea/DownloadAsset.aspx?
+id=2147484134.
+43. This calculation is rather approximate because it ignores the direct re-entry phase
+and because the small angle assumption underlying Eq. (20) is questionable for a
+path angle of 30 ◦.
+44. Committee on Conventional Prompt Global Strike Capability et al., U .S. Conven-
+tional Prompt Global Strike , 115.
+45. U .S. Army Space and Missile Defense Command/Army Forces Strategic Command,
+Advanced Hypersonic Weapon Program: Environmental Assessment , June 2011, 2-
+2–2-3, www .smdcen.us/pubdocs/ﬁles/AHW%20Program%20FEA–30Jun11.pdf
+46. Acton, Silver Bullet?, 73–7.
+47. Defense Science Board, Time Critical Conventional Strike From Strategic Stand-
+off , 26–8; Committee on Conventional Prompt Global Strike Capability et al., U. S.
+Conventional Prompt Global Strike , 122.
+48. For a discussion of the THAAD seeker’s operation in exo-atmospheric inter-
+cepts see George N. Lewis, “Estimating the Detection Range of a THAAD-Like
+=== page 29 ===
+Hypersonic Boost-Glide Weapons 219
+Seeker” in He Yingbo and Qiu Y ong, “THAAD-Like High Altitude The-
+ater Missile Defense: Strategic Defense Capability and Certain Counter-
+measures Analysis,” Science & Global Security 11, (2003): Appendix C,
+http://scienceandglobalsecurity .org/archive/sgs11yong.pdf.
+49. Acton, Silver Bullet?

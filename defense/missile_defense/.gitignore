@@ -1,0 +1,28 @@
+# Space-Track redistribution policy (task G-05, D-01).
+#
+# USSPACECOM grants blanket approval to redistribute "basic SSA data" (TLE, OMM, SATCAT,
+# decay data) *with citation*, so our derived products are publishable. The User Agreement
+# (10 USC 2274(c)(2)) still says not to transfer received data or its analysis to third
+# parties without approval, and the practical rule we follow is: cite Space-Track, publish
+# derived products, do not mirror bulk raw catalogue pulls in a repository.
+data/raw/spacetrack/
+
+# Credentials. Also covered by the repo-root .gitignore, repeated here so this directory
+# is safe on its own if it is ever moved or vendored.
+.env
+*.credentials
+secrets.*
+
+# Generated
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# JPL ephemeris kernels (large binaries, re-downloadable from NAIF)
+data/raw/ephemeris/*.bsp
+
+# Large third-party datasets (re-downloadable; also keeps them out of git)
+data/raw/adsb/
+data/raw/ais/
+data/raw/goes/
+data/raw/literature/

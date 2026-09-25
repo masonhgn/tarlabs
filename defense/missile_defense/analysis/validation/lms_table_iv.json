@@ -1,0 +1,167 @@
+{
+  "source": "Li, X. R. & Zhang, Y. M. (2000), 'Multiple-Model Estimation with Variable Structure - Part V: Likely-Model Set Algorithm', IEEE T-AES 36(2), 448-466.",
+  "table": "IV",
+  "monte_carlo_runs": 500,
+  "inferred_parameters": {
+    "T": 1.0,
+    "initialisation": "two-point differencing from the first two measurements"
+  },
+  "results": {
+    "A/random": {
+      "IMM": {
+        "RMSPE": 34.03452450212312,
+        "RMSVE": 19.101881581668575,
+        "MAXPE": 44.38488886604029,
+        "MAXVE": 34.623661294567334,
+        "filters_per_step": 13.0,
+        "paper_RMSPE": 39.56
+      },
+      "LMS": {
+        "RMSPE": 34.54833124670892,
+        "RMSVE": 19.35753958711247,
+        "MAXPE": 44.3846887286638,
+        "MAXVE": 34.620711335155775,
+        "filters_per_step": 5.756367088607595,
+        "paper_RMSPE": 40.1
+      },
+      "LMS(lambda)": {
+        "RMSPE": 34.052930060832594,
+        "RMSVE": 19.174162095486743,
+        "MAXPE": 44.3846887286638,
+        "MAXVE": 34.620711335155775,
+        "filters_per_step": 5.772544303797468,
+        "paper_RMSPE": 37.83
+      }
+    },
+    "A/1": {
+      "IMM": {
+        "RMSPE": 37.72289164124122,
+        "RMSVE": 20.010753888157108,
+        "MAXPE": 72.32129032522622,
+        "MAXVE": 66.8063607406518,
+        "filters_per_step": 13.0,
+        "paper_RMSPE": 37.15
+      },
+      "LMS": {
+        "RMSPE": 38.48928551786703,
+        "RMSVE": 20.334705377385966,
+        "MAXPE": 77.37895842286262,
+        "MAXVE": 67.20157571795512,
+        "filters_per_step": 5.987177215189873,
+        "paper_RMSPE": 37.58
+      },
+      "LMS(lambda)": {
+        "RMSPE": 37.86189961025875,
+        "RMSVE": 20.17502191408731,
+        "MAXPE": 74.8863804318954,
+        "MAXVE": 67.1909946886298,
+        "filters_per_step": 6.000696202531645,
+        "paper_RMSPE": 35.85
+      }
+    },
+    "A/2": {
+      "IMM": {
+        "RMSPE": 42.09901113949465,
+        "RMSVE": 26.626959871068237,
+        "MAXPE": 69.6921977407275,
+        "MAXVE": 85.10079685348559,
+        "filters_per_step": 13.0,
+        "paper_RMSPE": 41.52
+      },
+      "LMS": {
+        "RMSPE": 43.628076840617226,
+        "RMSVE": 27.755557861389867,
+        "MAXPE": 72.41487339419263,
+        "MAXVE": 85.10641360532792,
+        "filters_per_step": 6.206936708860759,
+        "paper_RMSPE": 42.43
+      },
+      "LMS(lambda)": {
+        "RMSPE": 41.76532951057413,
+        "RMSVE": 27.06234426929088,
+        "MAXPE": 70.38327599034187,
+        "MAXVE": 85.49286538097697,
+        "filters_per_step": 6.247354430379747,
+        "paper_RMSPE": 37.86
+      }
+    },
+    "B/random": {
+      "IMM": {
+        "RMSPE": 32.29650539483338,
+        "RMSVE": 17.650913146329753,
+        "MAXPE": 44.38705653578751,
+        "MAXVE": 34.6610860188656,
+        "filters_per_step": 13.0,
+        "paper_RMSPE": 36.93
+      },
+      "LMS": {
+        "RMSPE": 32.301893472542375,
+        "RMSVE": 17.650645107272787,
+        "MAXPE": 44.38695449350771,
+        "MAXVE": 34.65920654871411,
+        "filters_per_step": 9.252924050632911,
+        "paper_RMSPE": 36.94
+      },
+      "LMS(lambda)": {
+        "RMSPE": 32.16415438820584,
+        "RMSVE": 17.684607178461544,
+        "MAXPE": 44.38695449350771,
+        "MAXVE": 34.65920654871411,
+        "filters_per_step": 9.255493670886075,
+        "paper_RMSPE": 35.79
+      }
+    },
+    "B/1": {
+      "IMM": {
+        "RMSPE": 35.77443249833348,
+        "RMSVE": 19.753840544542125,
+        "MAXPE": 63.98698534029979,
+        "MAXVE": 65.35252369577927,
+        "filters_per_step": 13.0,
+        "paper_RMSPE": 35.28
+      },
+      "LMS": {
+        "RMSPE": 35.7931048186076,
+        "RMSVE": 19.7608155650652,
+        "MAXPE": 64.04420301650175,
+        "MAXVE": 65.41418330881633,
+        "filters_per_step": 9.334443037974683,
+        "paper_RMSPE": 35.3
+      },
+      "LMS(lambda)": {
+        "RMSPE": 35.81994886324259,
+        "RMSVE": 19.8002726876036,
+        "MAXPE": 64.04408895129626,
+        "MAXVE": 65.41491562601405,
+        "filters_per_step": 9.335227848101265,
+        "paper_RMSPE": 35.29
+      }
+    },
+    "B/2": {
+      "IMM": {
+        "RMSPE": 36.89749444066845,
+        "RMSVE": 24.14968086560171,
+        "MAXPE": 61.85363419417013,
+        "MAXVE": 86.27623164929769,
+        "filters_per_step": 13.0,
+        "paper_RMSPE": 36.47
+      },
+      "LMS": {
+        "RMSPE": 37.09449864988781,
+        "RMSVE": 24.36458737132926,
+        "MAXPE": 62.587702668251296,
+        "MAXVE": 86.32017963610224,
+        "filters_per_step": 9.378632911392405,
+        "paper_RMSPE": 36.73
+      },
+      "LMS(lambda)": {
+        "RMSPE": 37.00712336132526,
+        "RMSVE": 24.406324877569272,
+        "MAXPE": 61.948312150211656,
+        "MAXVE": 86.40232177905982,
+        "filters_per_step": 9.387012658227848,
+        "paper_RMSPE": 36.28
+      }
+    }
+  }
+}

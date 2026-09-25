@@ -1,0 +1,1724 @@
+=== page 1 ===
+Modeling the Performance of Hypersonic
+Boost-Glide Missiles
+Cameron L. Tracy a and David Wright b
+aGlobal Security Program, Union of Concerned Scientists, Cambridge, MA, USA; bDepartment of
+Nuclear Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA
+ABSTRACT
+The United States, Russia, and China are developing an array
+of hypersonic weapons —maneuverable vehicles that carry
+warheads through the atmosphere at more than five times
+the speed of sound. Proponents claim that these weapons
+outperform existing missiles in terms of delivery time and eva-
+sion of early warning systems. Here, we report computational
+modeling of hypersonic boost-glide missile flight which shows
+that these weapons travel intercontinental distances more
+slowly than comparable ballistic missiles flying depressed tra-
+jectories, and that they remain visible to existing space-based
+sensors for the majority of flight. Fundamental physical limita-
+tions imposed by low-altitude atmospheric flight render
+hypersonic missiles an evolutionary —not revolutionary —
+development relative to established ballistic missile technolo-
+gies. Misperceptions of hypersonic weapon performance have
+arisen from social processes by which the organizations devel-
+oping these weapons construct erroneous technical facts
+favoring continued investment. The modeling reported here
+provides a basis for rigorous, quantitative analysis of hyper-
+sonic weapon performance.
+Introduction
+Hypersonic weapons comprise an emerging class of missile technologies —
+maneuverable vehicles that carry warheads through the atmosphere at more
+than five times the speed of sound. 1 Their flight characteristics are distinct
+from those of typical ballistic missiles, which spend most of flight above
+the atmosphere and are capable of only limited maneuverability, and from
+those of subsonic or supersonic cruise missiles, which travel through the
+atmosphere but fly more slowly.
+The United States, China, and Russia are currently racing to develop
+these weapons, and each plans to field a wide array of hypersonic systems
+in the coming decades. 2 The most recent U.S. defense budget, for example,
+CONTACT Cameron L. Tracy ctracy@ucsusa.org Global Security Program, Union of Concerned Scientists, 2
+Brattle, Square, Cambridge, MA 02138, USA.
+/C2232021 Taylor & Francis Group, LLC
+SCIENCE & GLOBAL SECURITY
+2020, VOL. 28, NO. 3, 135 – 170
+https://doi.org/10.1080/08929882.2020.1864945
+=== page 2 ===
+dedicates $3.2 billion to hypersonic weapon programs, representing about
+3% of the total defense research and development budget. 3 China is also
+investing heavily in both hypersonic development infrastructure and
+weapon systems, reportedly outpacing the United States in testing of these
+technologies.4 Russia, reportedly the first nation to deploy a hypersonic
+missile, characterizes these weapons as a centerpiece of its security strategy
+and has extensively tested at least three distinct hypersonic systems. 5
+This nascent hypersonic arms race is premised on claims that the sup-
+posedly unprecedented capabilities of these weapons portend a revolution
+in missile warfare — claims that pervade the news media, governmental
+statements, and the scholarly literature. Hypersonic missiles are commonly
+depicted as a “game changer. ”6 With allegedly “unmatched speed, ” these
+weapons are said to “hit over-the-horizon targets in a fraction of the time
+it would take existing ballistic or cruise missiles. ”7 In short, proponents
+assert that “developments in hypersonic propulsion will revolutionize war-
+fare by providing the ability to strike targets more quickly. ”8 This claimed
+speed advantage is ostensibly accompanied by near-immunity to detection,
+rendering hypersonic weapons “nearly invisible ” to existing early warning
+systems.9 Together, these capabilities will purportedly “greatly compress
+decision and response times ” in a hypersonic strike, leaving those targeted
+with “insufficient time … to confidently identify and confirm the nature of
+an incoming attack, let alone to decide how to respond. ”10
+Despite these claims, the precise capabilities of hypersonic missiles
+remain uncertain and controversial. In contrast to the common depiction
+of these weapons as a revolution in missile warfare, several recent analyses
+suggest they may offer minimal advantage over existing missile technolo-
+gies.11 Detailed, quantitative, open-source technical assessment is necessary
+to clarify the capabilities of this emerging technology and its probable
+effects on international security.
+This article reports the results of computational modeling of hypersonic
+boost-glide vehicle flight. Our analysis indicates that a hypersonic missile
+will travel intercontinental distances more slowly than a comparable ballis-
+tic missile flying a depressed trajectory. Furthermore, hypersonic missiles
+will remain visible to existing space-based early warning systems for the
+majority of flight. Ultimately, these results show the performance and stra-
+tegic implications of hypersonic weapons to be broadly comparable to those
+of established ballistic missile technologies. While hypersonic weapons
+exhibit some modest advantages in terms of, for example, maneuverability,
+fundamental physical limitations imposed by low-altitude atmospheric
+flight render these weapons at best an evolutionary — not revolutionary —
+advancement. The persistence of misperceptions regarding hypersonic
+weapon performance has resulted from social processes by which erroneous
+136 C. L. TRACY AND D. WRIGHT
+=== page 3 ===
+technical facts have been socially constructed and promulgated by organiza-
+tions developing these weapons.
+The first section of this article presents a mathematical model of the
+flight of a notional hypersonic vehicle. Computational results, and their
+implications for hypersonic weapon performance, are presented next. The
+last section examines the social origins of misperceptions regarding hyper-
+sonic weapon capabilities. The article concludes with discussion of further
+questions regarding hypersonic weapon capabilities which the modeling
+approach reported here might address.
+Computational modeling of hypersonic flight
+Hypersonic weapons can be sorted into two distinct categories: cruise mis-
+siles and boost-glide vehicles. 12 The former operate much like typical sub-
+sonic and supersonic cruise missiles — using air-breathing engines to power
+themselves through the atmosphere — but fly at higher speeds. Yet hyper-
+sonic cruise missiles are unlikely to match the speeds or ranges achievable
+by boost-glide vehicles, which are accelerated to extremely high velocities
+on rocket boosters similar to those used to launch ballistic missiles. They
+then proceed to glide, unpowered, through the upper atmosphere until
+reaching their target. Because boost-glide systems represent the forefront of
+hypersonic missile performance in terms of speed and range, and because
+they are the focus of most current development activity, our analysis
+focuses on this class of missile.
+Typical flight of a hypersonic boost-glide weapon can be divided into six
+stages: boost, ballistic, reentry, pull-up, glide, and terminal phases. 13 In the
+boost phase, a rocket booster accelerates the missile carrying the hypersonic
+vehicle until the booster exhausts its fuel, at which point it detaches from
+the glide vehicle and falls back to Earth. In the ballistic phase, the vehicle
+travels above the atmosphere on a ballistic trajectory under only the influ-
+ence of gravity. Both of these phases are comparable to a ballistic missile
+launch. Hypersonic trajectories diverge from those of ballistic missiles in
+the reentry and pull-up phases. Here, the vehicle pierces the upper atmos-
+phere, then slows its descent to enter a stable glide trajectory. In the glide
+phase, the vehicle generates aerodynamic lift to sustain near-level flight.
+Finally, in the terminal phase, the glider dives toward its target.
+We model the boost and ballistic phases using standard equations of
+motion for ballistic missile flight ( Appendix).14 The complex dynamics of
+the pull-up phase, which are difficult to accurately simulate with the avail-
+able data on glide vehicle parameters, are treated analytically using a simple
+mathematical approach reported by Acton. 15 We have developed a new
+computational model to simulate in detail the glide and terminal phases,
+SCIENCE & GLOBAL SECURITY 137
+=== page 4 ===
+which constitute the majority of a typical long-range hypersonic
+flight trajectory.
+The notional glide vehicle modeled here is based on the Hypersonic
+Technology Vehicle 2 (HTV-2), an experimental glider jointly developed
+and tested by the U.S. Air Force and the Defense Advanced Research
+Projects Agency (DARPA). 16 This system is commonly considered a proto-
+typical intercontinental-range hypersonic glide vehicle. Several recent analy-
+ses of its flight characteristics have been published in the open literature,
+providing useful data for modeling. 17 We assume a roughly triangular pyr-
+amidal geometry based on that reported by Niu et al., as shown in
+Figure 1 .18 Based on prior analysis of HTV-2 test flights, we assume a
+glider mass of m ¼ 1,000 kg, a constant lift-to-drag ratio of L/D ¼ 2.6, and a
+ballistic coefficient of b ¼ m/(CdA) ¼ 13,000 kg/m2, where Cd is the drag
+coefficient and A is the effective glider cross-sectional area. 19 These aero-
+dynamic parameters are in good agreement with those reported elsewhere
+for wedge-shaped hypersonic gliders. 20
+Flight trajectory
+We model atmospheric flight in the glide and terminal phases over a spher-
+ical, non-rotating Earth using the three-dimensional coordinate system
+illustrated in Figure 2 . Four forces govern flight trajectories in this model:
+gravity, lift, drag, and an apparent centrifugal force. The influence of these
+forces is expressed in six equations of motion describing velocity ( v), flight
+angles measured relative to the local horizontal ( c) and azimuthally from
+7.6°
+11.3°
+6.1°
+19.1°
+rnose = 0.034 m
+rbottom = 5.7 m
+rtop = 0.95 m
+rwing = 0.16 m
+3.67 m
+0.77 m
+2.2 
+m
+0.88 
+m
+Figure 1. The HTV-2 glider geometry used in this analysis. Because we obtain aerodynamic
+parameters (ballistic coefficient and lift-to-drag ratio) from analysis of flight test data, our trajec-
+tory results are insensitive to the assumed vehicle geometry. Calculated surface heating and
+infrared light emission, however, do depend on this geometry.
+138 C. L. TRACY AND D. WRIGHT
+=== page 5 ===
+the down-range direction ( j), down-range angle over Earth ( W), cross-
+range angle over Earth ( X), and altitude ( h), all as a function of time:
+dv
+dt ¼/C0 CdA
+2m qv2/C0 gsinc (1)
+dc
+dt ¼ vcosc
+re þ h þ L/C14
+D
+/C16/C17CdA
+2m
+/C18/C19
+qvcosr/C0 g
+v cosc (2)
+dj
+dt ¼ L/C14
+D
+/C16/C17CdA
+2m
+/C18/C19
+qvsinr
+cosc (3)
+dW
+dt ¼ vcosccosj
+re
+(4)
+dX
+dt ¼ vcoscsinj
+re
+(5)
+dh
+dt ¼ vsinc (6)
+where Cd is the vehicle ’s drag coefficient, A is its effective cross-sectional
+area, m is its mass, q is the atmospheric density, g is the acceleration due
+to gravity, re is Earth ’s radius, L/D is the vehicle ’s lift-to-drag ratio, and r
+is the vehicle ’s roll angle. 21 We calculate atmospheric density using the
+1976 U.S. Standard Atmosphere. Down-range and cross-range distances,
+measured over Earth ’s surface, are given by Wre and Xre, respectively.
+Start of
+glide
+Velocity
+Local
+horizontal
+Earth
+h
+Ψ γre
+Start of
+glide
+Ω
+κ
+Cross range
+Velocity
+Earth
+Side view Overhead view
+Down rang
+e
+direction
+Figure 2. The coordinate system used in the hypersonic flight model, shown from both side
+(left) and overhead (right) perspectives. Six trajectory variables are modeled: velocity ( v), flight
+angles relative to the local horizontal (c) and measured azimuthally from the down-range direc-
+tion ( j), down-range angle over Earth ( W), cross-range angle over Earth ( X), and altitude ( h).
+Down-range and cross-range distances, measured over Earth ’s surface, are given by Wre and
+Xre, respectively.
+SCIENCE & GLOBAL SECURITY 139
+=== page 6 ===
+We simulate flight beginning with a velocity vector oriented horizontal
+to Earth ’s surface. We assume an initial equilibrium altitude at which
+vehicle weight is equal to the sum of the lift generated by the vehicle and
+the apparent centrifugal force arising from its flight over a spherical Earth,
+as given by:
+L/C14
+D
+/C16/C17
+qv2g
+2b þ v2
+re
+/C0 g ¼ 0 (7)
+We calculate the glide trajectory by integrating the equations of motion
+(Equations (1) –(6)) over time using a second-order Runge-Kutta (mid-
+point) method. Maneuvering is simulated via variation of the glide vehicle
+roll angle; for nonzero angles a portion of the lift force acts in the horizon-
+tal direction, perpendicular to the vehicle ’s velocity direction.
+In the terminal phase we model an inverted dive maneuver in which the
+glider turns upside down (corresponding to a roll angle of r ¼ 180/C14 ), such
+that the lift force is oriented toward the ground. This yields a faster, more
+efficient traversal of the dense lower atmosphere. 22 An inverted dive was
+reportedly used in flight tests of the HTV-2. 23
+Aerothermal heating
+As a glider traverses dense atmosphere at hypersonic speeds, shock waves
+form in the nearby air. Much of the kinetic energy the glider loses as it is
+slowed by atmospheric drag is transferred to this surrounding air, yielding
+intense aerothermal heating. A portion of this heat is deposited to the
+vehicle, producing extreme temperatures on its outer surfaces.
+To model this heating, we consider the case of turbulent gas flow over a
+non-ablative, catalytic glider surface. We calculate heat transfer to this sur-
+face using phenomenological equations reported by Tauber et al. for heat
+transfer in hypersonic flows. 24 At the stagnation point (the tip of the glider
+leading edge), the heat flux to the vehicle surface is approximated as:
+dq
+dt
+/C18/C19
+SP
+¼ 1:83 /C2 10/C0 4
+ﬃﬃﬃﬃrn
+p 1 /C0 hw
+h0
+/C18/C19
+q0:5v3 (8)
+where dq/dt is the heat flux in J/m 2s, rn is the radius of the glider ’s leading
+edge in m (0.034 m for the glider geometry shown in Figure 1 ), hw is the
+vehicle wall enthalpy per unit mass, h0 is the stagnation enthalpy per unit
+mass, q is the atmospheric density in kg/m 3, and v is the vehicle velocity
+relative to air in m/s. The stagnation enthalpy is approximated as h0 ¼ v2/2
+þ (2.3 /C2 105 J/kg), and the wall enthalpy as hw ¼ 1,000 Tw J/kg, where Tw
+is the wall temperature in K. 25
+140 C. L. TRACY AND D. WRIGHT
+=== page 7 ===
+We calculate heating of the remainder of the vehicle surface by approxi-
+mating it as a triangular pyramid with four sides (two on the upper surface,
+one on the lower, and the base of the pyramid at the rear of the glider) ori-
+ented at different angles relative to the air flow direction. This allows for
+the use of phenomenological equations, again obtained from Tauber et al.,
+for heat transfer to flat plates in turbulent hypersonic flow. When
+v > 4 km/s:
+dq
+dt
+/C18/C19
+FP
+¼ 2:2 /C2 10/C0 5 coshðÞ 2:08
+sinhðÞ 1:6
+x0:2
+ !
+1 /C0 1:11hw
+h0
+/C18/C19
+q0:8v3:7 (9)
+and when v /C20 4 km/s:
+dq
+dt
+/C18/C19
+FP
+¼ 3:89 /C2 10/C0 4 coshðÞ 1:78
+sinhðÞ 1:6
+x0:2
+ !
+1 /C0 1:11hw
+h0
+/C18/C19
+556
+Tw
+/C16/C170:25
+q0:8v3:37
+(10)
+where h is the angle between the vehicle surface and the freestream flow, x
+is the distance along the vehicle surface in meters, and Tw is the tempera-
+ture of the vehicle wall in K. This approach shows good agreement with
+the results of computational fluid dynamics calculations. 26
+As heat flows from the surrounding gas to the surface of a hypersonic
+vehicle, that surface simultaneously sheds heat through thermal radiation.
+Assuming a non-ablative aeroshell with a perfectly insulated interior and
+neglecting thermal conduction along the shell, a glider in steady-state flight
+will achieve thermal equilibrium at the radiative-adiabatic limit. 27 At this
+limit, the heat flux from the gas to the vehicle is equal to the heat flux radi-
+ated by its surface, as given by the Stefan-Boltzmann law:
+dq
+dt
+/C18/C19
+rad
+¼ erTw4 (11)
+where e is the surface emissivity and r is the Stefan –Boltzmann constant. 28
+We take the emissivity of the HTV-2 ’s carbon aeroshell to be e ¼ 0.85.29
+Setting Equations (8) , (9),o r (10) equal to Equation (11) yields Tw as a
+function of position on the surface of the vehicle.
+Thermal radiation in the infrared spectrum
+The surface of a hypersonic glide vehicle typically reaches temperatures of
+thousands of Kelvin during glide, producing substantial thermal radiation
+across the infrared (IR) spectrum. 30 When sufficiently intense, this IR sig-
+nature can be detected by space-based IR sensors of the sort that the
+United States and Russia use in their missile early warning systems. 31
+SCIENCE & GLOBAL SECURITY 141
+=== page 8 ===
+To quantify this IR emission, we calculate the spectral radiance L (radi-
+ant flux per unit solid angle per unit projected area per unit frequency) of
+a glider using Planck ’s law:
+L k, TwðÞ ¼ 2ehc2
+k5
+/C18/C19
+1
+e
+hc
+kkBT /C0 1
+/C18/C19
+(12)
+where k is the wavelength of light, h is the Planck constant, c is the speed
+of light, and kB is the Boltzmann constant. 32 We then double integrate
+Equation (12) over the wavelength band of interest and the observed area
+of the glider surface, yielding the total observed radiant intensity (radiant
+flux per unit solid angle) of the vehicle. The results reported here assume
+an observer situated directly overhead; alternate viewing angles would
+increase or decrease the observed intensity in proportion to the corre-
+sponding change in observed area. Atmospheric attenuation has a minor
+effect on IR transmission to satellites from typical hypersonic flight alti-
+tudes (tens of kilometers), and is therefore neglected. 33
+Computational results
+Flight trajectory
+The flight of a hypersonic vehicle in the glide and terminal phases is gov-
+erned, in large part, by atmospheric drag. While ballistic missiles spend the
+majority of their flight in outer space where air density is negligible, hyper-
+sonic glide takes place within the atmosphere where air density is suffi-
+ciently high to generate the lift necessary for sustained flight. As expressed
+in a glider ’s L/D parameter, the generation of lift is unavoidably accompa-
+nied by the proportional generation of drag. This drag reduces a glider ’s
+velocity, which in turn limits its achievable range and maneuver-
+ing capability.
+Figure 3 shows the calculated glide phase velocity of the modeled hyper-
+sonic vehicle as a function of glide range for flight straight down-range
+with no cross-range maneuvering. Data are presented for a range of initial
+glide velocities, which will vary with the booster rocket and the boost, reen-
+try, and pull-up trajectories chosen for a particular hypersonic missile
+launch. Based on Acton ’s analysis of HTV-2 flight tests, initial glide veloc-
+ities of roughly 6 km/s can be considered typical for intercontinental-range
+systems.34 In all cases, drag rapidly slows the glider. For example, the vel-
+ocity of a missile beginning glide at v ¼ 6 km/s is halved after 6,000 km
+of glide.
+As a glider ’s velocity decreases due to drag, its equilibrium flight altitude
+also decreases, assuming a constant value of L/D and a constant relation-
+ship between v and the generated lift ( Equation (7) ).35 Thus, as it slows, a
+142 C. L. TRACY AND D. WRIGHT
+=== page 9 ===
+glider must drop to lower altitudes where denser air can provide sufficient
+lift to keep it aloft. Continuous hypersonic flight is therefore constrained to
+a relatively narrow altitude-velocity corridor. 36 Figure 4 shows calculated
+glide altitudes as a function of glide range under the same flight conditions
+considered in Figure 3 .
+These results show good agreement with the prior literature. For
+example, Acton estimated an achievable range of /C24 7,500 km for an HTV-2
+with an initial glide speed of 6.1 km/s and initial glide altitude of /C24 50 km.37
+For these conditions, our model predicts a similar maximum range
+of 7,630 km.
+Drag effects on glide speed and altitude limit the achievable hypersonic
+missile delivery times. Figure 5 displays the calculated glide time necessary
+for the modeled vehicle to reach a certain glide range. At long ranges, such
+as those associated with intercontinental strikes, the drag penalty on deliv-
+ery time can be substantial.
+While the above analysis concerns straight flight in the down-range dir-
+ection, drag also limits cross-range maneuverability. Figure 6 shows the cal-
+culated flight paths of a glider maneuvering in the cross-range direction
+using a variety of vehicle roll angles. The ends of these flight paths approxi-
+mately trace one-half of the area threatened by a missile initially gliding in
+the down-range direction. While substantial cross-range maneuvering is
+possible, it entails a reduction in the total flight path length. This is because
+a glider must roll in order to turn, redirecting a portion of the lift force
+toward the cross-range direction. The corresponding reduction in the lift
+force acting counter to gravity results in a faster loss of altitude and, there-
+fore, velocity. 38
+0 2000 4000 6000 8000 10000 12000 14000
+0
+1
+2
+3
+4
+5
+6
+7
+Speed (km/
+s)
+Glide range (km)
+6.5 km/s6 km/s5.5 km/sv=
+5km/s
+0 7km/s
+Figure 3. Hypersonic vehicle speed as a function of glide range for various initial glide speeds,
+illustrating how atmospheric drag slows the vehicle throughout the glide phase.
+SCIENCE & GLOBAL SECURITY 143
+=== page 10 ===
+Comparison with ballistic missiles
+The strategic implications of hypersonic weaponry depend on its perform-
+ance relative to that of ballistic missiles, which currently represent the
+state-of-the-art in fast, long-range warhead delivery. 39 Long-range ballistic
+missiles reach velocities comparable to those of hypersonic boost-glide sys-
+tems, since they are launched on similar or identical rocket boosters.
+0 2000 4000 6000 8000 10000 12000 14000
+0
+10
+20
+30
+40
+50
+60
+Altitude (km)
+Glide range (km)
+7km/
+s
+6.5 km/s6 km/
+s
+5.5
+km/
+s
+v=
+5k m / s
+0
+Figure 4. Hypersonic vehicle altitude as a function of glide range for various initial speeds. As
+drag slows the vehicle, the lift it generates (at a constant angle of attack) decreases. The glider
+therefore drops to lower altitude, at which increased atmospheric density yields a greater lift
+force for the same velocity. Minor oscillations about the equilibrium flight altitude, called phu-
+goid motion, result from the dynamics of this process. These could be damped by active con-
+trol of the vehicle.
+0 2000 4000 6000 8000 10000 12000 14000
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+Glide time (min)
+Glide range (km)
+7 km/s
+6.5 km/s6 km/s
+5.5 km/
+s
+v= 5 k m / s0
+7 km/s, no drag
+Figure 5. Glide time as a function of glide range for various initial speeds. The gray dashed
+line corresponds to an initial speed of 7 km/s in the absence of atmospheric drag. Curvature of
+the solid lines results from the effects of atmospheric drag.
+144 C. L. TRACY AND D. WRIGHT
+=== page 11 ===
+Unlike gliders, they then spend most of their flight high above the atmos-
+phere where they are not subjected to drag forces. However, this high, arc-
+ing flight increases the flight path length necessary to reach a given range,
+relative to the low-altitude flight paths of hypersonic gliders.
+To determine the relative capabilities of hypersonic and ballistic missiles
+we modeled intercontinental-range flight of both missile types, comparing
+their flight times and reentry speeds. 40 To facilitate comparison, identical
+Minotaur IV booster rockets were modeled in both cases. This three-stage,
+solid-fueled modification of the Peacekeeper intercontinental ballistic mis-
+sile (ICBM) was used in flight testing of the HTV-2 and has been consid-
+ered for future use in deployed U.S. hypersonic weapons. 41 Booster
+parameters were obtained from prior analysis by Wright. 42
+For the hypersonic case, we modeled a boost phase trajectory based on
+that used in HTV-2 flight testing. 43 For the reentry and pull-up phases, we
+used Acton ’s results from analysis of HTV-2 flight tests. 44 Under these
+assumptions, the hypersonic vehicle begins its pull-up phase, after reenter-
+ing the atmosphere, at a speed of 7.1 km/s. It subsequently begins glide
+3,100 km down-range from its launch point, 10.1 minutes after launch, at
+an altitude of 49 km and a speed of 6.1 km/s.
+For the ballistic case, we modeled two distinct trajectories. 45 The first is
+a typical minimum energy trajectory (MET), which is the most energy-effi-
+cient trajectory for a given range. It sends the warhead arcing over
+1,000 km above Earth before it falls to its target. For this trajectory, the
+rocket booster burn time was varied to achieve the desired missile range.
+0 1000 2000 3000 4000 5000 6000 7000 8000
+0
+1000
+2000
+3000
+4000
+5000
+Cross-range (km)
+Down-range (km)
+Figure 6. Flight trajectories of vehicles beginning glide with v ¼ 6 km/s and roll angles varying
+in 5 /C14 increments from 0 to 70 /C14 . To maximize cross-range travel, the roll angle is reset to 0 /C14
+once the glider is traveling directly cross-range. The ends of these flight paths trace one half of
+the approximate area threatened by a missile at the start of glide.
+SCIENCE & GLOBAL SECURITY 145
+=== page 12 ===
+The second is a depressed trajectory (DT), so named because the missile
+turns sharply toward the down-range direction during the boost phase,
+yielding a small angle with respect to the local horizontal at the end of
+boost and, consequently, a much lower apogee. This trajectory reduces the
+missile’s total flight path length necessary to reach a given range, compared
+with a minimum energy trajectory, resulting in shorter delivery times. The
+depressed trajectory calculation assumes a boost phase turn similar to, but
+less severe than, that used in HTV-2 flight testing. 46 The flight angle at
+booster burn-out was varied to achieve the desired missile range. To facili-
+tate direct comparison with the hypersonic case, we assume a ballistic mis-
+sile reentry vehicle mass of 1,000 kg (equal to the HTV-2 mass used in this
+modeling) so that the two systems exhibit essentially the same speed at
+booster burn-out. 47
+Figure 7 shows the resulting trajectories for hypersonic and ballistic mis-
+siles delivered to targets 8,100 km away from the launch point (correspond-
+ing to 5,000 km glide, in the hypersonic case). Figure 8 shows the total
+warhead delivery time, from launch to impact, for each missile as a func-
+tion of range.
+These results show that hypersonic weapons cannot match the short
+delivery times of ballistic missiles flying on depressed trajectories, although
+they exhibit a modest delivery time advantage over ballistic missiles flying
+minimum energy trajectories. In short, hypersonic missiles are slower than
+ballistic missiles over intercontinental ranges. Claims that the advent of
+hypersonic weaponry will reduce the time necessary for warhead delivery
+between, for example, the United States, Russia, and China, are false.
+Currently deployed long-range ballistic missiles are not designed to man-
+euver during reentry, either to increase accuracy or evade defenses.
+However, the United States has developed and tested several maneuvering
+reentry vehicles (MaRVs), which could be deployed on existing ballistic
+missiles.48 Use of a lifting reentry body on a ballistic missile to enable
+maneuvering in the terminal phase, as the hypersonic glider does, would
+reduce delivery times slightly. For example, we find that a lifting reentry
+vehicle with L/D ¼ 1, which is achievable using a simple biconic geometry,
+would reduce the depressed trajectory delivery time by approximately one-
+quarter to one-half of a minute, depending on range. 49
+Flight speed in the terminal phase influences the vulnerability of a mis-
+sile to interception by defensive systems. Figure 9 compares vehicle veloc-
+ities as a function of altitude shortly before impact at two total ranges:
+6,100 km and 8,600 km (corresponding to 3,000 km and 5,500 km glide in
+the hypersonic case). 50
+The hypersonic vehicle, because it has been slowed by drag throughout
+its glide phase, begins the terminal phase at a lower velocity than either
+146 C. L. TRACY AND D. WRIGHT
+=== page 13 ===
+ballistic missile. However, it maintains much of its speed throughout this
+phase via a highly efficient inverted dive maneuver, which puts it on a
+steep trajectory through the dense lower atmosphere ( Figure 7(c) ). In the
+ballistic minimum energy trajectory, the reentry vehicle approaches its tar-
+get at a similarly steep angle and, due to its higher velocity at the start of
+the terminal phase, travels faster than the hypersonic glider for most or all
+of this phase.
+The depressed trajectory ballistic missile reenters the atmosphere at a
+shallow angle relative to the minimum-energy trajectory case, increasing
+the amount of time it spends traversing the atmosphere and enhancing the
+0 1000 2000 3000 4000 5000 6000 7000 8000
+0
+200
+400
+600
+800
+1000
+1200
+1400
+Altitude (km)
+Range (km)
+Hypersonic glide
+Ballistic depressed trajectory
+Ballistic minimum
+energy trajectory
+(a)
+7800 7900 8000 8100
+0
+10
+20
+30
+40
+50
+60
+70
+Altitude (km)
+Range (km)
+0 100 200 300
+0
+25
+50
+75
+100
+125
+150
+175
+Altitude (km)
+Range (km)
+(b) (c)
+Figure 7. Calculated flight paths of a hypersonic glider and a ballistic missile flying minimum
+energy and depressed trajectories, fired at a target 8,100 km down-range. All missiles use identi-
+cal Minotaur IV boosters. The hypersonic and ballistic depressed trajectory launches use similar
+boost phase trajectories based on those used in HTV-2 flight tests. The dashed section of the
+hypersonic curve represents analytic results rather than detailed modeling. Part (a) shows the
+total flight paths, while parts (b) and (c) show details of the boost and terminal phases at the
+start and end of missile flight. The hypersonic and depressed trajectory missiles make relatively
+sharp turns toward the down-range direction during the boost phase, and the depressed trajec-
+tory vehicle reenters the atmosphere at a relatively shallow angle.
+SCIENCE & GLOBAL SECURITY 147
+=== page 14 ===
+effects of drag. While it begins the terminal phase at a higher velocity than
+the hypersonic glider, it loses much of this speed by the time it approaches
+the target. Equipping the missile with a lifting reentry vehicle, as discussed
+above, would allow it to more quickly dive to the ground and to maintain
+speeds higher than that of the hypersonic glider throughout the ter-
+minal phase.
+01234567
+0
+5
+10
+15
+20
+25
+30
+35
+Altitude (km)
+Velocity (km/s)
+01234567
+Velocity (km/s)
+Hypersonic glide
+Ballistic DT
+Ballistic MET
+Range = 6100 km Range = 8600 km
+Ballistic DT (lifting)
+Figure 9. Terminal phase speed as a function of altitude for hypersonic gliders and ballistic
+reentry vehicles approaching targets at 6,100 km (left) and 8,100 km (right) ranges. The dashed
+line corresponds to a depressed trajectory ballistic missile armed with a lifting reentry vehicle
+(L/D ¼ 1). For most or all of the terminal phase the hypersonic glider is slower than the ballistic
+missile reentry vehicles, with the exception of the ballistic depressed trajectory using a non-lift-
+ing reentry vehicle.
+6000 6500 7000 7500 8000 8500
+15
+20
+25
+30
+35
+Delivery time (min
+)
+Range (km)
+Hypersonic glide
+Ballistic DT
+Ballistic MET
+Figure 8. Calculated total delivery times for a hypersonic missile and a ballistic missile flying
+both minimum energy and depressed trajectories. Delivery times include boost, ballistic, reentry,
+pull-up, glide, and terminal phases, where applicable. Ballistic missiles fired on depressed trajec-
+tories reach their targets most quickly. Their delivery time advantage over hypersonic gliders
+increases with range.
+148 C. L. TRACY AND D. WRIGHT
+=== page 15 ===
+Detection, tracking, and early warning
+In addition to their purported speed advantage, it is often claimed that
+hypersonic weapons can bypass existing early warning systems, further
+attenuating adversary response times. To be sure, their low-altitude flight
+significantly reduces the range at which they can be detected by ground-
+based radar systems compared with ballistic missiles, since Earth ’s curva-
+ture blocks a radar ’s line-of-sight to a low-flying glider at distances of more
+than a few hundred kilometers. 51 The formation of a high-temperature
+plasma sheathe around a hypersonic glider might also alter its radar
+cross section. 52
+However, two states at the forefront of the hypersonic arms race, the
+United States and Russia, do not rely solely on ground-based radar to
+detect missile attacks; both have fielded space-based sensors since the
+1970s.53 China is reportedly developing its own space-based early warning
+system with assistance from Russia. 54 These satellite-mounted IR detectors
+are designed to spot the bright rocket plumes produced by ballistic mis-
+sile launches.
+Space-based IR sensors will also detect the launch of hypersonic boost-
+glide weapons, since they are launched on large rockets similar to those
+used with ICBMs. Moreover, hypersonic glide through the atmosphere pro-
+duces immense heating of glide vehicles and the surrounding air, yielding
+strong IR signatures that, when sufficiently intense, can be detected by
+space-based sensors. Thus, while hypersonic weapons might bypass some
+components of early warning systems, they are particularly vulnerable
+to others.
+To quantify the visibility of hypersonic gliders to space-based IR sensors,
+we modeled the heating and thermal radiation of these vehicles. Figure 10
+shows, as an example, the calculated temperature distribution along the
+centerline of the upper surface of a glider traveling at v ¼ 6 km/s at its equi-
+librium glide altitude of h ¼ 49.7 km. Our results show good agreement
+with prior computational fluid dynamics calculations by Niu et al. 55 For
+example, they report temperatures along the upper surface centerline,
+excluding the vehicle ’s rounded nose tip, in the range 2,060 –1,130 K for
+glide at a velocity of v ¼ 5.4 km/s and an altitude of h ¼ 60 km. Our model
+predicts temperatures in the range 1,950 –1,310 K under the same
+conditions.56
+These surface temperatures vary with the velocity of the glider and the
+density of the surrounding air ( Equations (8) –(10)). Figure 11 shows the
+temperature evolution as a function of glide range at a point on the glider
+centerline 1 m behind the vehicle nose. 57 These temperatures are far in
+excess of those experienced by ballistic missiles during their mid-course
+flight through outer space, which are typically below 300 K. 58
+SCIENCE & GLOBAL SECURITY 149
+=== page 16 ===
+These extreme temperatures give rise to intense emission of radiation in
+the IR spectrum. Our calculated radiance results again agree well with pre-
+viously reported values. For example, Niu et al. calculated overhead radiant
+intensities of /C24 105 kW/sr in the 3 –5 mm band and /C24 14 kW/sr in the
+8–12 mm band for a vehicle traveling at v ¼ 5.4 km/s at an altitude of
+h ¼ 60 km.59 Our model yields similar overhead radiant intensities of
+113 kW/sr in the 3 –5 mm band and 15 kW/sr in the 8 –12 mm band for the
+same flight conditions.
+0 2000 4000 6000 8000 10000 12000 14000
+800
+1000
+1200
+1400
+1600
+1800
+2000
+Temperature at 
+x = 1 m (K)
+Glide range (km)
+7km/s
+6.5 km/s6km/s
+5.5 km/sv =5k m / s
+0
+Figure 11. Glider centerline surface temperatures at a position 1 m behind the vehicle nose as
+a function of glide time for various initial speeds. Oscillations arise from the altitude variation
+shown in Figure 4 . The discontinuities seen at T /C25 1,600 K are caused by the switch from
+Equation (9) to Equation (10) when the vehicle slows to v /C20 4 km/s.
+0.0 0.2 0.4 0.6 0.8 1.0
+1600
+2000
+2400
+2800
+3200
+T(
+K)
+x/L
+Figure 10. Calculated glider centerline temperatures as a function of fractional position along
+the vehicle length for flight at v ¼ 6 km/s and h ¼ 49.7 km. The discontinuity at x/L /C25 0.8 results
+from a change in the slope of the glider ’s surface ( h) at this position.
+150 C. L. TRACY AND D. WRIGHT
+=== page 17 ===
+To assess the visibility of this IR emission to early warning systems, we
+compared the calculated radiant intensities of a glider with the IR sensitiv-
+ities of both existing U.S. space-based detection systems, using data avail-
+able in the open literature. The U.S. space-based early warning system is
+composed of two sets of satellites: the Defense Support Program (DSP),
+first deployed in the 1970s, and the Space-Based Infrared System (SBIRS),
+currently under development with the first satellite launched in 2011. 60
+Modern DSP satellites use linear sensor arrays, /C24 6,000 pixels long, that
+rotate to cover the visible disk of Earth in 10 second intervals. 61 This yields
+spatial resolution on the order of 1 km and collection times on the order of
+100 microseconds. 62 These sensors are tuned to a narrow wavelength band,
+2.69–2.95 mm, where the atmosphere blocks most transmission of IR radi-
+ation from the Earth ’s surface, reducing background signal. 63 The ability of
+DSP satellites to observe even relatively dim, short-range missile launches
+was established in the 1990 –1991 Gulf War, when they routinely detected
+launches of Iraqi Scud missiles. 64 This allows for determination of an
+approximate lower radiant intensity threshold for detection by DSP.
+Assessing the available data on Scud IR emission, Garwin and Postol place
+this threshold at /C24 20 kW/sr in the 2.69 –2.95 mm band. 65
+Because hypersonic gliders are launched on large rockets, rocket plumes
+from these launches will be readily detectable by existing space-based sen-
+sors like the DSP. Furthermore, our results show that a hypersonic glider
+would emit above the threshold for reliable detection by the DSP for a sub-
+stantial portion of the glide phase. Figure 12 shows calculated glider radiant
+intensities in the 2.69 –2.95 mm band as a function of range. For example, a
+weapon entering glide at v ¼ 6 km/s would emit above the DSP detection
+threshold for the first /C24 19 minutes of glide, corresponding to about three
+quarters of its maximum glide range. 66 Based on DSP ’s spatial and time
+resolution, it might conceivably provide tracking capability throughout this
+period, as it does for ballistic missiles. 67
+The more advanced SBIRS system could detect and track gliders for an
+even longer portion of glide. While relatively little information on SBIRS
+detection parameters is available in the open literature, a 2004 study by the
+American Physical Society reports technical characteristics of a notional
+SBIRS-like system. 68 This study assumes, based on commercially available
+technology at the time of its writing, that a step-stare detector operating in
+the short-wavelength infrared (SWIR) band (1.4 –3.0 mm) with a 1 km 2 pixel
+footprint, 33 ms collection time, and 1 s revisit time reasonably approxi-
+mates the likely performance of a SBIRS detector. 69 These parameters are
+generally consistent with those proposed early in the SBIRS develop-
+ment process. 70
+SCIENCE & GLOBAL SECURITY 151
+=== page 18 ===
+Accounting for the effects of atmospheric absorption, background signal,
+etc., the APS study concludes that a notional SBIRS like system “could
+detect sources with luminosities as low as 6 kW/sr [in the SWIR band]
+with some margin of safety ” and could determine the three dimensional
+position of such a source to within less than 300 m. 71 As shown in Figure
+13, a hypersonic glider emits above this detection threshold for essentially
+the entirety of glide. 72 This further indicates that hypersonic missiles can
+be detected by existing space-based sensor technologies. Moreover, given
+the predicted spatial precision of the SBIRS system and its short revisit
+time, tracking hypersonic gliders through most of their flight is
+likely feasible.
+While hypersonic missiles will remain visible to space-based sensors
+throughout much of their glide phase, for sufficiently long flights there
+might exist short periods near the end of glide when the vehicle has slowed
+enough that its radiant intensity drops below the threshold for detection.
+For our model, the overhead radiant intensity drops below the SBIRS
+detection threshold when the glider slows to v ¼ 1.6 km/s (around 26 km
+altitude) and below the DSP threshold when it slows to v ¼ 3.5 km/s
+(around 37 km altitude). Even with precise tracking up to this point, there
+could remain a degree of uncertainty in the missile ’s subsequent trajectory
+and its ultimate target. Still, this post-detection maneuvering will be strictly
+limited by the reduced velocity of the vehicle at this stage. Figure 14 illus-
+trates the calculated maximum achievable cross-range travel of a glider if
+0 2000 4000 6000 8000 10000 12000 14000
+0
+10
+20
+30
+40
+Radiant intensity,DSP band (kW/sr)
+Glide range (km)
+7k
+m/s
+6.5
+km/s
+6 km/s5.5 km/
+s
+v= 5 k m / s
+0
+DSP detection
+threshold
+Figure 12. Glider overhead radiant intensity in the DSP detection band (2.69 – 2.95 mm) as a
+function of glide time for various initial speeds. In all cases glider radiance remains above the
+approximate 20 kW/sr DSP detection threshold for the majority of glide. Oscillations arise from
+the altitude variation shown in Figure 4 . The discontinuities seen at I /C25 25 kW/sr are caused by
+the switch from Equation (9) to Equation (10) when the vehicle slows to v /C20 4 km/s.
+152 C. L. TRACY AND D. WRIGHT
+=== page 19 ===
+maneuvering is delayed until IR emission drops below a certain detec-
+tion threshold.
+For the 6 kW/sr detection threshold predicted for a SBIRS-like system in
+the SWIR band, maximum cross-range flight of only /C24 200 km and down-
+range flight of /C24 400 km would be possible once a glider had slowed
+0 2000 4000 6000 8000 10000 12000 14000
+0
+100
+200
+300
+400
+Radiant intensity
+, SWIR (kW/
+sr)
+Glide range (km)
+7km/s
+6.5
+km/s
+6k
+m/
+s
+5.5 km
+/s
+v=
+5 km/s
+0
+SBIRS detection
+threshold
+Figure 13. Glider overhead radiant intensity in the SWIR band (1.4 – 3.0 mm) as a function of
+glide time for various initial speeds. In all cases glider radiance remains above the approximate
+6 kW/sr SBIRS detection threshold for essentially the entire glide phase. Oscillations arise from
+the altitude variation shown in Figure 4. The discontinuities seen at I /C25 200 kW/sr are caused by
+the switch from Equation (9) to Equation (10) when the vehicle slows to v /C20 4 km/s.
+0 5 10 15 20 25
+0
+250
+500
+750
+1000
+1250
+Achievable post-thre
+shold
+cross range (km)
+Detection threshold (kW/sr)
+2.69 - 2.95 µm band
+1.4 - 3.0 µm band
+DSP
+threshold
+SBIRS threshold
+Figure 14. The maximum achievable cross-range travel of a glider assuming that maneuvering
+in the cross-range direction begins only once the glider ’s radiant intensity drops below a spe-
+cific detection threshold. Data are shown for a range of detection thresholds in both the DSP
+detection band (2.69 – 2.95 mm, upper line) and the notional SBIRS detection band (1.4 – 3.0 mm,
+lower line). In both cases cross-range travel is limited to hundreds of kilometers.
+SCIENCE & GLOBAL SECURITY 153
+=== page 20 ===
+sufficiently to emit below this threshold (at velocities below the hypersonic
+regime, as shown in Figure 3 ). At this point, the missile would threaten a
+region roughly equivalent in area to Nicaragua or the U.S. state of
+Pennsylvania. Thus, while some targeting uncertainty would remain even
+after detection and tracking by space-based sensors, this uncertainty would
+be tightly constrained by physical limitations on the maneuvering of a mis-
+sile. Furthermore, this uncertainty pertains only to detection and tracking
+by space-based sensors. As a glider approached to within a few hundred
+kilometers of its target, it would become visible to ground-based radar sys-
+tems that could provide continuity of tracking. 73
+Misperceptions of hypersonic missile capabilities
+This analysis demonstrates the falsity of common claims regarding the
+capabilities of hypersonic weapons. Computational modeling indicates that
+ballistic missiles fired on depressed trajectories can fly intercontinental dis-
+tances significantly faster than can hypersonic boost-glide systems ( Figure
+8). Furthermore, its shows that hypersonic weapons are not invulnerable to
+detection by early warning systems but will instead remain visible to space-
+based sensors during launch and the majority of the glide phase. They are
+thus unlikely to meaningfully reduce the time available for a targeted
+adversary to respond. 74
+This misalignment between oft-repeated claims of hypersonic weapon
+performance and their apparent technical capabilities raises several ques-
+tions. How did these misconceptions originate? Why have they persisted?
+Why are states so ardently pursuing weapon systems that do not perform
+as advertised? Clearly, answers to these questions are not to be found in
+the technical basis for hypersonic missile performance. Rather, they require
+analysis of the processes by which technological facts regarding hypersonic
+missile performance — delivery times, vulnerability to detection, etc. — have
+been socially constructed. 75 Here, we consider the U.S. hypersonic program
+as a representative case.
+The social construction of technical facts
+U.S. hypersonic missile development is led by the Department of Defense
+(DOD), which currently oversees at least six distinct programs spread
+across the military services and DARPA. 76 As shown in the modeling
+results reported here, many of the justifications the DOD has offered for
+hypersonic weapon development, based on their purportedly revolutionary
+capabilities, do not hold up to technical scrutiny. Furthermore, several ana-
+lysts have concluded that DOD planning in this area appears only weakly
+154 C. L. TRACY AND D. WRIGHT
+=== page 21 ===
+tied to any specific military mission or objective. 77 This suggests that fac-
+tors unrelated to missile performance may be driving development.
+The unique organizational predilections of the DOD illuminate several
+possible factors. For example, Allison and Zelikow identify in DOD behav-
+ior “effective imperatives to avoid … inferiority to an enemy weapon of any
+class” or “a decrease in dollars budgeted. ”78 Both driving forces for weapon
+development are independent of technical performance parameters. Instead,
+they incentivize the pursuit of weapons that match those under develop-
+ment by adversaries and that present opportunities for the capture of
+budgetary resources — descriptions clearly applicable to hyper-
+sonic weapons. 79
+Yet while the DOD ’s pursuit of a missile technology may be only weakly
+tied to technical capabilities, social conceptions of missile performance play
+a key role in the marshaling of external support for weapons development.
+The DOD alone cannot establish and carry out a missile development pro-
+gram; it must enroll the support of others with different, potentially con-
+flicting organizational interests, such as congressional appropriators.
+In their sociological studies of U.S. ballistic missile development pro-
+grams, MacKenzie and Spinardi show that this dynamic, in which propo-
+nents of new missile technologies enroll the support of skeptical actors
+external to their organizational unit, is typical of weapons development
+efforts and begets particular social processes by which technical facts
+regarding missile performance are socially constructed. 80 In these processes,
+development of a new missile technology is not “a matter of engineering
+just metal, wires, and equations. People [have] to be engineered, too. ”81
+Success requires the engineering of a sociotechnical ensemble that “includes
+both gyroscopes and Senators, and if one is seen not to work as intended,
+the other may not either. ”82 DOD proponents of new missile technologies
+construct these ensembles through processes termed “heterogeneous engi-
+neering,” wherein technologists develop weapons that work, in a technical
+sense, while simultaneously shaping social perceptions of what a “working”
+system entails. 83
+Establishing the credibility of technical claims regarding the advantages
+of a weapon system is, according to MacKenzie, a “key role ” played by het-
+erogeneous engineers. 84 To this end, they seek to construct technical facts
+that cast their favored technology as desirable and necessary. 85 Thus, social
+and organizational interests become embedded in ostensibly technical argu-
+ments. The actual technical capabilities of a weapon are often subordinated
+to these social factors: “whether [a missile] would actually perform to speci-
+fication in a war situation is a moot point and not actually crucial to the
+success of the technology … what matters is that the technology succeeds as
+SCIENCE & GLOBAL SECURITY 155
+=== page 22 ===
+a network of interests, ” incorporating political, organizational, financial,
+and professional incentives. 86
+In the United States, the DOD has acquired broad leeway to unilaterally
+define the technical capabilities of hypersonic weapons. As Oelrich
+observes, “virtually anyone in the United States who has a solid technical
+understanding of hypersonic aerodynamics is working for the Defense
+Department, one of the national laboratories, a contractor working for
+Defense, or is a university researcher supported at least in part by Defense
+Department grants. ”87 This near-monopoly on relevant technical expertise
+is buttressed by a permissive culture among congressional appropriators.
+Since they often lack the capacity for detailed technical analysis, “questions
+of weapons technology are largely … left to those most imbued with that
+particular culture, ” in this case DOD representatives. 88
+Analysis of the U.S. hypersonic program through this sociological lens
+reveals numerous examples of heterogeneous engineering on the part of
+DOD officials, through which erroneous claims regarding the performance
+of these weapons became embedded in dominant governmental, scholarly,
+and media discourses. Here, we examine two representative instances rele-
+vant to the issues discussed in this work — missile delivery times and visibil-
+ity to space-based sensors.
+Claim 1: Attenuated delivery times
+It is commonly claimed that hypersonic weapons can reduce warhead deliv-
+ery times by reaching their targets faster than existing ballistic missiles
+could. In 2019 testimony before the U.S. Senate Committee on Armed
+Services, the Commander of U.S. Strategic Command addressed this deliv-
+ery time issue. Asked how long it would take a Russian hypersonic glide
+weapon to strike the United States, he responded: “it is a shorter period of
+time. The ballistic missile is roughly 30 minutes. A hypersonic weapon,
+depending on the design, could be half of that, depending on where it is
+launched from, the platform. It could be even less than that. ”89
+This comparison between hypersonic and ballistic missiles, phrased so as
+to suggest that the former is intrinsically faster than the latter, is mislead-
+ing. The 30-minute figure provided for a ballistic strike corresponds to a
+missile launched from Russia on a minimum energy trajectory. 90 A ballistic
+missile launched nearer to U.S. soil (e.g., from a submarine in the Pacific
+Ocean) would reach its target much more quickly, as would one launched
+on a depressed trajectory. As shown in Figure 8 , a hypersonic weapon
+would take /C24 25 minutes to travel the distance between western Russia and
+the eastern United States, making it only slightly faster than an ICBM
+strike using a minimum energy trajectory, and slightly slower than an
+ICBM strike using a depressed trajectory. The 15-minute figure provided to
+156 C. L. TRACY AND D. WRIGHT
+=== page 23 ===
+Congress corresponds to a hypersonic weapon launched much closer to
+U.S. soil — an example of forward basing that is equally applicable to ballis-
+tic missiles.
+In this skillful demonstration of heterogeneous engineering, the delivery
+time of a forward-based hypersonic missile was compared with that of a
+ballistic missile launched from a much greater distance; this argument for
+the advantages of forward basing was presented to legislators as an argu-
+ment for the advantages of hypersonic missile technology. The implication
+that a hypersonic missile could halve the time necessary to deliver a war-
+head between Russia and the United States — while false — subsequently per-
+meated the U.S. discourse, fueling narratives of the revolutionary nature of
+these weapons. 91
+Claim 2: Evasion of early warning systems
+Even if it flew no faster than a ballistic missile, a hypersonic weapon might
+still reduce adversary response times if it were able to bypass early warning
+systems. In 2020, the Under Secretary of Defense for Research and
+Engineering stated that hypersonic missiles are “20 times dimmer, or more,
+than the targets [the United States is] able to track ” with its SBIRS satel-
+lites, suggesting a need for new satellite sensors. 92 The Director of the
+Missile Defense Agency told the Senate Committee on Armed Services that,
+due to this dimness, a new satellite constellation would be necessary to
+detect hypersonic missiles. 93
+It is true that, in its glide phase, a hypersonic vehicle will not match the
+>1 MW/sr IR intensity of the large rocket exhaust plumes that current
+space-based sensors were designed to observe. 94 But this is not a particu-
+larly relevant comparison. First, intercontinental-range hypersonic boost-
+glide weapons are launched on the same rockets as are ICBMs. 95 Therefore,
+hypersonic missile launches will not be appreciably dimmer than ICBM
+launches. Second, IR emissions from hypersonic gliders will remain sub-
+stantial long after launch ( Figure 12 ). The relevant comparison in this case
+is not the IR intensity of a glider relative to that of a ballistic missile rocket
+plume, as quoted by DOD officials, but rather its intensity relative to the
+detection and discrimination capabilities of space-based sensors. As shown
+in Figures 12 and 13, gliders will emit above the detection thresholds of
+both the SBIRS and DSP systems for much of their flight.
+DOD statements comparing glider IR intensity with that of a rocket
+plume, rather than with the detection limits of existing space-based sensors,
+constitute another example of heterogeneous engineering. In promoting a
+misleading narrative regarding the adequacy of current detection systems
+for hypersonic early warning, they justify not only U.S. hypersonic weapon
+development but also plans for deployment of a vast new satellite
+SCIENCE & GLOBAL SECURITY 157
+=== page 24 ===
+network.96 Claims regarding the purported undetectability of hypersonic
+weapons have subsequently been repeated in the news media, where they
+are presented as technical facts. 97
+Conclusions
+Computational modeling of hypersonic boost-glide missiles reveals that the
+capabilities of these weapons are limited by fundamental physical con-
+straints. The drag forces they encounter during low altitude glide rapidly
+reduce their velocity. Because hypersonic flight is characterized by tradeoffs
+between speed, altitude, maneuverability, etc., this deceleration severely
+restricts overall missile performance. Low altitude flight also produces
+immense heating of glider surfaces, yielding IR signatures sufficient for
+detection by existing space-based sensors.
+These results call into question many of the purported advantages of
+hypersonic weapons over existing missile technologies. For instance, model-
+ing shows that an ICBM flying a depressed trajectory could reach intercon-
+tinental targets faster than a hypersonic glider launched on the same rocket
+booster, with similar vulnerability to detection by space-based early warn-
+ing systems. Similarly, ballistic missiles exhibit higher terminal phase veloc-
+ities than hypersonic gliders. A ballistic missile equipped with a MaRV
+might therefore exhibit terminal phase maneuverability superior to that of
+a hypersonic weapon, allowing it to better evade defensive interceptors or
+strike mobile targets.
+That said, hypersonic weapons possess some attributes or combinations
+of attributes distinct from those of existing missile technologies. Their man-
+euverability in the glide phase allows them to fly trajectories unachievable
+by ballistic missiles at speeds unachievable by typical cruise missiles. This
+would allow them to, for example, fly under the reach of missile defense
+systems designed to intercept reentry vehicles above the atmosphere. But,
+considering these modest distinctions between the capabilities of hypersonic
+missiles and ballistic missiles, the former would be best characterized as an
+evolutionary— not revolutionary — development relative to existing mis-
+sile technology.
+The apparent mismatch between widespread perceptions of hypersonic
+weapons and their actual technical capabilities can be attributed to the
+dominant role that proponents of these weapon systems have played in the
+social construction of technical facts regarding their performance. Several
+erroneous beliefs about hypersonic weapons — their supposed attenuation of
+delivery times or invulnerability to detection by existing early warning sys-
+tems— can be traced to statements by DOD officials tailored to imply
+158 C. L. TRACY AND D. WRIGHT
+=== page 25 ===
+revolutionary capabilities and, in doing so, to justify the expenditure neces-
+sary for development and deployment of these systems.
+Our findings clarify the probable performance of hypersonic missiles,
+while also demonstrating a need for further technical assessment. Beyond
+the issues explored here, there remain several unresolved questions that fol-
+low-on research might address. For example, this analysis reveals the sensi-
+tivity of hypersonic missile performance to glider aerodynamic parameters,
+particularly L/D, which determines the magnitude of the drag a glider expe-
+riences. As Acton notes, the L/D of the HTV-2, the glider on which much
+of this analysis is based, is relatively low. 98 If a higher L/D were achieved
+in future missile designs, glider performance (speed, range, etc.) would be
+enhanced. Yet competing factors, such as the thermal resilience of materials
+used in a glider ’s leading edges, may preclude substantially higher L/D val-
+ues.99 Assessment of the precise determinants of achievable L/D values, as
+well as other limitations on glider performance related to the thermal resili-
+ence of existing aeroshell materials, would provide an improved under-
+standing of hypersonic weapon capabilities. 100
+Additional analysis of the vulnerability of hypersonic weapons to missile
+defenses would also be useful. Boost-glide systems could be vulnerable to
+boost-phase missile defenses early in flight, should those defenses be devel-
+oped. During their glide and terminal phases hypersonic weapons would fly
+at altitudes too low for interception by defenses designed to intercept ballis-
+tic missiles above the atmosphere, such as the U.S. Ground-based Missile
+Defense (GMD) and ship-based Aegis systems. 101 Endoatmospheric
+defenses such as the U.S. Patriot and THAAD systems operate within the
+atmosphere, but are designed to intercept warheads from missiles with
+shorter ranges and slower speeds than ICBMs. 102 These systems might be
+capable of engaging hypersonic vehicles during the glide or terminal
+phases, given the relatively low speeds of gliders after extended flight
+(Figure 9 ). However, the maneuverability of a glider might prevent the cur-
+rent generation of defenses from successfully intercepting these targets.
+Future versions of these defenses might be more effective against maneu-
+verable vehicles but would still be capable of defending only relatively small
+areas. The potential for hypersonic missiles to bypass missile defenses likely
+motivates Russian and Chinese development of hypersonic weapons as a
+hedge against U.S. missile defense systems, just as those countries are likely
+developing decoys and other countermeasures against U.S. exoatmospheric
+defenses.103
+Finally, there remain several questions regarding hypersonic weapon
+guidance and communications. The formation of a high temperature
+plasma in the air surrounding a glider might hinder radio communications
+with external guidance references, like GPS satellites. 104 That said, the
+SCIENCE & GLOBAL SECURITY 159
+=== page 26 ===
+results reported here suggest that hypersonic gliders would be traveling
+slowly enough to preclude plasma formation during the terminal phase
+when guidance and communication are likely to be most important.
+The modeling approach outlined here provides a basis for quantitatively
+addressing these, and other, unresolved questions regarding the perform-
+ance of hypersonic weaponry.
+Notes
+1. The term “hypersonic” commonly refers to velocities greater than roughly five times
+the speed of sound (Mach number >5). Unique gas flow phenomena distinguish
+flight in this velocity regime. See John D. Anderson, Hypersonic and High-
+Temperature Gas Dynamics , 2nd ed. (Reston, VA: American Institute of Aeronautics
+and Astronautics, 2006), 13 –23. https://doi.org/10.2514/4.861956.
+2. See, for example, Michael T. Klare, “An ‘Arms Race in Speed ’: Hypersonic Weapons
+and the Changing Calculus of Battle, ” Arms Control Today 49 (2019): 6 –13. https://
+armscontrol.org/act/2019-06/features/arms-race-speed-hypersonic-weapons-changing-
+calculus-battle
+3. U.S. Department of Defense, Office of the Under Secretary of Defense
+(Comptroller)/Chief Financial Officer, Defense Budget Overview: Irreversible
+Implementation of the National Defense Strategy (2020), 1 –8, 10 –17. https://
+comptroller.defense.gov/Portals/45/Documents/defbudget/fy2021/fy2021_Budget_
+Request_Overview_Book.pdf
+4. On the reported pace of Chinese hypersonic testing see John A. Tirpak, “Griffin Says
+Hypersonics, Acquisition Reform are Top Priorities, ” Air Force Magazine , 6 March,
+2018, https://airforcemag.com/griffin-says-hypersonics-acquisition-reform-are-top-
+priorities/. This includes at least nine tests of the DF-ZF hypersonic glide vehicle and
+one of the XingKong-2 hypersonic cruise missile, as per Kelley Sayler, Hypersonic
+Weapons: Background and Issues for Congress (Washington, DC: Congressional
+Research Service, 2020), 14, https://crsreports.congress.gov/product/pdf/R/R45811.
+This development activity has been accompanied by a recent proliferation of
+scholarly publication on hypersonic technologies by Chinese researchers. See Keith
+Button, “Hypersonic Weapons Race, ” Aerospace America , June 2018. https://
+aerospaceamerica.aiaa.org/features/hypersonic-weapons-race/.
+5. On Russia ’s fielding of the Avangard hypersonic boost-glide missile see Julian E.
+Barnes and David E. Sanger, “Russia Deploys Hypersonic Weapon, Potentially
+Renewing Arms Race, ” The New York Times , 27 December 2019. https://nytimes.
+com/2019/12/27/us/politics/russia-hypersonic-weapon.html. President Putin devoted
+a significant portion of his 2018 Address to the Russian Federal Assembly to
+hypersonic weapons, referring to Russia ’s acquisition of these missiles as “most
+important stage in the development of modern weapons systems. ” See Vladimir
+Putin, “Presidential Address to the Federal Assembly, ” 1 March, 2018, http://en.
+kremlin.ru/events/president/news/56957. Russian hypersonic missiles tested to date
+include the Avangard, the Kinzhal air-launched glide vehicle, and the Tsirkon
+hypersonic cruise missile. See John T. Watts, Christian Trotti, and Mark J. Massa,
+“Primer on Hypersonic Weapons in the Indo-Pacific Region ” (Washington, DC:
+Atlantic Council, 2020). https://atlanticcouncil.org/wp-content/uploads/2020/08/
+Hypersonics-Weapons-Primer-Report.pdf
+160 C. L. TRACY AND D. WRIGHT
+=== page 27 ===
+6. Steven Simon, “Hypersonic Missiles Are a Game Changer, ” The New York Times ,2
+January 2020, https://nytimes.com/2020/01/02/opinion/hypersonic-missiles.html.
+7. Rupal N. Mehta, “Extended Deterrence and Assurance in an Emerging Technology
+Environment,” Journal of Strategic Studies (2019): 17, https://doi.org/10.1080/
+01402390.2019.1621173; Michael C. Horwitz, “When speed kills: Lethal autonomous
+weapon systems, deterrence and stability, ” Journal of Strategic Studies 42 (2019): 782,
+https://doi.org/10.1080/01402390.2019.1621174. On claims of hypersonic weapons ’
+“higher speed ” than ballistic missiles, see also Eleni Ekmektsioglou, “Hypersonic
+Weapons and Escalation Control in East Asia, ” Strategic Studies Quarterly 9 (2015):
+59, https://jstor.org/stable/26271074.
+8. U.S. Defense Intelligence Agency, Robert Ashley, “Statement for the Record:
+Worldwide Threat Assessment, ” testimony before the U.S. Senate Committee on
+Armed Services, 6 March 2018; https://armed-services.senate.gov/imo/media/doc/
+Ashley_03-06-18.pdf.
+9. R. Jeffrey Smith, “Hypersonic Missiles are Unstoppable. And They ’re Starting a New
+Global Arms Race, ” The New York Times , 19 June, 2019, https://nytimes.com/2019/
+06/19/magazine/hypersonic-missiles.html.
+10. U.S. National Academies, A Threat to America ’s Global Vigilance, Reach, and Power:
+High-Speed, Maneuvering Weapons: Unclassified Summary (Washington, DC:
+National Academies Press, 2016), 5, https://doi.org/10.17226/23667; Seyom Brown,
+“The New Nuclear MADness, ” Survival 61 (2020): 81, https://doi.org/10.1080/
+00396338.2020.1715067. On the supposed impossibility of reaction to a hypersonic
+strike see also Smith, “Hypersonic Missiles Are Unstoppable. ”
+11. See James M. Acton, “Hypersonic Boost-Glide Weapons, ” Science & Global Security
+23 (2015): 191 –219, http://scienceandglobalsecurity.org/archive/sgs23acton.pdf; Ivan
+Oelrich, “Cool Your Jets: Some Perspective on to Hyping of Hypersonic Weapons, ”
+Bulletin of the Atomic Scientists 76 (2020): 37 –45, https://doi.org/10.1080/00963402.
+2019.1701283; Nathan B. Terry and Paige Price Cone, “Hypersonic Technology: An
+Evolution in Nuclear Weapons? ” Strategic Studies Quarterly 14 (2020): 74 –99,
+https://jstor.org/stable/26915278.
+12. Richard H. Speier, George Nacouzi, Carrie A. Lee, and Richard M. Moore,
+Hypersonic Missile Nonproliferation: Hindering the Spread of a New Class of Weapons
+(Santa Monica, CA: RAND Corporation, 2017), 8 –15, https://rand.org/pubs/
+research_reports/RR2137.html.
+13. Acton, “Hypersonic Boost-Glide Weapons, ” 194–198. If launched on a highly
+depressed trajectory, a glider might remain within the atmosphere for the entirety of
+flight, obviating the need for atmospheric reentry.
+14. Frank J. Regan, Re-entry Vehicle Dynamics (New York: American Institute of
+Aeronautics and Astronautics, 1984), 287.
+15. Acton, “Hypersonic Boost-Glide Weapons, ” 198–202.
+16. Steven H. Walker, Jeffrey Sherk, Dale Shell, Ronald Schena, John F. Bergmann, and
+Jonathan Gladbach, “The DARPA/AF Falcon Program: The Hypersonic Technology
+Vehicle #2 (HTV-2) Flight Demonstration Phase, ” 15th AIAA International Space
+Planes and Hypersonic Systems and Technologies Conference (2008), https://doi.org/
+10.2514/6.2008-2539.
+17. Acton, “Hypersonic Boost-Glide Weapons. ” David Wright, “Research Note to
+Hypersonic Boost-Glide Weapons by James M. Acton: Analysis of the Boost Phase
+of the HTV-2 Hypersonic Glider Tests, ” Science & Global Security 23 (2015):
+220–229, http://scienceandglobalsecurity.org/archive/sgs23wright.pdf; Jiatong Shi,
+SCIENCE & GLOBAL SECURITY 161
+=== page 28 ===
+Liang Zhang, Baosen Jiang, and Bangcheng Ai, “Aerodynamic Force and Heating
+Optimization of HTV-2 Typed Vehicle, ” 21st AIAA International Space Planes and
+Hypersonics Technologies Conference, 6 –9 March 2017, https://doi.org/10.2514/6.
+2017-2374; Xiamen, China; Niu Qinglin, Yang Xiao, Chen Biao, He Zhihong, Liu
+Lianwei, and Dong Shikui, “Infrared Radiation Characteristics and Detectability
+Analysis of Point Source based on High-Speed Sliding, ” Infrared and Laser
+Engineering 47 (2018): 1104001, https://doi.org/10.1016/j.cja.2019.01.003; Yang Xiao,
+Niu Qinglin, He Zhihong, and Dong Shikui, “Analysis of Infrared Radiation
+Characteristics and Detectability of HTV-2-like Hypersonic Gliding Aircrafts, ” Acta
+Optica Sinica 37 (2017): 1204001, http://clp.ac.cn/EN/Article/OJec320a62aa572dcd;
+Qinglin Niu, Sen Yang, Zhihong He, and Shikui Dong, “Numerical Study of Infrared
+Radiation Characteristics of a Boost-Gliding Aircraft with Reaction Control Systems,
+” Infrared Physics & Technology 92 (2018): 417 –428, https://doi.org/10.1016/j.
+infrared.2018.06.033; Qinglin Niu, Zhichao Yuan, Biao Chen, and Shikui Dong,
+“Infrared Radiation Characteristics of a Hypersonic Vehicle Under Time-Varying
+Angles of Attack, ” Chinese Journal of Aeronautics 32 (2019): 861 –874, https://doi.
+org/10.1016/j.cja.2019.01.003. This intercontinental-range, wedge shaped glider is
+distinct from the shorter-range, conical systems that the United States has recently
+emphasized in its hypersonic development programs (e.g., the U.S. Army ’s Long-
+Range Hypersonic Weapon and the U.S. Navy ’s Intermediate Range Conventional
+Prompt Strike weapon). However, less information is available regarding these
+shorter-range systems.
+18. Niu et al., “Infrared Radiation Characteristics of a Hypersonic Vehicle Under Time-
+Varying Angles of Attack, ” 867.
+19. Acton, “Hypersonic Boost-Glide Weapons, ” 205; Wright, “Research Note to
+Hypersonic Boost-Glide Weapons by James M. Acton, ” 225.
+20. See, for example, E.H. Hirschel and C. Weiland, “Design of Hypersonic Flight
+Vehicles: Some Lessons from the Past and Future Challenges, ” CEAS Space Journal 1
+(2011): 10 –14, https://doi.org/10.1007/s12567-010-0004-4.
+21. Ping Lu, Stephen Forbes, and Morgan Baldwin, “Gliding Guidance of High L/D
+Hypersonic Vehicles, ” AIAA Guidance, Navigation, and Control (GNC) Conference,
+19–22 August 2013, Boston, MA, USA, https://doi.org/10.2514/6.2013-4648; Luhua
+Liu, Jianwen Zhu, Guojian Tang, and Weimin Bao, “Diving Guidance via Feedback
+Linearization and Sliding Mode Control, ” Aerospace Science and Technology 41
+(2015): 16 –23, https://doi.org/10.1016/j.ast.2014.11.014; JianHua Wang, LuHua Liu,
+and GuoJian Tang, “Guidance and Control System Design for Hypersonic Vehicles
+in Dive Phase, ” Aerospace Science and Technology 53 (2016): 47 –60, https://doi.org/
+10.1016/j.ast.2016.03.010; Shili Tan, Humin Lei, and Tao Liu, “Optimal Maneuver
+Trajectory for Hypersonic Missiles in Dive Phase Using Inverted Flight, ” IEEE Access
+7 (2019): 63493 –63503, https://doi.org/10.1109/ACCESS.2019.2916464.
+22. Shili Tan et al., “Optimal Maneuver Trajectory for Hypersonic Missiles in Dive
+Phase Using Inverted Flight. ”
+23. Graham Warwick, “DARPA’s HTV-2 Didn ’t Phone Home, ” Aviation Week Network ,
+24 April 2010; https://web.archive.org/web/20111117084740/http://www.aviationweek.
+com/aw/blogs/defense/index.jsp?plckController=Blog&plckBlogPage=BlogViewPost&
+newspaperUserId=27ec4a53-dcc8-42d0-bd3a-01329aef79a7&plckPostId=Blog%
+3a27ec4a53-dcc8-42d0-bd3a-01329aef79a7Post%3a70769585-4348-4701-889a-
+f02c58f38314&plckScript=blogScript&plckElementId=blogDest; Ian Sample, “Falcon
+HTV-2 is Lost During Bid to Become Fastest Ever Plane, ” The Guardian , 11 August
+162 C. L. TRACY AND D. WRIGHT
+=== page 29 ===
+2011, https://theguardian.com/world/2011/aug/11/fastest-ever-plane-lost-during-
+test-flight.
+24. Michael E. Tauber, Gene P. Menees, and Henry G. Adelman “Aerothermodynamics
+of Transatmospheric Vehicles, ” Journal of Aircraft 24 (1987): 594 –602, https://doi.
+org/10.2514/3.45483; See also Anderson, Hypersonic and High Temperature Gas
+Dynamics, 349 –350.
+25. John J. Martin, Atmospheric Reentry (Englewood Cliffs, NJ: Prentice-Hall, 1966),
+16, 114.
+26. Niu et al., “Infrared Radiation Characteristics of a Hypersonic Vehicle under Time-
+Varying Angles of Attack. ”
+27. Anderson, Hypersonic and High Temperature Gas Dynamics , 780 –781; Prior work
+shows that hypersonic missiles rapidly approach thermal equilibrium under typical
+flight conditions, indicating that the radiative-adiabatic limit is a reasonable
+assumption. See S.A. van Binsbergen, B. van Zelderen, R.G. Veraar, F. Bouquet, and
+W.H.C. Halswijk, H.M.A. Schleijpen, “Hyperheat: a Thermal Signature Model for
+Super- and Hypersonic Missiles, ” Proceedings of the SPIE 10432, Target and
+Background Signatures III (2017): 1043209, https://doi.org/10.1117/12.2276943.
+28. Josef Stefan, “€Uber die Beziehung zwischen der W €armestrahlung und der
+Temperatur,” Sitzungsberichte der Mathematisch-naturwissenschaftlichen Classe der
+Kaiserlichen Akademie der Wissenschaften 79 (1879): 391 –428; Ludwig Boltzmann,
+“Ableitung des Stefan ’schen Gesetzes, betreffend die Abh €angigkeit der
+W€armestrahlung von der Temperatur aus der electromagnetischen Lichttheorie, ”
+Annalen der Physik und Chemie 258 (1884): 291 –294.
+29. Niu et al., “Infrared Radiation Characteristics of a Hypersonic Vehicle Under Time-
+Varying Angles of Attack, ” 868.
+30. Referring to this intense thermal radiation, Russian President Putin described the
+Avangard hypersonic glide vehicle as a “ball of fire. ” See Vladimir Putin,
+“Presidential Address to the Federal Assembly, ” 1 March, 2018.
+31. The hot gases surrounding a glider also contribute to its IR signature, but likely to a
+lesser extent than thermal radiation from the vehicle itself. See William W. Kellogg
+and Sidney Passman, Infrared Techniques Applied to the Detection and Interception of
+Intercontinental Ballistic Missiles (Santa Monica, CA: RAND Corporation, 1955),
+11–12, https://rand.org/pubs/research_memoranda/RM1572.html. Emission from this
+gas is neglected in the present model, yielding conservative estimates of IR emission.
+32. Max Planck, “€Uber eine Verbesserung der Wien ’schen Spectralgleichung, ”
+Verhandlungen der Deutschen Physikalischen Gesellschaft 2 (1900): 202 –204; Max
+Planck, “Zur Theorie des Gesetzes der Energieverteilung im Normalspectrum, ”
+Verhandlungen der Deutschen Physikalischen Gesellschaft 2 (1900) 237 –245.
+33. Xiao et al., “Analysis of Infrared Radiation Characteristics and Detectability of HTV-
+2-like Hypersonic Gliding Aircrafts, ” 9.
+34. Acton, “Hypersonic Boost-Glide Weapons, ” 206; See also the approximate
+calculation of similar initial glide velocities in U.S. National Research Council, U.S.
+Conventional Prompt Global Strike: Issues for 2008 and Beyond (Washington, DC:
+National Academies Press, 2008), 206 –215, https://doi.org/10.17226/12061.
+35. The value of lift and of L/D can be varied somewhat by changing the angle of attack
+of the glider, which is the angle between the body axis and the vehicle ’s velocity.
+36. On the long-standing concept of a constrained “corridor of continuous flight ” for
+hypersonic vehicles, see E.P. Williams and Carl Gazley, Aerodynamics for Space
+SCIENCE & GLOBAL SECURITY 163
+=== page 30 ===
+Flight (Santa Monica, CA: RAND Corporation, 1956), 14 –26, https://rand.org/pubs/
+papers/P1256.html.
+37. Acton, “Hypersonic Boost-Glide Weapons, ” 209.
+38. Alternatively, a glider could compensate for redirection of the lift force by generating
+additional lift while turning. This would increase the drag it experienced in
+proportion to its L/D, again reducing velocity and flight altitude. On the drag or
+altitude penalty that accompanies glide phase maneuvering, see Oelrich, “Cool Your
+Jets,” 38.
+39. The United States, Russia, and China, the three states most ardently pursuing
+hypersonic weapons, have developed and stockpiled numerous ballistic missile
+systems. See Arms Control Association, “Worldwide Ballistic Missile Inventories, ”
+(2017), https://armscontrol.org/factsheets/missiles.
+40. For details on ballistic missile trajectory modelling, see Appendix.
+41. Amy Woolf, “Conventional Prompt Global Strike and Long-Range Ballistic Missiles:
+Background and Issues ” (Washington, DC: Congressional Research Service, 2020),
+https://crsreports.congress.gov/product/pdf/R/R41464.
+42. Wright, “Research Note to Hypersonic Boost-Glide Weapons by James M.
+Acton,” 223.
+43. Ibid., 225 –227.
+44. Acton, “Hypersonic Boost-Glide Weapons, ” 206.
+45. On the trajectories possible for a ballistic missile strike see, for example, Lisbeth
+Gronlund and David Wright, “Depressed-Trajectory SLBMs: A Technical Assessment
+and Arms Control Possibilities, ” Science and Global Security 3 (1992): 103 –110,
+http://scienceandglobalsecurity.org/archive/sgs03gronlund.pdf.
+46. Wright, “Research Note to Hypersonic Boost-Glide Weapons by James M. Acton. ”
+47. Hypersonic gliders and ballistic missile reentry vehicles with equal velocities and
+masses would possess equal kinetic energies at booster burn-out. This kinetic energy
+alone might be relied upon to inflict damage on a target. If, instead, both vehicles
+carried identical explosive warheads, the reentry vehicle would likely be significantly
+lighter than the glider, allowing it to achieve a higher speed at the end of its boost
+phase in a depressed trajectory and reducing its relative flight time to a given range.
+For example, a reentry vehicle carrying a single, modern nuclear warhead could have
+a mass of 500 kg or less; our calculations show that using this same booster, a
+ballistic missile flying a depressed trajectory and carrying a payload of 500 kg would
+have a flight time of about 21 minutes to 8,500 km, which is significantly faster than
+the hypersonic weapon ( Figure 8 ). Therefore, our modelling yields conservative
+estimates of ballistic missile flight speeds and delivery times relative to those of
+hypersonic weapons.
+48. Matthew Bunn, “Technology of Ballistic Missile Reentry Vehicles, ” in Review of U.S.
+Military Research and Development: 1984 , eds. Kosta Tsipis and Penny Janeway
+(Mclean, VA: Pergamon, 1984), 87 –107.
+49. Michael D. Griffin and James R. French, Space Vehicle Design , 2nd ed. (Reston, VA:
+American Institute of Aeronautics and Astronautics, 2004), 315, https://doi.org/10.
+2514/4.862403.
+50. A ballistic coefficient of b ¼ 12,200 kg/m2 is assumed for the ICBM reentry vehicle.
+This agrees with approximate figures quoted for modern ICBMs. See Bunn,
+“Technology of Ballistic Missile Reentry Vehicles, ” 71.
+51. James M. Acton, Silver Bullet? Asking the Right Questions About Conventional
+Prompt Global Strike (Washington, DC: Carnegie Endowment for International
+164 C. L. TRACY AND D. WRIGHT
+=== page 31 ===
+Peace, 2013), 157, https://carnegieendowment.org/files/cpgs.pdf. Over-the-horizon
+radar systems, which take advantage of refraction or diffraction effects to probe
+beyond their line of sight, are an exception.
+52. See, for example, John W. Marini, On the Decrease of the Radar Cross Section of the
+Apollo Command Module due to Reentry Plasma Effects (Greenbelt, MD: National
+Aeronautics and Space Administration, 1967), https://ntrs.nasa.gov/citations/
+19670020821.
+53. See Pavel Podvig, “History and the Current Status of the Russian Early-Warning
+System,”“ Science and Global Security ” 10 (2002): 21 –60, http://
+scienceandglobalsecurity.org/archive/sgs10podvig.pdf; Jeffrey T. Richelson, “America’s
+Space Sentinels: The History of the DSP and SBIRS Satellite Systems ” (Lawrence, KS:
+University Press of Kansas, 2018), https://doi.org/10.2307/j.ctv7h0trq.
+54. U.S. Department of Defense, Office of the Secretary of Defense, Military and Security
+Developments Involving the People ’s Republic of China (2020), 89, https://media.
+defense.gov/2020/Sep/01/2002488689/-1/-1/1/2020-dod-china-military-power-report-
+final.pdf; Dmitry Stefanovich, “Russia to Help China Develop an Early Warning
+System,” The Diplomat , 25 October 2019, https://thediplomat.com/2019/10/russia-to-
+help-china-develop-an-early-warning-system/.
+55. Niu et al., “Infrared Radiation Characteristics of a Hypersonic Vehicle Under Time-
+Varying Angles of Attack, ” 870.
+56. Our modelling predicts stagnation point temperatures higher than those reported in
+Niu et al., “Infrared Radiation Characteristics of a Hypersonic Vehicle Under Time-
+Varying Angles of Attack. ” They calculate a stagnation point temperature of /C24 2200
+K, compared with /C24 3300 K calculated here. However, since the stagnation point
+constitutes only a small portion of the glider surface area, this difference has little
+effect on the total vehicle IR light emission.
+57. While we use the results of these heating calculations to estimate infrared emission
+from hypersonic gliders, they also constitute a basis for calculating heating of the
+interior of a glider, and of the necessary thermal protection. For analysis of these
+aspects of hypersonic missile performance see David Wright, “Heat Conduction into
+a Hypersonic Glide Vehicle, ” 2020, https://lnsp.mit.edu/s/Wright-Heat-conduction-
+into-a-hypersonic-glide-vehicle_11-12-20.pdf.
+58. Wilton Park, Missile Defence, Deterrence and Arms Control: Contradictory Aims or
+Compatible Goals? (Geneva: United Nations Institute for Disarmament Research,
+2002), 6, https://unidir.org/publication/missile-defence-deterrence-and-arms-control-
+contradictory-aims-or-compatible-goals.
+59. Niu et al., “Infrared Radiation Characteristics of a Hypersonic Vehicle Under Time-
+Varying Angles of Attack, ” 870.
+60. Richelson, “America’s Space Sentinels ”.
+61. Geoffrey Forden, Pavel Podvig, and Theodore A. Postol, “False Alarm, Nuclear
+Danger,” IEEE Spectrum 37 (2000): 38, https://doi.org/10.1109/6.825657. Early DSP
+satellite used 2000 pixel arrays. See Ellis E. Lapin, “Surveillance by Satellite, ” Journal
+of Defense Research 8 (1976): 173, https://nsarchive2.gwu.edu/NSAEBB/NSAEBB235/
+13.pdf.
+62. Ibid., 176.
+63. Ibid., 171.
+64. Richelson, America’s Space Sentinels , 157 –176. The performance of DSP in this
+tactical mission, far beyond the system ’s design parameters, was touted as “an
+outstanding success. ” See United States Space Command, Operations Desert Shield
+SCIENCE & GLOBAL SECURITY 165
+=== page 32 ===
+and Desert Storm Assessment (1992), 20, https://nsarchive2.gwu.edu/NSAEBB/
+NSAEBB39/document10.pdf.
+65. Richard L. Garwin and Theodore A. Postol, “Airborne Patrol to Destroy DPRK
+ICBMs in Powered Flight ” (2017): 26 –40, https://fas.org/rlg/airborne.pdf.
+66. As previously discussed, these figures correspond to observation of the glider from
+directly overhead. Observation from alternate viewing angles (as determined by the
+positions of satellites in a sensor constellation relative to the glider trajectory) would
+increase or decrease the observed intensity in proportion to the corresponding
+change in the observed area of the vehicle. For a quantitative analysis of observed
+intensity as a function of viewing angle see Niu et al., “Infrared Radiation
+Characteristics of a Hypersonic Vehicle Under Time-Varying Angles of Attack, ” 870.
+The DSP constellation consists of satellites in geosynchronous Earth orbit, providing
+near-overhead viewing angles for objects flying near Earth ’s equator and less ideal
+viewing angles for objects flying near Earth ’s poles. For these sensors, the observed
+IR signature of a glider flying near one of the poles might be reduced by up to
+approximately 50% relative to those shown in Figure 12 , such that tracking by DSP
+sensors might be temporarily hindered until the glider returned to lower latitudes.
+67. The DSP tracks ballistic missiles through a process of “discrimination between noise
+and ‘real’ signals; of search for further subsequent (in time) real signals in the
+geographical vicinity of that signal initiating the process; of assembly of collections
+of observations into tentative tracks; of testing of these tracks against analytical and
+pragmatic criteria; and upon establishment of validity, of determination of the
+launch coordinates, direction, time, and type of missile. ” See Lapin, “Surveillance by
+Satellite,” 179.
+68. David K. Barton et al., “Report of the American Physical Society Study Group on
+Boost-Phase Intercept Systems for National Missile Defense: Scientific And Technical
+Issues,” Reviews of Modern Physics 76 (2004): s159 –s170, https://doi.org/10.1103/
+RevModPhys.76.S1.
+69. Ibid., s167.
+70. See, for example, “Report of the Space-Based IR Sensors/Technical Support Group, ”
+(October 1993), 13 –15, https://nsarchive2.gwu.edu/NSAEBB/NSAEBB235/37.pdf.
+Here, a 4 km 2 pixel footprint and a collection time of a few ms were quoted.
+71. Barton et al., “Report of the American Physical Society Study Group on Boost-Phase
+Intercept Systems for National Missile Defense, ” s168. Atmospheric attenuation has a
+minor effect on IR transmission to satellites from typical hypersonic flight altitudes,
+which are significantly higher than the altitudes at which clouds form.
+72. The SBIRS constellation consists of satellites in both geosynchronous Earth orbit
+(providing near-overhead viewing angles of objects near the equator) and highly
+elliptical orbits (providing near-overhead viewing angles of objects at high latitudes).
+Thus, the observed IR signature data shown in Figure 13 will be only weakly
+sensitive to glider position on Earth; significant attenuation of this signal due to
+suboptimal viewing angles is unlikely.
+73. Acton, Silver Bullet? , 157.
+74. The ability of hypersonic gliders to avoid some types of missile defenses may also
+provide a motivation for Russia and China to acquire these systems in response to
+U.S. development of missile defenses. This is a concern for U.S. planners, but is not
+a motivation for the United States to develop long-range boost-glide vehicles, since it
+has already developed maneuvering warheads for use with its ballistic missiles and
+its adversaries are not developing advanced defenses against long-range missiles. U.S.
+166 C. L. TRACY AND D. WRIGHT
+=== page 33 ===
+development of shorter-range hypersonic systems may be motivated by the
+possibility of bypassing theater-scale defenses. We discuss the missile defense issue in
+more detail in the final section of this article.
+75. This analysis draws from a large literature on the sociology of technology. For an
+overview, see Wiebe E. Bijker, Thomas P. Hughes, and Trevor Pinch, eds., The Social
+Construction of Technological Systems: New Directions in the Sociology and History of
+Technology, anniv. ed. (Cambridge, MA: MIT Press, 2012).
+76. Kelley Sayler, Hypersonic Weapons: Background and Issues for Congress (Washington,
+DC: Congressional Research Service, 2020), 4 –5.
+77. See, for example, John Borrie, Amy Dowler, and Pavel Podvig, Hypersonic Weapons:
+A Challenge and Opportunity for Strategic Arms Control (New York: United Nations
+Office for Disarmament Affairs, 2019), 15, https://un.org/disarmament/wp-content/
+uploads/2019/02/hypersonic-weapons-study.pdf; Acton, Silver Bullet? ,9 –29.
+78. Graham Allison and Philip Zelikow, Essence of Decision: Explaining the Cuban Missile
+Crisis, 2nd ed. (New York: Addison-Wesley, 1999), 169. U.S. officials commonly cite
+Chinese and Russian development of hypersonic weapons as a primary rationale for
+U.S. acquisition of these missiles. See, for example, statements by then Undersecretary of
+Defense for Research and Engineering Michael Griffin and then DARPA director Steven
+Walker, as quoted in Ben Brimelow, “Pentagon Warns that the US is Falling Behind to
+China in Hypersonic Missile Race, ” Business Insider , 20 April 2018, https://
+businessinsider.com/us-falling-behind-to-china-hypersonic-missile-race-2018-4;P a t r i c k
+Tucker, “The US is Accelerating Development of its own ‘Invincible’ Hypersonic
+Weapons,” Defense One , 2 March 2018, https://defenseone.com/technology/2018/03/
+united-states-accelerating-development-its-own-invincible-hypersonic-weapons/146355/.
+79. Similar organizational dynamics have been identified in prior DOD missile
+development efforts. See, for example, Spinardi ’s analysis of the fleet ballistic missile
+program, wherein missile development ostensibly motivated by a need to counter
+Soviet missile defenses yielded systems that were “premature, excessive, or
+completely inappropriate. ” Graham Spinardi, From Polaris to Trident: The
+Development of US Fleet Ballistic Missile Technology (Cambridge: Cambridge
+University Press, 1994) 66 –74, 175, https://doi.org/10.1017/cbo9780511559136.
+80. Donald MacKenzie, “Inventing Accuracy: A Historical Sociology of Nuclear Missile
+Guidance” (Cambridge, MA: MIT Press, 1990); Spinardi, From Polaris to Trident .
+81. MacKenzie, Inventing Accuracy , 28.
+82. Spinardi, From Polaris to Trident , 192.
+83. See ibid., 15 –18, 173, 190 –193. The concept of heterogeneous engineering was first
+developed in John Law, “Technology and Heterogeneous Engineering: The Case of
+Portuguese Expansion, ” in The Social Construction of Technological Systems , eds.
+Bijker, Hughes, and Pinch, 111 –134. See also Hughes ’s related concept of “system
+builders” who simultaneously manipulate technical, social, political, and financial
+systems to guide technological change; Thomas Parker Hughes, Networks of Power:
+Electrification in Western Society, 1880 – 1930 (Baltimore: John Hopkins University
+Press, 1983).
+84. MacKenzie, Inventing Accuracy , 93. On the social construction of technical facts see
+also Trevor J. Pinch and Wiebe E. Bijker, “The Social Construction of Facts and
+Artefacts: or How the Sociology of Science and the Sociology of Technology might
+Benefit Each Other, ” Social Studies of Science 14 (1984): 399 –441, https://doi.org/10.
+1177%2F030631284014003004.
+SCIENCE & GLOBAL SECURITY 167
+=== page 34 ===
+85. In accordance with the sociological literature, we use the term “fact” to refer to
+knowledge-claims that have acquired widespread acceptance as accurate
+representations of hypersonic missile performance, regardless of their veracity. See,
+for example, ibid.
+86. Spinardi, From Polaris to Trident , 17.
+87. Ivan Oelrich, “Hypersonic Missiles: Three Questions Every Reader Should Ask, ”
+Bulletin of the Atomic Scientists , 17 December 2019, https://thebulletin.org/2019/12/
+hypersonic-missiles-three-questions-every-reader-should-ask/.
+88. Spinardi, From Polaris to Trident , 194.
+89. U.S. Senate, Committee on Armed Services, “Hearing to Receive Testimony on United
+States Strategic Command and United States Northern Command in Review of the
+Defense Authorization Request for Fiscal Year 2020 and the Future Years Defense
+Program” (Washington, DC: Alderson Court Reporting, 2019), 36, https://armed-
+services.senate.gov/imo/media/doc/19-14_02-26-19.pdf.
+90. See Pavel Podvig, “Reducing the Risk of an Accidental Launch, ” Science and Global
+Security 14 (2006): 84, http://scienceandglobalsecurity.org/archive/sgs14podvig.pdf.
+91. See, for example, Mark B. Schneider, “Russian Hypersonic Missiles Have 1 Goal
+(And They Might Be Unstoppable), ” The National Interest , 11 September 2019,
+https://nationalinterest.org/blog/buzz/russian-hypersonic-missiles-have-1-goal-and-
+they-might-be-unstoppable-79591; Henry Meyer and Jake Rudnitsky, “Putin’s
+Hypersonic Nuclear Missile Stirs Fears of Arms Race, ” Bloomberg, December 30,
+2019, https://bloomberg.com/news/articles/2019-12-30/putin-s-hypersonic-nuclear-
+missile-stirs-fears-of-new-arms-race.
+92. Quoted in John A. Tirpak, “Griffin: America Needs to Adjust to Reality of Great
+Power Competition, ” Air Force Magazine , 5 March 2020, https://airforcemag.com/
+griffin-america-needs-to-adjust-to-reality-of-great-power-competition/.
+93. U.S. Senate, Armed Services Committee, “Unclassified Statement of Lieutenant
+General Samuel A. Greaves, USAF, Director, Missile Defense Agency, Before the Senate
+Armed Service Committee Subcommittee on Strategic Forces ”, 3 April 2019, 21,
+https://armed-services.senate.gov/imo/media/doc/Greaves_04-03-19.pdf.
+94. Barton et al., “Report of the American Physical Society Study Group on Boost-Phase
+Intercept Systems for National Missile Defense, ” s161.
+95. For instance, HTV-2 tests were conducted on modified Peacekeeper ICBMs. See
+Woolf, “Conventional Prompt Global Strike and Long-Range Ballistic Missiles, ” 13.
+Russia’s Avangard hypersonic missile is mounted on retrofitted SS-19 ICBM rockets.
+See Franz-Stefan Gady, “Russia’s Avangard Hypersonic Warhead Officially Enters
+Service,” The Diplomat , 27 December 2019, https://thediplomat.com/2019/12/russias-
+avangard-hypersonic-warhead-officially-enters-service/.
+96. Loren Thompson, “To Defeat Hypersonic Weapons, Pentagon Aims To Build Vast
+Space Sensor Layer, ” Forbes, 4 February 2020, https://forbes.com/sites/lorenthompson/
+2020/02/04/space-sensor-layer-is-the-pentagons-next-tech-mega-project/.
+97. See, for example, Nathan Strout, “Who Will Help Track Hypersonic Threats from
+Space?” Defense News, 31 October 2019, https://www.c4isrnet.com/battlefield-tech/space/
+2019/10/31/who-will-help-track-hypersonic-threats-from-space/;S m i t h , “Hypersonic
+Missiles Are Unstoppable.”
+98. Acton, “Hypersonic Boost-Glide Weapons, ” 210–211.
+99. See Shi et al., “Aerodynamic Force and Heating Optimization of HTV-2
+Typed Vehicle. ”
+168 C. L. TRACY AND D. WRIGHT
+=== page 35 ===
+100. On materials challenges associated with hypersonic flight, see D.M. van Wie, D.G.
+Drewry Jr., D.E. King, and C.M. Hudson, “The Hypersonic Environment: Required
+Operating Conditions and Design Challenges, ” Journal of Materials Science 39
+(2004): 5915 –5924, https://doi.org/10.1023/B:JMSC.0000041688.68135.8b.
+101. On exoatmospheric ballistic missile defense, see David Hafemeister, Nuclear
+Proliferation and Terrorism in the Post-9/11 World (Cham: Springer, 2016), 121 –136,
+https://doi.org/10.1007/978-3-319-25367-1.
+102. The exception is the nuclear-tipped short-range 53T6 “Gazelle” system deployed
+around Moscow.
+103. On the efficacy of countermeasures against missile defenses see Andrew M. Sessler et al.,
+Countermeasures (Cambridge, MA: Union of Concerned Scientists and MIT Security
+Studies Program, 2000), https://ucsusa.org/sites/default/files/2019-09/countermeasures.pdf.
+104. See, for example, Eric D. Gillman, John E. Foster, and Isaiah M. Blankson, “Review
+of Leading Approaches for Mitigating Hypersonic Vehicle Communications Blackout
+and a Method of Ceramic Particulate Injection Via Cathode Spot Arcs for Blackout
+Mitigation” (Cleveland, OH: National Aeronautics and Space Administration, 2010),
+https://ntrs.nasa.gov/citations/20100008938. Plasma sheathing has hindered terminal
+phase guidance in testing of maneuverable reentry vehicles, a technology closely
+related to hypersonic missiles. See, for example, U.S. National Research Council, U.S.
+Conventional Prompt Global Strike , 121.
+105. Lisbeth Gronlund and David Wright, “Depressed-Trajectory SLBMs: A Technical
+Assessment and Arms Control Possibilities, ” Science and Global Security 3
+(1992): 101 –159.
+106. David Wright, “Research Note to Hypersonic Boost-Glide Weapons by James
+M. Acton ”.
+107. Frank J. Regan, Re-entry Vehicle Dynamics (New York: American Institute of
+Aeronautics and Astronautics, 1984), 287.
+108. National Oceanic and Atmospheric Administration, National Aeronautics and Space
+Administration, and United States Air Force, U.S. Standard Atmosphere, 1976
+(Washington, DC: United States Government Printing Office, 1976), https://ntrs.
+nasa.gov/citations/19770009539.
+Appendix. Calculating ballistic missile trajectories
+We calculate the boost and ballistic phase trajectories of hypersonic missiles and the com-
+plete trajectories of ballistic missiles using a computational model that integrates the equa-
+tions of motion on a round, non-rotating Earth with a realistic atmosphere, considering
+thrust, drag, and gravity. 105
+Since the HTV-2 glide vehicle considered in this analysis was launched on a Minotaur
+IV rocket booster in flight testing, we developed a model of this booster and used it to cal-
+culate both the early trajectory of the hypersonic missile and the delivery trajectories and
+times of ballistic missiles delivering warheads to the same range as the hypersonic vehicle.
+We used this booster model to simulate missiles on both minimum-energy trajectories
+(MET) and depressed trajectories (DT) to various ranges. Details of the Minotaur model
+and the trajectory used for the HTV-2 vehicle are discussed in detail elsewhere. 106
+The equations of motion over a round, non-rotating Earth with a realistic atmosphere
+are given below. 107
+SCIENCE & GLOBAL SECURITY 169
+=== page 36 ===
+dv
+dt ¼ T
+m cosg/C0 CdA
+2m qv2/C0 gsinc (1)
+dc
+dt ¼ vcosc
+re þ h þ T
+vm sing/C0 g
+v cosc (2)
+dW
+dt ¼ vcosc
+re þ h (3)
+dh
+dt ¼ vsinc (4)
+were t is time, v(t) is the magnitude of the velocity, c(t) is the angle of the velocity with
+respect to the local horizontal, h(t) is the altitude, m(t) is the mass of the missile, T(t,h) is
+the booster thrust, Cd(v) is the drag coefficient of the missile, A is the missile ’s maximum
+cross-sectional area, g(t) is the angle of the thrust with respect to the missile body axis,
+g(h) is the gravitational acceleration, re is Earth ’s radius, W(t) is the range angle of the mis-
+sile around the Earth, and q(h) is the atmospheric density. Wre is the missile ’s range meas-
+ured along the surface of Earth. The geometry is shown in Figure 2 in the main text. We
+integrate these equations of motion over time using the midpoint method (second-order
+Runge-Kutta), modeling atmospheric density using the 1976 U.S. Standard Atmosphere. 108
+Thrust of a missile stage is given by:
+T ¼ g0Isp
+dm
+dt (5)
+where g0 is the gravitational acceleration at the Earth ’s surface, and for each stage Isp is the
+specific impulse and dm/dt is the mass flow rate of the propellant through the engine.
+Thrust is considered constant for all stages except the first, where its change with altitude
+is given by:
+ThðÞ ¼ g0Isp SLðÞ dm
+dt þ ANozzle p 0ðÞ /C0 pðhÞ
+/C0/C1 (6)
+where Isp(SL) is the sea-level specific impulse of the first stage, Anozzle is the cross-sectional
+exit area of the engine nozzle of the first stage, and p(h) is the atmospheric pressure.
+During reentry, the drag of a missile ’s reentry vehicle is characterized by the ballistic coeffi-
+cient b ¼ m/(Cd A), where m, Cd, and A are the mass, drag coefficient, and cross-sectional
+area of the warhead, respectively.
+170 C. L. TRACY AND D. WRIGHT

@@ -1,0 +1,149 @@
+=== page 1 ===
+DAF26BX06-NV510: AI/ML for Next Generation of Missile Detection, Warning, Tracking, and 
+Reporting 
+PROJECTED CMMC LEVEL REQUIREMENT:
+Level 2 (Self)
+ 
+TECHNOLOGY AREAS:
+Space Platforms
+ 
+MODERNIZATION PRIORITIES:
+Space Technology
+ 
+KEYWORDS:
+SpaceWERX, Space Platforms, Space Sensing, Overhead Persistent Infrared (OPIR), Data Fusion, AI/ML, OODA, 
+Mission Assurance
+ 
+ADDITIONAL INFORMATION
+N/A
+ 
+OBJECTIVE:
+SpaceWERX, in partnership with Space Systems Command's Space Sensing System Delta 84 and the OPIR Tap Lab, 
+are seeking innovative solutions supporting the next generation of missile detection, warning, tracking, and 
+reporting. The objective of this SBIR Phase I effort is to evaluate the feasibility of applying innovative data 
+processing techniques including the use of Artificial Intelligence and Machine Learning (AI/ML) methodologies to 
+address the evolving challenges in missile detection, warning, tracking, and reporting. The primary goal of this 
+research and development initiative is to advance data fusion, sensor integration, and real-time processing 
+methods that enhance the accuracy, responsiveness, and reliability of satellite-based missile warning systems. 
+This includes addressing the data interoperability from multi-orbit (GEO, MEO, LEO) satellite constellations, 
+optimizing on-orbit and ground-based processing frameworks, and improving data quality from diverse sensing 
+modalities from legacy and future Overhead Persistent Infrared (OPIR) space architectures. Specifically, this effort 
+will focus on researching and developing state-of-the-art algorithms and processing techniques that support rapid 
+and precise multi-sensor fusion, robust target identification, and accurate real-time 3D tracking of traditional, 
+hypersonic, and maneuverable missile threats. By leveraging novel techniques in data association, sensor fusion, 
+and edge processing, the solution will aim to mitigate limitations presented by diverse sensor resolutions, data 
+cadences, and observational geometries. The project will also investigate methods to increase computational 
+efficiency for onboard satellite processing and consider robustness against noise in highly dynamic operational 
+environments.
+ 
+ITAR:
+The technology within this topic is restricted under the International Traffic in Arms Regulation (ITAR), 22 CFR 
+Parts 120-130, which controls the export and import of defense-related material and services, including export of 
+sensitive technical data, or the Export Administration Regulation (EAR), 15 CFR Parts 730-774, which controls dual 
+use items. Offerors must disclose any proposed use of foreign nationals (FNs), their country(ies) of origin, the type 
+of visa or work permit possessed, and the statement of work (SOW) tasks intended for accomplishment by the 
+FN(s) in accordance with section 3.5 of the Announcement. Offerors are advised foreign nationals proposed to 
+perform on this topic may be restricted due to the technical data under US Export Control Laws.
+ 
+DESCRIPTION:
+The purpose of this topic is to address a critical need within the U.S. Space Force’s Missile Warning, Tracking, and 
+Response mission by advancing the application of artificial intelligence (AI) and machine learning (ML) 
+technologies to improve multi-sensor fusion, missile tracking precision, and real-time situational awareness 
+within a multi-orbit satellite framework (GEO, MEO, and LEO). Current technologies face challenges in fusing large 
+volumes of disparate data across multiple sensing modalities, tackling latency in data processing, and accurately 
+=== page 2 ===
+tracking increasingly sophisticated threats such as hypersonic and maneuverable missile systems.
+This effort seeks to develop and validate advanced data processing techniques including AI/ML solutions for both 
+ground-based and satellite-based multisensor fusion capable of real-time processing for advanced OPIR Missile 
+Detection, Warning, Tracking, and Reporting. These solutions will enable enhanced detection, tracking, and 
+reporting of advanced missile threats by leveraging novel algorithms for target identification, data association, 
+and real-time 3D tracking across multi-orbit platforms. Initial solutions should target feasibility studies and 
+technical proof-of-concept demonstrations with the goal to transition the capability into the OPIR Tap Lab or 
+similar testbed to build and test solutions in an operationally relevant environment. The advancements made on 
+this effort have the potential to significantly contribute to the Space Force’s mission of persistent global 
+surveillance, improved defensive decision-making, and sustained space superiority.
+ 
+PHASE I:
+Phase I will assess the feasibility of AI/ML-driven multi-sensor fusion techniques for real-time advanced missile 
+detection, warning, and tracking across multi-orbit satellite systems and data architectures. The desired future 
+state of this effort is a network-aware, autonomous constellation (spanning multiple orbital regimes) where 
+ground "migrates" with space via edge fusion that compresses timelines for joint fight without loss of quality or 
+confidence.
+The goal of this Phase I effort is to onboard and coordinate emergent solutions into the OPIR TAP lab and create a 
+shared understanding of the problem set of the Missile Warning and Tracking (MWT) mission area. Successful 
+Phase I efforts from this topic will target capability testing within the OPIR Tap Lab with the goal of advancing 
+capability and de-risking follow-on capability development in subsequent phases. Proposed solutions should 
+include a feasibility study and algorithm prototypes or simulation results as applicable as well as a clear path to 
+integration and testing within the OPIR Tap Lab.
+Focused topic areas can include any part of the following:
+- Edge Fusion & Autonomy: AI/ML solutions for on-orbit track fusion, autonomous constellation tasking, and event-
+driven scheduling across proliferated MEO/LEO architectures in contested environments.
+- Multi-Source Integration: Capabilities that fuse OPIR, EO, radar, SIGINT, and commercial sensor data to improve 
+detection, tracking, typing, and characterization — with scalable software architectures and ML-driven sensor 
+calibration.
+- Observe, Orient, Decide, Act (OODA) Loop Collapse & Mission Assurance: Solutions that accelerate the sensor-to-
+decision-maker kill chain with sufficient confidence and explainability to assure mission-critical decisions. These 
+can include but are not limited to dynamic user control of automation (C2, operator overload, scalable 
+operations), orchestration, edge computing, AI trade-space exploration, and authoritative knowledge access.
+- New sources and methods for Missile Warning that are outside of the current MW operational paradigm tactics, 
+techniques, and procedures (TTPs).
+Proposals should emphasize technical feasibility and clearly outline a Phase I research plan that can include 
+modeling, simulation, literature review, or trade studies. While a Phase II transition concept may be outlined, 
+Phase I deliverables are expected to focus on a feasibility study detailing USSF CONOPS and technical viability, as 
+well as analytical findings.
+Feasibility Study: A feasibility study is an assessment of the practicality of developing and implementing a new 
+technology within a given concept. The study aims to objectively and rationally uncover the strengths and 
+weaknesses of the new technology, the feasibility of successful development of the technology, and the viability of 
+the success of implementation of the technology in the proposed CONOPS. The study should:
+- Identify the benefits of the new technology within the CONOPS over existing solutions (or lack thereof)
+- Identify the risks, uncertainties/unknowns, and issues of the proposed CONOPS with mitigation and closure 
+measures
+- Identify the critical technology elements (CTEs) of the new technology
+- Provide data to support the feasibility of technology development of each CTE to include: literature research 
+supporting technical viability or historical usage, trade studies identifying existing technologies, current 
+developments, and/or feasible development pathways, analysis demonstrating technical solutions, and heritage 
+usage of similar technology with identified differences in operations and/or environment for proposed CONOPS.
+The Concept of Operations (CONOPS) should clearly communicate how the technology is intended to support a 
+military mission within a defined system. The main purpose of the CONOPS is to facilitate a common 
+understanding of a future system to help develop operational and system-level requirements. CONOPS should be 
+written at the system level first and then expanded on how the technology functions enable successful military 
+operations.
+ 
+PHASE II:
+Phase II aims to build off the work completed from the Phase I after successfully demonstrating capability for 
+operational use within the OPIR Tap Lab or similar environments that demonstrate integrating advanced AI/ML for 
+real-time multi-sensor fusion and missile tracking from OPIR systems. Activities include system development, 
+integration, and testing in operationally relevant environments to verify performance metrics (e.g., accuracy, 
+=== page 3 ===
+latency, resilience, coverage). Phase II will mature the feasible concepts identified in Phase I into a deployable, 
+testable prototype. Phase II will include design refinement, system development, and operationally relevant 
+testing focused on delivering a measurable improvement in AI/ML techniques to detect and/or accurately fuse any 
+source detecting these threats, either on the ground in the traditional processing ground stations or on board via 
+edge processing.
+While successful Phase I efforts establish technical feasibility and transition the validated proof-of-concept into 
+the OPIR Tap Lab or a similar testbed, the Phase II efforts will continue the development of technologies coming 
+out of the OPIR Tap Lab. By utilizing this operationally relevant environment, the work progresses to system 
+development, integration, and testing, which de-risks follow-on capability development. The ultimate goal of this 
+pathway is to mature the feasible concepts into a deployable, testable working prototype that delivers a 
+measurable improvement in techniques for multi-sensor fusion and missile detection, warning, tracking and 
+reporting.
+ 
+PHASE III DUAL USE APPLICATIONS:
+Potential Phase III efforts will pursue transition of the capability to operational use through non-SBIR/STTR 
+funding streams, aiming for a Technology Readiness Level (TRL) of 6 or 7 and demonstrating functionality in 
+relevant environments. A key transition pipeline for this capability is the Space Modernization Initiative (SMI) 
+program within Space System Command's Space Sensing portfolio. Successful efforts in potential Phase III efforts 
+will involve full integration into OPIR operational data workflows and fielding the capability at scale to provide 
+recurring operational value and reduce warfighter risk by expanding OPIR sensing capabilities.
+ 
+REFERENCES:
+TRL Guide - https://www.gao.gov/assets/gao-20-48g.pdf.1. 
+OPIR Tap Lab - https://boulderlab.org/.2. 
+TECHNICAL POINT OF CONTACT (TPOC):
+TPOC-1: Michael Cumming 
+PHONE: N/A 
+EMAIL: michael.cumming.1@spaceforce.mil
+ 
+TPOC-2: Wynn Sanders 
+PHONE: N/A 
+EMAIL: wynn.sanders.2@spaceforce.mil

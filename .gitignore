@@ -1,3 +1,5 @@
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -5,6 +7,9 @@ __pycache__/
 
 # C extensions
 *.so
+
+
+
 
 # Distribution / packaging
 .Python
@@ -219,3 +224,7 @@ __marimo__/
 
 # macOS
 .DS_Store
+
+# Downloaded API credential files (secrets)
+credentials.json
+**/credentials.json

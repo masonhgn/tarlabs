@@ -1,0 +1,228 @@
+<html>
+<head>
+<style>
+body { font-family: sans-serif; font-size: 10pt; line-height: 1.35; color: #1f2328; }
+h1 { font-size: 20pt; color: #0b3d62; margin-bottom: 2pt; }
+h2 { font-size: 14pt; color: #0b3d62; margin-top: 16pt; margin-bottom: 4pt; border-bottom: 1px solid #9fb6c8; }
+h3 { font-size: 11pt; color: #0b3d62; margin-top: 10pt; margin-bottom: 3pt; }
+p { margin-top: 3pt; margin-bottom: 5pt; }
+li { margin-bottom: 3pt; }
+table { width: 100%; margin-top: 4pt; margin-bottom: 8pt; }
+th { background-color: #dfe8ef; text-align: left; font-size: 9pt; padding: 3pt; border: 1px solid #9fb6c8; }
+td { font-size: 9pt; padding: 3pt; border: 1px solid #c3d0da; vertical-align: top; }
+.sub { color: #57606a; font-size: 10pt; }
+.box { background-color: #eef4f8; border: 1px solid #9fb6c8; padding: 6pt; margin-top: 6pt; margin-bottom: 8pt; }
+.warn { background-color: #fbf1e3; border: 1px solid #d9a45b; padding: 6pt; margin-top: 6pt; margin-bottom: 8pt; }
+.ok { color: #1a7f37; font-weight: bold; }
+.watch { color: #9a6700; font-weight: bold; }
+.act { color: #cf222e; font-weight: bold; }
+.mono { font-family: monospace; font-size: 9pt; }
+</style>
+</head>
+<body>
+
+<h1>Progress brief 01</h1>
+<p class="sub">AI/ML for missile detection, warning and tracking &mdash; SBIR topic DAF26BX06-NV510<br/>
+24 September 2026 &middot; written for Mason &middot; plain-language snapshot plus a self-audit</p>
+
+<div class="box">
+<b>The one-paragraph version.</b> We have built a careful, well-checked <i>foundation</i>: a simulator of
+satellites, targets, atmosphere and background, plus two classical trackers proven correct against
+outside references. We have not yet built the part that turns a target's position into what a satellite
+<i>actually sees</i>, and we have not written any AI. We decided the proposal is about a new AI/ML tracking
+contribution; the literature showed the idea we first had (learning which models a tracker runs) is
+already published three times, so the contribution must be sharper. Before any AI work, we need a fair,
+leak-proof test bench. The self-audit at the end found real shortcuts &mdash; most seriously, <b>none of this
+work is saved in version control yet</b>.
+</div>
+
+<h2>1. What we are trying to do</h2>
+<p>The Space Force wants to know whether AI/ML can help satellites that watch for missiles in infrared
+light (called OPIR) detect, track and warn about them better. Phase I is not a product; it is a
+<b>feasibility study</b>: a simulation, analysis and plan showing an idea is worth funding. It is judged on
+four things &mdash; <b>accuracy, latency, resilience, coverage</b> &mdash; and it must show the AI is
+<b>explainable</b> and says <b>how confident</b> it is.</p>
+<p>Everything is unclassified. Real missile-warning satellite data is secret, so everything we show will
+come from simulation built on public information. The government expects this for Phase I.</p>
+
+<h2>2. Where we are</h2>
+<table>
+<tr><th>Phase</th><th>What it is</th><th>Status</th></tr>
+<tr><td>D &mdash; Data</td><td>Find, download, organise and understand every useful public data source</td><td class="ok">Passed 23 Sep</td></tr>
+<tr><td>S &mdash; Simulation core</td><td>Build the simulated world and the classical trackers</td><td>In progress &mdash; 6 of 12 tasks done</td></tr>
+<tr><td>B &mdash; Benchmark (proposed)</td><td>A fair test bench that any algorithm, classical or AI, is scored on</td><td>Proposed, not yet in the plan</td></tr>
+<tr><td>M &mdash; The AI/ML contribution</td><td>Design, build and test the new method</td><td>Direction under discussion</td></tr>
+<tr><td>T &mdash; The trade</td><td>Where should processing happen: ground, satellite or both?</td><td>Not started</td></tr>
+<tr><td>W, X &mdash; Writing, submission</td><td>CONOPS, feasibility study, cost, upload</td><td>Not started</td></tr>
+<tr><td>G, E &mdash; Compliance, outreach</td><td>Registrations, contacting the program officers, Q&amp;A</td><td class="act">Not started &mdash; see audit</td></tr>
+</table>
+<p>Size of what exists: 23 code modules, 303 automated tests (all passing), 43 recorded decisions,
+33 recorded plan changes, about 960 MB of kept data and 7.7 GB set aside.</p>
+
+<h2>3. The foundation, in plain terms</h2>
+<p>Think of the simulator as a stage with actors. We have built most of the stage and the actors, and
+checked each piece against something outside ourselves &mdash; a published table, another team's
+software, or real measurements. That checking is the most valuable thing we have: when we say a number,
+we can show where it came from.</p>
+
+<table>
+<tr><th>Piece</th><th>What it does, simply</th><th>How we know it is right</th><th>Confidence</th></tr>
+<tr><td>Orbit prediction</td><td>Works out where each satellite is at any moment</td><td>Matches 533 official test cases to within a tenth of a millimetre</td><td class="ok">High</td></tr>
+<tr><td>Constellation builder</td><td>Lays out a fleet of satellites in organised rings</td><td>Its orbits match the real SDA satellites we can observe</td><td class="ok">High</td></tr>
+<tr><td>Coverage</td><td>Asks "how many satellites can see this spot, from good angles?"</td><td>Reproduces a published CSIS think-tank finding independently</td><td class="ok">High</td></tr>
+<tr><td>Target flight paths</td><td>Where a hypersonic glide vehicle goes</td><td>Taken from Berkeley's published simulator; matches the paper's range to 0.09%</td><td class="watch">High, but only one path saved</td></tr>
+<tr><td>Atmosphere and infrared absorption</td><td>How much of the heat signal survives the air</td><td>Matches the standard atmosphere table and a known physical fact about CO<sub>2</sub></td><td class="ok">High</td></tr>
+<tr><td>Earth background</td><td>What the target must be picked out against</td><td>Real GOES weather-satellite images</td><td class="watch">Real data, but the wrong colour of infrared (makes things look harder than they are)</td></tr>
+<tr><td>Viewing geometry, track-quality scores</td><td>How good a two-satellite fix is; how we grade a tracker</td><td>Maths is standard, but not yet checked against an outside worked example</td><td class="watch">Medium</td></tr>
+<tr><td>Classical tracker (IMM)</td><td>The standard way to follow a manoeuvring target</td><td>Agrees with an independent open-source version to 13 decimal places</td><td class="ok">Very high</td></tr>
+<tr><td>Smarter classical tracker (LMS)</td><td>A version that only runs the models it needs</td><td>We re-ran a 2000 paper's own experiment and got within 1.5% of its published numbers</td><td class="ok">High (two known gaps &mdash; see audit)</td></tr>
+</table>
+
+<h3>What the foundation has already taught us</h3>
+<ul>
+<li><b>Speed of light is not the bottleneck.</b> Signals travel from satellite to ground in hundredths of a
+second; warnings take tens of seconds. So "process on the satellite to be faster" only wins if the
+processing itself is faster there &mdash; not because the satellite is closer.</li>
+<li><b>Comparing consecutive images lets you see about 13&times; fainter things</b> than looking at one image,
+and faster revisits make targets visible that are otherwise hidden.</li>
+<li><b>The "smarter" tracker is cheaper, not more accurate.</b> A survey claimed it was much better. The
+original paper actually shows it is slightly <i>less</i> accurate and about half the cost. A second,
+independent paper agrees. We now trust primary sources over summaries.</li>
+<li><b>Almost every latency number anyone produces is assumption</b> (over 99.5%), so we should report
+comparisons and break-even conditions, not absolute times.</li>
+</ul>
+
+<h2>4. Data: what we have, and is it enough?</h2>
+<table>
+<tr><th>Data</th><th>Why we need it</th><th>What we have</th><th>Enough?</th></tr>
+<tr><td>Satellite orbits</td><td>Where the watchers are</td><td>Current and historical public orbit data</td><td class="ok">Yes</td></tr>
+<tr><td>Constellation designs</td><td>Which fleets to test</td><td>Published SDA and CSIS designs</td><td class="ok">Yes (notional)</td></tr>
+<tr><td>Target flight paths</td><td>What we are tracking</td><td>Berkeley simulator &mdash; but <b>one</b> saved path</td><td class="act">No &mdash; need a family of paths</td></tr>
+<tr><td>How bright targets are</td><td>Can they be seen at all?</td><td>Published estimates &mdash; which disagree by 9&ndash;13&times;</td><td class="watch">As good as public gets; unresolved</td></tr>
+<tr><td>Earth background images</td><td>What hides the target</td><td>A handful of real GOES frames</td><td class="watch">Enough to start; wrong band; few scenes</td></tr>
+<tr><td>Atmosphere, Sun, Moon, Earth rotation</td><td>Physical corrections</td><td>Standard sources</td><td class="ok">Yes</td></tr>
+<tr><td>Real tracking data (aircraft)</td><td>Real motion to test the tracker on</td><td>1 hour, 13,000 aircraft (OpenSky)</td><td class="watch">Yes &mdash; but <b>never used yet</b></td></tr>
+<tr><td>Sensor details (noise, detection odds, false alarms, frame rate)</td><td>What a satellite actually reports</td><td>Not public. Must be swept over declared ranges</td><td class="watch">Cannot be better; must be stated honestly</td></tr>
+<tr><td>Real missile observations</td><td>Ground truth</td><td>Do not exist publicly</td><td>Impossible for anyone at Phase I</td></tr>
+</table>
+<div class="box"><b>Verdict.</b> We have enough to build a credible <i>simulation-based</i> feasibility study. We do
+<i>not</i> have, and cannot get, what would support claims about real operational performance &mdash; nobody
+outside the classified world can. The gaps that are <b>in our control</b>: a proper family of target flight
+paths, the sensor model, actually using the aircraft data, and detecting at least one real rocket launch in
+the GOES images.</div>
+
+<h2>5. What is "learned model-set adaptation"?</h2>
+<p><b>The tracker as a committee.</b> A manoeuvring target might fly straight, turn left hard, climb, or turn
+right gently. A classical tracker (the IMM) runs a <i>committee</i> of forecasters, each assuming one kind
+of motion. Every time a new observation arrives, each forecaster is scored on how well it predicted it;
+the committee's answer is a weighted blend, and the weights are themselves useful: "80% sure it is
+turning left."</p>
+<p><b>Fixed versus variable committee.</b> The basic version consults the whole committee every time
+&mdash; reliable but expensive. The "variable-structure" version only invites the members who seem
+relevant right now, plus the neighbours of whoever is currently winning. LMS is a specific rulebook for
+that: <i>drop anyone below 0.01% belief; if anyone is above 30%, invite the manoeuvres next to theirs.</i></p>
+<p><b>"Learned" model-set adaptation</b> means replacing that hand-written rulebook with a trained AI policy
+that decides who gets invited each moment.</p>
+<div class="warn"><b>Where that idea stands.</b> Three research groups have already published it (2023,
+2024, 2025). On honest tests it gives a few percent. None of them checked whether the tracker's
+<i>confidence</i> stays trustworthy afterwards, none used satellite-style angle-only sensing, and none
+tested on motion patterns the AI had never seen. Those gaps are real, but the idea itself is not new.</div>
+
+<h2>6. The end-to-end process, and where we would build</h2>
+<table>
+<tr><th>#</th><th>Stage</th><th>Plain meaning</th><th>Status</th></tr>
+<tr><td>1</td><td>Truth</td><td>Where the target and satellites really are</td><td class="ok">Built</td></tr>
+<tr><td>2</td><td>Sensing</td><td>What a satellite reports: directions (no distance), with noise, misses and false alarms</td><td class="act">Missing &mdash; the main blocker</td></tr>
+<tr><td>3</td><td>Detection</td><td>Picking the target out of the background</td><td class="watch">Physics built; not joined up</td></tr>
+<tr><td>4</td><td>Tracking and fusion</td><td>Turning many looks from many satellites into one track</td><td class="watch">Trackers built and proven, but only on simple position data, not satellite angles</td></tr>
+<tr><td>5</td><td>Confidence</td><td>How good is the track, and does it know how good it is?</td><td class="watch">Scoring defined; one key metric not yet wired in</td></tr>
+<tr><td>6</td><td>Warning timeline</td><td>How long from launch to a decision</td><td class="watch">Model built; mostly assumption by nature</td></tr>
+<tr><td>7</td><td>Architecture trade</td><td>Process on the ground, on satellites, or both?</td><td>Not started</td></tr>
+</table>
+<p><b>Where the AI would go.</b> Stage 4 is the natural home &mdash; tracking a target that manoeuvres,
+seen only as directions from moving satellites. Stage 3 (detection in images) is the alternative.</p>
+<p><b>What must come first regardless.</b> Stage 2 and a fair test bench ("Phase B"): many kinds of
+simulated flights, whole categories held back so the AI cannot memorise the simulator, the same random
+conditions for every method, error bars on every comparison, and the classical tracker tuned as hard as
+the AI. Without this, any AI result is unfalsifiable.</p>
+
+<h2>7. Our options</h2>
+<table>
+<tr><th>Option</th><th>In short</th><th>Upside</th><th>Risk</th></tr>
+<tr><td>A. Sharpened incremental</td><td>A learned committee-selector that keeps the tracker's confidence trustworthy, tested properly on satellite-style data</td><td>Defensible, falsifiable, clearly answers the topic's confidence and explainability asks</td><td>Modest novelty; expected gain is a few percent</td></tr>
+<tr><td>B. New algorithm</td><td>Describe manoeuvres the way a hypersonic vehicle actually flies (bank angle, lift) instead of a grid of accelerations; AI learns how the controls tend to change</td><td>Potentially much larger payoff; far better explanations ("banking 40&deg;, ~2 g")</td><td>Novelty unverified; may not be observable from angles alone; slower</td></tr>
+<tr><td>C. AI detection</td><td>AI finds faint targets in the infrared images</td><td>We hold real imagery</td><td>Wrong infrared band; a different pipeline</td></tr>
+</table>
+<p>A is the safety net for B. Both need Phase B first. The next step proposed was a third targeted
+research brief to test whether B is genuinely new and genuinely observable.</p>
+
+<h2>8. Self-audit: where we cut corners</h2>
+<p>You asked whether we have taken serious shortcuts. Yes, several. In order of seriousness:</p>
+<ol>
+<li><b>No version control.</b> All 23 modules, 303 tests, the plan and the analysis exist only as files on
+disk &mdash; zero commits. One bad overwrite or disk problem loses everything, and we cannot show a reviewer
+the history. This is the single most serious gap and the cheapest to fix.</li>
+<li><b>Second-hand sources, three times.</b> I built the first VS-IMM from a survey's description instead of
+the paper; recorded a "failed replication" of a claim I had not traced; and called learned model-set
+adaptation an "open problem" without searching. Each was caught, but the pattern is mine and it is
+recurring.</li>
+<li><b>Research reports largely unverified.</b> The second deep-research report has about 90 citations,
+none of them resolvable as delivered; I checked 4. Its conclusions shaped our plan.</li>
+<li><b>"Done" that is thinner than its name.</b> Target motion is marked done with one flight path. The data
+phase passed in roughly a day across 24 domains; "understood" was claimed for aircraft data we have never
+run through code.</li>
+<li><b>The replication has two loose ends</b> we explained rather than investigated: our random scenario is
+13% easier than the paper's, and the paper's accuracy gain for its "forgetting factor" variant only
+partly reproduced.</li>
+<li><b>Compliance and outreach untouched.</b> The window to contact the program officers directly closed on
+23 September. Registrations that gate submission have not started.</li>
+<li><b>Housekeeping drift.</b> The project instructions still say we are in the data phase; the
+assumptions register has 26 rows for far more numbers than that; there is no one-command figure
+generator yet.</li>
+</ol>
+
+<h2>9. Where I would dig deeper, with targeted research</h2>
+<table>
+<tr><th>What to re-examine</th><th>Why it matters</th><th>How to settle it</th></tr>
+<tr><td>The LMS replication's loose ends</td><td>It is our baseline; unexplained gaps weaken everything built on it</td><td>Acquire Li &amp; Zhang's reference [29] (their Part IV paper, where this benchmark was designed, likely <i>IEEE T-AES</i> 1999) and the 1998 SPIE version; research prompt: <i>"exact specification of the Li&ndash;Bar-Shalom 13-model benchmark &mdash; sampling time, initialisation, random-scenario generator, forgetting-factor rule"</i></td></tr>
+<tr><td>The two research reports</td><td>They changed our decisions; most citations are unchecked</td><td>Get the bibliography export; run a verification pass that labels each load-bearing claim verified / not found / contradicted</td></tr>
+<tr><td>Modules with no outside check</td><td>Viewing geometry and track-quality scores will grade every algorithm</td><td>Check against a published angles-only error bound and a textbook NEES worked example; research prompt for public worked examples with numbers</td></tr>
+<tr><td>How bright a glide vehicle looks</td><td>Whether glide-phase detection is feasible at all rests on a 9&ndash;13&times; disagreement</td><td>Targeted prompt: <i>"all public estimates of HGV hardbody infrared intensity, their assumptions, and what drives the disagreement"</i>; sweep both ends in the simulation</td></tr>
+<tr><td>Real-data anchor</td><td>Converts "we simulated it" into "we did it on real imagery"</td><td>Detect one real, publicly scheduled rocket launch in GOES images (task D-05-d)</td></tr>
+<tr><td>Gate D depth</td><td>A one-day pass over 24 domains</td><td>Re-walk the three domains that feed the AI work most (target paths, background, tracking data) and exercise each in code</td></tr>
+</table>
+
+<h2>10. Accountability checklist &mdash; this edition's answers</h2>
+<p class="sub">Standing questions live in <span class="mono">progress_briefs/accountability_checklist.md</span> and are
+answered at the end of every brief. Status: <span class="ok">OK</span> &middot; <span class="watch">WATCH</span> (known,
+contained) &middot; <span class="act">ACT</span> (needs a plan task before next brief).</p>
+<table>
+<tr><th>#</th><th>Question</th><th>Answer</th><th>Status</th></tr>
+<tr><td>1</td><td>Load-bearing claims traced to primary sources we read?</td><td>Tracking claims: yes (Li &amp; Zhang, three MSA papers read in full). Detection and IR-brightness claims: partly, via earlier transcription</td><td class="watch">WATCH</td></tr>
+<tr><td>2</td><td>Claims resting on unverified research output?</td><td>Yes &mdash; report 02, 4 of ~90 citations checked; report 01 partly checked</td><td class="act">ACT</td></tr>
+<tr><td>3</td><td>"Nobody has done X" without searching?</td><td>Yes once (learned MSA). Caught and retracted</td><td class="watch">WATCH</td></tr>
+<tr><td>4</td><td>Modules without an outside check?</td><td>Viewing geometry, track quality, limb geometry, GOES detection floor</td><td class="act">ACT</td></tr>
+<tr><td>5</td><td>Unexplained replication differences?</td><td>Random scenario 13% easier; forgetting-factor variant only partly reproduced</td><td class="act">ACT</td></tr>
+<tr><td>6</td><td>Method changed after seeing results?</td><td>Yes: one-step-back was added after the first run &mdash; but the paper states it was used, so justified by source. Iterated expansion tested and reported as no effect</td><td class="watch">WATCH</td></tr>
+<tr><td>7</td><td>Assumptions all registered?</td><td>No &mdash; 26 register rows, many more numbers</td><td class="act">ACT</td></tr>
+<tr><td>8</td><td>Conclusions that flip with a parameter?</td><td>Glide-phase detectability flips across the 9&ndash;13&times; brightness range. No sensitivity analysis run yet</td><td class="act">ACT</td></tr>
+<tr><td>9</td><td>"Done" thinner than its name?</td><td>Target motion (1 path); data-phase "understood" for unused aircraft data</td><td class="act">ACT</td></tr>
+<tr><td>10</td><td>Acquired but unused data?</td><td>OpenSky aircraft data (495 MB); most GOES frames beyond the first test</td><td class="watch">WATCH</td></tr>
+<tr><td>11</td><td>Skipped because hard or blocked?</td><td>Sensor model (S-07); association (JPDA); real-launch detection; Tap Lab library &mdash; all recorded</td><td class="watch">WATCH</td></tr>
+<tr><td>12</td><td>Contribution and closest prior art?</td><td>Undecided between options A and B. Closest prior art for A: Lu et al. 2025, read in full. For B: not yet searched</td><td class="watch">WATCH</td></tr>
+<tr><td>13</td><td>What would falsify the main claim, and tested?</td><td>For A: confidence (NEES) breaking down under the learned selector. Not tested &mdash; nothing built yet</td><td class="watch">WATCH</td></tr>
+<tr><td>14</td><td>Version control and one-command rebuild?</td><td>No commits at all; no figure generator</td><td class="act">ACT</td></tr>
+<tr><td>15</td><td>Plan and instructions current?</td><td>CLAUDE.md says phase D; Phase B not yet written into the plan</td><td class="act">ACT</td></tr>
+<tr><td>16</td><td>Gate reviews real?</td><td>Gate D was reviewed with you, but at the level of my summaries rather than source by source</td><td class="watch">WATCH</td></tr>
+<tr><td>17</td><td>Externally clocked items?</td><td>All untouched; direct program-officer contact window closed 23 Sep</td><td class="act">ACT</td></tr>
+<tr><td>18</td><td>Still aimed at the topic's metrics?</td><td>Yes; the confidence/explainability focus came straight from the topic text. Resilience and coverage are furthest from the AI work</td><td class="ok">OK</td></tr>
+<tr><td>19</td><td>Where to dig?</td><td>Section 9</td><td>&mdash;</td></tr>
+</table>
+
+<div class="box"><b>Suggested order before any algorithm work:</b> (1) put the project under version control;
+(2) fix the plan and instructions drift; (3) verify the research reports' load-bearing claims; (4) close the
+replication loose ends; (5) then write Phase B into the plan and build the sensing stage. Your call on
+all of it &mdash; nothing above has been started.</div>
+
+</body>
+</html>

@@ -1,0 +1,1173 @@
+<<PAGE 1>>
+IFAC PapersOnLine 59-20 (2025) 1766–1771
+ScienceDirect
+Available online at www.sciencedirect.com
+2405-8963 Copyright © 2025 The Authors. This is an open access article under the CC BY-NC-ND license.
+Peer review under responsibility of International Federation of Automatic Control.
+10.1016/j.ifacol.2025.11.414
+Copyright © 2025 The Authors. This is an open access article under the CC BY-NC-ND license 
+(https://creativecommons.org/licenses/by-nc-nd/4.0/)
+1. INTRODUCTION
+Jump Markov systems (JMS), as a class of dynamic sys-
+tems with inherent mode transition characteristics, exhibit
+both Markovian and continuous dynamic behaviors in
+their state evolution. They are widely adopted in complex
+scenarios such as target tracking and autonomous navi-
+gation, where uncertainties in motion mode exist (Wang
+et al., 2024; Xu et al., 2024). High-precision JMS state
+estimation serves as the critical foundation for enabling
+autonomous and intelligent decision-making in fields such
+as strategic planning and space exploration. The multiple-
+model (MM) estimation method, which performs global
+state inference by running a predefined model set in paral-
+lel and fusing the conditional estimates of each model, has
+now emerged as a representative paradigm for addressing
+the joint state-mode estimation problem in JMS (Yang
+et al., 2025a).
+The MM estimation method has evolved through three
+generations of theoretical systems. The autonomous MM
+(AMM) architecture establishes the basic framework for
+MM estimation by employing parallel recursive Bayesian
+filtering and a maximum a posteriori probability weighted
+fusion mechanism. However, its independently recursive
+⋆This work was supported in part by the National Key Research
+and Development Program of China under Grant 2020YFA0713502
+and the National Natural Science Foundation of China under Grant
+62203458. (Correspondingauthor: Jiongqi Wang)
+structure results in information isolation among models
+(Soken and ichiro Sakai, 2020). Under the framework of
+generalized pseudo-Bayesian theory, the interactive MM
+(IMM) algorithm incorporates a model interaction mecha-
+nism governed by the Markov transition probability matrix
+(TPM) (Blom and Bar-Shalom, 1988), leading to enhanced
+approaches such as the adaptive TPM IMM (Xie et al.,
+2021) and the variational Bayesian inference IMM (Jwo
+and Chang, 2022). Nevertheless, the intrinsic limitation
+of a fixed model set exposes it to the risk of degraded
+estimation accuracy or even divergence when there is a
+mismatch in the model set. The variable structure interact-
+ing MM (VSIMM) theoretically overcomes the limitations
+of a preset model set by dynamically adjusting the model
+set to construct a time-varying estimation space. However,
+the model set adaptive (MSA) mechanism has emerged as
+the critical bottleneck hindering its practical engineering
+application (Rong Li, 2000).
+Existing MSA methods, including model-group switching,
+likely-model set, adaptive grid, expected-mode augmen-
+tation, as well as the improved hybrid grid and centroid
+fixed structure IMM (Ben et al., 2024; Xu et al., 2016;
+Li et al., 2024), can achieve local mode coverage through
+parametric variations. However, these methods are con-
+strained by structural homogeneity and are therefore only
+applicable to scenarios where parameter differences exist
+under the same model structure. Although both the best
+model augmentation and equivalent model augmentation
+Keywords: Deep Q-network, Variable structure interacting multiple-model, Jump Markov
+systems, Model set adaptation, Target positioning.
+Abstract: Model set adaptation (MSA) is a core issue of variable structure interacting multiple-
+model (VSIMM) estimation. The traditional MSA methods are constrained by the requirement
+for identical model structures and the accumulation of historical information approximation
+errors. This study proposes an adaptive VSIMM filter based on deep Q-network (DQN) for
+state estimation in discrete-time jump Markov systems (JMS). a DQN-based MSA is proposed.
+First, the analytical solution of VSIMM is derived using Bayesian theory. Second, the proposed
+algorithm comprises a Q-network and a target network, leveraging the experience replay
+technique to facilitate offline optimization and online deployment of the model selection strategy.
+In particular, the designed DQN reward function integrates both model likelihood and model
+stability requirements, successfully resolving the mismatch issue between the model set and
+the system mode that exists in traditional methods. The numerical simulations for aerial target
+positioning using multi-sensor data validate the superior performance of the proposed algorithm
+in estimating the states of complex dynamic systems.
+∗College of Science, National University of Defense Technology,
+Changsha, 410073, China (e-mail: luyu gfkd@163.com (Y. Lu);
+gfkd zhy@sina.com (H. Y. Zhou); tiansy@nudt.edu.cn (S.Y. Tian);
+chy gfkd@163.com (H. Y. Chen); wjq gfkd@163.com (J. Q. Wang)).
+Yu Lu ∗Haiyin Zhou ∗Siyuan Tian ∗Huiyu Chen ∗
+Jiongqi Wang ∗
+Variable Structure Interacting
+Multiple-Model Filtering Based on Deep
+Q-Network ⋆
+
+
+<<PAGE 2>>
+	
+Yu Lu  et al. / IFAC PapersOnLine 59-20 (2025) 1766–1771	
+1767
+can address structurally heterogeneous models (Lan et al.,
+2011), they depend on prior mode knowledge for model
+selection. In cases where the mode is unknown, these
+methods approximate the true mode using the expected
+value of historical models, which may result in the accu-
+mulation of approximation errors. Therefore, developing
+an intelligent model set with an adaptive mechanism and
+autonomous mode reasoning capabilities has become the
+critical pathway to overcoming the theoretical bottleneck
+of VSIMM.
+In response to the limitations of existing MSA methods,
+the primary contributions of this paper can be summarized
+as follows: 1) A policy optimization framework based on
+deep Q-network (DQN) is proposed, reformulating the
+model set selection problem as a dynamic programming
+optimal control problem; 2) An offline reinforcement learn-
+ing and online adaptive architecture is developed, where
+the optimal model set selection strategy is learned via
+value function approximation during offline training. Sub-
+sequently, through online model selection using DQN, an
+adaptive model set is achieved under conditions of struc-
+tural heterogeneity and missing mode information.
+The structure of the article is organized as follows: Section
+2 describes VSIMM and derives the form of the Bayesian
+solution. Section 3 develops the MSA method based on
+DQN. Section 4 provides simulations and results analysis
+for aerial target localization using multiple sensors. Section
+5 summarizes the conclusions.
+2. THE BAYESIAN SOLUTION OF VSIMM
+Considering the discrete random nonlinear JMS
+xk = f (xk−1, sk) + wk (sk)
+zk = h (xk, sk) + vk (sk)
+(1)
+where xk ∈Rn represents the state of the system at time k,
+zk ∈Rm denotes the measurement of the system, sk ∈S
+signifies the true mode of the system, and S symbolizes
+the mode space. wk (sk) ∼N (0, Q (sk)) and vk (sk) ∼
+N (0, R (sk)) are the state noise and measurement noise,
+respectively. The estimation problem for JMS (1) is to
+determine the optimal estimated values of the system’s
+mode sk and state xk, based on a specified optimiza-
+tion criterion. Commonly used estimation criteria include
+Minimum Mean Square Error (MMSE) and Maximum
+Likelihood (ML)(Yang et al., 2025b).
+The MM approach transforms system (1) by constructing
+an approximate model set for the mode space as follows:
+xk = f
+
+xk−1, mj
+k
+
++ wk
+
+mj
+k
+
+zk = h
+
+xk, mj
+k
+
++ vk
+
+mj
+k
+
+(2)
+where mj
+k ∈Mk represents the estimated model of the
+system’s true mode sk at time k, while Mk denotes the set
+of models constructed at time k, which varies over time
+in VSIMM. The prior probability of the i-th model at the
+initial time is denoted as P(mi
+0) = µi
+0. The transitions
+between models follow a first-order homogeneous Markov
+chain, where the transition probability from the i-th model
+to the j-th model is represented by P(mj
+k
+mi
+k−1 ) = πij.
+Obviously, Mk
+j=1 πij = 1, ∀mi
+k−1 ∈Mk−1, where Mk =
+|Mk| represents the modulus of Mk, which corresponds to
+the total number of models. All the transition probabilities
+constitute the TPM Π.
+In the sense of MMSE, the optimal estimation for the mode
+and state of the system at time k is
+ˆmk = E [m |M1:k, z1:k ]
+ˆxk|k = E [ xk |M1:k, z1:k ]
+(3)
+where E [·] represents the expectation.
+M1:k = {M1, M2, · · · , Mk}
+z1:k = {z1, z2, · · · , zk}
+(4)
+denote the model set sequence and the measurement
+sequence, respectively.
+Based on the probability µj
+k−1 = P[mj
+k−1 |M1:k−1, z1:k−1 ]
+of model mj
+k−1 at time k −1 and the TPM, the predicted
+probability of ∀mr
+k ∈Mk can be derived.
+µr
+k|k−1 = P [mr
+k |M1:k, z1:k−1 ]
+=
+Mk−1
+
+j=1
+P
+
+mr
+k
+mj
+k−1
+
+P
+
+mj
+k−1 |M1:k, z1:k−1
+
+=
+Mk−1
+
+j=1
+πjrµj
+k−1
+(5)
+The probability density function (PDF) of the state fol-
+lowing the model interaction is
+p (xk−1 |mr
+k, M1:k−1, z1:k−1 )
+=
+Mk−1
+
+j=1
+p
+
+xk−1
+mj
+k−1, z1:k−1
+
+× P
+
+mj
+k−1 |mr
+k, z1:k−1
+
+=
+Mk−1
+
+j=1
+N
+
+xk−1; ˆxj
+k−1|k−1 , P j
+k−1|k−1
+
+× µj|r
+k−1
+≈N
+
+xk; ˆxr0
+k−1, P r0
+k−1
+
+(6)
+Based on the state estimation ˆxj
+k−1|k−1 and error covari-
+ance P j
+k−1|k−1 of model mj
+k−1 at time k −1, the state
+estimations and error covariances for each model after
+model interaction can be derived.
+ˆxr0
+k−1 =
+Mk−1
+
+j=1
+µj|r
+k−1ˆxj
+k−1|k−1
+P r0
+k−1 =
+Mk−1
+
+j=1
+µj|r
+k−1
+
+P j
+k−1|k−1 +
+
+∆ˆxr0
+k−1
+ 
+∆ˆxr0
+k−1
+T
+(7)
+where ∆ˆxr0
+k−1 = ˆxr0
+k−1 −ˆxj
+k−1|k−1 . The mixing probability
+µj|r
+k−1 is
+µj|r
+k−1 =
+P
+
+mr
+k
+mj
+k−1
+
+P
+
+mj
+k−1 |M1:k−1, z1:k−1
+
+P [mr
+k |M1:k, z1:k−1 ]
+= πjrµj
+k−1
+µr
+k|k−1
+(8)
+The predicted PDF of the state can be explicitly repre-
+sented using the Chapman-Kolmogorov equation.
+p (xk |mr
+k, M1:k−1, z1:k−1 )
+=
+
+p (xk |xk−1, mr
+k, z1:k−1 )
+×p (xk−1 |mr
+k, M1:k−1, z1:k−1 ) dxk−1
+(9)
+
+
+<<PAGE 3>>
+1768	
+Yu Lu  et al. / IFAC PapersOnLine 59-20 (2025) 1766–1771
+Furthermore, the posterior PDF can be derived after
+applying the model-conditional filtering:
+p (xk |mr
+k, M1:k−1, z1:k )
+= p(zk|mr
+k,xk )p(xk|mr
+k,M1:k−1,z1:k−1 )
+p(zk|mr
+k,M1:k−1,z1:k−1 )
+(10)
+The state estimation after model-conditional filtering is
+denoted as ˆxr
+k|k
+= E[ xk |mr
+k, M1:k−1, z1:k ], with the
+corresponding error covariance represented by P r
+k|k .
+The update probability of model mr
+k at time k is denoted
+as
+µr
+k = P [mr
+k |M1:k, z1:k ]
+=
+p (zk |mr
+k, z1:k−1 )
+p (zk | M1:k, z1:k−1)P [mr
+k |M1:k, z1:k−1 ]
+= 1
+c Lr
+kµr
+k|k−1
+(11)
+where c = Mk
+r=1 Lr
+kµr
+k|k−1 is the normalization factor.
+Lr
+k = p (zk |mr
+k, M1:k−1, z1:k−1 ) is the likelihood of the
+model mr
+k.
+The posterior PDF of the multi-model fusion can be de-
+rived by combining the model-conditional posterior PDF
+with the updated probabilities as follows:
+p (xk |M1:k, z1:k )
+=
+Mk
+
+r=1
+p (xk |mr
+k, M1:k−1, z1:k ) P (mr
+k |M1:k, z1:k )
+(12)
+From (4), (11), and (12), the state fusion estimation and
+error covariance can be derived as follows:
+ˆxk|k = E [ xk |M1:k, z1:k ]
+=
+Mk
+
+r=1
+E [xk |mr
+k, M1:k−1, z1:k ] P (mr
+k |M1:k, z1:k )
+=
+Mk
+
+r=1
+ˆxr
+k|k µr
+k
+P k|k =
+Mk
+
+r=1
+µr
+k
+
+P r
+k|k +
+
+∆ˆxk|k
+ 
+∆ˆxk|k
+T
+(13)
+where ∆ˆxk|k = ˆxk|k −ˆxr
+k|k .
+3. AN MSA METHOD BASED ON DQN
+The VSIMM estimation achieves optimality only when the
+model set at each moment aligns perfectly with the true
+system mode. The key to attaining this objective resides
+in the design and implementation of MSA method. This
+section proposes an MSA method grounded in deep Q-
+learning. First, let the set of all possible models for the
+system be denoted as M, which should aim to cover the
+mode space S as comprehensively as possible. The set
+M is divided into two subsets: the basic model set Mb
+and the candidate model set Mc. Here, Mb is a compact
+set consisting of essential models, ensuring fundamental
+coverage of the mode space S. The set of models utilized
+for state estimation at time k is referred to as the active
+model set, denoted as
+Mk = Mb ∪Ma
+k, Ma
+k ⊆Mc
+(14)
+Ma
+k is the optimal model set selected from Mc based on a
+specific criterion.
+This section employs DQN to identify the optimal model
+set Ma
+k, thereby eliminating the need for reliance on real-
+mode information. Furthermore, the number of models
+in Ma
+k is dynamically determined to achieve the optimal
+quantity. By appropriately designing the state space and
+reward function of DQN, the optimal model set is selected
+at each moment, thereby enhancing the adaptability and
+robustness of the model set.
+3.1 Deep Q Network
+DQN is a deep reinforcement learning algorithm intro-
+duced in 2015 (Mnih et al., 2015). It leverages deep neural
+networks to approximate the mapping between an agent’s
+states and actions to the value function, specifically the
+Q-function, enabling the algorithm to learn the optimal
+policy that maximizes the expected cumulative reward.
+DQN models the environment as a Markov Decision Pro-
+cess (MDP), denoted by M = (S, A, T, γ, R), where S
+represents the state space of DQN, A represents the action
+space, T denotes the state transition probability, γ is the
+discount factor, and R is the reward function. It is worth
+emphasizing that in DQN, the state st denotes the current
+state of the decision-making agent, which differs from the
+state xt in JMS. The policy ρ (a |s) of MDP represents the
+probability of selecting action a in a given state s. The goal
+of DQN is to learn the optimal policy:
+ρ∗= arg max
+ρ
+Qρ (s, a; θ)
+= Eρ
+ ∞
+
+t=0
+γtR (st, at) |s0 = s, a0 = a
+
+(15)
+where θ denotes the parameters of the neural network (re-
+ferred to as the Q-network), and its training loss function
+is defined as follows:
+L (θ) = E
+
+(y −Q (s, a; θ))2
+(16)
+where y is the output of another neural network with the
+same architecture as the Q-network in DQN (commonly
+referred to as the target network), which is formally
+defined as
+y = R (s, a) + γ max Q
+
+s′, a′; θ−
+(17)
+where θ−represents the parameters of the target network,
+which remain constant throughout each episode. Once
+the episode concludes, the parameters of the Q network
+are copied to the target network, thereby ensuring stable
+updates of the Q network.
+3.2 The Active Model Set Based on DQN
+One cycle of JMS model selection based on DQN can be
+described as follows: According to the active model set Mk
+at time k, the state estimation ˆxr
+k|k , r = 1, 2, · · · , Mk, and
+the model probabilities µk = (µ1
+k, µ2
+k, · · · , µMk
+k
+)T, utilize
+DQN to select Ma
+k+1 from Mc. Subsequently, construct
+the active model set at time k + 1 using the formula
+Mk+1 = Mb ∪Ma
+k+1. Therefore, the MSA of JMS at
+each moment constitutes an independent model selection
+problem, and the pre-trained DQN is employed to address
+this model selection task.
+During the offline training process of DQN, a model
+is selected from Mc in each iteration. After undergoing
+
+
+<<PAGE 4>>
+	
+Yu Lu  et al. / IFAC PapersOnLine 59-20 (2025) 1766–1771	
+1769
+multiple iterations, the final Ma
+k+1 is obtained. To clearly
+differentiate the iteration steps of DQN from the time
+instances of JMS, we use the superscript t to denote
+the former and the subscript k to denote the latter. The
+model selection forms remain consistent across different
+moments. By taking the model selection problem at time
+k + 1 as an example, the following elaborates on the state,
+reward mechanism, and training process within the DQN
+framework.
+The state of DQN must encompass sufficient information
+to accurately reflect the expected reward of the selected
+model. Consequently, the state in DQN is formally defined
+as follows:
+st
+k+1
+∆=
+
+xT
+k+1|k+1
+
+Mt
+k+1
+
+, zT
+k+1
+T
+(18)
+where st
+k+1 denotes the state of the t-th iteration step
+in the model selection process at time k + 1, and Mt
+k+1
+represents the corresponding model set. The initial model
+set M1
+k+1 = Mb. zk+1 is the measurement at time k + 1.
+xT
+k+1|k+1
+
+Mt
+k+1
+
+denotes the estimation of the system
+state at time k + 1 with the active model set Mt
+k+1. It
+is calculated by
+xT
+k+1|k+1
+
+Mt
+k+1
+
+= E
+
+xk+1
+Mt
+k+1, M1:k, z1:k+1
+
+=
+M t
+k+1
+
+i=1
+E
+
+xk+1
+mi
+k+1, M1:k, z1:k+1
+
+×P
+
+mi
+k+1
+Mt
+k+1, z1:k+1
+
+=
+M t
+k+1
+
+i=1
+ˆxi
+k+1|k+1 µi
+k+1
+(19)
+In the proposed MSA method based on DQN, the action
+at
+k+1 defined for each iteration involves selecting a model
+mt
+k+1 from Mc and adding it to Mt
+k+1 to form Mt+1
+k+1.
+at
+k+1 : Mt+1
+k+1 = Mt
+k+1 ∪
+
+mt
+k+1
+
+, mt
+k+1 ∈Mc
+(20)
+The reward function R(st
+k+1, at
+k+1) represents the return
+obtained by executing a specific action at
+k+1 in state st
+k+1.
+Given that the real mode of the system does not change
+frequently and is often consistent with the previous mode,
+both the residual of the model set and the stability of
+model selection are considered. Consequently, the reward
+function is defined as follows:
+rt
+k+1 = R
+
+st
+k+1, at
+k+1
+
+∆= λ · Rlikehood + (1 −λ) · Rstability
+= λ · p
+
+zk+1
+Mk+1 = Mt+1
+k+1, M1:k, z1:k
+
++ (1 −λ) · Rstability
+(21)
+where Rlikehood denotes the likehood of the model set
+Mt+1
+k+1, which is calculated by
+Rlikehood = p
+
+zk+1
+Mk+1 = Mt+1
+k+1, M1:k, z1:k
+
+=
+M t+1
+k+1
+
+i=1
+p
+
+zk+1
+mi
+k+1, M1:k, z1:k
+
+× P
+
+mi
+k+1
+Mk+1 = Mt+1
+k+1, M1:k, z1:k
+
+=
+M t+1
+k+1
+
+i=1
+Li
+k+1µi
+k+1|k
+(22)
+where mi
+k+1 ∈Mt+1
+k+1, Li
+k+1 represents the likelihood of
+model mi
+k+1, and µi
+k+1|k denotes the predicted probability
+of mi
+k+1. λ denotes the weight coefficient, and Rstability
+represents the stability of model selection to prevent
+frequent model switching. It is defined as follows:
+Rstability =
+−1, mt
+k+1 /∈Mk
+0,
+mt
+k+1 ∈Mk
+(23)
+When mt
+k+1 /∈Mk, it signifies that the model has switched;
+therefore, the aforementioned penalty term is incorporated
+into the reward function.
+DQN employs an offline training approach. Training data
+is generated by simulating multiple target trajectories
+and corresponding measurement data under the system
+model M and sensor measurement model. The model set
+covers diverse motion modes with parameter perturba-
+tions. To bridge the sim-to-real gap, unmodeled maneuvers
+and time-varying sensor noise can be incorporated during
+training. Each trajectory and its corresponding measure-
+ment data are denoted as {xk, zk}K
+k=1, where K represents
+the number of sampling points in the trajectory. The
+training procedure of the DQN is illustrated in Algorithm
+1.
+Remark 1: In Algorithm 1,
+y(j)
+=
+
+
+
+
+
+
+
+r(j)
+for
+M (j+1) = Mb + Mc
+r(j) + γ max
+a′ Q
+
+s(j+1), a′; θ−
+for
+M (j+1) < Mb + Mc
+(24)
+The samples in the experience replay memory D are man-
+aged according to the first-in-first-out principle. Tmax =
+Mc = |Mc| denotes that at each sampling point, up to
+Tmax models are selected to be incorporated into the basic
+model set Mb. The ε-greedy strategy is employed to select
+actions during training to ensure diverse sample selection.
+When k·t > batch, it suggests that D contains an adequate
+number of training samples, where batch denotes the re-
+quired sample size for effective training. When calculating
+y(j), if M (j+1) = Mb + Mc, this suggests that the entire
+Mc has been incorporated into Mb, and as a result, no
+further cumulative rewards will be accrued at this point.
+The significance of the target network lies in stabilizing
+the updates by fixing the objective of the Q-network at
+each sampling point.
+The trained DQN dynamically selects models in real-time
+within VSIMM to achieve model set adaption. The online
+adaption for the model set is detailed in Algorithm 2.
+Remark 2: In Algorithm 2, incorporating online updating
+into the DQN with probability η can effectively enhance
+its generalization capability.
+4. SIMULATIONS AND ANALYSIS
+In this section, we consider an aerial target positioning
+system based on multiple sensors to validate the effec-
+tiveness of the proposed VSIMM approach based on DQN
+(VSIMM-DQN). The target alternately executes constant
+acceleration (CA), coordinated right turn (CRT), coordi-
+nated left turn (CLT), and constant velocity (CV) modes.
+
+
+<<PAGE 5>>
+1770	
+Yu Lu  et al. / IFAC PapersOnLine 59-20 (2025) 1766–1771
+Algorithm 1 The Offline Training of the DQN
+Inputs: {xk, zk}K
+k=1 , Mb, Mc, Π, γ, λ, ε.
+Output: Trained Q (s, a; θ).
+1: Initialize the experience replay memory D by setting
+its capacity to N.
+2: Initialize the parameter θ of the Q-network and the
+parameter θ−of the target network to initialize both
+the Q-function and the target Q-function.
+3: Initialize the active model set M0
+=
+Mb, and
+determine the initial state estimations along with
+their corresponding error covariances
+ˆxi
+0, P i
+0, i
+=
+1, 2, · · · , Mb, Mb = |Mb|.
+4: for k = 1 : K do
+5:
+Initialize the model set M1
+k = Mb at time k.
+6:
+Calculate the initial state s1
+k of the DQN at time
+k using (18) and (19).
+7:
+for t = 1 : Tmax do
+8:
+Selecte a random action at
+k with probability ε;
+otherwise, select at
+k = arg max
+a
+Q (st
+k, a; θ) using the
+Q-network.
+9:
+Perform action at
+k, that is, Mt+1
+k
+= Mt
+k ∪
+{mt
+k} , mt
+k ∈Mc.
+10:
+Calculate the next state st+1
+k
+of the DQN and
+compute the reward rt
+k based on (21)–(23).
+11:
+Store the sample et
+k =
+
+st
+k, at
+k, rt
+k, st+1
+k
+
+in D.
+12:
+if k · t > batch then
+13:
+Randomly select a batch of training samples
+e(j) =
+
+s(j), a(j), r(j), s(j+1)
+∈D, j = 1, 2, · · · , batch.
+14:
+Calculate y(j) using (24).
+15:
+Update the parameter θ of the Q-network
+via gradient descent to approximate the true Q (s, a)
+according to (16).
+16:
+Endif
+17:
+Endfor
+18:
+Copy the parameter of the Q-network θ to the
+target network.
+19: Endfor
+20: Return Q (s, a; θ).
+It progresses through ten maneuvering phases, each char-
+acterized by distinct model parameters, noise parameters,
+and time-varying features, as depicted in Fig. 1.
+The sensor measures the relative distance between the
+target and itself. This paper compares the target state
+estimation results of the standard IMM, the VSIMM
+based on expected model augmentation (VSIMM-EMA),
+the VSIMM based on best model augmentation (VSIMM-
+BMA), and the proposed VSIMM-DQN.
+The positioning errors in each direction are illustrated
+in Fig. 2–4, while the comparison of positioning ac-
+curacy is summarized in Table 1. Specifically, σx
+=
+
+1/N · N
+k=1 (ˆxk −xk)2 and σ =
+
+σ2x + σ2y + σ2z, where
+N = 5000 is the number of sampling points.
+The numerical simulation results demonstrate that during
+the transition phase of target movement, the motion mode
+of the target undergoes a sudden change. Traditional
+methods encounter model set mismatches due to either
+a fixed model set or delays in updating the model set,
+which leads to a rapid increase in positioning errors across
+Fig. 1. Simulated target trajectory and multi-sensor con-
+figuration
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+-0.2
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+IMM
+VSIMM-EMA
+VSIMM-BMA
+VSIMM-DQN
+Fig. 2. Positioning error along the x-axis
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+-0.2
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+IMM
+VSIMM-EMA
+VSIMM-BMA
+VSIMM-DQN
+Fig. 3. Positioning error along the y-axis
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+-0.2
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+IMM
+VSIMM-EMA
+VSIMM-BMA
+VSIMM-DQN
+Fig. 4. Positioning error along the z-axis
+
+
+<<PAGE 6>>
+	
+Yu Lu  et al. / IFAC PapersOnLine 59-20 (2025) 1766–1771	
+1771
+Algorithm 2 Online MSA Based on DQN
+Inputs: Mk, ˆxi
+k|k, P i
+k|k, i = 1, 2, · · · , Mk,
+Mb, Mc, Π, γ, λ, η.
+Output: Mk+1.
+1: Initialize the experience replay memory D by setting
+its capacity to N.
+2: t ←1, Mt
+k+1 = Mb, calculate st
+k+1 using (18) and (19).
+3: while arg max
+a
+Q
+
+st
+k+1, a; θ
+
+> 0 do
+4:
+at
+k+1 = arg max
+a
+Q
+
+st
+k+1, a; θ
+
+.
+5:
+Perform action at
+k+1, that is, Mt+1
+k+1 = Mt
+k+1 ∪
+
+mt
+k+1
+
+, mt
+k+1 ∈Mc.
+6:
+Calculate the next state st+1
+k+1 of the DQN and
+compute the reward rt
+k+1 based on (21)–(23).
+7:
+Store the sample et
+k+1 =
+
+st
+k+1, at
+k+1, rt
+k+1, st+1
+k+1
+
+in D.
+8:
+if |D| > batch then
+9:
+Train the DQN online with a probability of η.
+10:
+Endif
+11:
+t = t + 1.
+12: Endwhile
+13: Return Mk+1.
+all directions. In contrast, the proposed VSIMM-DQN
+method autonomously selects the optimal model set that
+aligns with the target’s motion mode via its dynamic
+policy network. This effectively suppresses peak errors and
+enables rapid convergence to a stable value. Additionally,
+the positioning performance of VSIMM-DQN during the
+target’s stable movement phase surpasses that of other
+algorithms.
+5. CONCLUSION
+This paper presents an adaptive VSIMM algorithm based
+on DQN for JMS state estimation. Specifically, the reward
+function of DQN is defined as the weighted sum of model
+set likelihood and model stability. By leveraging offline
+training with a dual-network structure and experience
+replay mechanism, the Q-network accurately approximates
+the true cumulative reward function associated with the
+model selection problem. Furthermore, by leveraging on-
+line model selection via DQN, autonomous adaptive model
+set are realized. This approach overcomes the limitations of
+traditional methods that heavily depend on homogeneous
+model structures and prior knowledge. The simulations
+for target positioning based on multi-sensor fusion have
+demonstrated that the proposed method significantly re-
+duces positioning errors, thereby establishing an intelli-
+gent decision-making framework with a rigorous theoret-
+ical foundation for state estimation in complex dynamic
+systems.
+Table 1. Comparison of positioning accuracy
+IMM
+VSIMM-
+EMA
+VSIMM-
+BMA
+VSIMM-
+DQN
+σx(m)
+0.76
+0.63
+0.52
+0.31
+σy(m)
+0.55
+0.48
+0.46
+0.23
+σz(m)
+1.11
+0.89
+0.75
+0.41
+σ(m)
+1.45
+1.20
+1.02
+0.56
+REFERENCES
+Ben, Y., Wang, J., Zang, X., and Li, Q. (2024). SINS/EM
+log integrated navigation with variable-structure multi-
+ple model adaptive Kalman filter. IEEE Sensors Jour-
+nal, 24(18), 28692–28703.
+Blom, H. and Bar-Shalom, Y. (1988).
+The interacting
+multiple model algorithm for systems with Markovian
+switching coefficients. IEEE Transactions on Automatic
+Control, 33(8), 780–783.
+Jwo, D.J. and Chang, W.Y. (2022). Variational Bayesian
+based IMM robust GPS navigation filter. Computers,
+Materials and Continua, 72(1), 755–773.
+Lan, J., Li, X.R., and Mu, C. (2011). Best model aug-
+mentation for variable-structure multiple-model estima-
+tion. IEEE Transactions on Aerospace and Electronic
+Systems, 47(3), 2008–2025.
+Li, G., Wang, Q., Zhang, S., Sheng, W., and Kirubarajan,
+T. (2024). Interacting multiple-mode estimation using
+centroid fixed structure for high precision. IEEE Trans-
+actions on Aerospace and Electronic Systems, 60(1),
+802–818.
+Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A.A., Veness,
+J., Bellemare, M.G., Graves, A., Riedmiller, M., Fidje-
+land, A.K., Ostrovski, G., et al. (2015). Human-level
+control through deep reinforcement learning.
+Nature,
+518(7540), 529–533.
+Rong Li, X. (2000).
+Multiple-model estimation with
+variable structure. II. Model-set adaptation.
+IEEE
+Transactions on Automatic Control, 45(11), 2047–2060.
+Soken, H.E. and ichiro Sakai, S. (2020). A new likelihood
+approach to autonomous multiple model estimation.
+ISA Transactions, 99, 50–58.
+Wang, J., He, J., Peng, B., and Wang, G. (2024). Gen-
+eralized interacting multiple model Kalman filtering
+algorithm for maneuvering target tracking under non-
+Gaussian noises. ISA Transactions, 155, 148–163.
+Xie, G., Sun, L., Wen, T., Hei, X., and Qian, F. (2021).
+Adaptive transition probability matrix-based parallel
+IMM algorithm. IEEE Transactions on Systems, Man,
+and Cybernetics: Systems, 51(5), 2980–2989.
+Xu, H., Pan, Q., Xu, H., and Quan, Y. (2024). Adaptive
+IMM smoothing algorithms for jumping Markov system
+with mismatched measurement noise covariance matrix.
+IEEE Transactions on Aerospace and Electronic Sys-
+tems, 60(4), 5467–5480.
+Xu, L., Li, X.R., and Duan, Z. (2016).
+Hybrid grid
+multiple-model estimation with application to maneu-
+vering target tracking. IEEE Transactions on Aerospace
+and Electronic Systems, 52(1), 122–136.
+Yang, B., Wang, H., and Shi, Z. (2025a).
+Interacting
+multiple model adaptive robust Kalman filter for pro-
+cess and measurement modeling errors simultaneously.
+Signal Processing, 227, 109743.
+Yang, F., Zhong, J., Luo, Y., Zhang, Y., Shen, X., and
+Zhu, Y. (2025b).
+Maneuvering target tracking based
+on a random motion model and integrated random
+interacting multiple model filtering. Aerospace Science
+and Technology, 162, 110244.

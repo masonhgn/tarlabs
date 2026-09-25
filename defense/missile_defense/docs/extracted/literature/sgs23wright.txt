@@ -1,0 +1,315 @@
+=== page 1 ===
+Science & Global Security, 23:220–229, 2015
+Copyright C© Taylor & Francis Group, LLC
+ISSN: 0892-9882 print / 1547-7800 online
+DOI: 10.1080/08929882.2015.1088734
+Research Note to Hypersonic
+Boost-Glide Weapons by
+James M. Acton: Analysis of
+the Boost Phase of the HTV-2
+Hypersonic Glider Tests
+David Wright
+Co-Director and Senior Scientist, Global Security Program, Union of Concerned
+Scientists, Cambridge, MA, USA
+“Hypersonic Boost-Glide Weapons,” by James M. Acton (this issue), analyzes
+the portion of the ﬂight of the U .S. HTV -2 hypersonic glide vehicle after it has
+been boosted to high speed and begins to reenter the atmosphere. 1 To under-
+stand more about the HTV -2 test ﬂights that took place in 2010 and 2011, this
+research note discusses the powered portion of the booster’s ﬂight based on
+simulations from launch through reentry into the atmosphere at about 100 km
+altitude—the so-called “pierce point.” This corresponds to Acton’s segments 1
+and 2 of the trajectory: boost and exo-atmospheric phases.
+This analysis is based on descriptions of the launch vehicle used in the
+HTV -2 tests, the splashdown points of the booster stages and faring, and the
+reported speed and altitude of the HTV -2 at the pierce point.
+Two test routes were planned for the HTV -2, both starting at Vandenberg
+Air Force Base in California and ending near Kwajalein Atoll some 7,800 km
+away . The glide portion of trajectory A stretched essentially straight from
+the launch to impact point, while trajectory B headed west and then maneu-
+vered during its glide to arc south toward the impact point (see Figure 3 of
+Acton). While tests were only conducted on trajectory A before the program
+ended, DARPA released the intended parameters for both trajectories, given in
+Table 1.
+Received 19 September 2014; accepted 5 March 2015.
+Address correspondence to David Wright, Union of Concerned Scientists, 2 Brattle
+Square, Cambridge, MA 02138, USA. E-mail: DWright@ucsusa.org
+Color versions of one or more of the ﬁgures in the article can be found online at
+www .tandfonline.com/gsgs.
+220
+=== page 2 ===
+Analysis of the Boost Phase of the HTV-2 Hypersonic Glider Tests 221
+Figure 1: Comparison of the Minotaur 4 and 5 launchers. (Source: Minotaur IV Users Guide
+http://www .orbital.com/LaunchSystems/Publications/MinotaurIV Guide.pdf)
+The goal of this analysis is to determine three unknowns: the three-
+dimensional ﬂight paths of the Minotaur booster on trajectories A and B, and
+the payload on the launcher , which is the same in both cases. The payload is
+the mass of the HTV -2 vehicle and the separation device that connects it to
+the payload adapter . Since the mass of the separation device is expected to be
+Figure 2: NOTMAR zones A and B. (Source: Google Earth)
+=== page 3 ===
+222 Wright
+Figure 3: NOTMAR zones B and C. The white line is the approximate ground path followed by
+Trajectory A. (Source: Google Earth)
+only 10 to 20 kg, the payload mass will essentially be the HTV -2 mass to the
+accuracy of the calculations. 2
+The ﬂight trajectories are calculated with a computer program that inte-
+grates the equations of motion of the launcher on a round Earth with a realistic
+atmosphere model (see Technical Note). The Minotaur is launched vertically
+and the trajectory is controlled by varying the direction of thrust relative to
+the velocity .
+The inputs to the calculation are the parameters of the Minotaur booster
+and the locations of the splashdown zones for the Minotaur stages. The anal-
+ysis requires an iterative process of varying the payload mass, and for each
+mass seeing if it is possible for the booster to follow a trajectory that drops
+the Minotaur stages in the zones announced for the test and delivers the
+HTV -2 to the pierce point with the parameters given for both trajectories A
+and B.
+Table 1: This table gives the “pierce point” conditions for the two trajectories on
+which DARP A planned to test the HTV-2. The pierce point appears to correspond to
+an altitude of 100 km. The negative sign in front of the angles means that these
+angles are below the horizontal. (Source: Acton, Figure 3 and
+http://commons.wikimedia.org/wiki/File:FalconHTV2FlightPath.jpg).
+Trajectory A Trajectory B
+Time 435 s 376 s
+V elocity 19,700 fps = 6.00 km/s 23,500 fps = 7.16 km/s
+Angle -3 deg -5.03 deg
+=== page 4 ===
+Analysis of the Boost Phase of the HTV-2 Hypersonic Glider Tests 223
+Table 2: Parameters for the Minotaur stages, in meters (m), metric tonnes (t), and
+seconds (s). To be consistent with the other parameters in the table, the sea-level
+value of speciﬁc impulse for the ﬁrst stage appears to be 259 s, rather than 229 s as
+listed in the source. While these values vary somewhat between sources, those
+variations are within the accuracy of the analysis in this paper. (Source:
+http://www .spacelaunchreport.com/mintaur4.html)
+Stage 1 2 3
+Engine SR-118 SR-119 SR-120
+Booster Diameter 2.34 m 2.34 m 2.34 m
+Propellant mass 45.37 t 24.49 t 7.07 t
+Total mass 48.99 t 27.67 t 7.71 t
+Speciﬁc impulse 259 s (sea level) 309 s (vac) 300 s (vac)
+282 s (vac)
+Thrust 209 t (sea level) 124.7 t (vac) 29.48 t (vac)
+226.8 t (vac)
+Burn time 56.4 s 60.7 s 72 s
+THE BOOSTER FOR THE HTV-2 TESTS
+The booster for the HTV -2 tests was the Minotaur 4-Lite launch vehicle, which
+uses the ﬁrst three stages of the solid-fueled Peacekeeper intercontinental bal-
+listic missile (ICBM). 3 Parameter values for the Minotaur stages are given in
+Table 2.
+The mass of the payload fairing, which covers the payload at launch and
+is dropped early in ﬂight, is approximately 450 kg. 4 The remaining structural
+mass of the launcher , which includes various interstage structures, the Guid-
+ance and Control Assembly , the Payload Adaptor Module, and other hardware,
+can be estimated by considering the mass breakdown of the Minotaur 5, which
+includes two small upper stages. NASA gives the liftoff mass of the Minotaur
+5 as 89.37 t, which includes a payload of 0.38 t. 5 Subtracting the mass of the
+stages6 and fairing gives the additional structural mass as 0.86 t. Figure 1
+shows that the structure of the Minotaur 4-Lite is similar to that of the Mino-
+taur 5, so the structural mass of the Minotaur 4-Lite is assumed to be roughly
+0.8 t. Since the inputs used to determine this mass are not all from the same
+source and include some natural variability , this value must be considered
+approximate.
+Methodology
+As noted above, DARPA’s descriptions of the HTV -2 test program indicate
+that it planned tests along two different routes between the launch in Califor-
+nia and impact in the ocean near Kwajalein Atoll. Launches took place from
+Space Launch Complex (SLC) 8 at Vandenberg Air Force Base in California.
+For the 22 April 2010 launch, a Notice to Mariners (NOTMAR) was issued that
+=== page 5 ===
+224 Wright
+Table 3: This table gives the approximate distance of the two ends of each
+NOTMAR zone from the launch point.
+Zone Distance of Zone Ends from Launch Point
+A0 – 3 0
+B 60–250
+C 570–780
+D 2300–3600
+listed four zones off the coast near SLC-8 where debris from the launch was
+expected to fall into the ocean. 7 The ﬁrst three zones (A, B, C) are shown in
+Figures 2 and 3.
+Zone A, which reaches out to about 30 km from the launch site, appears to
+be for the ﬁrst stage casing (see Table 3).
+The large size of zone B, which reaches from about 60 to 250 km from
+the launch site, appears to be for the payload fairing since the fairing’s large
+surface-to-mass ratio would cause it to be strongly affected by the atmosphere
+as it fell to Earth, leading to a large uncertainty in its impact location. This
+would imply that the fairing was released relatively early during the burning
+of the second stage, which is typical for launches so that the rocket motors have
+less mass to accelerate. 8
+Zone C appears to be the splashdown zone for the second stage casing.
+Figure 4 shows zones B, C, as well as zone D, which appears to be for the
+third stage casing and lies near the Hawaiian Islands. What is clear from this
+ﬁgure is that for this test, which follows trajectory A, the Minotaur second
+stage continued along the initial direction of the launch and the third stage is
+used to rotate the trajectory by about 16 degrees from that direction, putting
+the HTV -2 on a relatively direct path toward its intended splashdown point
+near Kwajalein Atoll. This rotation is referred to below as the dogleg maneuver .
+Figure 4: NOTMARs B, C, and D for Trajectory A. (Image from Google Earth)
+=== page 6 ===
+Analysis of the Boost Phase of the HTV-2 Hypersonic Glider Tests 225
+Figure 5: This plot shows the boost phase of the Minotaur on trajectory A (solid line), the
+stage burnout locations (dots), and the trajectories of the empty ﬁrst and second stages
+and the payload fairing (dashed lines).
+The approximate ground path of the booster is indicated by the white line in
+Figures 2, 3, and 4.
+Descriptions of the tests state that the Minotaur booster provides more
+speed than is needed for trajectory A and that “energy-management maneu-
+vers” are required to reduce the speed at the end of boost phase, 9 so the
+third-stage dogleg maneuver would provide a way to reduce the energy on
+trajectory A.
+For the planned ﬂight along trajectory B, the launch appears to follow the
+same ground path as trajectory A early in ﬂight but then continues along that
+same direction throughout boost phase. The direction of the early part of the
+ﬂight may have been designed with trajectory B in mind. The splashdown
+zones for trajectory B were never released; for this analysis, we assume zones
+A, B, and C are the same as those announced for trajectory A.
+BOOST ANALYSIS
+The iterative analysis described above, using the Minotaur booster with the
+parameters given in Table 2, indicates that the mass of the HTV -2 is approxi-
+mately 1,000 kg. The trajectory calculations discussed below use this mass.
+The ﬁrst-stage drop zone is so close to the launch site that this stage
+must travel nearly vertically , which allows the booster to gain altitude quickly
+(Figure 5). Simulations give a burnout angle of about 87 degrees (3 degrees
+from vertical), with a burnout speed of 1.4 km/s and an altitude of 32 km.
+During second-stage burn, the booster begins to turn to ﬂatten the trajec-
+tory . It burns out at an angle of about 10 degrees at a speed of 3 km/s (Figure 5).
+The results are not very sensitive to the timing of the release of the fairing,
+which must occur during second-stage burn if drop zone B is for the fairing. For
+=== page 7 ===
+226 Wright
+this simulation, the fairing must be released when the booster reaches 50 km
+altitude in order for it to fall near the center of the drop zone (this occurs at
+69 s into ﬂight). The booster’s speed is only 1.5 km/s at the time of release, so
+the dynamic pressure ( ρV2) is only 1% of its maximum value (max Q), which
+occurs at an altitude of 11 km. As a result, releasing the fairing at that time
+should not cause problems for the payload. Releasing the fairing when the
+booster reaches 60 km altitude would cause the fairing to land at the far end
+of the drop zone; releasing later than that would cause it to land beyond the
+drop zone.
+The ﬂyout curve shown in Figure 5 is the same for trajectories A and B
+through stage 2 burnout.
+Trajectory A
+For trajectory A, we must estimate the amount of energy used to rotate the
+plane of the trajectory through 16 degrees to give the dogleg maneuver shown
+in Figure 3. The total capability of a rocket stage to accelerate—to increase the
+speed or maneuver—is described by the delta-V , or /Delta1V , of the stage. The total
+/Delta1V of the third stage of the Minotaur is: 10
+/Delta1V = g0Ispln
+(
+Mi/Mf
+)
+. (1)
+where Mi is the mass of the stage plus payload at the beginning of stage 3
+burn, Isp is the speciﬁc impulse of the rocket motor , Mf is the mass of the stage
+plus payload at the end of stage 3 burn, and g0 = 9.8 m/s. In this case Mi =
+7.71 + 0.8 + 1.0 = 9.51 tonnes and Mf = Mi –7 . 0 7= 2.44 tonnes, where 7.71
+and 7.07 are, respectively , the total mass and the propellant mass of stage 3
+(see Table 1), 0.8 is the additional structural mass of the booster , and 1.0 is the
+payload mass. Using Isp = 300 s, Eq. (1) gives /Delta1V = 4.0 km/s. Since at this point
+the trajectory is essentially horizontal, losses due to gravity are negligible and
+all of the /Delta1V is available for increasing the speed and maneuvering. 11
+The /Delta1V required for an object moving at speed V to change the direction of
+its velocity by an angle θ is given by: 12
+/Delta1V = 2V sin (θ/2) . (2)
+As noted, the dogleg maneuver corresponds to θ = 16 degrees. For trajec-
+tory A the velocity of the stage increases from 3 to 6 km/s during stage 3 burn.
+Eq. (2) shows that less /Delta1V is required if the maneuver occurs at lower V, so
+the maneuver is assumed to take place by applying lateral thrust during the
+ﬁrst part of the stage 3 burn—when the velocity of the stage is between V = 3
+and V = 4.5 km/s. Using the average speed V = (3 + 4.5)/2, Eq. (2) gives /Delta1V =
+1.0 km/s for the maneuver .
+=== page 8 ===
+Analysis of the Boost Phase of the HTV-2 Hypersonic Glider Tests 227
+Figure 6: This plot compares trajectories A and B from launch to the pierce point (100 km
+altitude) for each trajectory . Note that the vertical scale is stretched compared to the
+horizontal scale, which exaggerates the difference in reentry angle between the two
+trajectories at the pierce point.
+This result shows that approximately one-quarter of the total /Delta1Vo ft h e
+stage is required for the dogleg maneuver . In calculating the boost phase of
+trajectory A, the thrust of stage 3 is therefore reduced by a factor of 25% to
+account for the energy used in the maneuver .
+The trajectory calculations show that including this maneuver can produce
+a trajectory that gives the pierce point conditions in Table 1 for trajectory A at
+435 s after launch, and that this occurs at a range of about 1800 km from
+the launch site. This trajectory also gives splashdown points for the Minotaur
+stages and fairing in the stated NOTMAR zones.
+In this case, stage 3 burns out with a speed of 6.0 km/s with an elevation
+angle of 3.7 degrees and an altitude of 123 km. The third stage casing splashes
+down at a range of 2500 km.
+Trajectory B
+Trajectory B is assumed not to use energy-management maneuvers to shed
+energy . In this case, stage three burns out with a speed of 7.1 km/s with an
+elevation angle of 0.8 degrees and an altitude of 110 km, and leads to the
+dotted curve in Figure 6. The third-stage casing splashes down at a range of
+3200 km.
+The trajectory calculations show that this trajectory gives the pierce point
+conditions in Table 1 for trajectory B at 376 s after launch, and that this occurs
+at a range of about 1700 km from the launch site. This trajectory also gives
+splashdown points for the Minotaur stages and fairing in the stated NOTMAR
+zones.
+=== page 9 ===
+228 Wright
+CONCLUSION
+These calculations show that using parameters for the Minotaur 4-Lite booster
+and the locations of the splashdown zones for the rocket stages given by the
+NOTMAR for the April 2010 test, it is possible to ﬁnd boost trajectories that
+give the pierce point conditions announced by DARPA for both trajectories A
+and B.
+Moreover , these calculations imply that the HTV -2 glider has a mass of
+approximately 1,000 kg at launch.
+As noted above, these calculations assume that trajectory B does not re-
+quire energy-management maneuvers and that the only such maneuver re-
+quired for trajectory A is the dogleg maneuver . If, however , the combined mass
+of the HTV -2 and booster structure is signiﬁcantly less than assumed above,
+additional energy-management maneuvers may be required for both trajecto-
+ries, which would then be more complicated than the simple shapes shown
+above.
+TECHNICAL NOTE
+Because the focus of this paper is on the launch trajectory only in the early
+part of ﬂight, the calculations can use the equations of motion for the booster
+on a round, non-rotating Earth with an atmosphere. 13 The thrust of the ﬁrst
+stage will vary with altitude due to the change of atmospheric pressure at the
+opening of the engine nozzle:
+T(h) = T(0) + ANozzle(p(0) − p(h)). (3)
+where Anozzle is the nozzle area, T(h) is the thrust at altitude h,a n d p(h) is
+atmospheric pressure at altitude h. The values of thrust for the ﬁrst stage in
+Table 2, along with p(0) = 101,325 kg/s2m at sea level and p(vacuum) = 0, can
+be used to determine Anozzle = 1.7 m2.
+NOTES AND REFERENCES
+1. James M. Acton, “Hypersonic Boost-Glide Weapons,” Science & Global Security,
+23, (2015): 191–219.
+2. Orbital Science Corporation’s Users Guide for the Minotaur , Table 2.5.2-1, 57,
+June 2013, http://www .orbital.com/LaunchSystems/Publications/Minotaur IV Guide.
+pdf.
+3. T . Huynh and J. Kriz, “Final Environmental Assessment for Hypersonic
+Technology Vehicle 2 Flight Tests,” 28 April 2009, http://www .dtic.mil/get-tr-doc/
+pdf?AD=ADA544343.
+4. Spaceﬂight 101, “Minotaur V Launch Vehicle Information,” http://www .space
+ﬂight101.com/minotaur-v-launch-vehicle-information.html.
+=== page 10 ===
+Analysis of the Boost Phase of the HTV-2 Hypersonic Glider Tests 229
+5. This is from the NASA press kit for LADEE mission, and is for the version
+of M-V with the Star 48BV and Star 37FM upper stages: http://www .nasa.gov/sites/
+default/ﬁles/ﬁles/LADEE-Press-Kit-08292013.pdf.
+6. For the Minotaur V this includes the mass of two additional stages: 2.16 t for the
+Star 48VB and 1.15 t for the Star 37FM (see ATK Space Propulsion Products Catalog,
+http://www .atk.com/wp-content/uploads/2013/02/ATK-Motor-Catalog-2012.pdf.)
+7. Notice to Mariners, 1 May 2010, 111.1–10, http://msi.nga.mil/MSISiteContent/
+StaticFiles/NAV PUBS/UNTM/201018/NtM 18-2010.pdf
+8. This timing disagrees with a DARPA animation of segments of the launch,
+which shows the payload fairing being jettisoned late in boost phase, shortly before
+the HTV -2 separates from the upper booster stage; see http://www .darpa.mil/Flight
+%20Overview%20slide–UPDATED%20as%20of%2029%20Jul%2011.html.
+9. G. Warwick, “DARPA’s HTV -2 Didn’t Phone Home,” Aviation Week Blog, 24
+April 2010, http://www .aviationweek.com/Blogs.aspx?plckBlogId=Blog:27ec4a53-dcc8-
+42d0-bd3a-01329aef79a7&plckPostId=Blog:27ec4a53-dcc8-42d0-bd3a-01329aef79a7
+Post:70769585-4348-4701-889a-f02c58f38314.
+10. D. Wright, L. Grego, and L. Gronlund, “The Physics of Space Security ,”
+Union of Concerned Scientists, 75 , 2005. http://www .ucsusa.org/nuclear weapons and
+global security/solutions/space-weapons/the-physics-of-space-security .html.
+11. As a check, the calculation of trajectory B shows that during third stage burn the
+speed of the stage increases by 4 km/s.
+12. Wright et al., 64.
+13. See Appendix B of L. Gronlund and D. Wright, “Depressed Trajectory SLBMs,”
+Science and Global Security 3 (1992): 101–159, http://scienceandglobalsecurity .
+org/archive/sgs03gronlund.pdf.

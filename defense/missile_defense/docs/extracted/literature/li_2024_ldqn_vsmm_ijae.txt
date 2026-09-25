@@ -1,0 +1,1117 @@
+<<PAGE 1>>
+Research Article
+A Strong Maneuvering Target-Tracking Filtering Based on
+Intelligent Algorithm
+Jing Li
+,1 Xinru Liang,2 Shengzhi Yuan
+,1 Haiyan Li
+,1 and Changsheng Gao
+2
+1Naval University of Engineering, Wuhan, China
+2Harbin Institute of Technology, Harbin, China
+Correspondence should be addressed to Shengzhi Yuan; yuanshengzhi_hy@sina.com
+Received 18 April 2023; Revised 19 November 2023; Accepted 6 December 2023; Published 11 January 2024
+Academic Editor: Francisco Ronay Lopez Estrada
+Copyright © 2024 Jing Li et al. This is an open access article distributed under the Creative Commons Attribution License, which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+In this paper, a variable-structure multimodel (VSMM) ﬁltering algorithm based on the long short-term memory (LSTM)
+regression-deep Q network (L-DQN) is proposed to accurately track strong maneuvering targets. The algorithm can map the
+selection of the model set to the selection of the action label and realize the purpose of a deep reinforcement-learning agent to
+replace the model switching in the traditional VSMM algorithm by reasonably designing a reward function, state space, and
+network structure. At the same time, the algorithm introduces a LSTM algorithm, which can compensate the error of tracking
+results based on model history information. The simulation results show that compared with the traditional VSMM algorithm,
+the proposed algorithm can quickly capture the maneuvering of the target, the response time is short, the calculation accuracy
+is signiﬁcantly improved, and the range of adaptation is wider. Precise tracking of maneuvering targets was achieved.
+1. Introduction
+Strong maneuvering target tracking (MTT) is an important
+research direction in the ﬁeld of state estimation. At present,
+the ﬁltering algorithms for maneuvering target tracking are
+mainly divided into two categories: the improved single-
+model algorithm dominated by the Kalman ﬁlter and the
+multimodel-tracking ﬁltering algorithm represented by an
+interactive multimodel. Because of its strong model-covering
+ability, the multimodel ﬁltering algorithm has a prominent
+phenotype in the ﬁeld of strong maneuvering target tracking.
+However, there are also many shortcomings in the multimodel
+algorithm. For example, the interactive multimodel algorithm
+usually adopts a ﬁxed model set, which is quite diﬀerent from
+the changeable movement space in the actual motion.
+To solve this problem, Li et al. proposed the concept of a
+variable-structure model ﬁltering algorithm [1–3], which
+expanded the original model set through one or more adap-
+tive models closely following the real model set, and used the
+directed graph to represent the transition between models to
+realize the variability of the model set. In reference [3], the
+peak error, steady-state error, and response time of the ﬁlter-
+ing algorithm under diﬀerent model sets are studied via a
+deterministic scheme (DS). In this paper, it is proposed that
+too many models will provide less bias stability error, but the
+smaller model sets will also lose some jump accuracy. At the
+same time, aﬀected by the performance of its own algorithm,
+the performance improvement of excessive model sets and
+complex topological relationships is not proportional to
+the complexity of the solution, and the response of the algo-
+rithm is slow.
+Wang et al. [4] also proposed that expected mode aug-
+mentation (EMA)
+13 + 1
+could improve the accuracy in
+a few cases compared with the EMA
+9 + 1
+algorithm, but
+it sacriﬁced a large computational fast response capability
+compared with the EMA
+9 + 1
+algorithm, which was not
+proportional to the accuracy improvement of the algorithm.
+Wang et al. [5] proposed too few models; for the strong
+maneuvering target, the coverage ability of the model set will
+be poor; and only when the target movement just falls within
+Hindawi
+International Journal of Aerospace Engineering
+Volume 2024, Article ID 9981332, 9 pages
+https://doi.org/10.1155/2024/9981332
+
+
+<<PAGE 2>>
+the model set will the tracking eﬀect be better. However, in
+the actual movement of the target, the change of the model
+is unknown and diﬃcult to cover. At the same time, the divi-
+sion of the model depends on the prior division of the model
+set and the ﬁxed topology.
+Intellectualization of ﬁltering is the hot spot direction of
+current complex ﬁltering in the tracking problem. The cyclic
+neural network was ﬁrst proposed by Lipton et al. [6]. It has
+outstanding performance in temporal data processing such as
+speech recognition, text generation, and machine translation.
+Wei et al. [7] solved the problem of cooperative target
+hunting in the underwater environment by using the deep
+Q-learning (DQN) algorithm of neural networks. Fang et al.
+[8] adopted adaptive time slot (TS) and power allocation
+schemes to switch between diﬀerent operating modes of
+machine communication devices, achieving optimization
+between peak age of information (AoI) and power consump-
+tion in energy harvesting- (EH-) assisted large-scale multiac-
+cess networks. Zhang et al. [9] and Wang et al. [10] have
+achieved innovative applications of adaptive technology in
+nonorthogonal multiple access, ad hoc networks, and other
+ﬁelds. At the same time, because of the advantages of a recur-
+rent neural network in processing a sequential sequence, it can
+be combined with the time series characteristics of ﬁltering.
+Therefore, the introduction of the recurrent neural network
+to improve the ﬁltering algorithm is a popular research ﬁeld
+in the intelligent ﬁltering algorithm. The paper proposes to
+combine the LSTM network with a hypersonic vehicle-
+tracking ﬁlter algorithm [11]. Kim et al. [12] developed a
+human posture estimation algorithm combining the Kalman
+ﬁltering algorithm and recurrent neural network, which
+improved the accuracy of tracking results. Reinforcement
+learning is a process in which agents interact with the environ-
+ment continuously under the driving of reward function to get
+the maximum cumulative reward and adopt the optimal strat-
+egy of learning. DQN has been widely used in the ﬁeld of deci-
+sion control because of its advantages [13, 14].
+Compared with the traditional VSMM algorithm, the
+improvement of the R-DQN-based improved VSMM algo-
+rithm proposed in this article is as follows:
+(1) Using the DQN algorithm to handle the selection
+and decision-making problems of the model set
+(2) Use the additional LSTM algorithm for compensa-
+tion. Compared with traditional algorithms, this
+algorithm adds three online-trained neural networks,
+so the computational complexity of the algorithm
+proposed in this article is signiﬁcantly higher than
+that of traditional algorithms
+The remainder of this article is structured as follows. The
+Variable-Structure Multiple-Model (VSMM) ﬁltering and
+the Markov Decision Process (MDP) are detailed in Section
+2. In Section 3, the L-DQN algorithm is introduced into the
+process of model selecting in VSMM, and an LSTM network
+is used to modify the error, followed by our experimental
+results and result analysis in Section 4. In the end, conclu-
+sions are reached in Section 5.
+2. Problem Description
+2.1. Variable-Structure Multiple-Model Filtering. The core of
+the VSMM method is the addition and deletion of the model
+set. When and how to make changes to the model set are
+included in the model set decision of the VSMM algorithm.
+The main steps of the algorithm are input interaction, ﬁlter-
+ing algorithm, model probability update, interactive output,
+and model set decision.
+2.1.1. Step 1: Input Interaction [15].
+μi,j
+k−1 =
+pij ⋅μi
+k−1
+∑ipij ⋅μi
+k−1
+,
+1
+where pij is the transition probability from model i to j,
+μi
+k−1 is the model probability of model i at k −1 time, and
+μi,j
+k−1 is the mixing probability of the model at k −1 time.
+At the same time, the upper corner mark represents the
+model label, and the lower corner mark represents the time.
+The representations in the following ﬁltering algorithms are
+the same and will not be repeated.
+2.1.2. Step 2: Filtering Algorithm. The one-step prediction of
+state vector is
+̂X
+j
+k/k−1 = Fj
+k−1 ⋅̂X
+j
+k−1,
+2
+where Fj
+k−1 is the driving matrix.
+The one-step prediction of error covariance is
+Pj
+k/k−1 = Fj
+k−1 ⋅Pj
+k−1 ⋅Fj
+k−1
+T + Qj
+k−1
+3
+Qj
+k−1 represents the process noise covariance matrix.
+The ﬁlter is
+̂X
+j
+k = ̂X
+j
+k/k−1 + K j
+k ⋅rj
+k,
+4
+rj
+k = Zj
+k −̂Z
+j
+k/k−1,
+5
+where K j
+k represents the Kalman ﬁlter gain matrix, rj
+k
+represents the ﬁlter residual, Zj
+k is the measurement vector,
+and ̂Z
+j
+k/k−1 is the estimate of the measurement vector.
+The ﬁltering covariance is
+Pj
+k = Pj
+k/k−1 −K j
+kgSj
+kg K j
+k
+T
+6
+The estimation of the observation equation is as follows:
+Kalman gain K j
+k is as follows:
+Sj
+k = Hj
+kPj
+k Hj
+k
+T
++ Rj
+k,
+K j
+k = Pj
+k/k−1 ⋅H j
+k
+T
+⋅Sj
+k
+−1
+7
+2
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 3>>
+Sj
+k represents the ﬁlter residual covariance, and Rj
+k repre-
+sents the measurement noise covariance.
+2.1.3. Step 3: Model Probability Update.
+μj
+k =
+Λj
+kμi,j
+k−1
+∑r
+i=1Λi
+kμi,j
+k−1
+8
+Λj
+k = N rj
+k, 0, Sj
+k
+represents the likelihood function,
+which deﬁnes a Gaussian distribution (also known as nor-
+mal distribution) with a variable rj
+k, the mean value as 0,
+and the variance as Sj
+k.
+Λj
+k =
+2
+i=1
+1
+σ
+2π
+e−
+xi−μ 2/2σ2
+,  μ = 0, σ2 = Sj
+k
+9
+2.1.4. Step 4: Interacting Output.
+̂Xk = 〠
+j
+̂X
+j
+k ⋅μj
+k,
+Pk = 〠
+j
+Pj
+k +
+̂X
+j
+k −̂Xk ⋅̂X
+j
+k −̂Xk
+T
+μj
+k,
+10
+where ̂Xk represents the state vector and Pk represents
+the error covariance.
+2.1.5. Step 5: Model Set Decision. At present, there are mainly
+two ways of model decision adaptation: the likely model set
+(LMS) [1, 2] method and the expected mode augmentation
+(EMA) [3] method. The EMA method extends the expected
+model set to the existing model set, while the LMS method
+divides the model according to the importance of model
+probability, so as to approximate the accuracy of the model
+with the least model as possible. The LMS method takes
+the directed graph algorithm as the switching algorithm of
+the VSMM. It stipulates that only the adjacent models can
+be converted to each other, but the nonadjacent models can-
+not be converted to each other. The model set participating
+in the ﬁltering calculation is selected according to the model
+probability to delete and add the model. The EMA algorithm
+relies on a ﬁxed topology and selects the model based on the
+ﬁxed topology. It is suitable for models with additivity and
+continuous model space. In each cycle, the existing model
+is weighted to obtain the expectation, and then, the dimen-
+sion of the obtained expectation model is extended to the
+existing motion model.
+2.2. Markov Decision Process. Through the expression for-
+mula given above, the ﬁltering process itself has a Markov
+property. It is a Markov process, which can be represented
+by tuple S, P , where S represents the ﬁnite state set and P
+represents the state transition matrix [16, 17].
+The Markov Reward Process (MRP) adds reward R and
+attenuation coeﬃcient γ (used to calculate the cumulative
+reward) based on the Markov process. The Markov Decision
+Process (MDP) adds the decision process based on the
+Markov Reward Process. Compared with MRP, MDP adds
+action set A, which is represented by tuple S, A, P, R, γ . The
+mathematical expression is Pa
+SS′ = ℙSt+1 = s′ St = s, At = a .
+The reinforcement-learning process based on MDP is the
+theoretical basis of solving reinforcement-learning problems
+and the bottom mathematical model of reinforcement learning.
+The Markov nature of ﬁltering and reinforcement-learning
+algorithm provides the feasibility for the combination of
+the two.
+The reinforcement-learning decision problem can be
+understood as a nonlinear mapping, which is a mapping
+from the state to the action according to the strategy,
+S ⟶π A, where S is the state information of the environment,
+and A is the action instruction according to the strategy state,
+where strategy π represents the probability of selecting an
+action in a certain state in the process, and represents the set
+of execution probabilities of an action. The strategy calculation
+equation is as follows:
+π a s = p At = a St = s
+11
+In order to evaluate the return value of each strategy π, the
+cumulative reward function is deﬁned, which is called the
+value function, and the calculation equation is deﬁned as
+Gt = Rt+1 + γRt+2+⋯+γnRt+n+1+⋯= 〠
+T
+k=0
+γkRt+k+1,
+12
+where R represents the reward function and γ represents
+the discount factor of reward.
+The value function based on policy is divided into the
+state value function: it represents the long-term return in
+this state vπ s = Eπ Gt St = s , and the action value function:
+it represents the long-term return of taking the action in this
+state qπ s, a = Eπ Gt St = s, At = a .
+3. Variable-Structure Multimodel Filtering
+Based on L-DQN Algorithm
+The structure diagram of the improved L-DQN algorithm is
+shown in Figure 1. The algorithm uses the DQN algorithm
+to make judgments and decisions on model set switching
+and uses LSTM to directly compensate the error of the ﬁlter-
+ing and positioning results of the target.
+In the ﬁgure, white represents the original module of the
+VSMM algorithm, green represents the newly added submo-
+dule of L-DQN, and blue represents the improved module of
+L-DQN.
+3.1. Markov Decision Process. The DQN algorithm combines
+the deep-learning algorithm with the reinforcement-learning
+algorithm and uses the deep neural network to replace the
+action value function. The algorithm uses the experience
+replay and the target network to ensure the nonlinear learn-
+ing ability of the algorithm.
+3.1.1. Design of Action Space. Diﬀerent model sets are set as
+diﬀerent labels, and diﬀerent labels correspond to diﬀerent
+3
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 4>>
+actions; then, the selection of models could be converted into
+the selection process of agent actions. Since the size of the
+action space determines the coverage ability of the model
+set, during oﬄine training, we put as many labels of the
+model set into the action space as possible and use the strat-
+egy value function to output the most possible action and its
+probability. The actions selected by the agent can be divided
+into two categories: one is the action of model selection and
+the other is the termination action, which is used to termi-
+nate exploration.
+The exploration of action adopts a strategy, which can
+balance the relationship between exploration and utilization,
+and make a compromise between exploration and utilization
+with a certain probability [18].
+π a s ⟵
+1 −ε +
+ε
+A s
+a = arg maxaQ s, a ,
+ε
+A s
+a ≠arg maxaQ s, a ,
+13
+where ε is the exploration factor, usually taken as 0, 1 ;
+A s
+is the set of optional actions of the agent; s is the cur-
+rent state of the agent; and π a s is the strategy adopted by
+the algorithm.
+3.1.2. Design of State Space. In the process of target track-
+ing, the model probability of the target is the basis for
+dividing the importance of the model. It can be seen from
+Interaction
+Compensation
+The observation
+vector
+LSTM error
+compensation
+DQN
+Interacting
+output
+•••
+Filter k
+Filter n
+Filter 1
+~X1 (K)
+ˆZ1 (K+1)
+ˆX1 (K+1)
+ˆXk (K+1)
+ˆXn (K+1)
+ˆX1 (K+1), Û (K+1)
+�1 (K+1),...,�n (K+1)
+~Xk (K)
+~Xn (K)
+m1 (k)
+Q (K)
+mk (k)
+mn (k)
+•••
+Figure 1: L-DQN algorithm.
+64
+64
+32
+Target network
+Evaluation network
+Q = (s, a, �i)
+Q = (s, a, �i–1)
+s 1 – �
+Figure 2: Network structure.
+st+1
+st
+st–1
+xt+1
+xt
+xt–1
+U
+U
+U
+ot–1
+ot
+ot+1
+V
+W
+W
+W
+V
+V
+W
+Figure 3: Network structure of RNN.
+4
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 5>>
+Equations (8) and (9) that the calculation of the model prob-
+ability is mainly given by the ﬁltered residual and the covari-
+ance of the residual. Therefore, we take the residual and
+covariance of the model as the observation of model deci-
+sion-making, so that the agent can learn to make model deci-
+sion through the residual and covariance of the model at the
+current time. At the same time, we take the output action
+probability value as the new probability of the model to obtain
+the accurate model probability.
+3.1.3. Design of Reward Function. The reward function
+determines the agent’s performance in the environment,
+which is the speciﬁc numerical value of the target task, and
+determines whether the optimal strategy can be learnt by
+the agent.
+Moreover, the reward function inﬂuences the exploration-
+exploitation trade-oﬀin reinforcement learning. A well-
+designed reward function can encourage the LSTM to explore
+diﬀerent actions and states to discover optimal policies.
+Ra s = min
+1, max
+−1, 1 −
+f i
+a −f i
+t
+f max
+a
+−f min
+a
+14
+f i
+a is the mapping function of the real model set, and f i
+t is
+the mapping function of the agent selection action model set.
+3.1.4. Network Structure. The strategy network of the DQN
+network is composed of two parallel networks with the same
+network structure. One is used to generate the current Q
+value, and the other is used to generate the target Q value.
+The two networks only have diﬀerent network parameters.
+When calculating the target network parameters, they are
+the network parameters before several time steps of the cur-
+rent network. The network structure is shown in Figure 2.
+One DQN network strategy network is made up of two
+identical parallel network structures: one is used to generate
+the current Q value and the other is used to generate a target
+Q value. Two networks have diﬀerent network parameters.
+Calculating the target network parameters is also part of
+the calculation of the current network parameters of a single
+time step before.
+3.2. Error Modiﬁcation Network
+3.2.1. Introduction to LSTM Network. RNN is a neural net-
+work used to process sequence data, which can fuse histori-
+cal information with new input information. The schematic
+diagram of the network structure is shown in Figure 3.
+Ot = g V ⋅St St = f U ⋅Xt + W ⋅St−1
+15
+After the RNN network receives the input xt at time t,
+the value of the hidden layer is St and the output value is
+Ot. The key point is that the value of St depends not only
+on xt but also on St‐1.
+As a result of gradient descent and gradient explosion in
+the process of long sequence training, it is diﬃcult for RNN
+to learn the useful information far away from the processing
+information. Compared with traditional RNN, LSTM per-
+forms better in longer sequences.
+The LSTM algorithm is used to design the error modiﬁ-
+cation network as the regression network of tracking and
+positioning results in compensating the modeling nonlinear
+error and modeling uncertainty.
+0.825
+Loss rate
+0.800
+0.775
+0.750
+0.725
+0.700
+0.675
+0.650
+0
+2500
+5000
+7500
+10000
+12500
+Number of training rounds
+15000
+17500
+20000
+Figure 4: Reward function.
+Table 1: The scheme of maneuvering ﬂight.
+Flight time (s)
+DS1
+DS2
+DS3
+0-20
+0
+0
+10
+20-50
+9
+0
+10
+50-70
+3
+3
+10
+70-90
+0
+3
+10
+90-120
+-3
+3
+10
+120-140
+-6
+-6
+-10
+140-180
+-3
+-6
+-10
+180-200
+0
+-6
+-10
+5
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 6>>
+3.2.2. Network Input/Output Selection. In the ﬁltering equa-
+tion, Pk is a quantitative description of the quality of the esti-
+mate, and the selection criteria of gain are as follows: the
+selection criteria of the gain matrix minimize the estimated
+mean square error matrix Pk = E XkX
+T
+k , where Xk = Xk −
+̂Xk is the estimation error [15]. Since the state covariance of
+the ﬁlter, that is, the mean square deviation matrix, is the value
+of each step ﬁlter estimation and reﬂection, and the gain matrix
+is the best way to minimize the mean square deviation matrix,
+the errors caused by model uncertainty and the nonlinearity of
+the driving matrix in the tracking ﬁltering algorithm are mainly
+reﬂected in the ﬁlter gain and the ﬁltered state covariance.
+At the same time, according to the estimation Equation (4),
+the residual also determines the accuracy of target tracking.
+Therefore, this paper uses the three variables mentioned
+in the above to describe the error compensation network as
+the input of error compensation for training. The improve-
+ment made is to embed the error modiﬁcation network into
+the subﬁlter of the model with the highest probability, that
+is, the model corresponding to the action with the highest
+probability selected by the agent. Here, we call it the main
+ﬁlter and ignore the minor ﬁlter. Error modiﬁcation is made
+for the ﬁlter at each hour. Under the condition that the intel-
+ligent decision of the model is correct, the nonlinear error of
+the model in the ﬁltering algorithm is minimum, and the
+model description is more accurate.
+The mathematical expression of the error modiﬁcation
+network is as follows:
+Δxj
+k
+∗Gk
+= LSTM rj
+k K j
+k Pj
+k−1 Gk−1
+16
+4. Experimental Results and Result Analysis
+4.1. Setting of Network Parameters. The setting of the reward
+function reﬂects whether the decision made by the agent at
+the current moment is correct or not. The establishment of
+the discount factor should consider not only the current
+return but also the future reward return. Therefore, the
+future reward return should be attenuated. In the initial
+moment of the simulation, the discount factor should be
+set as 0.9 to prevent the local optimality phenomenon and
+attenuate with the increase of step length as the interaction
+with the environment progresses.
+At the initial stage of algorithm setting, the target collects
+experience before training. If much experience is not col-
+lected, the training will not be carried out. The training will
+not be conducted after each interaction with the environ-
+ment but after 4 interactions with the environment.
+Greedy decision-making: when using the strategy corre-
+sponding to the action value to estimate the action, strategy
+is used. The setting of the exploration factor decreases grad-
+ually with the progress of training. At step 5 × 104, ε = 1,
+then decrease linearly until ε = 0 01, and keep ε unchanged.
+In this way, each step of the agent’s strategy is determined
+based on the maximum Q value of the current state during
+the training process.
+The learning rate is 1e−5, and the RMSProp optimizer is
+used to train 20,000 rounds.
+The data comes from the target’s 2d motion track data,
+including turning motion, CA motion, CV motion, and their
+combinations. At the same time, the noise of the data is
+increased for the adopted training data to increase the amount
+of available training data and increase the adaptability of the
+algorithm. The noise we have added is white Gaussian noise,
+and the synthetic datasets consist of the sum of the measured
+data and the added noise.
+4.2. Error Modiﬁcation Network. Since the maneuvering of
+the aircraft is complex, the number of training rounds is
+increased. After 20,000 rounds of training, the output
+reward function image is shown in Figure 4.
+Positioning error
+(m)
+Positioning error
+(m)
+W
+LMS
+EMA
+LDQN
+400
+200
+0
+0
+25
+50
+75
+100
+x error
+t/s
+125
+150
+175
+200
+400
+200
+0
+0
+25
+50
+75
+100
+y error
+t/s
+125
+150
+175
+200
+Figure 5: x-y tracking error of DS1.
+6
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 7>>
+4.3. Comparative Analysis. Three deterministic schemes are
+selected to evaluate the pros and cons of the improved algo-
+rithm proposed in this paper. Deterministic schemes 1, 2,
+and 3 are called DS1, DS2, and DS3, respectively, to study
+the peak error, steady-state error, and response time of the
+algorithm. DS1, DS2, and DS3 select the maneuvering track-
+ing target model set to cover the target model set, the track-
+ing target model set is more than the target model set, and
+the tracking target model set does not completely cover the
+target model set, so as to compare the advantages of the pro-
+posed algorithm in diﬀerent simulation scenarios.
+In order to design more complex maneuvers to verify the
+advantages and disadvantages of the algorithm, we assume that
+the target moving in the two-dimensional horizontal plane, z
+direction is zero. The initial position and speed of the target
+are set as (5000m, 5000m) and (500m / s, 400m / s), respec-
+tively, and the ﬂight time is 200s.
+The position and speed of the object are selected as the
+ﬁltered state quantity, which is expressed as X = x y x y T.
+The sampling interval is 1 s, the measurement data is the
+position Z = x y T of the object body, and the measurement
+matrix is
+H =
+1
+0
+0
+0
+0
+1
+0
+0
+17
+400
+Positioning error
+(m)
+Positioning error
+(m)
+W
+LMS
+EMA
+LDQN
+200
+0
+0
+25
+50
+75
+100
+x error
+t/s
+125
+150
+175
+200
+750
+250
+0
+0
+25
+50
+75
+100
+y error
+t/s
+125
+150
+175
+200
+500
+Figure 7: x-y tracking error of DS3.
+Positioning error
+(m)
+Positioning error
+(m)
+400
+200
+0
+0
+25
+50
+75
+100
+x error
+t/s
+125
+150
+175
+200
+W
+LMS
+EMA
+LDQN
+400
+200
+0
+0
+25
+50
+75
+100
+y error
+t/s
+125
+150
+175
+200
+Figure 6: x-y tracking error of DS2.
+7
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 8>>
+Circular turning and uniform linear motion are selected
+to form the motion model set.
+The CT turning model is as follows:
+F =
+1
+sin wt
+w
+0
+cos wt −1
+w
+0
+cos wt
+0
+sin wt
+0
+1 −cos wt
+w
+1
+sin wt
+w
+0
+−sin wt
+0
+cos wt
+18
+The constant-velocity moving model is as follows:
+F =
+1
+t
+0
+0
+0
+1
+0
+0
+0
+0
+1
+t
+0
+0
+0
+1
+19
+The maneuver scheme is shown in Table 1, and the
+tracking model set in EMA and LMS algorithms is consistent
+with DS1.
+The tracking result diagram of DS1 is shown in Figure 5.
+The tracking result diagram of DS2 is shown in Figure 6.
+The tracking result diagram of DS3 is shown in Figure 7.
+In Figures 5–7, w indicates the positioning error.
+The tracking results are summarized in Table 2.
+Through comparative analysis, it can be concluded that
+when the tracking model set just covers the target motion
+model set, the EMA, LMS, and L-DQN algorithms proposed
+in this paper have a more accurate tracking accuracy. Mean-
+while, compared with the ﬁrst two schemes, the improved L-
+DQN eﬀectively reduces the mean square error of tracking,
+improves the jumping accuracy of the model, and shortens
+the response time of the algorithm. For scheme DS2, it is
+simpler than the operation scheme of DS1, so the accuracy
+of the three is improved to a certain extent, but compared
+with DS1, the simulation shows that both the LMS and
+EMA algorithms lose more jumping accuracy in comparison
+to L-DQN. For the case that the target model falls outside
+the algorithm model set, in addition to the loss of jumping
+accuracy, there was also a certain degree of divergence in
+both cases, and the result of the tracking error being greater
+than the positioning error appeared.
+The improved L-DQN can use oﬄine training to solve
+the problem of model coverage and online response time
+and realize the positive correlation between response speed
+and model coverage ability and model accuracy.
+According to the simulation results, it can be concluded
+that the calculation time required for the system to perform
+localization is much smaller than the time interval between
+each localization, which can meet the real-time requirements
+in the case of limited computing resources.
+5. Conclusion
+In order to improve the tracking accuracy of strongly
+maneuvering targets, this paper proposes a VSMM algo-
+rithm based on L-DQN. Based on the variable-structure ﬁl-
+tering algorithm, the model selection of the target is
+mapped to the choice of the action labels, and reasonable
+state space observation variables, network structure, and
+reward function are designed to achieve the purpose of using
+the DQN algorithm to replace the traditional model deci-
+sion. At the same time, the LSTM algorithm is introduced
+to compensate the tracking and positioning error. Experi-
+mental results show that the proposed algorithm can solve
+the problem of incomplete model coverage in the face of
+an unknown maneuver mutation, shorten the response time
+which is caused by too many model sets of the algorithm,
+and realize the positive correlation between the calculation
+accuracy and response speed of the algorithm. The algo-
+rithm does not depend on the ﬁxed topology of the model
+and the inherent prior knowledge such as the ﬁxed thresh-
+old, so it has good adaptability and stability.
+The LSTM algorithm still has limitations in tracking
+maneuvering targets. LSTM models are designed to capture
+dependencies in sequential data, but they may struggle to
+capture the complex and nonlinear dynamics of maneuver-
+ing targets. Besides, sensitivity to input representation can-
+not be ignored. LSTM models heavily rely on the quality
+and representation of input features. If the input features
+Table 2: Tracking results.
+Group
+Average root-mean-square
+error
+Accuracy of jumping
+Response time (s)
+x (m)
+y (m)
+x (m)
+y (m)
+DS1
+LMS
+79.29
+92.91
+419.49
+470.14
+0.12
+EMA
+86.94
+96.23
+326.53
+385.20
+0.42
+L-DQN
+58.95
+64.21
+281.89
+237.23
+0.03
+DS2
+LMS
+77.95
+87.78
+359.05
+335.85
+0.14
+EMA
+76.83
+83.71
+398.85
+510.34
+0.40
+L-DQN
+56.85
+59.69
+185.01
+173.37
+0.03
+DS3
+LMS
+94.67
+106.99
+522.04
+818.92
+0.41
+EMA
+129.14
+136.95
+543.16
+466.53
+0.14
+L-DQN
+58.17
+62.46
+243.01
+286.81
+0.02
+8
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 9>>
+do not adequately capture the relevant characteristics of
+maneuvering targets, the LSTM model’s performance may
+be limited.
+The RL algorithm used in target tracking has several
+potential limitations. RL algorithms typically require a great
+number of interactions with the environment to learn eﬀec-
+tive policies. In target-tracking scenarios, collecting suﬃcient
+data can be challenging, especially if the target’s behavior is
+rare or diﬃcult to observe. Designing an appropriate reward
+function is crucial in RL. For target tracking, deﬁning a
+reward function that accurately reﬂects the desired tracking
+behavior can be diﬃcult. It may be challenging to strike a
+balance between rewarding the agent for successful tracking
+and penalizing it for incorrect or ineﬃcient actions.
+Due to the limitations in algorithm performance and
+other factors, the application of this algorithm in practical
+engineering is currently limited. However, the method that
+the L-DQN algorithm used in VSMM and the error modiﬁ-
+cation network based on the LSTM network has certainly
+enhanced accuracy and reduced errors compared to tradi-
+tional methods and can be gradually expanded to practical
+engineering after improvement.
+Data Availability
+The data used to support the ﬁndings of this study are
+included within the article.
+Conflicts of Interest
+The authors declare that they have no conﬂicts of interest.
+Acknowledgments
+This work is supported by the National Natural Science
+Foundation (NNSF) of China under Grant 62101579.
+References
+[1] X. R. Li and Y. Zhang, Multiple-Model Estimation with Vari-
+able Structure: Likely Model Set Algorithm, SPIE, Bellingham
+WA, 1998.
+[2] X. Rong Li and Y. Zhang, “Multiple-model estimation with
+variable structure. V. Likely-model set algorithm,” IEEE
+Transactions on Aerospace and Electronic Systems, vol. 36,
+no. 2, pp. 448–466, 2000.
+[3] L. I. X. Rong, V. P. Jilkov, and J. Ru, “Multiple-model estimation
+with variable structure-part VI: expected-mode augmentation,”
+IEEE Transactions on Aerospace and Electronic Systems, vol. 41,
+no. 3, pp. 853–867, 2005.
+[4] J. Wang, P. Dong, Z. Jing, and J. Cheng, “Consensus variable
+structure multiple model ﬁltering for distributed maneuvering
+tracking,” Signal Processing, vol. 162, pp. 234–241, 2019.
+[5] Y.-Q. Wang, Z. Lu, and C. Yun-Ze, “Consensus-based distrib-
+uted variable structure multiple model,” Acta Automatica
+Sinica, vol. 47, no. 7, pp. 1548–1557, 2021.
+[6] S. A. Lipton, Y.-B. Choi, Z.-H. Pan et al., “A redox-based
+mechanism for the neuroprotective and neurodestructive
+eﬀects of nitric oxide and related nitroso-compounds,” Nature,
+vol. 364, no. 6438, pp. 626–632, 1993.
+[7] W. Wei, J. Wang, Z. Fang, J. Chen, Y. Ren, and Y. Dong, “3U:
+joint design of UAV-USV-UUV networks for cooperative tar-
+get hunting,” IEEE Transactions on Vehicular Technology,
+vol. 72, no. 3, pp. 4085–4090, 2022.
+[8] Z. Fang, J. Wang, Y. Ren, Z. Han, H. V. Poor, and L. Hanzo,
+“Age of information in energy harvesting aided massive multi-
+ple access networks,” IEEE Journal on Selected Areas in Com-
+munications, vol. 40, no. 5, pp. 1441–1456, 2022.
+[9] Y. Zhang, J. Wang, L. Zhang, Y. Zhang, Q. Li, and K.-C. Chen,
+“Reliable transmission for NOMA systems with randomly
+deployed receivers,” IEEE Transactions on Communications,
+vol. 71, no. 2, pp. 1179–1192, 2023.
+[10] J. Wang, L. Bai, J. Chen, and J. Wang, “Starling ﬂocks inspired
+resource allocation for ISAC aided green ad hoc networks,”
+IEEE Transactions on Green Communications and Network-
+ing, vol. 7, no. 1, pp. 444–454, 2023.
+[11] T.-Y. Zheng, Y. Yu, and F.-H. He, “Trajectory estimation of a
+hypersonic night vehicle via L-EKF,” Journal of Harbin Insti-
+tute of Technology, vol. 52, no. 6, pp. 160–170, 2020.
+[12] J. B. Kim, Y. Park, and I. H. Suh, “Tracking human-like natural
+motion by combining two deep recurrent neural networks
+with Kalman ﬁlter,” Intelligent Service Robotics, vol. 11, no. 4,
+pp. 313–322, 2018.
+[13] V. Mnih, K. Kavukcuoglu, D. Silver et al., “Human-level con-
+trol through deep reinforcement learning,” Nature, vol. 518,
+no. 7540, pp. 529–533, 2015.
+[14] V. K. K. S. Mnih, “Playing Atari with deep reinforcement
+learning,” 2013, https://arxiv.org/abs/1312.5602.
+[15] Q. Yong-yuan, Z. Hong-Yue, and S.-H. Wang, Kalman Filter
+and Principle of Integrated Navigation, Northwestern Poly-
+technic University Press, 2012.
+[16] S. M. Shah and V. S. Borkar, “Q-learning for Markov decision
+processes with a satisﬁability criterion,” Systems & Control Let-
+ters, vol. 113, pp. 45–51, 2018.
+[17] T. Degris, P. M. Pilarski, and R. S. Sutton, Model-free reinforce-
+ment learning with continuous action in practice, American
+Control Conference, 2012.
+[18] Y. Hong-Ge, Z. Wei, and H.-Q. Yang, “Joint regression object
+localization based on deep reinforcement learning,” Acta
+Automatica Sinica, vol. 41, pp. 1–11, 2020.
+9
+International Journal of Aerospace Engineering
+ 9305, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1155/2024/9981332, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

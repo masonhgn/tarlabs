@@ -1,0 +1,17 @@
+# mwsim — the DAF26BX06-NV510 trade-space engine.
+# Licences noted because this work may be commercialised: everything here is MIT/BSD/Apache.
+# Deliberately avoided (GPL/AGPL, see CLAUDE.md): pynrlmsise00, hypervehicle,
+# celestrak fundamentals-of-astrodynamics.
+
+numpy                 # BSD-3
+scipy                 # BSD-3
+matplotlib            # PSF-like
+pandas                # BSD-3
+requests              # Apache-2.0
+sgp4                  # MIT  — propagation + the Vallado verification data (S-03 gate)
+skyfield              # MIT  — independent cross-check of propagation and geometry
+pypdf                 # BSD-3 — reading the solicitation PDFs
+pytest                # MIT
+
+# Added at S-08 (tracking baseline), not before — it is a heavy dependency:
+# stonesoup           # MIT  — IMM/JPDA, OSPA/GOSPA/SIAP metrics

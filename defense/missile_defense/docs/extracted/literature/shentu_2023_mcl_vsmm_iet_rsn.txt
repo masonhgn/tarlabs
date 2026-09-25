@@ -1,0 +1,1288 @@
+<<PAGE 1>>
+Received: 16 June 2023
+-
+Revised: 9 August 2023
+-
+Accepted: 24 August 2023
+-
+IET Radar, Sonar & Navigation
+DOI: 10.1049/rsn2.12464
+O R I G I N A L R E S E A R C H
+A variable structure multi‐model maneuvering target tracking
+algorithm based on Monte Carlo learning
+Han Shen‐tu1
+|
+Haoye Zhang1
+|
+Yiming Zhu1
+|
+Xinliang Wu2
+|
+Long Teng2
+1Institution of Information and Control, Hangzhou
+Dianzi University, Hangzhou, China
+2China National Aeronautical Radio Electronics
+Research Institute, Shanghai, China
+Correspondence
+Han Shen‐tu, Institution of Information and
+Control, Hangzhou Dianzi University, HangZhou,
+ZheJiang, 310000, China.
+Email: hanshentu@hdu.edu.cn
+Funding information
+Fundamental Research Funds for the Provincial
+Universities of Zhejiang, Grant/Award Number:
+GK219909299001‐405; Zhejiang Provincial Science
+and Technology Project, Grant/Award Number:
+2022C01095; Zhejiang Provincial Natural Science
+Foundation of China under Grant, Grant/Award
+Number: LZ20F010002; Technology Foundation for
+Basic Enhancement Plan, Grant/Award Number:
+2021‐JCJQ‐JJ‐0301
+Abstract
+A well‐liked maneuvering target tracking algorithm is a variable structure multi‐model
+(VSMM). One of the crucial elements determining the tracking effect is the successful
+model set adaptation (MSA). The ability to further enhance tracking accuracy for the
+conventional VSMM method is constrained by the absence of a mechanism to thoroughly
+utilise observation and tracking data to optimise MSA. We incorporate the Reinforcement
+learning (RL) approach into the MSA procedure to address this issue and provide a
+VSMM algorithm based on Monte Carlo (MC) learning. To formulate the challenge of
+optimising the number of effective models as a RL problem, we first used the prediction
+error, the number of effective model sets, and tracking accuracy to build the models of
+the appropriate state space, decision space, and reward. The number of efficient models
+was optimised using MC learning, and the entire VSMM algorithm was then created. The
+proposed approach was compared to the simulated experiment's five maneuvering target
+tracking algorithms. The outcomes demonstrate that the suggested algorithm has a lower
+computation scale and accurate tracking accuracy.
+K E Y W O R D S
+Bayes methods, Kalman filters, Monte Carlo methods, state estimation
+1
+|
+INTRODUCTION
+The term "maneuvering target" refers to a target whose motion
+modes change over time, including steering, accelerating,
+stopping suddenly etc. In maneuvering target tracking, the state
+of a moving target is continuously estimated using sensor data
+and tracking algorithms. Robotics [1], aircraft [2], security
+monitoring [3], and other areas all make extensive use of
+maneuvering target‐tracking technology, which has drawn
+constant attention. Targets that are capable of maneuvering
+have a time‐varying and uncertain motion mode. The tracking
+outcome will be degraded if the tracker's prior motion model
+does not coincide with the actual motion mode [4]. As a result,
+one of the challenges of maneuvering target tracking tech-
+nology is determining the correct target maneuvering mode.
+Traditional maneuvering target tracking technologies can be
+loosely split into two types in terms of implementation path:
+(1) Adaptive filtering: This method solves the motion mode
+estimation problem by estimating the process noise in a given
+time window or adaptive model regression [5]. (2) Multi‐model
+estimation: Multi‐model probability fusion is used to overcome
+the problem of maneuver mode estimation [6, 7]. The adaptive
+filtering method, in contrast, has a small calculation scale but
+has poor tracking performance for complex maneuvering
+operations [8]. Multi‐model estimation technology's robustness
+and tracking capabilities are superior, but the requirements for
+the prior model design and model probability estimation are
+more difficult [9–11].
+Multiple model (MM) tracking technologies [12] believe
+that if it is difficult to describe the motion pattern of a
+maneuvering target with a motion model, a set of motion
+models can be used to cover all possible motion patterns of the
+target. First, use the multi‐model tracking method to obtain the
+Bayesian tracking data for each motion model and then esti-
+mate the probability for each model. Finally, the tracking result
+is obtained using a weighted fuse of the estimations from
+This is an open access article under the terms of the Creative Commons Attribution‐NonCommercial‐NoDerivs License, which permits use and distribution in any medium, provided the
+original work is properly cited, the use is non‐commercial and no modifications or adaptations are made.
+© 2023 The Authors. IET Radar, Sonar & Navigation published by John Wiley & Sons Ltd on behalf of The Institution of Engineering and Technology.
+IET Radar Sonar Navig. 2023;17:1785–1795.
+wileyonlinelibrary.com/journal/rsn2
+-
+1785
+
+
+<<PAGE 2>>
+multiple models. As a result, the accuracy of the prior model
+set and model probability estimations determines the tracking
+quality of the multi‐model tracker. Many multi‐model tracking
+approaches have been developed in recent decades, including
+general pseudo Bayesian tracking methods [13], interacting
+multiple model (IMM) tracking methods [14], and variable
+structure multiple model (VSMM) tracking methods [15].
+General pseudo Bayesian and IMM always employ a fixed set
+of a fixed structure multiple model (FSMM) throughout the
+tracked time series. The FSMM technique offers good
+computational efficiency, but when the model set is too large, it
+causes excessive competition between models, leading to a
+deterioration in tracking performance. To avoid the excessive
+competition problem, VSMM employs the model set adap-
+tion|model set adaptation (MSA) process to pick the effective
+model set. In general, the quality of the MSA mechanism
+significantly impacts the quality of VSMM tracking results. Two
+well‐known MSA approaches are digraph switching (DS) and
+activate digraph (AD). To achieve MSA, the DS technique uses
+the model group switching mechanism [16, 17], whereas the
+AD method uses the likely model set (LMS) mechanism [18].
+In recent years, machine learning‐based maneuvering target‐
+tracking systems have steadily gained attention [19]. Mahmou-
+dreza et al. suggested an autoregressive extended Viterbi model,
+which replaces the traditional static model with a dynamic state
+transition matrix to improve tracking accuracy [20]. Q‐Learning
+Kalman filter (QLKF) learns the filter's process noise and im-
+proves the tracking robustness [21]. The Gaussian mixture
+probability hypothesis density adaptive turn rate estimation
+network utilises an adaptive turning rate estimation network to
+address the parameter mismatch issue in the cooperative turning
+model [22]. The Elman neural network (ENN) unscented
+Kalman filter [23] tracker takes the residual of the prior state
+vector and the posterior state vector as input to the ENN and
+changes the process noise covariance online to increase the
+filter's tracking accuracy. Traditional IMM trackers suffer from
+model switching delays and inaccuracies [24]. Moon et al.
+developed a deep learning‐assisted estimate technique for IMM
+[25], which uses a long short‐term memory (LSTM) network to
+determine the suitable maneuver model. Yu et al. predicted the
+target's motion trajectory by using an observation vector and an
+LSTM network [26]. The error‐ambiguity decomposition
+approach is used to develop a new MSA mechanism in the
+Error‐Ambiguity Decomposition variable structure multiple
+model (EAD‐VSMM) tracker [27]. Aftab et al. proposed the
+gaussian process motion tracker [28, 29] as well as the recursive
+gaussian process motion smoother [30]. Although several ma-
+chine learning‐based maneuvering target‐tracking systems have
+been developed, this field is still in its early stages, and many
+issues remain unresolved. Few works, for example, combine
+machine learning approaches with VSMM methodologies.
+Existing VSMM trackers rarely take data accumulation and
+learning methods into account when performing MSA. Rein-
+forcement learning (RL) [31, 32] is a machine learning technique
+that considers both data learning and decision making [33], and
+its online decision mechanism has the potential to improve
+MSA. As a result, we incorporate RL into the MSA mechanism.
+Firstly, the state space, decision space, and revenue models are
+built using the state prediction error, the number of activation
+models, and the tracking error. Then, the number of effective
+models was optimised using Monte Carlo (MC) learning. Finally,
+a complete Monte Carlo learning likely model set variable
+structure multiple model (MC‐LMS‐VSMM) tracker was built.
+The remainder of the paper is structured as follows. The
+problem formulation is covered in Section 2. Section 3 in-
+troduces the LMS‐VSMM Tracker, which is based on MC
+learning. Section 4 contains the simulation results. Section 5
+ends with the conclusions.
+2
+|
+PROBLEM FORMULATION
+The motion model of the maneuvering target is established as
+x k ¼ f
+ x k−1; mi
+k
+
+þ v k
+ð1Þ
+where xk and mi
+k are the state and maneuvering mode of the
+target at time k, respectively, f is the state transition function,
+and vk is the process noise, which is assumed to follow a
+Gaussian process with mean 0 and covariance Q. For the sake
+of simplicity, let x k ¼
+
+xk; _xk; yk; _yk
+
+, where x and _x denote the
+position and velocity components of the target in the X‐axis
+direction at time k, respectively. mi
+k describes the maneuvering
+mode of the target, such as mi
+k ¼ ½€xk; €yk, where €xk and €yk are
+the acceleration of the target along the X and Y axes. mi
+k
+belongs to a prior model set M = {m1,m2,…,mN}, mi
+k ∈M.
+The target observation model is
+zk ¼ Hx k þ w k
+ð2Þ
+where H is the observation matrix, zk is the observation vector
+at time k, and wk is the observation noise, which follows a
+Gaussian process with mean 0 and covariance R.
+Suppose the maneuvering model set and observation
+model are known as priors; the maneuvering target problem is
+that one needs to estimate the target state xk when the
+observation vector zk is collected at time k.
+3
+|
+LIKELY MODEL SET VARIABLE
+STRUCTURE MULTIPLE MODEL
+TRACKER BASED ON MONTE CARLO
+LEARNING
+As a starting point, we employ the LMS‐VSMM algorithm [18].
+The MC learning method [33] is applied in the LMS‐VSMM
+algorithm's MSA module in the following. We begin by
+reviewing the LMS‐VSMM algorithm and the MC learning
+approach. To express the optimisation of the model number in
+the MSA problem as a RL problem, the appropriate reward‐
+related state space, decision space, and reward models are
+developed, such that the MC learning method can be utilised to
+1786
+-
+SHEN‐TU ET AL.
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 3>>
+accomplish the optimisation of the model number. Finally, MC
+learning is used to construct the LMS‐VSMM tracking method.
+3.1
+|
+Likely model set variable structure
+multiple model algorithm
+Figure 1 depicts the single‐step running procedure of the
+LMS‐VSMM algorithm at time k.
+Step 1. Based on the most recent estimates of bx i
+k−1 and bP
+i
+k−1,
+Bayesian filters in each model estimate the multi‐model motion
+state vector bx i
+k and covariance bP
+i
+k at time k.
+Step 2. The multi‐model probability bpi
+k at the current time is
+estimated,
+~pi
+k ¼
+X
+mj∈M u ji
+k · bp j
+k−1
+ð3Þ
+Λi
+k ¼
+1
+ffiffiffiffiffiffiffiffiffiffiffi
+2πbS
+i
+k
+q
+exp
+ 
+−v i
+k
+T · v i
+k
+2bS
+i
+k
+!
+ð4Þ
+v i
+k ¼ zk −H · bx i
+k
+ð5Þ
+bS
+i
+k ¼ H · bP
+i
+k · H T þ R
+ð6Þ
+bpi
+k ¼
+Λi
+k · ~pi
+k
+P
+m j
+k∈MΛj
+k · ~p j
+k
+ð7Þ
+where uji
+k represents the probability that motion model mj
+switches to motion model mi at time k.
+Step 3. The n models with the highest model probability in the
+prior model set M are chosen as the effective model subset M 0
+k
+using the LMS MSA process [17, 18].
+Step 4. The probability bpi
+k of each model in the effective model
+subset M 0
+k is normalised,
+pi
+k ¼
+bpi
+k
+P
+m j
+k∈M 0
+kbp j
+k
+ð8Þ
+Step 5. Fuse the state estimation results of each model in the
+effective model subset M 0
+k based on the normalised model
+probability pi
+k,
+bx k ¼
+X
+mi
+k∈M 0
+k
+bx i
+k · pi
+k
+ð9Þ
+bP k ¼
+X
+mi
+k∈M 0
+k
+pi
+k ·
+h  bx i
+k −bx k
+  bx i
+k −bx k
+TþbP
+i
+k
+i
+ð10Þ
+If the target's maneuvering mode changes at a low frequency,
+the probability of an appropriate model is diminished if the
+model set's scale is too large. When the target's maneuvering
+mode changes often, a model with a too‐small scale will fail to
+capture the correct maneuvering pattern [15]. As a result,
+establishing an a priori estimate for the number of activated
+F I G U R E 1
+The flowchart of LMS‐VSMM.
+SHEN‐TU ET AL.
+-
+1787
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 4>>
+effective models is sometimes contradictory with the actual
+scenario. Optimising the number of effective models depend-
+ing on the circumstances is a possible strategy to improve
+tracking accuracy [23]. In this context, some existing methods
+attempt to estimate the size of the effective model set online
+but need extensive learning of the information in the tracking
+process [34]. We include MC learning into the LMS‐VSMM
+tracker to achieve real‐time optimisation of an appropriate
+number of models by RL of the information in the tracking
+process, which saves computing scale.
+3.2
+|
+Monte Carlo learning method
+Monte Carlo learning is a well‐known RL technique [33]. Its
+steps are as follows: 1) From the environment, the agent
+samples a sequence of reward‐related states, actions (de-
+cisions), and rewards; 2) The optimal action is chosen based on
+the average MC reward of the sampled sequences. The set of
+reward‐related states of the agent during its run is denoted by
+S = {s1,s2,…,sI}, the action set is denoted by A = {a1,a2,…,
+a J}, and the expected reward corresponding to the execution
+of action a j ∈A with the reward‐related state si ∈S is marked
+by Q(si,a j). Then, at time k, there is a random difference
+between the actual reward Rk(sk,ak) and the expected reward
+Q(sk,ak) achieved by carrying out action ak with the reward‐
+related state sk,
+Rkðsk; akÞ ¼ Qðsk; akÞ þ uk
+ð11Þ
+where sk ∈S, ak ∈A, and uk is the reward noise, which
+follows a zero‐mean Gaussian random process.
+Suppose that at time k, sk ¼ si, and ak ¼ a j. When the
+obtaining reward is Rk
+ si; a j
+, the statistical reward bQk
+ si; a j
+is updated as follows:
+bQk
+ si; a j
+¼ Rk
+ si; a j
+þ bQk−1
+ si; a j
+⋅t
+ si; a j
+tðsi; a jÞ þ 1
+ð12Þ
+where t(si,a j) is the number of times a reward‐related state‐
+action pair (si,a j) occurs during the agent's work. When us-
+ing the learning findings, choose the action a j ∈A that leads to
+the highest statistical reward as the best action for any reward‐
+related condition s i ∈S. The process of MC learning to up-
+date the statistical reward of specific reward‐related state‐
+action pairs is depicted in Figure 2.
+3.3
+|
+Monte Carlo learning‐based likely
+model set variable structure multiple model
+algorithm
+Monte Carlo learning is implemented into LMS‐VSMM in the
+following steps to determine the effective number for the MSA
+module:
+1) Model subsets' reward‐related states, actions, and rewards
+are modelled with distinct model numbers.
+2) MC learning was employed to optimise the number of
+effective models in various reward‐related states.
+3) The decision findings are used to implement the MC‐based
+LMS‐VSMM tracking method online.
+3.3.1
+|
+Decision space
+The decision variable to be learnt is the number of activated
+models throughout each tracking period. The decision space is
+De_Space = {1,2,…,N}, where N is the total number of
+models in the prior model set M. The decision space encom-
+passes all scenarios in which the number of activated models
+ranges from 1 to N.
+3.3.2
+|
+Reward‐related state space
+When the target switches motion modes, the predicted motion
+state vector and the observation vector will change accordingly.
+The following will design the reward‐related state space based
+on the predicted state and the observed error. The prediction‐
+observation error is defined by Equation (13),
+err k ≈H · ~x k −zk
+ð13Þ
+where ~x k is the predicted motion state, zk is the observation
+vector, and H is the observation matrix.
+Multi‐model mixture estimation theory [14] states that
+err k has a Gaussian distribution with mean 0 and covariance
+Serr;k, and its probability density perr;k is given by equation (14)
+perr;k ¼
+1
+ð2πÞ
+Serr;k
+1=2 exp
+
+−1
+2err k
+T S−1
+err;kerr k
+
+ð14Þ
+where
+Serr;k ¼ H · ~Pk · H þ R, ~Pk
+is
+obtained
+from
+Equation (15),
+F I G U R E 2
+Schematic diagram of Monte Carlo
+(MC) learning for online updating.
+1788
+-
+SHEN‐TU ET AL.
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 5>>
+~Pk ¼ P
+mi
+k−1∈M 0
+k−1 ~pi
+kjk−1
+h  ~x i
+k −~x k
+  ~x i
+k −~x k
+Tþ~P
+i
+k
+i
+ð15Þ
+The relevant variables required to calculate ~Pk are obtained
+from Equations (16) to (19),
+~x k ¼
+X
+mi
+k−1∈M 0
+k−1
+~x i
+k · ~pi
+kjk−1
+ð16Þ
+~x i
+k ¼ F · bx i
+k−1 þ G · mi
+ð17Þ
+~P
+i
+k ¼ F · bP
+i
+k−1 · F T þ Q
+ð18Þ
+~pi
+kjk−1 ¼
+P
+mj∈M
+u ji
+k · bp j
+k−1
+P
+mi∈M
+P
+mj∈M
+u ji
+k · bp j
+k−1
+ð19Þ
+where F is the state transition matrix, G is the acceleration
+driving matrix, and mi
+k−1 is the maneuver state vector corre-
+sponding to the ith model in the valid model subset M 0
+k−1.
+The Gaussian distribution with mean 0 and covariance
+Serr,k is depicted in Figure 3. (0,pmax,k] is divided into J areas,
+which are (0,pmax,k/J], (pmax,k/J, 2pmax,k/J],…, ((J−1)pmax,k/J,
+pmax,k]. Let lk∈{1,2,…,J} be the distribution zone to which the
+prediction‐observation error's probability density at time k
+belongs. If the prediction‐observation error probability density
+at time k belongs to the distribution interval lk, then
+pmax;k=J · ðlk −1Þ < perr;k ≤pmax;k=J · lk
+ð20Þ
+When all the distribution regions involved in the proba-
+bility densities of prediction‐observation errors at two adjacent
+time steps are considered, these regions span a two‐
+dimensional space, forming the reward‐related state space
+Sk ¼
+n
+slk;lk−1
+k
+o
+lk;lk−1∈f1;:::;Jg.
+3.3.3
+|
+Monte Carlo learning
+At time k, the reward of the state‐action pair is expressed as
+Rk
+
+slk;lk−1
+k
+; ai
+, which has the following form,
+Rk
+
+slk;lk−1
+k
+; ai
+¼
+  bx k
+ ai
+−x k
+T   bx k
+ ai
+−x k
+
+ð21Þ
+where Rk
+
+slk;lk−1
+k
+; ai
+is the generated reward after executing
+action ai when the reward‐related state is slk;lk−1
+k
+. bx k
+ ai
+is the
+posterior state estimate obtained after the tracker performs
+action ai, and xk is the actual state.
+When prior knowledge is unavailable, MC learning must be
+performed through experiments. The rewards under various
+state‐actions can be simulated using computer simulation
+technology if prior knowledge exists, such as when the target's
+maneuvering ability range and the statistical characteristics of
+sensor observation errors are known. Then, MC learning can
+be applied by simulation. Figure 4 depicts the LMS‐VSMM
+algorithm's online learning process based on MC learning,
+and Table 1 depicts the corresponding algorithm.
+3.3.4
+|
+Apply the Monte Carlo learning results
+After the MC learning is finished, the action with the largest
+reward (a tiny learning error) becomes optimal (determining
+the number of activated models). Furthermore, we employ the
+LMS approach to finish the MSA process. The best action is
+defined as
+a j ¼ fmax
+
+bQ
+
+slk;lk−1
+k
+; ·
+
+ð22Þ
+F I G U R E 3
+Partition into J regions (Example: J = 7, Serr,k = diag(2,2)).
+F I G U R E 4
+Flowchart of the online learning
+process of Monte Carlo learning likely model set
+variable structure multiple model (MC‐LMS‐
+VSMM) algorithm.
+SHEN‐TU ET AL.
+-
+1789
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 6>>
+The application flow of the LMS‐VSMM method based on
+MC learning is shown in Figure 5, and the related algorithm is
+shown in Table 2.
+4
+|
+SIMULATIONS
+Consider the problems of tracking a target in a two‐
+dimensional plane. Assuming that the sensor's observation
+noise is constant, the sampling period is one second, the
+tracking length is one hundred seconds, and the number of MC
+runs is 2000.
+The target motion equation is modelled as a linear system,
+x k ¼ F · x k−1 þ G ·
+ mi
+k þ v k
+
+ð23Þ
+x k ¼
+
+xk; _xk; yk; _yk
+
+is the motion state vector of the target
+at time k, and the components represent the position and
+velocity components of the target in the X and Y directions,
+respectively. mi
+k ¼ ½€xi; €yi is the maneuvering model of the
+target at time k, mi
+k ∈M, and the components represent the
+acceleration components of the target in the X and Y di-
+rections. F is the state transition matrix, G is the acceleration
+driving matrix, and v k is the process noise with mean 0 and
+covariance Q. T ¼ 1 is the sampling period fixed by the
+sensor.
+F ¼
+2
+66664
+1
+T
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+T
+0
+1
+3
+77775
+ð24Þ
+G ¼
+2
+666666664
+T 2
+2
+0
+T
+0
+0
+T 2
+2
+0
+T
+3
+777777775
+ð25Þ
+Q ¼
+
+0:01
+0
+0
+0:01
+
+ð26Þ
+The prior motion model set M includes 21 models, each of
+which describes the acceleration state of the target, as follows,
+m1
+=
+[0,0]T,
+m2,3
+=
+[0,10]T,
+m4,5
+=
+[10,0]T,
+m6~9 ¼ ½10; 10T, m10,11 = [0,20]T, m12,13 = [20,0]T,
+m14~17 ¼ ½20; 20T, m18,19 = [0,40]T, m20,21 = [40,0]T.
+The observation model is modelled as a linear system,
+T A B L E 1
+Online learning process of
+Monte Carlo learning likely model set variable
+structure multiple model (MC‐LMS‐VSMM)
+algorithm.
+The learning process of MC‐LMS‐VSMM at time k
+Step 1: Motion state is estimated one step ahead based on the valid model set M 0
+k−1 at time k−1
+(Equation (16)).
+Step 2: Obtain the reward‐related state slk;lk−1
+k
+at the current time.
+Step 3: All actions are performed in slk;lk−1
+k
+and the statistical reward bQ
+
+slk;lk−1
+k
+; ai
+is updated in
+Equation (12).
+Step 4: Execute the action with the highest statistical reward under slk;lk−1
+k
+.
+Step 5: The LMS‐VSMM algorithm is further executed based on the selected action.
+F I G U R E 5
+Monte Carlo learning likely model
+set variable structure multiple model (MC‐LMS‐
+VSMM) algorithm application process.
+T A B L E 2
+Table of MC‐LMS‐VSMM
+algorithm application process.
+Application process of the MC‐LMS‐VSMM algorithm
+Step 1: The motion state is estimated one step ahead based on the valid model set M 0
+k−1 at time k
+−1.
+Step 2: Obtain the reward‐related state slk;lk−1
+k
+at the current time.
+Step 3: The optimal action is selected using Equation (22).
+Step 4: The LMS‐VSMM algorithm is further executed based on the selected action.
+1790
+-
+SHEN‐TU ET AL.
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 7>>
+zk ¼ H · x k þ w k
+ð27Þ
+where zk is the target observation vector at time k, H is the
+observation matrix, wk is the Gaussian noise with mean 0 and
+covariance R,
+H ¼
+"
+1
+0
+0
+0
+0
+0
+1
+0
+#
+ð28Þ
+R ¼
+
+25
+0
+0
+25
+
+ð29Þ
+RMSE ¼
+ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+X
+Nt
+k¼1
+ðbx k −x kÞTðbx k −x kÞ
+Nt
+v
+u
+u
+u
+u
+t
+ð30Þ
+We generate 100,000 motion trajectory samples and
+matching observation samples at random for the target motion
+system and observation system specified by Equations (24) to
+(29). Each piece has a running time of 100 s. We chose 5000
+samples at random from the 100,000 motion trajectory samples
+and displayed them in Figure 6. After completing the stochastic
+simulation of all motion trajectories and observations, MC
+learning produces statistical rewards for all reward‐related
+state‐action pairs (see Table 1 for the specific algorithm).
+Scenario 1. Scenario 1 compares the proposed MC‐LMS‐
+VSMM method against the KF algorithm, IMM algorithm
+[14], LMS‐VSMM algorithm [18], EAD‐VSMM algorithm [27],
+and LSTM‐IMM algorithm [25]. The LMS‐VSMM algorithm
+has a fixed number of effective models of 9. Figure 7a compares
+the root mean squared error (RMSE) for six methods, whereas
+Figure 7b depicts the number of valid models activated by the
+MC‐LMS‐VSMM algorithm at various time instants. The RMSE
+is defined by Equation (30). The variable Nt represents the
+number of samples used for statistical analysis. The target actual
+state vector is xk, while the estimated state vector is bx k.
+The KF method achieves the highest tracking accuracy in the
+non‐maneuvering target tracking situation, as illustrated in
+Figure 7a, followed by the MC‐LMS‐VSMM and LSTM‐IMM
+algorithms. Because it only uses the right model, the KF algo-
+rithm has the highest tracking accuracy in this circumstance. Due
+to a lack of observation information, the MC‐LMS‐VSMM al-
+gorithm selects to activate more models to characterise the un-
+known motion mode in the early tracking stage, as illustrated in
+Figure 7b. When the tracking error converges, the MC‐LMS‐
+VSMM algorithm chooses fewer models in order to preserve
+tracking accuracy.
+Scenario 2. In Scenario 2, the target moves along the y‐axis
+with a constant deceleration, m = [0,−20]T, from time 21 to
+40; from time 61 to 80, the target moves along the y‐axis with a
+constant deceleration, m = [0,−40]T. At other times, the target
+moves in a straight line at a constant speed. The IMM
+algorithm, LMS‐VSMM algorithm, EAD‐VSMM algorithm,
+LSTM‐IMM algorithm, GP‐MT algorithm [29], and MC‐LMS‐
+VSMM algorithm are the comparison algorithms. The number
+of models enabled by LMS‐VSMM is fixed at 9. Figure 8a
+compares the RMSE for the six methods, and Figure 8b il-
+lustrates the number of effective models activated by the MC‐
+LMS‐VSMM algorithm at different times.
+As shown in Figure 8a, the tracking accuracy of LSTM‐
+IMM and MC‐LMS‐VSMM decreases when the maneuvering
+mode switches. The reasons are that the neural network of
+LSTM‐IMM fails to select the correct motion model, and the
+MC‐LMS‐VSMM algorithm fails to activate enough motion
+models in time. Following the completion of the maneuver
+mode switch, the MC‐LMS‐VSMM algorithm can swiftly
+modify the number of activated maneuver models and achieve
+excellent tracking accuracy. GP‐MT's tracking accuracy re-
+mains constant and independent of maneuver mode transition,
+but its total tracking accuracy may be higher. Figure 8b illus-
+trates that the MC‐LMS‐VSMM method tends to activate more
+models to deal with the target's unknown motion mode during
+the maneuvering mode transition (between 60 and 80). MC‐
+LMS‐VSMM uses fewer models to increase tracking accuracy
+while the maneuver mode is fixed.
+Scenario 3. In Scenario 3, the target's motion mode switches
+frequently, and the specific process is as follows. From time 1
+to 10, the target moves at a constant speed. From time 11 to
+30, the target moves along the x and y‐axis with a moderate
+deceleration, m = [−20,−20]T; From time 31 to 40, the target
+moves
+along
+the
+x‐axis
+with
+a
+moderate
+acceleration,
+m = [20,0]T. From 41 to 50, the target moves along the x‐axis
+with a weak acceleration, m = [10,0]T. From time 51 to 70, the
+target moves along the x‐axis with a moderate acceleration,
+m = [20,0]T. From 71 to 90, the target moves along the y‐axis
+with a significant acceleration, m = [0,40]T. From time 91 to
+time 100, the target moves along the x‐axis with a weak
+deceleration, m = [−10,0]T. Figure 9a compares the tracking
+error (RMSE) of the six algorithms; Figure 9b compares the
+number of maneuvering models activated by the MC‐LMS‐
+VSMM algorithm at various times; Table 3 compares the
+tracking error of each algorithm in different maneuvering
+modes and the average single‐step time consumptions.
+The target maneuvered more frequently in scenario 3 than in
+scenario 2, and the maneuvering modes were more diverse. The
+LSTM‐IMM and MC‐LMS‐VSMM algorithms achieve the
+highest tracking accuracy in general. The GP‐MT method is the
+fastest in average single‐step running time, the LSTM‐IMM al-
+gorithm is the slowest, and the MC‐LMS‐VSMM algorithm,
+IMM algorithm, and LMS‐VSMM algorithm are reasonably fast.
+Scenario 4. In Scenario 4, we increase the target maneuvering
+intensity, and the specific motion processes are as follows:
+From time 1 to time 10, the target moves in a straight line at a
+constant speed. From time 11 to time 30, the target moves
+along the y‐axis with a moderate rate of uniform deceleration,
+m = [0,−20]T. From time 31 to 50, the target moves along the
+x‐axis with a moderate intensity of uniform deceleration,
+SHEN‐TU ET AL.
+-
+1791
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 8>>
+m = [−20,0]T. From time 51 to 65, the target moves with a
+strong uniform acceleration along the x‐axis, m = [40,0]T.
+From time 66 to 80, the target moves along the x‐axis with a
+moderate intensity of uniform deceleration, m = [−20,0]T.
+From time 81 to time 100, the target moves with a strong
+uniform acceleration along the y‐axis, m = [0,40]T. In this
+scenario, we compare the MC‐LMS‐VSMM algorithm with the
+IMM
+algorithm,
+LMS‐VSMM
+algorithm,
+EAD‐VSMM
+F I G U R E 6
+The simulated 5000 motion trajectory samples.
+F I G U R E 7
+Result of Scenario 1: (a) Comparison of root mean squared error (RMSE) for six algorithms; (b) The number of activated models for Monte
+Carlo learning likely model set variable structure multiple model (MC‐LMS‐VSMM).
+F I G U R E 8
+Result of Scenario 2: (a) Comparison of root mean squared error (RMSE) for six algorithms; (b) The number of activated models for Monte
+Carlo learning likely model set variable structure multiple model (MC‐LMS‐VSMM).
+1792
+-
+SHEN‐TU ET AL.
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 9>>
+algorithm, LSTM‐IMM algorithm, and GP‐MT algorithm,
+where the number of activated models of LMS‐VSMM is fixed
+to 9. Figure 10a shows the RMSE of the tested algorithms, and
+Figure 10b shows the number of activated models of the MC‐
+LMS‐VSMM algorithm at different times. Figure 10 shows that
+the LSTM‐IMM algorithm can achieve high tracking accuracy
+when the target stays in a single maneuvering mode. However,
+its robustness decreases significantly when the target switches
+to another strong maneuvering mode. Although the proposed
+MC‐LMS‐VSMM algorithm is also slightly affected during the
+maneuvering mode switching, it can maintain high tracking
+accuracy and robustness during the whole tracking process.
+Scenario 5. The impacts of various process and observation
+noises on tracking performance are further considered here.
+Based on Scenario 2, we make specific changes to the process
+and observation noises, respectively: 1) Keep the standard
+deviation of process noise at a constant level. Meanwhile, a
+varying order of the standard deviations of observation noise
+are set as [2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25]; 2) Keep
+the standard deviation of observation noise at a constant level.
+Meanwhile, a varying order of the standard deviations of
+process noise are set as [0.1, 1, 1.4, 1.7, 2, 2.2, 2.4, 2.6, 2.8, 3].
+The RMSE of the six tested algorithms is shown in Figure 11.
+Figure 11 illustrates 1) If the process noise is kept constant,
+the tracking accuracy of each algorithm decreases as the
+observation noise increases. Among them, MC‐LMS‐VSMM
+shows the slightest degradation in tracking accuracy. 2) If the
+observation noise is kept constant, then the tracking accuracy
+of most of the tested algorithms decreases as the process noise
+becomes larger, except for GP‐MT. Since GP‐MT is data‐
+driven and does not use model information, its tracking ac-
+curacy is unaffected by process noise. Because the other tested
+algorithms are model‐based, the model will become relatively
+inaccurate when the process noise becomes large, decreasing
+tracking accuracy. Although LSTM‐IMM is less affected by
+process noise, its computation cost is high (see Table 3 and
+Table 4). MC‐LMS‐VSMM achieves high tracking accuracy and
+maintains a low computational burden.
+The computational complexity of each algorithm is shown in
+Table4.WhereNrepresentsthenumberofprior models,Visthe
+computational complexityof a single embedded Bayesian filter, λ
+is the number of models used by LMS, L represents the length of
+driving datarequiredbyGP, andniandnh represent thesequence
+length of input data and the number of network nodes of LSTM‐
+IMM, respectively. It can be seen from Table 4 that the length of
+the driving data and the complexity of the network significantly
+impact the computational complexity for GP‐MT and LSTM‐
+IMM. Interacting multiple model has the lowest computational
+complexity among the tested multi‐model methods, followed by
+LMS. EAD‐VSMM and MC‐LMS‐VSMM have a larger
+computational complexity than LMS in succession.
+F I G U R E 9
+Result of Scenario 3: (a) Comparison of root mean squared error (RMSE) for six algorithms; (b) The number of activated models for Monte
+Carlo learning likely model set variable structure multiple model (MC‐LMS‐VSMM).
+T A B L E 3
+Comparison of tracking errors in different maneuvering situations.
+Contrast items
+Algorithms
+RMSE(m)
+Average single‐step
+running time (ms)
+Non‐maneuvering
+Weak maneuvering
+Medium maneuvering
+Strong maneuvering
+GP‐MT
+6.181
+6.312
+6.281
+6.287
+0.12
+IMM
+5.471
+5.603
+5.283
+5.077
+0.98
+LMS‐VSMM
+5.470
+5.596
+5.238
+5.028
+1.11
+EAD‐VSMM
+5.452
+5.506
+5.137
+4.966
+7.00
+MC‐LMS‐VSMM
+5.455
+5.425
+5.005
+4.893
+1.13
+LSTM‐IMM
+5.280
+5.414
+5.024
+4.869
+12.64
+SHEN‐TU ET AL.
+-
+1793
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 10>>
+5
+|
+CONCLUSIONS
+The need for a more complex mechanism for learning and
+adapting the number of effective models based on tracking and
+observation information restricts the traditional variable struc-
+ture of MM algorithm's abilities to increase tracking accuracy
+further. To overcome this problem, we incorporate MC learning
+into the LMS‐VSMM algorithm framework and propose an MC‐
+LMS‐VSMM maneuvering target tracking algorithm. Firstly, the
+prediction error, number of effective models, and tracking errors
+were modelled as reward‐related states, actions, and rewards.
+Secondly, the number of effective models was then optimised via
+MC learning. Finally, a comprehensive MC‐LMS‐VSMM
+tracking algorithm is built. The simulation results reveal that,
+when compared to some popular maneuvering target tracking
+methods, the MC‐LMS‐VSMM algorithm obtained a satisfying
+accuracy. Future research directions include, but are not limited
+to, 1) improving the robustness of the MC‐LMS‐VSMM algo-
+rithm during mode switching; and 2) investigating VSMM
+trackers based on alternative RL approaches.
+AUTHOR CONTRIBUTIONS
+Han Shen‐tu: Conceptualisation; Methodology; Writing –
+original draft. Haoye Zhang: Investigation. Yiming Zhu:
+Software. Xinliang Wu: Validation. Long Teng: Validation.
+ACKNOWLEDGEMENTS
+This work was funded by the Technology Foundation for Basic
+Enhancement Plan (2021‐JCJQ‐JJ‐0301), The Fundamental
+Research Funds for the Provincial Universities of Zhejiang
+(GK219909299001‐405), The Zhejiang Provincial Science and
+Technology Project (2022C01095), and Zhejiang Provincial
+F I G U R E 1 0
+Result of Scenario 4: (a) Comparison of root mean squared error (RMSE) for six algorithms; (b) The number of activated models for Monte
+Carlo learning likely model set variable structure multiple model (MC‐LMS‐VSMM).
+F I G U R E 1 1
+Root mean squared error (RMSE) of Scenario 5: (a) Fix the process noise and change the observation noise; and (b) Fix the observation noise
+and change the process noise.
+T A B L E 4
+The computational
+complexity of the tested algorithms.
+Algorithm
+Complexity
+Algorithm
+Complexity
+GP‐MT
+L3V
+EAD‐VSMM
+NV þ N3
+IMM
+N2 þ NV
+MC‐LMS‐VSMM
+N2 þ (λ þ V þ 1)N
+LMS
+N2 þ (λ þ V )N
+LSTM‐IMM
+N2 þ NV þ ðni þ 1Þnh þ n2
+h
+1794
+-
+SHEN‐TU ET AL.
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+<<PAGE 11>>
+Natural
+Science
+Foundation
+of
+China
+under
+Grant
+(LZ20F010002).
+CONFLICT OF INTEREST STATEMENT
+The authors declare that there is no conflict of interest that
+could be perceived as prejudicing the impartiality of the
+research reported.
+DATA AVAILABILITY STATEMENT
+Data sharing is not applicable to this article as no datasets were
+generated or analysed during the current study.
+ORCID
+Han Shen‐tu
+https://orcid.org/0009-0003-7005-5672
+Long Teng
+https://orcid.org/0000-0003-3519-7790
+REFERENCES
+1.
+Alex, G., et al.: Searching and tracking people with cooperative mobile
+robots. Aut. Robots 42(4), 739–759 (2018). https://doi.org/10.1007/
+s10514‐017‐9681‐6
+2.
+Shan, G., Pang, C.: Distributed sensor management based on target
+losing probability for maneuvering multi‐target tracking. IEEE Access 8,
+113610–113623 (2020). https://doi.org/10.1109/access.2020.2997825
+3.
+Shuliang, W., et al.: Radar maneuvering target tracking algorithm based
+on human cognition mechanism. Chin. J. Aeronaut. 32(7), 1695–1704
+(2019). https://doi.org/10.1016/j.cja.2018.11.013
+4.
+Mazor, E., et al.: Interacting multiple model methods in target tracking: a
+survey. IEEE Trans. Aero. Electron. Syst. 34(1), 103–123 (1998). https://
+doi.org/10.1109/7.640267
+5.
+Zhang, Y., et al.: A novel adaptive kalman filter with colored measure-
+ment noise. IEEE Access 6, 74569–74578 (2018). https://doi.org/10.
+1109/access.2018.2883040
+6.
+Zhou, G., Zhu, B., Ye, X.: Switch‐constrained multiple‐model algorithm
+for maneuvering target tracking. IEEE Trans. Aero. Electron. Syst. 59(4),
+1–19 (2023). https://doi.org/10.1109/taes.2023.3242944
+7.
+Li, G., et al.: Multiple model Poisson multi‐Bernoulli mixture filter for
+maneuvering targets. IEEE Sensor. J. 21(3), 3143–3154 (2020). https://
+doi.org/10.1109/jsen.2020.3022669
+8.
+Fang, X., Huang, D.: Robust adaptive cubature Kalman filter for tracking
+manoeuvring target by wireless sensor network under noisy environment.
+IET Radar, Sonar Navig. 17(2), 179–190 (2023). https://doi.org/10.
+1049/rsn2.12331
+9.
+Li, L.Q., Xie, W.X., Liu, Z.X.: Auxiliary truncated particle filtering with
+least‐square method for bearings‐only maneuvering target tracking.
+IEEE Trans. Aero. Electron. Syst. 52(5), 2562–2567 (2017). https://doi.
+org/10.1109/taes.2016.150048
+10.
+Deng, L., Li, D., Li, R.: Improved IMM algorithm based on RNNs. In:
+Proceedings of the Journal of Physics: Conference Series (2020). Sanya,
+China.012055
+11.
+Wu, W., et al.: Tracking multiple maneuvering targets hidden in the DBZ
+based on the MM‐GLMB filter. IEEE Trans. Signal Process. 68,
+2912–2924 (2020). https://doi.org/10.1109/tsp.2020.2988635
+12.
+Chen, C., Zhou, W., Gao, L.: A novel robust IMM filtering method for
+surface‐maneuvering target tracking with random measurement delay. J.
+Mar. Sci. Eng. 11(5), 1047 (2023). https://doi.org/10.3390/jmse11051047
+13.
+Ali, W., et al.: Generalized pseudo Bayesian algorithms for tracking of
+multiple model underwater maneuvering target. Appl. Acoust. 166,
+107345 (2020). https://doi.org/10.1016/j.apacoust.2020.107345
+14.
+Li, X., et al.: Adaptive interacting multiple model for underwater
+maneuvering target tracking with one‐step randomly delayed measure-
+ments. Ocean Eng. 280, 114933 (2023). https://doi.org/10.1016/j.
+oceaneng.2023.114933
+15.
+Sun, L., et al.: Tracking of maneuvering extended target using modified
+variable structure multiple‐model based on adaptive grid best model
+augmentation. Rem. Sens. 14(7), 1613 (2022). https://doi.org/10.3390/
+rs14071613
+16.
+Wang, Q., Li, P., Fan, E.: Target classification aided variable‐structure
+multiple‐model algorithm. IEEE Access 8, 147692–147702 (2020).
+https://doi.org/10.1109/access.2020.3015880
+17.
+Lukeš, P., Říha, M.: Variable structure interacting multiple model for highly
+aperiodic sensors with poor measurement precision. IET Radar, Sonar
+Navig. 15(10), 1181–1194 (2021). https://doi.org/10.1049/rsn2.12102
+18.
+Zhang, B., Yongxin, G.A.O., Zhansheng, D.: Variable structure multiple
+model fixed‐interval smoothing. Chin. J. Aeronaut. 36(2), 139–148 (2023).
+https://doi.org/10.1016/j.cja.2022.04.006
+19.
+Jin, X.B., et al.: The new trend of state estimation: from model‐driven to
+hybrid‐driven methods. Sensors 21(6), 2085 (2021). https://doi.org/10.
+3390/s21062085
+20.
+Mahmoudreza, H., Hamid, K.: Modified switched IMM estimator based
+on autoregressive extended Viterbi method for maneuvering target
+tracking. J. Syst. Eng. Electron. 29(6), 1142–1157 (2018)
+21.
+Bekhtaoui, Z., et al.: Maneuvering target tracking using q‐learning based
+Kalman filter. In: Proceedings of the 2017 5th International Conference
+on Electrical Engineering‐Boumerdes (ICEE‐B); Boumerdes, Algeria,
+pp. 1–5 (2017)
+22.
+Tian, W., et al.: Deep‐learning‐based multiple model tracking method for
+targets with complex maneuvering motion. Rem. Sens. 14(14), 3276
+(2022). https://doi.org/10.3390/rs14143276
+23.
+Liu, H., Xia, L., Wang, C.: Maneuvering target tracking using simulta-
+neous optimization and feedback learning algorithm based on Elman
+neural network. Sensors 19(7), 1596 (2019). https://doi.org/10.3390/
+s19071596
+24.
+Xie, G., et al.: Adaptive transition probability matrix‐based parallel IMM
+algorithm. IEEE Trans. Syst. Man Cybern. Syst. 51(5), 2980–2989 (2021).
+https://doi.org/10.1109/tsmc.2019.2922305
+25.
+Moon, S.T., Youn, W., Bang, H.: Novel deep‐learning‐aided multimodal
+target tracking. IEEE Sensor. J. 21(18), 20730–20739 (2021). https://doi.
+org/10.1109/jsen.2021.3100588
+26.
+Yu, W., et al.: DeepGTT: a general trajectory tracking deep learning al-
+gorithm based on dynamic law learning. IET Radar, Sonar Navig. 15(9),
+1125–1150 (2021). https://doi.org/10.1049/rsn2.12111
+27.
+Han, S.T., et al.: A novel variable structure multi‐model approach based
+on error‐ambiguity decomposition. Chin. J. Aeronaut. 33(6), 16 (2020)
+28.
+Williams, C., Rasmussen, C.E.: Gaussian processes for regression. In:
+Proceedings of the 8th International Confer3 (1995)
+29.
+Aftab, W., Mihaylova, L.: A Gaussian process regression approach for
+point target tracking. In: Proceedings of the 2019 22th International
+Conference on Information Fusion (FUSION), pp. 1–8 (2019). Ottawa,
+ON, Canada
+30.
+Aftab, W., Mihaylova, L.: A learning Gaussian process approach for
+maneuvering target tracking and smoothing. IEEE Trans. Aero. Electron.
+Syst. 57(1), 278–292 (2021). https://doi.org/10.1109/taes.2020.3021220
+31.
+Brown, N., Sandholm, T.: Superhuman AI for multiplayer poker. Science
+365(6456), 885–890 (2019). https://doi.org/10.1126/science.aay2400
+32.
+Oriol, V., et al.: Grandmaster level in StarCraft II using multi‐agent
+reinforcement learning. Nature 575(7782), 350–354 (2019). https://doi.
+org/10.1038/s41586‐019‐1724‐z
+33.
+Sutton, R.S., Barto, A.G.: Reinforcement Learning: An Introduction,
+pp. 1–342. MIT Press, Cambridge (1998)
+34.
+Cosme, L.B., et al.: A novel fault‐prognostic approach based on interacting
+multiple model filters and fuzzy systems. IEEE Trans. Ind. Electron. 66(1),
+519–528 (2019). https://doi.org/10.1109/tie.2018.2826449
+How to cite this article: Shen‐tu, H., et al.: A variable
+structure multi‐model maneuvering target tracking
+algorithm based on Monte Carlo learning. IET Radar
+Sonar Navig. 17(12), 1785–1795 (2023). https://doi.
+org/10.1049/rsn2.12464
+SHEN‐TU ET AL.
+-
+1795
+ 17518792, 2023, 12, Downloaded from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/rsn2.12464, Wiley Online Library on [24/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

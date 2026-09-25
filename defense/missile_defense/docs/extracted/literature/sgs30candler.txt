@@ -1,0 +1,574 @@
+=== page 1 ===
+Computational Fluid Dynamics Analysis of the Infrared
+Emission From a Generic Hypersonic Glide Vehicle
+Graham V. Candler a and Ivett A. Leyva b
+aAerospace Engineering & Mechanics, University of Minnesota, Minneapolis, MN, USA;
+bAerospace Engineering, Texas A&M University, College Station, TX, USA
+ABSTRACT
+Hypersonic boost-glide vehicles are designed to fly long dis-
+tances in the upper atmosphere. They are reported to have
+the potential to evade ballistic missile early warning systems
+and to maneuver as they fly toward their target. A recent ana-
+lysis by Tracy and Wright in Science & Global Security claimed
+to show that typical boost-glide vehicles produce significant
+infrared signatures that would be readily detectable with exist-
+ing U.S. satellites and therefore questioned the potential
+advantages of hypersonic weapons over existing missiles. The
+prior analysis is revisited and several inconsistencies in the
+underlying assumptions are described. A detailed computa-
+tional fluid dynamics analysis predicts typical infrared signa-
+tures to be significantly lower than those predicted by Tracy
+and Wright. As a result, these signatures would fall below the
+detection threshold of legacy U.S. Defense Support Program
+satellites but remain detectable by the more modern sensors
+from the Space-Based Infrared System. There are two signifi-
+cant issues with the prior analysis: an incorrect aerodynamic
+angle of attack was used, and the turbulent heat transfer rate
+correlation used to predict the surface temperature is inaccur-
+ate at the conditions studied.
+ARTICLE HISTORY
+Received 26 February 2022
+Accepted 20 September 2022
+Introduction
+Recently, Cameron Tracy and David Wright published a paper in Science
+& Global Security that estimates the infrared (IR) emission from a generic
+hypersonic boost-glide vehicle (HGV). 1 They discuss the implications of
+their results for the detection of HGVs using existing ballistic missile early
+warning satellites. One of their main conclusions is that the IR emission
+from the glide vehicle surface would be detectable by the Defense Support
+Program (DSP) and the Space-Based Infrared System (SBIRS) satellites
+based on open-literature estimates of their sensor capabilities.
+Tracy and Wright considered a hypersonic glide vehicle based on a
+geometry published by Niu et al. 2 They approximated the upper-facing
+CONTACT Ivett A. Leyva ivett.leyva@tamu.edu Department of Aerospace Engineering, Texas A&M
+University, 710 Ross Street, Rm 710, College Station, TX 77843, USA.
+/C2232022 Taylor & Francis Group, LLC
+SCIENCE & GLOBAL SECURITY
+2022, VOL. 30, NO. 3, 117 –130
+https://doi.org/10.1080/08929882.2022.2145777
+=== page 2 ===
+surface that would be visible from a satellite as angled flat plates, and
+assumed that the heat transfer rate correlations of Tauber et al. are valid. 3
+With these correlations and a radiative equilibrium boundary condition, in
+which the aerodynamic heating is balanced by re-radiative cooling, it is
+possible to estimate the surface temperature at a given flight condition.
+Tracy and Wright assumed a fully turbulent flow, and therefore the rele-
+vant Tauber et al. correlation ( V > 4 km/s) and the heat transfer rate bal-
+ance are:
+dq
+dt
+/C18/C19
+FP
+¼ 2:2 /C2 10/C0 5 cos hðÞ 2:08
+sin hðÞ 1:6
+x0:2 1 /C0 1:11hw
+ho
+/C18/C19
+q0:8V3:7 (1)
+dq
+dt
+/C18/C19
+rad
+¼ erT4
+w ¼ dq
+dt
+/C18/C19
+FP
+(2)
+where dq=dt is the heat transfer rate (W/m 2), h is the angle of the flat
+plate surface relative to the freestream flow, q is the freestream density
+(kg/m3), and V is the flight speed (m/s). The surface temperature is Tw (K)
+and hw (J/kg) is the enthalpy of the gas at that temperature; ho is the free-
+stream total enthalpy (J/kg). For a fully turbulent flow, x (m) is the distance
+from the leading edge of the flat plate. 4 The second equation is the radia-
+tive equilibrium boundary condition, in which the re-radiation from
+the surface balances the aerodynamic heating assuming a gray body with
+emissivity e: Tracy and Wright assume e ¼ 0:85 for a carbon heat
+shield material.
+Tracy and Wright use these equations to estimate the surface tempera-
+ture distribution on candidate boost-glide trajectories; these trajectories are
+computed assuming that the HGV is flying at its maximum lift-to-drag
+condition, which is assumed to be L=Dmax ¼ 2:6: Then, using the Planck
+black body formula, they compute the infrared emission from the upward-
+facing surface for two bands in the short-wavelength IR.
+In this paper, the Tracy and Wright analysis is examined to assess its val-
+idity and compare their results to predictions using computational fluid
+dynamics. The analysis presented here suggests that several assumptions
+made or retained by Tracy and Wright in their analysis are incorrect. As a
+result, they arrived at substantially larger values of IR emission than those
+obtained in the present work.
+Computational fluid dynamics analysis
+The University of Minnesota US3D computational fluid dynamics (CFD)
+code was applied to the problem studied by Tracy and Wright. 5 The code
+uses a finite volume method to numerically solve the governing equations
+of compressible fluid motion including viscous and high-enthalpy effects. 6
+118 G. V. CANDLER AND I. A. LEYVA
+=== page 3 ===
+For attached laminar flows, which as we show later are relevant here, the
+computed heat transfer rate predictions are usually within the error bars of
+experimental wind tunnel measurements, with typical errors of þ//C0 5%.
+Aerodynamic coefficients are typically predicted within experimental uncer-
+tainty, and prior work has shown excellent agreement between aero-
+dynamic coefficient predictions and AEDC Tunnel 9 data for a waverider
+geometry (similar to the HGV studied here) at Mach 8 conditions. 7
+A computational grid of the representative HGV geometry was generated
+with the LINK3D software. 8 Figure 1 is a three-view of the modeled HGV
+based on the geometry taken from Niu et al. (also used by Tracy and
+Wright). The grid is clustered near the surface to resolve the large gradients
+in the boundary layer. The focus is on one of the conditions studied by
+Tracy and Wright: flight at 6 km/s and 49.7 km geopotential altitude (based
+on the U.S. Standard Atmosphere, the freestream density is q ¼ 1:015 /C2
+10/C0 3 kg/m3 and temperature is T ¼ 270:65 K). 9
+Due to the high-enthalpy flight conditions, the flow field is modeled
+with a 5-species reacting air chemical kinetics mechanism that represents
+nitrogen and oxygen dissociation and nitric oxide (NO) formation. 10 It is
+assumed that the surface is non-catalytic, meaning that the surface material
+does not promote gas-surface reactions that would cause recombination of
+reacted gas-phase species on the surface. At each finite volume face on the
+surface of the modeled HGV, the above radiative equilibrium boundary
+condition is applied with e ¼ 0:85; the aerodynamic heat transfer rate to
+the surface is a result of the computational solution as opposed to the
+Tauber et al. correlation. 11
+First, consider the aerodynamics of the generic HGV. The angle of
+attack, a, is varied from 0 /C14 to 20 /C14 , and the lift-to-drag ratio is computed.
+The angle of attack is measured in the coordinate system shown in
+Figure 1 . Thus, the freestream velocity is given by
+V! ¼ Vcos a i! þ Vsin a j! (3)
+Figure 1. Three-view of the generic HGV geometry used in the present analysis modeled after
+Niu et al.
+SCIENCE & GLOBAL SECURITY 119
+=== page 4 ===
+Laminar and turbulent CFD simulations were run; for the turbulent
+cases, the one-equation Spalart-Allmaras Reynolds-averaged Navier-Stokes
+model12 was used. The predicted variation of L=D with angle of attack is
+plotted in Figure 2 .13 Note that for a laminar boundary layer, a maximum
+L=D of 2.58 is achieved at a ¼ 14/C14 : The main effect of turbulence is to
+increase the drag due to surface shear stress, resulting in a lower L=Dmax of
+2.39 at a ¼ 13/C14 :
+Figure 3 plots the predicted upper and lower surface centerline tempera-
+ture distributions for the laminar and turbulent CFD solutions at L=Dmax:
+There is a significant difference in the lower surface temperature, but the
+difference is negligible on the upper surface. Thus, at the maximum L=D
+condition, the upper surface temperature distribution is not sensitive to the
+state of the boundary layer. For completeness, an approximate method for
+assessing boundary layer transition was used to evaluate whether the flow
+would be expected to be laminar or turbulent. The most widely used
+approach is to compute the ratio of the boundary layer momentum thick-
+ness Reynolds number, Reh, to the Mach number evaluated at the edge of
+the boundary layer, Me: When this ratio exceeds a critical value (usually
+between 100 and 300), the boundary layer is susceptible to transitioning to
+turbulence.14 The computed values of Reh=Me are less than 100 on the
+upper surface, and reach just over 100 in a small region on the lower sur-
+face. Thus, even with the most conservative critical value, it is expected
+Angle of Attack (deg)
+Lift / Drag
+0 5 10 15 20
+-2
+-1
+0
+1
+2
+3
+Laminar
+Turbulent
+Figure 2. CFD prediction of the lift-to-drag ratio as a function of angle of attack of the generic
+HGV flying at 6 km/s and 49.7 km altitude.
+120 G. V. CANDLER AND I. A. LEYVA
+=== page 5 ===
+that the upper surface boundary layer will be fully laminar for this flight
+condition. More detailed analysis of complex three-dimensional boundary
+layer instability growth and transition to turbulence is becoming feasible
+with large-scale computation and advanced linear stability analysis meth-
+ods.15 However, this type of analysis is beyond the scope of the pre-
+sent work.
+Based on the laminar CFD temperature distribution, Planck ’s law was
+integrated over the wavelength range of interest and over the HGV surface
+to obtain the upward-directed in-band IR emission, as in Tracy and Wright
+(their Equation 12). Figure 4 plots the variation of the predicted emission
+from the two short-wavelength IR bands considered by Tracy and Wright
+(2.69/C0 2.95 mm and 1.4 /C0 3.0 mm) as a function of angle of attack. 16 As
+expected, the emission decreases as the upper surface is angled away from
+the freestream velocity vector; at the maximum L=D condition, the pre-
+dicted emission from the narrow band is 4.90 kW/sr. This is significantly
+less than the value predicted by Tracy and Wright (43 kW/sr), and is well
+below the estimated sensitivity of the DSP (20 kW/sr) satellites. The emis-
+sion from the wider SBIRS band is predicted to be 29.0 kW/sr, which is
+also significantly less than Tracy and Wright ’s estimate of approximately
+370 kW/sr. However, the wide band emission is predicted to be above the
+estimated 6 kW/sr SBIRS detection threshold, making it likely that its
+Surface Temperature (K)
+0 0.2 0.4 0.6 0.8 1500
+1000
+1500
+2000
+2500
+Laminar
+Turbulent
+Lower Surface
+Upper Surface
+Figure 3. CFD predictions of the centerline temperature for the laminar and turbulent simula-
+tions at the angle of attack corresponding to maximum L=D: Flight condition: 6 km/s and
+49.7 km altitude.
+SCIENCE & GLOBAL SECURITY 121
+=== page 6 ===
+probability of detection would be sufficiently high with a potentially accept-
+able false alarm rate. 17
+The CFD simulations assumed a non-catalytic surface, in which the sur-
+face material is inert and there are no gas-surface reactions. However, this
+is not consistent with the assumption that the thermal protection system is
+composed of a carbon material, which may be ablating at the conditions
+considered. Therefore, a CFD case was run with a state-of-the-art finite-
+rate oxidation and nitridation ablation boundary condition to assess the
+effects of ablation on the IR hardbody signature. 18 Most of the ablation
+occurs on the leading edges of the HGV due to the high localized heat
+transfer rates and surface temperatures. The ablation boundary condition
+affects the energy balance at the surface, and in this case, it reduces the
+integrated heat transfer rate. Thus, the effect of ablation is to lower the IR
+emission by about 10% relative to the non-catalytic boundary condition.
+There is another potential source of IR emission from the HGV: gas-
+phase emission from the high-temperature shock-layer and wake. The levels
+of this emission must be computed by solving a collisional-radiative model
+and the emission levels are highly dependent on the chemical species pre-
+sent in the flow field. The primary IR emitter from high-temperature air is
+nitric oxide (NO), and if ablation species are present, carbon monoxide
+and carbon dioxide may also emit in the IR. However, the gas-phase IR
+emission is typically much lower than the hardbody emission. For example,
+Angle of Attack (deg)
+2.69 to 2.95 μm Emission (kW/sr)
+1.4 to 3.0 μm Emission (kW/sr)
+0 5 10 15 200
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0
+20
+40
+60
+80
+100
+120
+140
+2.69 - 2.95 μm 
+1.4 - 3.0 μm
+Figure 4. Predicted IR emission from the upper surface of the HGV as a function of angle of
+attack; two wavelength bands are plotted: DSP from 2.69 to 2.95 mm, and SBIRS from 1.4 to
+3.0 mm. Flight condition: 6 km/s, 49.7 km altitude.
+122 G. V. CANDLER AND I. A. LEYVA
+=== page 7 ===
+Niu et al. study an HTV-2 type of vehicle at altitudes of between 30 and
+70 km, and show that the spectral intensity of gas-phase IR emission is sev-
+eral orders of magnitude lower than the hardbody surface emission. 19
+Comparison with Tracy and Wright
+As discussed above, there are large differences between the IR signatures
+predicted by CFD and the analysis of Tracy and Wright. In this section,
+the key reasons for this discrepancy are identified. Consider one of the
+results from Tracy and Wright: Figure 5 reproduces their upper surface
+centerline temperature distribution (Figure 10 from their paper) for the
+flight condition discussed above (6 km/s and 49.7 km altitude). Given this
+surface temperature distribution, the flow angle relative to the surface, h,
+can be computed from Equations (1) and (2). The computed values of h
+are plotted in Figure 5 . For x=l/H113510:8, h ¼ 5:8/C14 and for x=l /H114070:8, h ¼ 3:9/C14 ,
+where l is the overall vehicle length.
+For the section x=l/H113510:8, the upper surface of the modeled HGV has an
+angle of 11.3 /C14 in the reference frame (see the inset in Figure 5). Thus, Tracy
+Figure 5. Solid line: upward-facing centerline surface temperature at flight conditions of 6 km/s
+and 49.7 km altitude taken from Tracy and Wright (Figure 10). Dashed line: surface angle rela-
+tive to the freestream flow direction, h, computed from Equations (1) and (2). The inset shows
+a side-view of the HGV geometry.
+SCIENCE & GLOBAL SECURITY 123
+=== page 8 ===
+and Wright must have used an angle of attack of: a ¼ 11:3/C14 /C0 h ¼ 5:5/C14 :
+Figure 6 illustrates the difference in the HGV flight attitude for the angle of
+attack assumed by Tracy and Wright and for a ¼ 14/C14 :
+However, this angle of attack is not consistent with the assumed value of
+L=D ¼ 2:6: See Figure 2 : a ¼ 5:5/C14 gives L=D ¼ 0:40: Figure 6 also illus-
+trates that the flow directly impinges on the upper surface ( h > 0) for a ¼
+5:5/C14 , while for the a ¼ 14/C14 condition, h < 0: Furthermore, note that the
+heat transfer rate correlation, Equation (1) , is not valid for h < 0 (produces
+an imaginary number).
+Therefore, Tracy and Wright ’s assumed L=D is not consistent with their
+orientation of the model HGV relative to the freestream flow direction.
+Furthermore, the HGV would not be in stable flight at their implied angle
+of attack and corresponding L=D: This can be seen by considering the bal-
+ance of forces in the flight-path normal direction. For equilibrium glide,
+the aerodynamic lift must balance gravity, less the centrifugal relief due to
+the curvature of the flight path:
+L
+m ¼ g/C0 V2
+R ¼ 1
+2 qV2 1
+b
+L
+D (4)
+where R is the radius of curvature of the flight path, which is the radius of
+the Earth plus the flight altitude, and b is the ballistic coefficient, which
+Tracy and Wright assumed to be 13,000 kg/m 2. Substituting into this
+Figure 6. Visualization (temperature contours on the HGV surface and flow field symmetry
+plane) of the computed flow fields for the generic HGV. Top: a ¼ 5:5/C14 , bottom: a ¼ 14/C14 : Both
+images are oriented so that the freestream velocity is from left to right. The temperature scale
+was chosen to accentuate the flow features; the maximum value is close to 12,000 K in the
+nose region.
+124 G. V. CANDLER AND I. A. LEYVA
+=== page 9 ===
+equation shows that it is not satisfied for L=D ¼ 0:40, and their HGV is
+not in stable level flight.
+This inconsistency in the angle of attack explains part of the difference
+in the comparison with CFD. In addition, the Tauber et al. heat transfer
+rate correlation ( Equation 1 ) is not accurate for the present conditions.
+Figure 7 compares the centerline surface temperature distribution com-
+puted with CFD and the correlation at a ¼ 5:5/C14 for laminar and turbulent
+boundary layers; the laminar CFD result at a ¼ 14/C14 is also plotted for refer-
+ence. This shows that the Tauber et al. correlations significantly over-pre-
+dict the surface temperature for these conditions. However, the Tauber
+et al. paper uses only two Space Shuttle Orbiter cases to establish the tur-
+bulent correlation (there is a third case, but it does not have a fully turbu-
+lent boundary layer). Furthermore, the correlation is applied at significantly
+different conditions than considered in the present work. 20 It should be
+noted that the U.S.3D CFD code has been compared to laminar and turbu-
+lent Shuttle Orbiter flight data for surface temperatures. 21 For almost all of
+the 16 thermocouples compared, the CFD predictions are within 100 K of
+the flight data. Thus, the difference in the predicted signatures is also due
+to the use of this inaccurate correlation. 22
+Tauber et al. make a conservative assumption that the surface is fully
+catalytic, which means that any reacted gas species that interact with the
+surface recombine due to gas-surface reactions catalyzed by the surface.
+Surface Temperature (K)
+00 . 2 0 . 4 0 . 6 0 . 81500
+1000
+1500
+2000
+2500 CFD, α = 14°,  laminar
+CFD, α = 5.5°, laminar
+CFD, α = 5.5°, turbulent
+Tauber et al., α = 5.5°, laminar
+Tauber et al., α = 5.5°, turbulent
+Figure 7. Upper centerline laminar and turbulent surface temperature distributions for a ¼
+5:5/C14 predicted with CFD and the Tauber et al. correlation. Also plotted for reference is the a ¼
+14/C14 laminar result.
+SCIENCE & GLOBAL SECURITY 125
+=== page 10 ===
+The CFD was rerun with a fully catalytic boundary condition, and it
+was found that the IR emission is increased by at most 6.9%.
+Role of ballistic coefficient
+There is an additional inconsistency in the assumptions made by Tracy and
+Wright that has an effect on the IR emission. They assume that the mass, m,
+of the HGV is 1000 kg, and as noted above, b ¼ m= CDAðÞ ¼ 13,000 kg/m2;
+CD is the drag coefficient and A is the drag reference area. Drag is related to
+CDA with:
+D ¼ 1
+2 qV2CDA (5)
+The laminar CFD predicts the drag to be 3900 N at a ¼ 14/C14 : Thus, from
+the definition of b,w e h a v e b ¼ 1
+2 qV2m=D ¼ 4680 kg/m2,a n dt h ea s s u m e d
+ballistic coefficient is not consistent with level flight at the conditions assumed.
+Substituting this corrected value of ballistic coefficient into Equation (4)
+yields a freestream density of 4 :17 /C2 10/C0 4 kg/m3 at a flight speed of 6 km/s.
+The corresponding geopotential altitude is approximately 57.1 km based on
+the U.S. Standard Atmosphere. This assumes that the aerodynamic per-
+formance ( CD and L=D) does not change significantly at this higher altitude
+condition. When the CFD is rerun at this condition, the IR emission in the
+2.69/C0 2.95 mm band decreases to 2.95 kW/sr and in the 1.4 /C0 3.0 mm band to
+22.1 kW/sr. Furthermore, this lower density condition reduces the likeli-
+hood of boundary layer transition, with the maximum value of Reh=Me ¼
+67 on the upper surface.
+Effect of freestream conditions on IR signature
+The prior analysis focused on a 6 km/s flight speed. Now consider how var-
+iations in flight speed affect the IR emission from the generic HGV. As dis-
+cussed above, the flight conditions cannot be chosen arbitrarily: for a given
+ballistic coefficient, L=D, and flight speed, there is a unique altitude where
+the HGV is in equilibrium glide. For this analysis, b ¼ 4, 680 kg/m 2 and
+L=D ¼ 2:6 are held fixed, and the flight speed is varied from 3 km/s to
+7 km/s. Figure 8 plots the upper surface emission in the two bands consid-
+ered; note that for 3 /C20 V /C20 6 km/s the variation of IR emission is approxi-
+mately linear with speed. This linear scaling occurs because the freestream
+density decreases with velocity squared, as can be seen by rearranging the
+glide condition
+q ¼ 2b
+L=D
+g
+V2 /C0 1
+R
+/C18/C19
+(5)
+126 G. V. CANDLER AND I. A. LEYVA
+=== page 11 ===
+Then, since the heat transfer rate is expected to scale roughly with
+dq=dt /C24 qV3, linear scaling with flight speed is obtained for g=V2 /C29 1=R:
+From this relationship, it is also clear that HGVs with a larger ballistic
+coefficient and/or lower L=D will fly at a higher density (lower altitude),
+with a correspondingly larger surface temperature and IR signature.
+Summary and conclusions
+The computational fluid dynamics analysis presented here exposes several
+inconsistencies in the assumptions made by Tracy and Wright. It is shown
+that Tracy and Wright assumed a flight condition corresponding to an
+angle of attack of 5.5 /C14 , however, this is not consistent with the assumed
+lift-to-drag ratio of the HGV. The CFD analysis shows that the maximum
+lift-to-drag ratio of the generic HGV occurs at 14 /C14 angle of attack, and this
+flight condition significantly lowers the heat transfer rate to the upper sur-
+face. In addition, Tracy and Wright assume that the boundary layer is fully
+turbulent, which is not consistent with the low Reynolds number, high-alti-
+tude conditions associated with HGV equilibrium glide. Furthermore, the
+CFD analysis shows that a turbulent boundary layer would not significantly
+affect the upper surface temperature at the L=Dmax condition. Using the
+correct angle of attack reduces the predicted upper surface temperature.
+Furthermore, the heat transfer rate correlation used by Tracy and Wright
+Flight Speed (km/s)
+2.69 to 2.95 μm Emission (kW/sr)
+1.4 to 3.0 μm Emission (kW/sr)
+33 . 544 . 555 . 566 . 570
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+0
+5
+10
+15
+20
+25
+30
+2.69 - 2.95 μm
+1.4 - 3.0 μm
+Figure 8. Predicted IR emission from the upper surface of the HGV as a function of flight speed
+at equilibrium glide conditions with b ¼ 4680 kg/m2 and L=D ¼ 2:6:
+SCIENCE & GLOBAL SECURITY 127
+=== page 12 ===
+significantly over-predicts the level of aerodynamic heating at the condi-
+tions studied. The combination of these errors results in an over-prediction
+of the upper surface temperature.
+Additionally, the assumed ballistic coefficient of b ¼ 13, 000 kg/m 2 is
+not consistent with the aerodynamics of the generic HGV. Instead, for
+the assumed mass of 1000 kg, b should be significantly smaller based on
+the aerodynamic drag predicted by the CFD. This lower value of b
+results in a higher altitude glide condition and an even lower
+IR emission.
+The current computational fluid dynamics analysis predicts that the gen-
+eric HGV flying at its maximum lift-to-drag ratio and 6 km/s would pro-
+duce short-wavelength IR signatures that are significantly lower than those
+predicted by Tracy and Wright (for the 2.65 /C0 2.95 mm band, 2.95 kW/sr vs.
+43 kW/sr; for the 1.4 /C0 3.0 mm band, 22.1 kW/sr vs. 370 kW/sr). These signa-
+tures would be expected to be below the DSP detection threshold, but
+would still be detectable by SBIRS. These results assume a laminar bound-
+ary layer with a non-catalytic surface in radiative equilibrium. It is found
+that at the condition studied, the upward-directed IR emission is margin-
+ally sensitive to the effects of surface catalysis, ablation, and turbulence in
+the boundary layer; these effects change the predicted emission levels by
+less than 10%.
+Tracy and Wright claim that there are social origins ( “heterogeneous engi-
+neering”) to the purported misperceptions about the capabilities of hypersonic
+weapons, including the perceived difficulty of detecting them during flight.
+However, the present analysis shows that this claim is not correct, and a fully
+consistent analysis is required to accurately characterize the performance and
+signatures of hypersonic weapons. The present work is based on computational
+fluid dynamics methods and computer code developed under basic research
+funding from the Department of Defense. The underlying numerical algo-
+rithms and physics models are published in the open literature and have been
+subjected to peer review. The work presented has not been influenced by DoD
+officials, is not subjective, and can be replicated by others.
+Notes and References
+1. C. L. Tracy and D. Wright, “Modeling the Performance of Hypersonic Boost-Glide
+Missiles,” Science & Global Security 28, no. 3 (2020): 135 – 170.
+2. Q. Niu, Z. Yuan, B. Chen, and S. Dong, “Infrared Radiation Characteristics of a
+Hypersonic Vehicle under Time-Varying Angles of Attack, ” Chinese Journal of
+Aeronautics 32, no. 4 (2019): 861 – 874.
+3. M. E. Tauber, G. P. Menees, and H. G. Adelman, “Aerothermodynamics of
+Transatmospheric Vehicles, ” Journal of Aircraft 24, (1987) 594 – 602. See also, J. D.
+Anderson, Hypersonic and High Temperature Gas Dynamics , 2nd ed. (Reston, VA:
+AIAA, 2006), 349 – 50.
+128 G. V. CANDLER AND I. A. LEYVA
+=== page 13 ===
+4. The Tauber et al. correlations are usually employed in two steps: first the laminar
+correlation is used from the leading edge to the transition location with x measured
+from the leading edge of the flat plate, and then the turbulent correlation is used with
+x measured from the transition location. A transition length is assumed between
+laminar and turbulent flow. See the discussion associated with Figure 2b in Tauber
+et al., 1987. Tracy and Wright assumed fully turbulent flow with transition occurring
+at the leading edge of the plate, and thus they measure x from the leading edge.
+5. G. V. Candler, H. B. Johnson, I. Nompelis, V. M. Gidzak, P. K. Subbareddy, and M.
+B. Barnhardt, “Development of the US3D Code for Advanced Compressible and
+Reacting Flow Simulations, ” AIAA Paper 2015-1893, 53rd AIAA Aerospace Sciences
+Meeting, 5-9 January 2015, Kissimmee, Florida.
+6. G. V. Candler, P. K. Subbareddy, and J. M. Brock, “Advances in Computational Fluid
+Dynamics Methods for Hypersonic Flows, ” Journal of Spacecraft and Rockets 52, no. 1
+(2015): 17 – 28.
+7. T. W. Drayna, I. Nompelis, and G. V. Candler, “Numerical Simulation of the AEDC
+Waverider at Mach 8, ” AIAA Paper 2006-2816, 25th AIAA Aerodynamic Measurement
+Technology and Ground Testing Conference, 05 June 2006 - 08 June 2006,
+San Francisco, California.
+8. https://www.link-3d.com. The grid is composed on 15.4 million hexahedral elements
+and the simulations were run for over 100 body flow-through times and a reduction
+in solution residual of at least six orders of magnitude. The value of yþ for the first
+grid point away from the surface is approximately 0.1 on the leading edges, and is
+well below unity on all surfaces. Generally, second-order accurate CFD simulations
+require yþ < 1 for the computational grid to resolve the gradients at the surface and
+to produce an accurate prediction of the heat transfer rate; see https://www.cfd-
+online.com/Wiki/Dimensionless_wall_distance_(y_plus). The boundary layer is
+resolved with approximately 45 grid elements in the surface-normal direction. These
+grid properties are more than sufficient to obtain accurate aerodynamic forces and
+heat fluxes, such as in the CFD results reported in AIAA 2006-2816.
+9. US Standard Atmosphere, 1976, NASA Technical Memorandum TM-X-74335, 1976.
+Also https://www.digitaldutch.com/atmoscalc/
+10. C. Park, “Review of Chemical-Kinetic Problems of Future NASA Missions. I – Earth
+Entries,” Journal of Thermophysics and Heat Transfer 7, no. 3 (1993): 385 – 398.
+11. The radiative equilibrium boundary condition ignores conduction into and out of the
+vehicle; thus, it will tend to over-predict the surface temperature early in the
+trajectory when the vehicle is cold.
+12. P. R. Spalart and S. R. Allmaras, “A One-Equation Turbulence Model for
+Aerodynamic Flows, ” Recherche Aerospatiale 1 (1994): 5 – 21. See also the “Standard”
+Spalart-Allmaras One-Equation Model at https://turbmodels.larc.nasa.gov/spalart.html
+13. By definition, drag is the component of the aerodynamic force opposed to the motion
+of the flight vehicle, and lift is the component of aerodynamic force perpendicular to
+the direction of motion.
+14. J. D. Anderson, Hypersonic and High-Temperature Gas Dynamics , 2nd ed. (Reston,
+VA: AIAA, 2006), 335; S. Berry, K. Daryabeigi, K. Wurster, and R. Bittner, “Boundary
+Layer Transition on X43-A, ” Journal of Spacecraft and Rockets 47, no. 6
+(2010): 922 – 34.
+15. X. Chen, S. Dong, G. Tu, X. Yuan, and J. Chen, “Boundary Layer Transition and
+Linear Modal Instabilities of Hypersonic Flow Over a Lifting Body, ” Journal of Fluid
+Mechanics, 938 (2022): A8; see also, for example: D. B. Araya, N. P. Bitter, B. M.
+SCIENCE & GLOBAL SECURITY 129
+=== page 14 ===
+Wheaton, O. Kamal, T. Colonius, A. Knutson, H. Johnson, J. Nichols, G. V. Candler,
+V. Russo, et al., “Assessment of Linear Methods for Analysis of Boundary-Layer
+Instabilities on a Finned Cone at Mach 6, ” AIAA Aviation 2022 Forum, June 27 – July
+1, 2022 Chicago, IL.
+16. As the angle of attack increases, the flow is less directed toward the surface, and it
+would appear that the flow should detach or separate from the upper surface at a
+critical angle of attack. However, at hypersonic conditions flow separation does not
+occur until angles of attack greater than considered here; rather, the flow remains
+attached and expands around the leading edge. This accounts for the smooth
+variation of the IR emission with angle of attack.
+17. D. K. Barton, Roger Falcone, Daniel Kleppner, Frederick K. Lamb, Ming K. Lau,
+Harvey L. Lynch, David Moncton, David Montague, David E. Mosher, William
+Priedhorsky, et al., “Report of the American Physical Society Study Group on Boost-
+Phase Intercept Systems for National Missile Defense: Scientific and Technical Issues, ”
+Reviews of Modern Physics , 76, no. 3 (2004): S167 – 168.
+18. K. S. Prata, T. E. Schwartzentruber, and T. K. Minton, “Air-Carbon Ablation Model
+for Hypersonic Flight from Molecular-Beam Data, ” AIAA Journal , 60, no. 2
+(2022): 627 – 40.
+19. Q. Niu, S. Yang, Z. He, and S. Dong, “Numerical Study of Infrared Radiation
+Characteristics of a Boost-Gliding Aircraft with Reaction Control Systems, ” Infrared
+Physics & Technology, 92 (2018): 417 – 28.
+20. Tauber et al. Case 1: 2640 m/s, ReL ¼ 7.6 /C2 106, a ¼ 34.1/C14 ; Case 2: 2275 m/s, ReL ¼
+10.6 /C2 106, a ¼ 30.8/C14 , where ReL is the Reynolds number based on freestream
+conditions and vehicle length. The present case has ReL ¼ 1.3 /C2 106.
+21. G. V. Candler and C. H. Campbell, “Hypersonic Navier-Stokes Comparisons to
+Orbiter Flight Data, ” AIAA Paper No. 2010-0455 (2010), 48th AIAA Aerospace
+Sciences Meeting Including the New Horizons Forum and Aerospace Exposition,
+04 January 2010 - 07 January 2010, Orlando, Florida.
+22. There is an additional issue here. As discussed in Endnote 4, the laminar correlation
+should be used prior to transition, and then the turbulent correlation is used with x
+measured from the transition location. Tracy and Wright assume turbulent flow from
+the leading edge and as a result drastically over-estimate the surface temperature.
+130 G. V. CANDLER AND I. A. LEYVA

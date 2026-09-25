@@ -1,0 +1,2109 @@
+=== page 1 ===
+Science & Global Security, 1992, Volume 3, pp.101-159
+Photocopying pennitted by license only
+Reprints available directly from the publisher
+If) 1992 Gordon and Breach Science Publishers S.A.
+Printed in the United States of America
+Depressed Trajectory SLBMs:
+A Technical Evaluation and
+Arms Control Possibilities
+Lisbeth Gronlunda and David C. Wrighfb
+SLBMs flown on depressed trajectories would have short flight times, comparable to
+escape times of bombers and launch times of ICBMs, thus raising the possibility of
+short time-of-flight (STOF) nuclear attacks. We assess the depressed trajectory (DT)
+capability of existing SLBMs by calculating the flight times, atmospheric loading on
+the booster, reentry heating on the reentry vehicle (RV), and degradation of accuracy
+for a DT SLBM. We find that current US and CIS SLBMs flown on depressed trajecto-
+ries would have the capability to attack bomber bases at ranges of up to about 2,000
+kilometers, and possibly at ranges up to 3,000 kilometers. To target bombers based fur-
+thest inland, a new high-velocity booster might be required, and attacking hardened
+targets would require a maneuvering RV (MaRY). We conclude that DT capabilities
+could be effectively controlled by the combination of an apogee restriction on the flight
+testing of existing SLBMs and bans on the development of high-velocity boosters and
+MaRVs, and that, in view of their inherent STOF capabilities, deep cuts in the number
+of SLBMs or their elimination might be desirable for an optimal minimum-deterrent
+force structure.
+a. Center for International Security Studies, University of Maryland,
+College Park MD 20740
+b. Union of Concerned Scientists, 1616 P Street, NW, Suite 310,
+Washington DC 20036
+=== page 2 ===
+1 02 Gronlund and Wright
+CONTENTS
+Introduction 103
+Short Time-of-fllght Attacks 103
+Attacks of Bomber Bases 104
+Attacks on C3 Targets and ICBMs 105
+Technical Aspects of DT SLBMs 106
+Model and Calculations 106
+Aerodynamic Loading 110
+Reentry Heating 113
+Flight Times of DT SLBMs 117
+Accuracy of DT SLBMs 118
+Errors in Burnout Parameters 118
+Atmospheric Effects During Reentry 119
+Other Error Sources 120
+Error Budget for a Ballistic Missile on a Minimum-energy Trajectory 120
+Error Budget for a Ballistic Missile on a DT 121
+Dispersions Due to Errors in Burnout Parameters 121
+Reentry Dispersion 122
+DT Accuracies for SLBMs other than Trident II 124
+Compensating for Range Dispersions Using Path Length Fuzing 125
+Implications of DT Accuracy for Bomber Vulnerability 128
+Reducing Reentry Errors and Heating Using MaRVs 129
+MIRVing Time and Footprint Size 130
+The Role of DT SLBMs in Countering Missile Defenses 131
+Implications of Technical Analysis 131
+Existing and Future SLBMs 131
+Existing SLBMs 132
+A New SLBM Booster Designed for DT Capability 132
+A New RV Designed for DT Capability 133
+Arms Control Measures to Limit STOF Capabilities 133
+Ban on DT Flight Testing of Existing SLBMs 134
+Ban on Deployment of New High-velocity SLBMs 135
+Ban on Development of MaRVs 136
+Cuts in Number of SLBMs 136
+Conclusion 136
+Appendix A: Parameters for the Trident II Booster and RV Models 142
+Appendix B: Equations of Motion for Missile Trajectories 143
+Appendix C: Details of Atmospheric Heating Calculations 145
+Appendix D: Guidance and Control Errors 151
+Appendix E: Calculation of Dispersion Due to Reentry Effects 153
+=== page 3 ===
+103
+INTRODUCTION
+The most energy-efficient trajectory for flying a ballistic missile over a given
+range carries it high above the atmosphere; the maximum range for a given
+missile is achieved by traveling on such a trajectory. If a missile is flown over
+shorter ranges, the excess energy can be used to fly less energy-efficient trajec-
+tories, such as low-apogee or "depressed" trajectories. Missiles flown on a
+depressed trajectory (DT) can have significantly shorter flight paths, and
+therefore significantly shorter flight times, than those flown on a standard tra-
+jectory of the same range.
+This is especially relevant for sea-launched ballistic missiles (SLBMs)
+which could, in principle, be brought close to the territories of the US or of the
+Commonwealth of Independent States (CIS). In the past, the prospect of short
+time-of-flight (STOF) nuclear attacks on strategic bomber bases and command
+and control centers raised concern about DT SLBMs and led to a number of
+unsuccessful attempts to limit their development. While the current relation-
+ship between the US and the CIS may render discussions of controlling
+nuclear weapons systems less urgent, it also provides an important window of
+opportunity for instituting agreements and practices that will increase stabil-
+ity and help establish a regime of common security for the future, especially if
+relations should cool again. At this time, the US and the CIS should be moving
+toward much smaller nuclear arsenals that would minimize crisis instability
+in the future.
+In this paper we analyze the key technical issues related to flying SLBMs
+on depressed trajectories.! We determine how difficult it would be to fly an
+SLBM on a depressed trajectory, whether redesign of the booster or reentry
+vehicle (RV) would be necessary, what flight times and apogees would be possi-
+ble with existing or redesigned missiles, and how accuracy would be reduced
+on these trajectories. Using these results, we then outline possible arms con-
+trol measures to restrict the development of STOF systems.
+Short Time-of-flight Attacks
+The vulnerability of key components of the strategic arsenal to nuclear attack
+would depend sensitively on the amount of warning received.. The standard
+surprise attack scenario assumes an attack against bomber bases, interconti-
+=== page 4 ===
+1 04 Gronlund and Wright
+nental ballistic missile (ICBM) fields, command and control centers, and com-
+munication nodes, with the goals of destroying bombers before they can
+escape, destroying ICBMs before they are launched, and severely crippling the
+political and military command structure and communication network.2
+In reality, given current force structures, a disarming first strike against
+the US or the CIS is impossible with or without STOF systems. Such an attack
+would be enormously complex and demanding, even if an adversary's entire
+arsenal could be attacked; it would be futile given the invulnerability of cur-
+rent US and CIS ballistic missile submarines (SSBNs). Presumably, any
+future force structure would also be configured to make a disarming first
+strike impossible. A rational decision maker would recognize that a STOF
+attack could not eliminate the victim's ability to launch a devastating retalia-
+tory strike.
+However, any system that decreases the amount of warning time also
+decreases the amount of time available for attack assessment and decision
+making. Such a situation is clearly dangerous for both countries. Perhaps the
+greatest concern about STOF capabilities is that the country facing a STOF
+threat might react by making policy changes that would be destabilizing, such
+as explicitly adopting a launch-on-warning policy (if it had not already done
+so) and instituting shortened timelines for decision making during crises.
+The nuclear powers should use the current period of reduced tensions to
+eliminate weapons that are more suitable for a first strike or surprise attack
+than a retaliatory attack, and to prohibit the future development of such
+weapons. Agreeing to limit nuclear weapon systems with short flight times
+and/or very high accuracies would be an important step in that direction.
+Attacks on Bomber Bases
+The scenario that typically sets the time scale for STOF systems is an attack
+on strategic bomber bases.3 Bombers are soft targets that would rely on quick
+escape to survive. In the fall of 1991 the US and the Soviet Union announced
+that their strategic bombers had been removed from alert status and their
+* There are two types of warning: tactical warning indicates that an attack is under
+way, while strategic warning refers to general indications of preparations for an attack.
+A "bolt from the blue" attack with no strategic warning has always been implausible
+and is becoming more obviously so.
+=== page 5 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 1 05
+~~.~"...~~
+bombs stored nearby. Prior to this the US routinely kept about 30 percent of
+its bomber fleet on airstrip alert,4 and with no strategic warning these bomb-
+ers were usually assumed to be able to escape within 7 to 10 minutes of an
+SLBM launch.5 Soviet bombers were not kept on day-to-day alert, but it was
+assumed that they would be placed on such alert during a crisis,6 and their
+escape times were presumably comparable to or longer than those for US
+bombers.
+As of January 1992, the roughly 200 US strategic bombers were deployed
+at 13 bases, which are distributed at sites from about 100 to 2,000 kilometers
+from either coast or the Gulf of Mexico. 7 In time of crisis, the bombers could be
+dispersed to roughly 75 auxiliary bases.S The roughly 96 strategic bombers in
+the CIS arsenal are stationed at 4 bases,9 all of which lie within about 2,200
+kilometers of the nearest coast. The roughly 550 additional medium-range CIS
+bombers are stationed at 15-20 bases, most of which are west of the Ural
+mountains and also lie within 2,200 kilometers of the nearest coast.
+We will see that a Trident II SLBM on a depressed trajectory could travel
+1,850 kilometers in roughly 7 minutes (rather than the 12.5 minute flight time
+on a standard trajectory), and could therefore reduce the survivability of a
+large fraction of the bomber forces that would not be vulnerable to attack by
+SLBMs on standard trajectories.
+High accuracy is not required for attacking bombers as they are disabled
+by overpressures of 2-5 psi (14-34 kPa),10 which can be produced at relatively
+large distances from a nuclear blast. Warheads of 100 to 500 kilotons can pro-
+duce these overpressures at distances of 2 to 5 kilometers from bombers flying
+at altitudes of several kilometers, and at roughly twice these distances for
+bombers on the ground. 11 We will see below that although accuracies of
+SLBMs are degraded by flying them on depressed trajectories, they would be
+adequate to attack such soft targets.
+Attacks on C3 Targets and ICBMs
+The extent to which DT SLBMs would be able to interfere with command, con-
+trol, and communication (C3) is difficult to assess because of the complexity of
+C3 systems and the shortage of unclassified information on the subject. It is
+believed that it would take roughly 10 minutes from SLBM breakwater to
+launch an ICBM in response to an SLBM attack, assuming no time for deci-
+=== page 6 ===
+1 06 Gronlund and Wright
+sion making and possibly no confirmation of attack from early-warni
+radars. 12 The development of maneuvering RVs (MaRVs) for DT SLBMs COt
+lead to a combination of short flight times and sufficient accuracy to atta
+hardened targets, thereby threatening even hardened command posts ve
+early in a conflict and silo-based ICBMs. Mobile ICBMs are relatively soft tl
+gets that rely on dispersal for their survival; if deployed in garrison th
+would be vulnerable to attack by DT SLBMs.
+TECHNICAL ASPECTS OF DT SLBMs
+In order to ascertain what arms control measures would be most useful in C1J
+tailing the development of DT SLBMs, it is necessary to determine what ste]
+either the US or the CIS would have to take to develop such a capabilit
+There are four main questions to be addressed in considering trajectories wi1
+low apogees. First, because a DT SLBM would spend a longer time in tl
+denser parts of the atmosphere than an SLBM on a standard trajectory, wou:
+this lead to increased aerodynamic stress or heating on the booster, and woul
+a new booster be required? Second, would the additional time spent in tt.
+atmosphere lead to increased heating of the RV, thereby requiring a new R
+design? Third, what flight times are achievable? Finally, to what extent wou]
+the accuracy of an SLBM on a depressed trajectory be degraded, and wou]
+the development of a precision-guided RV (PGRV) be required? If the develoJ
+ment of a new booster or RV is required, constraining DT capabilities via arm
+control would be relatively straightforward. If no new development is needec
+acquiring DT capabilities would probably entail only flight testing of existin
+boosters and RVs on the new trajectory.
+In the remainder of this section, we address the four questions outline,
+above, as well as some additional technical issues that may present difficultie
+for SLBMs on DTs, such as MIRVing. We first assess the DT capabilities a
+existing SLBMs, and then consider what further development would hi
+required to increase the DT capability of SLBMs.
+Model and Calculations
+Our assessment of existing DT SLBM capabilities is based on computation!
+made using our computer model of the US Trident II D-5 missile, the mos!
+=== page 7 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 107
+-~--
+advanced SLBM currently deployed. Using data obtained from a variety of
+unclassified sources, we were able to construct a consistent set of parameters
+for our model, which is given in appendix A.
+Our calculations assume a round, nonrotating earth,. and use a standard
+model of the earth's atmosphere (see figure 1). We also assume that the missile
+500
+400
+300
+~II Q)
+-0-~ Q)
+=E=0.c;""~
+200
+100
+0
+10-12 10-10 10"-8 10-6 10-4 10-2 1
+Density
+kg/m3
+Figure 1: Atmospheric density as a function of altitude. The atmosphere model used in our
+calculations is taken from Regan. Reentry Vehicle Dynamics, p.18.
+.Taking into account the rotation of the earth would make the equations of motion
+much more complicated, and would lead to only small changes in our results.
+=== page 8 ===
+108 Gronlund and Wright
+trajectory lies in a plane, and that the body axes of the missile and RV remain
+aligned with the direction of motion (i.e., the net lift force is zero). The latter is
+equivalent to modeling the missile by a point mass. (We will consider the effect
+of lift forces during boost in the following section on aerodynamic loading and
+estimate the effect of lift forces during reentry when we calculate missile accu-
+racy.) Thus, the forces acting on the missile are gravity, the drag force due to
+the atmosphere, and, before burnout, the thrust of the booster. The missile
+trajectory is determined by specifying the direction of thrust with respect to
+the body axis as a function of time. The two-dimensional equations of motion
+are given in appendix B.
+For each flight range and altitude at burnout, there is a unique ballistic
+missile trajectory that is most energy efficient. This is known as the mini-
+mum-energy trajectory (MET). If flown over less than maximum range, an
+SLBM can use its excess fuel to fly on a less energy-efficient, lower- or higher-
+apogee trajectory. In routine operations, SLBM trajectories may be lofted or
+depressed slightly with respect to the minimum-energy trajectory for a variety
+of reasons. However, "depressed trajectory" refers to trajectories that are
+depressed substantially below the MET: these trajectories have reentry
+angles. of roughly 5-100 for a 1,850 kilometer range, compared to roughly 400
+for a MET of comparable range, or roughly 300 for a 7,400 kilometer MET. Fig-
+ure 2 shows a minimum-energy and two depressed trajectories with ranges of
+1,850 kilometers.
+Depressed trajectories with the same range can have different shapes and
+apogees, and these various trajectories will result in different values for the
+flight time, loading on the booster, heating of the RV, and accuracy. No single
+trajectory will simultaneously yield the optimal values for all four quantities;
+we consider several depressed trajectories to understand the sensitivity of
+these parameters to trajectory shape.
+We consider depressed trajectories of two ranges: 1,850 kilometers (1,000
+nautical miles, which we will see is the range over which existing SLBMs can
+fly in roughly 7 minutes); and 3,000 kilometers (1,600 nautical miles, which is
+the range needed to target the bomber bases furthest inland in the US or the
+.We define the reentry angle as the value of'Y (the angle between the RV velocity
+and the local horizon, see figure B-1) at 15 kilometers altitude because this is conve-
+nient for the accuracy calculations in subsequent sections of this paper.
+=== page 9 ===
+Depressed Trajectory SLaMs: A Technical Evaluation and Arms Control Possibilities 1 09
+DT-60-SYM DT-120 MET
+7.1 minutes 7.2 minutes 12.5 minutes
+J ",,"" "
+",,
+\
+I I
+1 ,850 kilometers
+Launch (l.CXXJ nautical miles) Target
+Figure 2: Three trajectories with ranges of 1,850 kilometers: the dashed line is the MET with an
+apogee of 450 kilometers, the solid line (DT-120) is an example of a low-stress .shaped. DT, as
+discussed in the text, and the dotted line (DT-60-SYM) is a .symmetric. DT that encounters
+considerably higher atmospheric loading and heating. The flight times are 7.1 minutes for DT-
+6O-SYM, 7.2 minutes for DT-120, and 12.5 minutes for the MET.
+CIS, assuming the submarine is several hundred kilometers offshore). We also
+consider depressed trajectories with various apogees, both to determine the
+effect of apogee on accuracy, and because low-apogee trajectories could be used
+to counter antimissile systems, In addition to these trajectories flown with a
+fully loaded Trident II missile, we consider several trajectories flown with a
+missile with a considerably higher burnout velocity to determine the feasibil-
+ity of further decreasing the flight times. Increased burnout velocities can be
+obtained either by off-loading warheads from the Trident II, or by using a
+hypothetical high-velocity missile. These trajectories are denoted by "OL" for
+"off-loaded" and "HV" for "high velocity" (see table 1). Throughout this paper
+we label the depressed trajectories by their apogees (for example, DT-120 has
+an apogee of 120 kilometers).
+The Trident II is designed to carry either eight heavy RVs (the 475 kiloton
+Mk-5), for which it has a maximum range of roughly 7,400 kilometers, or up to
+14 lighter RVs (the 100 kiloton Mk-4), With eight Mk-4 or four Mk-5 RVs the
+Trident II has a range of roughly 11,000 kilometers.13 We compare the loading
+and heating values calculated for the depressed trajectories to the loading and
+heating values for the maximum-range-minimum-energy trajectories that the
+Trident II is designed to fly. By basing our analysis on such a comparison, we
+avoid having to know what the actual stress and heat tolerance limits are for
+=== page 10 ===
+11 0 Gronlund and Wright
+Table 1: Trajectory parameterso
+Burnout Flight Total dispersion
+Trajectory velocity Apogee time meters
+km/s kilometers minutes R CR
+7,400 kilometer MET
+6.3 1,340 29.2 134 86
+1,850 kilometers
+DT-60 SYM 6.5 60 7.1 4,800-7,400 510-1 ,COO
+DT-90 6.3 90 7.1 2,(00-4,000 390- 730
+DT -120 6.0 120 7.2 1,300-2,400 300- 520
+DT-l50 5.6 150 7.4 770-1,300 230- 350
+3,000 kilometers
+DT-95 SYM 6.6 95 9.8 2,600-5,400 420- 860
+DT-135 6.3 135 10.1 1,400-2,600 320- 550
+DT-l55 6.2 155 10.1 1,100-2,000 270- 460
+DT-l85 5.9 185 10.4 730-1,200 220- 340
+a. 1Hs table gives paramete.. for the trajectories discussed WI ~ paper. For each range. the tr~tories are labeled by
+MET for mlnlmum-energy trajectory or DT for depressed tr~ectory. The DTs are labeled wIth their apogee WI kIIomete... and
+are shaped trajectories except for those mooed 'SYM: wtich are symmetric. 'OL' refe.. to Of) ofnoaded Trident II booster
+wfth 1 Mk-5 RV (seven RVs and the bus have been offloaded), and 'HV' refers to a hypothetical new booster capable of
+very hig\ burnout velocity. mocleled by a fully-loaded Trident II wIth the speclftc Impulse of each stage .-.creased to 610 sec-
+onds The 'tota eIT()(' Is calculated as described In append)( E. Rand CR refer to range and crossrange. respectively.
+the Trident II, and our results will not depend on whether we have modeled all
+the physical characteristics of the Trident II exactly.
+Aerodynamic Loading
+The aerodynamic loading on the booster results from lift and drag forces,
+which are both roughly proportional to the product of the atmospheric density
+p along the trajectory and the square of the missile velocity v: The drag force
+has the form:
+=== page 11 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 111~ v
+2
+CdApVFD = (1)
+2
+where Cd is the velocity-dependent drag coefficient discussed in appendix B,
+and A is the cross-sectional area of the missile.14
+The axial and normal loading experienced by the booster will depend on
+the shape of the trajectory during boost phase. For a minimum-energy trajec-
+tory, the missile is launched vertically, and is then turned from the vertical
+through a small angle e early in flight. Thereafter, the thrust remains aligned
+with the booster axis, and the missile is turned only by gravity. To fly a
+depressed trajectory, one possibility is to depress the trajectory early in flight
+by turning the missile through a larger angle e'. This difference in angle will
+be accentuated by the effect of gravity bending the trajectories over (see trajec-
+tory DT-60-SYM in figure 2). An alternative possibility is to follow a standard
+(maximum range-minimum energy) boost trajectory until the missile reaches
+altitudes at which the atmosphere is very thin (roughly 100 kilometers). The
+missile can then be turned relatively sharply to flatten the trajectory with
+negligible loading (see trajectory DT-120 in figure 2). We will refer to this lat-
+ter trajectory as a "shaped" DT, and the former as a "symmetric" (SYM) DT.
+Flying on a symmetric DT, such as DT-60-SYM in figure 2, results in a
+drag force and axial aerodynamic loading on the booster that is substantially
+greater than that for the standard maximum-range trajectory the Trident II is
+designed to fly (see figure 3). However, the aerodynamic loading could be kept
+at an acceptable level for a DT SLBM by flying a shaped trajectory, such as
+DT-120 in figure 2. In order to minimize the flight time, DT-120 follows the
+flattest flyout trajectory that the Trident II is designed to withstand, that of
+the 11,000 kilometer MET. As figure 3 illustrates, the axial loading for this DT
+is comparable to that for the 11,000 kilometer MET.
+Such shaped depressed trajectories can keep the loading to acceptable lev-
+els for trajectories with apogees of roughly 90 kilometers or greater, depending
+on the range. Moreover, even though a shaped trajectory has a longer flight
+path than a symmetric trajectory of the same range, the flight times are com-
+parable as the missile is slowed less by atmospheric drag on the shaped trajec-
+tory (see, for example, DT-120 and DT-60-SYM in figure 2). For the remainder
+of the paper, we consider only shaped trajectories, except where indicated.
+=== page 12 ===
+:1! i". cc : i
+t .
+,i[ 1 112 Gronlund and Wright
+...c
+~., ;
+[. ic '
+n J: ! 1n.J.,. ...I.JV
+':.1
+;j I I
+,,! --1'1 j cO 1"~ ~ --"'
+i II I.JV '""" j '"
+jcl!:. "',[i '-~ "'c I' " "'
+~~ii~ '; ~ "'[:li[ \:1 104 ,,"'" --OT -60 SYM'1"'" --." i '\ - C I" __0! i Ii
+11~j.jjjl \
+,i'II.'" ,,~[;[;! 1"~ \;
+r;!' I.JV
+I:"..)' \"'
+IIi, N \., '"'c N C \' > 0
+~ ~ 102 \
+'0 ~ \ OT-90
+U \
+10 \
+\
+\
+1 \
+, \
+1 \
+I 10-1 \
+,..l \
+lif:' , 11 ,000 km MET \,
+1.\,; 2";:"- 10-'. !'
+1'j~i 0 50 100 150it 4
+11." ,
+:vI
+'1"j' Time
+seconds
+Figure 3: The axial aerodynamic laading an the boaster for a 11.OCXJ kilometer MET, the two
+1.850 kilometer OTs shown in figure 2. and 1,850 kilometer OT-90. The graph extends to 170sec-
+onds, when burnout of the booster occurs. Note that the loading scale is exponential; the dif-
+ference between the loading for the MET trajectory and the shaped OT -120 is negligible. On
+the other hand. the loading on the booster for OT-60-SYM is considerably higher than that of
+the MET trajectory over the duration of boost phose. (These conclusions would not differ had
+we instead chosen the 7,400 kilometer MET as our basis of comparison.) Both the peak value
+and the time history of the loading are important since the latter can affect, for example,
+crack propagation in the propellant of solid-fueled boasters. The bold sections of the curves
+for the shaped trajectories OT-90 and OT-l20show the time over which lateral thrust is applied
+(11 ~ 0) to turn the missile onto a flat trajectory. In addition, 11 is nonzero for 1 < t < 5.5 for these
+trajectories. For the symmetric OT-60-SYM.11 is nonzero only for 1 < t< 10. and for the MET 11 is
+nonzero for 1 < t < 5.5.
+=== page 13 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 113~---~
+As noted above, a missile on a shaped DT is turned relatively sharply once
+it reaches a high altitude, raising possible concerns about normal loading.
+However, the turning rate of the missile at this point is comparable to or less
+than the turning rate of a missile on a 7,400 kilometer MET early in flight, so
+lateral stresses resulting from the rotation should not present a problem,
+especially as the atmospheric density is much lower at high altitudes. More-
+over, the type of turning maneuver required to fly a shaped depressed trajec-
+tory is similar to the maneuvers that newer US SLBMs perform to expend
+excess energy in order to fly a MET of less than maximum range. This method
+of using turning maneuvers to dump energy is known as the General Energy
+Management System (GEMS).15 Because the guidance systems of these
+SLBMs can be reprogrammed to perform GEMS maneuvers, they could also
+presumably be programmed to fly the low-stress depressed trajectories
+described above. Reprogramming the guidance systems of CIS SLBMs and
+older US missiles may be more difficult.
+Heating of the booster is another potential barrier to flying SLBMs on
+depressed trajectories. However, heating scales roughly as pV3, and because a
+shaped DT follows a standard flyout for altitudes where p is non-negligible,
+the heating for such a DT should not be significantly greater than that for an
+SLBM on a long-range MET.
+Reentry Heating
+An RV must be designed to withstand the considerable heating that occurs
+during its descent through the atmosphere. In this section we compare the
+atmospheric heating of an RV on a minimum-energy trajectory to that of sev-
+eral shaped DTs; we describe our calculations in detail in appendix C.
+During reentry, atmospheric drag slows the RV, and the kinetic energy of
+the RV is converted into thermal energy of the air, producing a layer of
+extremely hot air surrounding the RV. A small fraction of this heat is then
+transferred to the RV body: our calculations show that for RVs with low
+weight-to-drag ratios (a 13 of a few hundred Ib/ft2, or roughly 10,000-15,000
+N/m2), roughly 1-2 percent of the total reentry heat will be transferred to the
+RV, while for modern RVs with high weight-to-drag ratios (13 ::: 2,500 lb/ft2, or
+120,000 N/m2), 6-10 percent of the total reentry heat will be transferred for
+both minimum-energy and depressed trajectories. However, the total heat
+=== page 14 ===
+114 Gronlund and Wright
+transferred to the RV is significant because the kinetic energy change of stra-
+tegic RVs is extremely large (-109 joules).
+Two factors must be considered to determine whether existing RVs can
+withstand the heating that would occur on a depressed trajectory: the total
+amount of heat absorbed by the RV, and the length of time over which signifi-
+cant heating occurs. The heating time is important because once the surface of
+the RV becomes hot, heat will be conducted through the heat shield to the
+body of the RV. The amount of heat conducted inward will increase with the
+duration of the heating, and, as we discuss below, we find that the increased
+heating time for DTs may require a redesigned RV even when the total heat
+transferred to the RVon the DT is comparable to that on a MET. For DTs with
+sufficiently high burnout velocities, both the duration of the heating and the
+total heat load will require redesign of the RV:
+Calculating RV heating is complicated as it depends on details of the RV
+such as its shape and surface roughness, and on whether the boundary layer
+of air flowing around the RV is laminar or turbulent. We estimate the RV heat-
+ing using a set of approximate heating equations appropriate to high-velocity
+air flow (see appendix C). We then compare the heating values calculated for
+RVs on various DTs to those calculated for a 7,400 kilometer MET, as the Tri-
+dent II Mk-5 RVs are designed to fly on trajectories of at least that range. By
+basing our analysis on such a comparison, our results should be insensitive to
+details of the RV and the heating equations.
+The rate of heat transfer to the RV is roughly an order of magnitude larger
+when the boundary layer air flow around the RV is turbulent rather than lam-
+inar. For this reason, modem RVs are designed to have the transition from
+laminar to turbulent flow occur as late in the flight as possible. The altitude at
+which this transition will occur depends on details of the RV and is difficult to
+predict; we calculate the heat transferred to the RV assuming transition alti-
+tudes of both 20 kilometers and 30 kilometers (see appendix C).
+Table 2 gives the values calculated for the total heat transferred to an RV
+on various trajectories, assuming different altitudes for the boundary layer
+transition. These results show that, for each of the depressed trajectories of
+1,850 and 3,000 kilometer range flown using a Trident II missile with full pay-
+load, the total heating for an RV is comparable to that of an RV flown on the
+7,400 kilometer MET, although the nosetip heating on the lower apogee DTs is
+=== page 15 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 115
+Table 2: RV reentry heatingO
+~ Q.- Heating
+time
+Trajectory 20 kilometer BlT 30 kilometer BlT factor
+Q Q/~ Q Q/~ Q Q/~ (VTMET) 1/2
+MJ MJ MJ
+7,400 kilometer MET
+193 1 223 1 8.25 1 1
+1,850 kilometers
+OT-60 SYM 168 0.87 278 1.2 26.6 3.2 3.7
+OT-90 167 0.87 257 1.2 18.4 2.2 3.2
+OT-l20 162 0.84 232 1.0 14.6 1.8 2.5
+OT-l50 145 0.75 194 0.87 11.3 1.4 2.1
+3,000 kilometers
+OT-95 SYM 188 0.97 298 1.3 22.2 2.7 4.7
+OT-135 179 0.93 259 1.2 16.0 1.9 2.5
+OT-l55 175 0.91 246 1.1 14.4 1.7 2.3
+OT-l85 165 0.85 221 0.99 12.3 1.5 2.1
+11,000 kilometer MET
+273 1.4 325 1.5 12.3 1.5 1.2
+a. This table compares the heating of the Mk-5 RV (~ = 2,fiX> lb/ft2 or 120 kN/m2) on several depressed trajectories to that
+on a 7,400 kilometer MET. The depressed trajectories are kJbeled as described in table 1. The total heat transferred to the RV
+Is the sum of ~ and ~. which are, respectively. the heat (In megajouies) transferred to the frustlXn of the RV and the
+RV nosetip during reentry (the calculations are described In appendix C). Values for ~ are calculated for a boundary-
+layer transition (BLT) from laminar to turbulent ftow at both 20 and 30 kllomete~. The ratios of the heating values for the DTs to
+those for the 7 AOO kRometer MET (denoted "~ETl are given In each case. The ftnal column gives the heating-time factor:
+the square root of the ratio of heatng times for the RV body on the Usted trajectories to that for the 7 AOO kilometer MET
+(denoted "'METl. To accommodate longer heating times. the Insulation thickness would have to be Increased by this factor
+over the mlrimum thk:kness required for the MET. We define the heating time as the ftight time after ~ reaches 1 mega-
+joule; the heating-time factor Is relatively insensitive to the definition used. The heating time for the 7.400 kilometer MET Is 1B
+seconds.
+To get a conservative estimate of the heating tolerances of the Mk-5 RV. we use the 7 AOO kilometer MET as our basis of
+comparison. However, the Trident iI carrying four rather than eight Mk-5 RVs would have a MET range of 11,00) kilamete~.
+and It Is ilkeiy that the Mk-51s designed to fty on such a trajectory. For that reason we have Inc~ded the heating values for INs
+trajectory at the bottom of the table. The heat1ng time for this trajectory Is 27 seconds.
+=== page 16 ===
+116 Gronlund and Wright
+somewhat greater. As a result, the total heating would not necessitate a rede-
+sign of the RV heat shield in order to fly on the highest apogee trajectories, but
+it may be required for the other trajectories. For DTs flown using boosters
+with considerably higher burnout velocities than are available using the Tri-
+dent II booster with full payload, such as DT-240-0L and DT-370-HV, the RVs
+would experience significantly greater heating, and substantial redesign of
+the heatshield would presumably be required.
+Most of the heat transferred to an RV during reentry goes into ablation of
+the heat shield, but some will accumulate in the RV, with the rate of heat con-
+duction through the heat shield determined by the temperature gradient and
+the thermal conductivity of the heat shield. The amount of heat that accumu-
+lates in the RV will increase with the time during which the wall is main-
+tained at a high temperature and with the ablation temperature of the heat
+shield material, as the surface will remain at the ablation temperature as long
+as ablation is occurring.
+The RV heat shield, which encases the metal substructure of the RV body,
+consists of an outer layer of ablating material and a sublayer of insulation.
+The primary requirement of the heat shield is to keep the metallic shell of the
+RV from becoming so hot that it begins to lose structural strength. If the heat-
+ing time increases from 'tMET for the 7,400 kilometer MET to 'tDT for a DT,
+then maintaining the substructure at the same temperature on the two trajec-
+tories would require increasing the thickness of the shielding by a factor of
+('tD~'tMET)V2 (see appendix C). This factor is also given in table 2 for each DT
+we consider.
+Increasing the thickness of the heat shield by a factor of 2 to 4 over that
+required for an RV on the 7,400 kilometer MET would appear to compensate
+for the additional heating on the depressed trajectories, even for RVs on high-
+velocity boosters. (Because the RVs are probably built with more insulation
+than the minimum required, the actual needed will be less than this factor.) In
+appendix C we estimate that the thickness of the heat shield required for a
+7,400 kilometer MET is roughly 5-10 millimeters, so that such an increase
+should not require a prohibitive volume or mass of additional insulation.
+Thus, while some redesign of existing RVs to fly on DTs may be required,
+depending on the design tolerances of the RV and the desired flight times,
+such a redesign would not be technically difficult. Reentry heating is a well-
+=== page 17 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 11 7
+understood phenomenon and modifying the heat shield would not present a
+technical obstacle to designing RVs for DT SLBMs. These conclusions will hold
+more generally for any RV designed to fly on a trajectory of comparable range
+to the Trident II.
+Flight Time of DT SLBMs
+We find that the depressed trajectory flight times for a fully loaded Trident II
+are roughly 60 percent of the flight time for the minimum-energy trajectory of
+the same range, for ranges up to at least 4,000 kilometers. Attempts to
+shorten the flight path by flying a more depressed trajectory (such as DT-60-
+SYM in figure 2) do not reduce the flight time appreciably because of the
+increased atmospheric drag. For example, for 1,850 kilometer depressed tra-
+jectories with apogees of roughly 130 kilometers or less, the flight time is
+essentially independent of apogee.
+We find flight times of roughly 7 minutes for 1,850 kilometer DTs, and 10
+minutes for 3,000 kilometer DTs (see table 1). Thus, the flight times of existing
+SLBMs on low-stress depressed trajectories would be short enough to threaten
+a large fraction of bombers in either US or CIS arsenals (those lying within a
+range of about 2,000 kilometers), assuming a bomber escape time of 7-10 min-
+utes. Because a barrage attack could be used to attack airborne bombers up to
+several minutes after take-off, even inland bomber bases might be vulnerable
+to DT SLBM attack. Shorter flight times than those attainable with a fully
+loaded Trident II might be required to threaten those bombers based furthest
+inland.
+The flight time could be decreased to somewhat below that of a fully
+loaded, low-stress DT by off-loading RVs, thereby increasing the burnout
+velocity of the missile. As an extreme example, off-loading the bus and all but
+one RV (see trajectory DT-240-0L in table 1) reduces the flight time for a 3,000
+kilometer DT by approximately 1.5 minutes, to 8.8 minutes. Table 2 shows
+that this results in a significant increase in the heating of the remaining RV:
+An alternate way to decrease flight time is by designing a new booster
+with greater total thrust. However, because atmospheric drag on the RV
+increases with the velocity squared, flight times decrease relatively slowly
+with increasing burnout velocity (see table 1). Moreover, because the heating
+rate of the RV is roughly proportional to the cube of the RV velocity, flying a
+=== page 18 ===
+11 8 Gronlund and Wright
+new high-velocity booster may result in substantially higher heating values
+(see trajectory DT-370-HV in table 2) that would require a new RV design.16
+Accuracy of DT SLBMs
+The accuracy of a ballistic missile depends on the trajectory over which it is
+flown, as well as its design. Some of the contributions to SLBM inaccuracy
+increase significantly if the missile is flown on a depressed rather than a min-
+imum-energy trajectory. In this section, we estimate the relative accuracies of
+our model SLBM flown on a 7,400 kilometer minimum-energy trajectory and
+on several 1,850 kilometer and 3,000 kilometer depressed trajectories.
+For our analysis, we divide the sources of missile inaccuracy into three
+categories: 1) errors in the burnout parameters, which include all sources of
+error up to the time that the RV becomes ballistic; 2) reentry errors arising
+from the interaction of the RV with the atmosphere during reentry; and 3)
+other error sources, including errors in fuzing.17 We begin by describing each
+briefly and give further details in appendixes D and E. We refer to flight-to-
+flight variations in the range and crossrange as "dispersions."
+Errors in Burnout Parameters
+If there were no uncertainties in the forces acting on an RV after booster burn-
+out, the RV trajectory would be completely determined by the six components
+of position and velocity at burnout (plus, in general, three parameters describ-
+ing the orientation of the body axis, which in this paper is assumed to be par-
+allel to the velocity). Errors in burnout velocity are the dominant source of
+both range and crossrange dispersions resulting from burnout errors, and the
+dispersions scale roughly linearly with the range of the trajectory.
+Deviations from the desired values of the burnout parameters arise from a
+number of sources, including a lack of precise knowledge of the initial position,
+velocity, and alignment of the missile (which account for the major differences
+in accuracy between an ICBM and SLBM); misalignment of and/or inaccura-
+cies in the accelerometers; inaccuracies in the guidance computation, includ-
+ing inaccuracies in the gravity model; and errors induced by thrust
+termination and RV separation from the bus. Thus, the errors in burnout
+parameters arise both from an inability to achieve exactly the optimal values
+of the burnout parameters, as well as an inability to determine precisely what~
+=== page 19 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 119
+the optimal parameter values are, due to uncertainties in the initial position,
+velocity, etc.
+Atmospheric Effects During Reentry
+Inaccuracies arising from interactions of the RV with the atmosphere during
+reentry can be divided into four groups: those arising from uncertainties and
+variations in winds, atmospheric density, and weight-to-drag ratio (ballistic
+coefficient) of the RV, and those arising from lift effects.
+Winds will result in both range and crossrange dispersions. Variations in
+the atmospheric density and ballistic coefficient give rise to variations in the
+drag force on the RV during reentry, resulting in range dispersions but not
+crossrange dispersions. The ballistic coefficient ~ is given by mgo/CdA, where
+m, A, and Cd are the mass, cross-sectional area, and drag coefficient of the RV,
+and go is the gravitational acceleration at the earth's surface. Variations in ~
+during reentry result from a number of sources, including mass changes; thesymmetric component * of changes in nosetip shape and surface roughness of
+the RV due to ablation; and nonzero angle of attack (the angle between the RV
+body axis and velocity).18
+Lift effects, which give rise to lateral forces on the RV, result in both range
+and crossrange dispersions.19 In order to minimize these effects, the RV is
+spun about its axis at a frequency of one or two revolutions per second20 dur-
+ing reentry to average out the lateral forces. Lift effects include: 1) an initial
+nonzero angle of attack, in which the body axis of the RV is not aligned with
+the velocity when it hits the atmosphere; 2) roll resonance,21 in which the nat-
+ural pitching frequency of the RV (the rate at which the RV would oscillate as
+a pendulum) at a given altitude equals its spin (or roll) rate, thus giving rise to
+a resonance that increases the amplitude of the angle of attack; 3) asymmetric
+boundary layer transition,22 in which an asymmetric transition in the air flow
+around the RV from laminar to turbulent changes the drag coefficient asym-
+metrically; and 4) roll trim, in which other asymmetries of the drag coefficient
+due to, for example, asymmetric ablation of the heat shield or nosetip, are not
+averaged out by the spinning of the RV: Of these four lift effects, the asymmet-
+ric boundary layer transition and roll trim result in the largest dispersions.23
+* The asymmetric components give rise to lift effects.
+=== page 20 ===
+120 Gronlund and Wright
+If the net lift force acting on the RV remains fixed in one direction for a
+period of time it can lead to very large dispersions. This can happen if the RV
+stops spinning during reentry-an effect known as "roll through zero.,,24 Mod-
+em RVs are designed to avoid this effect, and in our calculations we assume
+roll-through-zero does not occur. Very large dispersions can also occur for an
+RV reentering the atmosphere at very shallow reentry angles (more shallow
+than those we consider) if there is a net component of lift in the vertical direc-
+tion, which can cause the RV to skip off the atmosphere.
+Other Error Sources
+Additional sources of missile inaccuracies include gravitational anomalies
+experienced after burnout and errors in fuzing, as well as a number of less sig-
+nificant effects.25 Uncertainties in modeling the gravitational field will have
+their greatest effect during boost phase, both because this is when the missile
+is closest to the earth for the longest period of time and because errors occur-
+ring early in flight will have a longer time to propagate; in our accounting,
+these uncertainties are included in the burnout errors. While the effects of
+gravitational anomalies after burnout would be greater for a missile on a
+depressed trajectory than a minimum-energy trajectory, they are probably
+! negligible compared to other error sources, especially for US missiles.
+Throughout the 1980s, the US spent considerable effort mapping the gravita-
+tional fields over the oceans to minimize the effects of gravitational anoma-
+lies.26
+For air bursts, nuclear weapons are typically detonated with a radar
+altimeter fuze and/or a path-length fuze, which relies on an accelerometer in
+the RV: 27 Inaccuracies in these fuzes give rise to range dispersions.
+Error Budget for a Ballistic Missile on a Minimum-energy 7rajectory
+Table 3 gives estimates for the contributions to missile inaccuracy from each of
+the three categories described above for a Trident II missile on a 7,400 kilome-
+ter minimum-energy trajectory. These figures are adapted from estimates for
+ICBM accuracy by Bunn and Tsipis,28 with the following modifications. We
+assume that efforts to improve missile accuracy have reduced the Bunn and
+Tsipis figures by 20 percent in each category in order to get a circular error
+probable (CEP) of 130 meters, which is the reported CEP for the Trident II. We~
+=== page 21 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 121
+Table 3: Error budget for Trident II on a ME~
+SIze of dispersions
+Source of dispersions meters
+Range Crossrange
+Error in burnout parameters 110 70
+Reentry effects 70 50
+Fuzing 30 0
+Root-sum-square 134 86
+CEP 130
+a. This table gives the estimated error budget for a ballistic missile similar to !he MX or Trident II. These numbers are based
+on those given by BUM and Tslpls. 'Ballistic Missile Gukjance: p.49. except we have assumed an kYlprovement by a factor
+of 20 percent In each category to obtain a CEP of 130 meters. Statistically Independent error contributions are combined by
+taking !he square root of the sum of the squares. The CEP Is given approxknately by 0.59 times the sum of the range and
+crossrange errors.
+also assume that the error budget for the Trident II is essentially the same as
+that for an ICBM; however this is not true for older US SLBMs or current CIS
+SLBMs.29 We discuss below how this error budget would differ for SLBMs
+other than the Trident II.
+Error Budget for a Ballistic Missile on a DT
+The accuracy of a ballistic missile on a DT would decrease relative to that of a
+missile on a minimum-energy trajectory, primarily because reentry disper-
+sions would increase; this would occur because an RV on a DT would spend
+more time in regions of non-negligible atmosphere. Because reentry disper-
+sions depend sensitively on reentry angle, we consider several DTs with differ-
+ent apogees, and thus different reentry angles.
+.Dispersions Due to Errors in Burnout Parameters
+For the DTs we consider, the dispersions due to burnout errors are somewhat
+smaller than those for the 7,400 kilometer MET, as the DT ranges are shorter.
+These calculations are described in appendix D. For the 1,850 kilometer
+depressed trajectories, the range and crossrange dispersions are roughly 40
+meters and 15 meters, respectively. For the 3,000 kilometer DTs, these values
+=== page 22 ===
+1
+122 Gronlund and Wright
+are 80-90 meters and 30 meters, respectively.
+The primary source of burnout dispersions is the error in the magnitude of
+the burnout velocity; we show in appendix D that this error is less than 0.1
+m/s (compared to a burnout velocity of roughly 6,000 m/s).
+For a given range and burnout height, a minimum-energy trajectory is
+defined to be that trajectory for which the burnout angle 'Yb is set to minimize
+the magnitude of the burnout velocity. Thus, for trajectories close to a MET,
+the range will be insensitive to variations in 'Yb, while the range of a DT will be
+very sensitive to such variations. However, given the CEP of the Trident II, we
+show that the error in burnout angle is roughly 1 second of arc (1/3,600
+degree) (see appendix D). An error in 'Yb of this magnitude leads to negligible
+range dispersions, even for DTs.
+.Reentry Dispersions
+Because the dispersions due to burnout errors are small for DT SLBMs, the
+total dispersion will be dominated by the contribution due to reentry effects.
+To calculate reentry dispersions, we estimate the variations in atmospheric
+density, wind, and ballistic coefficient of the RV about their expected values,
+using a number of sources (see appendix E). We then, in turn, change each of
+these three parameters by one standard deviation and rerun our computer
+model to determine the effect on the 7,400 kilometer MET and the various DT
+trajectories. A discussion of our calculations, including a sensitivity analysis,
+is given in appendix E, and the results are given in table 4.
+Because our computer model does not include lift effects, we estimate the
+lift contribution to the 7,400 kilometer MET range dispersion by requiring
+that the root-sum-square of the lift dispersion and the calculated dispersions
+due to winds, density, and 13 variations equals 70 meters-the total range dis-
+persion due to reentry effects, as given in the error budget in table 3. A similar
+calculation is done for the crossrange dispersion. The lift contributions to the
+reentry dispersions scale as inverse powers of sin'YRE, where 'YRE is the reentry
+angle, and they are estimated for the DTs by scaling the MET lift contribu-
+tions by the appropriate function of the reentry angles (see appendix E). The
+total reentry dispersion scales very roughly as 1/sin3('YRE) for range, and
+1/sin2(YRE) for crossrange.
+Our results assume the uncertainties in winds and density are equal to~
+=== page 23 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 123
+Table 4: Reentry errorsu
+Reentry Reentry dispersions Total reentry
+Trajectory angle 'YRE by source dispersions
+degrees meters meters
+p WInds p un effects
+R R CR R R CR R CR
+7,400 kilometer MET
+-29.9 6 24 24 7 65 44 70 SO
+1,850 kilometers
+1.300- 200- 4.800- 510-DT-60SYM -6.4 3.CXXJ 710 470 3.500 5.800 880 7.400 1.CXXJ
+DT-90 -75 1 100 420 3SO 1300 950- 170- 2.000- 390-
+...3.600 640 4.CXXJ 730
+66Q- 140- 1 .300- 300-DT-l20 -9.0 690 320 270 830 2.100 440 2.400 520
+DT-1SO -11.2 390 220 200 460 430- 110- 770- 230-
+1. 1 00 290 1 .300 3SO
+3,000 kilometers
+1.200- 180- 2.600- 420-DT-95 SYM -6.8 1.400 490 380 1.700 4.900 780 5.400 860
+DT-135 -8.7 740 330 280 890 710- 140- 1.400- 320-
+2.300 480 2.600 5SO
+DT-l55 -96 570 280 240 680 580- 130- 1.100- 280-
+.1.700 390 2.CXXJ 460
+420- 110- 730- 220-DT-185 -11.3 360 210 190 430 1.100 280 1.200 340
+a. TtW table ~es the contributions to reentry dispersions by source: 1ft effects and uncertainties In atmospheric density p.
+winds. and boIlIsttc coefficient Ii. Other notation Is described In table 1. These colculotlons assume a constant density varia-
+tion with altitude of 2.5 percent. a wind uncertainty of 10 m/s. and a variation of Ii of 3 percent. The reentry angle Is token os
+the value of '1 at 15 kilometers. the altitude at which the IIff effects couse maximum dispersion. The low and high estimates for
+11ft effects assume 1/sln~ and 1/sin3~ scaling for range eIrOlS. respectively. and 1/s1n~ and 1/sln~ scaling for cross-
+range eIrOlS The total reentry dispersions are the square root of the sum of !he squores of the Indlvldud contributions. SInce
+the range and crossrange dispersions are not comparable to each other, we do not combine them into a CEP. The calcula-
+tions leading to the numbers In this table ore described In detail In appendix E.
+=== page 24 ===
+124 Gronlund and Wright
+one standard deviation about the seasonal mean; consequently, strong local
+weather effects such as wind gusts or thunderstorms could increase these dis-
+persions considerably. Even with meteorological data from satellites or sophis-
+ticated forecasting programs, it would be difficult to reduce uncertainties
+much below these values. Forecasting programs use data collected at several
+thousand stations around the world two to four times a day, mainly using bal-
+loon soundings. With sophisticated forecasting programs and good input data,
+it is possible to predict the general features of the weather quite accurately
+over a region, although it is very difficult to predict precise atmospheric condi-
+tions at a specific location. Moreover, wind and density variations can occur
+rapidly. After measurements are taken, several hours are required to collect
+the information and produce a forecast, at which time the uncertainty in pre-
+dicted wind velocities is on the order of one standard deviation from the sea-
+sonal average.30,31 Furthermore, in a time of crisis, weather stations in areas
+that are considered possible targets would almost certainly stop reporting
+data, as those in Argentina are reported to have done during the Falklands
+crisis.32 This would decrease the accuracy of the forecasts for that region.
+Satellite data can indicate gross atmospheric disturbances such as storms
+that would strongly affect missile accuracy and could be used in deciding
+whether to postpone an attack. Such data might also allow one to compensate
+partially for large deviations in winds and atmospheric density.33 However,
+satellite data are much less accurate than balloon soundings; moreover, it is
+difficult to get accurate satellite data for low altitudes.
+.DT Accuracies for SLBMs other than 7rident II
+The reentry dispersions in table 4 would change for a missile other than the
+Trident II. To estimate the dispersions for another SLBM on a depressed tra-
+jectory, one might first assume that the ratios of the DT reentry dispersion to
+MET total dispersion are roughly the same as for the Trident II. Thus, naively,
+one would scale the total reentry dispersions of the Trident II DT by the ratio
+of CEPs for the two missiles. However, since the CEPs for CIS SLBMs include
+a large contribution due to uncertainties in the position and velocity of the
+submarine at launch, the proper scaling is by the ratio of the CEP of the
+SLBM excluding this contribution, to the Trident II CEP. We estimate this
+portion of the SLBM CEP by assuming it is equal to the CEP of an ICBM of
+=== page 25 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 125
+comparable vintage. This method implicitly assumes that this adjusted error
+budget for other SLBMs is roughly proportional to that of the Trident II,
+which is probably a reasonable assumption because a less accurate SLBM
+would probably have both a worse guidance system (leading to higher burnout
+errors) and an RV with a lower ballistic coefficient (which would result in
+larger reentry errors).
+In addition to the Trident II, the US deploys Trident I C-4 SLBMs with
+100 kiloton warheads and a range of 7,400 kilometers. (The remaining Posei-
+don C3 missiles were taken off alert in October 1991 and will be decommis-
+sioned in 1992.)34 The Trident I reportedly has a CEP of roughly 250 meters,
+which is the same as that of the Minuteman III missile, which has an earlier
+IOC (initial operational capability).35 Thus, we assume that the initial posi-
+tion and velocity uncertainties of the Trident I are negligible (as for the Tri-
+dent 11). Since the Trident I CEP is twice that of the Trident II, the dispersions
+of a Trident I on a DT can be estimated by multiplying the values given in
+table 4 by a factor of two.
+The CIS deploys six different types of SLBMs, four of which have maxi-
+mum ranges that are comparable to the Trident II and would presumably be
+capable of flying on DTs. The two newest CIS SLBMs, the SS-N-20 and SS-N-
+23, have ranges of 8,300 kilometers and carry ten and four MIRVs, respec-
+tively, with 100 kiloton warheads. The SS-N-20 reportedly has a CEP of 600
+meters, and the SS-N-23 has a CEP of roughly 1,000 meters; CIS ICBMs of
+comparable vintage reportedly have CEPs of 200-400 meters.36 ACEP of 200-
+400 meters is roughly 2-3 times that of the Trident II, so to estimate the dis-
+persions of these two CIS SLBMs on a DT, the values in table 4 should be mul-
+tiplied by two to three. Older CIS ICBMs reportedly have CEPs of 1 to 1.5
+kilometers, so for the two older types of long-range CIS SLBMs (SS-N-8 and
+SS-N-18) the values in table 4 should be multiplied by roughly ten.
+Compensating for Range Dispersions Using Path Length Fuzing
+The range uncertainties given in table 4 can be offset to some extent by the
+fuzing mechanisms needed to detonate a warhead at the proper position for an
+airburst. In particular, modem US RVs contain accelerometers that allow
+them to determine the path length they have traversed.37 If the RV is on a tra-
+jectory that will overshoot or undershoot the desired detonation position, such
+=== page 26 ===
+126 Gronlund and Wright
+a fuze could considerably reduce the range miss at the cost of detonating at an
+altitude higher or lower than the optimum height of burst. In the DT case,
+such a tradeoff is possible for two reasons: 1) depressed trajectories are rela-
+tively flat, so that the RV altitude changes relatively slowly with range, and 2)
+bombers are soft targets so that the exact detonation position is not critical.
+Fuzing cannot compensate for crossrange errors. As shown in figure 4, war-
+heads on depressed trajectories with ranges that vary by :t5 kilometers are
+detonated over the target by varying the height of burst. In practice, the resid-
+ual range error would be small compared to the radius of destruction, but not
+zero.
+For soft ground targets, if the warhead is detonated at its optimum height
+of burst, the radius of destruction is comparable to or greater than the size of
+an airbase. For example, the maximum radius of destruction on the ground for
+a 100 kiloton warhead is roughly 6 kilometers for targets disabled by 2 psi (14
+kPa) overpressure, and 3 kilometers for targets disabled by 5 psi (34 kPa).38
+15
+~ 10 ..
+-Q) Location Height
+-& "'ii) of target of burst
+.-E
+.0~-, "Q 5 4.3 km
+iI 2.7km,
+!
+0
+2,970 2,980 2,990 3,00) 3,010
+Range
+kilometers
+Figure 4: An illustration of path-length fuzing, The solid line is the trajectory (DT-24D-OL) that
+places the warhead over the target at the optimal height of burst of 2.7 kilometers (for a 500
+kiloton warhead and 2 psi target), which would give a lethal radius on the ground of 10 kilo-
+meters. The dashed lines are trajectories with ranges 5 kilometers greater and less than the
+optimum. If path-length fuzing was used to detonate the warheads on these trajectories at
+the range of the target, the heights of burst would be 4.3 kilometers and 0.6 kilometers.
+respectively, and the 2 psi radius on the ground would be roughly 7 kilometers in both cases.
+(These numbers are calculated using Glasstone and Dolan. The Effects of Nuclear Weapons.
+pp.l04.109.115.)
+=== page 27 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 127
+Table 5a: Range compensation by path-length fuzing against ground targetsO
+YIeld Range compensation
+kilotons kilometers
+2 psi target 5 psi target
+100 :t 7.0 :t2.5
+500 :t 12.0 :t4.0
+1,500 :t20.0 :t6.5
+a. ThIs table shows. for different combloolions of warhead yield and target hardness. the amount of range error that can
+be compensated for by using path-length fuzing to vary the heig1t of bust. The criterion for ground targets Is thot the kill
+radius on the ground remains at least 1 kilometer as the height of bum Is varied.
+For a 500 kiloton warhead these values increase to 10 kilometers and 5.5 kilo-
+meters for 2 psi and 5 psi targets. For a 1,500 kiloton warhead, the corre-
+sponding numbers are 18.5 kilometers and 6.5 kilometers. If the height of
+burst is varied from the optimum so that the radius of destruction on the
+ground is instead 1 kilometer, it would still be the case that only a small num-
+ber of warheads would be needed to destroy those bombers on the ground.
+Table 5a gives the maximum range errors that could be compensated for by
+changing the height of burst so that the lethal radius on the ground centered
+on the target is at least 1 kilometer. For example, for a 100 kiloton weapon
+and a 2 psi target, range errors of up to :t7 kilometers could be compensated
+for.
+If some bombers have taken off so that the targets are airborne, a more
+stringent criterion applies. In two minutes after takeoff, a bomber such as the
+US B-52 can fly about 10 kilometers, and the B1-B can fly about 15 kilome-
+ters.39 To cover a cylindrical volume of radius 10 kilometers and height 3-5
+kilometers, ten 100 kiloton warheads would be needed for 2 psi targets, and
+roughly 30 would be needed for 5 psi targets. The number of 500 kiloton war-
+heads required for 2 psi and 5 psi targets would be four and ten, respectively.
+For 1,500 kiloton weapons, the corresponding numbers are three and five war-
+heads. These numbers are based on the assumption that the warheads have
+essentially no dispersion; as the inaccuracy of the warheads increases, more
+warheads are needed to cover the same region with the same level of confi-
+dence. For example, by replacing each warhead in the original barrage with
+=== page 28 ===
+128 Gronlund and Wright
+Table 5b: Range compensation by path-length fuzing against airborne targetsO
+YIeld Range compensation
+kilotons kilometers
+2 psi target 5 psi target
+100 :t 4.5 :t2.5
+500 :t 7.5 .t4.5
+1 ,500 :t 11.0 :t6.5
+a. This table shows. for different combinations of warhead yield and target hardness. the amount of range error thai can
+be compensated for by using path-length fuzing to vary the height of burst. The criterion for airborne targets ~ that the height
+of burst can be varied by half of the lethal radius.
+two targeted to detonate at different heights over the same point, path length
+fuzing could be used to compensate for some range errors and thus ensure the
+volume was covered by the required overpressure. If two warheads that each
+produce the required overpressure in the air throughout a volume of radius R
+were aimed to detonate over the same point and at heights R apart, then a
+range uncertainty could be tolerated if it corresponded to a detonation height
+uncertainty of roughly R/2 or less. Table 5b shows the maximum range errors
+that could be compensated for by doubling the number of warheads in the bar-
+rage. For example, for 100 kiloton warheads and 2 psi targets, range errors of
+up to :1:4.5 kilometers could be tolerated, and 20 such warheads would be
+needed for a barrage.
+Implications of DT Accuracy for Bomber Vulnerability
+Bombers are commonly assumed to be disabled by overpressures of 2-5 psi.
+We assume that a DT SLBM would be adequate to use in a barrage attack
+against a bomber base and airborne bombers if its range dispersion is less
+than that given in tables 5a and 5b for the given warhead size and target
+hardness. Using this criterion, we can evaluate the ability of SLBMs on the
+depressed trajectories in table 1 to attack bombers. However, it is clear from
+table 1 that somewhat higher accuracy could be achieved at the expense of
+flight time by increasing the apogee of the depressed trajectory.
+The size of the total dispersions given in table 1 for the Trident II, which
+carries 500 kiloton warheads, shows that this missile would have an accuracy
+adequate to target bombers on any of the 1,850 kilometer or 3,000 kilometer
+=== page 29 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 129
+shaped trajectories. If the Trident II were off-loaded to achieve shorter flight
+times, its accuracy would be adequate for 2 psi but possibly not 5 psi targets if
+flown on the 1,850 kilometer DT-180-0L or 3,000 kilometer DT-240-0L trajec-
+tory.
+The US Trident I missile, with 100 kiloton warheads and dispersions
+roughly twice those for the Trident II, would be accurate enough to attack
+bombers if flown on either the 1,850 kilometer DT-150 or 3,000 kilometer DT-
+185 trajectory. The accuracies of the CIS SS-N-20 and SS-N-23 SLBMs, with
+100 kiloton warheads and dispersions two to three times greater than the Tri-
+dent II, are also adequate on these trajectories, although possibly marginal for
+a 5 psi target. If warheads were off-loaded to achieve shorter flight times, the
+accuracy of these SLBMs would not be adequate for this mission.
+The CIS SS-N-18 SLBM, with a 500 kiloton warhead and dispersions
+roughly ten times greater than the Trident II, would have an accuracy ade-
+quate to target 2 psi bombers on the ground if flown on the 1,850 kilometer
+DT-150 or 3,000 kilometer DT-185 trajectories, but would otherwise probably
+be too inaccurate. The CIS SS-N-8, with a 1,500 kiloton warhead and disper-
+sions roughly ten times greater than the Trident II, would have an accuracy
+adequate to attack a 2 psi target, but probably not a 5 psi target.
+Finally, if a new, high-velocity SLBM were developed with guidance tech-
+nology comparable to the Trident II, its accuracy on a depressed trajectory
+such as the 3,000 kilometer DT-370-HV would be adequate to target 2 psi
+bombers with a 500 kiloton warhead, but would probably be marginal for 5 psi
+targets.
+Reducing Reentry Errors and Heating Using MaRVs
+Because a shallow reentry angle leads to increased heating and decreased
+accuracy, a maneuvering reentry vehicle (MaRV) that could turn itself as it
+reentered the atmosphere to put itself on a steeper reentry path could solve
+these problems. Increasing the reentry angle of the RV to 25-300 would give
+heating and accuracy figures comparable to those for the MET, which would be
+adequate to attack hardened targets such as silo-based ICBMs and command
+centers. Even a fairly crude MaRV that relies only on accelerometers for guid-
+ance rather than external sensors, such as those developed by the US in the
+1970s and 1980s to evade missile defenses by maneuvering during reentry,40
+=== page 30 ===
+130 Gronlund and Wright
+-
+would probably be sufficient for this purpose. Such a MaRV could use fins OJ
+flaps to turn once it was in the atmosphere. How difficult it would be to adap:
+existing MaRVs for this purpose is not clear, but it would certainly requir«
+some flight testing to gain confidence in the system. A more advanced, preci
+sion-guided MaRV (PGRV) that used external sensors for terminal guidanc«
+:! has not been developed for strategic-range missiles; this task would be verJ
+l difficult and would require a series of developmental flight tests. On the othe]
+hand, a PGRV would probably not ofTer any advantages over an aerodynami.
+cally guided MaR V for this purpose.
+Alternately, the RV could carry enough fuel to deflect it onto a steep trajec.
+i I: tory, although this would impose a large weight penalty. Thus the boostel
+i would be able to carry only a couple of RVs. It therefore seems that there
+would be no incentive to develop such an RV rather than an aerodynamically
+steered MaRV.41
+MIRVing Time and Footprint Size
+The short flight times of DTs raise the question of whether the MIRVing pro.
+cess will be completed before reentry begins. The post-boost phase during
+which MIRVing occurs is relatively long for ICBMs as there has been no rea-
+son to keep the time short. The MIRVing time for the MX is 30-50 seconds per
+Rv:42 The MIRVing time of SLBMs must be shorter, and available figures sug-
+gest roughly 15 seconds per RV.43 It seems doubtful that current buses could
+reduce the MIRVing time below about 10 seconds per RV without beginning to
+sacrifice accuracy; however, as dispersions due to burnout errors are much
+smaller than reentry dispersions for DTs, some degradation in control due to
+fast MIRVing could be tolerated. Booster burnout for the Trident II occurs 170
+seconds after launch. Assuming atmospheric drag interferes with MIRVing
+below altitudes of 60-80 kilometers, MIRVing must be completed 1.5-2 min-
+utes before detonation for the DTs we consider. Thus, DTs with flight times of
+7 minutes or longer should have sufficient time to finish MIRVing before reen-
+try with existing buses. For DT flight times of significantly less than 7 min-
+utes, the MIRVing time would have to be decreased, by, for example,
+developing "minibuses" for each RVor perhaps for small clusters of RVs.44
+The size of the MIRV footprint depends on the velocity change the bus can
+:1] impart to the RVs, and on the degree to which a change in RV velocity during
+i:
+i: :
+=== page 31 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 131
+MIRVing can lead to range and crossrange deflections of the trajectory. A typi-
+cal footprint size for an ICBM on a MET is roughly 500 x 150 kilometers.45 By
+comparing the range and crossrange sensitivities to changes in burnout veloc-
+ity (see appendix D) for a 7,400 kilometer MET and an 1,850 kilometer range
+DT, we estimate that the same bus would give a footprint of approximately
+170 x 40 kilometers for a DT of this range. This footprint would be sufficient to
+disperse the RVs from a single missile for a barrage pattern on a single
+bomber base.
+The Role of DT SLBMs in Countering Missile Defenses
+There are several reasons why DT SLBMs may be useful in countering missile
+defenses.46,* First, the short flight times ofDT SLBMs limit the time available
+for an antimissile system to intercept the incoming warheads. Second, the low
+profile of depressed trajectories can greatly decrease the range over which a
+ground-based radar can observe and track the missile, also decreasing the
+time available for the intercept. Finally, space-based defenses such as the pro-
+posed Brilliant Pebbles system are limited to attacking targets at altitudes
+above about 100 kilometers because of the rapid increase in atmospheric den-
+sity below this level, which results in extreme heating of the sensors on kinetic
+interceptors. DTs with apogees below this altitude could therefore underfly
+such defensive systems;47 we find that it is possible to fly a shaped trajectory
+with an apogee of less than 100 kilometers for ranges of roughly 2,000 kilome-
+ters or less.
+IMPLICATIONS OF TECHNICAL ANALYSIS
+While our calculations were done for the US Trident II SLBM, our results are
+more generally applicable to other SLBMs of comparable range. In this section
+we discuss the implications of our technical analysis for existing and future
+technologies.
+Existing and Future SLBMs
+For any SLBM, the atmospheric loading and heating on the booster flown on a
+* A measure passed by the US House of Representatives in 1988 banning US test
+flights of DT SLBMs was cosponsored by sm supporters as a way of removing a possi-
+ble countermeasure to missile defenses.
+=== page 32 ===
+132 Gronlund and Wright
+depressed trajectory can be kept to a level comparable to what the missile
+would experience on a MET by flying the missile on a shaped trajectory.
+Existing SLBMs
+Existing SLBMs appear capable of flying on DTs with at most a minor
+increase in heat shielding for the RVs. The flight times of existing SLBMs on
+DTs can be significantly less than on METs over the same range. For a range
+of 1,850 kilometers, flight times of 7 minutes are readily achievable, which
+would be adequate to threaten a substantial fraction of the strategic bomber
+force in the US or the CIS, even if they were on day-to-day alert. Bombers
+based further inland may be vulnerable as well, as the depressed trajectory
+flight times are roughly 10 minutes for a range of 3,000 kilometers and a bar-
+rage attack could be used to attack bombers for a few minutes after take-off.
+The accuracy of SLBMs flown on DTs would be degraded relative to that
+on a MET, but both the US and the CIS currently deploy SLBMs with suffi-
+cient accuracy to attack soft targets like bomber bases.
+For ranges of up to about 2,000 kilometers, existing SLBMs can be flown
+on DTs with apogees lower than about 100 kilometers, which would allow
+them to underfly space-based missile defenses.
+A New SLBM Booster Designed for DT Capability
+Developing a new SLBM booster with very high burnout velocity (roughly 10
+km/s, compared to about 6.5 km/s for the Trident II) would be required to
+achieve DT flight times of roughly 7 minutes over 3,000 kilometers, which
+would be adequate to threaten all US or CIS bomber bases. (Off-loading war-
+heads from the Trident II results in a flight time of well over 7 minutes.) The
+research and development for such a booster would require a series of flight
+tests, probably 20 to 30 over many months.48
+For such a high-velocity missile, the heat shielding of the RVs would have
+to be increased significantly (see DT-370-HV in table 2). Such redesign would
+probably require some, although possibly only a few, flight tests.
+The reentry dispersions of DT SLBMs increase as the missile velocity is
+increased, but with a sufficiently large warhead, the accuracy of high-velocity
+SLBMs would be adequate to attack soft targets.
+i
+!:c".,~".-
+i,,'
+r
+=== page 33 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 133
+A New RV Designed for DT Capability
+The reentry errors of a DT SLBM could be reduced to the levels of an SLBM on
+a MET by the development of a simple, aerodynamically guided MaRV that
+would turn itself high in the atmosphere onto a trajectory with a large reentry
+angle. The US might be able to use its prototype MaRV in this way, but to
+develop it into a deployable RV and integrate it with an SLBM would require a
+series of flight tests. The CIS is not known to have developed a MaRY, so
+achieving a DT MaRV capability would require a longer series of flight tests
+for the CIS.
+Arms Control Measures to Umit STOF Capabilities
+Over the past 15 years, the possibility of prohibiting the development of flights
+of DT SLBMs was raised a number of times by the US and the Soviet Union.
+The US proposed a DT ban for inclusion in the SALT II treaty, but dropped the
+proposal when Soviet negotiators coupled it with other measures restricting
+short warning-time systems, such as ballistic-missile submarine standoff
+zones.49 Soviet President Gorbachev proposed a ban on DT SLBMs during his
+meetings with US President Reagan in December 1987.50
+In May 1988, the US House of Representatives amended the FY 1989
+defense bill to prohibit the US from flight testing missiles in a depressed mode
+as long as the Soviet Union also refrained from such testing. 51 A version of
+this amendment was retained in conference with the Senate, but was dropped
+after President Reagan vetoed the bill. The following year, President Bush
+announced that DT SLBMs would be discussed as part of the START process
+in ancillary talks. However, these talks stalled, at least in part because of con-
+tinued Soviet interest in including other measures to prevent surprise attack.
+Moreover, the Soviets seemed unwilling to ban a system that might be used to
+counter missile defenses while the US was vigorously pursuing the sm pro-
+gram. The FY 1991 Defense Authorization Act urged the US president to con-
+tinue pressing for an agreement with the Soviet Union on banning flight tests
+of missiles on depressed trajectories.52
+The security of the US and the CIS would be enhanced if both countries
+renounced STOF capabilities. We focus below on arms control measures that
+would limit the current and future DT capabilities of both countries.
+Because one motivation for developing DT SLBMs might be to counter bal-~
+=== page 34 ===
+134 Gronlund and Wright
+listic missile defenses, continued adherence to the Antiballistic Missile (ABM)
+Treaty may be necessary if restrictions on DT SLBMs are to be negotiated.
+Ban on DT Flight Testing of Existing SLBMs
+Banning flight testing of DT SLBMs would help to clarify the intentions of
+both countries by instituting an agreed constraint whose violation could be
+clearly established. One advantage of such a ban is that it would prevent the
+gradual erosion of the established norm of not flying SLBMs on DTs. 53
+To be militarily useful, DT SLBMs would require proof testing to evaluate
+their accuracy and give confidence in the system. If these weapons were to be
+used for a surprise attack, which requires very high confidence levels, the
+flight testing program would need to include enough tests to provide good sta-
+tistics on performance. If the tests were successful, however, they might be
+carried out in a relatively short period of time. Thus, as current SLBMs with
+only minor modifications appear capable of flying on depressed trajectories
+with significantly reduced flight times, the breakout time from a treaty pro-
+hibiting flight testing on DTs might be relatively short. However, the military
+significance of such a breakout might be limited as the flight times of existing
+missiles on DTs may not be short enough to threaten all inland bomber bases.
+Banning flights of SLBMs on DTs requires a definition of a "depressed tra-
+jectory," which is somewhat arbitrary as SLBM trajectories can be lofted or
+depressed over a continuous range. The two primary characteristics of interest
+'i are flight time and apogee, as short flight time decreases the warning time of
+-;, an attack, and low apogee makes detection of an attack more difficult and may
+decrease the vulnerability of the SLBM toABM systems.
+For existing missiles, there is a strong correlation between flight time and
+apogee: achieving short flight times requires flying on trajectories with apo-
+gees that are very low compared to the MET apogee for the same range. Our
+calculations for ranges of less than roughly 4,000 kilometers show that the
+minimum flight time on depressed trajectories is roughly 60 percent of that of
+the SLBM flown on a minimum-energy trajectory over the same range, with a
+DT apogee of less than 25 percent of the MET apogee. Thus, an agreement to
+ban flight testing of existing SLBMs on DTs could prohibit any SLBM flights
+whose apogee is less than, for example, three-quarters of the apogee of the
+minimum-energy trajectory over the same range. This restriction would still
+!
+i
+=== page 35 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 135
+allow significant deviations from minimum-energy trajectories, but the flight
+time of existing missiles on such a trajectory would be 85-90 percent that of
+the minimum-energy trajectory of equal range. This limit has the advantage
+that it depends only on simple geometric properties of the trajectory, and the
+reentry path through the atmosphere of such a trajectory would differ signifi-
+cantly enough from a DT reentry path that it could not provide useful informa-
+tion for evaluating the performance of SLBMs on DT reentry paths.
+Other types of measures to restrict flight tests of DTs have been pro-
+posed;54 however, the apogee restriction described above should be adequate
+for existing SLBMs.
+Objections may be raised that a flight test of an SLBM on a depressed tra-
+jectory, or portions of such a trajectory, could be disguised as test failures.
+However, a series of such "failures" that were not destroyed when they began
+to deviate from their "planned" trajectories would be a fairly obvious indica-
+tion of an attempt to circumvent the ban.
+Ban on Deployment of New High-velocity SLBMs
+Depending on its severity, an apogee restriction on the flight testing of SLBMs
+may not be sufficient to prevent new high-velocity SLBMs from flying on short
+flight-time trajectories, as in this case trajectories that were not depressed
+much below the MET could still have short flight times. There are presently
+no plans to build any new SLBMs; but to prevent the possible future acquisi-
+tion of such high-velocity SLBMs designed specifically for depressed trajecto-
+ries, a ban on flight testing and deployment of new SLBMs capable of burnout
+velocities in excess of some value could be implemented. Because the burnout
+velocity of a missile can be varied by changing its payload, if any country
+developed a new SLBM such a ban might require cooperative measures to
+determine the payload of each missile being flight tested. On the other hand,
+because such a missile would eventually have to be flight tested at high veloc-
+ity to adequately test its capabilities, perhaps this measure would be unneces-
+sary.
+There is a large incentive to ban the development of high-velocity SLBMs
+rather than permitting their development and banning their flights on DTs, as
+the former approach would eliminate the risk of a short breakout time for an
+SLBM that in principle could threaten all inland bomber bases.
+=== page 36 ===
+136 Gronlund and Wright
+Ban on Development of MaRVs
+The combination of short flight time and high accuracy would be particularly
+destabilizing because it could allow SLBMs to threaten hardened targets, such
+as ICBMs, before they could be launched. Without MaRVs, the reentry disper-
+j sions would place a fundamental limit on the accuracy of DT SLBMs so that
+! they could only be used to attack soft targets. Banning the further develop-
+:~ ment of all MaRVs through flight restrictions would remove the primary
+,1.1'( means of increasing the accuracy of DT SLBMs.55 For this purpose, the devel-
+j;,' opment of even simple "evader" types of MaRVs would have to be prohibited,r:i: as such a MaRV could be used to give the RV a steep reentry angle, thereby
+l! increasing its accuracy. Such a ban might meet resistance from those who
+'I
+believe it is important to retain the option of evaders as a counter to possible
+future ABM systems. However, as noted above, continued adherence to the
+ABM treaty will probably be required if restrictions on DT SLBMs are to be
+implemented, and any measures to restrict DT capabilities might be aban-
+doned if either country moved unilaterally to deploy substantial missile
+defenses.
+Cuts in Numbers of SLBMs
+Even if SLBMs are not flown on DTs, they have an inherent short flight-time
+capability because they can be flown on short-range, minimum-energy trajec-
+tories. The STOF capability of current SLBMs-on both DTs and METs-
+should be taken into account in planning further cuts in US and CIS nuclear
+arsenals and in designing an optimal minimum-deterrent force structure.
+While SLBMs are survivable, their STOF capability raises the possibility of
+short-warning time attacks on command centers and national leadership, as
+well as on land-based nuclear forces, thereby creating very short timeliness
+for response. Thus, it may be that a minimum-deterrent force structure should
+have only a very small fraction of its warheads on SLBMs, or that SLBMs
+should be eliminated entirely.
+=== page 37 ===
+137
+CONCLUSION
+Current SLBMs have significant inherent DT capability, although the devel-
+opment of high-velocity boosters may be required to threaten those bomber
+bases furthest inland, and MaRVs would be required on DT SLBMs to
+threaten hard targets such as silo-based ICBMs. The security interests of both
+the US and the CIS would be best served by renouncing short time-of-flight
+capabilities. A combination of apogee restrictions on the flight testing of exist-
+ing SLBMs and bans on the development of high-velocity boosters and MaRVs
+would assure that neither country could develop a DT capability. However, in
+view of their inherent short time-of-flight capabilities, deep cuts in the num-
+ber of SLBMs or their elimination might be desirable for an optimally stable
+minimum-deterrent force structure.
+ACKNOWLEDGEMENTS
+The authors would like to thank John Anderson, Steve Fetter, George Lewis,
+Ted Postol, Robert Sherman, David Vaughan, and Frank von Hippel for useful
+discussions. Both authors were assisted by awards from the Social Science
+Research Council of SSRC-MacArthur Foundation Postdoctoral Fellowships
+in International Peace and Security.
+NOTES AND REFERENCES
+1. Currently, little information on depressed trajectories is available in the open lit-
+erature. The best discussion available is Jonathan Medalia, Fast-7rajectory Strategic
+Ballistic Missiles (Washington DC: Congressional Research Service, 1990).
+2. For a discussion of short warning-time attacks see Lisbeth Gronlund and David
+Wright, "Short Time-of-Flight Nuclear Attacks," in E. Arnett, ed., Science and Interna-
+tional Security (Washington DC: American Association for the Advancement of Science,
+1990), p.411.
+3. For a more detailed discussion of bomber vulnerability, see, for example, Alton H.
+Quanbeck and Archie L. Wood, Modernizing the Strategic Bomber Force (Washington
+DC: Brookings Institution, 1976), p.39; Roger Speed, "START and Bomber Survivabil-
+ity," report UCID-21713 (Livermore, California: Lawrence Livermore National Labora-
+tory, 1989); Michael E. Brown, "The US Manned Bomber and Strategic Deterrence in
+the 1990s," International Security 14, Fall 1989, p.9; Donald Rice, "The Manned
+Bomber and Strategic Deterrence," International Security 15, Summer 1990, p.100;
+Harold A. Feiveson and Frank N. von Hippel, "Beyond START: How To Make Much
+Deeper Cuts," International Security 15, Summer 1990, p.169; Gronlund and Wright,
+"Short Time-of-Flight Nuclear Attacks."
+4. Brown, "The US Manned Bomber," p.6.
+=== page 38 ===
+138 Gronlund and Wright
+5. Brown, ("The US Manned Bomber," p.22), and Speed, ("Bomber Survivability,"
+p.4), indicate that a realistic estimate of the time from SLBM breakwater to lift-off of
+the first bomber is 6.5 minutes. An additional half minute or so is required for the
+bomber to escape the lethal radius of a single 500 kiloton warhead targeted on the air-
+base. This time would increase to roughly 90 seconds for a barrage attack of seven war-
+heads. Several minutes would be required for all the bombers at a base to take off.
+6. Stephen M. Meyer, "Soviet Nuclear Operations," in Ashton B. Carter, John D.
+Steinbruner, and Charles A. Zracket, eds., Managing Nuclear Operations (Washington
+DC: Brookings Institution, 1987) p.494.
+7. Bomber numbers are from Robert S. Norris and William M. Arkin, "Nuclear Note-
+book: US Strategic Nuclear Forces, End of 1991," Bulletin of the Atomic Scientists 48,
+January/February 1992, p.49. Base locations are given in Thomas K Longstreth and
+Richard A. Scribner, "US Strategic Bombers and Their Weapons," in Frank von Hippel
+and Roald Z. Sagdeev, eds., Reversing the Arms Race, (New York: Gordon and Breach,
+1990), p.202. In January 1992, President Bush announced that a number of strategic
+bombers would be converted to non-nuclear roles. If the remaining B-52Gs are con-
+verted, the number of strategic bases would drop to eight.
+8. Quanbeck and Wood, Modernizing the Bomber Force, p.51.
+9. Bomber numbers are from Robert S. Norris and William M. Arkin, "Nuclear Note-
+book," Bulletin of the Atomic Scientists 48, 1, January/February 1992, p.48 and US
+Department of Defense, Military Forces in 7ransition 1991 (Washington DC:1991) see
+enclosed map.
+10. Brown, "The US Manned Bomber," p.23; Quanbeck and Wood, Modernizing the
+Bomber Force, p.49.
+11. These overpressures were calculated using Samuel Glasstone and Philip J. Dolan,
+The Effects of Nuclear Weapons, 3rd edition (Washington DC: US Government Printing
+Office, 1977), p.109 and p.l04 (table 3.66) for targets in the air, and p.115 for targets on
+the ground. The lethal radius of blasts against targets on the ground is larger than
+against targets in the air because the shock wave reflected off the ground adds to the
+incident shock wave.
+12. This time can be inferred from, for example, Ashton B. Carter, "Assessing Com-
+mand System Vulnerability," in Managing Nuclear Operations, p.581.
+13. The range of a missile is maximized by a trajectory that is depressed slightly below
+the minimum-energy trajectory, for the following reason: The MET has the property
+that the first order variation of range with respect to burnout angle is zero for a given
+burnout velocity. The burnout velocity will increase if the missile trajectory is
+depressed slightly during boost phase because it will be slowed less by gravity. Thus, if
+the trajectory is depressed slightly from the MET condition, the first order increase in
+range due to an increase in burnout velocity will be greater than the second order
+decrease in range due to the change in burnout angle. However, because the maxi-
+mum-range and minimum-energy trajectories are very close to one another, we will
+refer to them interchangeably.
+14. See, for example, Frank J. Regan, Re-entry Vehicle Dynamics (New York: American
+Institute of Aeronautics and Astronautics, 1984), p.98.
+15. Paul Zarchan, Thctical and Strategic Missile Guidance (New York: American Insti-
+tute of Aeronautics and Astronautics, 1990), p.272.
+=== page 39 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 139
+16. Very high heating could require the development ofRVs with active cooling mech-
+anisms, or maneuvering capability to turn the RV onto a steeper trajectory. For a dis-
+cussion of active cooling mechanisms for RVs, see Matthew Bunn, The Technology of
+Reentry Vehicles (Cambridge, Massachusetts: Report No. 11, Program in Science and
+Technology for International Security, MIT, 1984), p.20.
+17. For a detailed discussion of ballistic missile guidance and errors, see D.G. Hoag,
+"Ballistic Missile Guidance,. in B.T. Feld, T. Greenwood, G.W. Rathjens, and S. Wein-
+berg, eds., Impact of New Technologies on the Arms Race, (Cambridge, Massachusetts:
+MIT Press, 1971), p.19; Matthew Bunn and Kosta Tsipis, Ballistic Missile Guidance
+and Technical Uncertainties of Countersilo Attacks, (Cambridge, Massachusetts:
+Report No.9, Program in Science and Technology for International Security, MIT,
+1983); and Dietrich Schroeer, Science, Technology, and the Nuclear Arms Race (New
+York: John Wiley and Sons, 1984). p.l44. See also Donald MacKenzie, Inuenting Accu-
+racy (Cambridge, Massachusetts: MIT Press, 1990).
+18. See H.P. Liepman, "Analysis of Boundary Layer Transition Effects on Ballistic
+Reentry Vehicle Impact Dispersion and Comparison with Other Dispersion Factors.
+(Arlington, Virginia: Institute for Defense Analyses, December 1975), NTIS, AD-A022-
+949/2, p.30, and W.J. Burns, "ABRES Flight Test Evaluation ofRV AccuracY. (Redondo
+Beach, California: TRW Systems Group, September 1974), DTIC, AD-A048-471, p.3-35.
+19. For a general discussion of lift. effects, see Burns, "ABRES Flight Test Evaluation,.
+p.3-44, and R.H. Palmer, J.J Pettus, and RA. Larmour, "A Phenomenological Frame-
+work for Reentry Dispersion Source Modeling,. (EI Segundo, California: Aerospace
+Corp., December 1977) NTIS, AD-B024098.
+20. See, for example, L.S. Glover and J.C. Hagan, "The Motion of Ballistic Missiles.
+(Silver Spring, Maryland: Applied Physics Laboratory, Johns Hopkins University, July
+1971), NTIS, AD 731662, p.186.
+21. Glover and Hagan, "Ballistic Missiles,. p.157; Cai Jinshi, "On Rolling Resonance
+and Slightly Asymmetrical Aerodynamic Force of the Reentry Body,. (China: China
+Aerodynamic R&D Center, March 1985) NTIS, AD-A176076.
+22. Hartley H. King, "Ballistic Missile Reentry Dispersion,. Journal of Spacecraft and
+Rockets 17, May/June 1980, p.240; Liepman, "Boundary Layer Transition..
+23. See Palmer, Pettus, and Larmour, "Reentry Dispersion Modeling,. p.11; King,
+"Reentry Dispersion,.; and Burns, "ABRES Flight Test Evaluation,. p.2-3.
+24. Palmer, Pettus, and Larmour, "Reentry Dispersion Modeling,. p.39.
+25. Bunn and Tsipis, "Ballistic Missile Guidance,. p.47.
+26. Graham Spinardi, "Why the US Navy Went for Hard-Target Counterforce in Tri-
+dent II (And Why It Didn't Get There Sooner),. International Security 15, Fall 1990,
+p.147; Paul B. Stares, Space and National Security (Washington DC: Brookings Insti-
+tution, 1987) p.37.
+27. Bunn and Tsipis, "Ballistic Missile Guidance,. pp.45-46.
+28. Bunn and Tsipis, "Ballistic Missile Guidance,. p.49. Because errors due to gravity
+arise mainly in boost phase, we have included them under errors in burnout parame-
+ters. The Bunn and Tsipis error budget is based on that given in Hoag, "Ballistic Mis-
+sile Guidance..
+29. SLBMs have traditionally been much less accurate than ICBMs, largely due to
+=== page 40 ===
+140 Gronlund and Wright
+uncertainties in the position, velocity, and orientation of the submarine at launch (see
+Schroeer, Science, Technology, and the Nuclear Arms Race, p.145). For the Trident II
+these uncertainties have been reduced significantly by determining the position of the
+submarine using the Global Positioning System (GPS), monitoring the velocity of the
+submarine with respect to the ocean floor, and using accurate gravity maps of the
+ocean. The Trident II is reported to have essentially the same CEP as the MX ICBM.
+30. W.M. Hollister, E.R Bradford, and J.D. Welch, "Using Aircraft Radar Tracks to
+Estimate Winds Aloft," Lincoln Laboratory Journal 2, Fall 1989, p.555.
+31. Stares, (Space and National Security, p.66), states that targeting data on Minute-
+man missiles are updated every 24 hours to account for weather conditions, but this is
+too infrequent to reduce the uncertainties below the values assumed in our analysis.
+32.' Alan Robock, Department of Meteorology, University of Maryland, private commu-
+nication.
+33. See Desmond Ball, "Can Nuclear War Be Controlled?," Adelphi Paper 169 (Lon-
+don: International Institute for Strategic Studies, 1981).
+34. Norris and Arkin, "US Strategic Nuclear Forces, End of 1991."
+35. William M. Arkin, "Sleight of Hand with Trident II," Bulletin of the Atomic Scien-
+tists 40 (December 1984). Page five indicates that the Trident I CEP has been reduced
+from 500 meters to 250 meters. We presume this improvement resulted from a reduc-
+tion in the initial position and velocity errors in the same way they have been reduced
+for the Trident II.
+36. Cochran et al., Soviet Nuclear Weapons, pp.ll1, 114; Norris and Arkin, "Soviet
+Nuclear Forces, End of 1990."
+37. Bunn and Tsipis, ("Ballistic Missile Guidance," p.45), estimate that path-length
+fuzes can measure path length to better than 50 meters. CIS RVs presumably contain
+similar mechanisms.
+38. All numbers in this section are calculated using Glasstone and Dolan, eds., The
+Effects of Nuclear Weapons, pp.102-115.
+39. Quanbeck and Wood, Modernizing the Strategic Bomber Force, p.48.
+40. Matthew Bunn, "The Next Nuclear Offensive," Technology Review, January 1988,
+p.28.
+41. For example, if the RV were traveling at 6 km/s, then deflecting it by 300 would
+require imparting a transverse velocity of 3 km/s. If the thruster on the RV had a spe-
+cific impulse of 300 seconds, the RV would have to carry roughly twice its weight in
+propellant. This follows from the rocket equation ~ V = go Isp In(m/mf), where ~ V is the
+velocity change, go is the acceleration of gravity, IsJ> is the specific impulse, and mi and
+mf are the initial and final mass of the RV, respectIvely.
+42. Ashton Carter, Directed Energy Missile Defense in Space (Washington DC: Govern-
+ment Printing Office, 1984) p.7; John Adam and Paul Wallich, "Sm: The Grand Exper-
+iment," IEEE Spectrum, September 1985, p.37.
+43. Adam and Wallich, "Sm: The Grand Experiment," p.37.
+44. Adam and Wallich, "Sm: The Grand Experiment," p.37; "The Science and Technol-
+ogy of Directed Energy Weapons," Reviews of Modern Physics 59, July 1987, p.S31.
+45. Bunn and Tsipis, "Ballistic Missile Guidance," p.29.
+=== page 41 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 141
+46. See "House Votes Ban on Low-Flying Missiles," Science 240, 3 June 1988, p.1272.
+47. See, for example, D.C. Wright and L. Gronlund, "Underflying Brilliant Pebbles,"
+Nature 350, 25 April 1991, p.663.
+48. Steven Flank, Defense and Arms Control Studies Program, MIT, private communi-
+cation.
+49. See Medalia, "Fast-Trajectory Strategic Ballistic Missiles," p.31.
+50. Robert Sherman, office of US Representative Les AuCoin, private communication.
+51. "House Votes Ban on Low-Flying Missiles."
+52. Public Law 101-510-5 November 1990, "National Defense Authorization Act of
+FY 1991," section 232.
+53. US proposals to ban flight tests of Soviet SS-18 missiles as part of the START
+treaty, in order to prevent modernization and reduce the utility of the existing missiles,
+put the Bush administration on record as acknowledging that restrictions on flight
+testing are both verifiable and effective in controlling military capabilities. See Mat-
+thew Bunn, "SS-18 Modernization: The Satan and START," Arms Control Today,
+August 1990, p.13; Don Oberdorfer, "US Offers 'Flexibility' on Soviet ICBMs," Wash.
+ington Post, 23 May 1990, p.A19.
+54. A discussion of additional provisions that a ban on DT SLBMs might contain, and
+how they could be verified are discussed in Medalia, "Fast Trajectory Strategic Ballistic
+Missiles," p.33.
+55. Matthew Bunn discusses how such a ban could be verified in "The Next Nuclear
+Offensive," p.28.
+=== page 42 ===
+142 Gronlund and Wright
+Appendix A: Parameters for the Trident II Booster and RV Models
+Listed below are the parameters used in our calculations for the Trident II booster and
+RVs. The values of the parameters that are footnoted are based on the references cited;
+the rest are estimates compiled from a number of sources, which were adjusted around
+standard values to give a consistent set of values, assuming a minimum-energy trajec-
+tory range for the Trident II of 7,400 kilometers with a payload of 8 Mk-5 RVs. A con-
+sistent set of RV parameters was found using equations in Regan, Re-entry Vehicle
+Dynamics, p.230, for the drag coefficient as a function of RV shape. We assume that
+stages 2 and 3 begin burning as soon as the previous stage burns out.
+BOOSTER MODEL
+Massob,C 56,200 kilograms 124,(XX) Ib
+DiameterOb,c 2. 1 meters 83 inches
+Stage 1
+Fraction of booster masso 75 percent
+Specific Impulsed 276 seconds
+Thrust6 1 ,610 ,(xx) newtons 330 ,(xx) Ib
+Burntimeb 65 seconds
+Fuel fractiond 92 percent
+Stage 2
+Fraction of booster mass 20 percent
+Specific impulse 296 seconds
+Thrust 456,(XX) newtons 1 02 ,(xx) Ib
+Burntime 65 seconds
+Fuel fraction 91 percent
+Stage 3
+Fraction of booster mass 5 percent
+Specific impulse 296 seconds
+Thrust 177,(XX) newtons 4O,(XX) Ib
+Burntime 40 seconds
+Fuel fraction 87 percent
+Mass of shroud 230 kilograms 500 Ib
+RV MODELS
+Mk-S
+Ballistic coefficient 120,(XX) N/m2 2,500 Ib/ft2
+Weight of RVf.g 180 kilograms 400 Ib
+Weight of busQ 1,100 kilograms 2,420 Ib
+Length 1.5 meters 59 inches
+Nose radius 0.04 meters 1.6 inches
+Bose radius 0.26 meters 10 inches
+Half angle 8.5 degrees
+=== page 43 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 143
+Mk-4
+Ballistic coefficient 86,(XX) N/m2 1,800 Ib/ft2
+Weight of RVg 90 kilograms 200 Ib
+Weight of busg 1,100 kilograms 2,420 Ib
+Length 1.3 meters 51 inches
+Nose radius 0.045 meters 1.8 inches
+Base radius 0.20 meters 8 Inches
+Half angle 7 degrees
+a. Strategic Systems Program OffIce. FBM Facts (WashIngton DC: Navy Department. 1988).
+b. Norman Friedman. World Naval Weapons Systems (Amapotls. Maryland: US Novallnstltute Press. 1989) p.42.
+c. Aviation Week and Space Technology 132.19 March 1m. p 158.
+d. specific Impulse and fuel fraction are estimated from values tor the Minuteman III and MX boosters (Steve Felter. pi!-
+vate commuNcatlon).
+e. The thrust Tis found by T= QJi,pmpifb. where QJ Is the acceleration of gavity at the earth's surface; i,p Is the specific
+mpulse; fnp Is the propellant moss. which Is equal to the fuel fraction times the mass of the stage; and tb Is the burntlme of
+the stage.
+f. Scaling the moss of the Mk-4 RV suggests a mass In this range.
+g. An estimate of RV and bus mosses are given In Kenneth Freeman. Uftfng the 1,911; /he Application of Analytic Tech-
+niques of Business Strategy fo the UK Trident Program (London: Royal UNfed Services Institute for Defence Studies. 1988). foat-
+note 175. A rDUg, rule of thumb Is that bus masses ore approximately equal to the total mass of the RVs
+Appendix B: Equations of Motion for Missile Trajectories
+The equations of motion for a missile trajectory lying in a plane are given by:1
+2
+dV T CdPV:4..-= -COSll- -gamy (B-1)dt m 2m
+dy d'l' T. g-= -+-smll--cosy (B-2)dt dt Vm V
+~ = ~ (B-3)dt R. +h
+~ = Vsiny (B-4)dt
+~ = ~ (B-5)
+dt gollp
+=== page 44 ===
+144 Gronlund and Wright
+where V is the velocity, T is the thrust of the booster, m is the combined mass of the
+missile and RVs during the boost phase and the mass of a single RV after burnout of
+the booster, p is the atmospheric density, A is the cross-sectional area of the booster
+during boost phase and of an RV after burnout, h is the height above the surface of the
+earth, g = goR;/(h + Re)2 is the gravitational acceleration at h, where go is the acceler-
+ation of gravity at the earth's surface and Re is the radius of the earth, \jJ = range/He is
+the range angle, y is the angle between the velocity and the local horizontal, and 11 is
+the angle between the thrust direction and the missile axis (see figure B-1).
+The drag coefficient Cd of the booster is velocity dependent, and is approximated
+by measured values for the V-2 rocket.2 The functional form used in the calculations is
+shown in figure B-2. The drag coefficient of an RV is given by Cd = nlgof(IiA), where j3 is
+the ballistic coefficient (or weight-to-drag ratio) of the RV.
+The mass change due to burning of the fuel during boost phase is given by equa-
+tion B-5, where lap is the specific impulse of the rocket motor (in seconds). The Trident
+II is a three-stage missile, so the mass also changes as empty stages are dropped. We
+drop the shroud covering the RVs when second stage burn ends.
+We determine the trajectory by specifying the thrust direction 11 as a function of
+time during boost and numerically integrating the equations of motion. Because the
+booster is modeled as a point mass, the values ofl1 are chosen to give trajectories simi-
+lar to that of the center of mass of a real missile, but will not correspond to the thrust
+deflection angles for an actual booster. Figure 3 gives the times for which 11 is nonzero
+for several trajectories.
+Launch
+point Thrust
+Velocity
+Earth
+Figure 8-1: The angular variables used In equations 6-1-6-5.
+=== page 45 ===
+14-:
+NOTES AND REFERENCES
+I. Frank J. Regan, Re-entry Vehicle Dynamics (New York: American Institute of Aero-
+nautics and Astronautics, 1984), p.287.
+2. George P. Sutton, Rocket Propulsion Elements, 3rd Edition (New York: John Wiley
+and Sons, 1965) p.119.
+Appendix C: Details of Atmospheric Heating Calculations
+During reentry, the air around an RV is heated in two primary ways. First, near the tip
+of the RV, the air is compressed by the RV and becomes extremely hot-air tempera-
+tures at this point will be greater than 20,000 K for reentry speeds of 6 km/s.l This
+0.5
+0.4
+~
+(,) 0.3
+C~
+'u'=
+~
+()
+Q
+2 0.2
+Q
+0.1
+0.0
+0 2 4 6 8 10
+Mach number
+Figure B-2: The drag coefficient Cd of the booster as a function of Mach number ( =
+speed/local speed of sound).
+=== page 46 ===
+146 Gronlund and Wright
+region is known as the "stagnation point," and usually has the highest heating rate per
+area and the greatest thermal stress. Second, heat is generated by frictional dissipa-
+I', tion due to large gradients in the air speed near the surface of the RV, which produces
+\i high air temperatures along the RV body. For very blunt RVs, the compression of air in
+1 front of the RV accounts for essentially all of the heat generated during reentry; for
+1i slender RVs, like those on modern strategic weapons, a significant amount of heat is
+i1:i generated by frictional dissipation.
+At speeds typical of reentry, most of the heat transfer to the RV occurs by convec-
+tion2 (at higher speeds, radiation can be important). The heating rate is equal to a heat
+transfer coefficient times the temperature difference between the high temperature air
+and the RV wall (Newton's law of heat transfer). This formulation leads to the usual
+form quoted for atmospheric heating:3
+£' y3
+~ = ~ (C-l)
+dt 4
+where q is the heat per area absorbed by the RV and Cf is the skin friction coefficient of
+the RV.
+At very low atmospheric densities for which the mean free path of air molecules is
+large compared to the size of the RV (at altitudes above about 130 kilometers), the
+heating results from individual air molecules colliding with the RV. If the molecules
+are brought momentarily to rest on the surface of the RV, then equation C-l is exact,
+with Cf = 2A/S, where A is the cross-sectional area of the RV and S is its surface area.
+In this limit, the heat transferred to the RV is 50 percent of the total heat generated.
+Although this is a much larger fraction than at lower altitudes, the amount of heat
+transferred is very small because the atmospheric density is 80 low.
+At lower altitudes where the atmospheric density is higher, the equation for the
+heating rate does not have this simple dependence on p and V; because in general Cf is
+a function of both density and velocity.. Moreover, the heating rate depends on whether
+the air flow in the boundary layer around the RV is laminar or turbulent.
+Whether the air flow over a surface is laminar or turbulent depends on a number
+of factors. An important parameter is the Reynolds number, defined by NR = pVL/~,
+where p and ~ are the density and the viscosity coefficient (also known as the "dynamic
+viscosity") of the undisturbed air far from the RV surface, Y is the speed of the air with
+respect to the RV surface, and L is a characteristic length of the RV. A typical rule of
+thumb is that the transition from laminar to turbulent flow occurs when NR increases
+above about 5 x 105. However, laminar flow is stabilized by high air speeds so that the
+transition Reynolds number may be a factor of ten larger for speeds of 1 km/s, and as
+much as 100 times larger for speeds of 5 km/s. On the other hand, laminar flow is
+destabilized by surface roughness and the introduction of material into the air flow,
+both of which will result from ablation of the RV surface.5
+The altitude at which the transition to turbulent flow occurs depends on details of
+the RV as well as its trajectory. For RVs with weight-to-drag ratios and reentry speeds
+that we consider in this paper, we assume that the transition occurs at altitudes of 20-
+30 kilometers.6 We also assume that the boundary layer flow changes from completely
+laminar to completely turbulent at the transition altitude. Because effects associated
+with the boundary layer transition can result in large contributions to reentry disper-
+sions, efforts are made to have this transition occur as rapidly and symmetrically as
+possible.
+The heating equations we use are empirical forms for the heating rates per area
+due to high velocity air flow over a flat plate, as a function of distance from the leading
+=== page 47 ===
+Depressed Trajectory SLaMs: A Technical Evaluation and Arms Control Possibilities 147
+edge of the plate. (Note that these equations are correct only if x p and Y arexpressed in mks units): 7 ' , e
+Laminar flow in J/m2:
+(.!!!L) = 2.53. 10-6 (cosc!l) 0.6 sinc!l
+(1- ~ )pO.6y3.2 (C-2)dt 0.6 hL X °
+'furbulent flow (for V ~ 4,000 mls) in J/m2:
+( d
+) (cos.l.)1.78(sin.l. )1.6( h ) 556 0.26 ~ = 3.89. 10-4 't' 0.2 't' 1-1.11-.!!!. (- ) pO.8y3.37 (C-3)
+Tv x ho Tw
+'furbulent flow (for V > 4,000 mls) in J/m2:
+( d
+) (cos.l.)2.08(sin.l. )1.6( h ).-!L = 2.2. 10-6 't' 't' 1-1.11-.!!!. pO.8y3.7 (C.4)
+dt 0.2 hTv>4 X °
+where c!I is the angle between the surface and the direction of the air flow far from the
+surface (which is taken to be the cone half angle for an RV), ho is the enthalpy per unit
+mass of the air at the stagnation point and hw is the enthalpy ~r unit mass of the air
+near the wall of the RV downstream from the stagnation point, T w is the temperature
+of the surface (in K), x is the distance (in meters) measured along the surface from the
+leading edge (or the nosetip for an RV), p is the atmospheric density (in kgim3), and Y
+is the velocity (in mls) of the air flow (or of the RV).
+In addition, the heating rate per area at the stagnation point is important since
+this region experiences the highest temperatures and heating rates. The corresponding
+equation in J/m2.s is:
+(.!!!L) = !~~ (1-~ )pO.6y3 (C-5)
+dt sp JR ho
+where R is the nosetip radius in meters. Thus, a small nosetip radius leads to high
+stagnation point heating.For our calculations, we use parameter values appropriate to the Mk.5 RV: c!I =
+8.5°, R = 0.04 meters, and an RV length of 1.5 meters. For hypersonic flow, h,Jho is typ-
+ically much less than 1 and is ignored.9 In addition, we assume that T w is the ablation
+temperature, which we take to be 2,500 K 10 'Ib calculate the heating rates integrated
+over area, dQldt, we integrate the laminar and turbulent per-area heating rates (equa-
+tions C-2-C-4) over the frustum of the RV, and multiply the stagnation point per-area
+heating rate (equation C-5) by the nosetip area, which we approximate by a hemi-
+sphere of radius R. The heating rates integrated over surface are for a Mk-5 RV (with p
+and Y in mks units):
+Laminar flow in J/s:
+(!!:.9.-) ~ 4.4. 10-6po.6y3.2 (C.6)
+dt L
+=== page 48 ===
+148 Gronlund and Wright
+Turbulent flow in J/s for V ~ 4,000 m/s:
+(~ ) = 1.3. 10-5po.8y3.37 (C-7)
+Tv and turbulent flow for V > 4,000 m/s
+~
+j (.!!-9--) =1.1.10-6po.8y3.7 (C-8)! dt! TV>4-\ .
+i
+! Stagnation point in J/s:
+!
+j
+! (.!!-9--) = 8.8. 10-6po.5 y3 (C-9)
+dt sp
+The total heat transferred to the RV is found by integrating these equations from
+booster burnout until impact, and summing the stagnation point contribution and the
+contribution for the frustum. While the stagnation point experiences the most intense
+heating rates, the nosetip area is roughly 100 times smaller than the frustum area
+(0.01 m2 vs 1.2 m2), so the stagnation point contribution is a small fraction of the total
+heat transferred to the RV. The frustum heating is dominated by turbulent heat trans-
+fer. For METa, laminar heating accounts for 2-6 percent of the heat absorbed by the
+RV; for DTa laminar heating accounts for 5-10 percent of the heating, assuming a tran-
+sition to turbulent flow at 30 kilometers, but it can rise to more than 20 percent if the
+transition occurs at 20 kilometers.
+The total heat transferred to the RV increases with the weight-to-drag ratio 13 of
+the RV, so that the benefits of having a large value of 13 for increased accuracy must be
+balanced against the increased heating. With increasing 13, the peak RV deceleration
+and greatest heat generation occur at lower altitudes where the denser atmosphere
+transfers the heat to the RV more effectively. Moreover, the boundary layer of air flow
+over slender vehicles is very fast and experiences large frictional dissipation, creating
+high air temperatures very close to the RV body. For blunt RVs, the air is heated
+mainly bl compression, and regions of highest temperature occur away from the RVsurface. 1
+The dependence on 13 and reentry angle, )'E, of the total heat transferred to the RV
+is given by Sellars as:12
+y2 ~.48QL oc 13°.5 E QT oc 13°.8 E (C-10)
+(sinyE) 0.5 (sinYE) 0.2
+where QL and QT are the total heat transfered for laminar and turbulent flows, respec-
+tively, and YE is the reentry velocity. Comparing equation C-10 with the total heat cal-
+culated for both METs and DTa, we find that the variation with reentry angle agrees
+fairly well with the form of Q1'J while the variation with 13 falls between the predictions
+of QL and Q'l'
+=== page 49 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 14 C;
+Estimate of Thickness of Insulation on an RV
+Consider a large body, initially at a uniform temperature Ti' which is bounded on one
+side by a planar surface at x = O. If the temperature of this surface is changed to T attime t = 0, then the temperature distribution within the body is given by:13 a
+%
+2.1;;,T (x, t ) -T. 2 J -,,' ( X )= -e dll = erf -(C-11)
+Tj -T. ./it 0 2J;i
+where erf is the error function, x is the distance from the surface into the body, t is the
+heating time, and IX = kl(pcp) is the thermal diffusivity of the body, where k is the ther-
+mal conductivity, p is the density, and cp is the specific heat. It follows from equation C-
+11 that the distance into the body at which a given temperature occurs varies as tlf};,
+and therefore the thickness of heat shielding required to keep the RV substructure at a
+given temperature will also vary as tlf};'
+Equation C-11 can be used to estimate the amount of heat shielding required for
+an RV capable of flying on a 7,000-11,000 kilometer MET. The nosetips of RVs, where
+the heat transfer rates are the highest, are commonly made of carbon-carbon compos-
+ites because of their high strength and high heat of sublimation, but they are less suit-
+able as ablator coatings for the RV body because their high ablation temperature
+(-3,900 K) would increase the amount of heat conducted to the interior of the R~ We
+assume that the ablator on the RV body is therefore a material like silica phenolic
+fiberglass, which has a lower ablation temperature. We also assume there is a layer of
+insulating material lying between the ablative coating and the RV substructure.
+Using parameter values14 appropriate to silica phenolic (p = 1,650 kg/m3, k = 1
+W/m.K, Cp = 2,000 J/kg.K) and an insulating material ("fiberfrax preform") (p = 560
+kg/m3, k = 0.2 W/m.K, cp = 1,100 J/k~.K), gives a value for the thermal diffusivity IX of
+both materials of roughly 3 x 10-7 m Is. Assuming the ablation temperature is 2,500 K
+and the initial temperature of the RV is 300 K, then to keep the temperature of the RV
+substructure at the inside edge of the heat shield below 400 K* with a heating time of20-30 seconds would require (from equation C-11) a total thickness IS of shielding of 7-
+9 millimeters for a 7,000-11,000 kilometer MET. For depressed trajectories, the heat-
+ing time and the shielding required will be greater. For the DTs we consider (see table
+2), the thickness of the shielding that would be required varies from roughly 15-40
+millimeters, depending on the trajectory.
+NOTES AND REFERENCES
+1. This temperature is calculated using Frank J. Regan, Re-entry Vehicle Dynamics
+(New York: American Institute of Aeronautics and Astronautics, 1984), p.135.
+2. The actual heat transfer mechanism at the RV surface is conduction between the
+air and the RV, which justifies the use of Newton's law. The heating is considered to be
+convective because the temperature gradient driving the conduction depends on the air
+* The melting point of aluminum is roughly 930 K, so this temperature requirement
+is conservative. If the RV substructure were allowed to reach 700 K, then 4-6 millime-
+ters of shielding would be required.
+=== page 50 ===
+150 Gronlund and Wright
+flow past the RV surface. See, for example, J.P. Holman, Heat 7}ansfer, 3rd edition
+(New York: McGraw-Hill, 1972) p.10.
+3. See, for example, B.P. Blasingame, Astronautics (New York: McGraw-Hill, 1964),
+p.208, and Regan, Re-entry Vehicle Dynamics, p.136. The heat transfer coefficient is
+replaced by the skin friction coefficient by using the "Reynolds analogy" between heat
+transfer and momentum transfer (i.e., drag).
+4. See John D. Anderson, Jr., Hypersonic and High 7emperature Gas Dynamics (New
+York: McGraw-Hill, 1989), pp.286-287; Charles E. Jobe, "Prediction and Verification of
+Aerodynamic Drag, Part I: Prediction,~ in Eugene E. Covert, ed., Thrust and Drag,
+(New York: American Institute for Aeronautics and Astronautics, 1985) p.121.
+5. For a discussion offactors influencing the transition, see Anderson, Gas Dynamics,
+pp.273-280.
+6. Palmer, Pettus, and Larmour, ("Reentry Dispersion Modeling,~ p.11), give a range
+of transition altitudes from 100-50 kft. (30-15 kilometers). Bums, ("ABRES Flight Test
+Evaluation,~ p.3-58), states that the transition typically begins at 70-100 kft. (21-30
+kilometers) and occurs "fairly rapidly.~ King, ("Reentry Dispersion,~ p.240), states that
+the transition begins at about 28 kilometers and ends at 20 kilometers. Liepman,
+("Boundary Layer Transition,~ p. vii), states that transitions below 45 kft. (14 kilome-
+ters) "have been achieved repeatedly using advanced materials and different tip
+designs.~
+7. Anderson, Gas Dynamics, p.291. Similar equations are given in J.R. Sellars,
+"Reentry and Recovery,~ in Howard S. Seifert and Kenneth Brown, Ballistic Missile
+and Space Vehicle Systems (New York: John Wiley & Sons, 1961) p.452.
+8. The thermodynamic quantity enthalpy, also known as the heat function, is defined
+as E + PV; where E, P, and V are internal energy, pressure, and volume respectively. In
+a thermally isolated system, energy conservation requires that the difference in
+enthalpy at two points in the flow will equal the difference in kinetic energy of the local
+fluid elements (see Blasingame, Astronautics, p.206). Since the flow velocity is zero at
+the stagnation point in the reference frame of the RV, then ho -hw = 1/2 .(uw)2, where
+Uw is the velocity of airflow along the wall of the RV. (Recall that h is the defined unit
+per mass.)
+9. Anderson, Gas Dynamics, p.289.
+10. This temperature is appropriate for an ablative material such as silica phenolic
+fiberglass. See Steven C. Gonzales, "Aerodynamic Heating on a Blunt-Cone Reentry
+Vehicle~ (Albuquerque, New Mexico: Sandia Report, 1980), NTIS, SAND80-2794C,
+p.24.
+11. Robert C. Duncan, Dynamics of Atmospheric Entry (New York: McGraw-Hill,
+1962), p.118; Space Handbook, eds., C. D. Cochran, D. M. Gorman, and J. D. Dumoulin
+(Maxwell Air Force Base, Alabama: Air University Press, 1985) p.8-9; Anderson, Gas
+Dynamics, p.16.
+12. Sellars, "Reentry and Recovery,~ p.453.
+13. Holman, Heat 7}ansfer, p.88.
+14. See Gonzales, "Aerodynamic Heating,~ pp.17-19, and Lewis H. Abraham, Struc-
+tural Design of Missiles and Spacecraft (New York: McGraw-HilI, 1962), pp.253, 327-8.
+15. We note that Gonzales uses values of 7 millimeters of phenolic and 5 millimeters of
+=== page 51 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 151
+insulator in his models of heat transfer to RVs, and a 2.54 millimeters thickness of alu-
+minum for the RV shell, see Gonzales, "Aerodynamic Heating,. p.12. This may indi-
+cate, as one would expect, that RVs are built with more insulation than necessary.
+Appendix D: Guidance and Control Errors
+We describe below our calculations of the impact dispersions that result from varia-
+tions in the six components ofRV position and velocity at burnout (we assume the body
+axis is aligned with the velocity).
+Impact dispersions are usually discussed in terms of error coefficients that give
+the sensitivity of the range or crossrange to a change in the burnout parameters. A der-
+ivation of the error coefficients for a free-fall trajectory through vacuum is given by
+Wheelon;l while this derivation ignores the presence of the atmosphere, our numerical
+calculations of the coefficients show that they change little if an atmosphere is
+included.
+In the plane of the trajectory, it is more convenient to use error coefficients with
+respect to the vertical and horizontal components of burnout velocity, Vv and VH,
+rather than the magnitude and direction, Vb and 'Yb, used by Wheelon. The transforma-
+tion between the two sets is:
+aR cos'Yb aR .aRW = y-a+sm'Yb~ V (D-l)v b 'Yb U b
+aR sin'Yb aR aR-= ---+ coS'Y -(D-2)
+avH Vb a'Yb bavb
+where R is the range, 'Yb = tan-l(VvfVH) and Vb = (VV2 + VH2)1fl. The error coefficients
+are very sensitive to the burnout height hb when 'Yb is near zero, so for depressed trajec-
+tories it is important not to assume that hb is zero when calculating these coefficients.
+The error coefficients with respect to burnout velocity are:
+aR ( A sin 'I' cos'Yb )Re~ = sin 'I' -A COS 'Yb sin ('Yb + '1') ~ (D-3)
+aR (2 (1- cos'l' ) / cos'Yb -A sin 'I' sin 'Yb)Re -= -(D-4)
+av H sin 'I' -ACOS 'Yb sin ('Yb + '1') Vb
+~ = ~~ (D-5)
+avJ. COS'YbVb
+where
+=== page 52 ===
+152 Gronlund and Wright
+1- COB'llA = (D-6)
+(1 + hb/Re) COS2Yb -cosYbcos (Yb + 'II)
+I , CR denotes the crossrange, V 1. is the component of the velocity perpendicular to the
+: plane the trajectory would lie in if there were no errors in the burnout parameters, Re
+.1 is the radius of the earth, and'll = R / Re is the range angle. For minimum-energy tra-
+jectories, when 'Yb is not small, hb can be set to zero and equations D-3 and D-4 simplify
+to:
+(aR ) sin'll Re-= --(D-7)
+avv II" =0 sinybVb
+(aR ) (2(1-COS'll) sin'll )Re D-= + --( -8)
+avH II" =0 sinYb cosYb Vb
+The error coefficients with respect to burnout position are approximately equal to
+unity. For the Trident II SLBM, as for ICBMs, the positional uncertainties at burnout
+are small, and we will ignore these error contributions.
+'Ib calculate impact errors using these equations, we must estimate the uncertain-
+ties in the burnout velocity components and multiply them by the error coefficients. 'Ib
+estimate 5Vv and 5VH, we assume they are equal, and work backwards using the case
+of the 7,400 kilometer minimum-energy trajectory, which has a range error due to
+burnout errors of 110 meters (see error budget in table 3). (We assume the total disper-
+sion is given by the root-sum-square of the contributions from the two velocity compo-
+nents.) This calculation leads to:
+5Vv = 5VH = 0.03 m/s (D-9)
+These values for the velocity uncertainties are then used, along with equations D-3 and
+D-4 for the error coefficients, to calculate the range errors for the DTs we are consider-
+ing, again assuming that the total range dispersion is the root-sum-square of the dis-
+persions resulting from each of the two velocity components.
+The cross range impact dispersions for the DTs are estimated in an analogous way.
+The uncertainty in lateral velocity is found to be comparable to the in-plane uncertain-
+ties in velocity, as expected.
+We note that the values for 5Vv and 5VH given in equation D-9 imply that the
+uncertainty in burnout angle, frfb, is about one second of arc (5 microradians). This
+same conclusion follows from considering what uncertainty in angular deviation of the
+velocity out of the nominal trajectory plane [= sin-l(V.lNb)] would produce the cross-
+range dispersion given in table 3.2
+NOTES AND REFERENCES
+1. A. D. Wheelon, Journal of the American Rocket Society, December 1959, p.915.
+Wheelon defines his angular variable Y with respect to the vertical rather than the hor-
+izontal as assumed here. We note that a factor of 2 has been omitted from the last term
+in the numerator in the unnumbered equation between Wheelon's equations 24 and 25.
+=== page 53 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 153
+2. This value is consistent with values for uncertainties in angular control that can
+be inferred from S.F. Rounds and G. Marmar, "Stellar Inertial Guidance Capabilities
+for Advanced ICBM," AIAA Guidance and Control Conference, 1983, p.849, and from
+Hoag, "Ballistic Missile Guidance," p.80.
+Appendix E: Calculation of Dispersions due to Reentry Effects
+In this appendix we discuss in detail our calculations of the dispersions resulting from
+atmospheric winds, variations in atmospheric density and ballistic coefficient, and var-
+iouslift effects. The results of these calculations are given in table 4.
+Dispersions due to Atmospheric Density Variations
+At 450 N latitude over the US, density variations of one standard deviation about the
+seasonal mean range from 2-5 percent at altitudes below about 30 kilometers, to
+roughly 10 percent at higher altitudes.1 We calculate the dispersions that result from
+variations of this magnitude about the assumed density profile. While the actual den-
+sity variations that would be encountered on reentry will vary with altitude, one can
+substitute a "ballistic density variation" which is defined as that constant density shift
+that would result in the same dispersion as the actual density variation profile.
+Because the trajectory is most sensitive to variations at relatively low altitudes of 5-20
+kilometers, the results given in table 4 use a value of 2.5 percent for the ballistic den-
+sity variations over the US and the CIs.2 We calculate the dispersions by changing the
+density by 2.5 percent about the standard atmosphere in our computer model and not-
+ing the effect on the range. Because the force acting on the RV is linear in p, the disper-
+sions vary linearly with the size of the ballistic density variation. Density variations do
+not result in crossrange errors.
+Dispersions due to Atmospheric Winds
+Standard deviations for wind speeds are comparable to or greater than the mean
+speeds, and are greatest in the jet stream at altitudes of 7-15 kilometers. Standard
+deviations over the US or the CIS at these altitudes are roughly 10-20 mls in the sum-
+mer, and 30-50 percent larger in the winter.3 1b calculate the dispersions resulting
+from wind variations of this magnitude about the assumed wind profile, we use a "bal-
+listic wind" which is constant with altitude and gives the same dispersion as the actual
+wind profile. The results in table 4 use a ballistic wind of 10 mis, which is appropriateto latitudes of 40-500 N. 4 We also assume that the winds are horizontal at all points.
+The resulting dispersions vary linearly with the ballistic wind speed, as can be seen
+from the equations below.
+1b estimate the range and cross range dispersions due to winds, we modify the
+equations of motion given in appendix B. The aerodynamic drag force on the RV is anti-
+parallel to the RV velocity in the reference frame of the air, and in the presence of a
+wind, is therefore not aligned with the RV velocity in the reference frame of the earth
+=== page 54 ===
+154 Gronlund and Wright
+(see figure E-l). Thus, a wind gives rise to forces perpendicular and parallel to the RV
+velocity in the earth frame. In order to calculate the range dispersion, we assume a
+wind with speed W blowing in the plane of the trajectory, where positive W is in the
+direction of the horizontal component of the RV velocity. The angle between the wind
+and the RV velocity is y (see figure E-l). The drag force on the RV in the reference
+frame of the air, FD' is given by
+C~p (VB) 2 CdAp 2
+Fo = = -[(Ve) -2VeWcos"(J (E-l)
+2 2
+Using figure E-l, one finds that to first order in W, the effect of the wind can be
+included by adding to equation B-1 in appendix B the term:
+(dV ) CdPA -= -VWcos"( (E-2)
+dt wind m
+and to equation B-2 the term:
+F.l(8)
+FII(8)
+Local horizontal
+W
+Figure E-1: This figure shows the lift force on an RV resulting from a wind, W ve Is the velocity of
+the RV measured in the reference frame of the earth; va is the RV velocity measured in the
+reference frame at rest with respect to the air. The drag force on the RV, FD' Is anti parallel to
+the RV velocity in the reference frame of the air. In the reference frame of the earth, this dragforce can be resolved into components perpendicular and parallel to the RV velocity, F.l 8 =
+FDsincp and FI18 = FDcoscp, which look like a lift and drag force, respectively. To first order In W,
+the law of sines and the law of cosines give sincp = ~n'Y/va and coscp = 1. Combining these
+expressions with equation E-l leads to equations E-2 and E-3.
+=== page 55 ===
+
+=== page 56 ===
+1 56 Gronlund and Wright
+in order to get rough estimates of this dependence.
+I. We first assume that a net lift force in the plane of the trajectory gives rise to a
+small, instantaneous change AY in the angle Y between the trajectory and the local hor-
+izontal when the RV is at an altitude h. This model would be appropriate for net lift
+forces that act only briefly. Assuming a straight-line trajectory, the unperturbed RV
+would travel a distance:
+R = hcotl yl (E-6)
+and the perturbed RV would travel a distance:
+R + AR = hcot (I Y 1- AY) (E-7)
+Eliminating R from these two equations yields an expression to first order in AY for the
+range dispersion AR:
+AR = ~ (E-8)
+sin2y
+Similarly, a lift force acting perpendicular to the plane of the trajectory would give rise
+to a small, instantaneous angular deviation 9 out of the original plane of the trajectory,
+causing a cross range dispersion:
+h9
+ACR = -;-- (E-9)
+smy
+2. If several such jumps take place during reentry, the total dispersion due to lift
+effects is the vector sum of the dispersions resulting from each individual jump, and
+the process can be modeled as a random walk. For a random walk, the distance trav-
+elled from the origin in N steps is given by the square root of N times the step size. In
+this case, the step size is given by equations E-8 and E-9 above. If the number of jumps
+(or steps) is proportional to the path length traversed during reentry, which is hr/siny,
+where ho is the altitude at which reentry effects start, then the y-dependence of the
+total range and cross range dispersions due to lift effects would be roughly (l/siny)2.5
+and (l/siny)1.5, respectively.
+3. On the other hand, we can assume that a net lift force persists in one direction,
+and thus the deflection of the trajectory continues, while the RV traverses an altitude
+interval M. As long as the RV is spinning about its axis, it is physically unrealistic to
+assume that a lift force will remain fixed in one direction for a period of time. However,
+this model might be appropriate if one included lift effects by introducing a "ballistic
+lift," similar to the ballistic wind and density variations discussed above. A ballistic lift
+would be that constant force fixed in space that would result in the same dispersion as
+the actual lift force experienced by the RV during reentry. In this case, we assume for
+simplicity that the angular deviation AY is proportional to At:
+Ayoc At (E-IO)
+where At is related to the altitude interval by:~
+=== page 57 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 157
+£1h = £1tVsiny (E-ll)
+where V is the RV velocity. Substituting equations E-I0 and E-ll into E-8, the range
+dispersion will be given by:
+C1.in = -(E-12)
+sin3y
+where Cl is a constant. Similarly, the crossrange dispersion will be:
+C2£1CR = -(E-13)
+sin2y
+where C2 is a constant.
+Thus, we estimate that the y-dependence of the dispersion due to lift effects lies
+between the forms in equations E-8 and E-9, and E-12 and E-13, and we give both val-
+ues in table 4.7 If anyone of the lift effects gives rise to range and crossrange disper-
+sions that scale as 1/sin3y and 1/sin2y, respectively, that contribution to the total lift
+dispersion will dominate, and it may therefore be that the higher value given in table 4
+is the better estimate.
+Sensitivity of Results to Assumptions Made in Calculations
+We would like to determine the sensitivity of our results for DT reentry dispersion to
+the values used for the ballistic wind, the variation in ballistic coefficient 13, the ballis-
+tic density variation, the assumed error budget for the Trident II on a minimum-
+energy trajectory, and the reentry angles for the depressed and minimum-energy tra-
+jectories. Assuming that these six variables are independent, we have the following
+expression for the square of the uncertainty cr of the DT range dispersion as a function
+of the uncertaintys of the six variables.8
+2 2 2
+2( d.inDT) -2 ( d.inDT) -2( d.inDT)rAR.,. =cr w aw- +crli~ ~ +cr lip aA
+2 2 P 2 (E-14)
+..cr2 (~~ ) +~ (~ ) +~ (~ )ARYET d.in 'Y.,. dv 'YWET dv
+MET 'DT 'MET
+where MDT is the range dispersion of a missile on a depressed trajectory, W is the bal-
+listic wind, £113 is the variation in ballistic coefficient, t1p is the variation in atmospheric
+density, MMET is the assumed error budget contribution due to reentry effects for the
+missile on the MET, and 'YDT and 'YMET are the reentry angles for the depressed and
+minimum-energy trajectories, respectively.
+The partial derivatives are calculated using the following expression for the DT
+range dispersion
+=== page 58 ===
+,
+158 Gronlund and Wright
+!J.R20T = !J.R20T, W+~OT,~+~OT.P
+2 2 2 2 2 (E-15)
++ (!J.R MET-!J.R MET,W-!J.R MET,~-!J.R MET,p)f (YOT'YMET)
+where ~DT,~ MDT,Ii' MDT"" MMET,~ Mlt1ETIi' and MMET,p are t~e DT and MET
+range dispersIons that we compute due to WInds, ~13, and £\p, respectIvely, and f ('YDTI
+YMET), which is the function that scales the MET lift. dispersion to give the DT lift. dis-
+persion, is given by
+( SinYMET) " f(YDT'YMET) = .(E-16)
+SffiYDT
+where n = 2 for the lower bound on the DT range dispersion, and n = 3 for the upper
+bound. It is straightforward to derive an analytic expression for the partial derivatives
+because the dispersions due to winds, ~13, and £\p vary linearly with those variables.
+Expressions similar to equations E-I4-E-16 can be written for the uncertainty of
+the DT cross range dispersion.
+Ifwe assume the uncertainties for W, ~13, £\p, MMET- and ~CRMET are 10 percent of
+their values (e.g., CJw = O.IW = 1 mls), and for 'YDT and YMET are 0.5°, then the uncer-
+tainties for the upper bound on the range and crossrange dispersions are roughly 15-
+20 percent and 10-15 percent, respectively, for the depressed trajectories flown with a
+fully loaded Trident II. For the off-loaded Trident II and high-velocity trajectories, the
+uncertainties for the upper bound on the range and crossrange dispersions are roughly
+25 percent and 20 percent, respectively. In each case, the uncertainties for the lower
+bound on the range and crossrange dispersions are much lower: 6-8 percent.
+NOTES AND REFERENCES
+1. Shea L. Valley, ed., Handbook of Geophysics and Space Environments (Cambridge,
+Massachusetts: Air Force Research Laboratories, 1965), p.3-29. In addition, a statisti-
+cal analysis of recent meteorological data was provided by Dennis A. Keyser of the
+National Meteorological Center, US National Oceanic and Atmospheric Administra-
+tion. We assume similar values over the CIS.
+2. This estimate agrees with values for ballistic density variation given in Doreen H.
+Daniels, Ballistic Cor~lation Altitudes for Reentry Winds and Nonstandard Air Densi-
+ties (Dahlgren, Virginia: US Naval Weapons Laboratory, April 1965), NTIS, AD-614-
+710, p.9.
+3. Valley, Handbook of Geophysics, p.4-46. Wind data was also provided by Dennis A
+Keyser of the National Meteorological Center, US National Oceanic and Atmospheric
+Administration.
+4. This value for the ballistic wind variation is taken from Daniels, Cor~lation Alti-
+tudes, p.7.
+5. Liepman, "Boundary Layer Transition,. p.30, gives a value of 3 percent as a rea-
+sonable upper bound for the variation in 13. See also Burns, "ABRES Flight Test Evalu-
+ation,. p.3-35.
+6. Glover and Hagan, "Ballistic Missiles,. p.166.
+7. Burns ("ABRES Flight Test Evaluation,. pp.3-62, 3-79) uses model (1) to calculate
+=== page 59 ===
+Depressed Trajectory SLBMs: A Technical Evaluation and Arms Control Possibilities 159
+the dispersions resulting from roll trim effects. Liepman ("Boundary Layer Transition,.
+p.13) uses model (3) to calculate the maximum (not the statistical average) range and
+cross range dispersions due to asymmetric boundary layer transition effects.
+8. See, for example, Philip R. Bevington, Data Reduction and Error Analysis for the
+Physical Sciences (New York: McGraw-Hill, 1969), p.60.
